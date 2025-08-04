@@ -1,0 +1,114 @@
+/*==================================
+  特定商取引法に基づく表記ページ
+==================================*/
+.tsuhan-container {
+    padding: 60px 0;
+}
+
+.regulation-section {
+    margin-bottom: 30px;
+    border-bottom: 1px dashed #ccc;
+    padding-bottom: 30px;
+}
+
+.regulation-section:last-child {
+    border-bottom: none;
+}
+
+.info-item {
+    display: flex;
+    margin-bottom: 15px;
+    font-size: 14px;
+}
+
+.info-item .info-label {
+    flex: 0 0 250px;
+    font-weight: bold;
+    color: #333;
+}
+
+.info-item .info-data {
+    flex: 1;
+    color: #555;
+    line-height: 1.6;
+}
+
+.info-item.wide-item {
+    display: block;
+}
+
+.info-item.wide-item .info-label {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.info-data-list {
+    padding-left: 20px;
+    line-height: 1.6;
+}
+
+.info-data-list p {
+    margin-bottom: 5px;
+}
+
+.info-data-list h4 {
+    font-size: 16px;
+    font-weight: bold;
+    color: #00479d;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.info-data-list strong {
+    color: #00479d;
+}
+
+.refund-list {
+    list-style-type: none;
+    padding-left: 20px;
+}
+
+.refund-list li {
+    position: relative;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+.refund-list li::before {
+    content: "・";
+    position: absolute;
+    left: -15px;
+}
+
+.link {
+    color: #00479d;
+    text-decoration: underline;
+}
+
+/* フッターナビの共通化 */
+.footer-menu {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 10px;
+    color: #888;
+    font-size: 12px;
+}

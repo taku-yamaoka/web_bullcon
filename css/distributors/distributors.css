@@ -1,0 +1,137 @@
+/*==================================
+  販売店/代理店専用ページ
+==================================*/
+.distributors-container {
+    padding: 60px 0;
+}
+
+.page-title {
+    font-size: 30px;
+    font-weight: 700;
+    color: #00479d;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.section-lead {
+    font-size: 16px;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.notes-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    font-size: 15px;
+    line-height: 1.6;
+    color: #555;
+}
+
+.notes-list li {
+    margin-bottom: 15px;
+    position: relative;
+    padding-left: 1.5em;
+}
+
+.notes-list li::before {
+    content: "・";
+    position: absolute;
+    left: 0;
+}
+
+.important-note {
+    font-size: 16px;
+    font-weight: bold;
+    color: #333;
+}
+
+.red-text {
+    color: red;
+}
+
+.login-info {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.login-info p {
+    font-size: 16px;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.log-note {
+    font-size: 14px;
+    color: #777;
+    margin-top: 10px;
+}
+
+.button-area {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 15px 30px;
+    margin: 0 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.button-login {
+    background-color: #00479d;
+}
+
+.button-login:hover {
+    background-color: #00377a;
+}
+
+.button-register {
+    background-color: #5cb85c;
+}
+
+.button-register:hover {
+    background-color: #449d44;
+}
+
+.footer-menu {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #00479d;
+    font-size: 15px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 10px;
+    color: #888;
+    font-size: 14px;
+}
+
+/* レスポンシブ対応 */
+@media (max-width: 768px) {
+    .footer-nav {
+        flex-direction: column;
+    }
+}

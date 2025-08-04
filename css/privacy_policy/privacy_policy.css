@@ -1,0 +1,113 @@
+/*==================================
+  プライバシーポリシーページ
+==================================*/
+.privacy-container {
+    padding: 60px 0;
+}
+
+.privacy-header {
+    text-align: right;
+    font-size: 14px;
+    margin-bottom: 40px;
+}
+
+.policy-date {
+    margin-bottom: 5px;
+}
+
+.policy-company {
+    line-height: 1.6;
+}
+
+.policy-subtitle {
+    font-size: 18px;
+    font-weight: bold;
+    color: #00479d;
+    margin-top: 30px;
+    margin-bottom: 15px;
+    border-left: 5px solid #00479d;
+    padding-left: 10px;
+}
+
+.policy-text {
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+    margin-bottom: 15px;
+}
+
+.purpose-list {
+    list-style-type: none;
+    padding-left: 20px;
+    font-size: 14px;
+    line-height: 1.8;
+    color: #333;
+}
+
+.purpose-list li {
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.purpose-list li::before {
+    content: "●";
+    position: absolute;
+    left: -20px;
+    color: #00479d;
+}
+
+.contact-info {
+    text-align: left;
+    margin-top: 80px;
+    font-size: 14px;
+    line-height: 1.8;
+}
+
+/* 連絡先詳細部分のスタイル */
+.contact-detail {
+    margin-top: 50px;
+    font-size: 16px; /* 文字サイズを少し大きく */
+    line-height: 1.5; /* 行間を広げて見やすく */
+}
+
+.contact-detail .company-name {
+    color: #333;
+}
+
+.contact-detail .tel-info,
+.contact-detail .fax-info {
+    color: #555;
+}
+
+.cybertrust-seal {
+    text-align: center;
+    margin-top: 50px;
+}
+
+/* フッターナビの共通化 */
+.footer-menu {
+    border-top: 1px solid #ddd;
+    padding: 20px 0;
+}
+
+.footer-nav {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: #555;
+    font-size: 13px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 10px;
+    color: #888;
+    font-size: 12px;
+}
