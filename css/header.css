@@ -1,0 +1,222 @@
+/*==================================
+  ヘッダー
+==================================*/
+.header {
+    background-color: #fff;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+}
+
+.header-inner {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 10px;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.header-logo {
+    margin-right: 30px;
+    margin-left: -50px;
+}
+
+.header-logo img {
+    height: 50px;
+    width: auto;
+}
+
+.nav-list {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-item {
+    margin-left: 30px;
+    position: relative;
+}
+
+.nav-item a {
+    font-weight: 700;
+    color: #333;
+    white-space: nowrap;
+}
+
+/* ドロップダウンメニューのスタイル */
+.has-dropdown:hover .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.dropdown-menu {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 300px;
+    z-index: 900;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: all 0.3s ease;
+}
+
+.dropdown-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.dropdown-list li a {
+    display: block;
+    padding: 10px 20px;
+    font-weight: normal;
+    color: #555;
+    white-space: normal;
+    position: relative; /* サブメニュー表示の基準点 */
+}
+
+.dropdown-list li a:hover {
+    background-color: #f0f0f0;
+}
+
+/* サブドロップダウンメニューのスタイル */
+.has-sub-dropdown > a::after {
+    content: '▶'; /* 階層があることを示す矢印 */
+    font-size: 10px;
+    color: #999;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+/* 2階層目と3階層目のメニューをマウスホバーで表示 */
+.has-sub-dropdown:hover > .sub-dropdown-list,
+.has-sub-dropdown:hover > .sub-sub-dropdown-list {
+    visibility: visible;
+    opacity: 1;
+    left: 100%;
+}
+
+.sub-dropdown-list {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 380px;
+    z-index: 910;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.sub-dropdown-list li{
+    list-style: none;
+}
+
+.sub-dropdown-list li a {
+    padding: 10px 20px;
+}
+
+/* 3階層目のサブドロップダウンメニューのスタイル */
+.sub-sub-dropdown-list {
+    position: absolute;
+    top: 0;
+    left: 100%;
+    background-color: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 380px;
+    z-index: 920;
+    visibility: hidden;
+    opacity: 0;
+    transition: all 0.3s ease;
+}
+
+.sub-sub-dropdown-list li {
+    list-style: none;
+}
+
+.sub-sub-dropdown-list li a {
+    padding: 10px 20px;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    padding: 0;
+}
+
+.hamburger-menu span {
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #00479d;
+    transition: all 0.3s ease;
+}
+
+.hamburger-menu.active span:nth-child(1) {
+    transform: translateY(9px) rotate(45deg);
+}
+
+.hamburger-menu.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger-menu.active span:nth-child(3) {
+    transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (max-width: 768px) {
+    .header-nav {
+        position: fixed;
+        top: 70px;
+        left: 0;
+        width: 100%;
+        height: 100vh;
+        background-color: #fff;
+        padding-top: 20px;
+        transform: translateX(100%);
+        transition: transform 0.3s ease;
+        z-index: 999;
+        overflow-y: auto;
+    }
+
+    .header-nav.active {
+        transform: translateX(0);
+    }
+
+    .nav-list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .nav-item {
+        margin: 20px 0;
+        font-size: 18px;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
