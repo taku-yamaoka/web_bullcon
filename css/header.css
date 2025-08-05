@@ -2,31 +2,71 @@
   ヘッダー
 ==================================*/
 .header {
-    background-color: #fff;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: sticky;
     top: 0;
     z-index: 1000;
     width: 100%;
+    background-color: #fff;
 }
 
-.header-inner {
+/* 上段ヘッダー */
+.header-top {
+    padding: 3px;
+    width: 100%;
+}
+
+.header-top .header-inner {
     display: flex;
-    justify-content: flex-start;
+    justify-content: space-between;
     align-items: center;
-    padding: 10px;
-    max-width: 1000px;
-    margin: 0 auto;
+    max-width: 100%;
 }
 
 .header-logo {
-    margin-right: 30px;
-    margin-left: -50px;
+    margin-left: 0px;
 }
 
 .header-logo img {
     height: 50px;
     width: auto;
+}
+
+.social-links {
+    display: flex;
+    gap: 30px;
+    margin-right: 5px;
+}
+
+.social-icon img {
+    height: 30px;
+    width: auto;
+}
+
+.search-icon img {
+    height: 30px;
+    width: auto;
+    padding-left: 30px;
+    padding-right: 10px;
+}
+
+/* 下段ヘッダー */
+.header-bottom {
+    background-color: #fff;
+    width: 100%;
+}
+
+.header-bottom .header-inner {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px;
+    max-width: 1100x;
+}
+
+.header-nav {
+    display: flex;
+    align-items: center;
 }
 
 .nav-list {
@@ -37,23 +77,25 @@
 }
 
 .nav-item {
-    margin-left: 30px;
+    margin-left: 60px;
     position: relative;
 }
 
-.nav-item a {
+.nav-item a,
+.nav-item .dropdown-toggle {
     font-weight: 700;
     color: #333;
     white-space: nowrap;
+    text-decoration: none;
+    display: block;
+    font-size:18px;
+    line-height: 30px;
+    padding-bottom: 10px;
 }
 
 .dropdown-toggle {
-    font-weight: 700;
-    color: #333;
-    white-space: nowrap;
     cursor: default;
 }
-
 
 /* ドロップダウンメニューのスタイル */
 .has-dropdown:hover .dropdown-menu {
@@ -90,7 +132,8 @@
     font-weight: normal;
     color: #555;
     white-space: normal;
-    position: relative; /* サブメニュー表示の基準点 */
+    position: relative;
+    line-height: 1.2;
 }
 
 .dropdown-list li a:hover {
@@ -99,7 +142,7 @@
 
 /* サブドロップダウンメニューのスタイル */
 .has-sub-dropdown > a::after {
-    content: '▶'; /* 階層があることを示す矢印 */
+    content: '▶';
     font-size: 10px;
     color: #999;
     position: absolute;
@@ -108,7 +151,6 @@
     transform: translateY(-50%);
 }
 
-/* 2階層目と3階層目のメニューをマウスホバーで表示 */
 .has-sub-dropdown:hover > .sub-dropdown-list,
 .has-sub-dropdown:hover > .sub-sub-dropdown-list {
     visibility: visible;
@@ -131,7 +173,7 @@
     transition: all 0.3s ease;
 }
 
-.sub-dropdown-list li{
+.sub-dropdown-list li {
     list-style: none;
 }
 
