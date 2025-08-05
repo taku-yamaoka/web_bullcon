@@ -4,63 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>販売店/代理店(法人)様 専用入口 - Bullcon | フジ電機工業株式会社</title>
-    <link rel="stylesheet" href="../../css/style.css">
-    <link rel="stylesheet" href="../../css/header.css">
-    <link rel="stylesheet" href="../../css/distributors/distributors.css">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/distributors/distributors.css">
 </head>
 <body>
-    <header class="header">
-        <div class="header-inner container">
-            <h1 class="header-logo">
-                <a href="../../index.html">
-                    <img src="../../images/header/logo.png" alt="Bullcon | フジ電機工業株式会社" width="150">
-                </a>
-            </h1>
-            <nav class="header-nav">
-                <ul class="nav-list">
-                    <li class="nav-item has-dropdown">
-                        <a href="../products.html">製品情報</a>
-                        <div class="dropdown-menu">
-                            <ul class="dropdown-list">
-                                <li class="has-sub-dropdown">
-                                    <a href="#">車種別専用製品</a>
-                                    <ul class="sub-dropdown-list">
-                                        <li><a href="../products/car_specific/toyota.html">トヨタ車用</a></li>
-                                        <li><a href="../products/car_specific/honda.html">ホンダ車用</a></li>
-                                        <li><a href="../products/car_specific/nissan.html">ニッサン車用</a></li>
-                                    </ul>
-                                </li>
-                                <li><a href="../products/category1.html">ナビ・オーディオ</a></li>
-                                <li><a href="../products/category2.html">ドライブレコーダー</a></li>
-                                <li><a href="../products/category3.html">カーアクセサリー</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a href="../news.html">新着情報</a></li>
-                    <li class="nav-item has-dropdown">
-                        <a href="../company.html">企業情報</a>
-                        <div class="dropdown-menu">
-                            <ul class="dropdown-list">
-                                <li><a href="../company/about.html">会社概要</a></li>
-                                <li><a href="../company/history.html">沿革</a></li>
-                                <li><a href="../company/message.html">代表メッセージ</a></li>
-                                <li><a href="../company/location.html">アクセス</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                    <li class="nav-item"><a href="contact.html">お問い合わせ</a></li>
-                    <li class="nav-item"><a href="../recruitment.html">採用情報</a></li>
-                    <li class="nav-item"><a href="distributors.html">販売店/代理店(法人)様 専用入口</a></li>
-                    <li class="nav-item"><a href="../webshop.html">WebShop</a></li>
-                </ul>
-            </nav>
-            <button class="hamburger-menu">
-                <span></span>
-                <span></span>
-                <span></span>
-            </button>
-        </div>
-    </header>
+        <div id="header-placeholder"></div>
+<script>
+    fetch('/html/_header.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('header-placeholder').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error fetching header:', error);
+        });
+</script>
 
     <main>
         <div class="container distributors-container">
@@ -109,20 +74,24 @@
                 <a href="../kaiinsenyou/haisen.htm" class="button button-login">ログイン</a>
                 <a href="../form_index.htm" class="button button-register">新規登録申請</a>
             </div>
-            
-            <footer class="footer">
-                <div class="container footer-menu">
-                    <ul class="footer-nav">
-                        <li><a href="../old_manual/old_manual.html">旧製品取扱い説明書ダウンロード</a></li>
-                        <li><a href="../privacy_policy/privacy_policy.html">個人情報の取り扱いについて</a></li>
-                        <li><a href="../tsuhan/tsuhan_houki.html">特定商取引法に基づく表記</a></li>
-                    </ul>
-                </div>
-                <div class="container copyright">
-                    <small>Copyright (c) FUJI-DENKI all rights reserved.</small>
-                </div>
-            </footer>
         </div>
     </main>
+
+        <div id="footer-placeholder"></div>
+<script>
+    fetch('/html/_fotter.html')
+        .then(response => {
+            if (!response.ok) {
+                throw new Error('Network response was not ok');
+            }
+            return response.text();
+        })
+        .then(data => {
+            document.getElementById('footer-placeholder').innerHTML = data;
+        })
+        .catch(error => {
+            console.error('Error fetching header:', error);
+        });
+</script>
 </body>
 </html>
