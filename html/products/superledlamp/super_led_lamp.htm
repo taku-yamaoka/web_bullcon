@@ -1,10 +1,12 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>ƒX[ƒp[‚k‚d‚cƒ‰ƒ“ƒv/‚a‚•‚Œ‚Œ‚ƒ‚‚Ž-ƒtƒW“d‹@H‹ÆŠ”Ž®‰ïŽÐ</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
-<meta name="keywords" content="ƒ³‹…ŒðŠ·,ŒðŠ·—pLED,ƒ|ƒWƒVƒ‡ƒ“ƒ‰ƒ“ƒv,ƒ‹[ƒ€ƒ‰ƒ“ƒv,ƒ‰ƒCƒZƒ“ƒXƒ‰ƒ“ƒv,SLL-801,SLL-802,SLL-803,SLL-804,SLL-805,">
+<title>ã‚¹ãƒ¼ãƒ‘ãƒ¼ï¼¬ï¼¥ï¼¤ãƒ©ãƒ³ãƒ—/ï¼¢ï½•ï½Œï½Œï½ƒï½ï½Ž-ãƒ•ã‚¸é›»æ©Ÿå·¥æ¥­æ ªå¼ä¼šç¤¾</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="ç´”æ­£çƒäº¤æ›,äº¤æ›ç”¨LED,ãƒã‚¸ã‚·ãƒ§ãƒ³ãƒ©ãƒ³ãƒ—,ãƒ«ãƒ¼ãƒ ãƒ©ãƒ³ãƒ—,ãƒ©ã‚¤ã‚»ãƒ³ã‚¹ãƒ©ãƒ³ãƒ—,SLL-801,SLL-802,SLL-803,SLL-804,SLL-805,">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -52,6 +54,40 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // ãƒ¬ã‚¹ãƒãƒ³ã‚¹ãŒæˆåŠŸã§ãªã‘ã‚Œã°ã‚¨ãƒ©ãƒ¼ã‚’æŠ•ã’ã‚‹
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿæ™‚ã®ä»£æ›¿å‡¦ç†ï¼ˆä¾‹: ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºï¼‰
+        document.getElementById('header-placeholder').innerHTML = '<p>ãƒ˜ãƒƒãƒ€ãƒ¼ã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸã€‚</p>';
+    });
+
+    // ãƒ•ãƒƒã‚¿ãƒ¼ã®èª­ã¿è¾¼ã¿
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // ãƒ¬ã‚¹ãƒãƒ³ã‚¹ãŒæˆåŠŸã§ãªã‘ã‚Œã°ã‚¨ãƒ©ãƒ¼ã‚’æŠ•ã’ã‚‹
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿæ™‚ã®ä»£æ›¿å‡¦ç†
+        document.getElementById('footer-placeholder').innerHTML = '<p>ãƒ•ãƒƒã‚¿ãƒ¼ã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸã€‚</p>';
+    });
 //-->
 </script>
     
@@ -65,8 +101,10 @@ function MM_preloadImages() { //v3.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/super_led_lamp_r40_c11_f3.gif','images/super_led_lamp_r40_c36_f6.gif','images/super_led_lamp_r40_c11_f4.gif','images/super_led_lamp_r40_c36_f7.gif','images/super_led_lamp_r51_c11_f9.gif','images/super_led_lamp_r51_c36_f12.gif','images/super_led_lamp_r51_c11_f10.gif','images/super_led_lamp_r51_c36_f13.gif','images/super_led_lamp_r62_c11_f15.gif','images/super_led_lamp_r76_c39_f2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="new_led_lamp.png" fwpage="ƒy[ƒW 1" fwbase="super_led_lamp.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="new_led_lamp.png" fwpage="ï¿½yï¿½[ï¿½W 1" fwbase="super_led_lamp.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="10" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="28" height="1" border="0" alt=""></td>
@@ -118,25 +156,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
 
-   <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="47"><img name="super_led_lamp_r12_c1" src="images/super_led_lamp_r12_c1.gif" width="1000" height="36" border="0" id="super_led_lamp_r12_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="36" border="0" alt=""></td>
@@ -155,9 +174,9 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="36"><span class="style3" style="line-height:20px">ƒ³ƒoƒ‹ƒu‚Æ·‚µ‘Ö‚¦‚é‚¾‚¯‚ÅOK‚ÌŠÈ’PŽæ‚è•t‚¯‚ÅA‚•iŽ¿‚Èƒ”’LED‚Ì‹P‚«‚ª‹M•û‚Ìˆ¤ŽÔ‚ÉI<br>
-ƒ³“d‹…‚æ‚è‚à–¾‚é‚­AŽÔ‚ÌƒhƒŒƒXƒAƒbƒv‚ÆÆ–¾‚Æ‚µ‚Ä‚Ì‹@”\‚ÆŽÀ—p«‚ðŒ“‚Ë”õ‚¦‚Ü‚µ‚½B<br>
-T10ƒEƒFƒbƒWƒ^ƒCƒv‚Í2Ží—Þ‚ðƒ‰ƒCƒ“ƒiƒbƒvB‚¨Žg‚¢‚É‚È‚éêŠ‚É‚æ‚Á‚ÄÅ“K‚È”zŒõ‚ð‚¨‘I‚Ñ’¸‚¯‚Ü‚·B</span></td>
+   <td colspan="36"><span class="style3" style="line-height:20px">ç´”æ­£ãƒãƒ«ãƒ–ã¨å·®ã—æ›¿ãˆã‚‹ã ã‘ã§OKã®ç°¡å˜å–ã‚Šä»˜ã‘ã§ã€é«˜å“è³ªãªç´”ç™½LEDã®è¼ããŒè²´æ–¹ã®æ„›è»Šã«ï¼<br>
+ç´”æ­£é›»çƒã‚ˆã‚Šã‚‚æ˜Žã‚‹ãã€è»Šã®ãƒ‰ãƒ¬ã‚¹ã‚¢ãƒƒãƒ—ã¨ç…§æ˜Žã¨ã—ã¦ã®æ©Ÿèƒ½ã¨å®Ÿç”¨æ€§ã‚’å…¼ã­å‚™ãˆã¾ã—ãŸã€‚<br>
+T10ã‚¦ã‚§ãƒƒã‚¸ã‚¿ã‚¤ãƒ—ã¯2ç¨®é¡žã‚’ãƒ©ã‚¤ãƒ³ãƒŠãƒƒãƒ—ã€‚ãŠä½¿ã„ã«ãªã‚‹å ´æ‰€ã«ã‚ˆã£ã¦æœ€é©ãªé…å…‰ã‚’ãŠé¸ã³é ‚ã‘ã¾ã™ã€‚</span></td>
    <td><img src="images/spacer.gif" width="1" height="70" border="0" alt=""></td>
   </tr>
   <tr>
@@ -239,8 +258,8 @@ T10ƒEƒFƒbƒWƒ^ƒCƒv‚Í2Ží—Þ‚ðƒ‰ƒCƒ“ƒiƒbƒvB‚¨Žg‚¢‚É‚È‚éêŠ‚É‚æ‚Á‚ÄÅ“K‚È”zŒõ‚ð‚¨‘I
   <tr>
    <td colspan="5"><img name="super_led_lamp_r25_c2" src="images/super_led_lamp_r25_c2.gif" width="140" height="15" border="0" id="super_led_lamp_r25_c2" alt=""></td>
    <td colspan="4"><div align="center" class="style2">
-     <div align="center">( T10 / 1LEDj<br>
-       <span class="style17">ŠgŽUƒNƒŠƒAƒŒƒ“ƒYƒ^ƒCƒv</span></div>
+      <div align="center">( T10 / 1LEDï¼‰<br>
+       <span class="style17">æ‹¡æ•£ã‚¯ãƒªã‚¢ãƒ¬ãƒ³ã‚ºã‚¿ã‚¤ãƒ—</span></div>
    </div></td>
    <td colspan="7"><div align="center" class="style2">
      <div align="center">( T10 / 6LED )</div>
@@ -251,53 +270,52 @@ T10ƒEƒFƒbƒWƒ^ƒCƒv‚Í2Ží—Þ‚ðƒ‰ƒCƒ“ƒiƒbƒvB‚¨Žg‚¢‚É‚È‚éêŠ‚É‚æ‚Á‚ÄÅ“K‚È”zŒõ‚ð‚¨‘I
    <td><div align="center" class="style2 style2">
      <div align="center">(</div>
    </div></td>
-   <td colspan="3"><span class="style2">T10~31<br>
-    T 8~28</span></td>
+   <td colspan="3"><span class="style2">T10Ã—31<br>
+    T 8Ã—28</span></td>
    <td>/</td>
    <td colspan="2"><span class="style2"> 3LED)</span></td>
    <td colspan="8"><div align="center" class="style2">
-     <div align="center">( T6.3~30 / 3LED)</div>
+     <div align="center">( T6.3Ã—30 / 3LED)</div>
    </div></td>
    <td colspan="6"><img name="super_led_lamp_r25_c41" src="images/super_led_lamp_r25_c41.gif" width="140" height="15" border="0" id="super_led_lamp_r25_c41" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="5"><img name="super_led_lamp_r26_c2" src="images/super_led_lamp_r26_c2.gif" width="140" height="15" border="0" id="super_led_lamp_r26_c2" alt=""></td>
-   <td colspan="4"><div align="center" class="style2">F‰·“xF6000K</div></td>
-   <td colspan="7"><div align="center"><span class="style2">F‰·“xF6000K</span></div></td>
-   <td colspan="8"><div align="center"><span class="style2">F‰·“xF6000K</span></div></td>
-   <td colspan="7"><div align="center"><span class="style2">F‰·“xF6000K</span></div></td>
-   <td colspan="8"><div align="center"><span class="style2">F‰·“xF6000K</span></div></td>
+   <td colspan="4"><div align="center" class="style2">è‰²æ¸©åº¦ï¼š6000K</div></td>
+   <td colspan="7"><div align="center"><span class="style2">è‰²æ¸©åº¦ï¼š6000K</span></div></td>
+   <td colspan="8"><div align="center"><span class="style2">è‰²æ¸©åº¦ï¼š6000K</span></div></td>
+   <td colspan="7"><div align="center"><span class="style2">è‰²æ¸©åº¦ï¼š6000K</span></div></td>
+   <td colspan="8"><div align="center"><span class="style2">è‰²æ¸©åº¦ï¼š6000K</span></div></td>>
    <td colspan="6"><img name="super_led_lamp_r26_c41" src="images/super_led_lamp_r26_c41.gif" width="140" height="15" border="0" id="super_led_lamp_r26_c41" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="5"><img name="super_led_lamp_r27_c2" src="images/super_led_lamp_r27_c2.gif" width="140" height="15" border="0" id="super_led_lamp_r27_c2" alt=""></td>
    <td colspan="4"><div align="center" class="style2">
-     <div align="center">SIZE 11.6‚‚~23‚‚</div>
+     <div align="center">SIZE 11.6ï½ï½Ã—23ï½ï½</div>
    </div></td>
    <td colspan="7"><div align="center" class="style2">
-     <div align="center">SIZE 11.6‚‚~26‚‚</div>
+     <div align="center">SIZE 11.6ï½ï½Ã—26ï½ï½</div>
    </div></td>
    <td colspan="8"><div align="center" class="style2">
-     <div align="center">SIZE 11.6‚‚~27‚‚</div>
+     <div align="center">SIZE 11.6ï½ï½Ã—27ï½ï½</div>
    </div></td>
    <td colspan="7"><div align="center" class="style2">
-     <div align="center">SIZE 8.4‚‚~27‚‚</div>
+     <div align="center">SIZE 8.4ï½ï½Ã—27ï½ï½</div>
    </div></td>
    <td colspan="8"><div align="center" class="style2">
-     <div align="center">SIZE 6‚‚~27‚‚</div>
+     <div align="center">SIZE 6ï½ï½Ã—27ï½ï½</div>
    </div></td>
    <td colspan="6"><img name="super_led_lamp_r27_c41" src="images/super_led_lamp_r27_c41.gif" width="140" height="15" border="0" id="super_led_lamp_r27_c41" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
   </tr>
-  <tr>
    <td colspan="5"><img name="super_led_lamp_r28_c2" src="images/super_led_lamp_r28_c2.gif" width="140" height="15" border="0" id="super_led_lamp_r28_c2" alt=""></td>
    <td colspan="4"><div align="center"></div></td>
    <td colspan="7"><div align="center"></div></td>
    <td colspan="8"><div align="center"></div></td>
-   <td colspan="7"><div align="center" class="style17">i@Šî”Â•Å‘å 10‚‚@j</div></td>
-   <td colspan="8"><div align="center" class="style17">i@Šî”Â•Å‘å 10‚‚@j</div></td>
+   <td colspan="7"><div align="center" class="style17">ï¼ˆã€€åŸºæ¿å¹…æœ€å¤§ 10ï½ï½ã€€ï¼‰</div></td>
+   <td colspan="8"><div align="center" class="style17">ï¼ˆã€€åŸºæ¿å¹…æœ€å¤§ 10ï½ï½ã€€ï¼‰</div></td>
    <td colspan="6"><img name="super_led_lamp_r28_c41" src="images/super_led_lamp_r28_c41.gif" width="140" height="15" border="0" id="super_led_lamp_r28_c41" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
   </tr>
@@ -323,32 +341,31 @@ T10ƒEƒFƒbƒWƒ^ƒCƒv‚Í2Ží—Þ‚ðƒ‰ƒCƒ“ƒiƒbƒvB‚¨Žg‚¢‚É‚È‚éêŠ‚É‚æ‚Á‚ÄÅ“K‚È”zŒõ‚ð‚¨‘I
   </tr>
   <tr>
    <td rowspan="5"><img name="super_led_lamp_r34_c1" src="images/super_led_lamp_r34_c1.gif" width="10" height="190" border="0" id="super_led_lamp_r34_c1" alt=""></td>
-   <td colspan="45"><span class="style10">’´‚‹P“x”’F‚k‚d‚c‚ª’¼Ž‹‚Å‚«‚È‚¢’ö‚Ì–¾‚é‚³‚ðŽÀŒ»B‹P‚­ƒ”’i6000‚jj‚ÌŒõ‚ÅŽÔ“à‚ðƒhƒŒƒXƒAƒbƒvB</span></td>
+   <td colspan="45"><span class="style10">è¶…é«˜è¼åº¦ç™½è‰²ï¼¬ï¼¥ï¼¤ãŒç›´è¦–ã§ããªã„ç¨‹ã®æ˜Žã‚‹ã•ã‚’å®Ÿç¾ã€‚è¼ãç´”ç™½ï¼ˆ6000ï¼«ï¼‰ã®å…‰ã§è»Šå†…ã‚’ãƒ‰ãƒ¬ã‚¹ã‚¢ãƒƒãƒ—ã€‚</span></td>
    <td rowspan="5"><img name="super_led_lamp_r34_c47" src="images/super_led_lamp_r34_c47.gif" width="10" height="190" border="0" id="super_led_lamp_r34_c47" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="45"><span class="style12">LED‚Ì’·Š</span></td>
+   <td colspan="45"><span class="style12">LEDã®é•·æ‰€</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="45"><span class="style6" style="line-height:16px">‚k‚d‚c‚ÍiLight Emitting Diodej‚Ì—ª‚ÅA“dˆ³‚É‚æ‚è”­Œõ‚·‚é”¼“±‘Ì‘fŽq‚ð—˜—p‚µ‚½ŽŸ¢‘ã‚ÌŒõŒ¹‚Å‚·B<br>
-     Žõ–½‚Í’Êí‚ÌƒtƒBƒ‰ƒƒ“ƒgŽ®ƒ‰ƒ“ƒv‚É”ä‚×‚ÄA’·ŽžŠÔ‚ÌŽg—p‚ª‰Â”\I<br>
-    “à•”‚ÉƒtƒBƒ‰ƒƒ“ƒg‚ðŽg—p‚µ‚È‚¢ˆ×AÕŒ‚‚É‹­‚­A“_“”Žž‚Ì‰ž“š‘¬“x‚ª‘¬‚¢—˜“_‚ª‚ ‚è‚Ü‚·B</span></td>
+   <td colspan="45"><span class="style6" style="line-height:16px">ï¼¬ï¼¥ï¼¤ã¯ï¼ˆLight Emitting Diodeï¼‰ã®ç•¥ã§ã€é›»åœ§ã«ã‚ˆã‚Šç™ºå…‰ã™ã‚‹åŠå°Žä½“ç´ å­ã‚’åˆ©ç”¨ã—ãŸæ¬¡ä¸–ä»£ã®å…‰æºã§ã™ã€‚<br>
+     å¯¿å‘½ã¯é€šå¸¸ã®ãƒ•ã‚£ãƒ©ãƒ¡ãƒ³ãƒˆå¼ãƒ©ãƒ³ãƒ—ã«æ¯”ã¹ã¦ã€é•·æ™‚é–“ã®ä½¿ç”¨ãŒå¯èƒ½ï¼<br>
+    å†…éƒ¨ã«ãƒ•ã‚£ãƒ©ãƒ¡ãƒ³ãƒˆã‚’ä½¿ç”¨ã—ãªã„ç‚ºã€è¡æ’ƒã«å¼·ãã€ç‚¹ç¯æ™‚ã®å¿œç­”é€Ÿåº¦ãŒé€Ÿã„åˆ©ç‚¹ãŒã‚ã‚Šã¾ã™ã€‚</span></td>
    <td><img src="images/spacer.gif" width="1" height="60" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="45"><span class="style12">–{»•i‚Ì“Á’·</span></td>
+   <td colspan="45"><span class="style12">æœ¬è£½å“ã®ç‰¹é•·</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="45"><span class="style6" style="line-height:16px">•¾ŽÐ‚ÌSUPER LED LAMP‚ÍLED‚Ì’†‚Å‚à‚•iŽ¿‚Ì‚‹P“xLED‚¾‚¯‚ðŒµ‘IÌ—p‚·‚éŽ–‚ÅA<br>
-     ˆÀ‰¿•i‚É‘½‚¢uFƒ€ƒ‰vu–¾‚é‚³‚Ìƒoƒ‰ƒcƒLv‚ð–³‚­‚µAy ‹P‚« z‚Ì•\Œ»‚É‘Š‰ž‚µ‚¢ƒ”’Œõ‚ðŽÀŒ»‚¢‚½‚µ‚Ü‚µ‚½B<br>
-    ŽÔ“àŠO‚Ìã•i‚ÈƒhƒŒƒXƒAƒbƒv‚ÉvŒ£‚·‚é‚Æ“¯Žž‚ÉŽÔ“àŠO‚ð–¾‚é‚­Æ‚ç‚µo‚·ŽÀ—p«‚ðŒ“‚Ë”õ‚¦‚Ü‚µ‚½B<br>
+   <td colspan="45"><span class="style6" style="line-height:16px">å¼Šç¤¾ã®SUPER LED LAMPã¯LEDã®ä¸­ã§ã‚‚é«˜å“è³ªã®é«˜è¼åº¦LEDã ã‘ã‚’åŽ³é¸æŽ¡ç”¨ã™ã‚‹äº‹ã§ã€<br>
+     å®‰ä¾¡å“ã«å¤šã„ã€Œè‰²ãƒ ãƒ©ã€ã€Œæ˜Žã‚‹ã•ã®ãƒãƒ©ãƒ„ã‚­ã€ã‚’ç„¡ãã—ã€ã€ è¼ã ã€‘ã®è¡¨ç¾ã«ç›¸å¿œã—ã„ç´”ç™½å…‰ã‚’å®Ÿç¾ã„ãŸã—ã¾ã—ãŸã€‚<br>
+    è»Šå†…å¤–ã®ä¸Šå“ãªãƒ‰ãƒ¬ã‚¹ã‚¢ãƒƒãƒ—ã«è²¢çŒ®ã™ã‚‹ã¨åŒæ™‚ã«è»Šå†…å¤–ã‚’æ˜Žã‚‹ãç…§ã‚‰ã—å‡ºã™å®Ÿç”¨æ€§ã‚’å…¼ã­å‚™ãˆã¾ã—ãŸã€‚<br>
    </span></td>
    <td><img src="images/spacer.gif" width="1" height="60" border="0" alt=""></td>
   </tr>
-  <tr>
    <td colspan="47"><img name="super_led_lamp_r39_c1" src="images/super_led_lamp_r39_c1.gif" width="1000" height="10" border="0" id="super_led_lamp_r39_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
@@ -387,7 +404,7 @@ T10ƒEƒFƒbƒWƒ^ƒCƒv‚Í2Ží—Þ‚ðƒ‰ƒCƒ“ƒiƒbƒvB‚¨Žg‚¢‚É‚È‚éêŠ‚É‚æ‚Á‚ÄÅ“K‚È”zŒõ‚ð‚¨‘I
   </tr>
   <tr>
    <td colspan="4" bgcolor="#FFFF66"><div align="center" class="style2">
-     <div align="center">( T10ŠgŽUƒNƒŠƒAƒJƒo[•t )</div>
+     <div align="center">( T10æ‹¡æ•£ã‚¯ãƒªã‚¢ã‚«ãƒãƒ¼ä»˜ )</div>
    </div></td>
    <td colspan="6" bgcolor="#FFFF66"><div align="center" class="style16">
      <div align="center">( T10 )</div>
@@ -396,36 +413,36 @@ T10ƒEƒFƒbƒWƒ^ƒCƒv‚Í2Ží—Þ‚ðƒ‰ƒCƒ“ƒiƒbƒvB‚¨Žg‚¢‚É‚È‚éêŠ‚É‚æ‚Á‚ÄÅ“K‚È”zŒõ‚ð‚¨‘I
   </tr>
   <tr>
    <td colspan="4" bgcolor="#FFFF66"><div align="left" class="style16">
-     <div align="center">SIZE 11.6‚‚~23‚‚</div>
+     <div align="center">SIZE 11.6ï½ï½Ã—23ï½ï½</div>
    </div></td>
-   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">SIZE 11.6‚‚~26‚‚</span></div></td>
+   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">SIZE 11.6ï½ï½Ã—26ï½ï½</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="4" bgcolor="#FFFF66"><div align="left" class="style16">
-     <div align="center">’èŠi“dˆ³@12`15V</div>
+     <div align="center">å®šæ ¼é›»åœ§ã€€12ï½ž15V</div>
    </div></td>
-   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">’èŠi“dˆ³@12`15V</span></div></td>
+   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">å®šæ ¼é›»åœ§ã€€12ï½ž15V</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="4" bgcolor="#FFFF66"><div align="left" class="style16">
-     <div align="center">Á”ï“d—¬@</div>
+     <div align="center">æ¶ˆè²»é›»æµã€€</div>
    </div></td>
-   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">Á”ï“d—¬@</span></div></td>
+   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">æ¶ˆè²»é›»æµã€€</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="4" bgcolor="#FFFF66"><div align="center" class="style16">–ñ29‚A`–ñ43‚A</div></td>
-    <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">–ñ35.2‚A`–ñ54.8‚A</span></div></td>
+    <td colspan="4" bgcolor="#FFFF66"><div align="center" class="style16">ç´„29ï½Aï½žç´„43ï½A</div></td>
+    <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">ç´„35.2ï½Aï½žç´„54.8ï½A</span></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
    <td colspan="4" bgcolor="#FFFF66"><div align="center" class="style16">
-     <div align="center">@F‰·“x@6000‚j</div>
+     <div align="center">ã€€è‰²æ¸©åº¦ã€€6000ï¼«</div>
    </div></td>
    <td colspan="6" bgcolor="#FFFF66"><div align="center" class="style16">
-     <div align="center">F‰·“x@6000‚j</div>
+     <div align="center">è‰²æ¸©åº¦ã€€6000ï¼«</div>
    </div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
@@ -470,32 +487,32 @@ T10ƒEƒFƒbƒWƒ^ƒCƒv‚Í2Ží—Þ‚ðƒ‰ƒCƒ“ƒiƒbƒvB‚¨Žg‚¢‚É‚È‚éêŠ‚É‚æ‚Á‚ÄÅ“K‚È”zŒõ‚ð‚¨‘I
    <td colspan="4" bgcolor="#FFFF66"><div align="center" class="style16">
      <div align="center">( G14 )</div>
    </div></td>
-   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">( T10~31 / T8~28 )</span></div></td>
+   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">( T10Ã—31 / T8Ã—28 )</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">SIZE 11.6‚‚~27‚‚</span></div></td>
-   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">SIZE 8.4‚‚~27‚‚</span></div></td>
+   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">SIZE 11.6ï½ï½Ã—27ï½ï½</span></div></td>
+   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">SIZE 8.4ï½ï½Ã—27ï½ï½</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">’èŠi“dˆ³@12`15V</span></div></td>
-   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">’èŠi“dˆ³@12`15V</span></div></td>
+   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">å®šæ ¼é›»åœ§ã€€12ï½ž15V</span></div></td>
+   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">å®šæ ¼é›»åœ§ã€€12ï½ž15V</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">Á”ï“d—¬@</span></div></td>
-   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">Á”ï“d—¬@–ñ57‚A</span></div></td>
+   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">æ¶ˆè²»é›»æµã€€</span></div></td>
+   <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">æ¶ˆè²»é›»æµã€€ç´„57ï½A</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">–ñ49.5‚A`–ñ68.3‚A</span></div></td>
-    <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">F‰·“x@6000‚j</span></div></td>
+    <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">ç´„49.5ï½Aï½žç´„68.3ï½A</span></div></td>
+    <td colspan="6" bgcolor="#FFFF66"><div align="center"><span class="style16">è‰²æ¸©åº¦ã€€6000ï¼«</span></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
    <td colspan="4" bgcolor="#FFFF66"><div align="center" class="style16">
-     <div align="center">F‰·“x@6000‚j</div>
+     <div align="center">è‰²æ¸©åº¦ã€€6000ï¼«</div>
    </div></td>
    <td colspan="6">&nbsp;</td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
@@ -531,23 +548,23 @@ T10ƒEƒFƒbƒWƒ^ƒCƒv‚Í2Ží—Þ‚ðƒ‰ƒCƒ“ƒiƒbƒvB‚¨Žg‚¢‚É‚È‚éêŠ‚É‚æ‚Á‚ÄÅ“K‚È”zŒõ‚ð‚¨‘I
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">( T6.3~30 )</span></div></td>
+   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">( T6.3Ã—30 )</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">SIZE 6‚‚~27‚‚</span></div></td>
+   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">SIZE 6ï½ï½Ã—27ï½ï½</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">’èŠi“dˆ³@12`15V</span></div></td>
+   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">å®šæ ¼é›»åœ§ã€€12ï½ž15V</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">Á”ï“d—¬@–ñ57.5‚A</span></div></td>
+   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">æ¶ˆè²»é›»æµã€€ç´„57.5ï½A</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">F‰·“x@6000‚j</span></div></td>
+   <td colspan="4" bgcolor="#FFFF66"><div align="center"><span class="style16">è‰²æ¸©åº¦ã€€6000ï¼«</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -561,49 +578,49 @@ T10ƒEƒFƒbƒWƒ^ƒCƒv‚Í2Ží—Þ‚ðƒ‰ƒCƒ“ƒiƒbƒvB‚¨Žg‚¢‚É‚È‚éêŠ‚É‚æ‚Á‚ÄÅ“K‚È”zŒõ‚ð‚¨‘I
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="47"><span class="style3">‚²w“ü‚Ì‘O‚É•K‚¸‚¨“Ç‚Ý‚­‚¾‚³‚¢B</span></td>
+   <td colspan="47"><span class="style3">ã”è³¼å…¥ã®å‰ã«å¿…ãšãŠèª­ã¿ãã ã•ã„ã€‚</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="47"><span class="style2" style="line-height:15px">œ ’iŠK“I“_“”EÁ“”‹@”\•tŽÔ‚Å‚Í“_“”EÁ“”Žž‚Éu‚¿‚ç‚Â‚«v‚âuƒtƒ‰ƒbƒVƒ…v‚ª¶‚¶‚éê‡‚ª‚ ‚è‚Ü‚·‚ªAˆÙí‚Å‚Í‚ ‚è‚Ü‚¹‚ñB<br>
-     œ –{»•i‚ÍDC12‚uEƒ}ƒCƒiƒXƒA[ƒXŽÔê—p‚Å‚·B<br>
-     œ Žw’èˆÈŠO‚Ì“dˆ³‚Å‚ÍŽg—p‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B‰ÎÐEŠ´“dEŒÌá‚ÌŒ´ˆö‚Æ‚È‚è‚Ü‚·B<br>
-     œ 15VˆÈã‚Ì“dˆ³‚ª‚©‚©‚é‚Æ–{»•i‚ª”j‘¹‚·‚é‹°‚ê‚ª‚ ‚èA“_“”•s—Ç‚â’˜‚µ‚­Žõ–½‚ª’Z‚­‚È‚è‚Ü‚·B‚»‚Ì‚æ‚¤‚ÈŽÔ—¼‚É‚ÍŽg—p‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B<br>
-     œ SLL-801‚É‚Í+E|‚ÌŒü‚«‚ª‚ ‚è‚Ü‚·B‘•’…Œã“_“”‚µ‚È‚¢ê‡‚Íƒ\ƒPƒbƒg‚ÌŒü‚«‚ð‹t‚É·‚µ’¼‚µ‚Ä‚­‚¾‚³‚¢B<br>
-     œ Žd—l‹y‚ÑŠOŠÏ‚Í‰ü—Ç‚Ìˆ×A—\–³‚­•ÏX‚·‚éê‡‚ª‚²‚´‚¢‚Ü‚·B<br>
-     œ –{»•i‚Í‘ŽYŽÔê—p•i‚Å‚·‚Ì‚ÅA—A“üŽÔ‚É‚ÍŽg—p‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B<br>
-     œ ‹…Ø‚êŒx“™‚ª“_“”‚·‚éŽÔ—¼‚É‚ÍŽg—p‚µ‚È‚¢‚Å‚­‚¾‚³‚¢BiÁ”ï“d—Í‚ª­‚È‚¢ˆ×AŽÔ—¼‚É‚æ‚Á‚Ä‚Í“_“”‚µ‚Ä‚µ‚Ü‚¢‚Ü‚·Bj<br>
-     œ “d‹…Á“”’¼Œã‚Í“d‹…‚ª”M‚­‚È‚Á‚Ä‚¢‚Ü‚·B“d‹…ŒðŠ·Žž‚É‚Í‰Î‚É\•ª‹C‚ð‚Â‚¯‚Äì‹Æ‚ðs‚Á‚Ä‚­‚¾‚³‚¢B<br>
-     œ –³—‚È—Í‚ð‰Á‚¦‚½‚èA•ª‰ð‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B<br>
-     œ “_“”’†‚Ì–{»•i‚ð’¼Ž‹‚µ‚È‚¢‚Å‚­‚¾‚³‚¢BŽ‹—ÍáŠQ‚ÌŒ´ˆö‚É‚È‚è‚Ü‚·B<br>
-     œ ŒðŠ·‚µ‚½‹…‚ÍA‘åØ‚É•ÛŠÇ‚µ‚Ä‚­‚¾‚³‚¢B<br>
-     œ ”­Œõ–Ê‚â–{‘Ì‹y‚Ñƒ\ƒPƒbƒg•”‚É‚Í“h—¿‚È‚Ç‚ð“h‚ç‚È‚¢‚Å‚­‚¾‚³‚¢B<br>
-     œ –{»•i‚É‚ÍŽõ–½‚ª‚ ‚è‚Ü‚·Bi–ñ6000ŽžŠÔj<br>
-     œ –{»•i‚Í–h…‰ÁH‚ð‚µ‚Ä‚¨‚è‚Ü‚¹‚ñB<br>
-     œ Žw’è‚³‚ê‚½ü‚ð’T‚·‚Æ‚«‚Í•K‚¸ƒT[ƒLƒbƒgƒeƒXƒ^[‚ðŽg—p‚µAŒŸ“dŠíiƒ‰ƒ“ƒvƒeƒXƒ^[j“™‚ÍŽg—p‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B<br>
-     œ –{»•i‚ðŽæ‚è•t‚¯‚·‚éÛ‚ÍA‘¼‚Ì‹@Ší‚É‰e‹¿‚ð—^‚¦‚È‚¢êŠ‹y‚Ñ‰^“]‚É·‚µŽx‚¦‚Ì‚È‚¢êŠ‚ÉÝ’u‚µ‚Ä‚­‚¾‚³‚¢B<br>
-     œ ŽÔ—¼‚ÌƒoƒbƒeƒŠ[‚ªŽã‚Á‚Ä‚¢‚éó‘Ô‹y‚ÑAŽÔ—¼–{—ˆ‚Ì‹@”\‚É•s”õ‚ª‚ ‚éê‡‚É‚Í–{»•i‚ðŽæ‚è•t‚¯–”‚ÍAŽg—p‚µ‚È‚¢‚Å‚­‚¾‚³‚¢B<br>
-     @ »•i‚ª³í‚É“®ì‚µ‚È‚©‚Á‚½‚èAŽÔ—¼‹@Ší‚É‰e‹¿‚ð—^‚¦‚é‹°‚ê‚ª‚ ‚è‚Ü‚·B<br>
-     œ –{»•i‚ÌŽæ‚è•t‚¯‚ÍAŽæ‚è•t‚¯‹Zp‚Ì‚ ‚é”Ì”„“X‚Ås‚Á‚Ä‚­‚¾‚³‚¢B<br>
-     œ –{»•i‚Æ‘¼‹@Ší‚Æ•¹—p‚µ‚ÄŽg—p‚·‚éê‡A‘¼‹@Ší‚ÌŽæˆµà–¾‘‚à‚æ‚­‚¨“Ç‚Ý‚É‚È‚è³‚µ‚¢Žg—p•û–@‚ÅŽg—p‚µ‚Ä‚­‚¾‚³‚¢B<br>
-     œ –{»•i‚ðŽæ‚è•t‚¯‚·‚éÛAŽÔ‘Ì‚Ì‹à‘®•”•ª‚ÉG‚ê‚È‚¢‚æ‚¤‚É‚²’ˆÓ‚­‚¾‚³‚¢B‰ÎÐEŠ´“dEŒÌá‚ÌŒ´ˆö‚Æ‚È‚è‚Ü‚·B<br>
-     œ Žæ‚è•t‚¯‚ÌÛ‚É‚Í•K‚¸ƒGƒ“ƒWƒ“‚ð’âŽ~‚µ‚½ó‘Ô‚Ås‚Á‚Ä‚­‚¾‚³‚¢B‰ÎÐEŠ´“dEŒÌá‚ÌŒ´ˆö‚Æ‚È‚è‚Ü‚·B<br>
-     œ Œë‚Á‚½Žæ‚èˆµ‚¢A‰ü‘¢“™‚É‚æ‚éŒÌá‚Å‚Ì•Ô•iŒðŠ·‚È‚Ç‚ÍŽó•t‚Å‚«‚Ü‚¹‚ñ‚Ì‚ÅA‚²—¹³‚­‚¾‚³‚¢B<br>
-     œ ¤•i‚ÌƒNƒŒ[ƒ€A•s—Ç“™‚Ì•ÛØ‚ÍŒ»•i‚ÌŒðŠ·‚Ì‚Ý‚Æ‚³‚¹‚Ä’¸‚«‚Ü‚·B<br>
-     @ ‚»‚Ì‘¼‚Ì•ÛØiŽæ‚è•t‚¯H’ÀA•”•i‘ãEw“ü‘ã‹à“™j‚Ío—ˆ‚Ü‚¹‚ñ‚Ì‚ÅA—\‚ß‚²—¹³‚­‚¾‚³‚¢B<br>
-     œ ã‹L‚Ì‚²’ˆÓŽ–€‚É]‚í‚È‚¢ê‡‚âAŒë‚Á‚½Žg—p‚ð‚³‚ê‚½ê‡‚ÌŽ–ŒÌA”j‘¹“™‚É‚Â‚«‚Ü‚µ‚Ä‚ÍA“–ŽÐ‚Å‚ÍˆêØ‚ÌÓ”CE•ÛØE•Ô•i‚Í•‰‚¢‚©‚Ë‚Ü‚·B<br>
-     œ »•i‚ÌƒfƒUƒCƒ“AŽd—lAŠOŠÏAF‡‚¢“™‚É‚Â‚«‚Ü‚µ‚Ä‚Í—\‚È‚­•ÏX‚â¶ŽY‚ðI—¹‚·‚éê‡‚ª‚ ‚è‚Ü‚·B‚Ü‚½A»•i‚ÌŽÊ^“™‚ÌF‚ÍŽÀ•¨‚Æ‚Í‚Í‘½­ˆÙ‚È‚éê‡‚ª‚ ‚è‚Ü‚·‚Ì‚ÅA<br>
-     @ ‚ ‚ç‚©‚¶‚ß‚²—¹³‚­‚¾‚³‚¢B</span></td>
+   <td colspan="47"><span class="style2" style="line-height:15px">â— æ®µéšŽçš„ç‚¹ç¯ãƒ»æ¶ˆç¯æ©Ÿèƒ½ä»˜è»Šã§ã¯ç‚¹ç¯ãƒ»æ¶ˆç¯æ™‚ã«ã€Œã¡ã‚‰ã¤ãã€ã‚„ã€Œãƒ•ãƒ©ãƒƒã‚·ãƒ¥ã€ãŒç”Ÿã˜ã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ãŒã€ç•°å¸¸ã§ã¯ã‚ã‚Šã¾ã›ã‚“ã€‚<br>
+     â— æœ¬è£½å“ã¯DC12ï¼¶ãƒ»ãƒžã‚¤ãƒŠã‚¹ã‚¢ãƒ¼ã‚¹è»Šå°‚ç”¨ã§ã™ã€‚<br>
+     â— æŒ‡å®šä»¥å¤–ã®é›»åœ§ã§ã¯ä½¿ç”¨ã—ãªã„ã§ãã ã•ã„ã€‚ç«ç½ãƒ»æ„Ÿé›»ãƒ»æ•…éšœã®åŽŸå› ã¨ãªã‚Šã¾ã™ã€‚<br>
+     â— 15Vä»¥ä¸Šã®é›»åœ§ãŒã‹ã‹ã‚‹ã¨æœ¬è£½å“ãŒç ´æã™ã‚‹æã‚ŒãŒã‚ã‚Šã€ç‚¹ç¯ä¸è‰¯ã‚„è‘—ã—ãå¯¿å‘½ãŒçŸ­ããªã‚Šã¾ã™ã€‚ãã®ã‚ˆã†ãªè»Šä¸¡ã«ã¯ä½¿ç”¨ã—ãªã„ã§ãã ã•ã„ã€‚<br>
+     â— SLL-801ã«ã¯+ãƒ»ï¼ã®å‘ããŒã‚ã‚Šã¾ã™ã€‚è£…ç€å¾Œç‚¹ç¯ã—ãªã„å ´åˆã¯ã‚½ã‚±ãƒƒãƒˆã®å‘ãã‚’é€†ã«å·®ã—ç›´ã—ã¦ãã ã•ã„ã€‚<br>
+     â— ä»•æ§˜åŠã³å¤–è¦³ã¯æ”¹è‰¯ã®ç‚ºã€äºˆå‘Šç„¡ãå¤‰æ›´ã™ã‚‹å ´åˆãŒã”ã–ã„ã¾ã™ã€‚<br>
+     â— æœ¬è£½å“ã¯å›½ç”£è»Šå°‚ç”¨å“ã§ã™ã®ã§ã€è¼¸å…¥è»Šã«ã¯ä½¿ç”¨ã—ãªã„ã§ãã ã•ã„ã€‚<br>
+     â— çƒåˆ‡ã‚Œè­¦å‘Šç­‰ãŒç‚¹ç¯ã™ã‚‹è»Šä¸¡ã«ã¯ä½¿ç”¨ã—ãªã„ã§ãã ã•ã„ã€‚ï¼ˆæ¶ˆè²»é›»åŠ›ãŒå°‘ãªã„ç‚ºã€è»Šä¸¡ã«ã‚ˆã£ã¦ã¯ç‚¹ç¯ã—ã¦ã—ã¾ã„ã¾ã™ã€‚ï¼‰<br>
+     â— é›»çƒæ¶ˆç¯ç›´å¾Œã¯é›»çƒãŒç†±ããªã£ã¦ã„ã¾ã™ã€‚é›»çƒäº¤æ›æ™‚ã«ã¯ç«å‚·ã«ååˆ†æ°—ã‚’ã¤ã‘ã¦ä½œæ¥­ã‚’è¡Œã£ã¦ãã ã•ã„ã€‚<br>
+     â— ç„¡ç†ãªåŠ›ã‚’åŠ ãˆãŸã‚Šã€åˆ†è§£ã—ãªã„ã§ãã ã•ã„ã€‚<br>
+     â— ç‚¹ç¯ä¸­ã®æœ¬è£½å“ã‚’ç›´è¦–ã—ãªã„ã§ãã ã•ã„ã€‚è¦–åŠ›éšœå®³ã®åŽŸå› ã«ãªã‚Šã¾ã™ã€‚<br>
+     â— äº¤æ›ã—ãŸçƒã¯ã€å¤§åˆ‡ã«ä¿ç®¡ã—ã¦ãã ã•ã„ã€‚<br>
+     â— ç™ºå…‰é¢ã‚„æœ¬ä½“åŠã³ã‚½ã‚±ãƒƒãƒˆéƒ¨ã«ã¯å¡—æ–™ãªã©ã‚’å¡—ã‚‰ãªã„ã§ãã ã•ã„ã€‚<br>
+     â— æœ¬è£½å“ã«ã¯å¯¿å‘½ãŒã‚ã‚Šã¾ã™ã€‚ï¼ˆç´„6000æ™‚é–“ï¼‰<br>
+     â— æœ¬è£½å“ã¯é˜²æ°´åŠ å·¥ã‚’ã—ã¦ãŠã‚Šã¾ã›ã‚“ã€‚<br>
+     â— æŒ‡å®šã•ã‚ŒãŸç·šã‚’æŽ¢ã™ã¨ãã¯å¿…ãšã‚µãƒ¼ã‚­ãƒƒãƒˆãƒ†ã‚¹ã‚¿ãƒ¼ã‚’ä½¿ç”¨ã—ã€æ¤œé›»å™¨ï¼ˆãƒ©ãƒ³ãƒ—ãƒ†ã‚¹ã‚¿ãƒ¼ï¼‰ç­‰ã¯ä½¿ç”¨ã—ãªã„ã§ãã ã•ã„ã€‚<br>
+     â— æœ¬è£½å“ã‚’å–ã‚Šä»˜ã‘ã™ã‚‹éš›ã¯ã€ä»–ã®æ©Ÿå™¨ã«å½±éŸ¿ã‚’ä¸Žãˆãªã„å ´æ‰€åŠã³é‹è»¢ã«å·®ã—æ”¯ãˆã®ãªã„å ´æ‰€ã«è¨­ç½®ã—ã¦ãã ã•ã„ã€‚<br>
+     â— è»Šä¸¡ã®ãƒãƒƒãƒ†ãƒªãƒ¼ãŒå¼±ã£ã¦ã„ã‚‹çŠ¶æ…‹åŠã³ã€è»Šä¸¡æœ¬æ¥ã®æ©Ÿèƒ½ã«ä¸å‚™ãŒã‚ã‚‹å ´åˆã«ã¯æœ¬è£½å“ã‚’å–ã‚Šä»˜ã‘åˆã¯ã€ä½¿ç”¨ã—ãªã„ã§ãã ã•ã„ã€‚<br>
+     ã€€ è£½å“ãŒæ­£å¸¸ã«å‹•ä½œã—ãªã‹ã£ãŸã‚Šã€è»Šä¸¡æ©Ÿå™¨ã«å½±éŸ¿ã‚’ä¸Žãˆã‚‹æã‚ŒãŒã‚ã‚Šã¾ã™ã€‚<br>
+     â— æœ¬è£½å“ã®å–ã‚Šä»˜ã‘ã¯ã€å–ã‚Šä»˜ã‘æŠ€è¡“ã®ã‚ã‚‹è²©å£²åº—ã§è¡Œã£ã¦ãã ã•ã„ã€‚<br>
+     â— æœ¬è£½å“ã¨ä»–æ©Ÿå™¨ã¨ä½µç”¨ã—ã¦ä½¿ç”¨ã™ã‚‹å ´åˆã€ä»–æ©Ÿå™¨ã®å–æ‰±èª¬æ˜Žæ›¸ã‚‚ã‚ˆããŠèª­ã¿ã«ãªã‚Šæ­£ã—ã„ä½¿ç”¨æ–¹æ³•ã§ä½¿ç”¨ã—ã¦ãã ã•ã„ã€‚<br>
+     â— æœ¬è£½å“ã‚’å–ã‚Šä»˜ã‘ã™ã‚‹éš›ã€è»Šä½“ã®é‡‘å±žéƒ¨åˆ†ã«è§¦ã‚Œãªã„ã‚ˆã†ã«ã”æ³¨æ„ãã ã•ã„ã€‚ç«ç½ãƒ»æ„Ÿé›»ãƒ»æ•…éšœã®åŽŸå› ã¨ãªã‚Šã¾ã™ã€‚<br>
+     â— å–ã‚Šä»˜ã‘ã®éš›ã«ã¯å¿…ãšã‚¨ãƒ³ã‚¸ãƒ³ã‚’åœæ­¢ã—ãŸçŠ¶æ…‹ã§è¡Œã£ã¦ãã ã•ã„ã€‚ç«ç½ãƒ»æ„Ÿé›»ãƒ»æ•…éšœã®åŽŸå› ã¨ãªã‚Šã¾ã™ã€‚<br>
+     â— èª¤ã£ãŸå–ã‚Šæ‰±ã„ã€æ”¹é€ ç­‰ã«ã‚ˆã‚‹æ•…éšœã§ã®è¿”å“äº¤æ›ãªã©ã¯å—ä»˜ã§ãã¾ã›ã‚“ã®ã§ã€ã”äº†æ‰¿ãã ã•ã„ã€‚<br>
+     â— å•†å“ã®ã‚¯ãƒ¬ãƒ¼ãƒ ã€ä¸è‰¯ç­‰ã®ä¿è¨¼ã¯ç¾å“ã®äº¤æ›ã®ã¿ã¨ã•ã›ã¦é ‚ãã¾ã™ã€‚<br>
+     ã€€ ãã®ä»–ã®ä¿è¨¼ï¼ˆå–ã‚Šä»˜ã‘å·¥è³ƒã€éƒ¨å“ä»£ãƒ»è³¼å…¥ä»£é‡‘ç­‰ï¼‰ã¯å‡ºæ¥ã¾ã›ã‚“ã®ã§ã€äºˆã‚ã”äº†æ‰¿ãã ã•ã„ã€‚<br>
+     â— ä¸Šè¨˜ã®ã”æ³¨æ„äº‹é …ã«å¾“ã‚ãªã„å ´åˆã‚„ã€èª¤ã£ãŸä½¿ç”¨ã‚’ã•ã‚ŒãŸå ´åˆã®äº‹æ•…ã€ç ´æç­‰ã«ã¤ãã¾ã—ã¦ã¯ã€å½“ç¤¾ã§ã¯ä¸€åˆ‡ã®è²¬ä»»ãƒ»ä¿è¨¼ãƒ»è¿”å“ã¯è² ã„ã‹ã­ã¾ã™ã€‚<br>
+     â— è£½å“ã®ãƒ‡ã‚¶ã‚¤ãƒ³ã€ä»•æ§˜ã€å¤–è¦³ã€è‰²åˆã„ç­‰ã«ã¤ãã¾ã—ã¦ã¯äºˆå‘Šãªãå¤‰æ›´ã‚„ç”Ÿç”£ã‚’çµ‚äº†ã™ã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã€‚ã¾ãŸã€è£½å“ã®å†™çœŸç­‰ã®è‰²ã¯å®Ÿç‰©ã¨ã¯ã¯å¤šå°‘ç•°ãªã‚‹å ´åˆãŒã‚ã‚Šã¾ã™ã®ã§ã€<br>
+     ã€€ ã‚ã‚‰ã‹ã˜ã‚ã”äº†æ‰¿ãã ã•ã„ã€‚</span></td>
    <td><img src="images/spacer.gif" width="1" height="200" border="0" alt=""></td>
   </tr>
     <tr>
-   <td colspan="47"><span class="style3">•ÛØ‹K’è</span></td>
+   <td colspan="47"><span class="style3">ä¿è¨¼è¦å®š</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="47"><span class="style2" style="line-height:15px">œ –{»•i‚Í3”N•ÛØ‚Æ‚È‚è‚Ü‚·B<br>
-     œ Žæˆµà–¾‘‚É]‚Á‚½³í‚ÈŽg—pó‘Ô‚Ì‰º‚Å•s‹ï‡‚ª¶‚¶‚½ê‡‚ÍA•ÛØ‘‚Ì‹LÚ“à—e‚É‚æ‚è•”•iŒðŠ·‚ð’v‚µ‚Ü‚·‚ªA’E’…‚É‚©‚©‚éH’À‚â»•i‚ðŽg—p‚µ‚Ä¶‚¶‚½‘¹ŠQ“™‚É‚Â‚¢‚Ä<br>
-@@•¾ŽÐ‚Å‚ÍˆêØÓ”C‚ð•‰‚¢‚©‚Ë‚Ü‚·B
+   <td colspan="47"><span class="style2" style="line-height:15px">â— æœ¬è£½å“ã¯3å¹´ä¿è¨¼ã¨ãªã‚Šã¾ã™ã€‚<br>
+     â— å–æ‰±èª¬æ˜Žæ›¸ã«å¾“ã£ãŸæ­£å¸¸ãªä½¿ç”¨çŠ¶æ…‹ã®ä¸‹ã§ä¸å…·åˆãŒç”Ÿã˜ãŸå ´åˆã¯ã€ä¿è¨¼æ›¸ã®è¨˜è¼‰å†…å®¹ã«ã‚ˆã‚Šéƒ¨å“äº¤æ›ã‚’è‡´ã—ã¾ã™ãŒã€è„±ç€ã«ã‹ã‹ã‚‹å·¥è³ƒã‚„è£½å“ã‚’ä½¿ç”¨ã—ã¦ç”Ÿã˜ãŸæå®³ç­‰ã«ã¤ã„ã¦<br>
+ã€€ã€€å¼Šç¤¾ã§ã¯ä¸€åˆ‡è²¬ä»»ã‚’è² ã„ã‹ã­ã¾ã™ã€‚
     </span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
@@ -627,20 +644,9 @@ T10ƒEƒFƒbƒWƒ^ƒCƒv‚Í2Ží—Þ‚ðƒ‰ƒCƒ“ƒiƒbƒvB‚¨Žg‚¢‚É‚È‚éêŠ‚É‚æ‚Á‚ÄÅ“K‚È”zŒõ‚ð‚¨‘I
    <td colspan="47"><img name="kanrenseihin_underbar" src="images/kanrenseihin_underbar.gif" width="1000" height="10" border="0" id="kanrenseihin_underbar" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="2" colspan="38"><img name="super_led_lamp_r76_c1" src="images/super_led_lamp_r76_c1.gif" width="817" height="90" border="0" id="super_led_lamp_r76_c1" alt=""></td>
-   <td colspan="5"><a href="superledlamp.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('super_led_lamp_r76_c39','','images/super_led_lamp_r76_c39_f2.gif',1);"><img name="super_led_lamp_r76_c39" src="images/super_led_lamp_r76_c39.gif" width="85" height="15" border="0" id="super_led_lamp_r76_c39" alt=""></a></td>
-   <td rowspan="2" colspan="4"><img name="super_led_lamp_r76_c44" src="images/super_led_lamp_r76_c44.gif" width="98" height="90" border="0" id="super_led_lamp_r76_c44" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="5"><img name="super_led_lamp_r77_c39" src="images/super_led_lamp_r77_c39.gif" width="85" height="75" border="0" id="super_led_lamp_r77_c39" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="75" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="47"><img name="super_led_lamp_r78_c1" src="images/super_led_lamp_r78_c1.gif" width="1000" height="78" border="0" id="super_led_lamp_r78_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="78" border="0" alt=""></td>
-  </tr>
+  
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

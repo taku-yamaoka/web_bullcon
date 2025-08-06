@@ -1,8 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<title>�X�e�A�����O�X�C�b�`�R���g���[���[/Bullcon-�t�W�d�@�H�Ɗ������-</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>ステアリングスイッチコントローラー/Bullcon-フジ電機工業株式会社-</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -42,6 +44,41 @@ function MM_preloadImages() { //v3.0
 function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
 }
+
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -55,7 +92,9 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/steering_sw_r3_c34_f2.gif','images/steering_sw_r3_c47_f2.gif','images/steering_sw_r3_c59_f2.gif','images/steering_sw_r3_c66_f2.gif','images/steering_sw_r8_c7_f2.gif','images/steering_sw_r9_c5_f2.gif','images/steering_sw_r13_c5_f2.gif','images/steering_sw_r13_c15_f2.gif','images/steering_sw_r13_c26_f2.gif','images/steering_sw_r13_c42_f2.gif','images/steering_sw_r13_c51_f2.gif','images/steering_sw_r13_c65_f2.gif','images/steering_sw_r30_c50_f2.gif','images/steering_sw_r30_c63_f2.gif','images/steering_sw_r34_c3_f2.gif','images/steering_sw_r34_c11_f2.gif','images/steering_sw_r34_c19_f2.gif','images/steering_sw_r41_c4_f2.gif','images/steering_sw_r45_c3_f2.gif','images/steering_sw_r45_c8_f2.gif','images/steering_sw_r45_c16_f2.gif','images/steering_sw_r45_c21_f2.gif','images/steering_sw_r45_c27_f2.gif','images/steering_sw_r45_c37_f2.gif','images/steering_sw_r45_c45_f2.gif','images/steering_sw_r45_c53_f2.gif','images/steering_sw_r76_c61_f2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000"
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000"
 align="center">
   <tr>
    <td><img src="images/spacer.gif" width="5" height="1" border="0" alt=""></td>
@@ -134,30 +173,11 @@ align="center">
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
 
-   <tr><td colspan="73"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="73"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/aa.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td rowspan="2" colspan="19"><img name="steering_sw_r18_c1" src="images/steering_sw_r18_c1.gif" width="300" height="60" border="0" id="steering_sw_r18_c1" alt=""></td>
    <td colspan="21"><img name="steering_sw_r18_c20" src="images/steering_sw_r18_c20.gif" width="243" height="30" border="0" id="steering_sw_r18_c20" alt=""></td>
    <td colspan="22"></td>
-   <td colspan="7" bgcolor="#3399FF"><div align="center" class="style10">�����擾</div></td>
+   <td colspan="7" bgcolor="#3399FF"><div align="center" class="style10">特許取得</div></td>
    <td colspan="4"></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
@@ -177,9 +197,9 @@ align="center">
    <td colspan="11" style="vertical-align: bottom"><img name="steering_sw_r21_c13" src="images/steering_sw_r21_c13.gif" width="160" height="25" border="0" id="steering_sw_r21_c13" alt=""></td>
    <td rowspan="8" colspan="16"><img name="steering_sw_r21_c24" src="images/steering_sw_r21_c24.gif" width="188" height="210" border="0" id="steering_sw_r21_c24" alt=""></td>
    <td colspan="9" style="vertical-align: bottom"><img name="steering_sw_r21_c40" src="images/steering_sw_r21_c40.gif" width="160" height="25" border="0" id="steering_sw_r21_c40" alt=""></td>
-   <td colspan="25" rowspan="8" valign="top"><span style="font-size: 14px">�ԗ��̃X�e�A�����O�X�C�b�`�𗘗p���O�����͋@��̑��삪�s�������I�ȏ��i�ł��B</p>
-     <p class="style1">���Ƀ��[�J�[�i�r�Q�[�V�������A�O�����͂Ŏg�p����n��f�W�^���`���[�i�[�̑I�Ǔ����X�e�A�����O�X�C�b�`�ōs���܂��̂ŁA�������o�Ŏg�p���Ē�����悤�ɂȂ�܂��B</p>
-       <p class="style1">���A�����@�\�𑹂Ȃ����͂���܂���B</p></span></td>
+   <td colspan="25" rowspan="8" valign="top"><span style="font-size: 14px">車両のステアリングスイッチを利用し外部入力機器の操作が行える画期的な商品です。</p>
+     <p class="style1">特にメーカーナビゲーション等、外部入力で使用する地上デジタルチューナーの選局等をステアリングスイッチで行えますので、純正感覚で使用して頂けるようになります。</p>
+       <p class="style1">又、純正機能を損なう事はありません。</p></span></td>
    <td><img src="images/spacer.gif" width="1" height="45" border="0" alt=""></td>
   </tr>
   <tr>
@@ -188,12 +208,12 @@ align="center">
    <td><img src="images/spacer.gif" width="1" height="35" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="11" rowspan="6" style="line-height: 20px; vertical-align: top"><span style="font-size: 15px"><b>�̔����i<br> 
-     ���P�O�C�V�W�O</b></span><span style="font-size: 13px">�i�ō��j<br>
-     �i�Ŕ����i �X�C�W�O�O�j</span><br><span style="font-size: 12px">JAN�R�[�h<br> �S�X�T�O�O�X�S�O�U�O�V�T�T</span></td>
-   <td colspan="9" rowspan="6" style="line-height: 20px; vertical-align: top"><span style="font-size: 15px"><b>�̔����i<br> 
-     ���P�O�C�V�W�O</b></span><span style="font-size: 13px">�i�ō��j<br>
-     �i�Ŕ����i �X�C�W�O�O�j</span><br><span style="font-size: 12px">JAN�R�[�h<br> �S�X�T�O�O�X�S�O�U�O�V�V�X</span></td>
+   <td colspan="11" rowspan="6" style="line-height: 20px; vertical-align: top"><span style="font-size: 15px"><b>販売価格<br> 
+     ￥１０，７８０</b></span><span style="font-size: 13px">（税込）<br>
+     （税抜価格 ９，８００）</span><br><span style="font-size: 12px">JANコード<br> ４９５００９４０６０７５５</span></td>
+   <td colspan="9" rowspan="6" style="line-height: 20px; vertical-align: top"><span style="font-size: 15px"><b>販売価格<br> 
+     ￥１０，７８０</b></span><span style="font-size: 13px">（税込）<br>
+     （税抜価格 ９，８００）</span><br><span style="font-size: 12px">JANコード<br> ４９５００９４０６０７７９</span></td>
   </tr>
   <tr>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
@@ -233,8 +253,8 @@ align="center">
    <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="21"><span class="style5">���[�J�[�� ����m�F�Ԏ�ꗗ �iPDF�j</span></td>
-   <td colspan="25"><span class="style3">2024�N11��26���X�V</span></td>
+   <td colspan="21"><span class="style5">メーカー別 動作確認車種一覧 （PDF）</span></td>
+   <td colspan="25"><span class="style3">2024年11月26日更新</span></td>
    <td><img src="images/spacer.gif" width="1" height="21" border="0" alt=""></td>
   </tr>
   <tr>
@@ -248,15 +268,15 @@ align="center">
   </tr>
   <tr>
    <td rowspan="3"><img name="steering_sw_r35_c3" src="images/steering_sw_r35_c3.gif" width="1" height="60" border="0" id="steering_sw_r35_c3" alt=""></td>
-   <td colspan="70"><span class="style1">��L�A���[�J�[�� ����m�F�Ԏ�ꗗ�ɋL�ڂ̃X�e�A�����O�X�C�b�`�����ԗ��ł���A</span></td>
+   <td colspan="70"><span class="style1">上記、メーカー別 動作確認車種一覧に記載のステアリングスイッチ装着車両であり、</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="70"><span class="style1">���L�A�n��f�W�^���`���[�i�[����m�F�@��ꗗ/�i�r�Q�[�V�������[�J�[�� ����m�F�@��ꗗ�\�ɋL�ڂ̂���A</span></td>
+   <td colspan="70"><span class="style1">下記、地上デジタルチューナー動作確認機種一覧/ナビゲーションメーカー別 動作確認機種一覧表に記載のある、</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="70"><span class="style1">�n��f�W�^���`���[�i�[���i�^�ԋy�сA�i�r�Q�[�V�����̐��i�^�Ԃł���΁A�X�e�A�����O�X�C�b�`�ł̑��삪�\�ł��B</span></td>
+   <td colspan="70"><span class="style1">地上デジタルチューナー製品型番及び、ナビゲーションの製品型番であれば、ステアリングスイッチでの操作が可能です。</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -268,9 +288,9 @@ align="center">
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="24" align="left"><span class="style5"><span class="style6">aa</span>�n��f�W�^���`���[�i�[ ����m�F�@��ꗗ �iPDF�j</span></td>
-   <td colspan="10" align="right"><span class="style3">2012�N1��12���X�V</span></td>
-   <td colspan="39" align="center"><span class="style3">���L�ڃ��[�J�[�̐��i�i�ԁi�^���j��K�����m�F���������B</span></td>
+   <td colspan="24" align="left"><span class="style5"><span class="style6">aa</span>地上デジタルチューナー 動作確認機種一覧 （PDF）</span></td>
+   <td colspan="10" align="right"><span class="style3">2012年1月12日更新</span></td>
+   <td colspan="39" align="center"><span class="style3">※記載メーカーの製品品番（型式）を必ずご確認ください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -288,8 +308,8 @@ align="center">
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="30" align="left"><span class="style1"><STRONG><span class="style6">aa</span>�i�r�Q�[�V�������[�J�[�� ����m�F�@��ꗗ �iPDF�j</STRONG></span></td>
-   <td colspan="15"><span class="style3">2011�N6��24���X�V</span></td>
+   <td colspan="30" align="left"><span class="style1"><STRONG><span class="style6">aa</span>ナビゲーションメーカー別 動作確認機種一覧 （PDF）</STRONG></span></td>
+   <td colspan="15"><span class="style3">2011年6月24日更新</span></td>
    <td colspan="28"><img name="steering_sw_r44_c46" src="images/steering_sw_r44_c46.gif" width="360" height="20" border="0" id="steering_sw_r44_c46" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
@@ -318,20 +338,20 @@ align="center">
   </tr>
   <tr>
    <td rowspan="24" colspan="4"><img name="steering_sw_r48_c32" src="images/steering_sw_r48_c32.gif" width="37" height="783" border="0" id="steering_sw_r48_c32" alt=""></td>
-      <td colspan="37" align="center"><span style="font-size: 13px"><b>���[�J�[�i�r�Q�[�V�����A���̏ꍇ</b></span></td>
+      <td colspan="37" align="center"><span style="font-size: 13px"><b>メーカーナビゲーション連動の場合</b></span></td>
    <td rowspan="24"><img name="steering_sw_r48_c73" src="images/steering_sw_r48_c73.gif" width="6" height="783" border="0" id="steering_sw_r48_c73" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="37"><span style="font-size: 12px">�O������ ( VTR ) �Œn��f�W�^���`���[�i�[��ڑ������ꍇ�A</span></td>
+   <td colspan="37"><span style="font-size: 12px">外部入力 ( VTR ) で地上デジタルチューナーを接続した場合、</span></td>
    <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="37"><span style="font-size: 12px">�`���[�i�[�t���̃����R�����g�p�����Ɏԗ��X�e�A�����O�X�C�b�`�� SEEK �X�C�b�`��</span></td>
+   <td colspan="37"><span style="font-size: 12px">チューナー付属のリモコンを使用せずに車両ステアリングスイッチの SEEK スイッチで</span></td>
    <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="37"><span style="font-size: 12px">�I�ǂ��o���܂��B( 2�{�^���̓o�^���\ )</span></td>
+   <td colspan="37"><span style="font-size: 12px">選局が出来ます。( 2ボタンの登録が可能 )</span></td>
    <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
   </tr>
   <tr>
@@ -353,31 +373,31 @@ align="center">
    <td><img src="images/spacer.gif" width="1" height="29" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="37" rowspan="2" align="center"><span style="font-size: 13px"><b>�s�̃i�r�Q�[�V����+�n�f�W�`���[�i�[�̏ꍇ</b></span></td>
+   <td colspan="37" rowspan="2" align="center"><span style="font-size: 13px"><b>市販ナビゲーション+地デジチューナーの場合</b></span></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
    <td rowspan="2" colspan="3"><img name="steering_sw_r58_c2" src="images/steering_sw_r58_c2.gif" width="33" height="20" border="0" id="steering_sw_r58_c2" alt=""></td>
-      <td colspan="24" rowspan="2" align="center"><span style="font-size: 13px"><b>�s�̃i�r�Q�[�V�����A���̏ꍇ</b></span></td>
+      <td colspan="24" rowspan="2" align="center"><span style="font-size: 13px"><b>市販ナビゲーション連動の場合</b></span></td>
    <td rowspan="2" colspan="3"><img name="steering_sw_r58_c29" src="images/steering_sw_r58_c29.gif" width="34" height="20" border="0" id="steering_sw_r58_c29" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="2" colspan="37"><span style="font-size: 12px">�s�̂̃i�r�Q�[�V��������@�\�ƒn��f�W�^���`���[�i�[�̑I�ǂ�</span></td>
+   <td rowspan="2" colspan="37"><span style="font-size: 12px">市販のナビゲーション操作機能と地上デジタルチューナーの選局を</span></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
    <td rowspan="12" colspan="2"><img name="steering_sw_r60_c2" src="images/steering_sw_r60_c2.gif" width="13" height="354" border="0" id="steering_sw_r60_c2" alt=""></td>
-   <td rowspan="2" colspan="26"><span style="font-size: 12px">�s�̂̃i�r�Q�[�V�����@�\��I�[�f�B�I������X�e�A�����O�X�C�b�`�ŉ��ʒ�����</span></td>
+   <td rowspan="2" colspan="26"><span style="font-size: 12px">市販のナビゲーション機能やオーディオ操作をステアリングスイッチで音量調整や</span></td>
    <td rowspan="12" colspan="2"><img name="steering_sw_r60_c30" src="images/steering_sw_r60_c30.gif" width="9" height="354" border="0" id="steering_sw_r60_c30" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="5" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="2" colspan="37"><span style="font-size: 12px">�X�e�A�����O�X�C�b�`�����@�\���̂܂܂ɑ���o���܂��B( 8�{�^���̓o�^���\ )</span></td>
+   <td rowspan="2" colspan="37"><span style="font-size: 12px">ステアリングスイッチ純正機能そのままに操作出来ます。( 8ボタンの登録が可能 )</span></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="2" colspan="26"><span style="font-size: 12px">�I�ȓ������@�\���̂܂܂ɑ���o���܂��B( 8�{�^���̓o�^���\ )</span></td>
+   <td rowspan="2" colspan="26"><span style="font-size: 12px">選曲等純正機能そのままに操作出来ます。( 8ボタンの登録が可能 )</span></td>
    <td><img src="images/spacer.gif" width="1" height="5" border="0" alt=""></td>
   </tr>
   <tr>
@@ -416,55 +436,42 @@ align="center">
    <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
   </tr>
   <tr>
-      <td colspan="73"><span style="font-size: 13px"><b>���w���̑O�ɂ��ǂ݂��������B</b></span></td>
+      <td colspan="73"><span style="font-size: 13px"><b>ご購入の前にお読みください。</b></span></td>
    <td><img src="images/spacer.gif" width="1" height="21" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="73" valign="top" style="line-height:18px"><span style="font-size: 12px">�����[�J�[�I�v�V�����i�r�Q�[�V�����y�уf�B�[���[�I�v�V�����i�r�Q�[�V�����֒n��f�W�^���`���[�i�[�𑕒������ꍇ�A�{���i�őI�Ǔ��̑���͏o���܂����A<br>
-     �@ ���s���̃e���r�����͍s���܂���B���s���̃e���r�����y�уi�r�Q�[�V����������s���ɂ͖{���i�̑��� FreeTVing / TELENAVing �𑕒�����K�v��������܂��B<BR>
-���{���i�փi�r�Q�[�V�����y�ђn��f�W�^���`���[�i�[�̑���M����o�^����ɂ́A�i�r�Q�[�V�����y�ђn��f�W�^���`���[�i�[�@��̐ԊO�������R�����K�v�ł��̂ł����ӂ��������B<BR>
-���g�p�ɍۂ��ẮA�{���i���M���ƃi�r�Q�[�V�����y�ђn��f�W�^���`���[�i�[��M���̋������ɒ[�ɗ��ꂽ��Ԃł͎g�p���Ȃ��ł��������B<BR>
-���g�p�ɍۂ��ẮA�{���i���M���ƃi�r�Q�[�V�����y�ђn��f�W�^���`���[�i�[��M���ԂɎՕ������Ȃ���Ԃł��g�p���������B<br>
-���^�]�҂̕��͈��S��ׁ̈A���s���ɉ�ʂ𒍎����鎖��i�r�Q�[�V�����̑��쓙���΂ɍs��Ȃ��ł��������B���S�^�]�`���ᔽ�ƂȂ�A�@���ŏ��������ꍇ������܂��B<BR>
-     �����g�p�̍ۂɂ́A�戵���������悭���ǂ݂̏�A���������g�����������B���A���@��ƕ��p���Ďg�p����ꍇ�A���@��̎戵���������悭���ǂ݂ɂȂ�A�������g�p���@�Ŏg�p���Ă��������B<BR>
-     �����i�̎�t���̍ۂɂ́A���@��ɉe����^���Ȃ��ꏊ�y�сA�^�]�ɍ����x���̂Ȃ��ꏊ�ɐݒu���Ă��������B<BR>
-     �����i�̎�t���̍ۂɂ́A�e���i�͊m���Ɏ�t�����s���Ă��������B��t�����s�\���ł��Ə��i������ɍ쓮���Ȃ�������A�̏�̌����ƂȂ�܂��B<BR>
-     ���ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{�̂̋@�\�ɕs��������ꍇ�ɂ͏��i����t�����́A�g�p���Ȃ��ł��������B<br>
-�@ ���i������ɍ쓮���Ȃ����A�ԗ��@��ɉe����^���鋰�ꂪ����܂��B <BR>
-     �����i�̎�t���́A��t���Z�p�̂���̔��X�ōs���Ă��������B<BR>
-     ���f�ڂ̏��i�͎�t���s�\�ȎԎ������܂��̂ŁA���炩���ߔ̔��X�ɂ����k���������B<BR>
-     ����t���̍ۂɂ́A�K���G���W�����~������Ԃōs���Ă��������B�΍ЁE���d�E�̏�E���̂̌����ƂȂ�܂��B<BR>
-     ���������t���A�z���������ꍇ�́A��쓮��ԗ��ɏd��Ȏx��������������ƂȂ�ꍇ������܂��B���̏ꍇ�A���Ђ͈�؂̐ӔC�𕉂����˂܂��B<BR>
-    ���ԗ��̓_���y�сA�C�����˗������ꍇ�́A���m�Ȍ����̖W���ɂȂ鋰�ꂪ����܂��̂ŁA�K���{���i�����O���Ă��������B<br>
-    �����i�̃f�U�C���A�d�l�A�O�ρA�F�����A���i���ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B�܂��A���i�̎ʐ^���̐F�͎����Ƃ͂͑����قȂ�ꍇ������܂��̂ŁA���炩���߂��������������B</span></td>
+   <td colspan="73" valign="top" style="line-height:18px"><span style="font-size: 12px">○メーカーオプションナビゲーション及びディーラーオプションナビゲーションへ地上デジタルチューナーを装着した場合、本製品で選局等の操作は出来ますが、<br>
+     　 走行中のテレビ視聴は行えません。走行中のテレビ視聴及びナビゲーション操作を行うには本製品の他に FreeTVing / TELENAVing を装着する必要が御座います。<BR>
+○本製品へナビゲーション及び地上デジタルチューナーの操作信号を登録するには、ナビゲーション及び地上デジタルチューナー機器の赤外線リモコンが必要ですのでご注意ください。<BR>
+○使用に際しては、本製品発信部とナビゲーション及び地上デジタルチューナー受信部の距離が極端に離れた状態では使用しないでください。<BR>
+○使用に際しては、本製品発信部とナビゲーション及び地上デジタルチューナー受信部間に遮蔽物がない状態でご使用ください。<br>
+●運転者の方は安全上の為、走行中に画面を注視する事やナビゲーションの操作等を絶対に行わないでください。安全運転義務違反となり、法律で処罰される場合があります。<BR>
+     ●ご使用の際には、取扱説明書をよくお読みの上、正しくお使いください。又、他機器と併用して使用する場合、他機器の取扱説明書もよくお読みになり、正しい使用方法で使用してください。<BR>
+     ●商品の取付けの際には、他機器に影響を与えない場所及び、運転に差し支えのない場所に設置してください。<BR>
+     ●商品の取付けの際には、各部品は確実に取付けを行ってください。取付けが不十分ですと商品が正常に作動しなかったり、故障の原因となります。<BR>
+     ●車両のバッテリーが弱っている状態及び、車両本体の機能に不備がある場合には商品を取付け又は、使用しないでください。<br>
+　 商品が正常に作動しない等、車両機器に影響を与える恐れがあります。 <BR>
+     ●商品の取付けは、取付け技術のある販売店で行ってください。<BR>
+     ●掲載の商品は取付け不可能な車種もありますので、あらかじめ販売店にご相談ください。<BR>
+     ●取付けの際には、必ずエンジンを停止した状態で行ってください。火災・感電・故障・事故の原因となります。<BR>
+     ●誤った取付け、配線をした場合は、誤作動や車両に重大な支障をきたす原因となる場合があります。その場合、当社は一切の責任を負いかねます。<BR>
+    ●車両の点検及び、修理を依頼される場合は、正確な検査の妨げになる恐れがありますので、必ず本製品を取り外してください。<br>
+    ●製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。また、製品の写真等の色は実物とはは多少異なる場合がありますので、あらかじめご了承ください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="82" border="0" alt=""></td>
   </tr>
        <tr>
-      <td colspan="73"><span style="font-size: 13px"><b>�ۏ؋K��</b></span></td>
+      <td colspan="73"><span style="font-size: 13px"><b>保証規定</b></span></td>
    <td><img src="images/spacer.gif" width="1" height="21" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="73" valign="top" style="line-height:18px"><span style="font-size: 12px">���{���i��1�N�ۏ؂ƂȂ�܂��B<br>
-     ���戵�������ɏ]��������Ȏg�p��Ԃ̉��ŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ�����<br>
-        �@���Q���ɂ��ĕ��Ђł͈�ؐӔC�𕉂����˂܂��B</span></td>
+   <td colspan="73" valign="top" style="line-height:18px"><span style="font-size: 12px">●本製品は1年保証となります。<br>
+     ●取扱説明書に従った正常な使用状態の下で不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた<br>
+        　損害等について弊社では一切責任を負いかねます。</span></td>
    <td><img src="images/spacer.gif" width="1" height="32" border="0" alt=""></td>
   </tr>
   
-  <tr>
-   <td rowspan="2" colspan="60"><img name="steering_sw_r76_c1" src="images/steering_sw_r76_c1.gif" width="838" height="49" border="0" id="steering_sw_r76_c1" alt=""></td>
-   <td colspan="7"><a href="steering_sw.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('steering_sw_r76_c61','','images/steering_sw_r76_c61_f2.gif',1);"><img name="steering_sw_r76_c61" src="images/steering_sw_r76_c61.gif" width="85" height="15" border="0" id="steering_sw_r76_c61" alt=""></a></td>
-   <td rowspan="2" colspan="6"><img name="steering_sw_r76_c68" src="images/steering_sw_r76_c68.gif" width="77" height="49" border="0" id="steering_sw_r76_c68" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="7"><img name="steering_sw_r77_c61" src="images/steering_sw_r77_c61.gif" width="85" height="34" border="0" id="steering_sw_r77_c61" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="34" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="73"><img name="steering_sw_r78_c1" src="images/steering_sw_r78_c1.gif" width="1000" height="95" border="0" id="steering_sw_r78_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="95" border="0" alt=""></td>
-  </tr>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
-
+  <div id="footer-placeholder"></div>
 </body>
 </html>

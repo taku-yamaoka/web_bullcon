@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>�ԑ��h�A���b�N�V�X�e�� / Bullcon-�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>車速ドアロックシステム / Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -48,12 +50,48 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/sdlct08_r2_c7_s2.gif','images/sdlct08_r2_c10_s2.gif','images/sdlct08_r2_c13_s2.gif','images/sdlct08_r2_c16_s2.gif','images/sdlct08_r2_c21_s2.gif','images/sdlct08_r5_c1_s2.gif','images/sdlct08_r5_c4_s2.gif','images/sdlct08_r5_c8_s2.gif','images/sdlct08_r5_c12_s2.gif','images/sdlct08_r5_c15_s2.gif','images/sdlct08_r5_c18_s2.gif','images/sdlct08_r8_c2_s2.gif','images/sdlct08_r8_c3_s2.gif','images/sdlct08_r19_c14_s2.gif','images/sdlct08_r27_c5_s2.gif','images/sdlct08_r27_c11_s2.gif','images/sdlct08_r27_c16_s2.gif','images/sdlct08_r33_c1_s2.gif','images/sdlct08_r33_c5_s2.gif','images/sdlct08_r33_c11_s2.gif','images/sdlct08_r40_c16_s2.gif','images/sdlct08_r47_c17_s2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="sdlct08.fw.png" fwpage="�y�[�W 1" fwbase="sdlct08.gif" fwstyle="Dreamweaver" fwdocid = "221814921" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="sdlct08.fw.png" fwpage="ページ 1" fwbase="sdlct08.gif" fwstyle="Dreamweaver" fwdocid = "221814921" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="20" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="95" height="1" alt=""></td>
@@ -82,27 +120,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
 
-    <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
-   <td colspan="24" style="font-size: 13px; line-height: 17px;"><b><a href="../speed_auto_lock/speed_auto_lock.htm"><span style="color: #000000"> �ԑ��������h�A���b�N�V�X�e��<br>�ėp�n�[�l�X�^�C�v</span><span style="color: #FF0308"> �y�r�c�k�|�P�P�O�z</span><span style="color: #000000"> �̏ڍׂ� </span><span style="color: #1200FF">�R�`��</span></a></b></td>
+   <td colspan="24" style="font-size: 13px; line-height: 17px;"><b><a href="../speed_auto_lock/speed_auto_lock.htm"><span style="color: #000000"> 車速感応式ドアロックシステム<br>汎用ハーネスタイプ</span><span style="color: #FF0308"> 【ＳＤＬ－１１０】</span><span style="color: #000000"> の詳細は </span><span style="color: #1200FF">コチラ</span></a></b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -121,10 +140,10 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="24"><b style="font-size: 18px; vertical-align: top; line-height: 20px">
-	   ����p�R�l�N�^�[�Ɏ��t���邾���Ŏԑ��h�A���b�N�@�\���ǉ�����܂��B<br>
-	   ���V�t�g���uD�v�����W�ɓ���A���肾���Ǝԑ���20km/h�Ń��b�N���A��Ԍ�́uP�v�����W�ŃA�����b�N���܂��B<br>
-	   ���^�]�ȏW���h�A���b�N�X�C�b�`�܂��̓��b�N���o�[����ɂ��A�����b�N��ł��ԑ���20km/h�ōă��b�N���܂��B<br>
-	   ���}�u���[�L�i�}�����j�����m�����ꍇ�A�����ŃA�����b�N���܂��B<br></b></td>
+	   ◎専用コネクターに取り付けるだけで車速ドアロック機能が追加されます。<br>
+	   ◎シフトを「D」レンジに入れ、走りだすと車速約20km/hでロックし、停車後は「P」レンジでアンロックします。<br>
+	   ◎運転席集中ドアロックスイッチまたはロックレバー操作によるアンロック後でも車速約20km/hで再ロックします。<br>
+	   ◎急ブレーキ（急減速）を検知した場合、自動でアンロックします。<br></b></td>
    <td><img src="images/spacer.gif" width="1" height="109" alt=""></td>
   </tr>
   <tr>
@@ -163,9 +182,9 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="4" rowspan="6" bgcolor="#FFDFBF"><img name="sdlct08_r22_c1" src="images/sdlct08_r22_c1.gif" width="240" height="237" id="sdlct08_r22_c1" alt=""></td>
    <td colspan="20" bgcolor="#FFDFBF" style="line-height: 25px; font-size: 14px;"><b>
-     <span style="font-size: 17px">���R�l�N�^�[+�d��+�{�f�B�A�[�X�ő��������B</span> �i���i�Ԃɂ���Ă̓R�l�N�^�[�̂݁j<br>
-     <span style="font-size: 17px">������d�������������ȃG�l�݌v</span>�B<br>
-     <span style="font-size: 17px">��OFF�@�\���ځB</span>�@�@�i��SDL-CT03�E04�E05�͏����j</b></td>
+     <span style="font-size: 17px">●コネクター+電源+ボディアースで装着完了。</span> （※品番によってはコネクターのみ）<br>
+     <span style="font-size: 17px">●消費電流をおさえた省エネ設計</span>。<br>
+     <span style="font-size: 17px">●OFF機能搭載。</span>　　（※SDL-CT03・04・05は除く）</b></td>
    <td><img src="images/spacer.gif" width="1" height="103" alt=""></td>
   </tr>
   <tr>
@@ -177,31 +196,31 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6" bgcolor="#FFDFBF" style="text-align: center"><span style="font-size: 16px">
-	   <b>�̔����i ��12,650</b></span><span style="font-size: 12px">(�ō�)</span></td>
+	   <b>販売価格 ￥12,650</b></span><span style="font-size: 12px">(税込)</span></td>
    <td colspan="5" bgcolor="#FFDFBF" style="text-align: center"><span style="font-size: 16px">
-	   <b>�̔����i ��14,850</b></span><span style="font-size: 12px">(�ō�)</span></td>
+	   <b>販売価格 ￥14,850</b></span><span style="font-size: 12px">(税込)</span></td>
    <td colspan="8" bgcolor="#FFDFBF" style="text-align: center"><span style="font-size: 16px">
-	   <b>�̔����i ��12,650</b></span><span style="font-size: 12px">(�ō�)</span></td>
+	   <b>販売価格 ￥12,650</b></span><span style="font-size: 12px">(税込)</span></td>
    <td bgcolor="#FFDFBF"><img name="sdlct08_r24_c24" src="images/sdlct08_r24_c24.gif" width="40" height="21" id="sdlct08_r24_c24" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="21" alt=""></td>
   </tr>
   <tr>
    <td colspan="6" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-	  �i�Ŕ����i ��11,500�j</td>
+	  （税抜価格 ￥11,500）</td>
    <td colspan="5" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-	  �i�Ŕ����i ��13,500�j</td>
+	  （税抜価格 ￥13,500）</td>
    <td colspan="8" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-	  �i�Ŕ����i ��11,500�j</td>
+	  （税抜価格 ￥11,500）</td>
    <td bgcolor="#FFDFBF"><img name="sdlct08_r25_c24" src="images/sdlct08_r25_c24.gif" width="40" height="17" id="sdlct08_r25_c24" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="17" alt=""></td>
   </tr>
   <tr>
    <td colspan="6" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-	JAN�R�[�h 4950094061523</td>
+	JANコード 4950094061523</td>
    <td colspan="5" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-    JAN�R�[�h 4950094061738</td>
+    JANコード 4950094061738</td>
    <td colspan="8" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-	JAN�R�[�h 4950094062308</td>
+	JANコード 4950094062308</td>
    <td><img name="sdlct08_r26_c24" src="images/sdlct08_r26_c24.gif" width="40" height="21" id="sdlct08_r26_c24" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="21" alt=""></td>
   </tr>
@@ -230,37 +249,37 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4" bgcolor="#FFDFBF" style="text-align: center"><span style="font-size: 16px">
-	   <b>�̔����i ��10,780</b></span><span style="font-size: 12px">(�ō�)</span></td>
+	   <b>販売価格 ￥10,780</b></span><span style="font-size: 12px">(税込)</span></td>
    <td colspan="6" bgcolor="#FFDFBF" style="text-align: center"><span style="font-size: 16px">
-	   <b>�̔����i ��12,650</b></span><span style="font-size: 12px">(�ō�)</span></td>
+	   <b>販売価格 ￥12,650</b></span><span style="font-size: 12px">(税込)</span></td>
    <td colspan="5" bgcolor="#FFDFBF" style="text-align: center"><span style="font-size: 16px">
-	   <b>�̔����i ��12,650</b></span><span style="font-size: 12px">(�ō�)</span></td>
+	   <b>販売価格 ￥12,650</b></span><span style="font-size: 12px">(税込)</span></td>
    <td colspan="8" bgcolor="#FFDFBF" style="text-align: center"><span style="font-size: 16px">
-	   <b>�̔����i ��10,780</b></span><span style="font-size: 12px">(�ō�)</span></span></td>
+	   <b>販売価格 ￥10,780</b></span><span style="font-size: 12px">(税込)</span></span></td>
    <td bgcolor="#FFDFBF"><img name="sdlct08_r30_c24" src="images/sdlct08_r30_c24.gif" width="40" height="21" id="sdlct08_r30_c24" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="21" alt=""></td>
   </tr>
   <tr>
    <td colspan="4" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-	  �i�Ŕ����i ��9,800�j</td>
+	  （税抜価格 ￥9,800）</td>
    <td colspan="6" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-    �i�Ŕ����i ��11,500�j</td>
+    （税抜価格 ￥11,500）</td>
    <td colspan="5" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-	  �i�Ŕ����i ��11,500�j</td>
+	  （税抜価格 ￥11,500）</td>
    <td colspan="8" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-	  �i�Ŕ����i ��9,800�j</td>
+	  （税抜価格 ￥9,800）</td>
    <td bgcolor="#FFDFBF"><img name="sdlct08_r31_c24" src="images/sdlct08_r31_c24.gif" width="40" height="17" id="sdlct08_r31_c24" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="17" alt=""></td>
   </tr>
   <tr>
    <td colspan="4" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-      JAN�R�[�h 4950094062759</td>
+      JANコード 4950094062759</td>
    <td colspan="6" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-      JAN�R�[�h 4950094062971</td>
+      JANコード 4950094062971</td>
    <td colspan="5" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-	  JAN�R�[�h 4950094062865</td>
+	  JANコード 4950094062865</td>
    <td colspan="8" bgcolor="#FFDFBF" style="text-align: center; font-size: 13px">
-      JAN�R�[�h 4950094063206</td>
+      JANコード 4950094063206</td>
    <td><img name="sdlct08_r32_c24" src="images/sdlct08_r32_c24.gif" width="40" height="21" id="sdlct08_r32_c24" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="21" alt=""></td>
   </tr>
@@ -277,7 +296,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
   </tr>
     <tr>
-   <td colspan="24"><div align="center" class="style10"><a href="../../pdf/multiple-connect.pdf" target="_blank" style="text-decoration: none; font-size: 15px; line-height: 20px"><b>����̎�t�ʒu�ɐڑ����镾�А��i�Ɋւ��邲���� �iPDF�j</b><br><span style="font-size: 13px">�i�t���[�e���r���O�@/�@�}�W�R�l�@/�@�J�����Z���N�^�[�@/�@�w�b�h���C�g�R���g���[���[�@/�@�ԑ��h�A���b�N���j�b�g�j</span></a></div></td>
+   <td colspan="24"><div align="center" class="style10"><a href="../../pdf/multiple-connect.pdf" target="_blank" style="text-decoration: none; font-size: 15px; line-height: 20px"><b>同一の取付位置に接続する弊社製品に関するご注意 （PDF）</b><br><span style="font-size: 13px">（フリーテレビング　/　マジコネ　/　カメラセレクター　/　ヘッドライトコントローラー　/　車速ドアロックユニット）</span></a></div></td>
    <td><img src="images/spacer.gif" width="1" height="9" alt=""></td>
   </tr>
      <tr>
@@ -292,8 +311,8 @@ function MM_preloadImages() { //v3.0
    <td colspan="4" rowspan="9" bgcolor="#EEEEEE"><img name="sdlct08_r36_c1" src="images/sdlct08_r36_c1.gif" width="240" height="238" id="sdlct08_r36_c1" alt=""></td>
    <td colspan="6"><img name="sdlct08_r36_c5" src="images/sdlct08_r36_c5.gif" width="240" height="104" id="sdlct08_r36_c5" alt=""></td>
    <td colspan="14" bgcolor="#EEEEEE" style="font-size: 14px; vertical-align: top;line-height: 18px"><b><br>
-	  ��OBD�U�R�l�N�^�t�n�[�l�X���̗p�B�����ڂ�������Ȏ��t�����\�B<br>
-	  ������d�������������ȃG�l�݌v�B</b></td>
+	  ●OBDⅡコネクタ付ハーネスを採用。見た目すっきりな取り付けが可能。<br>
+	  ●消費電流をおさえた省エネ設計。</b></td>
    <td><img src="images/spacer.gif" width="1" height="104" alt=""></td>
   </tr>
   <tr>
@@ -305,15 +324,15 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="2" colspan="8" bgcolor="#EEEEEE" style="text-align: center"><span style="font-size: 16px">
-    <b>SDL-CT01�E02����</b></span></td>
+    <b>SDL-CT01・02共通</b></span></td>
    <td rowspan="2" bgcolor="#EEEEEE"><img name="sdlct08_r38_c24" src="images/sdlct08_r38_c24.gif" width="40" height="23" id="sdlct08_r38_c24" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="8" alt=""></td>
   </tr>
   <tr>
    <td rowspan="2" colspan="6" bgcolor="#EEEEEE" style="text-align: center"><span style="font-size: 16px">
-	   <b>�̔����i ��14,850</b></span><span style="font-size: 12px">(�ō�)</span></td>
+	   <b>販売価格 ￥14,850</b></span><span style="font-size: 12px">(税込)</span></td>
    <td rowspan="2" colspan="5" bgcolor="#EEEEEE" style="text-align: center"><span style="font-size: 16px">
-    <b>�̔����i ��14,850</b></span><span style="font-size: 12px">(�ō�)</span></td>
+    <b>販売価格 ￥14,850</b></span><span style="font-size: 12px">(税込)</span></td>
    <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
   </tr>
   <tr>
@@ -323,20 +342,20 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6" bgcolor="#EEEEEE" style="text-align: center; font-size: 13px">
-    �i�Ŕ����i ��13,500�j</td>
+    （税抜価格 ￥13,500）</td>
    <td colspan="5" bgcolor="#EEEEEE" style="text-align: center; font-size: 13px">
-	  �i�Ŕ����i ��13,500�j</td>
+	  （税抜価格 ￥13,500）</td>
    <td><img src="images/spacer.gif" width="1" height="17" alt=""></td>
   </tr>
   <tr>
-    <td colspan="6" bgcolor="#EEEEEE" style="text-align: center; font-size: 13px">JAN�R�[�h 4950094061332</td>
-    <td colspan="5" bgcolor="#EEEEEE" style="text-align: center; font-size: 13px">JAN�R�[�h 4950094061349</td>
+    <td colspan="6" bgcolor="#EEEEEE" style="text-align: center; font-size: 13px">JANコード 4950094061332</td>
+    <td colspan="5" bgcolor="#EEEEEE" style="text-align: center; font-size: 13px">JANコード 4950094061349</td>
     <td><img src="images/spacer.gif" width="1" height="21" alt=""></td>
   </tr>
   <tr>
    <td colspan="6" bgcolor="#EEEEEE" style="text-align: center; font-size: 13px; color: #FF0308;">
-    �y ���Y�E�̔��I�� �z</td>
-   <td colspan="5" bgcolor="#EEEEEE" style="text-align: center; font-size: 13px; color: #FF0308;">�y ���Y�E�̔��I�� �z</td>
+    【 生産・販売終了 】</td>
+   <td colspan="5" bgcolor="#EEEEEE" style="text-align: center; font-size: 13px; color: #FF0308;">【 生産・販売終了 】</td>
    <td><img src="images/spacer.gif" width="1" height="21" alt=""></td>
   </tr>
   <tr>
@@ -348,58 +367,51 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="24" style="font-size: 13px"><b>���w���̑O�ɂ��ǂ݂�������</b></td>
+   <td colspan="24" style="font-size: 13px"><b>ご購入の前にお読みください</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td><img name="sdlct08_r46_c1" src="images/sdlct08_r46_c1.gif" width="20" height="370" id="sdlct08_r46_c1" alt=""></td>
    <td colspan="23" style="font-size: 12px; vertical-align: top;line-height: 16px">
-	  �E�{���i�͊e�ԗ����ƂɓK�������܂��Ă��܂��B�K���ȊO�̎ԗ��ł͎g�p���Ȃ��ł��������B<br>
-	   �@�K���O�̐��i�����t�����������������t�����@�Ȃǂɂ��s��Ɋւ��ẮA ���Ђł͈�ؐӔC�𕉂��܂���B<br>
-	  �@�܂��A�f�ڎԗ��ł����Ă����s�A���ԋy�у}�j���A���~�b�V����(MT)�Ԃ͓K���O�ƂȂ�܂��̂ŗ\�߂��������������B<br>
-	  �E�uSDL-CT06�v�uSDL-CT07�v�uSDL-CT08�v�͎ԗ��R���s���[�^�[�̐f�f���ɁA�t���X�C�b�`�Ŗ{���i��OFF�ɂ��Ă��������K�v������܂��B<br>
-	  �E�Ԏ�ɂ�胍�b�N���쓮����ԑ��Ɍ덷������܂��B<br>
-	  �E�^�]�ȈȊO�̃h�A���蓮�ŃA�����b�N���Ă��ԑ���20km/h�Ń��b�N����ꍇ������܂��B�i�Ԏ��d�l�ɂ�蓮�삪�قȂ�܂��j<br>
-	  �@���Փ˂ɂ��h�A�E�h�A���b�N���[�^�[�E�o�b�e���[�E�ԗ��R���s���[�^�[�iECU���j���j������l�Ȏ��̂̏ꍇ�̓A�����b�N���Ȃ��ꍇ������܂��̂ŗ\�߂��������������B<br>
-	  �E�{���i�͕i�Ԃɂ����t���ꏊ���قȂ�܂��B<br>
-	  �E�uSDL-CT03�v�uSDL-CT04�v�uSDL-CT06�v�uSDL-CT07�v�uSDL-CT08�v�̎��t���́A�I�[�f�B�I�̒E����Ƃ��K�v�ł��B<br>
-	  �@�uSDL-CT05�v�͎Ԏ�ɂ����t���ꏊ���قȂ�܂��B��t�E�戵�������ł��m�F���������B<br>
-	  �E�ԗ����[�J�[�ł̎d�l�ύX���Ő���ɓ��삵�Ȃ��Ȃ�ꍇ������܂��B<br>
-	  �E�{���i�����t������ہA�n�[�l�X���ԑ̂̋��������Ɋ��ݍ��܂Ȃ��悤�ɂ����ӂ��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B<br>
-	  �E�̏�̌����ƂȂ�܂��̂ŁA���t���̍ۂɂ͕K��IG OFF�̏�Ԃł����Ȃ��Ă��������B<br>
-	  �E�{���i�쓮���A�e���r�f���������ꍇ������܂��A����̓��b�N�E�A�����b�N���̎ԗ������ɂ����̂ł��̂ŗ\�߂��������������B<br>
-	  �E�쓮�m�F�Ԏ�ꗗ���f�ڎԎ�ւ̎��t���Ɋւ���T�|�[�g�E�y�ѕۏ؂͈�؂����Ȃ��Ă���܂���B�܂��A���K�E���s���킸�O���Ԃւ̃T�|�[�g�������Ȃ��Ă���܂���B<br>
-	  �E�����̎�t�E�戵�����������n�ǂ��������A���S�ɍ�Ƃ������Ȃ��Ă��������B�܂��A��t�E�戵�������ȊO�̎��t�������E���Ɋւ���T�|�[�g�͂����Ȃ��Ă���܂���B<br>
-	  �E�ԗ��̏����@�\�ɓ��@�\�����ڂ���Ă���ꍇ�ɂ͎��t���ł��܂���B<br>
-	  �E�{���i���g�p�������ɂ��ԗ����u�̌�쓮��쓮�s�ǁA�����ɂ�萶�������̂⑹�Q�̏C���ɂ������p�ɂ��ĕ��Ђł͈�؂̐ӔC�𕉂����˂܂��B<br>
+	  ・本製品は各車両ごとに適合が決まっています。適合以外の車両では使用しないでください。<br>
+	   　適合外の製品を取り付けした事や誤った取り付け方法などによる不具合に関しては、 弊社では一切責任を負いません。<br>
+	  　また、掲載車両であっても並行輸入車及びマニュアルミッション(MT)車は適合外となりますので予めご了承ください。<br>
+	  ・「SDL-CT06」「SDL-CT07」「SDL-CT08」は車両コンピューターの診断時に、付属スイッチで本製品をOFFにしていただく必要があります。<br>
+	  ・車種によりロックが作動する車速に誤差があります。<br>
+	  ・運転席以外のドアを手動でアンロックしても車速約20km/hでロックする場合があります。（車種や仕様により動作が異なります）<br>
+	  　※衝突によりドア・ドアロックモーター・バッテリー・車両コンピューター（ECU等）が破損する様な事故の場合はアンロックしない場合がありますので予めご了承ください。<br>
+	  ・本製品は品番により取り付け場所が異なります。<br>
+	  ・「SDL-CT03」「SDL-CT04」「SDL-CT06」「SDL-CT07」「SDL-CT08」の取り付けは、オーディオの脱着作業が必要です。<br>
+	  　「SDL-CT05」は車種により取り付け場所が異なります。取付・取扱説明書でご確認ください。<br>
+	  ・車両メーカーでの仕様変更等で正常に動作しなくなる場合があります。<br>
+	  ・本製品を取り付けする際、ハーネスが車体の金属部分に噛み込まないようにご注意ください。火災・感電・故障の原因となります。<br>
+	  ・故障の原因となりますので、取り付けの際には必ずIG OFFの状態でおこなってください。<br>
+	  ・本製品作動時、テレビ映像が乱れる場合があります、これはロック・アンロック時の車両特性によるものですので予めご了承ください。<br>
+	  ・作動確認車種一覧未掲載車種への取り付けに関するサポート・及び保証は一切おこなっておりません。また、正規・並行を問わず外国車へのサポートもおこなっておりません。<br>
+	  ・同梱の取付・取扱説明書をご熟読いただき、安全に作業をおこなってください。また、取付・取扱説明書以外の取り付け資料・情報に関するサポートはおこなっておりません。<br>
+	  ・車両の純正機能に同機能が搭載されている場合には取り付けできません。<br>
+	  ・本製品を使用した事による車両装置の誤作動や作動不良、それらにより生じた事故や損害の修復にかかる費用について弊社では一切の責任を負いかねます。<br>
 
-	  �E���t���̍ۂ̔j���Ɋւ��܂��ẮA�ۏ؂̑ΏۊO�ł��B<br>
-	  �E���i�̃f�U�C���A�d�l�A�O�ρA�F�����A���i���ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B<br>
-    �@�܂��A���i�̎ʐ^���̐F�͎����Ƃ͑����قȂ�ꍇ������܂��̂ŁA���炩���߂��������������B<br></td>
+	  ・取り付けの際の破損に関しましては、保証の対象外です。<br>
+	  ・製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。<br>
+    　また、製品の写真等の色は実物とは多少異なる場合がありますので、あらかじめご了承ください。<br></td>
    <td><img src="images/spacer.gif" width="1" height="370" alt=""></td>
   </tr>
     <tr>
-   <td colspan="24" style="font-size: 13px"><b>�ۏ؋K��</b></td>
+   <td colspan="24" style="font-size: 13px"><b>保証規定</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td><img name="sdlct08_r46_c1" src="images/sdlct08_r46_c1.gif" width="20" height="50" id="sdlct08_r46_c1" alt=""></td>
    <td colspan="23" style="font-size: 12px; vertical-align: top;line-height: 16px">
-	  �E�{���i��3�N�ۏ؂ƂȂ�܂��B<br>
-    �E�戵�������ɏ]��������Ȏg�p��Ԃ̉��ŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ���<br>
-    �@���Ђł͈�ؐӔC�𕉂����˂܂��B</td>
+	  ・本製品は3年保証となります。<br>
+    ・取扱説明書に従った正常な使用状態の下で不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について<br>
+    　弊社では一切責任を負いかねます。</td>
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
-  <tr>
-   <td colspan="16"><img name="sdlct08_r47_c1" src="images/sdlct08_r47_c1.gif" width="817" height="15" id="sdlct08_r47_c1" alt=""></td>
-   <td colspan="6"><a href="sdlct.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('sdlct08_r47_c17','','images/sdlct08_r47_c17_s2.gif',1);"><img name="sdlct08_r47_c17" src="images/sdlct08_r47_c17.gif" width="85" height="15" id="sdlct08_r47_c17" alt=""></a></td>
-   <td colspan="2"><img name="sdlct08_r47_c23" src="images/sdlct08_r47_c23.gif" width="98" height="15" id="sdlct08_r47_c23" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="24"><img name="sdlct08_r48_c1" src="images/sdlct08_r48_c1.gif" width="1000" height="94" id="sdlct08_r48_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="94" alt=""></td>
-  </tr>
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

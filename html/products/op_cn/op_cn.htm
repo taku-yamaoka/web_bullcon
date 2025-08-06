@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>�I�v�V�����R�l�N�^�[ / Bullcon-�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>オプションコネクター / Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -36,12 +38,48 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/op_cn_r2_c10_s2.gif','images/op_cn_r2_c14_s2.gif','images/op_cn_r2_c18_s2.gif','images/op_cn_r2_c21_s2.gif','images/op_cn_r2_c26_s2.gif','images/op_cn_r5_c1_s2.gif','images/op_cn_r5_c7_s2.gif','images/op_cn_r5_c11_s2.gif','images/op_cn_r5_c16_s2.gif','images/op_cn_r5_c20_s2.gif','images/op_cn_r5_c23_s2.gif','images/op_cn_r8_c4_s2.gif','images/op_cn_r8_c6_s2.gif','images/op_cn_r19_c2_s2.gif','images/op_cn_r19_c5_s2.gif','images/op_cn_r19_c8_s2.gif','images/op_cn_r19_c12_s2.gif','images/op_cn_r19_c15_s2.gif','images/op_cn_r19_c17_s2.gif','images/op_cn_r19_c20_s2.gif','images/op_cn_r19_c22_s2.gif','images/op_cn_r19_c27_s2.gif','images/op_cn_r31_c24_s2.gif');">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="op-cn_20250221.png" fwpage="�y�[�W 1" fwbase="op_cn.gif" fwstyle="Dreamweaver" fwdocid = "1371834020" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="op-cn_20250221.png" fwpage="ページ 1" fwbase="op_cn.gif" fwstyle="Dreamweaver" fwdocid = "1371834020" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="4" height="1" alt=""></td>
@@ -74,26 +112,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="5" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
-
- <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
+  
  <!-- <tr>
    <td colspan="29"><img name="op_cn_r10_c1" src="images/op_cn_r10_c1.gif" width="1000" height="10" id="op_cn_r10_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
@@ -260,55 +279,44 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="29" style="font-size: 15px">���w���̑O��</td>
+   <td colspan="29" style="font-size: 15px">ご購入の前に</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="3"><img name="op_cn_r27_c1" src="images/op_cn_r27_c1.gif" width="20" height="220" id="op_cn_r27_c1" alt=""></td>
-   <td colspan="26" style="font-size: 12px; vertical-align: top; line-height: 15px"><li>�{���i�͊e�ԗ����ƂɓK�������܂��Ă��܂��B �K���ȊO�̎ԗ��ł͎g�p���Ȃ��ł��������B</li>
-     <li>��K���̐��i�����t�����������������t�����@�Ȃǂɂ��s��Ɋւ��ẮA���Ђł͈�ؐӔC�𕉂��܂���B</li>
-     <li>�K���Ԏ�ł����Ă��ԗ����[�J�[�ł̎d�l�ύX�ɂ�肨���t�����o���Ȃ��ꍇ������܂��B</li>
-     <li>���ɃR�l�N�^�[���g�p����Ă���ꍇ�͖{���i�����荞�܂��Ă��g�p���������B�A���A���t�����Ă���@��̏���d�����l�����Ă��������K�v������A�ڑ��@��̏���d�����v��1�A���y�A�𒴂�����̂ɂ͎g�p���Ȃ��ł��������B</li>
-     <li>�{���i�Ɛڑ��@��̊ԂɈ��S�q���[�Y����������Ă��鎖���m�F���Ă��������B�ڑ��@��Ɉ��S�q���[�Y���t������Ă��Ȃ��ꍇ�͕K���ʓr���S�q���[�Y�i1�A���y�A�ȉ��j���������������Ă��������B</li>
-     <li>�{���i�𕪉���������H�E�����͂��Ȃ��ł��������B</li>
-     <li>�n�[�l�X�ނ͎ԗ������������ő������Ȃ��悤�ɔz�����s���Ă��������B</li>
-     <li>�d�l�y�ъO�ς͉��ǂׁ̈A�\���Ȃ��ύX����ꍇ������܂��B</li>
-     <li>�{���i�ɐ��Ȃǂ̉t�̂�������Ȃ��悤�ɂ��Ă��������B����A�t�� �����Z�������ꍇ�͒����Ɏg�p�𒆎~���ۏ؏��ƈꏏ�ɂ������グ�̔̔��X���͕��Ђɓ_�����˗����Ă��������B</li>
-     <li>�{���i���牌���ُ͈L�E�ى�������ꍇ�͒����Ɏg�p�𒆎~���ۏ؏��ƈꏏ�ɂ������グ�̔̔��X���͕��Ђɓ_�����˗����Ă��������B</li>
-     <li>�e�z����r���Őؒf���Ȃ��ł��������B���A�n�[�l�X�ނ͎ԗ��������ɐG��Ȃ��l�ɔz�����s���Ă��������B</li>
-     <li>�{���i�����t����ہA���J�����ԗ��̈ꕔ�����H���č�Ƃ��s���ꍇ�́A���y�єj���ɂ����ӂ��������B����A�j�����̑��Q�������܂��Ă����Ђł͈�ؐӔC�𕉂����˂܂��B</li>
-     <li>�O�L���Q�ɂ��@��̌̏�₻��Ȃǂɕt������S�Ă̐����ɑ΂��Ă����Ђł͈�؂��󂯂ł��܂���̂ŗ\�߂��������������B</li>
-    <li>�d�l�y�ъO�ς͉��ǂׁ̈A�\���Ȃ��ύX����ꍇ������܂��B</li></td>
+   <td colspan="26" style="font-size: 12px; vertical-align: top; line-height: 15px"><li>本製品は各車両ごとに適合が決まっています。 適合以外の車両では使用しないでください。</li>
+     <li>非適合の製品を取り付けした事や誤った取り付け方法などによる不具合に関しては、弊社では一切責任を負いません。</li>
+     <li>適合車種であっても車両メーカーでの仕様変更によりお取り付けが出来ない場合があります。</li>
+     <li>既にコネクターが使用されている場合は本製品を割り込ましてご使用ください。但し、取り付けられている機器の消費電流も考慮していただく必要があり、接続機器の消費電流合計が1アンペアを超えるものには使用しないでください。</li>
+     <li>本製品と接続機器の間に安全ヒューズが装着されている事を確認してください。接続機器に安全ヒューズが付属されていない場合は必ず別途安全ヒューズ（1アンペア以下）を準備し装着してください。</li>
+     <li>本製品を分解したり加工・改造はしないでください。</li>
+     <li>ハーネス類は車両金属部分等で損傷しないように配線を行ってください。</li>
+     <li>仕様及び外観は改良の為、予告なく変更する場合があります。</li>
+     <li>本製品に水などの液体がかからないようにしてください。万一、液体 等が浸入した場合は直ちに使用を中止し保証書と一緒にお買い上げの販売店又は弊社に点検を依頼してください。</li>
+     <li>本製品から煙又は異臭・異音がする場合は直ちに使用を中止し保証書と一緒にお買い上げの販売店又は弊社に点検を依頼してください。</li>
+     <li>各配線を途中で切断しないでください。又、ハーネス類は車両金属部に触れない様に配線を行ってください。</li>
+     <li>本製品を取り付ける際、穴開け等車両の一部を加工して作業を行う場合は、傷及び破損にご注意ください。万一、破損等の損害が生じましても弊社では一切責任を負いかねます。</li>
+     <li>前記損害による機器の故障やそれなどに付随する全ての請求に対しても弊社では一切お受けできませんので予めご了承ください。</li>
+    <li>仕様及び外観は改良の為、予告なく変更する場合があります。</li></td>
    <td><img src="images/spacer.gif" width="1" height="220" alt=""></td>
   </tr>
   <tr>
-   <td colspan="29" style="font-size: 15px">�ۏ؋K��</td>
+   <td colspan="29" style="font-size: 15px">保証規定</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="3"><img name="op_cn_r29_c1" src="images/op_cn_r29_c1.gif" width="20" height="45" id="op_cn_r29_c1" alt=""></td>
-   <td colspan="26" style="font-size: 12px; vertical-align: top; line-height: 15px"><li>�{���i��1�N�ۏ؂ƂȂ�܂��B</li>
-     <li>�戵�������ɏ]��������Ȏg�p��Ԃ̂��Ƃŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��ĕ��Ђł͈�ؐӔC�𕉂����˂܂��B</li></td>
+   <td colspan="26" style="font-size: 12px; vertical-align: top; line-height: 15px"><li>本製品は1年保証となります。</li>
+     <li>取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について弊社では一切責任を負いかねます。</li></td>
    <td><img src="images/spacer.gif" width="1" height="45" alt=""></td>
   </tr>
   <tr>
    <td colspan="29"><img name="op_cn_r30_c1" src="images/op_cn_r30_c1.gif" width="1000" height="10" id="op_cn_r30_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="2" colspan="23"><img name="op_cn_r31_c1" src="images/op_cn_r31_c1.gif" width="838" height="49" id="op_cn_r31_c1" alt=""></td>
-   <td colspan="4"><a href="eop-dc01.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('op_cn_r31_c24','','images/op_cn_r31_c24_s2.gif',1);"><img name="op_cn_r31_c24" src="images/op_cn_r31_c24.gif" width="85" height="15" id="op_cn_r31_c24" alt=""></a></td>
-   <td rowspan="2" colspan="2"><img name="op_cn_r31_c28" src="images/op_cn_r31_c28.gif" width="77" height="49" id="op_cn_r31_c28" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="4"><img name="op_cn_r32_c24" src="images/op_cn_r32_c24.gif" width="85" height="34" id="op_cn_r32_c24" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="34" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="29"><img name="op_cn_r33_c1" src="images/op_cn_r33_c1.gif" width="1000" height="74" id="op_cn_r33_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="74" alt=""></td>
-  </tr>
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

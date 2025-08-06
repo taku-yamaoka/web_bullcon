@@ -1,8 +1,10 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
-<title>�ԑ��������h�A���b�N�V�X�e��/Bullcon-�t�W�d�@�H�Ɗ������-</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>車速感応式ドアロックシステム/Bullcon-フジ電機工業株式会社-</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -59,7 +61,41 @@ function MM_preloadImages() { //v3.0
 function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
 }
-    
+
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -73,7 +109,10 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/speed_auto_lock_r28_c44_f2.gif','images/speed_auto_lock_r29_c22_f2.gif','images/speed_auto_lock_r29_c31_f2.gif','images/speed_auto_lock_r35_c1_f2.gif','images/speed_auto_lock_r35_c13_f2.gif','images/speed_auto_lock_r35_c18_f2.gif','images/speed_auto_lock_r35_c25_f2.gif','images/speed_auto_lock_r35_c38_f2.gif','images/speed_auto_lock_r35_c48_f2.gif','images/speed_auto_lock_r35_c53_f2.gif','images/speed_auto_lock_r35_c65_f2.gif','images/speed_auto_lock_r52_c57_f2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
   <tr>
    <td><img src="images/spacer.gif" width="6" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="11" height="1" border="0" alt=""></td>
@@ -148,31 +187,11 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
-
-  <tr><td colspan="72"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="72"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   
   <tr>
-   <td colspan="13" style="font-size: 12px; line-height: 16px;"><b><a href="../sdlct/sdlct.htm"><span style="color: #000000"> �ԑ��h�A���b�N�V�X�e��</span><br>
-      <span style="color: #FF0308">�r�c�k�|�b�s�O�R / �b�s�O�S / �b�s�O�T / �b�s�O�U<br>
-     �b�s�O�V / �b�s�O�W / �b�g�O�P</span><span style="color: #000000"> �̏ڍׂ� </span><span style="color: #1200FF">�R�`��</span></a></b></td>
+   <td colspan="13" style="font-size: 12px; line-height: 16px;"><b><a href="../sdlct/sdlct.htm"><span style="color: #000000"> 車速ドアロックシステム</span><br>
+      <span style="color: #FF0308">ＳＤＬ－ＣＴ０３ / ＣＴ０４ / ＣＴ０５ / ＣＴ０６<br>
+     ＣＴ０７ / ＣＴ０８ / ＣＨ０１</span><span style="color: #000000"> の詳細は </span><span style="color: #1200FF">コチラ</span></a></b></td>
    <td colspan="59"><img src="images/spacer.gif" width="1" height="39" border="0" alt=""></td>
   </tr>
   <tr>
@@ -187,13 +206,13 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   <tr>
    <td rowspan="11" colspan="9"><img name="speed_auto_lock_r20_c1" src="images/speed_auto_lock_r20_c1.gif" width="175" height="211" border="0" id="speed_auto_lock_r20_c1" alt=""></td>
    <td colspan="6"><img name="speed_auto_lock_r20_c10" src="images/speed_auto_lock_r20_c10.gif" width="152" height="32" border="0" id="speed_auto_lock_r20_c10" alt=""></td>
-   <td rowspan="2" colspan="14"><DIV align="center" class="style2">���� ��15�`20km/h�ɒB����Ƥ�����Ńh�A�����b�N</DIV></td>
-   <td rowspan="2" colspan="11"><DIV align="center" class="style2">�V�t�g[ D ]��[ P ]��<BR>
-    �h�A���A�����b�N</DIV></td>
-   <td rowspan="2" colspan="15"><DIV align="center" class="style2">�t���X�C�b�`����ŃA�����b�N�I<BR>
-    �����v�b�V���A�����b�N�@�\</DIV></td>
-   <td rowspan="2" colspan="16"><DIV align="center" class="style2">�G���W����~�����o�I<BR>
-    �����A�����b�N�@�\</DIV></td>
+   <td rowspan="2" colspan="14"><DIV align="center" class="style2">時速 約15～20km/hに達すると､自動でドアをロック</DIV></td>
+   <td rowspan="2" colspan="11"><DIV align="center" class="style2">シフト[ D ]⇒[ P ]で<BR>
+    ドアをアンロック</DIV></td>
+   <td rowspan="2" colspan="15"><DIV align="center" class="style2">付属スイッチ操作でアンロック！<BR>
+    ワンプッシュアンロック機能</DIV></td>
+   <td rowspan="2" colspan="16"><DIV align="center" class="style2">エンジン停止を検出！<BR>
+    自動アンロック機構</DIV></td>
    <td><img src="images/spacer.gif" width="1" height="32" border="0" alt=""></td>
   </tr>
   <tr>
@@ -208,15 +227,15 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
    <td><img src="images/spacer.gif" width="1" height="21" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6"><span style="font-size: 14px; line-height: 18px"><b>�̔����i<br>���P�Q�C�P�O�O</b></span><span style="font-size: 13px">�i�ō��j</span></td>
+   <td colspan="6"><span style="font-size: 14px; line-height: 18px"><b>販売価格<br>￥１２，１００</b></span><span style="font-size: 13px">（税込）</span></td>
    <td><img src="images/spacer.gif" width="1" height="44" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" ><span style="font-size: 11px">�i�Ŕ����i ���P�P�C�O�O�O�j</span></td>
+   <td colspan="6" ><span style="font-size: 11px">（税抜価格 ￥１１，０００）</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6"><span style="font-size: 11px; line-height: 18px">JAN�R�[�h<br>�S�X�T�O�O�X�S�O�U�O�T�R�R</span></td>
+   <td colspan="6"><span style="font-size: 11px; line-height: 18px">JANコード<br>４９５００９４０６０５３３</span></td>
    <td><img src="images/spacer.gif" width="1" height="35" border="0" alt=""></td>
   </tr>
   <tr>
@@ -252,27 +271,27 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
    <td><img src="images/spacer.gif" width="1" height="27" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="59"><p><span class="style4" style="line-height:20px;">�V�t�g���u<span class="style5">D</span>�v�����W�ɓ���A����o���Ɩ�15km/h�`20km/h�Ŏ����I�Ƀh�A���b�N!!<BR>
-     ��Ԍ�ɃV�t�g���u<span class="style5">P</span>�v�����W�ɓ����Ǝ����I�ɃA�����b�N����̂Ŕς킵������͕s�v!!<BR>
-     ������Ƃ������~��Ȃ�A�V�t�g�́u<span class="style5">D</span>�v�̂܂܂ł��t���̃X�C�b�`�������΃A�����b�N!!<BR>
-     ����ҁA���ɂ��q�l�̕s���ӂɂ��h�A����h�~��!!<BR>
-     �����ԂɕW����������Ă���u�ԑ��������h�A���b�N�@�\�v�����Ȃ��̎Ԃɂ�!!</span></p>     </td>
+   <td colspan="59"><p><span class="style4" style="line-height:20px;">シフトを「<span class="style5">D</span>」レンジに入れ、走り出すと約15km/h～20km/hで自動的にドアロック!!<BR>
+     停車後にシフトを「<span class="style5">P</span>」レンジに入れると自動的にアンロックするので煩わしい操作は不要!!<BR>
+     ちょっとした乗り降りなら、シフトは「<span class="style5">D</span>」のままでも付属のスイッチを押せばアンロック!!<BR>
+     同乗者、特にお子様の不注意によるドア解放防止に!!<BR>
+     高級車に標準装備されている「車速感応式ドアロック機能」があなたの車にも!!</span></p>     </td>
    <td rowspan="3" colspan="12"><img name="speed_auto_lock_r32_c60" src="images/speed_auto_lock_r32_c60.gif" width="154" height="166" border="0" id="speed_auto_lock_r32_c60" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="116" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="59" valign="top"><span class="style7" style="line-height:18px;">���ꕔ�Ԏ�ɂ͂���t�ł��܂���B�ڂ�����<STRONG>�u����m�F�Ԏ�ꗗ�v</STRONG>���������������B<BR>
-���ꕔ�Ԏ�ł͑��x��10m/h�����Ńh�A���b�N�����삷��ꍇ������܂��B</span></td>
+    <td colspan="59" valign="top"><span class="style7" style="line-height:18px;">※一部車種にはお取付できません。詳しくは<STRONG>「動作確認車種一覧」</STRONG>をご覧ください。<BR>
+※一部車種では速度が10m/h未満でドアロックが動作する場合があります。</span></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
-    <td colspan="59" valign="top" bgcolor="#FFFF33"><span class="style15 style3">���A�C�h�����O�X�g�b�v�����Ԃ́A�G���W���Ďn�����̃o�b�e���[�d���~���ɂ��A�����b�N����ꍇ������܂��̂ŁA��t���o���܂���B</span></td>
+    <td colspan="59" valign="top" bgcolor="#FFFF33"><span class="style15 style3">※アイドリングストップ装備車は、エンジン再始動時のバッテリー電圧降下によりアンロックする場合がありますので、取付け出来ません。</span></td>
     <td>&nbsp;</td>
   </tr>
   
   <tr>
    <td colspan="10"><img name="speed_auto_lock_r34_c1" src="images/speed_auto_lock_r34_c1.gif" width="203" height="44" border="0" id="speed_auto_lock_r34_c1" alt=""></td>
-   <td colspan="61"><span class="style2">�f�ڂ���Ă��Ȃ��ԗ��ɂ��܂��Ă͕��Ђł͏���ۗL���Ă���܂���̂ŁA�f�B�[���[�l�y�ю��ԂɂĂ��m�F�����܂��悤�X�������肢�\���グ�܂��B</span></td>
+   <td colspan="61"><span class="style2">掲載されていない車両につきましては弊社では情報を保有しておりませんので、ディーラー様及び実車にてご確認頂きますよう宜しくお願い申し上げます。</span></td>
    <td><img src="images/spacer.gif" width="1" height="44" border="0" alt=""></td>
   </tr>
   <tr>
@@ -293,15 +312,15 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6"><DIV align="center" class="style6">2025�N4��23���X�V</DIV></td>
-   <td colspan="6"><DIV align="center" class="style6">�K���͂���܂���</DIV></td>
-   <td colspan="6"><DIV align="center" class="style6">2020�N5��22���X�V</DIV></td>
-   <td colspan="7"><DIV align="center" class="style6">2021�N12��22���X�V</DIV></td>
-   <td colspan="11"><DIV align="center" class="style6">2019�N1��8���X�V</DIV></td>
-   <td colspan="10"><DIV align="center" class="style6">2024�N3��22���X�V</DIV></td>
-   <td colspan="5"><DIV align="center" class="style6">2018�N4��5���X�V</DIV></td>
-   <td colspan="12"><DIV align="center" class="style6">2015�N10��19���X�V</DIV></td>
-   <td colspan="7"><DIV align="center" class="style6">2022�N7��6���X�V</DIV></td>
+   <td colspan="6"><DIV align="center" class="style6">2025年4月23日更新</DIV></td>
+   <td colspan="6"><DIV align="center" class="style6">適合はありません</DIV></td>
+   <td colspan="6"><DIV align="center" class="style6">2020年5月22日更新</DIV></td>
+   <td colspan="7"><DIV align="center" class="style6">2021年12月22日更新</DIV></td>
+   <td colspan="11"><DIV align="center" class="style6">2019年1月8日更新</DIV></td>
+   <td colspan="10"><DIV align="center" class="style6">2024年3月22日更新</DIV></td>
+   <td colspan="5"><DIV align="center" class="style6">2018年4月5日更新</DIV></td>
+   <td colspan="12"><DIV align="center" class="style6">2015年10月19日更新</DIV></td>
+   <td colspan="7"><DIV align="center" class="style6">2022年7月6日更新</DIV></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -319,41 +338,41 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   </tr>
   <tr>
    <td rowspan="14" valign="top"><img name="speed_auto_lock_r40_c1" src="images/speed_auto_lock_r40_c1.gif" width="6" height="645" border="0" id="speed_auto_lock_r40_c1" alt=""></td>
-   <td colspan="15" style="text-align: center; font-size: 19px"><b>�h�A���b�N���䃊���[</b></td>
+   <td colspan="15" style="text-align: center; font-size: 19px"><b>ドアロック制御リレー</b></td>
    <td rowspan="8" colspan="4"><img name="speed_auto_lock_r40_c17" src="images/speed_auto_lock_r40_c17.gif" width="7" height="245" border="0" id="speed_auto_lock_r40_c17" alt=""></td>
-   <td colspan="25" style="text-align: center; font-size: 19px"><b>�g���^�Ԑ�p ���䃆�j�b�g</b></td>
+   <td colspan="25" style="text-align: center; font-size: 19px"><b>トヨタ車専用 制御ユニット</b></td>
    <td rowspan="8" colspan="3"><img name="speed_auto_lock_r40_c46" src="images/speed_auto_lock_r40_c46.gif" width="7" height="245" border="0" id="speed_auto_lock_r40_c46" alt=""></td>
-   <td colspan="21" style="text-align: center; font-size: 19px"><b>�G�X�e�B�}��p �h�A���b�N�n�[�l�X</b></td>
+   <td colspan="21" style="text-align: center; font-size: 19px"><b>エスティマ専用 ドアロックハーネス</b></td>
    <td rowspan="8" colspan="2"><img name="speed_auto_lock_r40_c70" src="images/speed_auto_lock_r40_c70.gif" width="8" height="245" border="0" id="speed_auto_lock_r40_c70" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
    <td rowspan="5" colspan="6"><img name="speed_auto_lock_r41_c2" src="images/speed_auto_lock_r41_c2.gif" width="144" height="162" border="0" id="speed_auto_lock_r41_c2" alt=""></td>
-   <td colspan="9"><span class="style1">�z���_�ԓ��ꕔ�Ԏ�ɕK�v</span></td>
+   <td colspan="9"><span class="style1">ホンダ車等一部車種に必要</span></td>
    <td rowspan="5" colspan="6"><img name="speed_auto_lock_r41_c21" src="images/speed_auto_lock_r41_c21.gif" width="144" height="162" border="0" id="speed_auto_lock_r41_c21" alt=""></td>
-   <td colspan="19"><span class="style1">�g���^�Ԃ̈ꕔ�Ԏ�ɕK�v</span></td>
+   <td colspan="19"><span class="style1">トヨタ車の一部車種に必要</span></td>
    <td rowspan="5" colspan="6"><img name="speed_auto_lock_r41_c49" src="images/speed_auto_lock_r41_c49.gif" width="122" height="162" border="0" id="speed_auto_lock_r41_c49" alt=""></td>
-   <td colspan="15"><span style="font-size: 11px">H12/1�`H13/4�N���̃G�X�e�B�}��<BR>
-�h�A���b�N��A��������ꍇ�ɕK�v</span></td>
+   <td colspan="15"><span style="font-size: 11px">H12/1～H13/4年式のエスティマで<BR>
+ドアロックを連動させる場合に必要</span></td>
    <td><img src="images/spacer.gif" width="1" height="36" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="9" style="font-size: 20px"><b>�r�c�k-�g�q�O�P</b></td>
-   <td colspan="19" style="font-size: 20px"><b>�r�c�k-�s�r�O�Q</b></td>
-   <td colspan="15" style="font-size: 20px"><b>�e�n�o-�c�v�Q�O�O</b></td>
+   <td colspan="9" style="font-size: 20px"><b>ＳＤＬ-ＨＲ０１</b></td>
+   <td colspan="19" style="font-size: 20px"><b>ＳＤＬ-ＴＳ０２</b></td>
+   <td colspan="15" style="font-size: 20px"><b>ＦＯＰ-ＤＷ２００</b></td>
    <td><img src="images/spacer.gif" width="1" height="35" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="9" rowspan="3"><span style="font-size: 12px; line-height: 18px">�̔����i���R,�R�O�O</span><span style="font-size: 11px">�@�i�ō��j</span><br>
-     <span style="font-size: 12px; line-height: 18px">�i�Ŕ����i ���R,�O�O�O�j</span><br>
-      <span style="font-size: 11px; line-height: 18px">JAN�R�[�h<br>�S�X�T�O�O�X�S�O�U�O�T�V�P</span></td>
-   <td colspan="19" rowspan="3"><span style="font-size: 12px; line-height: 18px">�̔����i���T,�Q�W�O</span><span style="font-size: 11px">�@�i�ō��j</span><br>
-       <span style="font-size: 12px; line-height: 18px">�i�Ŕ����i ���S,�W�O�O�j</span><br>
-      <span style="font-size: 11px; line-height: 18px">JAN�R�[�h<br>�S�X�T�O�O�X�S�O�U�O�U�R�Q</span><br>
-      <span style="font-size: 11px; line-height: 19px; color: #FF0308;"><b>�y ���Y�I�� �z</b></span></td>
-   <td colspan="15" rowspan="3"><span style="font-size: 12px; line-height: 18px">�̔����i���U�U�O</span><span style="font-size: 11px">�@�i�ō��j</span><br>
-       <span style="font-size: 12px; line-height: 18px">�i�Ŕ����i ���U�O�O�j</span><br>
-      <span style="font-size: 11px; line-height: 18px">JAN�R�[�h<br>�S�X�T�O�O�X�S�P�R�T�P�W�V</span></td>
+   <td colspan="9" rowspan="3"><span style="font-size: 12px; line-height: 18px">販売価格￥３,３００</span><span style="font-size: 11px">　（税込）</span><br>
+     <span style="font-size: 12px; line-height: 18px">（税抜価格 ￥３,０００）</span><br>
+      <span style="font-size: 11px; line-height: 18px">JANコード<br>４９５００９４０６０５７１</span></td>
+   <td colspan="19" rowspan="3"><span style="font-size: 12px; line-height: 18px">販売価格￥５,２８０</span><span style="font-size: 11px">　（税込）</span><br>
+       <span style="font-size: 12px; line-height: 18px">（税抜価格 ￥４,８００）</span><br>
+      <span style="font-size: 11px; line-height: 18px">JANコード<br>４９５００９４０６０６３２</span><br>
+      <span style="font-size: 11px; line-height: 19px; color: #FF0308;"><b>【 生産終了 】</b></span></td>
+   <td colspan="15" rowspan="3"><span style="font-size: 12px; line-height: 18px">販売価格￥６６０</span><span style="font-size: 11px">　（税込）</span><br>
+       <span style="font-size: 12px; line-height: 18px">（税抜価格 ￥６００）</span><br>
+      <span style="font-size: 11px; line-height: 18px">JANコード<br>４９５００９４１３５１８７</span></td>
    <td><img src="images/spacer.gif" width="1" height="28" border="0" alt=""></td>
   </tr>
   <tr>
@@ -364,7 +383,7 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   </tr>
   <tr>
    <td rowspan="2" colspan="15"><img name="speed_auto_lock_r46_c2" src="images/speed_auto_lock_r46_c2.gif" width="324" height="53" border="0" id="speed_auto_lock_r46_c2" alt=""></td>
-      <td colspan="25"><span style="font-size: 11px; color: red">���i���쎞�ɃV�[�g�x���g�x�����y�ьx�����������܂����A<br>�ُ�ł͌�����܂���B</span></td>
+      <td colspan="25"><span style="font-size: 11px; color: red">商品動作時にシートベルト警告灯及び警告音が生じますが、<br>異常では御座いません。</span></td>
    <td rowspan="2" colspan="21"><img name="speed_auto_lock_r46_c49" src="images/speed_auto_lock_r46_c49.gif" width="324" height="53" border="0" id="speed_auto_lock_r46_c49" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="31" border="0" alt=""></td>
   </tr>
@@ -373,87 +392,76 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
    <td><img src="images/spacer.gif" width="1" height="22" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="70"><span class="style9">���i����</span></td>
+   <td colspan="70"><span class="style9">製品特長</span></td>
    <td><img src="images/spacer.gif" width="1" height="22" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="70" style="line-height:18px" valign="top"><ul class="style2">
-<li>�ԑ���15km/h�Ŏ����I�Ƀh�A���b�N���s���܂��B����ҁA���ɂ��q�l�̕s���ӂɂ��h�A�J���𖢑R�ɖh���܂��B��1</li>
-<li>�ԑ����b�N��A����Ԏ��ɃV�t�g���o�[���c�����W����o�����W�ɓ���鎖�Ŏ����I�Ƀh�A�A�����b�N���s���܂��B</li>
-<li>����A�Փˎ��̓��ŃG���W�����~�܂����ꍇ�A�����Ńh�A�A�����b�N����܂��B��2��3</li>
-<li>�ԑ����b�N��A�t���̃A�����b�N�X�C�b�`�ł��h�A�A�����b�N���s�����Ƃ��o���܂��B���̌�A���s�ɉ����Ď����I�Ƀh�A���b�N���s���܂��B��4��5</li>
-<li>�k�d�c�Ɩ���t���̃A�����b�N�X�C�b�`�ɓ������Ă��܂��̂Ŗ�ԓ��̈Èłł����F���ɗD��Ă��܂��B���A�h�A�m�u�Ń��b�N�E�A�����b�N���s���ԗ��ł͕t���̃A�����b�N�X�C�b�`�ŊȒP�Ƀh�A�A�����b�N������s���܂��B</li>
-<li>���s���Ɍ���ĕt���̃A�����b�N�X�C�b�`���������ꍇ�A�����ɍă��b�N���s���A�h�A�J����h���܂��̂ň��S���ɗD��Ă��܂��B��4</li>
-<li>���Y�Ԃ̂قƂ�ǂ̃��[�J�[�ɑΉ����Ă���܂��B��6</li>
+<li>車速約15km/hで自動的にドアロックを行います。同乗者、特にお子様の不注意によるドア開放を未然に防ぎます。※1</li>
+<li>車速ロック後、駐停車時にシフトレバーをＤレンジからＰレンジに入れる事で自動的にドアアンロックを行います。</li>
+<li>万一、衝突事故等でエンジンが止まった場合、自動でドアアンロックされます。※2※3</li>
+<li>車速ロック後、付属のアンロックスイッチでもドアアンロックを行うことが出来ます。その後、走行に応じて自動的にドアロックを行います。※4※5</li>
+<li>ＬＥＤ照明を付属のアンロックスイッチに内蔵していますので夜間等の暗闇でも視認性に優れています。又、ドアノブでロック・アンロックを行う車両では付属のアンロックスイッチで簡単にドアアンロック操作を行えます。</li>
+<li>走行中に誤って付属のアンロックスイッチを押した場合、すぐに再ロックを行い、ドア開放を防ぎますので安全性に優れています。※4</li>
+<li>国産車のほとんどのメーカーに対応しております。※6</li>
    </ul>
 <ul style="list-style: none;">
-<span class="style2">��1 �Ԏ�ɂ�胍�b�N�����삷��ԑ��ɑ����̌덷������܂��̂ŗ\�߂��������������B
+<span class="style2">※1 車種によりロックが動作する車速に多少の誤差がありますので予めご了承ください。
 </li>
 </span>
-<li class="style2">��2 �k�[�q���ɔz������Ă���ꍇ�̂ݓ��삵�܂��B</li>
-<li class="style2">��3 �Փ˂ɂ��h�A��h�A���b�N���[�^�[�̔j���y�уo�b�e���[���j������l�Ȏ��̂̏ꍇ�̓A�����b�N���Ȃ��ꍇ������܂��̂ŗ\�߂��������������B</li>
-<li class="style2">��4 �ԗ������X�C�b�`�ŃA�����b�N���ꂽ�ꍇ�́A���̌�̎ԑ����b�N�͓��삵�܂���B</li>
-<li class="style2">��5 �t���̃A�����b�N�X�C�b�`�̓A�����b�N����݂̂Ń��b�N����͍s���܂���B</li>
-<li class="style2">��6 �ꕔ�Ԏ�Ŏ��t�����o���Ȃ��ꍇ������܂��B</li>
+<li class="style2">※2 Ｌ端子線に配線されている場合のみ動作します。</li>
+<li class="style2">※3 衝突によるドアやドアロックモーターの破損及びバッテリーが破損する様な事故の場合はアンロックしない場合がありますので予めご了承ください。</li>
+<li class="style2">※4 車両純正スイッチでアンロックされた場合は、その後の車速ロックは動作しません。</li>
+<li class="style2">※5 付属のアンロックスイッチはアンロック動作のみでロック動作は行いません。</li>
+<li class="style2">※6 一部車種で取り付けが出来ない場合があります。</li>
 </ul></td>
    <td><img src="images/spacer.gif" width="1" height="195" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="70"><span class="style10 style1">���w���̑O��</span></td>
+    <td colspan="70"><span class="style10 style1">ご購入の前に</span></td>
    <td><img src="images/spacer.gif" width="1" height="22" border="0" alt=""></td>
   </tr>
   <tr>
     <td colspan="70" style="line-height:18px"><ul class="style2">
-<li>����m�F�Ԏ�ꗗ���f�ڎԎ�ւ̎��t���Ɋւ���T�|�[�g�E�y�ѕۏ؂͈�؍s���Ă���܂���B�܂��A���K�E���s���킸�O���Ԃւ̃T�|�[�g���s���Ă���܂���B</li>
-<li>�����̎�t�E�戵�������ȊO�̎��t�������E���Ɋւ���T�|�[�g�͍s���Ă���܂���B</li>
-<li>�����̎�t�E�戵�����������n�ǂ��������A���S�ɍ�Ƃ��s���Ă��������B</li>
-<li>�ԗ��̏����@�\�ɓ��@�\�����ڂ���Ă���ꍇ�ɂ͎��t���ł��܂���B</li>
-<li>�{���i���g�p�������ɂ��ԗ����u�̌�쓮�⓮��s�ǁA�����ɂ�萶�������̂⑹�Q�̏C���ɂ������p�ɂ��ĕ��Ђł͈�؂̐ӔC�𕉂����˂܂��B</li>
-<li>���t���̍ۂ̔j���Ɋւ��܂��ẮA�ۏ؂̑ΏۊO�ł��B</li>
-<li>���i�̃f�U�C���A�d�l�A�O�ρA�F�����A���i���ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B�܂��A���i�̎ʐ^���̐F�͎����Ƃ͂͑����قȂ�ꍇ������܂��̂ŁA���炩���߂��������������B</li></ul></td>
+<li>動作確認車種一覧未掲載車種への取り付けに関するサポート・及び保証は一切行っておりません。また、正規・並行を問わず外国車へのサポートも行っておりません。</li>
+<li>同梱の取付・取扱説明書以外の取り付け資料・情報に関するサポートは行っておりません。</li>
+<li>同梱の取付・取扱説明書をご熟読いただき、安全に作業を行ってください。</li>
+<li>車両の純正機能に同機能が搭載されている場合には取り付けできません。</li>
+<li>本製品を使用した事による車両装置の誤作動や動作不良、それらにより生じた事故や損害の修復にかかる費用について弊社では一切の責任を負いかねます。</li>
+<li>取り付けの際の破損に関しましては、保証の対象外です。</li>
+<li>製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。また、製品の写真等の色は実物とはは多少異なる場合がありますので、あらかじめご了承ください。</li></ul></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
-   <td colspan="70"><span class="style9">���S�y�ю��t���Ɋւ��邲����</span></td>
+   <td colspan="70"><span class="style9">安全及び取り付けに関するご注意</span></td>
    <td><img src="images/spacer.gif" width="1" height="22" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="70" style="line-height:18px" valign="top"><ul class="style2">
-   <li>�w�肳�ꂽ����T���Ƃ��͕K���T�[�L�b�g�e�X�^�[���g�p���A���d��i�����v�e�X�^�[�j���͎g�p���Ȃ��ł��������B</li>
-     <li>�{���i�����t������ۂ́A���̋@��ɉe����^���Ȃ��ꏊ�y�щ^�]�ɍ����x���̂Ȃ��ꏊ�ɐݒu���Ă��������B</li>
-     <li>�ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{���̋@�\�ɕs��������ꍇ�ɂ͖{���i�����t�����͎g�p���Ȃ��ł��������B���i������ɓ��삵�Ȃ�������A�ԗ��@��ɉe����^���鋰�ꂪ����܂��B</li>
-     <li>�{���i�̎��t���́A���t���Z�p�̂���̔��X�ōs���Ă��������B</li>
-     <li>�{���i�Ƒ��@��ƕ��p���Ďg�p����ꍇ�A���@��̎戵���������悭���ǂ݂ɂȂ萳�����g�p���@�Ŏg�p���Ă��������B</li>
-     <li>�w��ȊO�̓d���ł͎g�p���Ȃ��ł��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</li>
-     <li>�{���i�����t������ہA�d���̋ɐ��i�{�E�|�j���ԈႦ�Ȃ��悤�ɂ����ӂ��������B���A�d���R�[�h���ԑ̂̋��������ɐG��Ȃ��悤�ɂ����ӂ��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</li>
-    <li>���t���̍ۂɂ͕K���G���W�����~������Ԃōs���Ă��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</li></ul></td>
+   <li>指定された線を探すときは必ずサーキットテスターを使用し、検電器（ランプテスター）等は使用しないでください。</li>
+     <li>本製品を取り付けする際は、他の機器に影響を与えない場所及び運転に差し支えのない場所に設置してください。</li>
+     <li>車両のバッテリーが弱っている状態及び、車両本来の機能に不備がある場合には本製品を取り付け又は使用しないでください。製品が正常に動作しなかったり、車両機器に影響を与える恐れがあります。</li>
+     <li>本製品の取り付けは、取り付け技術のある販売店で行ってください。</li>
+     <li>本製品と他機器と併用して使用する場合、他機器の取扱説明書もよくお読みになり正しい使用方法で使用してください。</li>
+     <li>指定以外の電圧では使用しないでください。火災・感電・故障の原因となります。</li>
+     <li>本製品を取り付けする際、電源の極性（＋・－）を間違えないようにご注意ください。又、電源コードが車体の金属部分に触れないようにご注意ください。火災・感電・故障の原因となります。</li>
+    <li>取り付けの際には必ずエンジンを停止した状態で行ってください。火災・感電・故障の原因となります。</li></ul></td>
    <td><img src="images/spacer.gif" width="1" height="161" border="0" alt=""></td>
   </tr>
     <tr>
-   <td colspan="70"><span class="style9">�ۏ؋K��</span></td>
+   <td colspan="70"><span class="style9">保証規定</span></td>
    <td><img src="images/spacer.gif" width="1" height="22" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="70" style="line-height:18px" valign="top"><ul class="style2">
-   <li>�{���i�͂P�N�ۏ؂ƂȂ�܂��B</li>
-     <li>�戵�������ɏ]��������Ȏg�p��Ԃ̂��Ƃŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��āA ���Ђł͈�ؐӔC�𕉂����˂܂��B</li>
+   <li>本製品は１年保証となります。</li>
+     <li>取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について、 弊社では一切責任を負いかねます。</li>
      </ul></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="2" colspan="56"><img name="speed_auto_lock_r52_c1" src="images/speed_auto_lock_r52_c1.gif" width="817" height="93" border="0" id="speed_auto_lock_r52_c1" alt=""></td>
-   <td colspan="9"><a href="speed_auto_lock.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('speed_auto_lock_r52_c57','','images/speed_auto_lock_r52_c57_f2.gif',1);"><img name="speed_auto_lock_r52_c57" src="images/speed_auto_lock_r52_c57.gif" width="85" height="15" border="0" id="speed_auto_lock_r52_c57" alt=""></a></td>
-   <td rowspan="2" colspan="6"><img name="speed_auto_lock_r52_c66" src="images/speed_auto_lock_r52_c66.gif" width="98" height="93" border="0" id="speed_auto_lock_r52_c66" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="9"><img name="speed_auto_lock_r53_c57" src="images/speed_auto_lock_r53_c57.gif" width="85" height="78" border="0" id="speed_auto_lock_r53_c57" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="78" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="71"><img name="speed_auto_lock_r54_c1" src="images/speed_auto_lock_r54_c1.gif" width="1000" height="87" border="0" id="speed_auto_lock_r54_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="87" border="0" alt=""></td>
-  </tr>
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

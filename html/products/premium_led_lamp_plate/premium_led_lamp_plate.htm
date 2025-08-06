@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>ѓvѓЊѓ~ѓAѓЂ ѓXЃ[ѓpЃ[LEDѓ‰ѓ“ѓv/Bullcon-ѓtѓW“d‹@ЌH‹ЖЉ”Ћ®‰пЋР</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>гѓ—гѓ¬гѓџг‚ўгѓ  г‚№гѓјгѓ‘гѓјLEDгѓ©гѓігѓ—/Bullcon-гѓ•г‚ёй›»ж©џе·ҐжҐ­ж ЄејЏдјљз¤ѕ</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -50,6 +52,41 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // гѓ¬г‚№гѓќгѓіг‚№гЃЊж€ђеЉџгЃ§гЃЄгЃ‘г‚ЊгЃ°г‚Ёгѓ©гѓјг‚’жЉ•гЃ’г‚‹
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // г‚Ёгѓ©гѓјз™єз”џж™‚гЃ®д»Јж›їе‡¦зђ†пј€дѕ‹: г‚Ёгѓ©гѓјгѓЎгѓѓг‚»гѓјг‚ёг‚’иЎЁз¤єпј‰
+        document.getElementById('header-placeholder').innerHTML = '<p>гѓгѓѓгѓЂгѓјгЃ®иЄ­гЃїиѕјгЃїгЃ«е¤±ж•—гЃ—гЃѕгЃ—гЃџгЂ‚</p>';
+    });
+
+    // гѓ•гѓѓг‚їгѓјгЃ®иЄ­гЃїиѕјгЃї
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // гѓ¬г‚№гѓќгѓіг‚№гЃЊж€ђеЉџгЃ§гЃЄгЃ‘г‚ЊгЃ°г‚Ёгѓ©гѓјг‚’жЉ•гЃ’г‚‹
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // г‚Ёгѓ©гѓјз™єз”џж™‚гЃ®д»Јж›їе‡¦зђ†
+        document.getElementById('footer-placeholder').innerHTML = '<p>гѓ•гѓѓг‚їгѓјгЃ®иЄ­гЃїиѕјгЃїгЃ«е¤±ж•—гЃ—гЃѕгЃ—гЃџгЂ‚</p>';
+    });
+//-->
 //-->
 </script>
     
@@ -63,8 +100,10 @@ function MM_preloadImages() { //v3.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/premium_led_lamp_plate_r57_c44_f2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="new_led_lamp_nichia_7.png" fwpage="ѓyЃ[ѓW 1" fwbase="premium_led_lamp_plate.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="new_led_lamp_nichia_7.png" fwpage="гѓљгѓјг‚ё 1" fwbase="premium_led_lamp_plate.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="5" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="4" height="1" border="0" alt=""></td>
@@ -122,24 +161,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
 
-   <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
 </iframe> </td></tr>
   <tr>
    <td colspan="53"><img name="premium_led_lamp_plate_r10_c1" src="images/premium_led_lamp_plate_r10_c1.gif" width="1000" height="36" border="0" id="premium_led_lamp_plate_r10_c1" alt=""></td>
@@ -151,17 +172,17 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="16"><img name="premium_led_lamp_plate_r12_c1" src="images/premium_led_lamp_plate_r12_c1.gif" width="310" height="160" border="0" id="premium_led_lamp_plate_r12_c1" alt=""></td>
-   <td colspan="37" rowspan="5" style="line-height:20px"><p><span class="style13">Ќ‚•iЋї‚М“ъ€џђ»Ќ‚‹P“x”’ђFLEDЌМ—p‚Е’јЋ‹Њµ‹Ц‚М–ѕ‚й‚і‚рЋАЊ»ЃI</span><span class="style16"><span class="style1">Ѓi100Ѓ“ЏЖЋЛЋћЃj</span></span><span class="style13"><br>
-     Џѓ”’Ѓi‚U‚O‚O‚O‚jЃj‚Й‹P‚­Њх‚ЕЋФ“а‚рѓhѓЊѓXѓAѓbѓvЃB<br>
-    ‚ЁЌD‚Э‚М–ѕ‚й‚і‚Й‚R’iЉK’Іђ®‰В”\ЃI</span><span class="style16"><span class="style1">ЃiSLL-P1725Џњ‚­Ѓj</span></span></p>
-    <p><span class="style15">ѓvѓЊѓ~ѓAѓЂЃ@ѓXЃ[ѓpЃ[‚k‚d‚cѓ‰ѓ“ѓvѓVѓЉЃ[ѓY‚НЃAЃuѓvѓЊѓ~ѓAѓЂЃv‚М–ј‘O‚ЄЋ¦‚·‚Ж‚Ё‚иЃA<br>
-LED‚М’†‚Е‚аЌ‚•iЋї‚МЃu“ъ€џђ»Ќ‚‹P“xLEDЃv‚рЌМ—p‚µ‚Д‚ў‚й€ЧЃAЃuђFѓЂѓ‰Ѓv‚вЃu–ѕ‚й‚і‚Мѓoѓ‰ѓcѓLЃv<br>
-Ѓu“_“”•s—З‚в’ZЋх–ЅЃv‚Є–і‚­ЃAЃy ‹P‚« Ѓz‚М•\Њ»‚Й‘Љ‰ћ‚µ‚ўЏѓ”’Њх‚рЋАЊ»ЃB<br>
-LED‚р•ЫЊм‚·‚йђк—pѓhѓ‰ѓCѓo‚рЌМ—p‚µЃA‰Я“d—¬–hЋ~ЃAѓTЃ[ѓ}ѓ‹ѓVѓѓѓbѓgѓ_ѓEѓ“‹@”\‚р“‹ЌЪЃB<br>
-€¤ЋФ‚МЏг•i‚ИѓhѓЊѓXѓAѓbѓv‚ЙЌvЊЈ‚·‚й‚Ж“ЇЋћ‚ЙЃAЋФ“а‚р–ѕ‚й‚­ЏЖ‚з‚·ЋА—pђ«‚рЊ“‚Л”х‚¦‚Д‚ў‚Ь‚·ЃB</span></p>
-    <p><span class="style3">Ѓu“ъ€џЃvЃAЃuNICHIAЃv‹y‚СЃuNICHIAЃvѓЌѓSѓ}Ѓ[ѓNЃAЃuNICHIALEDЃvЃAЃuGENUINEЃ_NICHIAЃ_LEDЃ‡ЃNЃv‚НЃA<br>
-“ъ€џ‰»ЉwЌH‹ЖЉ”Ћ®‰пЋР‚М“ъ–{‚И‚з‚С‚Й‚»‚М‘ј‚МЌ‘‚Й‚Ё‚Ї‚йЏ¤•W‚Ь‚Ѕ‚Н“o^Џ¤•W‚Е‚·ЃB<br>
-“ъ€џђ»LED‚ржђ‚¤–Н•нЃE–Н‘ў•i‚в—ЮЋ—•i‚рЋg—p‚µ‚ЅLEDђ»•i‚Й‚І’Ќ€У‚­‚ѕ‚і‚ўЃB</span></p></td>
+   <td colspan="37" rowspan="5" style="line-height:20px"><p><span class="style13">й«е“ЃиіЄгЃ®ж—ҐдєњиЈЅй«ијќеє¦з™Ѕи‰ІLEDжЋЎз”ЁгЃ§з›ґи¦–еЋіз¦ЃгЃ®жЋг‚‹гЃ•г‚’е®џзЏѕпјЃ</span><span class="style16"><span class="style1">пј€100пј…з…§е°„ж™‚пј‰</span></span><span class="style13"><br>
+     зґ”з™Ѕпј€пј–пјђпјђпјђпј«пј‰гЃ«ијќгЃЏе…‰гЃ§и»Ље†…г‚’гѓ‰гѓ¬г‚№г‚ўгѓѓгѓ—гЂ‚<br>
+    гЃЉеҐЅгЃїгЃ®жЋг‚‹гЃ•гЃ«пј“ж®µйљЋиЄїж•ґеЏЇиѓЅпјЃ</span><span class="style16"><span class="style1">пј€SLL-P1725й™¤гЃЏпј‰</span></span></p>
+    <p><span class="style15">гѓ—гѓ¬гѓџг‚ўгѓ гЂЂг‚№гѓјгѓ‘гѓјпј¬пјҐпј¤гѓ©гѓігѓ—г‚·гѓЄгѓјг‚єгЃЇгЂЃгЂЊгѓ—гѓ¬гѓџг‚ўгѓ гЂЌгЃ®еђЌе‰ЌгЃЊз¤єгЃ™гЃЁгЃЉг‚ЉгЂЃ<br>
+LEDгЃ®дё­гЃ§г‚‚й«е“ЃиіЄгЃ®гЂЊж—ҐдєњиЈЅй«ијќеє¦LEDгЂЌг‚’жЋЎз”ЁгЃ—гЃ¦гЃ„г‚‹з‚єгЂЃгЂЊи‰Ігѓ гѓ©гЂЌг‚„гЂЊжЋг‚‹гЃ•гЃ®гѓђгѓ©гѓ„г‚­гЂЌ<br>
+гЂЊз‚№зЃЇдёЌи‰Їг‚„зџ­еЇїе‘ЅгЂЌгЃЊз„ЎгЃЏгЂЃгЂђ ијќгЃЌ гЂ‘гЃ®иЎЁзЏѕгЃ«з›ёеїњгЃ—гЃ„зґ”з™Ѕе…‰г‚’е®џзЏѕгЂ‚<br>
+LEDг‚’дїќи­·гЃ™г‚‹е°‚з”Ёгѓ‰гѓ©г‚¤гѓђг‚’жЋЎз”ЁгЃ—гЂЃйЃЋй›»жµЃйІж­ўгЂЃг‚µгѓјгѓћгѓ«г‚·гѓЈгѓѓгѓ€гѓЂг‚¦гѓіж©џиѓЅг‚’жђ­иј‰гЂ‚<br>
+ж„›и»ЉгЃ®дёЉе“ЃгЃЄгѓ‰гѓ¬г‚№г‚ўгѓѓгѓ—гЃ«иІўзЊ®гЃ™г‚‹гЃЁеђЊж™‚гЃ«гЂЃи»Ље†…г‚’жЋг‚‹гЃЏз…§г‚‰гЃ™е®џз”ЁжЂ§г‚’е…јгЃ­е‚™гЃ€гЃ¦гЃ„гЃѕгЃ™гЂ‚</span></p>
+    <p><span class="style3">гЂЊж—ҐдєњгЂЌгЂЃгЂЊNICHIAгЂЌеЏЉгЃігЂЊNICHIAгЂЌгѓ­г‚ґгѓћгѓјг‚ЇгЂЃгЂЊNICHIALEDгЂЌгЂЃгЂЊGENUINEпјјNICHIAпјјLEDв€ћВ§NгЂЌгЃЇгЂЃ<br>
+ж—ҐдєњеЊ–е­¦е·ҐжҐ­ж ЄејЏдјљз¤ѕгЃ®ж—Ґжњ¬гЃЄг‚‰гЃігЃ«гЃќгЃ®д»–гЃ®е›ЅгЃ«гЃЉгЃ‘г‚‹е•†жЁ™гЃѕгЃџгЃЇз™»йЊІе•†жЁ™гЃ§гЃ™гЂ‚<br>
+ж—ҐдєњиЈЅLEDг‚’и¬ігЃ†жЁЎеЂЈгѓ»жЁЎйЂ е“Ѓг‚„йЎћдјје“Ѓг‚’дЅїз”ЁгЃ—гЃџLEDиЈЅе“ЃгЃ«гЃ”жіЁж„ЏгЃЏгЃ гЃ•гЃ„гЂ‚</span></p></td>
    <td><img src="images/spacer.gif" width="1" height="160" border="0" alt=""></td>
   </tr>
   <tr>
@@ -170,13 +191,13 @@ LED‚р•ЫЊм‚·‚йђк—pѓhѓ‰ѓCѓo‚рЌМ—p‚µЃA‰Я“d—¬–hЋ~ЃAѓTЃ[ѓ}ѓ‹ѓVѓѓѓbѓgѓ_ѓEѓ“‹@”\‚р“‹ЌЪЃ
   </tr>
   <tr>
    <td colspan="8"><img name="premium_led_lamp_plate_r14_c1" src="images/premium_led_lamp_plate_r14_c1.gif" width="130" height="45" border="0" id="premium_led_lamp_plate_r14_c1" alt=""></td>
-   <td colspan="8"><div align="center"><span class="style3">ђі‹K“ъ€џђ»LEDЋg—p‚МЏШ<br>
-    ЃuNICHIAѓЌѓSѓ}Ѓ[ѓNЃv</span></div></td>
+   <td colspan="8"><div align="center"><span class="style3">ж­Ји¦Џж—ҐдєњиЈЅLEDдЅїз”ЁгЃ®иЁј<br>
+    гЂЊNICHIAгѓ­г‚ґгѓћгѓјг‚ЇгЂЌ</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="45" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="8"><img name="premium_led_lamp_plate_r15_c1" src="images/premium_led_lamp_plate_r15_c1.gif" width="130" height="40" border="0" id="premium_led_lamp_plate_r15_c1" alt=""></td>
-   <td colspan="8"><div align="center"><span class="style11">Љу–]Џ¬”„‰їЉi ЃЏѓIЃ[ѓvѓ“</span></div></td>
+   <td colspan="8"><div align="center"><span class="style11">еёЊжњ›е°ЏеЈІдѕЎж ј пїҐг‚Єгѓјгѓ—гѓі</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
   <tr>
@@ -235,58 +256,58 @@ LED‚р•ЫЊм‚·‚йђк—pѓhѓ‰ѓCѓo‚рЌМ—p‚µЃA‰Я“d—¬–hЋ~ЃAѓTЃ[ѓ}ѓ‹ѓVѓѓѓbѓgѓ_ѓEѓ“‹@”\‚р“‹ЌЪЃ
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="11"><div align="center"><span class="style3">’ґЌ‚‹P“x‚r‚l‚cЃ@‚k‚d‚cЃ@‚Q‚OЊВЋg—p</span></div></td>
-   <td colspan="10"><div align="center"><span class="style3">’ґЌ‚‹P“x‚r‚l‚cЃ@‚k‚d‚cЃ@‚P‚UЊВЋg—p</span></div></td>
-   <td colspan="12"><div align="center"><span class="style3">’ґЌ‚‹P“x‚r‚l‚cЃ@‚k‚d‚cЃ@‚WЊВЋg—p</span></div></td>
-   <td colspan="11"><div align="center"><span class="style3">’ґЌ‚‹P“x‚r‚l‚cЃ@‚k‚d‚cЃ@‚UЊВЋg—p</span></div></td>
+   <td colspan="11"><div align="center"><span class="style3">и¶…й«ијќеє¦пјіпј­пј¤гЂЂпј¬пјҐпј¤гЂЂпј’пјђеЂ‹дЅїз”Ё</span></div></td>
+   <td colspan="10"><div align="center"><span class="style3">и¶…й«ијќеє¦пјіпј­пј¤гЂЂпј¬пјҐпј¤гЂЂпј‘пј–еЂ‹дЅїз”Ё</span></div></td>
+   <td colspan="12"><div align="center"><span class="style3">и¶…й«ијќеє¦пјіпј­пј¤гЂЂпј¬пјҐпј¤гЂЂпјеЂ‹дЅїз”Ё</span></div></td>
+   <td colspan="11"><div align="center"><span class="style3">и¶…й«ијќеє¦пјіпј­пј¤гЂЂпј¬пјҐпј¤гЂЂпј–еЂ‹дЅїз”Ё</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="11"><div align="center"><span class="style3">ђF‰·“xЃ@‚U‚O‚O‚O‚j</span></div></td>
-    <td colspan="10"><div align="center"><span class="style3">ђF‰·“xЃ@‚U‚O‚O‚O‚j</span></div></td>
-    <td colspan="12"><div align="center"><span class="style3">ђF‰·“xЃ@‚U‚O‚O‚O‚j</span></div></td>
-    <td colspan="11"><div align="center"><span class="style3">ђF‰·“xЃ@‚U‚O‚O‚O‚j</span></div></td>
+    <td colspan="11"><div align="center"><span class="style3">и‰Іжё©еє¦гЂЂпј–пјђпјђпјђпј«</span></div></td>
+    <td colspan="10"><div align="center"><span class="style3">и‰Іжё©еє¦гЂЂпј–пјђпјђпјђпј«</span></div></td>
+    <td colspan="12"><div align="center"><span class="style3">и‰Іжё©еє¦гЂЂпј–пјђпјђпјђпј«</span></div></td>
+    <td colspan="11"><div align="center"><span class="style3">и‰Іжё©еє¦гЂЂпј–пјђпјђпјђпј«</span></div></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
-   <td colspan="11"><div align="center"><span class="style3">‚r‚h‚y‚dЃ@‚R‚T‚Ќ‚ЌЃ~‚T‚O‚Ќ‚Ќ</span></div></td>
-   <td colspan="10"><div align="center"><span class="style3">‚r‚h‚y‚dЃ@‚R‚T‚Ќ‚ЌЃ~‚R‚T‚Ќ‚Ќ</span></div></td>
-   <td colspan="12"><div align="center"><span class="style3">‚r‚h‚y‚dЃ@‚P‚X‚Ќ‚ЌЃ~‚R‚X‚Ќ‚Ќ</span></div></td>
-   <td colspan="11"><div align="center"><span class="style3">‚r‚h‚y‚dЃ@‚P‚V‚Ќ‚ЌЃ~‚Q‚T‚Ќ‚Ќ</span></div></td>
+   <td colspan="11"><div align="center"><span class="style3">пјіпј©пјєпјҐгЂЂпј“пј•пЅЌпЅЌГ—пј•пјђпЅЌпЅЌ</span></div></td>
+   <td colspan="10"><div align="center"><span class="style3">пјіпј©пјєпјҐгЂЂпј“пј•пЅЌпЅЌГ—пј“пј•пЅЌпЅЌ</span></div></td>
+   <td colspan="12"><div align="center"><span class="style3">пјіпј©пјєпјҐгЂЂпј‘пј™пЅЌпЅЌГ—пј“пј™пЅЌпЅЌ</span></div></td>
+   <td colspan="11"><div align="center"><span class="style3">пјіпј©пјєпјҐгЂЂпј‘пј—пЅЌпЅЌГ—пј’пј•пЅЌпЅЌ</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="11"><div align="center"><span class="style3">Ћg—p“d€іЃ@‚P‚Q‚uЃEѓ}ѓCѓiѓXѓAЃ[ѓX</span></div></td>
-   <td colspan="10"><div align="center"><span class="style3">Ћg—p“d€іЃ@‚P‚Q‚uЃEѓ}ѓCѓiѓXѓAЃ[ѓX</span></div></td>
-   <td colspan="12"><div align="center"><span class="style3">Ћg—p“d€іЃ@‚P‚Q‚uЃEѓ}ѓCѓiѓXѓAЃ[ѓX</span></div></td>
-   <td colspan="11"><div align="center"><span class="style3">Ћg—p“d€іЃ@‚P‚Q‚uЃEѓ}ѓCѓiѓXѓAЃ[ѓX</span></div></td>
+   <td colspan="11"><div align="center"><span class="style3">дЅїз”Ёй›»ењ§гЂЂпј‘пј’пј¶гѓ»гѓћг‚¤гѓЉг‚№г‚ўгѓјг‚№</span></div></td>
+   <td colspan="10"><div align="center"><span class="style3">дЅїз”Ёй›»ењ§гЂЂпј‘пј’пј¶гѓ»гѓћг‚¤гѓЉг‚№г‚ўгѓјг‚№</span></div></td>
+   <td colspan="12"><div align="center"><span class="style3">дЅїз”Ёй›»ењ§гЂЂпј‘пј’пј¶гѓ»гѓћг‚¤гѓЉг‚№г‚ўгѓјг‚№</span></div></td>
+   <td colspan="11"><div align="center"><span class="style3">дЅїз”Ёй›»ењ§гЂЂпј‘пј’пј¶гѓ»гѓћг‚¤гѓЉг‚№г‚ўгѓјг‚№</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4"><div align="center"><span class="style3">ЏБ”п“d—Н</span></div></td>
-   <td colspan="4"><div align="center"><span class="style3">–с‚P‚X‚O‚Ќ‚`</span></div></td>
-   <td colspan="3"><div align="center"><span class="style3">Ѓi‚P‚O‚OЃ“Ѓj</span></div></td>
-   <td colspan="4"><div align="center"><span class="style3">ЏБ”п“d—Н</span></div></td>
-   <td colspan="4"><div align="center"><span class="style3">–с‚P‚U‚R‚Ќ‚`</span></div></td>
-   <td colspan="2"><div align="center"><span class="style3">Ѓi‚P‚O‚OЃ“Ѓj</span></div></td>
-   <td colspan="3"><div align="center"><span class="style3">ЏБ”п“d—Н</span></div></td>
-   <td colspan="6"><div align="center"><span class="style3">–с‚W‚Q‚Ќ‚`</span></div></td>
-   <td colspan="3"><div align="center"><span class="style3">Ѓi‚P‚O‚OЃ“Ѓj</span></div></td>
-   <td colspan="5"><div align="center"><span class="style3">ЏБ”п“d—Н</span></div></td>
-   <td colspan="4"><div align="center"><span class="style3">–с‚T‚S‚Ќ‚`</span></div></td>
-   <td colspan="2"><div align="center"><span class="style3">Ѓi‚P‚O‚OЃ“Ѓj</span></div></td>
+   <td colspan="4"><div align="center"><span class="style3">ж¶€иІ»й›»еЉ›</span></div></td>
+   <td colspan="4"><div align="center"><span class="style3">зґ„пј‘пј™пјђпЅЌпјЎ</span></div></td>
+   <td colspan="3"><div align="center"><span class="style3">пј€пј‘пјђпјђпј…пј‰</span></div></td>
+   <td colspan="4"><div align="center"><span class="style3">ж¶€иІ»й›»еЉ›</span></div></td>
+   <td colspan="4"><div align="center"><span class="style3">зґ„пј‘пј–пј“пЅЌпјЎ</span></div></td>
+   <td colspan="2"><div align="center"><span class="style3">пј€пј‘пјђпјђпј…пј‰</span></div></td>
+   <td colspan="3"><div align="center"><span class="style3">ж¶€иІ»й›»еЉ›</span></div></td>
+   <td colspan="6"><div align="center"><span class="style3">зґ„пјпј’пЅЌпјЎ</span></div></td>
+   <td colspan="3"><div align="center"><span class="style3">пј€пј‘пјђпјђпј…пј‰</span></div></td>
+   <td colspan="5"><div align="center"><span class="style3">ж¶€иІ»й›»еЉ›</span></div></td>
+   <td colspan="4"><div align="center"><span class="style3">зґ„пј•пј”пЅЌпјЎ</span></div></td>
+   <td colspan="2"><div align="center"><span class="style3">пј€пј‘пјђпјђпј…пј‰</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="4"><div align="center"><img name="premium_led_lamp_plate_r28_c3" src="images/premium_led_lamp_plate_r28_c3.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r28_c3" alt=""></div></td>
-   <td colspan="4"><div align="center"><span class="style3">–с‚P‚Q‚Q‚Ќ‚`</span></div></td>
-   <td colspan="3"><div align="center"><span class="style3">Ѓi‚U‚VЃ“Ѓj </span></div></td>
+   <td colspan="4"><div align="center"><span class="style3">зґ„пј‘пј’пј’пЅЌпјЎ</span></div></td>
+   <td colspan="3"><div align="center"><span class="style3">пј€пј–пј—пј…пј‰ </span></div></td>
    <td colspan="4"><div align="center"><img name="premium_led_lamp_plate_r28_c15" src="images/premium_led_lamp_plate_r28_c15.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r28_c15" alt=""></div></td>
-   <td colspan="4"><div align="center"><span class="style3">–с‚P‚O‚T‚Ќ‚`</span></div></td>
-   <td colspan="2"><div align="center"><span class="style3">Ѓi‚U‚VЃ“Ѓj </span></div></td>
+   <td colspan="4"><div align="center"><span class="style3">зґ„пј‘пјђпј•пЅЌпјЎ</span></div></td>
+   <td colspan="2"><div align="center"><span class="style3">пј€пј–пј—пј…пј‰ </span></div></td>
    <td colspan="3"><div align="center"><img name="premium_led_lamp_plate_r28_c26" src="images/premium_led_lamp_plate_r28_c26.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r28_c26" alt=""></div></td>
-   <td colspan="6"><div align="center"><span class="style3">–с‚T‚R‚Ќ‚`</span></div></td>
-   <td colspan="3"><div align="center"><span class="style3">Ѓi‚U‚VЃ“Ѓj </span></div></td>
+   <td colspan="6"><div align="center"><span class="style3">зґ„пј•пј“пЅЌпјЎ</span></div></td>
+   <td colspan="3"><div align="center"><span class="style3">пј€пј–пј—пј…пј‰ </span></div></td>
    <td colspan="5"><div align="center"><img name="premium_led_lamp_plate_r28_c40" src="images/premium_led_lamp_plate_r28_c40.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r28_c40" alt=""></div></td>
    <td colspan="4"><div align="center"><img name="premium_led_lamp_plate_r28_c45" src="images/premium_led_lamp_plate_r28_c45.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r28_c45" alt=""></div></td>
    <td colspan="2"><div align="center"><img name="premium_led_lamp_plate_r28_c49" src="images/premium_led_lamp_plate_r28_c49.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r28_c49" alt=""></div></td>
@@ -294,24 +315,24 @@ LED‚р•ЫЊм‚·‚йђк—pѓhѓ‰ѓCѓo‚рЌМ—p‚µЃA‰Я“d—¬–hЋ~ЃAѓTЃ[ѓ}ѓ‹ѓVѓѓѓbѓgѓ_ѓEѓ“‹@”\‚р“‹ЌЪЃ
   </tr>
   <tr>
    <td colspan="4"><div align="center"><img name="premium_led_lamp_plate_r29_c3" src="images/premium_led_lamp_plate_r29_c3.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r29_c3" alt=""></div></td>
-   <td colspan="4"><div align="center"><span class="style3">–с‚U‚O‚Ќ‚`</span></div></td>
-   <td colspan="3"><div align="center"><span class="style3">Ѓi‚R‚RЃ“Ѓj </span></div></td>
+   <td colspan="4"><div align="center"><span class="style3">зґ„пј–пјђпЅЌпјЎ</span></div></td>
+   <td colspan="3"><div align="center"><span class="style3">пј€пј“пј“пј…пј‰ </span></div></td>
    <td colspan="4"><div align="center"><img name="premium_led_lamp_plate_r29_c15" src="images/premium_led_lamp_plate_r29_c15.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r29_c15" alt=""></div></td>
-   <td colspan="4"><div align="center"><span class="style3">–с‚T‚Q‚Ќ‚`</span></div></td>
-   <td colspan="2"><div align="center"><span class="style3">Ѓi‚R‚RЃ“Ѓj </span></div></td>
+   <td colspan="4"><div align="center"><span class="style3">зґ„пј•пј’пЅЌпјЎ</span></div></td>
+   <td colspan="2"><div align="center"><span class="style3">пј€пј“пј“пј…пј‰ </span></div></td>
    <td colspan="3"><div align="center"><img name="premium_led_lamp_plate_r29_c26" src="images/premium_led_lamp_plate_r29_c26.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r29_c26" alt=""></div></td>
-   <td colspan="6"><div align="center"><span class="style3">–с‚Q‚V‚Ќ‚`</span></div></td>
-   <td colspan="3"><div align="center"><span class="style3">Ѓi‚R‚RЃ“Ѓj </span></div></td>
+   <td colspan="6"><div align="center"><span class="style3">зґ„пј’пј—пЅЌпјЎ</span></div></td>
+   <td colspan="3"><div align="center"><span class="style3">пј€пј“пј“пј…пј‰ </span></div></td>
    <td colspan="5"><div align="center"><img name="premium_led_lamp_plate_r29_c40" src="images/premium_led_lamp_plate_r29_c40.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r29_c40" alt=""></div></td>
    <td colspan="4"><div align="center"><img name="premium_led_lamp_plate_r29_c45" src="images/premium_led_lamp_plate_r29_c45.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r29_c45" alt=""></div></td>
    <td colspan="2"><div align="center"><img name="premium_led_lamp_plate_r29_c49" src="images/premium_led_lamp_plate_r29_c49.gif" width="80" height="20" border="0" id="premium_led_lamp_plate_r29_c49" alt=""></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="11"><div align="center"><span class="style3">JANѓRЃ[ѓh4950094070518</span></div></td>
-   <td colspan="10"><div align="center"><span class="style3">JANѓRЃ[ѓh4950094070501</span></div></td>
-   <td colspan="12"><div align="center"><span class="style3">JANѓRЃ[ѓh4950094070495</span></div></td>
-   <td colspan="11"><div align="center"><span class="style3">JANѓRЃ[ѓh4950094070488</span></div></td>
+   <td colspan="11"><div align="center"><span class="style3">JANг‚ігѓјгѓ‰4950094070518</span></div></td>
+   <td colspan="10"><div align="center"><span class="style3">JANг‚ігѓјгѓ‰4950094070501</span></div></td>
+   <td colspan="12"><div align="center"><span class="style3">JANг‚ігѓјгѓ‰4950094070495</span></div></td>
+   <td colspan="11"><div align="center"><span class="style3">JANг‚ігѓјгѓ‰4950094070488</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -343,7 +364,7 @@ LED‚р•ЫЊм‚·‚йђк—pѓhѓ‰ѓCѓo‚рЌМ—p‚µЃA‰Я“d—¬–hЋ~ЃAѓTЃ[ѓ}ѓ‹ѓVѓѓѓbѓgѓ_ѓEѓ“‹@”\‚р“‹ЌЪЃ
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="37" bgcolor="#999999"><DIV align="center" class="style12">ЋФ—ј‘•’…—бЃFѓtѓЌѓ“ѓgЃ@SLL-P3535Ѓ@Ѓ@ѓЉѓAЃ@SLL-P1939Ѓ@Ѓ@‚ЁЋg‚ў‚Мѓ‚ѓjѓ^Ѓ[‚Й‚ж‚Б‚Д‚НЋАЌЫ‚МЊх‚и•ы‚Ж€Щ‚И‚Б‚ДЊ©‚¦‚йЏкЌ‡‚Є‚ ‚и‚Ь‚·ЃB</DIV></td>
+   <td colspan="37" bgcolor="#999999"><DIV align="center" class="style12">и»ЉдёЎиЈ…зќЂдѕ‹пјљгѓ•гѓ­гѓігѓ€гЂЂSLL-P3535гЂЂгЂЂгѓЄг‚ўгЂЂSLL-P1939гЂЂгЂЂгЃЉдЅїгЃ„гЃ®гѓўгѓ‹г‚їгѓјгЃ«г‚€гЃЈгЃ¦гЃЇе®џйљ›гЃ®е…‰г‚Љж–№гЃЁз•°гЃЄгЃЈгЃ¦и¦‹гЃ€г‚‹е ґеђ€гЃЊгЃ‚г‚ЉгЃѕгЃ™гЂ‚</DIV></td>
    <td colspan="12"><img name="premium_led_lamp_plate_r36_c41" src="images/premium_led_lamp_plate_r36_c41.gif" width="240" height="20" border="0" id="premium_led_lamp_plate_r36_c41" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
@@ -361,23 +382,23 @@ LED‚р•ЫЊм‚·‚йђк—pѓhѓ‰ѓCѓo‚рЌМ—p‚µЃA‰Я“d—¬–hЋ~ЃAѓTЃ[ѓ}ѓ‹ѓVѓѓѓbѓgѓ_ѓEѓ“‹@”\‚р“‹ЌЪЃ
   </tr>
   <tr>
    <td rowspan="9" colspan="20"><img name="premium_led_lamp_plate_r40_c1" src="images/premium_led_lamp_plate_r40_c1.gif" width="360" height="549" border="0" id="premium_led_lamp_plate_r40_c1" alt=""></td>
-   <td colspan="33"><span class="style9">ЊрЉ·‚НЉИ’P‚SѓXѓeѓbѓv</span><span class="style3">Ѓ¦1</span></td>
+   <td colspan="33"><span class="style9">дє¤жЏ›гЃЇз°ЎеЌпј”г‚№гѓ†гѓѓгѓ—</span><span class="style3">вЂ»1</span></td>
    <td><img src="images/spacer.gif" width="1" height="28" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="33"><span class="style9">‡@ѓЊѓ“ѓYѓJѓoЃ[‚рЉJ‚Ї‚йЃB</span></td>
+   <td colspan="33"><span class="style9">в‘ гѓ¬гѓіг‚єг‚«гѓђгѓјг‚’й–‹гЃ‘г‚‹гЂ‚</span></td>
    <td><img src="images/spacer.gif" width="1" height="28" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="33"><span class="style9">‡AЏѓђі‹…‚рЉO‚µ‚Д“Ї‚¶Њ`Џу‚Мѓ\ѓPѓbѓg‚р‘•’…ЃB</span></td>
+   <td colspan="33"><span class="style9">в‘Ўзґ”ж­Јзђѓг‚’е¤–гЃ—гЃ¦еђЊгЃеЅўзЉ¶гЃ®г‚Ѕг‚±гѓѓгѓ€г‚’иЈ…зќЂгЂ‚</span></td>
    <td><img src="images/spacer.gif" width="1" height="28" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="33"><span class="style9">‡BLED‚р—ј–КѓeЃ[ѓv‚ЕЊЕ’и‚·‚йЃB</span></td>
+   <td colspan="33"><span class="style9">в‘ўLEDг‚’дёЎйќўгѓ†гѓјгѓ—гЃ§е›єе®љгЃ™г‚‹гЂ‚</span></td>
    <td><img src="images/spacer.gif" width="1" height="28" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="33"><span class="style9">‡CѓJѓoЃ[‚р•В‚¶‚йЃB</span></td>
+   <td colspan="33"><span class="style9">в‘Јг‚«гѓђгѓјг‚’й–‰гЃг‚‹гЂ‚</span></td>
    <td><img src="images/spacer.gif" width="1" height="28" border="0" alt=""></td>
   </tr>
   <tr>
@@ -407,10 +428,10 @@ LED‚р•ЫЊм‚·‚йђк—pѓhѓ‰ѓCѓo‚рЌМ—p‚µЃA‰Я“d—¬–hЋ~ЃAѓTЃ[ѓ}ѓ‹ѓVѓѓѓbѓgѓ_ѓEѓ“‹@”\‚р“‹ЌЪЃ
   </tr>
   <tr>
    <td colspan="30"><img name="premium_led_lamp_plate_r51_c1" src="images/premium_led_lamp_plate_r51_c1.gif" width="621" height="52" border="0" id="premium_led_lamp_plate_r51_c1" alt=""></td>
-   <td colspan="23"><span class="style12">Ѓ¦1Ѓ@ЋФЋн‚Й‚ж‚Б‚Д‚НѓlѓWЋ~‚Я‚вѓЌѓbѓN‹@Ќ\“™‚ЄЋ{‚і‚к‚Д‚ў‚йЏкЌ‡‚Є‚ ‚иЃA<br>
-     Ѓ@Ѓ@Ѓ@   
-     ‚±‚МЏкЌ‡‚Н‚SѓXѓeѓbѓv‚ЕЊрЉ·‚Е‚«‚И‚ўЏкЌ‡‚а‚ ‚и‚Ь‚·ЃB<br>
-    Ѓ¦2Ѓ@ЋФ—ј‹а‹пЉФЉu‚М’Іђ®‚Є•K—v‚ИЏкЌ‡‚Є‚ ‚и‚Ь‚·ЃB</span></td>
+   <td colspan="23"><span class="style12">вЂ»1гЂЂи»ЉзЁ®гЃ«г‚€гЃЈгЃ¦гЃЇгѓЌг‚ёж­ўг‚Ѓг‚„гѓ­гѓѓг‚Їж©џж§‹з­‰гЃЊж–ЅгЃ•г‚ЊгЃ¦гЃ„г‚‹е ґеђ€гЃЊгЃ‚г‚ЉгЂЃ<br>
+     гЂЂгЂЂгЂЂ   
+     гЃ“гЃ®е ґеђ€гЃЇпј”г‚№гѓ†гѓѓгѓ—гЃ§дє¤жЏ›гЃ§гЃЌгЃЄгЃ„е ґеђ€г‚‚гЃ‚г‚ЉгЃѕгЃ™гЂ‚<br>
+    вЂ»2гЂЂи»ЉдёЎй‡‘е…·й–“йљ”гЃ®иЄїж•ґгЃЊеї…и¦ЃгЃЄе ґеђ€гЃЊгЃ‚г‚ЉгЃѕгЃ™гЂ‚</span></td>
    <td><img src="images/spacer.gif" width="1" height="52" border="0" alt=""></td>
   </tr>
   <tr>
@@ -428,44 +449,44 @@ LED‚р•ЫЊм‚·‚йђк—pѓhѓ‰ѓCѓo‚рЌМ—p‚µЃA‰Я“d—¬–hЋ~ЃAѓTЃ[ѓ}ѓ‹ѓVѓѓѓbѓgѓ_ѓEѓ“‹@”\‚р“‹ЌЪЃ
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="53"><span class="style11">Ѓ@€А‘S‹y‚СЋж‚и•t‚Ї‚ЙЉЦ‚·‚й‚І’Ќ€У</span></td>
+   <td colspan="53"><span class="style11">гЂЂе®‰е…ЁеЏЉгЃіеЏ–г‚Љд»гЃ‘гЃ«й–ўгЃ™г‚‹гЃ”жіЁж„Џ</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="53"><p><span class="style3" style="line-height:16px;">Ѓњ–{ђ»•i‚Н12VЃEѓ}ѓCѓiѓXѓAЃ[ѓXЋФђк—p•i‚Е‚·ЃB24VЋФ‚Й‚НЋg—pЏo—€‚Ь‚№‚сЃB<br>
-     Ѓњ–{ђ»•i‚Н–hђ…‰БЌH‚рЋ{‚µ‚Д‚Ё‚и‚Ь‚№‚сЃB<br>
-     Ѓњ–{ђ»•i‚Нѓ‹Ѓ[ѓЂѓ‰ѓ“ѓvђк—p•i‚Е‚·ЃBЋФЋєЉO‚Й‚НЋg—p‚µ‚И‚ў‚Е‚­‚ѕ‚і‚ўЃB<br>
-     ЃњЉOЌ‘ЋФ‚Й‚НЋg—p‚µ‚И‚ў‚Е‚­‚ѕ‚і‚ўЃB<br>
-     Ѓњ–і—ќ‚И—Н‚р‰Б‚¦‚Ѕ‚иЃA•Є‰р‚р‚µ‚И‚ў‚Е‚­‚ѕ‚і‚ўЃB<br>
-     Ѓњ“_“”’†‚М–{ђ»•i‚р’јЋ‹‚µ‚И‚ў‚Е‚­‚ѕ‚і‚ўЃBЋ‹—НЏбЉQ‚МЊґ€ц‚Й‚И‚и‚Ь‚·ЃB<br>
-     ЃњЊрЉ·‚µ‚ЅЏѓђіѓoѓ‹ѓu‚Н‘еђШ‚Й•ЫЉЗ‚µ‚Д‚­‚ѕ‚і‚ўЃB<br>
-     Ѓњ”­Њх–К‚в–{‘М‹y‚Сѓ\ѓPѓbѓg•”‚Й“h—ї“™‚р“h‚з‚И‚ў‚Е‚­‚ѕ‚і‚ўЃB<br>
-     Ѓњ–{ђ»•i‚Й‚НЋх–Ѕ‚Є‚ ‚и‚Ь‚·ЃBЃi–с6000ЋћЉФЃj<br>
-     ЃњЊл‚Б‚ЅЋж€µ‚ўЃA‰ь‘ў“™‚Й‚ж‚й•Ф•iЊрЉ·‚НЋу•t‚Ї‚©‚Л‚Ь‚·‚М‚ЕЃA‚І—№Џі‚­‚ѕ‚і‚ўЃB<br>
-     ЃњЏ¤•i‚МѓNѓЊЃ[ѓЂЃA•s—З•i‚М•ЫЏШ‚НЊ»•i‚МЊрЉ·‚М‚Э‚Ж‚і‚№‚Д’ё‚«‚Ь‚·ЃB‚»‚М‘ј‚М•ЫЏШЃiЋж•tЌH’АЃA•”•iЌw“ь‘г‹а“™Ѓj‚НЏo—€‚Ь‚№‚с‚М‚ЕЃA‚І—№Џі‚­‚ѕ‚і‚ўЃB<br>
-     ЃњЋcЏЖ‹@”\•tЃAѓAѓCѓhѓЉѓ“ѓOѓXѓgѓbѓv‹@”\•tЋФ‚Й‘•’…‚µ‚ЅЏкЌ‡ЃAЋcЏЖ‚µ‚И‚­‚И‚йЏкЌ‡‚в‚ї‚з‚В‚«‚Є”­ђ¶‚·‚йЏкЌ‡‚Є‚ ‚и‚Ь‚·‚Є€ЩЏн‚Е‚Н‚ ‚и‚Ь‚№‚сЃB<br>
-     ЃњЋw’и‚і‚к‚Ѕђь‚р’T‚·‚Ж‚«‚Н•K‚ёѓTЃ[ѓLѓbѓgѓeѓXѓ^Ѓ[‚рЋg—p‚µЃAЊџ“dЉнЃiѓ‰ѓ“ѓvѓeѓXѓ^Ѓ[Ѓj“™‚НЋg—p‚µ‚И‚ў‚Е‚­‚ѕ‚і‚ўЃB<br>
-     Ѓњ–{ђ»•i‚рЋж‚и•t‚Ї‚·‚йЌЫ‚НЃA‘ј‚М‹@Љн‚Й‰e‹ї‚р—^‚¦‚И‚ўЏкЏЉ‹y‚С‰^“]‚ЙЌ·‚µЋx‚¦‚М‚И‚ўЏкЏЉ‚ЙђЭ’u‚µ‚Д‚­‚ѕ‚і‚ўЃB<br>
-     ЃњЋФ—ј‚МѓoѓbѓeѓЉЃ[‚ЄЋг‚Б‚Д‚ў‚йЏу‘Ф‹y‚СЃAЋФ—ј–{—€‚М‹@”\‚Й•s”х‚Є‚ ‚йЏкЌ‡‚Й‚Н–{ђ»•i‚рЋж‚и•t‚Ї–”‚НЃAЋg—p‚µ‚И‚ў‚Е‚­‚ѕ‚і‚ўЃB<br>Ѓ@
-     ђ»•i‚ЄђіЏн‚Й“®Ќм‚µ‚И‚©‚Б‚Ѕ‚иЃAЋФ—ј‹@Љн‚Й‰e‹ї‚р—^‚¦‚й‹°‚к‚Є‚ ‚и‚Ь‚·ЃB<br>
-     Ѓњ–{ђ»•i‚МЋж‚и•t‚Ї‚НЃAЋж‚и•t‚Ї‹ZЏp‚М‚ ‚й”М”„“X‚ЕЌs‚Б‚Д‚­‚ѕ‚і‚ўЃB<br>
-     Ѓњ–{ђ»•i‚Ж‘ј‹@Љн‚Ж•№—p‚µ‚ДЋg—p‚·‚йЏкЌ‡ЃA‘ј‹@Љн‚МЋж€µђа–ѕЏ‘‚а‚ж‚­‚Ё“З‚Э‚Й‚И‚иђі‚µ‚ўЋg—p•ы–@‚ЕЋg—p‚µ‚Д‚­‚ѕ‚і‚ўЃB<br>
-     ЃњЋw’и€ИЉO‚М“d€і‚Е‚НЋg—p‚µ‚И‚ў‚Е‚­‚ѕ‚і‚ўЃB‰ОЌРЃEЉґ“dЃEЊМЏб‚МЊґ€ц‚Ж‚И‚и‚Ь‚·ЃB<br>
-     Ѓњ–{ђ»•i‚рЋж‚и•t‚Ї‚·‚йЌЫЃA“dЊ№ѓRЃ[ѓh‚ЄЋФ‘М‚М‹а‘®•”•Є‚ЙђG‚к‚И‚ў‚ж‚¤‚Й‚І’Ќ€У‚­‚ѕ‚і‚ўЃB‰ОЌРЃEЉґ“dЃEЊМЏб‚МЊґ€ц‚Ж‚И‚и‚Ь‚·ЃB<br>
-    ЃњЋж‚и•t‚Ї‚МЌЫ‚Й‚Н•K‚ёѓ‹Ѓ[ѓЂѓ‰ѓ“ѓv‚рЏБ“”‚µ‚ЅЏу‘Ф‚ЕЌs‚Б‚Д‚­‚ѕ‚і‚ўЃB‰ОЌРЃEЉґ“dЃEЊМЏб‚МЊґ€ц‚Ж‚И‚и‚Ь‚·ЃB <br>
-    Ѓњђ»•i‚МѓfѓUѓCѓ“ЃAЋd—lЃAЉOЉПЃAђFЌ‡‚ў“™‚Й‚В‚«‚Ь‚µ‚Д‚Н—\Ќђ‚И‚­•ПЌX‚вђ¶ЋY‚рЏI—№‚·‚йЏкЌ‡‚Є‚ ‚и‚Ь‚·ЃB‚Ь‚ЅЃAђ»•i‚МЋКђ^“™‚МђF‚НЋА•Ё‚Ж‚Н‚Н‘ЅЏ­€Щ‚И‚йЏкЌ‡‚Є‚ ‚и‚Ь‚·‚М‚ЕЃA<br>
-Ѓ@ ‚ ‚з‚©‚¶‚Я‚І—№Џі‚­‚ѕ‚і‚ўЃB</span></p>
+   <td colspan="53"><p><span class="style3" style="line-height:16px;">в—Џжњ¬иЈЅе“ЃгЃЇ12Vгѓ»гѓћг‚¤гѓЉг‚№г‚ўгѓјг‚№и»Ље°‚з”Ёе“ЃгЃ§гЃ™гЂ‚24Vи»ЉгЃ«гЃЇдЅїз”Ёе‡єжќҐгЃѕгЃ›г‚“гЂ‚<br>
+     в—Џжњ¬иЈЅе“ЃгЃЇйІж°ґеЉ е·Ґг‚’ж–ЅгЃ—гЃ¦гЃЉг‚ЉгЃѕгЃ›г‚“гЂ‚<br>
+     в—Џжњ¬иЈЅе“ЃгЃЇгѓ«гѓјгѓ гѓ©гѓігѓ—е°‚з”Ёе“ЃгЃ§гЃ™гЂ‚и»Ље®¤е¤–гЃ«гЃЇдЅїз”ЁгЃ—гЃЄгЃ„гЃ§гЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—Џе¤–е›Ѕи»ЉгЃ«гЃЇдЅїз”ЁгЃ—гЃЄгЃ„гЃ§гЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—Џз„Ўзђ†гЃЄеЉ›г‚’еЉ гЃ€гЃџг‚ЉгЂЃе€†и§Јг‚’гЃ—гЃЄгЃ„гЃ§гЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—Џз‚№зЃЇдё­гЃ®жњ¬иЈЅе“Ѓг‚’з›ґи¦–гЃ—гЃЄгЃ„гЃ§гЃЏгЃ гЃ•гЃ„гЂ‚и¦–еЉ›йљње®ігЃ®еЋџе› гЃ«гЃЄг‚ЉгЃѕгЃ™гЂ‚<br>
+     в—Џдє¤жЏ›гЃ—гЃџзґ”ж­Јгѓђгѓ«гѓ–гЃЇе¤§е€‡гЃ«дїќз®ЎгЃ—гЃ¦гЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—Џз™єе…‰йќўг‚„жњ¬дЅ“еЏЉгЃіг‚Ѕг‚±гѓѓгѓ€йѓЁгЃ«еЎ—ж–™з­‰г‚’еЎ—г‚‰гЃЄгЃ„гЃ§гЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—Џжњ¬иЈЅе“ЃгЃ«гЃЇеЇїе‘ЅгЃЊгЃ‚г‚ЉгЃѕгЃ™гЂ‚пј€зґ„6000ж™‚й–“пј‰<br>
+     в—ЏиЄ¤гЃЈгЃџеЏ–ж‰±гЃ„гЂЃж”№йЂ з­‰гЃ«г‚€г‚‹иї”е“Ѓдє¤жЏ›гЃЇеЏ—д»гЃ‘гЃ‹гЃ­гЃѕгЃ™гЃ®гЃ§гЂЃгЃ”дє†ж‰їгЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—Џе•†е“ЃгЃ®г‚Їгѓ¬гѓјгѓ гЂЃдёЌи‰Їе“ЃгЃ®дїќиЁјгЃЇзЏѕе“ЃгЃ®дє¤жЏ›гЃ®гЃїгЃЁгЃ•гЃ›гЃ¦й ‚гЃЌгЃѕгЃ™гЂ‚гЃќгЃ®д»–гЃ®дїќиЁјпј€еЏ–д»е·ҐиіѓгЂЃйѓЁе“Ѓиіје…Ґд»Јй‡‘з­‰пј‰гЃЇе‡єжќҐгЃѕгЃ›г‚“гЃ®гЃ§гЂЃгЃ”дє†ж‰їгЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—Џж®‹з…§ж©џиѓЅд»гЂЃг‚ўг‚¤гѓ‰гѓЄгѓіг‚°г‚№гѓ€гѓѓгѓ—ж©џиѓЅд»и»ЉгЃ«иЈ…зќЂгЃ—гЃџе ґеђ€гЂЃж®‹з…§гЃ—гЃЄгЃЏгЃЄг‚‹е ґеђ€г‚„гЃЎг‚‰гЃ¤гЃЌгЃЊз™єз”џгЃ™г‚‹е ґеђ€гЃЊгЃ‚г‚ЉгЃѕгЃ™гЃЊз•°еёёгЃ§гЃЇгЃ‚г‚ЉгЃѕгЃ›г‚“гЂ‚<br>
+     в—ЏжЊ‡е®љгЃ•г‚ЊгЃџз·љг‚’жЋўгЃ™гЃЁгЃЌгЃЇеї…гЃљг‚µгѓјг‚­гѓѓгѓ€гѓ†г‚№г‚їгѓјг‚’дЅїз”ЁгЃ—гЂЃж¤њй›»е™Ёпј€гѓ©гѓігѓ—гѓ†г‚№г‚їгѓјпј‰з­‰гЃЇдЅїз”ЁгЃ—гЃЄгЃ„гЃ§гЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—Џжњ¬иЈЅе“Ѓг‚’еЏ–г‚Љд»гЃ‘гЃ™г‚‹йљ›гЃЇгЂЃд»–гЃ®ж©џе™ЁгЃ«еЅ±йџїг‚’дёЋгЃ€гЃЄгЃ„е ґж‰ЂеЏЉгЃійЃ‹и»ўгЃ«е·®гЃ—ж”ЇгЃ€гЃ®гЃЄгЃ„е ґж‰ЂгЃ«иЁ­зЅ®гЃ—гЃ¦гЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—Џи»ЉдёЎгЃ®гѓђгѓѓгѓ†гѓЄгѓјгЃЊеј±гЃЈгЃ¦гЃ„г‚‹зЉ¶ж…‹еЏЉгЃігЂЃи»ЉдёЎжњ¬жќҐгЃ®ж©џиѓЅгЃ«дёЌе‚™гЃЊгЃ‚г‚‹е ґеђ€гЃ«гЃЇжњ¬иЈЅе“Ѓг‚’еЏ–г‚Љд»гЃ‘еЏ€гЃЇгЂЃдЅїз”ЁгЃ—гЃЄгЃ„гЃ§гЃЏгЃ гЃ•гЃ„гЂ‚<br>гЂЂ
+     иЈЅе“ЃгЃЊж­ЈеёёгЃ«е‹•дЅњгЃ—гЃЄгЃ‹гЃЈгЃџг‚ЉгЂЃи»ЉдёЎж©џе™ЁгЃ«еЅ±йџїг‚’дёЋгЃ€г‚‹жЃђг‚ЊгЃЊгЃ‚г‚ЉгЃѕгЃ™гЂ‚<br>
+     в—Џжњ¬иЈЅе“ЃгЃ®еЏ–г‚Љд»гЃ‘гЃЇгЂЃеЏ–г‚Љд»гЃ‘жЉЂиЎ“гЃ®гЃ‚г‚‹иІ©еЈІеє—гЃ§иЎЊгЃЈгЃ¦гЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—Џжњ¬иЈЅе“ЃгЃЁд»–ж©џе™ЁгЃЁдЅµз”ЁгЃ—гЃ¦дЅїз”ЁгЃ™г‚‹е ґеђ€гЂЃд»–ж©џе™ЁгЃ®еЏ–ж‰±иЄ¬жЋж›ёг‚‚г‚€гЃЏгЃЉиЄ­гЃїгЃ«гЃЄг‚Љж­ЈгЃ—гЃ„дЅїз”Ёж–№жі•гЃ§дЅїз”ЁгЃ—гЃ¦гЃЏгЃ гЃ•гЃ„гЂ‚<br>
+     в—ЏжЊ‡е®љд»Ґе¤–гЃ®й›»ењ§гЃ§гЃЇдЅїз”ЁгЃ—гЃЄгЃ„гЃ§гЃЏгЃ гЃ•гЃ„гЂ‚зЃ«зЃЅгѓ»ж„џй›»гѓ»ж•…йљњгЃ®еЋџе› гЃЁгЃЄг‚ЉгЃѕгЃ™гЂ‚<br>
+     в—Џжњ¬иЈЅе“Ѓг‚’еЏ–г‚Љд»гЃ‘гЃ™г‚‹йљ›гЂЃй›»жєђг‚ігѓјгѓ‰гЃЊи»ЉдЅ“гЃ®й‡‘е±ћйѓЁе€†гЃ«и§¦г‚ЊгЃЄгЃ„г‚€гЃ†гЃ«гЃ”жіЁж„ЏгЃЏгЃ гЃ•гЃ„гЂ‚зЃ«зЃЅгѓ»ж„џй›»гѓ»ж•…йљњгЃ®еЋџе› гЃЁгЃЄг‚ЉгЃѕгЃ™гЂ‚<br>
+    в—ЏеЏ–г‚Љд»гЃ‘гЃ®йљ›гЃ«гЃЇеї…гЃљгѓ«гѓјгѓ гѓ©гѓігѓ—г‚’ж¶€зЃЇгЃ—гЃџзЉ¶ж…‹гЃ§иЎЊгЃЈгЃ¦гЃЏгЃ гЃ•гЃ„гЂ‚зЃ«зЃЅгѓ»ж„џй›»гѓ»ж•…йљњгЃ®еЋџе› гЃЁгЃЄг‚ЉгЃѕгЃ™гЂ‚ <br>
+    в—ЏиЈЅе“ЃгЃ®гѓ‡г‚¶г‚¤гѓігЂЃд»•ж§гЂЃе¤–и¦ігЂЃи‰Іеђ€гЃ„з­‰гЃ«гЃ¤гЃЌгЃѕгЃ—гЃ¦гЃЇдє€е‘ЉгЃЄгЃЏе¤‰ж›ґг‚„з”џз”Јг‚’зµ‚дє†гЃ™г‚‹е ґеђ€гЃЊгЃ‚г‚ЉгЃѕгЃ™гЂ‚гЃѕгЃџгЂЃиЈЅе“ЃгЃ®е†™зњџз­‰гЃ®и‰ІгЃЇе®џз‰©гЃЁгЃЇгЃЇе¤ље°‘з•°гЃЄг‚‹е ґеђ€гЃЊгЃ‚г‚ЉгЃѕгЃ™гЃ®гЃ§гЂЃ<br>
+гЂЂ гЃ‚г‚‰гЃ‹гЃг‚ЃгЃ”дє†ж‰їгЃЏгЃ гЃ•гЃ„гЂ‚</span></p>
     </td>
    <td><img src="images/spacer.gif" width="1" height="290" border="0" alt=""></td>
   </tr>
     <tr>
-   <td colspan="53"><span class="style11">Ѓ@•ЫЏШ‹K’и</span></td>
+   <td colspan="53"><span class="style11">гЂЂдїќиЁји¦Џе®љ</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="53"><p><span class="style3" style="line-height:16px;">Ѓњ–{ђ»•i‚Н3”N•ЫЏШ‚Ж‚И‚и‚Ь‚·ЃB<br>
-     ЃњЋж€µђа–ѕЏ‘‚ЙЏ]‚Б‚ЅђіЏн‚ИЋg—pЏу‘Ф‚М‰є‚Е•s‹пЌ‡‚Єђ¶‚¶‚ЅЏкЌ‡‚НЃA•ЫЏШЏ‘‚М‹LЌЪ“а—e‚Й‚ж‚и•”•iЊрЉ·‚р’v‚µ‚Ь‚·‚ЄЃA’E’…‚Й‚©‚©‚йЌH’А‚вђ»•i‚рЋg—p‚µ‚Дђ¶‚¶‚Ѕ‘№ЉQ“™‚Й‚В‚ў‚Д<br>
-Ѓ@Ѓ@•ѕЋР‚Е‚Н€кђШђУ”C‚р•‰‚ў‚©‚Л‚Ь‚·ЃB</span></p>
+   <td colspan="53"><p><span class="style3" style="line-height:16px;">в—Џжњ¬иЈЅе“ЃгЃЇ3е№ґдїќиЁјгЃЁгЃЄг‚ЉгЃѕгЃ™гЂ‚<br>
+     в—ЏеЏ–ж‰±иЄ¬жЋж›ёгЃ«еѕ“гЃЈгЃџж­ЈеёёгЃЄдЅїз”ЁзЉ¶ж…‹гЃ®дё‹гЃ§дёЌе…·еђ€гЃЊз”џгЃгЃџе ґеђ€гЃЇгЂЃдїќиЁјж›ёгЃ®иЁиј‰е†…е®№гЃ«г‚€г‚ЉйѓЁе“Ѓдє¤жЏ›г‚’и‡ґгЃ—гЃѕгЃ™гЃЊгЂЃи„±зќЂгЃ«гЃ‹гЃ‹г‚‹е·Ґиіѓг‚„иЈЅе“Ѓг‚’дЅїз”ЁгЃ—гЃ¦з”џгЃгЃџжђЌе®із­‰гЃ«гЃ¤гЃ„гЃ¦<br>
+гЂЂгЂЂејЉз¤ѕгЃ§гЃЇдёЂе€‡иІ¬д»»г‚’иІ гЃ„гЃ‹гЃ­гЃѕгЃ™гЂ‚</span></p>
     </td>
   <tr>
   <td colspan="53"><img name="kanrenseihin_banner" src="images/kanrenseihin_banner.gif" width="1000" height="25" border="0" id="kanrenseihin_banner" alt=""></td>
@@ -485,20 +506,9 @@ LED‚р•ЫЊм‚·‚йђк—pѓhѓ‰ѓCѓo‚рЌМ—p‚µЃA‰Я“d—¬–hЋ~ЃAѓTЃ[ѓ}ѓ‹ѓVѓѓѓbѓgѓ_ѓEѓ“‹@”\‚р“‹ЌЪЃ
   <td colspan="53"><img name="kanrenseihin_underbar" src="images/kanrenseihin_underbar.gif" width="1000" height="10" border="0" id="kanrenseihin_underbar" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
    </tr>
-  <tr>
-   <td rowspan="2" colspan="43"><img name="premium_led_lamp_plate_r57_c1" src="images/premium_led_lamp_plate_r57_c1.gif" width="817" height="90" border="0" id="premium_led_lamp_plate_r57_c1" alt=""></td>
-   <td colspan="4"><a href="premium_led_lamp_plate.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('premium_led_lamp_plate_r57_c44','','images/premium_led_lamp_plate_r57_c44_f2.gif',1);"><img name="premium_led_lamp_plate_r57_c44" src="images/premium_led_lamp_plate_r57_c44.gif" width="85" height="15" border="0" id="premium_led_lamp_plate_r57_c44" alt=""></a></td>
-   <td rowspan="2" colspan="6"><img name="premium_led_lamp_plate_r57_c48" src="images/premium_led_lamp_plate_r57_c48.gif" width="98" height="90" border="0" id="premium_led_lamp_plate_r57_c48" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="4"><img name="premium_led_lamp_plate_r58_c44" src="images/premium_led_lamp_plate_r58_c44.gif" width="85" height="75" border="0" id="premium_led_lamp_plate_r58_c44" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="75" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="53"><img name="premium_led_lamp_plate_r59_c1" src="images/premium_led_lamp_plate_r59_c1.gif" width="1000" height="78" border="0" id="premium_led_lamp_plate_r59_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="78" border="0" alt=""></td>
-  </tr>
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>
