@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>ƒXƒ}[ƒgƒtƒHƒ“ƒzƒ‹ƒ_[ySPH-H01z / Bullcon-ƒtƒW“d‹@H‹ÆŠ”Ž®‰ïŽÐ</title>
+<title>ï¿½Xï¿½}ï¿½[ï¿½gï¿½tï¿½Hï¿½ï¿½ï¿½zï¿½ï¿½ï¿½_ï¿½[ï¿½ySPH-H01ï¿½z / Bullcon-ï¿½tï¿½Wï¿½dï¿½@ï¿½Hï¿½ÆŠï¿½ï¿½ï¿½ï¿½ï¿½ï¿½</title>
 <meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -36,12 +38,48 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // ãƒ¬ã‚¹ãƒãƒ³ã‚¹ãŒæˆåŠŸã§ãªã‘ã‚Œã°ã‚¨ãƒ©ãƒ¼ã‚’æŠ•ã’ã‚‹
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿæ™‚ã®ä»£æ›¿å‡¦ç†ï¼ˆä¾‹: ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºï¼‰
+        document.getElementById('header-placeholder').innerHTML = '<p>ãƒ˜ãƒƒãƒ€ãƒ¼ã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸã€‚</p>';
+    });
+
+    // ãƒ•ãƒƒã‚¿ãƒ¼ã®èª­ã¿è¾¼ã¿
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // ãƒ¬ã‚¹ãƒãƒ³ã‚¹ãŒæˆåŠŸã§ãªã‘ã‚Œã°ã‚¨ãƒ©ãƒ¼ã‚’æŠ•ã’ã‚‹
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿæ™‚ã®ä»£æ›¿å‡¦ç†
+        document.getElementById('footer-placeholder').innerHTML = '<p>ãƒ•ãƒƒã‚¿ãƒ¼ã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸã€‚</p>';
+    });
 //-->
 </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/sph-h01_r7_c8_s2.gif');">
+  <div id="header-placeholder"></div>
+
 <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-  <!-- fwtable fwsrc="SPH-H01-spec.png" fwpage="ƒy[ƒW 1" fwbase="sph-h01.gif" fwstyle="Dreamweaver" fwdocid = "1657776196" fwnested="0" -->
+  <!-- fwtable fwsrc="SPH-H01-spec.png" fwpage="ï¿½yï¿½[ï¿½W 1" fwbase="sph-h01.gif" fwstyle="Dreamweaver" fwdocid = "1657776196" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="166" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="84" height="1" alt=""></td>
@@ -59,7 +97,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
 
-  <tr><td colspan="58"><iframe 
+<!--  <tr><td colspan="58"><iframe 
   id="myFrame"
   class="frame"
   src="../header_top/header.htm"
@@ -77,7 +115,7 @@ function MM_preloadImages() { //v3.0
   height="70px"
   width="101%"
   scrolling="no">
-</iframe> </td></tr>
+</iframe> </td></tr> -->
   <tr>
    <td colspan="6"><img src="images/w_space.gif" width="500" height="10" alt=""/></td>
    <td colspan="7"><img src="images/w_space.gif" width="500" height="10" alt=""/></td>
@@ -106,20 +144,20 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="210" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="text-align: center; font-size: 24px;"><b>‚r‚o‚g-‚g‚O‚P</b></td>
+   <td colspan="6" style="text-align: center; font-size: 24px;"><b>ï¿½rï¿½oï¿½g-ï¿½gï¿½Oï¿½P</b></td>
    <td><img src="images/w_space.gif" width="125" height="30" alt=""/></td>
    <td rowspan="2" colspan="5"><a href="../../pdf/SPH-H01.pdf" target="_blank" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('manu_link','','images/manu_link_s2.gif',1);"><img name="manu_link" src="images/manu_link.gif" width="250" height="50" id="manu_link" alt=""></a></td>
    <td><img src="images/w_space.gif" width="125" height="30" alt=""/></td>
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="text-align: center"><span style="font-size: 15px">”Ì”„‰¿Ši ‚RC‚O‚W‚OiÅžj</span>@<span style="font-size: 12px">@iÅ”²‰¿Ši ‚QC‚W‚O‚Oj</span></td>
+   <td colspan="6" style="text-align: center"><span style="font-size: 15px">ï¿½Ì”ï¿½ï¿½ï¿½ï¿½i ï¿½ï¿½ï¿½Rï¿½Cï¿½Oï¿½Wï¿½Oï¿½iï¿½Åï¿½ï¿½j</span>ï¿½@<span style="font-size: 12px">ï¿½@ï¿½iï¿½Å”ï¿½ï¿½ï¿½ï¿½i ï¿½ï¿½ï¿½Qï¿½Cï¿½Wï¿½Oï¿½Oï¿½j</span></td>
    <td><img src="images/w_space.gif" width="125" height="20" alt=""/></td>
    <td><img src="images/w_space.gif" width="125" height="20" alt=""/></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="text-align: center; font-size: 15px;">‚i‚`‚mƒR[ƒhF‚S‚X‚T‚O‚O‚X‚S‚O‚U‚R‚R‚T‚O</td>
+   <td colspan="6" style="text-align: center; font-size: 15px;">ï¿½iï¿½`ï¿½mï¿½Rï¿½[ï¿½hï¿½Fï¿½Sï¿½Xï¿½Tï¿½Oï¿½Oï¿½Xï¿½Sï¿½Oï¿½Uï¿½Rï¿½Rï¿½Tï¿½O</td>
    <td colspan="7"><img src="images/w_space.gif" width="500" height="20" alt=""/></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
@@ -129,15 +167,15 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6"><img src="images/uni_main1.gif" width="500" height="250" alt=""/></td>
-   <td colspan="7" style="font-size: 13px; line-height: 18px"><p><span  style="font-size: 15px; line-height: 18px"><b>ƒ†ƒjƒo[ƒTƒ‹ƒzƒ‹ƒ_[F</b></span><br>
-     ƒTƒCƒhƒA[ƒ€“à•‚ÍÅ‘å‚Å‚W.‚T‚ƒ‚‚Ü‚Å“WŠJ‚Å‚«‚é‚½‚ßA•‚W.‚T‚ƒ‚EŒú‚³‚P.‚S‚ƒ‚E‘d—Ê‚Q‚W‚O‚‡iƒP[ƒX‚ðŠÜ‚ÞjˆÈ“à‚ÌƒXƒ}[ƒgƒtƒHƒ“‚É‘Î‰ž‰Â”\B</p>
-     <p>ƒA[ƒ€‚Å‹²‚Þ\‘¢‚Ì‚½‚ßAƒ}ƒOƒlƒbƒgŽ®‚É‘Î‰ž‚µ‚Ä‚¢‚È‚¢ƒXƒ}[ƒgƒtƒHƒ“‚âƒP[ƒX‚Å‚à‘•’…OK<br>
-       ƒzƒ‹ƒ_[ƒGƒ“ƒh•”‚ÍØ‚èŒ‡‚«Œ`ó‚É‚È‚Á‚Ä‚¢‚ÄA[“dƒP[ƒuƒ‹‚ÌÚ‘±‚à‰Â”\B</p></td>
+   <td colspan="7" style="font-size: 13px; line-height: 18px"><p><span  style="font-size: 15px; line-height: 18px"><b>ï¿½ï¿½ï¿½jï¿½oï¿½[ï¿½Tï¿½ï¿½ï¿½zï¿½ï¿½ï¿½_ï¿½[ï¿½F</b></span><br>
+     ï¿½Tï¿½Cï¿½hï¿½Aï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÍÅ‘ï¿½Å‚W.ï¿½Tï¿½ï¿½ï¿½ï¿½ï¿½Ü‚Å“Wï¿½Jï¿½Å‚ï¿½ï¿½é‚½ï¿½ßAï¿½ï¿½ï¿½W.ï¿½Tï¿½ï¿½ï¿½ï¿½ï¿½Eï¿½ï¿½ï¿½ï¿½ï¿½P.ï¿½Sï¿½ï¿½ï¿½ï¿½ï¿½Eï¿½ï¿½ï¿½dï¿½Ê‚Qï¿½Wï¿½Oï¿½ï¿½ï¿½iï¿½Pï¿½[ï¿½Xï¿½ï¿½ï¿½Ü‚Þjï¿½È“ï¿½ï¿½ÌƒXï¿½}ï¿½[ï¿½gï¿½tï¿½Hï¿½ï¿½ï¿½É‘Î‰ï¿½ï¿½Â”\ï¿½B</p>
+     <p>ï¿½Aï¿½[ï¿½ï¿½ï¿½Å‹ï¿½ï¿½Þ\ï¿½ï¿½ï¿½Ì‚ï¿½ï¿½ßAï¿½}ï¿½Oï¿½lï¿½bï¿½gï¿½ï¿½ï¿½É‘Î‰ï¿½ï¿½ï¿½ï¿½Ä‚ï¿½ï¿½È‚ï¿½ï¿½Xï¿½}ï¿½[ï¿½gï¿½tï¿½Hï¿½ï¿½ï¿½ï¿½Pï¿½[ï¿½Xï¿½Å‚ï¿½ï¿½ï¿½ï¿½ï¿½OK<br>
+       ï¿½zï¿½ï¿½ï¿½_ï¿½[ï¿½Gï¿½ï¿½ï¿½hï¿½ï¿½ï¿½ÍØ‚èŒ‡ï¿½ï¿½ï¿½`ï¿½ï¿½É‚È‚ï¿½ï¿½Ä‚ï¿½ï¿½ÄAï¿½[ï¿½dï¿½Pï¿½[ï¿½uï¿½ï¿½ï¿½ÌÚ‘ï¿½ï¿½ï¿½ï¿½Â”\ï¿½B</p></td>
    <td><img src="images/spacer.gif" width="1" height="250" alt=""></td>
   </tr>
   <tr>
    <td colspan="6"><img src="images/uni_dam.gif" width="500" height="230" alt=""/></td>
-   <td colspan="7" style="font-size: 13px; line-height: 18px"><p>ƒ}ƒEƒ“ƒg‚Æ‚ÌÚ‘±‚Íƒ{[ƒ‹ƒWƒ‡ƒCƒ“ƒgŒ`ó‚É‚È‚Á‚Ä‚¢‚é‚Ì‚Åƒ}ƒEƒ“ƒg‚ðŽÔ—¼‚ÉŒÅ’è‚µ‚½Œã‚àƒzƒ‹ƒ_[‚Íã‰º¶‰E‚ÉŠe30&deg;‚Ì”ÍˆÍ“à‚ÅD‚«‚ÈŠp“x‚É’²®‚ª‰Â”\B</p></td>
+   <td colspan="7" style="font-size: 13px; line-height: 18px"><p>ï¿½}ï¿½Eï¿½ï¿½ï¿½gï¿½Æ‚ÌÚ‘ï¿½ï¿½Íƒ{ï¿½[ï¿½ï¿½ï¿½Wï¿½ï¿½ï¿½Cï¿½ï¿½ï¿½gï¿½`ï¿½ï¿½É‚È‚ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½Ì‚Åƒ}ï¿½Eï¿½ï¿½ï¿½gï¿½ï¿½ï¿½Ô—ï¿½ï¿½ÉŒÅ’è‚µï¿½ï¿½ï¿½ï¿½ï¿½ï¿½zï¿½ï¿½ï¿½_ï¿½[ï¿½Íã‰ºï¿½ï¿½ï¿½Eï¿½ÉŠe30&deg;ï¿½Ì”ÍˆÍ“ï¿½ï¿½ÅDï¿½ï¿½ï¿½ÈŠpï¿½xï¿½É’ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Â”\ï¿½B</p></td>
    <td><img src="images/spacer.gif" width="1" height="230" alt=""></td>
   </tr>
   <tr>
@@ -164,24 +202,24 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6"><img src="images/dam_main1.gif" width="500" height="200" alt=""/></td>
-   <td colspan="7" style="font-size: 13px; line-height: 18px"><p><span  style="font-size: 15px; line-height: 18px"><b>ƒfƒBƒXƒvƒŒƒCƒ}ƒEƒ“ƒgF</b></span><br>
-     ƒfƒBƒXƒvƒŒƒCƒI[ƒfƒBƒI— ‚É“\‚è•t‚¯‚é‚Æ‰æ–Ê‚Æ•À‚×‚½Ý’u‚ª‰Â”\B<br>
-     ƒA[ƒ€‚ª’Z‚¢‚Ì‚ÅŽÔ‚Ì—h‚ê‚âƒJ[ƒu‚Å‚àƒXƒ}[ƒgƒtƒHƒ“‚ª—h‚ê‚É‚­‚­A<br>
-     ˆÀ’è‚µ‚½•ÛŽ‚ª‰Â”\‚Å‚·B</p>
-     <p>“\‚è•t‚¯ƒx[ƒX•”•ª‚Íƒtƒ@ƒXƒi[ƒe[ƒv•t‹­”S’…ƒe[ƒv‚ðÌ—p‚µ‚Ä‚¢‚é‚Ì‚Å<br>
-       Šp“x‚âŽg—pˆÊ’u‚Ì•ÏX‚ª‚¢‚Â‚Å‚ào—ˆ‚Ä•Ö—˜B<br>
-    iƒtƒ@ƒXƒi[ƒe[ƒv•”•ª‚Í‰ñ“]‚µ‚Ü‚¹‚ñj</p></td>
+   <td colspan="7" style="font-size: 13px; line-height: 18px"><p><span  style="font-size: 15px; line-height: 18px"><b>ï¿½fï¿½Bï¿½Xï¿½vï¿½ï¿½ï¿½Cï¿½}ï¿½Eï¿½ï¿½ï¿½gï¿½F</b></span><br>
+     ï¿½fï¿½Bï¿½Xï¿½vï¿½ï¿½ï¿½Cï¿½Iï¿½[ï¿½fï¿½Bï¿½Iï¿½ï¿½ï¿½É“\ï¿½ï¿½tï¿½ï¿½ï¿½ï¿½Æ‰ï¿½Ê‚Æ•ï¿½ï¿½×‚ï¿½ï¿½Ý’uï¿½ï¿½ï¿½Â”\ï¿½B<br>
+     ï¿½Aï¿½[ï¿½ï¿½ï¿½ï¿½ï¿½Zï¿½ï¿½ï¿½Ì‚ÅŽÔ‚Ì—hï¿½ï¿½ï¿½Jï¿½[ï¿½uï¿½Å‚ï¿½ï¿½Xï¿½}ï¿½[ï¿½gï¿½tï¿½Hï¿½ï¿½ï¿½ï¿½ï¿½hï¿½ï¿½É‚ï¿½ï¿½ï¿½ï¿½A<br>
+     ï¿½ï¿½ï¿½è‚µï¿½ï¿½ï¿½ÛŽï¿½ï¿½ï¿½ï¿½Â”\ï¿½Å‚ï¿½ï¿½B</p>
+     <p>ï¿½\ï¿½ï¿½tï¿½ï¿½ï¿½xï¿½[ï¿½Xï¿½ï¿½ï¿½ï¿½ï¿½Íƒtï¿½@ï¿½Xï¿½iï¿½[ï¿½eï¿½[ï¿½vï¿½tï¿½ï¿½ï¿½Sï¿½ï¿½ï¿½eï¿½[ï¿½vï¿½ï¿½ï¿½Ì—pï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½Ì‚ï¿½<br>
+       ï¿½pï¿½xï¿½ï¿½gï¿½pï¿½Ê’uï¿½Ì•ÏXï¿½ï¿½ï¿½ï¿½ï¿½Â‚Å‚ï¿½ï¿½oï¿½ï¿½ï¿½Ä•Ö—ï¿½ï¿½B<br>
+    ï¿½iï¿½tï¿½@ï¿½Xï¿½iï¿½[ï¿½eï¿½[ï¿½vï¿½ï¿½ï¿½ï¿½ï¿½Í‰ï¿½]ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½j</p></td>
    <td><img src="images/spacer.gif" width="1" height="200" alt=""></td>
   </tr>
   <tr>
    <td colspan="6"><img src="images/dam_main2.gif" width="500" height="200" alt=""/></td>
-   <td colspan="7" style="font-size: 13px; line-height: 18px"><p>VŒ`ó‚Ìƒtƒ@ƒXƒi[ƒe[ƒv‚ðŽg—p‚µ‚Ä‚¢‚é‚Ì‚ÅA<br>
-     ˆê”Ê“I‚Èƒtƒ@ƒXƒi[ƒe[ƒv‚Ì‚æ‚¤‚É•ž‚É—‚Þ‚±‚Æ‚ª­‚È‚­A<br>
-     G‚Á‚Ä‚àŽè‚ª’É‚­‚È‚é‚±‚Æ‚ª‚ ‚è‚Ü‚¹‚ñB<br>
+   <td colspan="7" style="font-size: 13px; line-height: 18px"><p>ï¿½Vï¿½`ï¿½ï¿½Ìƒtï¿½@ï¿½Xï¿½iï¿½[ï¿½eï¿½[ï¿½vï¿½ï¿½ï¿½gï¿½pï¿½ï¿½ï¿½Ä‚ï¿½ï¿½ï¿½Ì‚ÅA<br>
+     ï¿½ï¿½Ê“Iï¿½Èƒtï¿½@ï¿½Xï¿½iï¿½[ï¿½eï¿½[ï¿½vï¿½Ì‚æ‚¤ï¿½É•ï¿½ï¿½É—ï¿½ï¿½Þ‚ï¿½ï¿½Æ‚ï¿½ï¿½ï¿½ï¿½È‚ï¿½ï¿½A<br>
+     ï¿½Gï¿½ï¿½ï¿½Ä‚ï¿½ï¿½è‚ªï¿½É‚ï¿½ï¿½È‚é‚±ï¿½Æ‚ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½ï¿½B<br>
    </p>
-     <p>‚²’ˆÓ<br>
-       ƒtƒŠ[ƒX‚âƒjƒbƒg‚È‚Ç–Ñ‰H—§‚¿‚Ì‹­‚¢‘fÞ‚É‹­‚­‰Ÿ‚µ•t‚¯‚é‚Æ<br>
-    •zÞ‚Æ—‚Þ‚±‚Æ‚ª‚ ‚è‚Ü‚·B</p></td>
+     <p>ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½<br>
+       ï¿½tï¿½ï¿½ï¿½[ï¿½Xï¿½ï¿½jï¿½bï¿½gï¿½È‚Ç–Ñ‰Hï¿½ï¿½ï¿½ï¿½ï¿½Ì‹ï¿½ï¿½ï¿½ï¿½fï¿½Þ‚É‹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½tï¿½ï¿½ï¿½ï¿½ï¿½<br>
+    ï¿½zï¿½Þ‚Æ—ï¿½ï¿½Þ‚ï¿½ï¿½Æ‚ï¿½ï¿½ï¿½ï¿½ï¿½Ü‚ï¿½ï¿½B</p></td>
    <td><img src="images/spacer.gif" width="1" height="200" alt=""></td>
   </tr>
   <tr>
@@ -190,9 +228,9 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="200" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="font-size: 13px; line-height: 20px; text-align: center;">ƒfƒBƒXƒvƒŒƒCƒI[ƒfƒBƒI— ƒpƒlƒ‹“\‚è•t‚¯—á</td>
-   <td colspan="7" style="font-size: 13px; line-height: 20px; text-align: center;">—\”õ‚Ìƒtƒ@ƒXƒi[ƒe[ƒv‚ÍŒÅ’èˆÊ’u‚Ì•ÏX‚â•ÊˆÊ’u‚Ö“\‚è‚Â‚¯‚é‚±‚Æ‚ÅA<br>
-    “¯æŽÒ—p‚Æ‚µ‚Ä•ŽèÈ‚ÉˆÚ“®‚³‚¹‚ÄŽg‚¤‚È‚Çó‹µ‚É‡‚í‚¹‚½Žg—p‚ª‰Â”\</td>
+   <td colspan="6" style="font-size: 13px; line-height: 20px; text-align: center;">ï¿½fï¿½Bï¿½Xï¿½vï¿½ï¿½ï¿½Cï¿½Iï¿½[ï¿½fï¿½Bï¿½Iï¿½ï¿½ï¿½pï¿½lï¿½ï¿½ï¿½\ï¿½ï¿½tï¿½ï¿½ï¿½ï¿½</td>
+   <td colspan="7" style="font-size: 13px; line-height: 20px; text-align: center;">ï¿½\ï¿½ï¿½ï¿½Ìƒtï¿½@ï¿½Xï¿½iï¿½[ï¿½eï¿½[ï¿½vï¿½ÍŒÅ’ï¿½Ê’uï¿½Ì•ÏXï¿½ï¿½ÊˆÊ’uï¿½Ö“\ï¿½ï¿½Â‚ï¿½ï¿½é‚±ï¿½Æ‚ÅA<br>
+    ï¿½ï¿½ï¿½ï¿½Ò—pï¿½Æ‚ï¿½ï¿½Äï¿½ï¿½ï¿½È‚ÉˆÚ“ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÄŽgï¿½ï¿½ï¿½È‚Çó‹µ‚Éï¿½ï¿½í‚¹ï¿½ï¿½ï¿½gï¿½pï¿½ï¿½ï¿½Â”\</td>
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
   <tr>
@@ -205,7 +243,7 @@ function MM_preloadImages() { //v3.0
  
    <script>
 
-//‰æ‘œ‚ð”z—ñ‚ÉŠi”[‚·‚é
+//ï¿½æ‘œï¿½ï¿½zï¿½ï¿½ÉŠiï¿½[ï¿½ï¿½ï¿½ï¿½
 var img = new Array();
 
 img[0] = new Image();
@@ -213,19 +251,19 @@ img[0].src = "images/uni_box1.gif";
 img[1] = new Image();
 img[1].src = "images/uni_box2.gif";
 
-//‰æ‘œ”Ô†—p‚ÌƒOƒ[ƒoƒ‹•Ï”
+//ï¿½æ‘œï¿½Ôï¿½ï¿½pï¿½ÌƒOï¿½ï¿½ï¿½[ï¿½oï¿½ï¿½ï¿½Ïï¿½
 var cnt=0;
 
-//‰æ‘œØ‚è‘Ö‚¦ŠÖ”
+//ï¿½æ‘œï¿½Ø‚ï¿½Ö‚ï¿½ï¿½Öï¿½
 function changeIMG(){
   
-  //‰æ‘œ”Ô†‚ði‚ß‚é
+  //ï¿½æ‘œï¿½Ôï¿½ï¿½ï¿½iï¿½ß‚ï¿½
   if (cnt == 1)
   { cnt=0; }
   else
   { cnt++; }
   
-  //‰æ‘œ‚ðØ‚è‘Ö‚¦‚é
+  //ï¿½æ‘œï¿½ï¿½Ø‚ï¿½Ö‚ï¿½ï¿½ï¿½
   document.getElementById("gazo").src=img[cnt].src;
 }
 </script></td>
@@ -268,14 +306,17 @@ function changeIMG(){
   width="101%"
   scrolling="no">
         </iframe> </td></tr>
-  <tr>
+  <!--<tr>
    <td colspan="13"><img src="images/b_line.gif" width="1000" height="10" alt=""/></td>
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
    <td colspan="13"><img src="images/end.gif" width="1000" height="79" alt=""/></td>
    <td><img src="images/spacer.gif" width="1" height="79" alt=""></td>
-  </tr>
+  </tr> -->
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>
