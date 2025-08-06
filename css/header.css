@@ -3,11 +3,18 @@
 ==================================*/
 .header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    position: sticky;
+    position: fixed;
     top: 0;
     z-index: 1000;
     width: 100%;
     background-color: #fff;
+}
+
+/* ヘッダー全体を覆うコンテナの幅調整 */
+.container {
+    max-width: 1200px; 
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 /* 上段ヘッダー */
@@ -38,34 +45,29 @@
     margin-right: 5px;
 }
 
-.social-icon img {
+.social-icon img,
+.search-icon img {
     height: 30px;
     width: auto;
 }
 
 .search-icon img {
-    height: 30px;
-    width: auto;
     padding-left: 30px;
     padding-right: 10px;
 }
 
 /* 下段ヘッダー */
 .header-bottom {
-    background-color: #fff;
-    width: 100%;
-}
-
-.header-bottom .header-inner {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0px;
-    max-width: 1100x;
+    padding: 5px 0;
 }
 
+/* ナビゲーションメニュー */
 .header-nav {
     display: flex;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -77,196 +79,122 @@
 }
 
 .nav-item {
-    margin-left: 60px;
-    position: relative;
+    position: relative; /* ドロップダウンメニューの基準位置に */
+    padding: 0 15px;
 }
 
 .nav-item a,
-.nav-item .dropdown-toggle {
-    font-weight: 700;
-    color: #333;
-    white-space: nowrap;
-    text-decoration: none;
-    display: block;
-    font-size:18px;
-    line-height: 30px;
-    padding-bottom: 10px;
-}
-
 .dropdown-toggle {
-    cursor: default;
-}
-
-/* ドロップダウンメニューのスタイル */
-.has-dropdown:hover .dropdown-menu {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.dropdown-menu {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: block;
     padding: 10px 0;
-    width: 300px;
-    z-index: 900;
+}
+
+.nav-item:hover > a,
+.nav-item:hover > .dropdown-toggle {
+    color: #00479d;
+}
+
+/* ドロップダウンメニューのスタイル (PC用) */
+.dropdown-menu {
+    /* ここを修正: fixedに変更して全幅表示を確実に */
+    position: fixed; 
+    top: 166px; 
+    left: 0;
+    right: 0;
+    
+    background-color: rgba(255, 255, 255, 0.95);
+    z-index: 920;
+    
     visibility: hidden;
     opacity: 0;
-    transform: translateY(10px);
-    transition: all 0.3s ease;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+    
+    padding: 30px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
+/* 親要素にホバーしたときにドロップダウンを表示 */
+.nav-item:hover > .dropdown-menu {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* ドロップダウンリストのスタイルを修正 */
 .dropdown-list {
+    display: flex;
     list-style: none;
-    margin: 0;
     padding: 0;
+    margin: 0 auto; /* ここを修正: 中央揃え */
+    gap: 30px;
+    max-width: 1200px; /* ここを修正: ヘッダーと同じ最大幅に */
+    flex-wrap: wrap;
 }
 
-.dropdown-list li a {
+.dropdown-list li {
+    padding: 0;
+    min-width: 200px;
+    font-size: 16px;
+}
+
+/* ドロップダウンの項目スタイル */
+.dropdown-list li > a {
     display: block;
     padding: 10px 20px;
-    font-weight: normal;
-    color: #555;
-    white-space: normal;
-    position: relative;
-    line-height: 1.2;
+    white-space: nowrap;
+    font-weight: bold;
+    color: #333;
+    text-decoration: none;
+    border-bottom: 1px solid #eee;
 }
 
-.dropdown-list li a:hover {
+.dropdown-list li > a:hover {
     background-color: #f0f0f0;
 }
 
-/* サブドロップダウンメニューのスタイル */
-.has-sub-dropdown > a::after {
-    content: '▶';
-    font-size: 10px;
-    color: #999;
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
+/* サブドロップダウンメニュー */
+.sub-dropdown-list,
+.sub-sub-dropdown-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    margin-top: 10px;
 }
 
-.has-sub-dropdown:hover > .sub-dropdown-list,
-.has-sub-dropdown:hover > .sub-sub-dropdown-list {
+.sub-dropdown-list li a,
+.sub-sub-dropdown-list li a {
+    font-weight: normal;
+    padding: 5px 20px;
+}
+
+/* ホバーで表示 */
+.has-sub-dropdown:hover > .sub-dropdown-list {
     visibility: visible;
     opacity: 1;
-    left: 100%;
 }
 
-.sub-dropdown-list {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 10px 0;
-    width: 380px;
-    z-index: 910;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.sub-dropdown-list li {
-    list-style: none;
-}
-
-.sub-dropdown-list li a {
-    padding: 10px 20px;
-}
-
-/* 3階層目のサブドロップダウンメニューのスタイル */
-.sub-sub-dropdown-list {
-    position: absolute;
-    top: 0;
-    left: 100%;
-    background-color: #fff;
-    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-    border-radius: 5px;
-    padding: 10px 0;
-    width: 380px;
-    z-index: 920;
-    visibility: hidden;
-    opacity: 0;
-    transition: all 0.3s ease;
-}
-
-.sub-sub-dropdown-list li {
-    list-style: none;
-}
-
-.sub-sub-dropdown-list li a {
-    padding: 10px 20px;
-}
-
+/* ハンバーガーメニューはPCでは非表示 */
 .hamburger-menu {
     display: none;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-    background: transparent;
-    border: none;
-    padding: 0;
 }
 
-.hamburger-menu span {
-    display: block;
-    width: 100%;
-    height: 2px;
-    background-color: #00479d;
-    transition: all 0.3s ease;
-}
-
-.hamburger-menu.active span:nth-child(1) {
-    transform: translateY(9px) rotate(45deg);
-}
-
-.hamburger-menu.active span:nth-child(2) {
-    opacity: 0;
-}
-
-.hamburger-menu.active span:nth-child(3) {
-    transform: translateY(-9px) rotate(-45deg);
-}
-
+/*==================================
+  レスポンシブデザイン (モバイル用)
+==================================*/
 @media (max-width: 768px) {
+    /* モバイルではナビゲーション全体を非表示に */
     .header-nav {
-        position: fixed;
-        top: 70px;
-        left: 0;
-        width: 100%;
-        height: 100vh;
-        background-color: #fff;
-        padding-top: 20px;
-        transform: translateX(100%);
-        transition: transform 0.3s ease;
-        z-index: 999;
-        overflow-y: auto;
+        display: none;
     }
-
-    .header-nav.active {
-        transform: translateX(0);
-    }
-
-    .nav-list {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .nav-item {
-        margin: 20px 0;
-        font-size: 18px;
-    }
-
+    /* ハンバーガーメニューはモバイルで表示 */
     .hamburger-menu {
-        display: flex;
+        display: flex; 
+    }
+    
+    /* モバイルではドロップダウンメニューを非表示 */
+    .dropdown-menu {
+        display: none; 
     }
 }

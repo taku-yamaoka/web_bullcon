@@ -11,11 +11,15 @@
 ==================================*/
 .category-selector {
     display: flex;
+    /* ボタンを一行に並べる */
+    flex-wrap: nowrap;
     justify-content: center;
     gap: 15px;
     margin-top: 30px;
     margin-bottom: 30px;
 }
+
+
 
 .category-tab {
     background-color: #f0f0f0;
@@ -27,6 +31,8 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, color 0.3s ease;
+    /* ボタンが折り返さないように最小幅を設定 */
+    flex-shrink: 0;
 }
 
 .category-tab.active,
@@ -41,10 +47,9 @@
 .products-grid {
     display: grid;
     gap: 30px;
-    /* 3つの列を作成し、各列の幅を均等にする */
-    grid-template-columns: repeat(3, minmax(280px, 1fr));
+    /* アイテム数を問わず同じ幅を保つグリッド */
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
     margin-top: 40px;
-    justify-content: center; /* グリッド全体を中央寄せにする */
 }
 
 .product-item {
@@ -95,13 +100,13 @@
     flex-grow: 1;
 }
 
+/* 共通スタイル */
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* セクションタイトルは他のページと共通化することを推奨します */
 .section-title {
     text-align: center;
     margin-bottom: 20px;
@@ -122,19 +127,18 @@
     color: #333;
 }
 
-/* ダミー要素は非表示に */
-.product-item-dummy {
-    display: none;
-}
-
 @media (max-width: 768px) {
     .products-section {
         padding: 40px 0;
     }
     .products-grid {
         gap: 20px;
-        /* スマートフォンでは1列表示に */
+        /* スマートフォンでは1列表示 */
         grid-template-columns: 1fr;
+    }
+    .product-item {
+        /* スマートフォンでの幅を調整 */
+        flex: 0 0 100%;
     }
     .section-title-jp {
         font-size: 2em;
