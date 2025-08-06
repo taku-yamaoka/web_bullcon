@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>製品新着情報 | Bullcon - フジ電機工業株式会社</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="/css/header.css">
+    <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/news/news.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+<div id="header-placeholder"></div>
+
+<main>
+    <section class="news-section">
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-title-en">PRODUCT NEWS</span>
+                <span class="section-title-jp">製品新着情報</span>
+            </h2>
+
+            <ul class="news-list">
+                <li class="news-item">
+                    <a href="#">
+                        <time datetime="2025-08-01">2025.08.01</time>
+                        <span class="news-category">新製品</span>
+                        <p class="news-title">新製品「スマートフォンホルダー SPH-W01」を発売しました。</p>
+                    </a>
+                </li>
+                <li class="news-item">
+                    <a href="#">
+                        <time datetime="2025-07-25">2025.07.25</time>
+                        <span class="news-category">アップデート</span>
+                        <p class="news-title">「ナビコントローラー」が一部車種のモデルチェンジに対応しました。</p>
+                    </a>
+                </li>
+                <li class="news-item">
+                    <a href="#">
+                        <time datetime="2025-07-15">2025.07.15</time>
+                        <span class="news-category">お知らせ</span>
+                        <p class="news-title">製品カタログを更新しました。</p>
+                    </a>
+                </li>
+                <li class="news-item">
+                    <a href="#">
+                        <time datetime="2025-06-30">2025.06.30</time>
+                        <span class="news-category">新製品</span>
+                        <p class="news-title">「レーダー探知機 LX-R200」が新登場。</p>
+                    </a>
+                </li>
+                <li class="news-item">
+                    <a href="#">
+                        <time datetime="2025-06-10">2025.06.10</time>
+                        <span class="news-category">重要</span>
+                        <p class="news-title">製品「テレビコントローラー」に関する重要なお知らせ。</p>
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </section>
+</main>
+
+<div id="footer-placeholder"></div>
+
+<script>
+    // ヘッダーとフッターの読み込み
+    // ヘッダーの読み込み
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+// フッターの読み込み
+fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
+</script>
+
+</body>
+</html>
