@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>�u���[�L4�������j�b�g/Bullcon-�t�W�d�@�H�Ɗ������-</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>ブレーキ4灯化ユニット/Bullcon-フジ電機工業株式会社-</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -66,6 +68,40 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -79,8 +115,10 @@ function MM_preloadImages() { //v3.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/brake4_r24_c2_f2.gif','images/brake4_r24_c10_f2.gif','images/brake4_r24_c18_f2.gif','images/brake4_r24_c30_f2.gif','images/brake4_r41_c33_f2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="brake420190829.png" fwpage="�y�[�W 1" fwbase="brake4.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="brake420190829.png" fwpage="ページ 1" fwbase="brake4.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="10" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="28" height="1" border="0" alt=""></td>
@@ -127,25 +165,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
 
- <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   </tr>
   <tr>
    <td colspan="42"><img name="brake4_r10_c1" src="images/brake4_r10_c1.gif" width="1000" height="30" border="0" id="brake4_r10_c1" alt=""></td>
@@ -157,7 +176,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="73" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="42"><span class="style4">�u���[�L�����v�̔����ʂ𑝂₷���ƂŎ��F�������߁A�㑱�Ԃփu���[�L������A�s�[���I</span></td>
+   <td colspan="42"><span class="style4">ブレーキランプの発光面を増やすことで視認性を高め、後続車へブレーキ操作をアピール！</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -167,8 +186,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="194" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="15"><div align="center"><span class="style4">�����u���[�L�����v�_����</span></div></td>
-   <td colspan="27"><div align="center"><span class="style4">�S�����u���[�L�����v�_����</span></div></td>
+   <td colspan="15"><div align="center"><span class="style4">純正ブレーキランプ点灯時</span></div></td>
+   <td colspan="27"><div align="center"><span class="style4">４灯化ブレーキランプ点灯時</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -176,10 +195,10 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="42" style="line-height:18px"><span class="style7">���i����<br>
-     ���u���[�L�����v���S�������鎖�ŁA�����ʂ𑝂₵�㑱�Ԃւ̃A�s�[���͂��A�b�v�I<br>
-     ���ی��H�����ŁA����̏�̏ꍇ�ł�������Ԃɖ߂邾���Ȃ̂ň��S�B<br>
-    ���Ԏ��p��t�����������ŁA��t����r�I�����s���܂��B</span></td>
+   <td colspan="42" style="line-height:18px"><span class="style7">製品特長<br>
+     ○ブレーキランプを４灯化する事で、発光面を増やし後続車へのアピール力をアップ！<br>
+     ○保護回路内蔵で、万一故障の場合でも純正状態に戻るだけなので安心。<br>
+    ○車種専用取付説明書同梱で、取付が比較的早く行えます。</span></td>
    <td><img src="images/spacer.gif" width="1" height="80" border="0" alt=""></td>
   </tr>
   <tr>
@@ -188,25 +207,25 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="10"><img name="brake4_r18_c1" src="images/brake4_r18_c1.gif" width="10" height="500" border="0" id="brake4_r18_c1" alt=""></td>
-   <td colspan="6" align="center" style="font-size: 16px; color: #5C5A5A;"><b>�N���E���A�X���[�g<br>
-    �P�W���n</b></td>
+   <td colspan="6" align="center" style="font-size: 16px; color: #5C5A5A;"><b>クラウンアスリート<br>
+    １８＃系</b></td>
    <td rowspan="10" colspan="2"><img name="brake4_r18_c8" src="images/brake4_r18_c8.gif" width="20" height="500" border="0" id="brake4_r18_c8" alt=""></td>
-   <td colspan="5" align="center" style="font-size: 16px"><b>�G�X�e�B�}<br>
-    �q�T�O�n</b></td>
+   <td colspan="5" align="center" style="font-size: 16px"><b>エスティマ<br>
+    Ｒ５０系</b></td>
    <td rowspan="10" colspan="3"><img name="brake4_r18_c15" src="images/brake4_r18_c15.gif" width="20" height="500" border="0" id="brake4_r18_c15" alt=""></td>
-   <td colspan="10" align="center" style="font-size: 16px"><b>���F���t�@�C�A<br>
-    �g�Q�O�n</b></td>
+   <td colspan="10" align="center" style="font-size: 16px"><b>ヴェルファイア<br>
+    Ｈ２０系</b></td>
    <td rowspan="10" colspan="2"><img name="brake4_r18_c28" src="images/brake4_r18_c28.gif" width="20" height="500" border="0" id="brake4_r18_c28" alt=""></td>
-   <td colspan="12" align="center" style="font-size: 16px"><b>�b-�g�q<br>
-    �w�P�O�E�w�T�O�n</b></td>
+   <td colspan="12" align="center" style="font-size: 16px"><b>Ｃ-ＨＲ<br>
+    Ｘ１０・Ｘ５０系</b></td>
    <td rowspan="10"><img name="brake4_r18_c42" src="images/brake4_r18_c42.gif" width="10" height="500" border="0" id="brake4_r18_c42" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" align="center" style="font-size: 15px; color: #A2A2A2;">�ԗ��N��<br>�g�P�T/�P�Q�`�g�Q�O/�P</td>
-   <td colspan="5" align="center" style="font-size: 15px">�ԗ��N��<br>�g�P�W/�P�`�g�Q�W/�T</td>
-   <td colspan="10" align="center" style="font-size: 15px">�ԗ��N��<br>�g�P�X/5�`�g�Q�V/�P</td>
-   <td colspan="12" align="center" style="font-size: 15px">�ԗ��N��<br>�g�Q�W/�P�Q�`�q�P/�P�O</td>
+   <td colspan="6" align="center" style="font-size: 15px; color: #A2A2A2;">車両年式<br>Ｈ１５/１２～Ｈ２０/１</td>
+   <td colspan="5" align="center" style="font-size: 15px">車両年式<br>Ｈ１８/１～Ｈ２８/５</td>
+   <td colspan="10" align="center" style="font-size: 15px">車両年式<br>Ｈ１９/5～Ｈ２７/１</td>
+   <td colspan="12" align="center" style="font-size: 15px">車両年式<br>Ｈ２８/１２～Ｒ１/１０</td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -217,18 +236,18 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="260" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="6"><div align="center"><b><span style="font-size: 30px; color: #A2A2A2;">�a�j�t-�O�P</span></b></div></td>
-    <td colspan="5"><div align="center"><span class="style10">�a�j�t-�O�Q</span></div></td>
-    <td colspan="10"><div align="center"><span class="style10">�a�j�t-�O�R</span></div></td>
-    <td colspan="12"><div align="center"><span class="style10">�a�j�t-�O�S</span></div></td>
+    <td colspan="6"><div align="center"><b><span style="font-size: 30px; color: #A2A2A2;">ＢＫＵ-０１</span></b></div></td>
+    <td colspan="5"><div align="center"><span class="style10">ＢＫＵ-０２</span></div></td>
+    <td colspan="10"><div align="center"><span class="style10">ＢＫＵ-０３</span></div></td>
+    <td colspan="12"><div align="center"><span class="style10">ＢＫＵ-０４</span></div></td>
     <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="6" style="font-size: 15px; vertical-align: top; line-height: 18px; text-align: center; color: #A2A2A2;">�̔����i ���V�C�S�W�O�i�ō��j</span><br><div style="font-size: 14px; vertical-align: top; line-height: 18px; text-align: center;">�i�Ŕ����i ��6�A�W�O�O�j<br>�i�`�m�R�[�h<br>�S�X�T�O�O�X�S�O�U�O�W�P�U</span></div></td>
-    <td colspan="5" style="font-size: 15px; vertical-align: top; line-height: 18px; text-align: center;">�̔����i ���V�C�S�W�O�i�ō��j</span><br><div style="font-size: 14px; vertical-align: top; line-height: 18px; text-align: center;">�i�Ŕ����i ��6�A�W�O�O�j<br>�i�`�m�R�[�h<br>�S�X�T�O�O�X�S�O�U�O�W�Q�R</span></div></td>
-    <td colspan="10" style="font-size: 15px; vertical-align: top; line-height: 18px; text-align: center;">�̔����i ���V�C�S�W�O�i�ō��j</span><br><div style="font-size: 14px; vertical-align: top; line-height: 18px; text-align: center;">�i�Ŕ����i ��6�A�W�O�O�j<br>�i�`�m�R�[�h<br>�S�X�T�O�O�X�S�O�U�O�W�R�O</span></div></td>
-    <td colspan="12" style="font-size: 15px; vertical-align: top; line-height: 18px; text-align: center;">�̔����i ���V�C�S�W�O�i�ō��j</span><br><div style="font-size: 14px; vertical-align: top; line-height: 18px; text-align: center;">�i�Ŕ����i ��6�A�W�O�O�j<br>�i�`�m�R�[�h<br>
-    �S�X�T�O�O�X�S�O�U�Q�Q�Q�R</span></div></td>
+    <td colspan="6" style="font-size: 15px; vertical-align: top; line-height: 18px; text-align: center; color: #A2A2A2;">販売価格 ￥７，４８０（税込）</span><br><div style="font-size: 14px; vertical-align: top; line-height: 18px; text-align: center;">（税抜価格 ￥6、８００）<br>ＪＡＮコード<br>４９５００９４０６０８１６</span></div></td>
+    <td colspan="5" style="font-size: 15px; vertical-align: top; line-height: 18px; text-align: center;">販売価格 ￥７，４８０（税込）</span><br><div style="font-size: 14px; vertical-align: top; line-height: 18px; text-align: center;">（税抜価格 ￥6、８００）<br>ＪＡＮコード<br>４９５００９４０６０８２３</span></div></td>
+    <td colspan="10" style="font-size: 15px; vertical-align: top; line-height: 18px; text-align: center;">販売価格 ￥７，４８０（税込）</span><br><div style="font-size: 14px; vertical-align: top; line-height: 18px; text-align: center;">（税抜価格 ￥6、８００）<br>ＪＡＮコード<br>４９５００９４０６０８３０</span></div></td>
+    <td colspan="12" style="font-size: 15px; vertical-align: top; line-height: 18px; text-align: center;">販売価格 ￥７，４８０（税込）</span><br><div style="font-size: 14px; vertical-align: top; line-height: 18px; text-align: center;">（税抜価格 ￥6、８００）<br>ＪＡＮコード<br>
+    ４９５００９４０６２２２３</span></div></td>
     <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
  
@@ -240,16 +259,16 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="font-size: 13px; text-align: center; color: #A2A2A2;">��p�E���z����������<span class="style15"> �i���j</span></div></td>
-   <td colspan="5" style="font-size: 13px; text-align: center; color: #FF0308;">��p�E���z����������</div></td>
-   <td colspan="10" style="font-size: 13px; text-align: center; color: #FF0308;">��p�E���z����������</div></td>
-   <td colspan="12" style="font-size: 13px; text-align: center; color: #FF0308;">��p�E���z����������</div></td>
+   <td colspan="6" style="font-size: 13px; text-align: center; color: #A2A2A2;">専用脱着配線資料同梱<span class="style15"> （※）</span></div></td>
+   <td colspan="5" style="font-size: 13px; text-align: center; color: #FF0308;">専用脱着配線資料同梱</div></td>
+   <td colspan="10" style="font-size: 13px; text-align: center; color: #FF0308;">専用脱着配線資料同梱</div></td>
+   <td colspan="12" style="font-size: 13px; text-align: center; color: #FF0308;">専用脱着配線資料同梱</div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" rowspan="2"><span class="style16">�����[�J�[���C�����������o�b�N�J����<br>
-     �@�u�񑕒��ԁv�ł͓����̔z���ڑ����@��<br>
-    �@�قȂ�܂��̂ŁA�\�߂��������������B</span></td>
+   <td colspan="6" rowspan="2"><span class="style16">※メーカーライン装着純正バックカメラ<br>
+     　「非装着車」では同梱の配線接続方法と<br>
+    　異なりますので、予めご了承ください。</span></td>
    <td colspan="5"><img name="brake4_r26_c10" src="images/brake4_r26_c10.gif" width="230" height="20" border="0" id="brake4_r26_c10" alt=""></td>
    <td colspan="10"><img name="brake4_r26_c18" src="images/brake4_r26_c18.gif" width="230" height="20" border="0" id="brake4_r26_c18" alt=""></td>
    <td colspan="12"><img name="brake4_r26_c30" src="images/brake4_r26_c30.gif" width="230" height="20" border="0" id="brake4_r26_c30" alt=""></td>
@@ -266,8 +285,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="28"><span class="style18">�ԗ��̃u���[�L�����v���S�����I�㑱�ԂɃu���[�L������A�s�[�����A�Ǔ˖h�~�𑣂��܂��B</span></td>
-   <td colspan="14"><div align="right" class="style3">������FBKU -01�i�N���E��18�n�j</div></td>
+   <td colspan="28"><span class="style18">車両のブレーキランプを４灯化！後続車にブレーキ操作をアピールし、追突防止を促します。</span></td>
+   <td colspan="14"><div align="right" class="style3">装着例：BKU -01（クラウン18系）</div></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -281,14 +300,14 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="140" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8" rowspan="2"><div align="center" class="style20">�����u���[�L�����v</div></td>
-   <td colspan="7" rowspan="2"><div align="center" class="style20">�S�����u���[�L�����v</div></td>
-   <td colspan="13" rowspan="2"><div align="center" class="style20">�X���[���_��<br>
-     �{<br>
-    �����u���[�L�����v</div></td>
-   <td colspan="14" rowspan="2"><div align="center" class="style20">�X���[���_��<br>
-     �{<br>
-    �S�����u���[�L�����v</div></td>
+   <td colspan="8" rowspan="2"><div align="center" class="style20">純正ブレーキランプ</div></td>
+   <td colspan="7" rowspan="2"><div align="center" class="style20">４灯化ブレーキランプ</div></td>
+   <td colspan="13" rowspan="2"><div align="center" class="style20">スモール点灯<br>
+     ＋<br>
+    純正ブレーキランプ</div></td>
+   <td colspan="14" rowspan="2"><div align="center" class="style20">スモール点灯<br>
+     ＋<br>
+    ４灯化ブレーキランプ</div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -299,34 +318,34 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="42"><span class="style22">���w���̑O��</span></td>
+   <td colspan="42"><span class="style22">ご購入の前に</span></td>
    <td><img src="images/spacer.gif" width="1" height="32" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="42" style="line-height:16px"><span class="style3">���{���i��DC+12V�E�}�C�i�X�A�[�X�ԋy�юw��Ԏ��p���i�ł��B�w��ȊO�̓d���y�т��̑��Ԏ�ɂ͎�t�o���܂���B<br>
-     ���{���i�͎ԗ��p�l���������O���č�Ƃ��s���܂�������A�j�����������܂��Ă����Ђł͈�؂̐ӔC�𕉂����˂܂��̂ŗ\�߂��������������B<br>
-     ���{���i��t��ɔ��ʒu�e�[�������v���j�b�g��LED�����v�̔j���A�̏Ⴊ�����܂��Ă����Ђł͈�؂̐ӔC�y�ѕۏ؂͕������˂܂��̂ŗ\�߂��������������B<br>
-     ���{���i�̎�t�y�єz���͎�t�Z�p�̂���̔��X�ōs���ĉ������B<br>
-     ����t�y�єz�����s���ۂ͕K���o�b�e���[�̃}�C�i�X�[�q���O���Ă����Ƃ��s���ĉ������B<br>
-     ���z���̍ۂ͎ԗ��z���𖳗��Ɉ�������悤�Ȏ��͂��Ȃ��ł��������B<br>
-     ����t��̓���m�F�͈�l�ł͍s��Ȃ��ł��������B<br>
-     ���{���i�̎�����p�i�ł��̂Ő��̂�����ʒu�ւ͑������Ȃ��ł��������B<br>
-    ���X���[���_������4���΃u���[�L�����v�̖��邳�́A�ԗ��ɂ��قȂ�܂��̂ł��炩���߂��������������B</span></td>
+   <td colspan="42" style="line-height:16px"><span class="style3">○本製品はDC+12V・マイナスアース車及び指定車種専用製品です。指定以外の電圧及びその他車種には取付出来ません。<br>
+     ○本製品は車両パネル等を取り外して作業を行いますが万一、破損等が生じましても弊社では一切の責任を負いかねますので予めご了承ください。<br>
+     ○本製品取付後に反位置テールランプユニットやLEDランプの破損、故障が生じましても弊社では一切の責任及び保証は負いかねますので予めご了承ください。<br>
+     ○本製品の取付及び配線は取付技術のある販売店で行って下さい。<br>
+     ○取付及び配線を行う際は必ずバッテリーのマイナス端子を外してから作業を行って下さい。<br>
+     ○配線の際は車両配線を無理に引っ張るような事はしないでください。<br>
+     ○取付後の動作確認は一人では行わないでください。<br>
+     ○本製品の室内専用品ですので水のかかる位置へは装着しないでください。<br>
+    ○スモール点灯中の4灯火ブレーキランプの明るさは、車両により異なりますのであらかじめご了承ください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="120" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="42"><span class="style22">���S�y�ю��t���Ɋւ��邲����</span></td>
+   <td colspan="42"><span class="style22">安全及び取り付けに関するご注意</span></td>
    <td><img src="images/spacer.gif" width="1" height="32" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="3" colspan="42" style="line-height:16px"><span class="style3">���w�肳�ꂽ����T���Ƃ��͕K���T�[�L�b�g�e�X�^�[���g�p���A���d��i�����v�e�X�^�[�j���͎g�p���Ȃ��ł��������B<br>
-     ���{���i�����t������ۂ́A���̋@��ɉe����^���Ȃ��ꏊ�y�щ^�]�ɍ����x���̂Ȃ��ꏊ�ɐݒu���ĉ������B<br>
-     ���ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{���̋@�\�ɕs��������ꍇ�ɂ͖{���i�����t�����́A�g�p���Ȃ��ŉ������B���i������ɓ��삵�Ȃ�������A�ԗ��@��ɉe����^���鋰�ꂪ����܂��B<br>
-     ���{���i�̎��t���́A���t���Z�p�̂���̔��X�ōs���ĉ������B<br>
-     ���{���i�Ƒ��@��ƕ��p���Ďg�p����ꍇ�A���@��̎戵���������悭���ǂ݂ɂȂ萳�����g�p���@�Ŏg�p���ĉ������B<br>
-     ���w��ȊO�̓d���ł͎g�p���Ȃ��ŉ������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B<br>
-     ���{���i�����t������ہA�d���̋ɐ��i�{�E�|�j���ԈႦ�Ȃ��悤�ɂ����Ӊ������B���A�d���R�[�h���ԑ̂̋��������ɐG��Ȃ��悤�ɂ����Ӊ������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B<br>
-    �����t���̍ۂɂ͕K���G���W�����~������Ԃōs���ĉ������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</span></td>
+   <td rowspan="3" colspan="42" style="line-height:16px"><span class="style3">●指定された線を探すときは必ずサーキットテスターを使用し、検電器（ランプテスター）等は使用しないでください。<br>
+     ●本製品を取り付けする際は、他の機器に影響を与えない場所及び運転に差し支えのない場所に設置して下さい。<br>
+     ●車両のバッテリーが弱っている状態及び、車両本来の機能に不備がある場合には本製品を取り付け又は、使用しないで下さい。製品が正常に動作しなかったり、車両機器に影響を与える恐れがあります。<br>
+     ●本製品の取り付けは、取り付け技術のある販売店で行って下さい。<br>
+     ●本製品と他機器と併用して使用する場合、他機器の取扱説明書もよくお読みになり正しい使用方法で使用して下さい。<br>
+     ●指定以外の電圧では使用しないで下さい。火災・感電・故障の原因となります。<br>
+     ●本製品を取り付けする際、電源の極性（＋・－）を間違えないようにご注意下さい。又、電源コードが車体の金属部分に触れないようにご注意下さい。火災・感電・故障の原因となります。<br>
+    ●取り付けの際には必ずエンジンを停止した状態で行って下さい。火災・感電・故障の原因となります。</span></td>
    <td><img src="images/spacer.gif" width="1" height="71" border="0" alt=""></td>
   </tr>
 
@@ -337,32 +356,17 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="56" border="0" alt=""></td>
   </tr>
 <tr>
-   <td colspan="42"><span class="style22">�ۏ؋K��</span></td>
+   <td colspan="42"><span class="style22">保証規定</span></td>
    <td><img src="images/spacer.gif" width="1" height="32" border="0" alt=""></td>
   </tr>
 <tr>
-   <td colspan="42" style="line-height:16px"><span class="style3">���{���i�͂P�N�ۏ؂ƂȂ�܂��B<br>
-       ���戵�������ɏ]��������Ȏg�p��Ԃ̂��Ƃŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��āA ���Ђł͈�ؐӔC�𕉂����˂܂��B</span></td>
+   <td colspan="42" style="line-height:16px"><span class="style3">●本製品は１年保証となります。<br>
+       ●取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について、 弊社では一切責任を負いかねます。</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="2" colspan="32"><img name="brake4_r41_c1" src="images/brake4_r41_c1.gif" width="817" height="93" border="0" id="brake4_r41_c1" alt=""></td>
-   <td colspan="5"><a href="brake4.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('brake4_r41_c33','','images/brake4_r41_c33_f2.gif',1);"><img name="brake4_r41_c33" src="images/brake4_r41_c33.gif" width="85" height="15" border="0" id="brake4_r41_c33" alt=""></a></td>
-   <td rowspan="2" colspan="5"><img name="brake4_r41_c38" src="images/brake4_r41_c38.gif" width="98" height="93" border="0" id="brake4_r41_c38" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="5"><img name="brake4_r42_c33" src="images/brake4_r42_c33.gif" width="85" height="78" border="0" id="brake4_r42_c33" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="78" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="42"><img name="brake4_r43_c1" src="images/brake4_r43_c1.gif" width="1000" height="71" border="0" id="brake4_r43_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="71" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="42"><img name="brake4_r44_c1" src="images/brake4_r44_c1.gif" width="1000" height="8" border="0" id="brake4_r44_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="8" border="0" alt=""></td>
-  </tr>
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

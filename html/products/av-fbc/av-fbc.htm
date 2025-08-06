@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>���𑜓x�J�����V���[�Y / Bullcon-�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>高解像度カメラシリーズ / Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -36,12 +38,48 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/av-fbc_r2_c5_s2.gif','images/av-fbc_r2_c8_s2.gif','images/av-fbc_r2_c10_s2.gif','images/av-fbc_r2_c13_s2.gif','images/av-fbc_r2_c16_s2.gif','images/av-fbc_r5_c1_s2.gif','images/av-fbc_r5_c4_s2.gif','images/av-fbc_r5_c7_s2.gif','images/av-fbc_r5_c9_s2.gif','images/av-fbc_r5_c12_s2.gif','images/av-fbc_r5_c14_s2.gif','images/av-fbc_r8_c2_s2.gif','images/av-fbc_r8_c3_s2.gif','images/av-fbc_r13_c1_s2.gif','images/av-fbc_r13_c7_s2.gif','images/av-fbc_r13_c11_s2.gif');">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="av-fbc.png" fwpage="�y�[�W 1" fwbase="av-fbc.gif" fwstyle="Dreamweaver" fwdocid = "674667161" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="av-fbc.png" fwpage="ページ 1" fwbase="av-fbc.gif" fwstyle="Dreamweaver" fwdocid = "674667161" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="20" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="95" height="1" alt=""></td>
@@ -62,25 +100,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
 
-   <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/aa.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="16"><img name="avfbc_r11_c1" src="images/av-fbc_r11_c1.gif" width="1000" height="10" id="avfbc_r11_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
@@ -110,10 +129,9 @@ function MM_preloadImages() { //v3.0
    <td colspan="8"><a href="../AV-CS-Link/AV-CS-Link.htm"><img name="avfbc_r16_c9" src="images/av-fbc_r16_c9.gif" width="500" height="260" id="avfbc_r16_c9" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="260" alt=""></td>
   </tr>
-  <tr>
-   <td colspan="16"><img name="avfbc_r17_c1" src="images/av-fbc_r17_c1.gif" width="1000" height="76" id="avfbc_r17_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="76" alt=""></td>
-  </tr>
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

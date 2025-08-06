@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>HDMI��RCA�ɕϊ� / Bullcon-�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>HDMIをRCAに変換 / Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -37,12 +39,48 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/av-hdm01_r2_c7_s2.gif','images/av-hdm01_r2_c10_s2.gif','images/av-hdm01_r2_c15_s2.gif','images/av-hdm01_r2_c19_s2.gif','images/av-hdm01_r2_c25_s2.gif','images/av-hdm01_r5_c1_s2.gif','images/av-hdm01_r5_c5_s2.gif','images/av-hdm01_r5_c9_s2.gif','images/av-hdm01_r5_c12_s2.gif','images/av-hdm01_r5_c18_s2.gif','images/av-hdm01_r5_c23_s2.gif','images/av-hdm01_r8_c2_s2.gif','images/av-hdm01_r8_c3_s2.gif','images/av-hdm01_r14_c20_s2.gif','images/av-hdm01_r16_c20_s2.gif','images/av-hdm01_r26_c1_s2.gif','images/av-hdm01_r26_c8_s2.gif','images/av-hdm01_r26_c16_s2.gif','images/av-hdm01_r26_c21_s2.gif','images/av-hdm01_r40_c20_s2.gif','images/av-hdm01_r42_c20_s2.gif','images/av-hdm01_r44_c1_s2.gif','images/av-hdm01_r44_c8_s2.gif','images/av-hdm01_r44_c16_s2.gif','images/av-hdm01_r44_c21_s2.gif','images/av-hdm01_r63_c21_s2.gif');">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="av-hdm01����202300829.png" fwpage="�y�[�W 1" fwbase="av-hdm01.gif" fwstyle="Dreamweaver" fwdocid = "1379248506" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="av-hdm01統合202300829.png" fwpage="ページ 1" fwbase="av-hdm01.gif" fwstyle="Dreamweaver" fwdocid = "1379248506" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="20" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="95" height="1" alt=""></td>
@@ -72,25 +110,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
 
- <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/aa.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="25"><img name="avhdm01_r11_c1" src="images/av-hdm01_r11_c1.gif" width="1000" height="10" id="avhdm01_r11_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
@@ -106,9 +125,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="7"><img name="avhdm01_r14_c1" src="images/av-hdm01_r14_c1.gif" width="300" height="50" id="avhdm01_r14_c1" alt=""></td>
-   <td colspan="6" style="line-height: 20px"><span style="font-size:14px"><b>�@�̔����i ���P�O�C�S�Q�W</b></span><span style="font-size: 12px">�i�ō��j<br>
-    �@�@�i�Ŕ����i ���X�C�S�W�O�j</span></td>
-   <td colspan="6" style="font-size: 13px; line-height: 20px"><b>�i�`�m�R�[�h�F<br>�S�X�T�O�O�X�S�O�U�Q�S�U�X</b></td>
+   <td colspan="6" style="line-height: 20px"><span style="font-size:14px"><b>　販売価格 ￥１０，４２８</b></span><span style="font-size: 12px">（税込）<br>
+    　　（税抜価格 ￥９，４８０）</span></td>
+   <td colspan="6" style="font-size: 13px; line-height: 20px"><b>ＪＡＮコード：<br>４９５００９４０６２４６９</b></td>
    <td colspan="6"><a href="../pdf/AV-HDM01.pdf" target="_blank" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('avhdm01_r14_c20','','images/av-hdm01_r14_c20_s2.gif',1);"><img name="avhdm01_r14_c20" src="images/av-hdm01_r14_c20.gif" width="210" height="50" id="avhdm01_r14_c20" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
@@ -118,9 +137,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="7"><img name="avhdm01_r16_c1" src="images/av-hdm01_r16_c1.gif" width="300" height="50" id="avhdm01_r16_c1" alt=""></td>
-   <td colspan="6" style="line-height: 20px"><span style="font-size:14px"><b>�@�̔����i ���P�Q�C�P�O�O</b></span><span style="font-size: 12px">�i�ō��j<br>
-    �@�@�i�Ŕ����i ���P�P�C�O�O�O�j</span></td>
-   <td colspan="6" style="font-size: 13px; line-height: 20px"><b>�i�`�m�R�[�h�F<br>�S�X�T�O�O�X�S�O�U�Q�V�R�T</b></td>
+   <td colspan="6" style="line-height: 20px"><span style="font-size:14px"><b>　販売価格 ￥１２，１００</b></span><span style="font-size: 12px">（税込）<br>
+    　　（税抜価格 ￥１１，０００）</span></td>
+   <td colspan="6" style="font-size: 13px; line-height: 20px"><b>ＪＡＮコード：<br>４９５００９４０６２７３５</b></td>
    <td colspan="6"><a href="../pdf/AV-HDM01DC.pdf" target="_blank" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('avhdm01_r16_c20','','images/av-hdm01_r16_c20_s2.gif',1);"><img name="avhdm01_r16_c20" src="images/av-hdm01_r16_c20.gif" width="210" height="50" id="avhdm01_r16_c20" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
@@ -153,12 +172,12 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="25"><span style="font-size: 12px; color: #FF0308; line-height: 15px">����Phone /��Pad�Ƃ̐ڑ��ɂ́A�uApple�����iLightning - Digital AV�A�_�v�^�v��K�����g�p���������B�݊��i����їގ��i�ł͐���ɓ��삵�܂���̂ł����ӂ��������B<br>
-      ��  iPhone15�V���[�Y/iPhone16�V���[�Y��USB-C�^�C�v�ڑ����@�͒������ł��B�i2025�N5��12�����݁j</span></td>
+   <td colspan="25"><span style="font-size: 12px; color: #FF0308; line-height: 15px">※ｉPhone /ｉPadとの接続には、「Apple純正品Lightning - Digital AVアダプタ」を必ずご使用ください。互換品および類似品では正常に動作しませんのでご注意ください。<br>
+      ※  iPhone15シリーズ/iPhone16シリーズのUSB-Cタイプ接続方法は調査中です。（2025年5月12日現在）</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
 <tr>
-   <td colspan="25" style="font-size: 12px; font-size: 12px; color: #FF0308;"><a href="../pdf/ALAA.pdf" target="_blank"><b>�y Apple�����i �uLightning - Digital AV�A�_�v�^�v �ƁA�݊��E�ގ��i �uiPhone HDMI�ϊ��A�_�v�^�v �̔��ʕ��@�@(pdf)�z</b></a></td>
+   <td colspan="25" style="font-size: 12px; font-size: 12px; color: #FF0308;"><a href="../pdf/ALAA.pdf" target="_blank"><b>【 Apple純正品 「Lightning - Digital AVアダプタ」 と、互換・類似品 「iPhone HDMI変換アダプタ」 の判別方法　(pdf)】</b></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -189,12 +208,12 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="25"><span style="line-height: 18px; font-size: 11px;">����L�A�v����2022�N1��18�����_�ŕ��Ђ�����m�F���s�����A�v���̈��ł��B<br>
-       �@ �X�}�[�g�t�H���A�X�g���[�~���O�@��OS��\�t�g�o�[�W��������уA�v���̃A�b�v�f�[�g�ɂ��f���o�͂��ł��Ȃ��Ȃ�\��������܂��B<br>
-       �@ �ŐV����<a href="../pdf/iOS_ver-APP.pdf" target="_blank"><b>�y���n�r�o�[�W�����ʃA�v���Ή��\�z</b></a>�����m�F���������B<br>
-       �@ �ŐV��OS�Ƀo�[�W�����A�b�v�ł��Ȃ��@��i�T�|�[�g�ΏۊO�@��j�ɂ��Ă͓���ۏؑΏۊO�ƂȂ�܂��B<br>
-       �@ �X�g���[�~���O�f�[�^�̎�M�ɂ̓C���^�[�l�b�g�ւ̐ڑ����K�v�ł��B�܂��A�ʐM��p�͂��q�l�̂����S�ƂȂ�܂��B<br>
-       �@ �A�v���ɂ���Ă͌_�񂪕K�v�ȏꍇ������܂��B�_���p�͂��q�l�̂����S�ƂȂ�܂��B</span></td>
+   <td colspan="25"><span style="line-height: 18px; font-size: 11px;">※上記アプリは2022年1月18日時点で弊社が動作確認を行ったアプリの一例です。<br>
+       　 スマートフォン、ストリーミング機のOSやソフトバージョンおよびアプリのアップデートにより映像出力ができなくなる可能性があります。<br>
+       　 最新情報は<a href="../pdf/iOS_ver-APP.pdf" target="_blank"><b>【ｉＯＳバージョン別アプリ対応表】</b></a>をご確認ください。<br>
+       　 最新のOSにバージョンアップできない機種（サポート対象外機種）については動作保証対象外となります。<br>
+       　 ストリーミングデータの受信にはインターネットへの接続が必要です。また、通信費用はお客様のご負担となります。<br>
+       　 アプリによっては契約が必要な場合があります。契約費用はお客様のご負担となります。</span></td>
    <td><img src="images/spacer.gif" width="1" height="90" alt=""></td>
   </tr>
   <tr>
@@ -210,21 +229,21 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="130" alt=""></td>
   </tr>
  <tr>
-   <td colspan="25"><span style="line-height: 18px; font-size: 11px;">����L�@���2020�N8��1�����_�ŕ��Ђ̎��Ќ��؂Ɋ�Â�����m�F�@��̈��ł��B<BR>
-       �@ �@��ɂ���Ă�OS��\�t�g�̃o�[�W��������уA�b�v�f�[�g�ɂ��f���o�͂ł��Ȃ��ꍇ������܂��B<br />
-              �@ �ŐV��OS�Ƀo�[�W�����A�b�v�ł��Ȃ��@��i�T�|�[�g�ΏۊO�@��j�ɂ��Ă͓���ۏؑΏۊO�ƂȂ�܂��B<br>
-�@ ����X�g���[�~���O�̎����ɂ̓C���^�[�l�b�g�ւ̐ڑ����K�v�ł��B�܂��A�ʐM��p�͂��q�l�̂����S�ƂȂ�܂��B<br />
-�@ HDMI�o�͋@�\�̖������i�ł͂��g�p���������܂���B<br>
+   <td colspan="25"><span style="line-height: 18px; font-size: 11px;">※上記機種は2020年8月1日時点で弊社の自社検証に基づく動作確認機種の一例です。<BR>
+       　 機種によってはOSやソフトのバージョンおよびアップデートにより映像出力できない場合があります。<br />
+              　 最新のOSにバージョンアップできない機種（サポート対象外機種）については動作保証対象外となります。<br>
+　 動画ストリーミングの視聴にはインターネットへの接続が必要です。また、通信費用はお客様のご負担となります。<br />
+　 HDMI出力機能の無い製品ではご使用いただけません。<br>
 </span></td>
    <td><img src="images/spacer.gif" width="1" height="90" alt=""></td>
   </tr>
   <tr>
-   <td colspan="25"><span style="font-size: 12px; color: #FF0308; line-height: 15px">����Phone /��Pad�Ƃ̐ڑ��ɂ́A�uApple�����iLightning - Digital AV�A�_�v�^�v��K�����g�p���������B�݊��i����їގ��i�ł͐���ɓ��삵�܂���̂ł����ӂ��������B<br>
-      ��  iPhone15�V���[�Y/iPhone16�V���[�Y��USB-C�^�C�v�ڑ����@�͒������ł��B�i2025�N5��12�����݁j</span></td>
+   <td colspan="25"><span style="font-size: 12px; color: #FF0308; line-height: 15px">※ｉPhone /ｉPadとの接続には、「Apple純正品Lightning - Digital AVアダプタ」を必ずご使用ください。互換品および類似品では正常に動作しませんのでご注意ください。<br>
+      ※  iPhone15シリーズ/iPhone16シリーズのUSB-Cタイプ接続方法は調査中です。（2025年5月12日現在）</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
 <tr>
-   <td colspan="25" style="font-size: 12px; font-size: 12px; color: #FF0308;"><a href="../pdf/ALAA.pdf" target="_blank"><b>�y Apple�����i �uLightning - Digital AV�A�_�v�^�v �ƁA�݊��E�ގ��i �uiPhone HDMI�ϊ��A�_�v�^�v �̔��ʕ��@�@(pdf)�z</b></a></td>
+   <td colspan="25" style="font-size: 12px; font-size: 12px; color: #FF0308;"><a href="../pdf/ALAA.pdf" target="_blank"><b>【 Apple純正品 「Lightning - Digital AVアダプタ」 と、互換・類似品 「iPhone HDMI変換アダプタ」 の判別方法　(pdf)】</b></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -245,9 +264,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="7"><img name="avhdm01_r40_c1" src="images/av-hdm01_r40_c1.gif" width="300" height="50" id="avhdm01_r40_c1" alt=""></td>
-   <td colspan="6" style="line-height: 20px"><span style="font-size:14px"><b>�@�̔����i ���P�O�C�S�Q�W</b></span><span style="font-size: 12px">�i�ō��j<br>
-    �@�@�i�Ŕ����i ���X�C�S�W�O�j</span></td>
-   <td colspan="6" style="font-size: 13px; line-height: 20px"><b>�@�i�`�m�R�[�h�F�S�X�T�O�O�X�S�O�U�Q�S�U�X</b></td>
+   <td colspan="6" style="line-height: 20px"><span style="font-size:14px"><b>　販売価格 ￥１０，４２８</b></span><span style="font-size: 12px">（税込）<br>
+    　　（税抜価格 ￥９，４８０）</span></td>
+   <td colspan="6" style="font-size: 13px; line-height: 20px"><b>　ＪＡＮコード：４９５００９４０６２４６９</b></td>
    <td colspan="6"><a href="../pdf/AV-HDM01.pdf" target="_blank" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('avhdm01_r40_c20','','images/av-hdm01_r40_c20_s2.gif',1);"><img name="avhdm01_r40_c20" src="images/av-hdm01_r40_c20.gif" width="210" height="50" id="avhdm01_r40_c20" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
@@ -257,9 +276,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="7"><img name="avhdm01_r42_c1" src="images/av-hdm01_r42_c1.gif" width="300" height="50" id="avhdm01_r42_c1" alt=""></td>
-   <td colspan="6" style="line-height: 20px"><span style="font-size:14px"><b>�@�̔����i ���P�Q�C�P�O�O</b></span><span style="font-size: 12px">�i�ō��j<br>
-    �@�@�i�Ŕ����i ���P�P�C�O�O�O�j</span></td>
-   <td colspan="6" style="font-size: 13px; line-height: 20px"><b>�@�i�`�m�R�[�h�F�S�X�T�O�O�X�S�O�U�Q�V�R�T</b></td>
+   <td colspan="6" style="line-height: 20px"><span style="font-size:14px"><b>　販売価格 ￥１２，１００</b></span><span style="font-size: 12px">（税込）<br>
+    　　（税抜価格 ￥１１，０００）</span></td>
+   <td colspan="6" style="font-size: 13px; line-height: 20px"><b>　ＪＡＮコード：４９５００９４０６２７３５</b></td>
    <td colspan="6"><a href="../pdf/AV-HDM01DC.pdf" target="_blank" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('avhdm01_r42_c20','','images/av-hdm01_r42_c20_s2.gif',1);"><img name="avhdm01_r42_c20" src="images/av-hdm01_r42_c20.gif" width="210" height="50" id="avhdm01_r42_c20" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
@@ -291,9 +310,9 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="10"><b style="font-size: 14px">�y �`�u�|�g�c�l�O�P���i�d�l �z</b></td>
+   <td colspan="10"><b style="font-size: 14px">【 ＡＶ－ＨＤＭ０１製品仕様 】</b></td>
    <td rowspan="3" colspan="2"><img name="avhdm01_r49_c11" src="images/av-hdm01_r49_c11.gif" width="10" height="320" id="avhdm01_r49_c11" alt=""></td>
-   <td colspan="13"><b style="font-size: 14px">�y �`�u�|�g�c�l�O�P�c�b���i�d�l �z</b></td></td>
+   <td colspan="13"><b style="font-size: 14px">【 ＡＶ－ＨＤＭ０１ＤＣ製品仕様 】</b></td></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -303,65 +322,65 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="3" valign="top" ><span style="line-height: 17px; font-size: 12px;">
-����<br />
-�o��<br />
-�{�̃T�C�Y<br />
-�{�̏d��<br />
-�{�̓d���d��<br />
-����d��<br />
-�쓮���x�͈�<br />
-�쓮���x�͈�<br />
-�{�̃o�[�W����<br />
-�g�c�l�h����<br />
+入力<br />
+出力<br />
+本体サイズ<br />
+本体重量<br />
+本体電源電圧<br />
+消費電流<br />
+作動温度範囲<br />
+作動湿度範囲<br />
+本体バージョン<br />
+ＨＤＭＩ入力<br />
 <br />
-�������e</span></td>
+同梱内容</span></td>
    <td colspan="7" valign="top" ><span style="line-height: 17px; font-size: 12px">
-�g�c�l�h<br />
-�q�b�`�i���F�f���E ���F�����i�k�j �E �ԁF�����i�q�j<br />
-�i�g�j�R�X���� �~�i�v�j�W�S���� �~�i�c�j�P�U����<br />
-�U�S���i�q�b�`�P�[�u���܂ށj<br />
-�c�b�{�T�u/�}�C�i�X�A�[�X�i�t�r�a�j<br />
-�l�`�w�P�`�i����d�́F�l�����T�v�j<br />
-�O���`�{�V�O��<br />
-�{�P�O���`�{�W�T��<br />
-�P�D�R�i�R�c�f����Ή��j<br />
-�S�W�O��/�S�W�O��/�T�V�U���^�T�V�U��/�V�Q�O��<br />
-�P�O�W�O��/�P�O�W�O��/�g�c�b�o�Ή�<br />
-HDMI�ϊ����j�b�g�{�́iRCA�P�[�u���F�X�Tcm�j<br />
-HDMI�Q.�O�Ή��P�[�u���F(���[(Type A)�I�X�[�q/�Q��)<br />
-USB�d���P�[�u���i�P.�Q���j<br />
-�Q�|�[�gUSB�o�̓V�K�[�v���O�i�P�Q�u�E�Q�S�u�Ή��j<br />
-��t�E�戵���������ۏ؏�</span></td>
+ＨＤＭＩ<br />
+ＲＣＡ（黄：映像・ 白：音声（Ｌ） ・ 赤：音声（Ｒ）<br />
+（Ｈ）３９ｍｍ ×（Ｗ）８４ｍｍ ×（Ｄ）１６ｍｍ<br />
+６４ｇ（ＲＣＡケーブル含む）<br />
+ＤＣ＋５Ｖ/マイナスアース（ＵＳＢ）<br />
+ＭＡＸ１Ａ（消費電力：Ｍａｘ５Ｗ）<br />
+０℃～＋７０℃<br />
+＋１０％～＋８５％<br />
+１．３（３Ｄ映像非対応）<br />
+４８０ｉ/４８０ｐ/５７６ｉ／５７６ｐ/７２０ｐ<br />
+１０８０ｉ/１０８０ｐ/ＨＤＣＰ対応<br />
+HDMI変換ユニット本体（RCAケーブル：９５cm）<br />
+HDMI２.０対応ケーブル：(両端(Type A)オス端子/２ｍ)<br />
+USB電源ケーブル（１.２ｍ）<br />
+２ポートUSB出力シガープラグ（１２Ｖ・２４Ｖ対応）<br />
+取付・取扱説明書兼保証書</span></td>
    <td colspan="4" valign="top" ><span style="line-height: 17px; font-size: 12px;">
-����<br />
-�o��<br />
-�{�̃T�C�Y<br />
-�{�̏d��<br />
-�{�̓d���d��<br />
-����d��<br />
-�쓮���x�͈�<br />
-�쓮���x�͈�<br />
-�{�̃o�[�W����<br />
-�g�c�l�h����<br />
+入力<br />
+出力<br />
+本体サイズ<br />
+本体重量<br />
+本体電源電圧<br />
+消費電流<br />
+作動温度範囲<br />
+作動湿度範囲<br />
+本体バージョン<br />
+ＨＤＭＩ入力<br />
 <br />
-�������e</span></td>
+同梱内容</span></td>
    <td colspan="9" valign="top" ><span style="line-height: 17px; font-size: 12px">
-�g�c�l�h<br />
-�q�b�`�i���F�f���E ���F�����i�k�j �E �ԁF�����i�q�j<br />
-�i�g�j�R�X���� �~�i�v�j�W�S���� �~�i�c�j�P�U����<br />
-�U�S���i�q�b�`�P�[�u���܂ށj<br />
-�c�b�{�T�u/�}�C�i�X�A�[�X�i�t�r�a�j<br />
-�l�`�w�P�`�i����d�́F�l�����T�v�j<br />
-�O���`�{�V�O��<br />
-�{�P�O���`�{�W�T��<br />
-�P�D�R�i�R�c�f����Ή��j<br />
-�S�W�O��/�S�W�O��/�T�V�U���^�T�V�U��/�V�Q�O��<br />
-�P�O�W�O��/�P�O�W�O��/�g�c�b�o�Ή�<br />
-HDMI�ϊ����j�b�g�{�́iRCA�P�[�u���F�X�Tcm�j<br />
-HDMI�Q.�O�Ή��P�[�u���F(���[(Type A)�I�X�[�q/�Q��)<br />
-USB�d���P�[�u���i�P.�Q���j<br />
-USB�d���R���o�[�^�[�i�P�Q�u�E�Q�S�u����/�T�u�F�Q�|�[�g�o�́j<br />
-��t�E�戵���������ۏ؏�</span></td>
+ＨＤＭＩ<br />
+ＲＣＡ（黄：映像・ 白：音声（Ｌ） ・ 赤：音声（Ｒ）<br />
+（Ｈ）３９ｍｍ ×（Ｗ）８４ｍｍ ×（Ｄ）１６ｍｍ<br />
+６４ｇ（ＲＣＡケーブル含む）<br />
+ＤＣ＋５Ｖ/マイナスアース（ＵＳＢ）<br />
+ＭＡＸ１Ａ（消費電力：Ｍａｘ５Ｗ）<br />
+０℃～＋７０℃<br />
+＋１０％～＋８５％<br />
+１．３（３Ｄ映像非対応）<br />
+４８０ｉ/４８０ｐ/５７６ｉ／５７６ｐ/７２０ｐ<br />
+１０８０ｉ/１０８０ｐ/ＨＤＣＰ対応<br />
+HDMI変換ユニット本体（RCAケーブル：９５cm）<br />
+HDMI２.０対応ケーブル：(両端(Type A)オス端子/２ｍ)<br />
+USB電源ケーブル（１.２ｍ）<br />
+USB電源コンバーター（１２Ｖ・２４Ｖ入力/５Ｖ：２ポート出力）<br />
+取付・取扱説明書兼保証書</span></td>
    <td><img src="images/spacer.gif" width="1" height="295" alt=""></td>
   </tr>
   <tr>
@@ -389,106 +408,88 @@ USB�d���R���o�[�^�[�i�P�Q�u�E�Q�S�u����/�T�u�F�Q�|�[�g�o�́j<br />
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="25"><strong><span style="font-size: 13px; line-height: 18px">���w���O�ɕK�����ǂ݉������B</span></strong><br />
-      <span style="font-size: 12px; line-height: 16px">�E�{���i�͂g�c�l�h�f�W�^���M�����q�b�`�A�i���O�M���֕ϊ����鐻�i�ł��B�X�}�[�g�t�H���E�X�g���[�~���O�@�퓙�̂g�c�l�h�o�͋@�\�Ɋւ��ẮA�e�@��̎戵�����������m�F���������B<br />
-      �E�{���i�ɐڑ��@�킨��у��j�^�[�ނ͕t�����Ă���܂���B���q�l�ł��p�ӂ��������B<br />
-      �ERCA���͐ݒ�̖����i�r�Q�[�V������f�B�X�v���C���j�^�[�ւ͐ڑ��ł��܂���B<br />
-      �E�d�l�y�ъO�ς͉��ǂׁ̈A�\���Ȃ��ύX����ꍇ������܂��B</span>
-      <p><strong>�ڑ��@��ɂ���</strong><br />
-        <span style="font-size: 12px; line-height: 16px">�E�ڑ��@�킨��уA�v���̓���m�F��2020�N8��1���ł��B�ȍ~�̐ڑ��@���A�v���̃A�b�v�f�[�g�ɂ��f���o�͂ł��Ȃ��Ȃ�\��������܂��B<br>
-�E�ŐV��OS�Ƀo�[�W�����A�b�v�ł��Ȃ��@��i�T�|�[�g�ΏۊO�@��j�ɂ��Ă͓���ۏؑΏۊO�ƂȂ�܂��B<br />
-         �EHDMI�o�͋@�\�̖����X�}�[�g�t�H���A�X�g���[�~���O�@��A�m�[�g�u�b�N�p�\�R���Ȃǂ͐ڑ��ł��܂���B<br />
-         �E�X�g���[�~���O�f�[�^�̎�M�ɂ̓C���^�[�l�b�g�ւ̐ڑ����K�v�ł��B�܂��A�ʐM��p�͂��q�l�̂����S�ƂȂ�܂��B<br />
-         �E�d�g�󋵂ɂ���ẮA�f���≹�y���r�؂��ꍇ������܂��B�ʐM���̗ǂ��ꏊ�ł������������B<br />
-      �E�f�[�^�̃_�E�����[�h�ɂ͑�ʂ̃p�P�b�g���K�v�ɂȂ�܂��B���g���̒ʐM�@��_��v�����ɂ���Ă͒��ߗ�����ʐM���x�̐������������܂��B<br>
-       ��  iPhone15�V���[�Y/iPhone16�V���[�Y��USB-C�^�C�v�ڑ����@�͒������ł��B�i2025�N5��12�����݁j</span></p>
-      <p><strong>�A�v���ɂ���</strong><br />
-        <span style="font-size: 12px; line-height: 16px">�E�ڑ��@�킨��уA�v���̓���m�F��2020�N8��1���ł��B�ȍ~�̐ڑ��@���A�v���̃A�b�v�f�[�g�ɂ��f���o�͂ł��Ȃ��Ȃ�\��������܂��B<br>
-�E�ŐV��OS�Ƀo�[�W�����A�b�v�ł��Ȃ��@��i�T�|�[�g�ΏۊO�@��j�ɂ��Ă͓���ۏؑΏۊO�ƂȂ�܂��B<br />
-         �E�A�v���ɂ���Ă͕ʓr�_�񂪕K�v�ȏꍇ������܂��B�_���p�͂��q�l�̂����S�ƂȂ�܂��B<br />
-         �E�X�g���[�~���O�f�[�^�̎�M�ɂ̓C���^�[�l�b�g�ւ̐ڑ����K�v�ł��B�܂��A�ʐM��p�͂��q�l�̂����S�ƂȂ�܂��B<br />
-         �E�d�g�󋵂ɂ���ẮA�f���≹�y���r�؂��ꍇ������܂��B�ʐM���̗ǂ��ꏊ�ł������������B<br />
-         �E�f�[�^�̃_�E�����[�h�ɂ͑�ʂ̃p�P�b�g���K�v�ɂȂ�܂��B���g���̒ʐM�@��_��v�����ɂ���Ă͒��ߗ�����ʐM���x�̐������������܂��B</span></p>
-      <p><strong>���S�y�ю�t�A�g�p�Ɋւ��邲����</strong><br />
-        <span style="font-size: 12px; line-height: 16px">�E�{���i��DC+12V/24V�E�{�f�B�[�A�[�X�Ԑ�p�ł��B�w��ȊO�̓d���ł͎g�p���Ȃ��ŉ������B<br />
-         �E�쓮���͖{�̂��M���Ȃ�܂����ُ�ł͂���܂���B���M�A��p�̂��߁A�{�̑��ʂ̃X���b�g�����͍ǂ��Ȃ��ł��������B<br />
-         �E�e�ڑ��P�[�u���͔����Ȃ��l�A�m���ɐڑ����Ă��������B<br />
-         �E���s���̐ڑ��@�킨��уi�r�Q�[�V��������͊댯�ł��̂ő���͒�Ԓ��ɍs���Ă��������B<br />
-         �E�{���i���g�p���Ĕ����������̂�̏�A�j���y�ш��S�^�]�`���ᔽ�ɂ�锱���A���_���Ɋւ��Ă̐ӔC�͕��Ђł͈�ؐӔC�𕉂��܂���̂ŗ\�߂������������B<br />
-         �E�𑜓x�̒ቺ�ɂ��o�͂����f�����s�N���ɂȂ����蕶�����Ԃ��ꍇ������܂����̏�ł͂���܂���B<br />
-         �EHDMI�̃o�[�W�����ɂ���ĉf�����o�͏o���Ȃ��ꍇ������܂��B<br />
-         �E�{���i�g�p���͒n�f�W��GPS��M���x���ቺ����ꍇ������܂��B<br />
-         �EHDMI�@���A�v���ɂ���ĉf���̏c���䂪�قȂ�ꍇ������܂��B<br />
-         �E���K�i�ȊO�̃P�[�u���y�ѓ����i�ȊO�̃P�[�u����V�K�[�v���O�̎g�p�Ɋւ���쓮�ۏ؂͒v���܂���B</span> </p>
-      <p><strong>�ۏ؋K��</strong><br />
-        <span style="font-size: 12px; line-height: 16px">�E�{���i��1�N�ۏ؂ƂȂ�܂��B<br />
-         �E�戵�������ɏ]��������Ȏg�p��Ԃ̂��Ƃŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��ĕ��Ђł͈�ؐӔC�𕉂����˂܂��B</span></p>
-      <p><strong>�E�F�u�T�C�g�f�ڕi�̒��쌠�E���W���ɂ���</strong><br />
-        <span style="font-size: 12px; line-height: 16px">�Z���E�F�u�T�C�g���Œ񋟂���邷�ׂĂ̏���J���p�j�[���S�A���W�A�f����摜�Ȃǂ̒���i�����E�ʐ^�E�C���X�g�E����E�����E�\�t�g�E�F�A���j�̒��쌠�͓��Ђ܂��͑�O�҂��ۗL���Ă���A���쌠�@���̑��̖@���Ȃ�тɏ��ɂ��ی삳��Ă���܂��B<br />
-         ���I�g�p�ړI�̕����A���p�Ȃǒ��쌠�@��F�߂��Ă���͈͂������A���쌠�҂̋����Ȃ��ɂ����̒��앨�𕡐��A�|�āA���O���M�����邱�Ƃ͂ł��܂���B<br />
-         �܂��A���ЃE�F�u�T�C�g�Ɍf�ڂ���Ă��铖�А��i�̖��̂���у��S�͓��Ђ̏��W�܂��͓o�^���W�ł��B<br />
-         �Z��O�҂ɋA�����钘�쌠�ی�Ώە��̎�舵���A�y�юg�p�Ɋւ��Ă͊e�����̋A����ɂ��⍇���������B<br />
-         ���f�ډ摜�̒��쌠�Ɋւ��錠���ҕ\�L <br />
-        ��Apple�EiPad�EiPhone�EMac�EiOS�ESafari�EAppleTV�̖��̋y�ъe�탍�S�́AApple Inc.�̓o�^���W�ł��BiPhone�̏��W�́A�A�C�z��������Ђ̃��C�Z���X�Ɋ�Â��g�p����Ă��܂��B<br />
-��AbemaTV�͊������Abema�̓o�^���W�ł��B<br />
-��ABEMA���S�͊�����ЃT�C�o�[�G�[�W�F���g�̓o�^���W�ł��B<br />
-��FOD �y�� FOD ���S�͊�����Ѓt�W�e���r�W�����̏��W����ѓo�^���W�ł��B<br />
-���G���L���X�ETOKYO MX�y�у��S�́A�������g���|���^���e���r�W����������Ђ̏��W�܂��͓o�^���W�ł��B<br />
-��GYAO�AGYAO ���S�́A�������GYAO�̓o�^���W�ł��B<br />
-��Google�EGoogleMAP�EAndroid�EChrome�EChromeCast�Eyoutube�EYoutube Music�̖��̋y�ъe�탍�S�́AGoogle LLC.�̓o�^���W�ł��B<br />
-��SHOWROOM�̃��S��SHOWROOM������Ђ̏��W�ł��B<br />
-��DAZN�y�ъ֘A���郍�S�́ADAZN Ltd.�̏��W�܂��͓o�^���W�ł��B<br />
-��KDDI�Ed�A�j���X�g�A�́AKDDI������Ђ̓o�^���W�ł��B<br />
-��NTTdocomo�E��TV�͊������NTTdocomo�̓o�^���W�ł��B<br />
-��TVer�y��TVer���S�͊������TVer�̓o�^���W�ł��B<br />
-��TBS FREE�ETBS�y�ъ֘A���郍�S�͊������TBS�z�[���f�B���O�X�̏��W�܂��͓o�^���W�ł��B<br />
-��Disney + �y�ъ֘A����S�Ẵ��S��DisneyEnterprises,Inc.�̏��W�������͕č�����т��̑��̍��ɂ�����o�^���W�ł��B<br />
-��Bytedance�EBuzzVideo�ETikTok��Bytedance Ltd.�̓o�^���W�ł��B<br />
-��TELASA�y�ъ֘A���郍�S��TELASA������Ђ̓o�^���W�ł��B<br />
-���e��������E�e��������ъ֘A���郍�S�́A������Ѓe���r�����̓o�^���W�ł��B<br />
-���h���C�u�T�|�[�^�[�y�ъ֘A���郍�S�́A������Ѓi�r�^�C���W���p���̓o�^���W�ł��B<br />
-���j�R�j�R�������E�j�R�j�R�y�ъ֘A���閼�́A���S�́A������Ѓh�����S�̏��W�܂��͓o�^���W�ł��B<br />
-�����e��tada�E���e���̖��̋y�ъ֘A���郍�S�́A���{�e���r�z�[���f�B���O�X������Ђ̏��W�܂��͓o�^���W�ł��B<br />
-��NETFLIX��NETFLIX Inc.�̏��W�������͕č�����т��̑��̍��ɂ�����o�^���W�ł��B<br />
-��Paravi�y��Paravi�̃��S�́A������Ѓv���~�A�� �v���b�g�t�H�[�� �W���p���̓o�^���W�ł��B<br />
-��Firefox �t�@�C���[�t�H�b�N�X�y�ъ֘A���郍�S�́AMozilla Foundation�̏��W�������͕č�����т��̑��̍��ɂ�����o�^���W�ł��B<br />
-��FANY channel�̖��̋y�ъ֘A���郍�S�́A�������NTT�Ղ��y�ыg�{���s������Ђ̏��W�ł��B<br />
-��Hulu��HJ�z�[���f�B���O�X������Ђ̓o�^���W�ł��B<br />
-��Amazon�EFireTVstick�EPrimeVideo��amazon Inc.�̏��W�������͕č�����т��̑��̍��ɂ�����o�^���W�ł��B<br />
-��Yahoo!�y��Yahoo!���S�́AOath Inc.�̕č�����т��̑��̍��ɂ�����o�^���W�ł��B<br />
-��U-NEXT�̖��̋y�ъ֘A���郍�S�́A�������U-NEXT�̏��W�܂��͓o�^���W�ł��B<br />
-��ytvMyDo�Eytb�̖��̋y�ъ֘A���郍�S�́A��̃e���r����������Ђ̏��W�܂��͓o�^���W�ł��B<br />
-��rakutenTV�ERakuten�E�y�V�̖��̋y�ъ֘A���郍�S�́A�y�V�O���[�v������Ђ̏��W�܂��͓o�^���W�ł��B<br />
-��wowow�̖��̋y�ъ֘A���郍�S�́A�������WOWOW�̏��W�y�ѓo�^���W�ł��B<br />
-��WATCHA�E�E�H�b�`���̖��̋y�у��S�́A�������Watcha Japan�̏��W�y�ѓo�^���W�ł��B<br />
-��Nintendo�A�C�V���ANintendoSwitch�̖��̂���ъe�탍�S��Nintendo Co., Ltd�̏��W�������͓o�^���W�ł��B<br />
-��Microsoft�EWindows�EXBox�EInternetExplorer�EMicrosoftEdge��Microsoft Inc.�̏��W�������͕č�����т��̑��̍��ɂ�����o�^���W�ł��B<br />
-��HDMI�̖��̂���у��S�A�����High-Definition Multimedia Interface �́AHDMI Licensing LLC �̏��W�������͕č�����т��̑��̍��ɂ�����o�^���W�ł��B<br />
-��wi-fi�EMiracast��wi-fi Alliance�̓o�^���W�ł��B<br />
-            ��Bullcon�EMAGICONE�EFreeTVing�̓t�W�d�@�H�Ɗ�����Ђ̓o�^���W�ł��B</span>
+   <td colspan="25"><strong><span style="font-size: 13px; line-height: 18px">ご購入前に必ずお読み下さい。</span></strong><br />
+      <span style="font-size: 12px; line-height: 16px">・本製品はＨＤＭＩデジタル信号をＲＣＡアナログ信号へ変換する製品です。スマートフォン・ストリーミング機器等のＨＤＭＩ出力機能に関しては、各機器の取扱説明書をご確認ください。<br />
+      ・本製品に接続機器およびモニター類は付属しておりません。お客様でご用意ください。<br />
+      ・RCA入力設定の無いナビゲーションやディスプレイモニターへは接続できません。<br />
+      ・仕様及び外観は改良の為、予告なく変更する場合があります。</span>
+      <p><strong>接続機器について</strong><br />
+        <span style="font-size: 12px; line-height: 16px">・接続機器およびアプリの動作確認は2020年8月1日です。以降の接続機器やアプリのアップデートにより映像出力できなくなる可能性があります。<br>
+・最新のOSにバージョンアップできない機種（サポート対象外機種）については動作保証対象外となります。<br />
+         ・HDMI出力機能の無いスマートフォン、ストリーミング機器、ノートブックパソコンなどは接続できません。<br />
+         ・ストリーミングデータの受信にはインターネットへの接続が必要です。また、通信費用はお客様のご負担となります。<br />
+         ・電波状況によっては、映像や音楽が途切れる場合があります。通信環境の良い場所でお試し下さい。<br />
+      ・データのダウンロードには大量のパケットが必要になります。お使いの通信機器契約プランによっては超過料金や通信速度の制限が発生します。<br>
+       ※  iPhone15シリーズ/iPhone16シリーズのUSB-Cタイプ接続方法は調査中です。（2025年5月12日現在）</span></p>
+      <p><strong>アプリについて</strong><br />
+        <span style="font-size: 12px; line-height: 16px">・接続機器およびアプリの動作確認は2020年8月1日です。以降の接続機器やアプリのアップデートにより映像出力できなくなる可能性があります。<br>
+・最新のOSにバージョンアップできない機種（サポート対象外機種）については動作保証対象外となります。<br />
+         ・アプリによっては別途契約が必要な場合があります。契約費用はお客様のご負担となります。<br />
+         ・ストリーミングデータの受信にはインターネットへの接続が必要です。また、通信費用はお客様のご負担となります。<br />
+         ・電波状況によっては、映像や音楽が途切れる場合があります。通信環境の良い場所でお試し下さい。<br />
+         ・データのダウンロードには大量のパケットが必要になります。お使いの通信機器契約プランによっては超過料金や通信速度の制限が発生します。</span></p>
+      <p><strong>安全及び取付、使用に関するご注意</strong><br />
+        <span style="font-size: 12px; line-height: 16px">・本製品はDC+12V/24V・ボディーアース車専用です。指定以外の電圧では使用しないで下さい。<br />
+         ・作動中は本体が熱くなりますが異常ではありません。放熱、冷却のため、本体側面のスリット部分は塞がないでください。<br />
+         ・各接続ケーブルは抜けない様、確実に接続してください。<br />
+         ・走行中の接続機器およびナビゲーション操作は危険ですので操作は停車中に行ってください。<br />
+         ・本製品を使用して発生した事故や故障、破損及び安全運転義務違反による罰金、減点等に関しての責任は弊社では一切責任を負いませんので予めご了承下さい。<br />
+         ・解像度の低下により出力した映像が不鮮明になったり文字がつぶれる場合がありますが故障ではありません。<br />
+         ・HDMIのバージョンによって映像が出力出来ない場合があります。<br />
+         ・本製品使用中は地デジやGPS受信感度が低下する場合があります。<br />
+         ・HDMI機器やアプリによって映像の縦横比が異なる場合があります。<br />
+         ・正規品以外のケーブル及び同梱品以外のケーブルやシガープラグの使用に関する作動保証は致しません。</span> </p>
+      <p><strong>保証規定</strong><br />
+        <span style="font-size: 12px; line-height: 16px">・本製品は1年保証となります。<br />
+         ・取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について弊社では一切責任を負いかねます。</span></p>
+      <p><strong>ウェブサイト掲載品の著作権・商標権について</strong><br />
+        <span style="font-size: 12px; line-height: 16px">〇当ウェブサイト内で提供されるすべての情報やカンパニーロゴ、商標、映像や画像などの著作（文書・写真・イラスト・動画・音声・ソフトウェア等）の著作権は当社または第三者が保有しており、著作権法その他の法律ならびに条約により保護されております。<br />
+         私的使用目的の複製、引用など著作権法上認められている範囲を除き、著作権者の許諾なしにこれらの著作物を複製、翻案、公衆送信等することはできません。<br />
+         また、当社ウェブサイトに掲載されている当社製品の名称およびロゴは当社の商標または登録商標です。<br />
+         〇第三者に帰属する著作権保護対象物の取り扱い、及び使用に関しては各権利の帰属先にお問合せ下さい。<br />
+         ●掲載画像の著作権に関する権利者表記 <br />
+        ●Apple・iPad・iPhone・Mac・iOS・Safari・AppleTVの名称及び各種ロゴは、Apple Inc.の登録商標です。iPhoneの商標は、アイホン株式会社のライセンスに基づき使用されています。<br />
+●AbemaTVは株式会社Abemaの登録商標です。<br />
+●ABEMAロゴは株式会社サイバーエージェントの登録商標です。<br />
+●FOD 及び FOD ロゴは株式会社フジテレビジョンの商標および登録商標です。<br />
+●エムキャス・TOKYO MX及びロゴは、東京メトロポリタンテレビジョン株式会社の商標または登録商標です。<br />
+●GYAO、GYAO ロゴは、株式会社GYAOの登録商標です。<br />
+●Google・GoogleMAP・Android・Chrome・ChromeCast・youtube・Youtube Musicの名称及び各種ロゴは、Google LLC.の登録商標です。<br />
+●SHOWROOMのロゴはSHOWROOM株式会社の商標です。<br />
+●DAZN及び関連するロゴは、DAZN Ltd.の商標または登録商標です。<br />
+●KDDI・dアニメストアは、KDDI株式会社の登録商標です。<br />
+●NTTdocomo・ｄTVは株式会社NTTdocomoの登録商標です。<br />
+●TVer及びTVerロゴは株式会社TVerの登録商標です。<br />
+●TBS FREE・TBS及び関連するロゴは株式会社TBSホールディングスの商標または登録商標です。<br />
+●Disney + 及び関連する全てのロゴはDisneyEnterprises,Inc.の商標もしくは米国およびその他の国における登録商標です。<br />
+●Bytedance・BuzzVideo・TikTokはBytedance Ltd.の登録商標です。<br />
+●TELASA及び関連するロゴはTELASA株式会社の登録商標です。<br />
+●テレ朝動画・テレ朝および関連するロゴは、株式会社テレビ朝日の登録商標です。<br />
+●ドライブサポーター及び関連するロゴは、株式会社ナビタイムジャパンの登録商標です。<br />
+●ニコニコ生放送・ニコニコ及び関連する名称、ロゴは、株式会社ドワンゴの商標または登録商標です。<br />
+●日テレtada・日テレの名称及び関連するロゴは、日本テレビホールディングス株式会社の商標または登録商標です。<br />
+●NETFLIXはNETFLIX Inc.の商標もしくは米国およびその他の国における登録商標です。<br />
+●Paravi及びParaviのロゴは、株式会社プレミアム プラットフォーム ジャパンの登録商標です。<br />
+●Firefox ファイヤーフォックス及び関連するロゴは、Mozilla Foundationの商標もしくは米国およびその他の国における登録商標です。<br />
+●FANY channelの名称及び関連するロゴは、株式会社NTTぷらら及び吉本興行株式会社の商標です。<br />
+●HuluはHJホールディングス株式会社の登録商標です。<br />
+●Amazon・FireTVstick・PrimeVideoはamazon Inc.の商標もしくは米国およびその他の国における登録商標です。<br />
+●Yahoo!及びYahoo!ロゴは、Oath Inc.の米国およびその他の国における登録商標です。<br />
+●U-NEXTの名称及び関連するロゴは、株式会社U-NEXTの商標または登録商標です。<br />
+●ytvMyDo・ytbの名称及び関連するロゴは、讀賣テレビ放送株式会社の商標または登録商標です。<br />
+●rakutenTV・Rakuten・楽天の名称及び関連するロゴは、楽天グループ株式会社の商標または登録商標です。<br />
+●wowowの名称及び関連するロゴは、株式会社WOWOWの商標及び登録商標です。<br />
+●WATCHA・ウォッチャの名称及びロゴは、株式会社Watcha Japanの商標及び登録商標です。<br />
+●Nintendo、任天堂、NintendoSwitchの名称および各種ロゴはNintendo Co., Ltdの商標もしくは登録商標です。<br />
+●Microsoft・Windows・XBox・InternetExplorer・MicrosoftEdgeはMicrosoft Inc.の商標もしくは米国およびその他の国における登録商標です。<br />
+●HDMIの名称およびロゴ、およびHigh-Definition Multimedia Interface は、HDMI Licensing LLC の商標もしくは米国およびその他の国における登録商標です。<br />
+●wi-fi・Miracastはwi-fi Allianceの登録商標です。<br />
+            ●Bullcon・MAGICONE・FreeTVingはフジ電機工業株式会社の登録商標です。</span>
    <td><img src="images/spacer.gif" width="1" height="300" alt=""></td>
   </tr>
-  <tr>
-   <td colspan="25"><img name="avhdm01_r61_c1" src="images/av-hdm01_r61_c1.gif" width="1000" height="10" id="avhdm01_r61_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="25"><img name="avhdm01_r62_c1" src="images/av-hdm01_r62_c1.gif" width="1000" height="10" id="avhdm01_r62_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="20"><img name="avhdm01_r63_c1" src="images/av-hdm01_r63_c1.gif" width="800" height="30" id="avhdm01_r63_c1" alt=""></td>
-   <td colspan="5"><a href="av-hdm01.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('avhdm01_r63_c21','','images/av-hdm01_r63_c21_s2.gif',1);"><img name="avhdm01_r63_c21" src="images/av-hdm01_r63_c21.gif" width="200" height="30" id="avhdm01_r63_c21" alt=""></a></td>
-   <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="25"><img name="avhdm01_r64_c1" src="images/av-hdm01_r64_c1.gif" width="1000" height="30" id="avhdm01_r64_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="25"><img name="avhdm01_r65_c1" src="images/av-hdm01_r65_c1.gif" width="1000" height="93" id="avhdm01_r65_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="93" alt=""></td>
-  </tr>
+  
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

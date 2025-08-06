@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML">
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>�����ӥ��ۡ��륹���å� / Bullcon-�ե��ŵ����ȳ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=euc-jp">
+<title>サービスホールスイッチ / Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -36,12 +38,48 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/hole_sw_r2_c10_s2.gif','images/hole_sw_r2_c15_s2.gif','images/hole_sw_r2_c19_s2.gif','images/hole_sw_r2_c23_s2.gif','images/hole_sw_r5_c1_s2.gif','images/hole_sw_r5_c7_s2.gif','images/hole_sw_r5_c10_s2.gif','images/hole_sw_r5_c15_s2.gif','images/hole_sw_r5_c19_s2.gif','images/hole_sw_r5_c23_s2.gif','images/hole_sw_r8_c3_s2.gif','images/hole_sw_r8_c5_s2.gif','images/hole_sw_r8_c8_s2.gif','images/hole_sw_r21_c1_s2.gif','images/hole_sw_r21_c11_s2.gif','images/hole_sw_r21_c20_s2.gif','images/hole_sw_r23_c1_s2.gif','images/hole_sw_r23_c11_s2.gif','images/hole_sw_r23_c20_s2.gif','images/hole_sw_r48_c24_s2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="holesw20240201.png" fwpage="�ڡ��� 1" fwbase="hole_sw.gif" fwstyle="Dreamweaver" fwdocid = "354586575" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="holesw20240201.png" fwpage="ページ 1" fwbase="hole_sw.gif" fwstyle="Dreamweaver" fwdocid = "354586575" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="5" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="15" height="1" alt=""></td>
@@ -75,33 +113,11 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
 
-<tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-  <tr>
-   
-  </tr>
   <tr>
    <td colspan="14"><img name="hole_sw_r12_c1" src="images/hole_sw_r12_c1.gif" width="500" height="90" id="hole_sw_r12_c1" alt=""></td>
    <td><img name="hole_sw_r12_c15" src="images/hole_sw_r12_c15.gif" width="1" height="90" id="hole_sw_r12_c15" alt=""></td>
-   <td colspan="14" style="font-size: 26px; line-height: 30px"><b>�б����ʤ���°�Ρ֣̣ţĥ����å���<br>
-    �򥵡��ӥ��ۡ��륿���פ��ѹ��Ǥ��ޤ���</b></td>
+   <td colspan="14" style="font-size: 26px; line-height: 30px"><b>対応製品に付属の「ＬＥＤスイッチ」<br>
+    をサービスホールタイプへ変更できます。</b></td>
    <td><img src="images/spacer.gif" width="1" height="90" alt=""></td>
   </tr>
   <tr>
@@ -117,21 +133,21 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8" style="font-size: 13px; text-align: center;">�ڥ����ӥ��ۡ��륹���å��ԣ��̣ţ�/�ȥ西���ա�</td>
-   <td colspan="7" style="font-size: 13px; text-align: center;">�ڥ����ӥ��ۡ��륹���å��ԣ��̣ţ�/�ȥ西�áա�</td>
-   <td colspan="9" style="font-size: 13px; text-align: center;">�ڥ����ӥ��ۡ��륹���å��ԣ��̣ţ�/�ȥ西�áա�</td>
+   <td colspan="8" style="font-size: 13px; text-align: center;">【サービスホールスイッチ《１ＬＥＤ/トヨタＡ》】</td>
+   <td colspan="7" style="font-size: 13px; text-align: center;">【サービスホールスイッチ《１ＬＥＤ/トヨタＣ》】</td>
+   <td colspan="9" style="font-size: 13px; text-align: center;">【サービスホールスイッチ《２ＬＥＤ/トヨタＣ》】</td>
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8" style="font-size: 12px; text-align: center;">������ʡ�����������ǹ��ˡ�����ȴ���ʡ����������</td>
-   <td colspan="7" style="font-size: 12px; text-align: center;">������ʡ�����������ǹ��ˡ�����ȴ���ʡ����������</td>
-   <td colspan="9" style="font-size: 12px; text-align: center;">������ʡ�����������ǹ��ˡ�����ȴ���ʡ����������</td>
+   <td colspan="8" style="font-size: 12px; text-align: center;">販売価格￥４，１８０（税込）　（税抜価格￥３，８００）</td>
+   <td colspan="7" style="font-size: 12px; text-align: center;">販売価格￥４，１８０（税込）　（税抜価格￥３，８００）</td>
+   <td colspan="9" style="font-size: 12px; text-align: center;">販売価格￥４，１８０（税込）　（税抜価格￥３，８００）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8" style="font-size: 13px; text-align: center;">�ʣ��Υ����ɣ�������������������������</td>
-   <td colspan="7" style="font-size: 13px; text-align: center;">�ʣ��Υ����ɣ�������������������������</td>
-   <td colspan="9" style="font-size: 13px; text-align: center;">�ʣ��Υ����ɣ�������������������������</td>
+   <td colspan="8" style="font-size: 13px; text-align: center;">ＪＡＮコード４９５００９４０６１６２２</td>
+   <td colspan="7" style="font-size: 13px; text-align: center;">ＪＡＮコード４９５００９４０６２６３６</td>
+   <td colspan="9" style="font-size: 13px; text-align: center;">ＪＡＮコード４９５００９４０６２６４３</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -147,15 +163,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8" style="font-size: 10px; color: #0000D9;">���㤴���բ�<br>
-       �������ʤλ��Ѥ˺ݤ��ƤϾ���������ɬ�פ�����ޤ���<br>
-���ܤ������ܥڡ��������Ρؤ����������ˡ٤�ɬ������ǧ����������</td>
-   <td colspan="7" style="font-size: 10px; color: #0000D9;">���㤴���բ�<br>
-       �������ʤλ��Ѥ˺ݤ��ƤϾ���������ɬ�פ�����ޤ���<br>
-���ܤ������ܥڡ��������Ρؤ����������ˡ٤�ɬ������ǧ����������</td>
-   <td colspan="9" style="font-size: 10px; color: #FF0308;">���㤴���բ�<br>
-       �������ʤλ��Ѥ˺ݤ��ƤϾ���������ɬ�פ�����ޤ���<br>
-���ܤ������ܥڡ��������Ρؤ����������ˡ٤�ɬ������ǧ����������</td>
+   <td colspan="8" style="font-size: 10px; color: #0000D9;">　≪ご注意≫<br>
+       　本製品の使用に際しては条件を満たす必要があります。<br>
+　詳しくは本ページ下部の『ご購入の前に』を必ずご確認ください。</td>
+   <td colspan="7" style="font-size: 10px; color: #0000D9;">　≪ご注意≫<br>
+       　本製品の使用に際しては条件を満たす必要があります。<br>
+　詳しくは本ページ下部の『ご購入の前に』を必ずご確認ください。</td>
+   <td colspan="9" style="font-size: 10px; color: #FF0308;">　≪ご注意≫<br>
+       　本製品の使用に際しては条件を満たす必要があります。<br>
+　詳しくは本ページ下部の『ご購入の前に』を必ずご確認ください。</td>
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
   <tr>
@@ -185,7 +201,7 @@ function MM_preloadImages() { //v3.0
    <td colspan="29"><iframe 
   id="myFrame"
   class="frame"
-  src="../hole_size_list/hole_size_list.htm"
+  src="hole_size_list/hole_size_list.htm"
   frameborder="0"
   height="130px"
   width="101%"
@@ -209,57 +225,57 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8" style="font-size: 12px">�ӣסݣУԣ� ���� �ʥȥ西���� ����</td>
+   <td colspan="8" style="font-size: 12px">ＳＷ－ＰＴＡ ０１ （トヨタＡ） 仕様</td>
    <td rowspan="6" colspan="2"><img name="hole_sw_r30_c9" src="images/hole_sw_r30_c9.gif" width="5" height="140" id="hole_sw_r30_c9" alt=""></td>
-   <td colspan="7" style="font-size: 12px">�ӣסݣУԣ� ���� �ʥȥ西�á� ����</td>
+   <td colspan="7" style="font-size: 12px">ＳＷ－ＰＴＣ ０１ （トヨタＣ） 仕様</td>
    <td rowspan="6" colspan="2"><img name="hole_sw_r30_c18" src="images/hole_sw_r30_c18.gif" width="5" height="140" id="hole_sw_r30_c18" alt=""></td>
-   <td colspan="10" style="font-size: 12px">�ӣסݣУԣ� ���� �ʥȥ西�á� ����</td>
+   <td colspan="10" style="font-size: 12px">ＳＷ－ＰＴＣ ０２ （トヨタＣ） 仕様</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="5" style="font-size: 12px">�ϡ��ͥ�Ĺ</td>
-   <td colspan="3" style="font-size: 12px">����c��</td>
-   <td colspan="2" style="font-size: 12px">�ϡ��ͥ�Ĺ</td>
-   <td colspan="5" style="font-size: 12px">����c��</td>
-   <td colspan="2" style="font-size: 12px">�ϡ��ͥ�Ĺ</td>
-   <td colspan="8" style="font-size: 12px">����c��</td>
+   <td colspan="5" style="font-size: 12px">ハーネス長</td>
+   <td colspan="3" style="font-size: 12px">７０cｍ</td>
+   <td colspan="2" style="font-size: 12px">ハーネス長</td>
+   <td colspan="5" style="font-size: 12px">７０cｍ</td>
+   <td colspan="2" style="font-size: 12px">ハーネス長</td>
+   <td colspan="8" style="font-size: 12px">７０cｍ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="5" style="font-size: 12px">�̣ţ�������</td>
-   <td colspan="3" style="font-size: 12px">��</td>
-   <td colspan="2" style="font-size: 12px">�̣ţ�������</td>
-   <td colspan="5" style="font-size: 12px">��</td>
-   <td colspan="2" style="font-size: 12px">�̣ţ�������</td>
-    <td colspan="8"><span style="font-size: 12px">��/��/��<br></span>
-    <span style="font-size: 11px">����³���ʤˤ��ۤʤ�ޤ���</span></td>
+   <td colspan="5" style="font-size: 12px">ＬＥＤ点灯色</td>
+   <td colspan="3" style="font-size: 12px">青</td>
+   <td colspan="2" style="font-size: 12px">ＬＥＤ点灯色</td>
+   <td colspan="5" style="font-size: 12px">青</td>
+   <td colspan="2" style="font-size: 12px">ＬＥＤ点灯色</td>
+    <td colspan="8"><span style="font-size: 12px">赤/緑/橙<br></span>
+    <span style="font-size: 11px">（接続製品により異なります）</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="5" style="font-size: 12px">�ѥå������󥰥�����</td>
-   <td colspan="3" style="font-size: 12px">�ף�����&times;�ȣ������ʣ���/�ޡ�</td>
-   <td colspan="2" style="font-size: 12px">�ѥå������󥰥�����</td>
-   <td colspan="5" style="font-size: 12px"><span style="font-size: 12px">�ף�����&times;�ȣ������ʣ���/�ޡ�</span></td>
-   <td colspan="2" style="font-size: 12px">�ѥå������󥰥�����</td>
-   <td colspan="8" style="font-size: 12px"><span style="font-size: 12px">�ף�����&times;�ȣ������ʣ���/�ޡ�</span></td>
+   <td colspan="5" style="font-size: 12px">パッケージングサイズ</td>
+   <td colspan="3" style="font-size: 12px">Ｗ１２５&times;Ｈ２００（ｍｍ/袋）</td>
+   <td colspan="2" style="font-size: 12px">パッケージングサイズ</td>
+   <td colspan="5" style="font-size: 12px"><span style="font-size: 12px">Ｗ１２５&times;Ｈ２００（ｍｍ/袋）</span></td>
+   <td colspan="2" style="font-size: 12px">パッケージングサイズ</td>
+   <td colspan="8" style="font-size: 12px"><span style="font-size: 12px">Ｗ１２５&times;Ｈ２００（ｍｍ/袋）</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="5" style="font-size: 12px">���ʽ���</td>
-   <td colspan="3" style="font-size: 12px">������</td>
-   <td colspan="2" style="font-size: 12px">���ʽ���</td>
-   <td colspan="5" style="font-size: 12px">������</td>
-   <td colspan="2" style="font-size: 12px">���ʽ���</td>
-   <td colspan="8" style="font-size: 12px">������</td>
+   <td colspan="5" style="font-size: 12px">製品重量</td>
+   <td colspan="3" style="font-size: 12px">３６ｇ</td>
+   <td colspan="2" style="font-size: 12px">製品重量</td>
+   <td colspan="5" style="font-size: 12px">３６ｇ</td>
+   <td colspan="2" style="font-size: 12px">製品重量</td>
+   <td colspan="8" style="font-size: 12px">３６ｇ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="5" style="font-size: 12px">�ѥå�������������</td>
-   <td colspan="3" style="font-size: 12px">�����硡�ʼ���/�����޴ޤ��</td>
-   <td colspan="2" style="font-size: 12px">�ѥå�������������</td>
-   <td colspan="5" style="font-size: 12px">�����硡�ʼ���/�����޴ޤ��</td>
-   <td colspan="2" style="font-size: 12px">�ѥå�������������</td>
-   <td colspan="8" style="font-size: 12px">�����硡�ʼ���/�����޴ޤ��</td>
+   <td colspan="5" style="font-size: 12px">パッケージング総重量</td>
+   <td colspan="3" style="font-size: 12px">３７ｇ　（取説/梱包袋含む）</td>
+   <td colspan="2" style="font-size: 12px">パッケージング総重量</td>
+   <td colspan="5" style="font-size: 12px">３７ｇ　（取説/梱包袋含む）</td>
+   <td colspan="2" style="font-size: 12px">パッケージング総重量</td>
+   <td colspan="8" style="font-size: 12px">３７ｇ　（取説/梱包袋含む）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -299,72 +315,61 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="29" style="font-size: 14px"><b>������������</b></td>
+   <td colspan="29" style="font-size: 14px"><b>ご購入の前に</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="2" style="font-size: 11px; line-height: 14px; vertical-align: top; text-align: right;"><br>��<br>
-     <span style="color: #1200FF">��</span><br>
-       <span style="color: #FF0308">��</span><br><br><br>
-       ��<br>
-     ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-    ��</td>
-   <td colspan="27" style="font-size: 11px; line-height: 14px; vertical-align: top">Ŭ���ǧ���Τ�����<br>
-     ����������°�ξ���LED�����å��ʳ��Ȥϸ򴹤Ǥ��ޤ���<br>
-       <span style="color: #1200FF">�ڣӣף�-�Уԣ������ۡڣӣף�-�Уԣã����ۤ��������ʤ���°���Ƥ���ؾ����̣ţĥ����å���ñ��/���̣ţġˡٰʳ��Υ����å��Ȥϸ򴹡����Ѥ��Ǥ��ޤ���</span><br>
-      <span style="color: #FF0308">�ڣӣף�-�Уԣã����ۤ��������ʤ���°���Ƥ���ؾ����̣ţĥ����å���ʣ��/���̣ţġˡٰʳ��Υ����å��Ȥϸ򴹡����Ѥ��Ǥ��ޤ���<br>
-���ޤ����ؾ����̣ţĥ����å���ʣ��/���̣ţġˡ٤���Ѥ��Ƥ���ե꡼�ƥ�ӥ󥰤���ԣãԣ�-���������ӡ���¤�ֹ桧�������������⣰���������ˡդˤϤ����Ѥ��������ޤ���</span><br><br>
-     ��ξ¦�˥����ӥ��ۡ��뤬���뤫���ޤ�����������äƤ��뤫����ǧ�����������ޤ��������ӥ��ۡ��뤬���Ǥ˻��Ѥ���Ƥ����硢����դ����Ǥ��ޤ���<br>
-     �����ӥ��ۡ�������������ˤ�äƤϡ�����դ��ˤ���������ˤ����˾�礬����ޤ���<br>
-     ��ž��˸���ˤʤ��ͤʾ�����ϡ�����ʳ��ؤξ��ˤϼ���դ����ʤ��Ǥ���������<br>
-     �����ʤ�ʬ�򤷤���ù�����¤�����ʤ��Ǥ���������<br>
-     �����ʤ�������ϰ۽����۲����������ľ���˻��Ѥ���ߤ��ݾڽ�Ȱ��ˤ��㤤�夲������Ź�������Ҥ���������ꤷ�Ƥ���������<br>
-     �����ʤμ���դ��ϼ���դ����ѤΤ�������Ź�ǹԤäƤ���������<br>
-     ����դ���ϳμ¤˸��ꤵ��Ƥ�������ǧ���Ƥ���������<br>
-     ����������������Ǥ��ʤ��Ǥ��������������������֥���ϼ�ξ��°����»�����ʤ��ͤ�������ԤäƤ���������<br>
-     �����ʤ����դ���ݡ��곫������ξ�ΰ�����ù����ƺ�Ȥ�Ԥ����ϡ����ڤ���»�ˤ����դ������������졢��»����»���������ޤ��Ƥ����ҤǤϰ�����Ǥ���餤���ͤޤ���<br>
-     ����»���ˤ�뵡��θξ�䤽��ʤɤ��տ魯�����Ƥ�������Ф��Ƥ����ҤǤϰ��ڤ������Ǥ��ޤ���Τ�ͽ�ᤴλ������������<br>
-    ���͵ڤӳ��Ѥϲ��ɤΰ١�ͽ��ʤ��ѹ������礬����ޤ���</td>
+   <td colspan="2" style="font-size: 11px; line-height: 14px; vertical-align: top; text-align: right;"><br>●<br>
+     <span style="color: #1200FF">●</span><br>
+       <span style="color: #FF0308">●</span><br><br><br>
+       ●<br>
+     ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+    ●</td>
+   <td colspan="27" style="font-size: 11px; line-height: 14px; vertical-align: top">適合確認時のご注意<br>
+     弊社製品付属の小型LEDスイッチ以外とは交換できません。<br>
+       <span style="color: #1200FF">【ＳＷＣ-ＰＴＡ０１】【ＳＷＣ-ＰＴＣ０１】は弊社製品に付属している『小型ＬＥＤスイッチ（単色/１ＬＥＤ）』以外のスイッチとは交換・使用ができません。</span><br>
+      <span style="color: #FF0308">【ＳＷＣ-ＰＴＣ０２】は弊社製品に付属している『小型ＬＥＤスイッチ（複色/２ＬＥＤ）』以外のスイッチとは交換・使用ができません。<br>
+　また、『小型ＬＥＤスイッチ（複色/２ＬＥＤ）』を使用しているフリーテレビングの内《ＣＴＮ-１０６ＡＳ（製造番号：００００１～№００２２０）》にはご使用いただけません。</span><br><br>
+     車両側にサービスホールがあるか、またサイズが合っているかご確認ください。また、サービスホールがすでに使用されている場合、取り付けができません。<br>
+     サービスホールの内部形状によっては、取り付けにくい（入りにくい）場合があります。<br>
+     運転の妨げになる様な場所又は、指定以外への場所には取り付けしないでください。<br>
+     本製品を分解したり加工・改造等しないでください。<br>
+     本製品から煙又は異臭・異音がする場合は直ちに使用を中止し保証書と一緒にお買い上げの販売店又は弊社に点検を依頼してください。<br>
+     本製品の取り付けは取り付け技術のある販売店で行ってください。<br>
+     取り付け後は確実に固定されている事を確認してください。<br>
+     各配線を途中で切断しないでください。又、、ケーブル類は車両金属部で損傷しない様に配線を行ってください。<br>
+     本製品を取り付ける際、穴開け等車両の一部を加工して作業を行う場合は、傷及び破損にご注意ください。万一、破損等の損害が生じましても弊社では一切責任を負いかねます。<br>
+     前記損害による機器の故障やそれなどに付随する全ての請求に対しても弊社では一切お受けできませんので予めご了承ください。<br>
+    仕様及び外観は改良の為、予告なく変更する場合があります。</td>
    <td><img src="images/spacer.gif" width="1" height="220" alt=""></td>
   </tr>
   <tr>
-   <td colspan="29" style="font-size: 14px"><b>�ݾڵ���</b></td>
+   <td colspan="29" style="font-size: 14px"><b>保証規定</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="2" style="font-size: 11px; line-height: 14px; vertical-align: top; text-align: right;">��<br>
-    ��</td>
-   <td colspan="27" style="font-size: 11px; line-height: 14px; vertical-align: top">�����ʤ�1ǯ�ݾڤȤʤ�ޤ���<br>
-     �谷������˽��ä�����ʻ��Ѿ��֤Τ�Ȥ��Զ�礬���������ϡ��ݾڽ�ε������Ƥˤ�����ʸ򴹤��פ��ޤ�����æ��ˤ����빩�¤����ʤ���Ѥ���������»�����ˤĤ��� <br>
-    ���ҤǤϰ�����Ǥ���餤���ͤޤ���</td>
+   <td colspan="2" style="font-size: 11px; line-height: 14px; vertical-align: top; text-align: right;">●<br>
+    ●</td>
+   <td colspan="27" style="font-size: 11px; line-height: 14px; vertical-align: top">本製品は1年保証となります。<br>
+     取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について <br>
+    弊社では一切責任を負いかねます。</td>
    <td><img src="images/spacer.gif" width="1" height="45" alt=""></td>
   </tr>
   <tr>
    <td colspan="29"><img name="hole_sw_r47_c1" src="images/hole_sw_r47_c1.gif" width="1000" height="10" id="hole_sw_r47_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="2" colspan="23"><img name="hole_sw_r48_c1" src="images/hole_sw_r48_c1.gif" width="838" height="49" id="hole_sw_r48_c1" alt=""></td>
-   <td colspan="3"><a href="hole_sw.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('hole_sw_r48_c24','','images/hole_sw_r48_c24_s2.gif',1);"><img name="hole_sw_r48_c24" src="images/hole_sw_r48_c24.gif" width="85" height="15" id="hole_sw_r48_c24" alt=""></a></td>
-   <td rowspan="2" colspan="3"><img name="hole_sw_r48_c27" src="images/hole_sw_r48_c27.gif" width="77" height="49" id="hole_sw_r48_c27" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="3"><img name="hole_sw_r49_c24" src="images/hole_sw_r49_c24.gif" width="85" height="34" id="hole_sw_r49_c24" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="34" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="29"><img name="hole_sw_r50_c1" src="images/hole_sw_r50_c1.gif" width="1000" height="74" id="hole_sw_r50_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="74" alt=""></td>
-  </tr>
+  
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

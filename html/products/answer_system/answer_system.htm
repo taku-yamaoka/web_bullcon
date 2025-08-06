@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>�h�A���b�N�A���T�[�V�X�e�� / Bullcon-�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>ドアロックアンサーシステム / Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -53,6 +55,40 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -67,8 +103,10 @@ function MM_preloadImages() { //v3.0
 
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/answer_system_r24_c8_f2.gif','images/answer_system_r24_c22_f2.gif','images/answer_system_r24_c41_f2.gif','images/answer_system_r30_c12_f2.gif','images/answer_system_r33_c29_f2.gif','images/answer_system_r61_c10_f2.gif','images/answer_system_r68_c48_f2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="answer_system20191114.png" fwpage="�y�[�W 1" fwbase="answer_system.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="answer_system20191114.png" fwpage="ページ 1" fwbase="answer_system.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="4" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="34" height="1" border="0" alt=""></td>
@@ -131,25 +169,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
 
-    <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
 
   <tr>
    <td colspan="58"><img name="answer_system_r14_c1" src="images/answer_system_r14_c1.gif" width="1000" height="30" border="0" id="answer_system_r14_c1" alt=""></td>
@@ -161,12 +180,12 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="2" colspan="12"><img name="answer_system_r16_c1" src="images/answer_system_r16_c1.gif" width="285" height="60" border="0" id="answer_system_r16_c1" alt=""></td>
-   <td colspan="21"><span class="style19">�h�A���b�N�A���T�[�V�X�e��</span></td>
+   <td colspan="21"><span class="style19">ドアロックアンサーシステム</span></td>
    <td colspan="25"><img name="answer_system_r16_c34" src="images/answer_system_r16_c34.gif" width="382" height="30" border="0" id="answer_system_r16_c34" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="46" style="line-height:16px"><span class="style19">�����R���h�A���b�N�ŁA�n�U�[�h��T�E���h���A������ �I�@�I�v�V�����ōX�ɋ@�\�[���I�I<br>
+   <td colspan="46" style="line-height:16px"><span class="style19">リモコンドアロックで、ハザードやサウンドが連動する ！　オプションで更に機能充実！！<br>
    </span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
@@ -185,9 +204,9 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="13"><div align="center"><span class="style3">�n�U�[�h�_�Ł��u�U�[</span><span class="style1">�i�ėp�z���j</span></div></td>
-   <td colspan="18"><div align="center"><span class="style3">�n�U�[�h�_�Ń^�C�v</span><span class="style1">�i�ėp�z���j</span></div></td>
-   <td colspan="18"><div align="center"><span class="style3">�u�U�[���^�C�v</span><span class="style1">�i�ėp�z���j</span></div></td>
+   <td colspan="13"><div align="center"><span class="style3">ハザード点滅＆ブザー</span><span class="style1">（汎用配線）</span></div></td>
+   <td colspan="18"><div align="center"><span class="style3">ハザード点滅タイプ</span><span class="style1">（汎用配線）</span></div></td>
+   <td colspan="18"><div align="center"><span class="style3">ブザー吹鳴タイプ</span><span class="style1">（汎用配線）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -197,21 +216,21 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="13"><div align="center"><span class="style1">�̔����i ���P�T�C�P�W�O�@�i�ō��j</span></div></td>
-   <td colspan="18"><div align="center"><span class="style1">�̔����i ���P�Q�C�X�W�O�@�i�ō��j</span></div></td>
-   <td colspan="18"><div align="center"><span class="style1">�̔����i ���P�Q�C�X�W�O�@�i�ō��j</span></div></td>
+   <td colspan="13"><div align="center"><span class="style1">販売価格 ￥１５，１８０　（税込）</span></div></td>
+   <td colspan="18"><div align="center"><span class="style1">販売価格 ￥１２，９８０　（税込）</span></div></td>
+   <td colspan="18"><div align="center"><span class="style1">販売価格 ￥１２，９８０　（税込）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="13" style="text-align: center; font-size: 13px;">�i�Ŕ����i ���P�R�C�W�O�O�j</td>
-    <td colspan="18" style="text-align: center"><span style="text-align: center; font-size: 13px;">�i�Ŕ����i ���P�P�C�W�O�O�j</span></td>
-    <td colspan="18" style="text-align: center"><span style="text-align: center; font-size: 13px;">�i�Ŕ����i ���P�P�C�W�O�O�j</span></td>
+    <td colspan="13" style="text-align: center; font-size: 13px;">（税抜価格 ￥１３，８００）</td>
+    <td colspan="18" style="text-align: center"><span style="text-align: center; font-size: 13px;">（税抜価格 ￥１１，８００）</span></td>
+    <td colspan="18" style="text-align: center"><span style="text-align: center; font-size: 13px;">（税抜価格 ￥１１，８００）</span></td>
     <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="13"><div align="center"><span style="text-align: center; font-size: 13px;">JAN�R�[�h�F�S�X�T�O�O�X�S�O�R�O�R�O�V</span></div></td>
-   <td colspan="18"><div align="center"><span style="text-align: center; font-size: 13px;">JAN�R�[�h�F�S�X�T�O�O�X�S�O�R�P�R�P�P</span></div></td>
-   <td colspan="18"><div align="center"><span style="text-align: center; font-size: 13px;">JAN�R�[�h�F�S�X�T�O�O�X�S�O�R�P�R�Q�W</span></div></td>
+   <td colspan="13"><div align="center"><span style="text-align: center; font-size: 13px;">JANコード：４９５００９４０３０３０７</span></div></td>
+   <td colspan="18"><div align="center"><span style="text-align: center; font-size: 13px;">JANコード：４９５００９４０３１３１１</span></div></td>
+   <td colspan="18"><div align="center"><span style="text-align: center; font-size: 13px;">JANコード：４９５００９４０３１３２８</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -227,9 +246,9 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="13" style="line-height:16px" valign="top"><span class="style5">BDR-308�i�ėp�n�U�[�h / �u�U�[�j�͏��������R���L�[�Ńh�A���b�N / �A�����b�N�̍쓮���n�U�[�h�̓_�łƃu�U�[�Ŋm�F�o���܂��B</span></td>
-   <td colspan="18" style="line-height:16px" valign="top"><span class="style5">DAS-H51�i�ėp�n�U�[�h�^�C�v�j�͏��������R���L�[�Ńh�A���b�N / �A�����b�N�̍쓮���n�U�[�h�̓_�łŊm�F�o���܂��B�I�v�V�����̂c�`�|�a�a�P�O��ǉ����鎖�Ńn�U�[�h�̓_�łƃu�U�[���Ŋm�F�o���܂��B</span></td>
-   <td colspan="18" style="line-height:16px" valign="top"><span class="style5">DAS-B61�i�ėp�u�U�[�^�C�v�j�͏��������R���L�[�Ńh�A���b�N / �A�����b�N�̍쓮���u�U�[���Ŋm�F�o���܂��B</span></td>
+   <td colspan="13" style="line-height:16px" valign="top"><span class="style5">BDR-308（汎用ハザード / ブザー）は純正リモコンキーでドアロック / アンロックの作動をハザードの点滅とブザーで確認出来ます。</span></td>
+   <td colspan="18" style="line-height:16px" valign="top"><span class="style5">DAS-H51（汎用ハザードタイプ）は純正リモコンキーでドアロック / アンロックの作動をハザードの点滅で確認出来ます。オプションのＤＡ－ＢＢ１０を追加する事でハザードの点滅とブザー音で確認出来ます。</span></td>
+   <td colspan="18" style="line-height:16px" valign="top"><span class="style5">DAS-B61（汎用ブザータイプ）は純正リモコンキーでドアロック / アンロックの作動をブザー音で確認出来ます。</span></td>
    <td><img src="images/spacer.gif" width="1" height="100" border="0" alt=""></td>
   </tr>
   <tr>
@@ -246,33 +265,33 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="11" align="center" style="color: #A09B9B; font-size: 14px;"><b>��p�n�[�l�X�{��</b><span style="color: #FF0308; font-size: 13px;">�y�̔��I���z</span></td>
+   <td colspan="11" align="center" style="color: #A09B9B; font-size: 14px;"><b>専用ハーネス本体</b><span style="color: #FF0308; font-size: 13px;">【販売終了】</span></td>
    <td colspan="16"><a href="../pdf/answer_h51.pdf" target="_blank" onMouseOver="MM_swapImage('answer_system_r30_c12','','images/answer_system_r30_c12_f2.gif',1);" onMouseOut="MM_swapImgRestore()"><img name="answer_system_r30_c12" src="images/answer_system_r30_c12.gif" width="260" height="30" border="0" id="answer_system_r30_c12" alt=""></a></td>
    <td rowspan="5"><img name="answer_system_r30_c28" src="images/answer_system_r30_c28.gif" width="10" height="130" border="0" id="answer_system_r30_c28" alt=""></td>
-   <td colspan="17" align="center" style="color: #A09B9B; font-size: 16px;"><b>��p�n�[�l�X</b><span style="color: #FF0308; font-size: 13px;">�y�̔��I���z</span></td>
+   <td colspan="17" align="center" style="color: #A09B9B; font-size: 16px;"><b>専用ハーネス</b><span style="color: #FF0308; font-size: 13px;">【販売終了】</span></td>
    <td colspan="13"><img name="answer_system_r30_c46" src="images/answer_system_r30_c46.gif" width="210" height="30" border="0" id="answer_system_r30_c46" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="11"><img name="answer_system_r31_c1" src="images/answer_system_r31_c1.gif" width="260" height="30" border="0" id="answer_system_r31_c1" alt=""></td>
-   <td rowspan="4" colspan="16" style="color: #A09B9B; font-size: 14px;" valign="top">DAS-H71(��p�n�[�l�X�^�C�v�p�{��)�͏��������R���L�[�Ńh�A���b�N / �A�����b�N�̍쓮���n�U�[�h�̓_�łŊm�F�o���܂��B�I�v�V�����̂c�`�|�a�a�P�O��ǉ����鎖�Ńn�U�[�h�̓_�łƃu�U�[���Ŋm�F�o���܂��B</td>
+   <td rowspan="4" colspan="16" style="color: #A09B9B; font-size: 14px;" valign="top">DAS-H71(専用ハーネスタイプ用本体)は純正リモコンキーでドアロック / アンロックの作動をハザードの点滅で確認出来ます。オプションのＤＡ－ＢＢ１０を追加する事でハザードの点滅とブザー音で確認出来ます。</td>
    <td colspan="17"><img name="answer_system_r31_c29" src="images/answer_system_r31_c29.gif" width="260" height="30" border="0" id="answer_system_r31_c29" alt=""></td>
-   <td rowspan="4" colspan="13" style="color: #A09B9B; font-size: 14px;" valign="top">DAS-H71�i��p�n�[�l�X�{�́j�ɂ̓n�[�l�X����������Ă���܂���B<br>
-    �����ɍۂ��Ă�<b>�K����p�n�[�l�X�����������߂��������B</b></td>
+   <td rowspan="4" colspan="13" style="color: #A09B9B; font-size: 14px;" valign="top">DAS-H71（専用ハーネス本体）にはハーネスが同梱されておりません。<br>
+    装着に際しては<b>必ず専用ハーネスをお買い求めください。</b></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="11" align="center" style="color: #A09B9B; font-size: 14px;">�̔����i ���V�C�P�Q�W�i�ō��j</span></td>
-   <td colspan="17" align="center" style="color: #A09B9B; font-size: 14px;">��]�������i ���U�C�T�V�W�i�ō��j</span></td>
+   <td colspan="11" align="center" style="color: #A09B9B; font-size: 14px;">販売価格 ￥７，１２８（税込）</span></td>
+   <td colspan="17" align="center" style="color: #A09B9B; font-size: 14px;">希望小売価格 ￥６，５７８（税込）</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="11" align="center" style="color: #A09B9B; font-size: 13px;">�i�Ŕ����i ���U�C�S�W�O�j</span></td>
-    <td colspan="17" align="center" style="color: #A09B9B; font-size: 13px;">�i�Ŕ����i ���T�C�X�W�O�j</span></td>
+    <td colspan="11" align="center" style="color: #A09B9B; font-size: 13px;">（税抜価格 ￥６，４８０）</span></td>
+    <td colspan="17" align="center" style="color: #A09B9B; font-size: 13px;">（税抜価格 ￥５，９８０）</span></td>
     <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="11" align="center" style="color: #A09B9B; font-size: 13px;">JAN�R�[�h�F�S�X�T�O�O�X�S�O�R�P�R�R�T</span></div></td>
+   <td colspan="11" align="center" style="color: #A09B9B; font-size: 13px;">JANコード：４９５００９４０３１３３５</span></div></td>
    <td colspan="17"><a href="../pdf/answer_wh.pdf" target="_blank" onMouseOver="MM_swapImage('answer_system_r33_c29','','images/answer_system_r33_c29_f2.gif',1);" onMouseOut="MM_swapImgRestore()"><img name="answer_system_r33_c29" src="images/answer_system_r33_c29.gif" width="260" height="30" border="0" id="answer_system_r33_c29" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
@@ -285,40 +304,40 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="4" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="18" style="line-height:24px"><span class="style3">�����R���h�A���b�N�̊J���t�@�b�V���i�u���Ɋm�F�I<br>
-    �n�U�[�h�̓_�ł�u�U�[���Ń��b�N�̊m�F�I</span></td>
-   <td colspan="12" style="line-height:15px"><div align="right" class="style7"><span class="style6">�����R���Ń��b�N�������ɂP��A<br>
-     �A�����b�N�������ɂQ��A<br>
-     �n�U�[�h�̓_�ł�u�U�[����<br>
-    ���m�点���܂��B</span></div></td>
+   <td colspan="18" style="line-height:24px"><span class="style3">リモコンドアロックの開閉をファッショナブルに確認！<br>
+    ハザードの点滅やブザー音でロックの確認！</span></td>
+   <td colspan="12" style="line-height:15px"><div align="right" class="style7"><span class="style6">リモコンでロックした時に１回、<br>
+     アンロックした時に２回、<br>
+     ハザードの点滅やブザー音で<br>
+    お知らせします。</span></div></td>
    <td rowspan="5" colspan="13"><img name="answer_system_r36_c31" src="images/answer_system_r36_c31.gif" width="200" height="180" border="0" id="answer_system_r36_c31" alt=""></td>
    <td rowspan="3" colspan="15"><img name="answer_system_r36_c44" src="images/answer_system_r36_c44.gif" width="235" height="120" border="0" id="answer_system_r36_c44" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="60" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="30"><span class="style1">���i����</span></td>
+   <td colspan="30"><span class="style1">製品特長</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="2" colspan="30" style="line-height:18px"><span class="style1">�� �A���T�[�o�b�N�񑕒��Ԃ֌��Ɖ��̒ǉ����\�I�@�iBDR-308�j<br>
-     �� �����T�E���h�A���T�[�����Ԃ֌��̒ǉ����\�I�@�iDAS-H51�j<br>
-       �� �����n�U�[�h�A���T�[�����Ԃ։��̒ǉ����\�I�@�iDAS-B61�j</span><br>
-    <span style="color: #A09B9B; font-size: 13px;">�� �ȒP�ڑ��I�Ԏ�ʐ�p�n�[�l�X�^�C�v�iDAS-H71����p�n�[�l�X�j</span><span style="color: #FF0308; font-size: 13px;">�y�̔��I���z</span></td>
+   <td rowspan="2" colspan="30" style="line-height:18px"><span class="style1">○ アンサーバック非装着車へ光と音の追加が可能！　（BDR-308）<br>
+     ○ 純正サウンドアンサー装着車へ光の追加が可能！　（DAS-H51）<br>
+       ○ 純正ハザードアンサー装着車へ音の追加が可能！　（DAS-B61）</span><br>
+    <span style="color: #A09B9B; font-size: 13px;">○ 簡単接続！車種別専用ハーネスタイプ（DAS-H71＆専用ハーネス）</span><span style="color: #FF0308; font-size: 13px;">【販売終了】</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="2" colspan="15" style="line-height:15px"><span class="style6">�����R���ł̃h�A���b�N����LED��_�ł����鎖�ŁA�쓮�m�F���e�Ղɍs���܂��B<br>
-    LED�̓_�ł̓��b�N�Ɠ����ɍs���A�A�����b�N���ɏ������܂��B</span></td>
+   <td rowspan="2" colspan="15" style="line-height:15px"><span class="style6">リモコンでのドアロック時にLEDを点滅させる事で、作動確認が容易に行えます。<br>
+    LEDの点滅はロックと同時に行い、アンロック時に消灯します。</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="30"><span class="style1">��{�@�\�Ɂ@�{���i�v���X�A���t�@�j�ŃO���[�h�A�b�v</span></td>
+   <td colspan="30"><span class="style1">基本機能に　＋α（プラスアルファ）でグレードアップ</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="58"><span class="style1" style="line-height:18px">     �� ���b�N����ƍ��P�xLED�iDA-LB20 / DA-LR20�j���_�ł��J�n���A��������̗}���ɍv���I�iBDR-308 / DAS-H51 / DAS-B61�j<br>
-     �� ����ς艹���~�������֓d�q�u�U�[�iDA-BB10�j�̒ǉ����\�I�I�iDAS-H51�j<br>
-    �� ���肫����ȃu�U�[���ł͂Ȃ��A�Z�L�����e�B�T�C�����iDA-BS20�j�������\�I�I�I�iBDR-308 / DAS-H51 / DAS-B61�j</span></td>
+   <td colspan="58"><span class="style1" style="line-height:18px">     ● ロックすると高輝度LED（DA-LB20 / DA-LR20）が点滅を開始し、いたずらの抑制に貢献！（BDR-308 / DAS-H51 / DAS-B61）<br>
+     ● やっぱり音も欲しい方へ電子ブザー（DA-BB10）の追加が可能！！（DAS-H51）<br>
+    ● ありきたりなブザー音ではなく、セキュリティサイレン（DA-BS20）が装着可能！！！（BDR-308 / DAS-H51 / DAS-B61）</span></td>
    <td><img src="images/spacer.gif" width="1" height="60" border="0" alt=""></td>
   </tr>
   <tr>
@@ -387,29 +406,29 @@ save="FALSE"></td>
    <td><img src="images/spacer.gif" width="1" height="23" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="2" colspan="9"><div align="center" class="style8">���Q�C�X�S�W(�ō�)<br>
-       <span style="font-size: 13px">�i�Ŕ����i ���Q�C�U�W�O�j</span></div></td>
-   <td rowspan="2" colspan="13"><div align="center" class="style8">���Q�C�X�S�W(�ō�)<br>
-       <span style="font-size: 13px">�i�Ŕ����i ���Q�C�U�W�O�j</span></div></td>
-   <td colspan="17"><div align="center" class="style8">���R�C�R�O�O(�ō�)<br>
-       <span style="font-size: 13px">�i�Ŕ����i ���R�C�O�O�O�j</span></div></td>
-   <td colspan="15"><div align="center" class="style8">���S�C�P�W�O(�ō�)<br>
-       <span style="font-size: 13px">�i�Ŕ����i ���R�C�W�O�O�j</span></div></td>
+   <td rowspan="2" colspan="9"><div align="center" class="style8">￥２，９４８(税込)<br>
+       <span style="font-size: 13px">（税抜価格 ￥２，６８０）</span></div></td>
+   <td rowspan="2" colspan="13"><div align="center" class="style8">￥２，９４８(税込)<br>
+       <span style="font-size: 13px">（税抜価格 ￥２，６８０）</span></div></td>
+   <td colspan="17"><div align="center" class="style8">￥３，３００(税込)<br>
+       <span style="font-size: 13px">（税抜価格 ￥３，０００）</span></div></td>
+   <td colspan="15"><div align="center" class="style8">￥４，１８０(税込)<br>
+       <span style="font-size: 13px">（税抜価格 ￥３，８００）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="2" colspan="17" style="text-align: center"><span style="font-size: 13px;">JAN�R�[�h�S�X�T�O�O�X�S�O�R�P�R�U�U</span></td>
-   <td rowspan="2" colspan="15" style="text-align: center"><span style="font-size: 13px;">JAN�R�[�h�S�X�T�O�O�X�S�O�U�O�T�W�W</span></td>
+   <td rowspan="2" colspan="17" style="text-align: center"><span style="font-size: 13px;">JANコード４９５００９４０３１３６６</span></td>
+   <td rowspan="2" colspan="15" style="text-align: center"><span style="font-size: 13px;">JANコード４９５００９４０６０５８８</span></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="9" rowspan="2" style="text-align: center"><span style=" center; font-size: 13px;">JAN�R�[�h�S�X�T�O�O�X�S�O�R�P�R�T�X</span></td>
-   <td rowspan="2" colspan="13" style="text-align: center"><span style="font-size: 13px;">JAN�R�[�h�S�X�T�O�O�X�S�O�R�P�R�S�Q</span></td>
+   <td colspan="9" rowspan="2" style="text-align: center"><span style=" center; font-size: 13px;">JANコード４９５００９４０３１３５９</span></td>
+   <td rowspan="2" colspan="13" style="text-align: center"><span style="font-size: 13px;">JANコード４９５００９４０３１３４２</span></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="17"><div align="center" class="style5"><a href="../answer_system/answer_sound/answer_sound.htm" style="text-decoration:none;">�Đ��{�^�����\������Ȃ��ꍇ�̓R�`��</a></div></td>
-   <td colspan="15"><div align="center" class="style5"><a href="../answer_system/answer_sound/answer_sound.htm" style="text-decoration:none;">�Đ��{�^�����\������Ȃ��ꍇ�̓R�`��</a></div></td>
+   <td colspan="17"><div align="center" class="style5"><a href="../answer_system/answer_sound/answer_sound.htm" style="text-decoration:none;">再生ボタンが表示されない場合はコチラ</a></div></td>
+   <td colspan="15"><div align="center" class="style5"><a href="../answer_system/answer_sound/answer_sound.htm" style="text-decoration:none;">再生ボタンが表示されない場合はコチラ</a></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -418,14 +437,14 @@ save="FALSE"></td>
   </tr>
   <tr>
    <td colspan="16"><img name="answer_system_r55_c1" src="images/answer_system_r55_c1.gif" width="360" height="80" border="0" id="answer_system_r55_c1" alt=""></td>
-   <td colspan="42" style="line-height:20px"><span class="style2"><strong>�h�A���b�N�A���T�[ �V�X�e���i�T�C�����^�C�v�j<br>
-     �����R���h�A���b�N�ɘA�����āA�Z�L�����e�B�T�E���h���� �I�@�I�v�V�����ōX�ɋ@�\�[���I�I<br>
-    ��ԓ��T�C�������𐁖炳�������Ȃ��ꍇ�ɁA�֗��ȃ~���[�g�@�\���ځI�i�ꕔ���g�p�����Ȃ��ԗ�������܂��B�j </strong></span></td>
+   <td colspan="42" style="line-height:20px"><span class="style2"><strong>ドアロックアンサー システム（サイレンタイプ）<br>
+     リモコンドアロックに連動して、セキュリティサウンドが鳴る ！　オプションで更に機能充実！！<br>
+    夜間等サイレン音を吹鳴らさせたくない場合に、便利なミュート機能搭載！（一部ご使用頂けない車両があります。） </strong></span></td>
    <td><img src="images/spacer.gif" width="1" height="80" border="0" alt=""></td>
   </tr>
   <tr>
    <td rowspan="7" colspan="9"><img name="answer_system_r56_c1" src="images/answer_system_r56_c1.gif" width="230" height="115" border="0" id="answer_system_r56_c1" alt=""></td>
-   <td colspan="11"><span class="style14">�ėp�T�C�����^�C�v</span></td>
+   <td colspan="11"><span class="style14">汎用サイレンタイプ</span></td>
    <td rowspan="3" colspan="38"><img name="answer_system_r56_c21" src="images/answer_system_r56_c21.gif" width="540" height="57" border="0" id="answer_system_r56_c21" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
@@ -434,7 +453,7 @@ save="FALSE"></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="2" colspan="11"><span class="style14">�̔����i ���P�Q�C�W�O�O(�ŕ�)</span></td>
+   <td rowspan="2" colspan="11"><span class="style14">販売価格 ￥１２，８００(税別)</span></td>
    <td><img src="images/spacer.gif" width="1" height="7" border="0" alt=""></td>
   </tr>
   <tr>
@@ -442,11 +461,11 @@ save="FALSE"></td>
    <td><img src="images/spacer.gif" width="1" height="13" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="11"><span style="font-size: 12px; color: #999999; text-align: center;">�i�Ŕ����i ���Q�C�U�W�O�j</span></td>
+    <td colspan="11"><span style="font-size: 12px; color: #999999; text-align: center;">（税抜価格 ￥２，６８０）</span></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
-   <td colspan="11"><span class="style14">JAN�R�[�h�S�X�T�O�O�X�S�O�U�O�W�W�T</span></td>
+   <td colspan="11"><span class="style14">JANコード４９５００９４０６０８８５</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -463,55 +482,44 @@ save="FALSE"></td>
    <td><img src="images/spacer.gif" width="1" height="8" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="58"><span class="style16">���w���̑O��</span></td>
+   <td colspan="58"><span class="style16">ご購入の前に</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="58" style="line-height:18px"><span class="style18">�� DAS-B61�i�ėp�u�U�[�^�C�v�j�Ɍォ��n�U�[�h�t���b�V����ǉ�����I�v�V�����͌�����܂���̂ł����ӂ��������B<br>
-     �� �d�q�u�U�[�y�уT�C�����̃T���v���T�E���h�͂��g���̃p�\�R�����ɂ���ĉ��ʁA�������قȂ�ꍇ������܂��̂ŁA���炩���߂��������������B<br>
-     �� �{���i�̓A�N�Z�T���[���i�ł���A�Z�L�����e�B�̋@�\�͂������܂���B�܂��A�����i�Ƃ͈قȂ�܂��̂ŗ\�߂��������������B<br>
-     �� �{���i�͌�쓮�h�~�ׁ̈A�G���W���̎n�����ɂ͍쓮���܂���̂ŗ\�߂��������������B<br>
-    �� �o�b�e���[�̏�Ԃɂ����܂����ALED��_�ł������܂�2�T�Ԉȏ���u���Ȃ��ł��������B�o�b�e���[�オ��̌����ƂȂ�܂��B</span></td>
+   <td colspan="58" style="line-height:18px"><span class="style18">○ DAS-B61（汎用ブザータイプ）に後からハザードフラッシュを追加するオプションは御座いませんのでご注意ください。<br>
+     ○ 電子ブザー及びサイレンのサンプルサウンドはお使いのパソコン環境によって音量、音質が異なる場合がありますので、あらかじめご了承ください。<br>
+     ○ 本製品はアクセサリー製品であり、セキュリティの機能はございません。また、純正品とは異なりますので予めご了承ください。<br>
+     ○ 本製品は誤作動防止の為、エンジンの始動中には作動しませんので予めご了承ください。<br>
+    ○ バッテリーの状態にもよりますが、LEDを点滅させたまま2週間以上放置しないでください。バッテリー上がりの原因となります。</span></td>
    <td><img src="images/spacer.gif" width="1" height="85" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="58"><span class="style16">���S�y�ю��t���Ɋւ��邲����</span></td>
+   <td colspan="58"><span class="style16">安全及び取り付けに関するご注意</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="58" style="line-height:18px"><span class="style18">���w�肳�ꂽ����T���Ƃ��͕K���T�[�L�b�g�e�X�^�[���g�p���A���d��i�����v�e�X�^�[�j���͎g�p���Ȃ��ł��������B<br>
-     ���{���i�����t������ۂ́A���̋@��ɉe����^���Ȃ��ꏊ�y�щ^�]�ɍ����x���̂Ȃ��ꏊ�ɐݒu���ĉ������B<br>
-     ���ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{���̋@�\�ɕs��������ꍇ�ɂ͖{���i�����t�����́A�g�p���Ȃ��ŉ������B���i������ɓ��삵�Ȃ�������A�ԗ��@��ɉe����^���鋰�ꂪ����܂��B<br>
-     ���{���i�̎��t���́A���t���Z�p�̂���̔��X�ōs���ĉ������B<br>
-     ���{���i�Ƒ��@��ƕ��p���Ďg�p����ꍇ�A���@��̎戵���������悭���ǂ݂ɂȂ萳�����g�p���@�Ŏg�p���ĉ������B<br>
-     ���w��ȊO�̓d���ł͎g�p���Ȃ��ŉ������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B<br>
-     ���{���i�����t������ہA�d���̋ɐ��i�{�E�|�j���ԈႦ�Ȃ��悤�ɂ����Ӊ������B���A�d���R�[�h���ԑ̂̋��������ɐG��Ȃ��悤�ɂ����Ӊ������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B<br>
-    �����t���̍ۂɂ͕K���G���W�����~������Ԃōs���ĉ������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</span></td>
+   <td colspan="58" style="line-height:18px"><span class="style18">●指定された線を探すときは必ずサーキットテスターを使用し、検電器（ランプテスター）等は使用しないでください。<br>
+     ●本製品を取り付けする際は、他の機器に影響を与えない場所及び運転に差し支えのない場所に設置して下さい。<br>
+     ●車両のバッテリーが弱っている状態及び、車両本来の機能に不備がある場合には本製品を取り付け又は、使用しないで下さい。製品が正常に動作しなかったり、車両機器に影響を与える恐れがあります。<br>
+     ●本製品の取り付けは、取り付け技術のある販売店で行って下さい。<br>
+     ●本製品と他機器と併用して使用する場合、他機器の取扱説明書もよくお読みになり正しい使用方法で使用して下さい。<br>
+     ●指定以外の電圧では使用しないで下さい。火災・感電・故障の原因となります。<br>
+     ●本製品を取り付けする際、電源の極性（＋・－）を間違えないようにご注意下さい。又、電源コードが車体の金属部分に触れないようにご注意下さい。火災・感電・故障の原因となります。<br>
+    ●取り付けの際には必ずエンジンを停止した状態で行って下さい。火災・感電・故障の原因となります。</span></td>
    <td><img src="images/spacer.gif" width="1" height="150" border="0" alt=""></td>
   </tr>
 <tr>
-   <td colspan="58"><span class="style16">�ۏ؋K��</span></td>
+   <td colspan="58"><span class="style16">保証規定</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="58" style="line-height:18px"><span class="style18">���{���i�͂P�N�ۏ؂ƂȂ�܂��B<br>
-���戵�������ɏ]��������Ȏg�p��Ԃ̂��Ƃŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��āA ���Ђł͈�ؐӔC�𕉂����˂܂��B</span></td>
+   <td colspan="58" style="line-height:18px"><span class="style18">●本製品は１年保証となります。<br>
+●取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について、 弊社では一切責任を負いかねます。</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="2" colspan="47"><img name="answer_system_r68_c1" src="images/answer_system_r68_c1.gif" width="817" height="93" border="0" id="answer_system_r68_c1" alt=""></td>
-   <td colspan="6"><a href="answer_system.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('answer_system_r68_c48','','images/answer_system_r68_c48_f2.gif',1);"><img name="answer_system_r68_c48" src="images/answer_system_r68_c48.gif" width="85" height="15" border="0" id="answer_system_r68_c48" alt=""></a></td>
-   <td rowspan="2" colspan="5"><img name="answer_system_r68_c54" src="images/answer_system_r68_c54.gif" width="98" height="93" border="0" id="answer_system_r68_c54" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="6"><img name="answer_system_r69_c48" src="images/answer_system_r69_c48.gif" width="85" height="78" border="0" id="answer_system_r69_c48" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="78" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="58"><img name="answer_system_r70_c1" src="images/answer_system_r70_c1.gif" width="1000" height="79" border="0" id="answer_system_r70_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="79" border="0" alt=""></td>
-  </tr>
+  
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

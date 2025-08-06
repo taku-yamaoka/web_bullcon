@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>���C�g�N���[�i�I�[�g���C�g���j�b�g�j/Bullcon - �t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>ライトクルー（オートライトユニット）/Bullcon - フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}.style1 {
 	font-size: 13px
@@ -63,6 +65,40 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -76,8 +112,10 @@ function MM_preloadImages() { //v3.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/light_crew_r22_c43_f2.gif','images/light_crew_r25_c43_f2.gif','images/light_crew_r28_c43_f2.gif','images/light_crew_r31_c43_f2.gif','images/light_crew_r34_c43_f2.gif','images/light_crew_r37_c43_f2.gif','images/light_crew_r40_c43_f2.gif','images/light_crew_r43_c43_f2.gif','images/light_crew_r46_c43_f2.gif','images/light_crew_r51_c2_f2.gif','images/light_crew_r51_c7_f2.gif','images/light_crew_r51_c13_f2.gif','images/light_crew_r51_c18_f2.gif','images/light_crew_r51_c24_f2.gif','images/light_crew_r51_c31_f2.gif','images/light_crew_r51_c40_f2.gif','images/light_crew_r51_c45_f2.gif','images/light_crew_r51_c55_f2.gif','images/light_crew_r67_c49_f2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="light_crew6.png" fwpage="�y�[�W 1" fwbase="light_crew.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="light_crew6.png" fwpage="ページ 1" fwbase="light_crew.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="37" height="1" border="0" alt=""></td>
@@ -142,25 +180,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
 
-   <tr><td colspan="61"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="61"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="60"><img name="light_crew_r15_c1" src="images/light_crew_r15_c1.gif" width="1000" height="36" border="0" id="light_crew_r15_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="36" border="0" alt=""></td>
@@ -172,7 +191,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="45" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="45"><span class="style8">�X���[�����w�b�h���C�g�������_���I</span></td>
+   <td colspan="45"><span class="style8">スモール＆ヘッドライトを自動点灯！</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
   <tr>
@@ -181,16 +200,16 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="9"><img name="light_crew_r19_c1" src="images/light_crew_r19_c1.gif" width="180" height="225" border="0" id="light_crew_r19_c1" alt=""></td>
-   <td colspan="51"><span style="line-height:22px;"><span class="style6">���w���C�g�N���[�x�͎��̖͂��邳�ɉ����āA�X���[�� / �w�b�h���C�g�������œ_���E�����I�I<br>
-�@�@��Ԃ̑��s�͂������A�[����g���l���ł̑��s�ɂ��З͂𔭊��B<br>
-���G���W�����~������Ǝ����ŏ������܂��̂ŁA�����Y��h�~�ɂ����ʂ���I<span class="style1">�i�{���i�g�p���̂݁j</span><br>
-���Ɨ��������Ȃ̂ŃX���[�� / �w�b�h���C�g�̓_���E�����^�C�~���O�����ꂼ��Őݒ�\�I</span><br>
-<span class="style7">���@�y�m�[�}�����A�@�\�z����X�C�b�`�ЂƂ̊ȒP����ł��ł��m�[�}����Ԃ֖߂��܂��B<br>
-���@�y�w�b�h���C�g�L�����Z���@�\�z����M���҂��ȂǁA�T�C�h�u���[�L����ɘA�������ăw�b�h���C�g���ꎞ�I�ɏ����ł��܂��B<br>
-���@�yLED���� ���x�������j�b�g�z����Â���Ԃ̑�����y�ɍs���܂��B<br>
-���@�y�����^����Z���T�[���j�b�g�z����R���p�N�g�݌v�̂��߁A�_�b�V���{�[�h�ɐݒu���Ă��C�ɂȂ�܂���B<br>
-���@�n���Q�������v���A����/�s��HID�����v���A����/�s��LED�����v���@�����v�̎�ނ�I�΂��Ή��\�@�i�ꕔ�ԗ��������j<br>
-���@�I�[�g�}�`�b�N�n�C�r�[�������ԑΉ��@�y �`�k�b�|�P�T�O / �`�k�b�|�P�T�P / �`�k�b�|�P�U�O �z�@</span></span></td>
+   <td colspan="51"><span style="line-height:22px;"><span class="style6">●『ライトクルー』は周囲の明るさに応じて、スモール / ヘッドライトを自動で点灯・消灯！！<br>
+　　夜間の走行はもちろん、夕暮れやトンネルでの走行にも威力を発揮。<br>
+●エンジンを停止させると自動で消灯しますので、消灯忘れ防止にも効果あり！<span class="style1">（本製品使用時のみ）</span><br>
+●独立調整式なのでスモール / ヘッドライトの点灯・消灯タイミングをそれぞれで設定可能！</span><br>
+<span class="style7">○　【ノーマル復帰機能】･･･スイッチひとつの簡単操作でいつでもノーマル状態へ戻せます。<br>
+○　【ヘッドライトキャンセル機能】･･･信号待ちなど、サイドブレーキ操作に連動させてヘッドライトを一時的に消灯できます。<br>
+○　【LED内蔵 感度調整ユニット】･･･暗い夜間の操作も楽に行えます。<br>
+○　【超小型受光センサーユニット】･･･コンパクト設計のため、ダッシュボードに設置しても気になりません。<br>
+○　ハロゲンランプ式、純正/市販HIDランプ式、純正/市販LEDランプ式　ランプの種類を選ばず対応可能　（一部車両を除く）<br>
+○　オートマチックハイビーム装着車対応　【 ＡＬＣ－１５０ / ＡＬＣ－１５１ / ＡＬＣ－１６０ 】　</span></span></td>
    <td><img src="images/spacer.gif" width="1" height="225" border="0" alt=""></td>
   </tr>
   <tr>
@@ -202,15 +221,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�ėp�^�C�v</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">汎用タイプ</span></div></td>
    <td rowspan="2" colspan="11"><img name="light_crew_r22_c9" src="images/light_crew_r22_c9.gif" width="200" height="40" border="0" id="light_crew_r22_c9" alt=""></td>
-   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>�̔����i<br>���P�Q�C�P�O�O</b>�i�ō��j<br>�i�Ŕ����i ���P�P�C�O�O�O�j</div></td>
-   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JAN�R�[�h�F<br>�S�X�T�O�O�X�S�O�U�O�Q�U�V</div></td>
+   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>販売価格<br>￥１２，１００</b>（税込）<br>（税抜価格 ￥１１，０００）</div></td>
+   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JANコード：<br>４９５００９４０６０２６７</div></td>
    <td rowspan="2" colspan="18"><a href="../pdf/lightcrew_ALC-110.pdf" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('light_crew_r22_c43','','images/light_crew_r22_c43_f2.gif',1);"><img name="light_crew_r22_c43" src="images/light_crew_r22_c43.gif" width="240" height="40" border="0" id="light_crew_r22_c43" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�i�P�Q�u��/ �Q�S�u�ԁj</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">（１２Ｖ車/ ２４Ｖ車）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -218,15 +237,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">���Y�ԗp</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">日産車用</span></div></td>
    <td rowspan="2" colspan="11"><img name="light_crew_r25_c9" src="images/light_crew_r25_c9.gif" width="200" height="40" border="0" id="light_crew_r25_c9" alt=""></td>
-   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>�̔����i<br>���P�R�C�Q�O�O</b>�i�ō��j<br>�i�Ŕ����i ���P�Q�C�O�O�O�j</div></td>
-   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JAN�R�[�h�F<br>�S�X�T�O�O�X�S�O�U�O�W�T�S</div></td>
+   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>販売価格<br>￥１３，２００</b>（税込）<br>（税抜価格 ￥１２，０００）</div></td>
+   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JANコード：<br>４９５００９４０６０８５４</div></td>
    <td rowspan="2" colspan="18"><a href="../pdf/lightcrew_ALC-120.pdf" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('light_crew_r25_c43','','images/light_crew_r25_c43_f2.gif',1);"><img name="light_crew_r25_c43" src="images/light_crew_r25_c43.gif" width="240" height="40" border="0" id="light_crew_r25_c43" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�i�P�Q�u�ԁj</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">（１２Ｖ車）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -234,15 +253,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">���Y�ԗp</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">日産車用</span></div></td>
    <td rowspan="2" colspan="11"><img name="light_crew_r28_c9" src="images/light_crew_r28_c9.gif" width="200" height="40" border="0" id="light_crew_r28_c9" alt=""></td>
-   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>�̔����i<br>���P�S�C�R�O�O</b>�i�ō��j<br>�i�Ŕ����i ���P�R�C�O�O�O�j</div></td>
-   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JAN�R�[�h�F<br>�S�X�T�O�O�X�S�O�U�O�X�R�X</div></td>
+   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>販売価格<br>￥１４，３００</b>（税込）<br>（税抜価格 ￥１３，０００）</div></td>
+   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JANコード：<br>４９５００９４０６０９３９</div></td>
    <td rowspan="2" colspan="18"><a href="../pdf/lightcrew_ALC-121.pdf" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('light_crew_r28_c43','','images/light_crew_r28_c43_f2.gif',1);"><img name="light_crew_r28_c43" src="images/light_crew_r28_c43.gif" width="240" height="40" border="0" id="light_crew_r28_c43" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�i�P�Q�u�ԁj</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">（１２Ｖ車）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -250,15 +269,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�z���_�ԗp</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">ホンダ車用</span></div></td>
    <td rowspan="2" colspan="11"><img name="light_crew_r31_c9" src="images/light_crew_r31_c9.gif" width="200" height="40" border="0" id="light_crew_r31_c9" alt=""></td>
-   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>�̔����i<br>���P�R�C�Q�O�O</b>�i�ō��j<br>�i�Ŕ����i ���P�Q�C�O�O�O�j</div></td>
-   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JAN�R�[�h�F<br>�S�X�T�O�O�X�S�O�U�O�X�S�U</div></td>
+   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>販売価格<br>￥１３，２００</b>（税込）<br>（税抜価格 ￥１２，０００）</div></td>
+   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JANコード：<br>４９５００９４０６０９４６</div></td>
    <td rowspan="2" colspan="18"><a href="../pdf/lightcrew_ALC-130.pdf" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('light_crew_r31_c43','','images/light_crew_r31_c43_f2.gif',1);"><img name="light_crew_r31_c43" src="images/light_crew_r31_c43.gif" width="240" height="40" border="0" id="light_crew_r31_c43" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�i�P�Q�u�ԁj</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">（１２Ｖ車）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -266,15 +285,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�z���_�ԗp</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">ホンダ車用</span></div></td>
    <td rowspan="2" colspan="11"><img name="light_crew_r34_c9" src="images/light_crew_r34_c9.gif" width="200" height="40" border="0" id="light_crew_r34_c9" alt=""></td>
-   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>�̔����i<br>���P�S�C�R�O�O</b>�i�ō��j<br>�i�Ŕ����i ���P�R�C�O�O�O�j</div></td>
-   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JAN�R�[�h�F<br>�S�X�T�O�O�X�S�O�U�P�O�X�V</div></td>
+   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>販売価格<br>￥１４，３００</b>（税込）<br>（税抜価格 ￥１３，０００）</div></td>
+   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JANコード：<br>４９５００９４０６１０９７</div></td>
    <td rowspan="2" colspan="18"><a href="../pdf/lightcrew_ALC-131.pdf" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('light_crew_r34_c43','','images/light_crew_r34_c43_f2.gif',1);"><img name="light_crew_r34_c43" src="images/light_crew_r34_c43.gif" width="240" height="40" border="0" id="light_crew_r34_c43" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�i�P�Q�u�ԁj</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">（１２Ｖ車）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -282,15 +301,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�g���^�ԗp</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">トヨタ車用</span></div></td>
    <td rowspan="2" colspan="11"><img name="light_crew_r37_c9" src="images/light_crew_r37_c9.gif" width="200" height="40" border="0" id="light_crew_r37_c9" alt=""></td>
-   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>�̔����i<br>���P�S�C�R�O�O</b>�i�ō��j<br>�i�Ŕ����i ���P�R�C�O�O�O�j</div></td>
-   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JAN�R�[�h�F<br>�S�X�T�O�O�X�S�O�U�P�S�R�P</div></td>
+   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>販売価格<br>￥１４，３００</b>（税込）<br>（税抜価格 ￥１３，０００）</div></td>
+   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JANコード：<br>４９５００９４０６１４３１</div></td>
    <td rowspan="2" colspan="18"><a href="../pdf/lightcrew_ALC-150.pdf" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('light_crew_r37_c43','','images/light_crew_r37_c43_f2.gif',1);"><img name="light_crew_r37_c43" src="images/light_crew_r37_c43.gif" width="240" height="40" border="0" id="light_crew_r37_c43" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�i�P�Q�u�ԁj</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">（１２Ｖ車）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -298,15 +317,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�g���^�ԗp</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">トヨタ車用</span></div></td>
    <td rowspan="2" colspan="11"><img name="light_crew_r40_c9" src="images/light_crew_r40_c9.gif" width="200" height="40" border="0" id="light_crew_r40_c9" alt=""></td>
-   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>�̔����i<br>���P�S�C�R�O�O</b>�i�ō��j<br>�i�Ŕ����i ���P�R�C�O�O�O�j</div></td>
-   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JAN�R�[�h�F<br>�S�X�T�O�O�X�S�O�U�Q�O�Q�T</div></td>
+   <td rowspan="2" colspan="12" style="line-height: 16px; font-size: 14px"><div align="center"><b>販売価格<br>￥１４，３００</b>（税込）<br>（税抜価格 ￥１３，０００）</div></td>
+   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JANコード：<br>４９５００９４０６２０２５</div></td>
    <td rowspan="2" colspan="18"><a href="../pdf/lightcrew_ALC-151.pdf" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('light_crew_r40_c43','','images/light_crew_r40_c43_f2.gif',1);"><img name="light_crew_r40_c43" src="images/light_crew_r40_c43.gif" width="240" height="40" border="0" id="light_crew_r40_c43" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�i�P�Q�u�ԁj</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">（１２Ｖ車）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -314,15 +333,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�_�C�n�c�ԗp</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">ダイハツ車用</span></div></td>
    <td rowspan="2" colspan="11"><img name="light_crew_r43_c9" src="images/light_crew_r43_c9.gif" width="200" height="40" border="0" id="light_crew_r43_c9" alt=""></td>
-   <td colspan="12" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center"><b>�̔����i<br>���P�R�C�Q�O�O</b>�i�ō��j<br>�i�Ŕ����i ���P�Q�C�O�O�O�j</div></td>
-   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JAN�R�[�h�F<br>�S�X�T�O�O�X�S�O�U�P�X�T�O</div></td>
+   <td colspan="12" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center"><b>販売価格<br>￥１３，２００</b>（税込）<br>（税抜価格 ￥１２，０００）</div></td>
+   <td colspan="11" rowspan="2" style="line-height: 16px; font-size: 14px"><div align="center">JANコード：<br>４９５００９４０６１９５０</div></td>
    <td rowspan="2" colspan="18"><a href="../pdf/lightcrew_ALC-160.pdf" target="_blank" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('light_crew_r43_c43','','images/light_crew_r43_c43_f2.gif',1);"><img name="light_crew_r43_c43" src="images/light_crew_r43_c43.gif" width="240" height="40" border="0" id="light_crew_r43_c43" alt=""></a></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="8"><div align="center" class="style22"><span class="style18">�i�P�Q�u�ԁj</span></div></td>
+   <td colspan="8"><div align="center" class="style22"><span class="style18">（１２Ｖ車）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -335,8 +354,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="12" bgcolor="#F0F0F0"><div align="center"><span class="style15"><span class="style2">��</span> ����m�F�Ԏ�ꗗ</span></div></td>
-   <td colspan="48"><span class="style13">�f�ڂ���Ă��Ȃ��ԗ��ɂ��܂��āA���Ђł͏���ۗL���Ă���܂���̂ŁA�f�B�[���[�l�y�ю��ԂɂĂ��m�F���������B</span></td>
+   <td colspan="12" bgcolor="#F0F0F0"><div align="center"><span class="style15"><span class="style2">◆</span> 動作確認車種一覧</span></div></td>
+   <td colspan="48"><span class="style13">掲載されていない車両につきまして、弊社では情報を保有しておりませんので、ディーラー様及び実車にてご確認ください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -361,15 +380,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="5"><div align="center"><span class="style13">2025�N4��15���X�V</span></div></td>
-   <td colspan="7"><div align="center"><span class="style13">�K���͂���܂���</span></div></td>
-   <td colspan="5"><div align="center"><span class="style13">2023�N10��16���X�V</span></div></td>
-   <td colspan="6"><div align="center"><span class="style13">2023�N10��16���X�V</span></div></td>
-   <td colspan="7"><div align="center"><span class="style13">2023�N10��16���X�V</span></div></td>
-   <td colspan="8"><div align="center"><span class="style13">2023�N10��16���X�V</span></div></td>
-   <td colspan="5"><div align="center"><span class="style13">2023�N10��16���X�V</span></div></td>
-   <td colspan="10"><div align="center"><span class="style13">2023�N10��16���X�V</span></div></td>
-   <td colspan="7"><div align="center"><span class="style13">2025�N4��15���X�V</span></div></td>
+   <td colspan="5"><div align="center"><span class="style13">2025年4月15日更新</span></div></td>
+   <td colspan="7"><div align="center"><span class="style13">適合はありません</span></div></td>
+   <td colspan="5"><div align="center"><span class="style13">2023年10月16日更新</span></div></td>
+   <td colspan="6"><div align="center"><span class="style13">2023年10月16日更新</span></div></td>
+   <td colspan="7"><div align="center"><span class="style13">2023年10月16日更新</span></div></td>
+   <td colspan="8"><div align="center"><span class="style13">2023年10月16日更新</span></div></td>
+   <td colspan="5"><div align="center"><span class="style13">2023年10月16日更新</span></div></td>
+   <td colspan="10"><div align="center"><span class="style13">2023年10月16日更新</span></div></td>
+   <td colspan="7"><div align="center"><span class="style13">2025年4月15日更新</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="25" border="0" alt=""></td>
   </tr>
   <tr>
@@ -379,8 +398,8 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="21"><img name="light_crew_r54_c1" src="images/light_crew_r54_c1.gif" width="423" height="20" border="0" id="light_crew_r54_c1" alt=""></td>
    <td rowspan="3" colspan="12"><img name="light_crew_r54_c22" src="gifanimelc.gif" width="190" height="180" border="0" id="light_crew_r54_c22" alt=""></td>
-   <td colspan="13" style="text-align: center; font-size: 12px;">������i������j</td>
-   <td colspan="13" style="text-align: center; font-size: 12px;">�R���g���[�����j�b�g�i������j</td>
+   <td colspan="13" style="text-align: center; font-size: 12px;">受光部（装着例）</td>
+   <td colspan="13" style="text-align: center; font-size: 12px;">コントロールユニット（装着例）</td>
    <td rowspan="5"><img name="light_crew_r54_c60" src="images/light_crew_r54_c60.gif" width="7" height="220" border="0" id="light_crew_r54_c60" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
@@ -391,18 +410,18 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="150" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="3" colspan="12" style="font-size: 12px; vertical-align: top; line-height: 15px">�Ɠx�Z���T�[�����邳�����m���܂��B</span></div></td>
+   <td rowspan="3" colspan="12" style="font-size: 12px; vertical-align: top; line-height: 15px">照度センサーが明るさを感知します。</span></div></td>
    <td colspan="2" rowspan="3" style="text-align: center; font-size: 12px; vertical-align: top; line-height: 15px">&nbsp;</td>
-   <td colspan="12" rowspan="3" style="font-size: 12px; vertical-align: top; line-height: 15px">�Ɠx�Z���T�[�̊��x�𒲐��ł���̂ŁA�X���[�� / �w�b�h���C�g�_���̃^�C�~���O���ʂɒ������鎖���\�ł��B</span></div></td>
+   <td colspan="12" rowspan="3" style="font-size: 12px; vertical-align: top; line-height: 15px">照度センサーの感度を調整できるので、スモール / ヘッドライト点灯のタイミングを個別に調整する事が可能です。</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="21"><div align="center"><span class="style2">���̖͂��邳�ɉ����ăX���[���E�w�b�h���C�g�̓_��/�������������B</span></div></td>
+   <td colspan="21"><div align="center"><span class="style2">周囲の明るさに応じてスモール・ヘッドライトの点灯/消灯を自動化。</span></div></td>
    <td rowspan="2" colspan="12"><img name="light_crew_r57_c22" src="images/light_crew_r57_c22.gif" width="190" height="40" border="0" id="light_crew_r57_c22" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="21"><div align="center"><span class="style2">�m�[�}����H���A�@�\���ځi�X�C�b�`�ЂƂŃm�[�}���ɖ߂��܂��B�j</span></div></td>
+   <td colspan="21"><div align="center"><span class="style2">ノーマル回路復帰機能搭載（スイッチひとつでノーマルに戻せます。）</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -410,54 +429,54 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="60" bgcolor="#E6FFF2"><span class="style21">���w���̑O��</span></td>
+   <td colspan="60" bgcolor="#E6FFF2"><span class="style21">ご購入の前に</span></td>
    <td><img src="images/spacer.gif" width="1" height="25" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="60"><span class="style13" style="line-height:18px;">�������I�[�g���C�g�����Ԃɂ͂���t���o���܂���B<br>
-���{���i�͍��Y�Ԑ�p�i�ł��B�O���Ԃɂ͂����t���o���܂���B<br>
-���n�C���b�e�[�W�o���u�𑕒����Ă��邨�ԂŁA�����[���g�p���Ă��Ȃ����Ԃɂ͂����t���o���܂���B<br>
-���g�p�󋵂ɂ���Ă̓w�b�h���C�g�o���u�̎������Z���Ȃ�ꍇ������܂��B<br>
-���ԗ����̎�t�������E���Ɋւ���T�|�[�g�͍s���Ă���܂���̂ł��������������B<br>
+   <td colspan="60"><span class="style13" style="line-height:18px;">○純正オートライト装着車にはお取付け出来ません。<br>
+○本製品は国産車専用品です。外国車にはお取り付け出来ません。<br>
+○ハイワッテージバルブを装着しているお車で、リレーを使用していないお車にはお取り付け出来ません。<br>
+○使用状況によってはヘッドライトバルブの寿命が短くなる場合があります。<br>
+○車両毎の取付け資料・情報に関するサポートは行っておりませんのでご了承ください。<br>
 
-������A�ԗ��Ɉُ킪�������Ă��A���Ђ͈�؂̐ӔC�𕉂����˂܂��̂ł��������������B<br>
-��ALC-120�E121�i���Y�ԗp�j�@ALC-130�E131�i�z���_�ԗp�j�@ALC-150<span class="style13" style="line-height:18px;">�E151</span>�i�g���^�ԗp�j�@<span class="style13" style="line-height:18px;">ALC-160�i�_�C�n�c�ԗp�j</span>�̎��t���͓K���\�L�ڂ̎ԗ��Ɍ���܂��B<br>
-�����i�̃f�U�C���A�d�l�A�O�ρA�F�����A���i���ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B�܂��A���i�̎ʐ^���̐F�͎����Ƃ͂͑����قȂ�ꍇ������܂��̂ŁA
-���炩���߂��������������B</span></td>
+○万一、車両に異常が発生しても、弊社は一切の責任を負いかねますのでご了承ください。<br>
+○ALC-120・121（日産車用）　ALC-130・131（ホンダ車用）　ALC-150<span class="style13" style="line-height:18px;">・151</span>（トヨタ車用）　<span class="style13" style="line-height:18px;">ALC-160（ダイハツ車用）</span>の取り付けは適合表記載の車両に限ります。<br>
+○製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。また、製品の写真等の色は実物とはは多少異なる場合がありますので、
+あらかじめご了承ください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="80" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="60"><span class="style19" style="line-height:18px;">��ALC-110�ɂ��Ă̒��ӎ���<br>
-�@�@�ԗ��\����ꕔ�Ԏ�Ŗ{���i���g�p���Ẵn�C�r�[���ւ̐؂�ւ����g�p�o���Ȃ��ꍇ������܂��B�iH4���A�ꓔ�� Hi/Lo�ؑւ��^�C�v�̎ԗ����j<br>
-�@�@H4���A�ꓔ�� Hi/Lo�ؑւ��^�C�v�̎ԗ��Ńn�C�r�[�����g�p�����ꍇ�́A�{���i���n�e�e�ɂ��Ďԗ��̏������C�e�B���O�X�C�b�`���g�p���ăw�b�h���C�g��_����������A<br>
-�@�@�n�C�r�[���ɐؑւ��Ă��g�p���������B</span></td>
+   <td colspan="60"><span class="style19" style="line-height:18px;">★ALC-110についての注意事項<br>
+　　車両構造上一部車種で本製品を使用してのハイビームへの切り替えが使用出来ない場合があります。（H4等、一灯式 Hi/Lo切替えタイプの車両等）<br>
+　　H4等、一灯式 Hi/Lo切替えタイプの車両でハイビームを使用される場合は、本製品をＯＦＦにして車両の純正ライティングスイッチを使用してヘッドライトを点灯させた後、<br>
+　　ハイビームに切替えてご使用ください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="60" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="60" bgcolor="#E6FFF2"><span class="style21">���g�p��̒���</span></td>
+   <td colspan="60" bgcolor="#E6FFF2"><span class="style21">ご使用上の注意</span></td>
    <td><img src="images/spacer.gif" width="1" height="25" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="60"><span class="style13" style="line-height:18px;">�����S�ׁ̈A���s���Ɋ��x�����E�X�C�b�`������s��Ȃ��ł��������B<br>
-�����C�g�_�����ɖ{���i�̃��C���X�C�b�`���n�e�e�ɂ����ꍇ�A�X���[�����C�g��w�b�h���C�g�������ɏ������Ȃ��ꍇ������܂����A�ُ�ł͂������܂���B<br>
-���o���u�E�d�����̋ʐ؂�A�y�ь�����z���E��������g�p���@�ł̔j�����������̓��ɂ��܂��Ă͕��Ђł͈�؂̐ӔC�𕉂����˂܂��̂ł����ӂ��������B<br>
-���{���i���g�p����ۂ́A�戵��������ǂ����ǂ݂ɂȂ��Ă��g�p���������B<br>
-���ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{�̂ɕs��������ꍇ�͖{���i�̎��t���A���͎g�p�����Ȃ��ł��������B</span></td>
+   <td colspan="60"><span class="style13" style="line-height:18px;">●安全の為、走行中に感度調整・スイッチ操作を行わないでください。<br>
+●ライト点灯時に本製品のメインスイッチをＯＦＦにした場合、スモールライト･ヘッドライトが直ぐに消灯しない場合がありますが、異常ではございません。<br>
+●バルブ・電球等の玉切れ、及び誤った配線・誤ったご使用方法での破損･損傷･事故等につきましては弊社では一切の責任を負いかねますのでご注意ください。<br>
+●本製品を使用する際は、取扱説明書を良くお読みになってご使用ください。<br>
+●車両のバッテリーが弱っている状態及び、車両本体に不備がある場合は本製品の取り付け、又は使用をしないでください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="70" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="60" bgcolor="#E6FFF2"><span class="style21">���S�y�ю��t���Ɋւ��邲����</span></td>
+   <td colspan="60" bgcolor="#E6FFF2"><span class="style21">安全及び取り付けに関するご注意</span></td>
    <td><img src="images/spacer.gif" width="1" height="25" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="60"><span class="style13" style="line-height:18px;">���w�肳�ꂽ����T���Ƃ��͕K���T�[�L�b�g�e�X�^�[���g�p���A���d��i�����v�e�X�^�[�j���͎g�p���Ȃ��ł��������B<br>
-���{���i�����t������ۂ́A���̋@��ɉe����^���Ȃ��ꏊ�y�щ^�]�ɍ����x���̂Ȃ��ꏊ�ɐݒu���Ă��������B<br>
-���ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{���̋@�\�ɕs��������ꍇ�ɂ͖{���i�����t�����́A�g�p���Ȃ��ł��������B���i������ɓ��삵�Ȃ�������A�ԗ��@��ɉe����^���鋰�ꂪ����܂��B<br>
-���{���i�̎��t���́A���t���Z�p�̂���̔��X�ōs���Ă��������B<br>
-���{���i�Ƒ��@��ƕ��p���Ďg�p����ꍇ�A���@��̎戵���������悭���ǂ݂ɂȂ萳�����g�p���@�Ŏg�p���Ă��������B<br>
-���w��ȊO�̓d���ł͎g�p���Ȃ��ł��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B<br>
-���{���i�����t������ہA�d���̋ɐ��i�{�E�|�j���ԈႦ�Ȃ��悤�ɂ����ӂ��������B���A�d���R�[�h���ԑ̂̋��������ɐG��Ȃ��悤�ɂ����ӂ��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B<br>
-�����t���̍ۂɂ͕K���G���W�����~������Ԃōs���Ă��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</span></td>
+   <td colspan="60"><span class="style13" style="line-height:18px;">●指定された線を探すときは必ずサーキットテスターを使用し、検電器（ランプテスター）等は使用しないでください。<br>
+●本製品を取り付けする際は、他の機器に影響を与えない場所及び運転に差し支えのない場所に設置してください。<br>
+●車両のバッテリーが弱っている状態及び、車両本来の機能に不備がある場合には本製品を取り付け又は、使用しないでください。製品が正常に動作しなかったり、車両機器に影響を与える恐れがあります。<br>
+●本製品の取り付けは、取り付け技術のある販売店で行ってください。<br>
+●本製品と他機器と併用して使用する場合、他機器の取扱説明書もよくお読みになり正しい使用方法で使用してください。<br>
+●指定以外の電圧では使用しないでください。火災・感電・故障の原因となります。<br>
+●本製品を取り付けする際、電源の極性（＋・－）を間違えないようにご注意ください。又、電源コードが車体の金属部分に触れないようにご注意ください。火災・感電・故障の原因となります。<br>
+●取り付けの際には必ずエンジンを停止した状態で行ってください。火災・感電・故障の原因となります。</span></td>
    <td><img src="images/spacer.gif" width="1" height="100" border="0" alt=""></td>
   </tr>
   <tr>
@@ -465,30 +484,19 @@ function MM_preloadImages() { //v3.0
       <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="60"><span class="style21">�ۏ؋K��</span></td>
+    <td colspan="60"><span class="style21">保証規定</span></td>
       <td><img src="images/spacer.gif" width="1" height="25" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="60"><span class="style13" style="line-height:18px;">
-���{���i�͂P�N�ۏ؂ƂȂ�܂��B<br>
-       ���戵�������ɏ]��������Ȏg�p��Ԃ̂��Ƃŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��āA
-���Ђł͈�ؐӔC�𕉂����˂܂��B</span></td>
+●本製品は１年保証となります。<br>
+       ●取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について、
+弊社では一切責任を負いかねます。</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="2" colspan="48"><img name="light_crew_r67_c1" src="images/light_crew_r67_c1.gif" width="817" height="90" border="0" id="light_crew_r67_c1" alt=""></td>
-   <td colspan="7"><a href="light_crew.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('light_crew_r67_c49','','images/light_crew_r67_c49_f2.gif',1);"><img name="light_crew_r67_c49" src="images/light_crew_r67_c49.gif" width="85" height="15" border="0" id="light_crew_r67_c49" alt=""></a></td>
-   <td rowspan="2" colspan="5"><img name="light_crew_r67_c56" src="images/light_crew_r67_c56.gif" width="98" height="90" border="0" id="light_crew_r67_c56" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="7"><img name="light_crew_r68_c49" src="images/light_crew_r68_c49.gif" width="85" height="75" border="0" id="light_crew_r68_c49" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="75" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="60"><img name="light_crew_r69_c1" src="images/light_crew_r69_c1.gif" width="1000" height="79" border="0" id="light_crew_r69_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="79" border="0" alt=""></td>
-  </tr>
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

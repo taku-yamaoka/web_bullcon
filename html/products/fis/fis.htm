@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>�t���[�A�C�h�����O�X�g�b�v / Bullcon-�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>フリーアイドリングストップ / Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -43,6 +45,40 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -56,8 +92,10 @@ function MM_preloadImages() { //v3.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/fis_r82_c41_f2.gif')">
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="idlstop7.png" fwpage="�y�[�W 1" fwbase="fis.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
+<!-- fwtable fwsrc="idlstop7.png" fwpage="ページ 1" fwbase="fis.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="10" height="1" border="0" alt=""></td>
@@ -113,25 +151,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
 
-   <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="51"><img name="fis_r10_c1" src="images/fis_r10_c1.gif" width="1000" height="32" border="0" id="fis_r10_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="32" border="0" alt=""></td>
@@ -148,8 +167,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="34"><img name="fis_r13_c1" src="images/fis_r13_c1.gif" width="650" height="30" border="0" id="fis_r13_c1" alt=""></td>
-   <td colspan="17" style="text-align: center; font-size: 15px; line-height: 18px"><b>�̔����i ��5,280�`��6,380<span style="font-size: 13px">�i�ō��j</span></b><br>
-      <span style="font-size: 13px">�i�Ŕ����i ��4,800�`��5,800�j</span></td>
+   <td colspan="17" style="text-align: center; font-size: 15px; line-height: 18px"><b>販売価格 ￥5,280～￥6,380<span style="font-size: 13px">（税込）</span></b><br>
+      <span style="font-size: 13px">（税抜価格 ￥4,800～￥5,800）</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -166,8 +185,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="fis_r17_c1" src="images/fis_r17_c1.gif" width="30" height="60" border="0" id="fis_r17_c1" alt=""></td>
-   <td colspan="47" style="line-height:18px"><span class="style1">�A�C�h�����O�X�g�b�v�@�\�t�̎ԗ��́A�C�O�j�b�V����ON ���ɃA�C�h�����O�X�g�b�v�@�\��OFF�ɂ��Ă��A�ēx�C�O�j�b�V����ON �ɂ���Ƌ����I��ON�ɖ߂��Ă��܂��܂��B <br>
-�{���i�𑕒�����ƃC�O�j�b�V����ON �� OFF���̃A�C�h�����O�X�g�b�v�@�\��ON����OFF���L�����Ă���A����A�A�C�h�����O�X�g�b�v�X�C�b�`������s���K�v�������Ȃ�܂��B</span></td>
+   <td colspan="47" style="line-height:18px"><span class="style1">アイドリングストップ機能付の車両は、イグニッションON 時にアイドリングストップ機能をOFFにしても、再度イグニッションON にすると強制的にONに戻ってしまいます。 <br>
+本製品を装着するとイグニッションON → OFF時のアイドリングストップ機能のON又はOFFを記憶しており、毎回、アイドリングストップスイッチ操作を行う必要が無くなります。</span></td>
    <td><img src="images/spacer.gif" width="1" height="60" border="0" alt=""></td>
   </tr>
   <tr>
@@ -176,7 +195,7 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="fis_r19_c1" src="images/fis_r19_c1.gif" width="30" height="30" border="0" id="fis_r19_c1" alt=""></td>
-   <td colspan="47"><span class="style1">�ԗ��X�C�b�`�֒��ڎ{�H���邱�ƂŁA��t���X�C�b�`���g�p�����A�Ԏ����̔��ς𑹂Ȃ��܂���B</span></td>
+   <td colspan="47"><span class="style1">車両スイッチへ直接施工することで、後付けスイッチを使用せず、車室内の美観を損ないません。</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -185,7 +204,7 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="fis_r21_c1" src="images/fis_r21_c1.gif" width="30" height="30" border="0" id="fis_r21_c1" alt=""></td>
-   <td colspan="47"><span class="style1">�A�C�h�����O�X�g�b�v�@�\�����g���ɂȂ鎞�ɂ́A�A�C�h�����O�X�g�b�v�X�C�b�`�����������ŋ@�\���A���A�ݒ���L�����܂��B</span></td>
+   <td colspan="47"><span class="style1">アイドリングストップ機能をお使いになる時には、アイドリングストップスイッチを押すだけで機能復帰し、設定を記憶します。</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -216,57 +235,57 @@ function MM_preloadImages() { //v3.0
   <td colspan="21"><form action="#">		
 		<fieldset>
 		<select name="fis1" id="fis1">
-          <option value="" disabled selected>���ԗ����[�J�[��I�����ĉ������B</option>
-          <option value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\</option>
-          <option value="../../pdf/fis_fix_toyota.pdf">�@�@�g���^</option>
-          <option value="../../pdf/fis_fix_nissan.pdf">�@�@�j�b�T��</option>
-            <option value="../../pdf/fis_fix_honda.pdf">�@�@�z���_</option>
-          <option value="../../pdf/fis_fix_subaru.pdf">�@�@�X�o��</option>
-          <option value="../../pdf/fis_fix_mitsubishi.pdf">�@�@�~�c�r�V</option>
-          <option value="../../pdf/fis_fix_suzuki.pdf">�@�@�X�Y�L</option>
-          <option value="../../pdf/fis_fix_daihatsu.pdf">�@�@�_�C�n�c</option>
-          <option value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\</option>
+          <option value="" disabled selected>▼車両メーカーを選択して下さい。</option>
+          <option value="" disabled>―――――――――――――――――――――――――――</option>
+          <option value="../../pdf/fis_fix_toyota.pdf">　　トヨタ</option>
+          <option value="../../pdf/fis_fix_nissan.pdf">　　ニッサン</option>
+            <option value="../../pdf/fis_fix_honda.pdf">　　ホンダ</option>
+          <option value="../../pdf/fis_fix_subaru.pdf">　　スバル</option>
+          <option value="../../pdf/fis_fix_mitsubishi.pdf">　　ミツビシ</option>
+          <option value="../../pdf/fis_fix_suzuki.pdf">　　スズキ</option>
+          <option value="../../pdf/fis_fix_daihatsu.pdf">　　ダイハツ</option>
+          <option value="" disabled>―――――――――――――――――――――――――――</option>
         </select>
-		<input type=button onClick="window.open().location.href=fis1.value" value="���@��">
+		<input type=button onClick="window.open().location.href=fis1.value" value="決　定">
 		</fieldset>
       </FORM></td>
     <td colspan="30"><form action="#">		
 		<fieldset>			
 			<select name="fis2" id="fis2">
-<OPTION value="" disabled selected>�������ɂȂ肽�����i�ԍ���I�����ĉ������B</option>
- <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
- <OPTION value="../../pdf/FIS-T01.pdf#view=Fit">�@�@FIS-T01</OPTION>
- <OPTION value="../../pdf/FIS-T02.pdf#view=Fit">�@�@FIS-T02</OPTION>
- <OPTION value="../../pdf/FIS-T03.pdf#view=Fit">�@�@FIS-T03</OPTION>
- <OPTION value="../../pdf/FIS-T04.pdf#view=Fit">�@�@FIS-T04</OPTION>
- <OPTION value="../../pdf/FIS-T05.pdf#view=Fit">�@�@FIS-T05</OPTION>
- <OPTION value="../../pdf/FIS-T06.pdf#view=Fit">�@�@FIS-T06</OPTION>
- <OPTION value="../../pdf/FIS-T07.pdf#view=Fit">�@�@FIS-T07</OPTION>
- <OPTION value="../../pdf/FIS-T08.pdf#view=Fit">�@�@FIS-T08</OPTION>
- <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
- <OPTION value="../../pdf/FIS-N01.pdf#view=Fit">�@�@FIS-N01</OPTION>
- <OPTION value="../../pdf/FIS-N02.pdf#view=Fit">�@�@FIS-N02</OPTION>
- <OPTION value="../../pdf/FIS-N03.pdf#view=Fit">�@�@FIS-N03</OPTION>
- <OPTION value="../../pdf/FIS-N04.pdf#view=Fit">�@�@FIS-N04</OPTION>
- <OPTION value="../../pdf/FIS-N05.pdf#view=Fit">�@�@FIS-N05</OPTION>
- <OPTION value="../../pdf/FIS-N06.pdf#view=Fit">�@�@FIS-N06</OPTION>
- <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
- <OPTION value="../../pdf/FIS-S01.pdf#view=Fit">�@�@FIS-S01</OPTION> 
- <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\</OPTION>
- <OPTION value="../../pdf/FIS-D01.pdf#view=Fit">�@�@FIS-D01</OPTION> 
- <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\</OPTION>
- <OPTION value="../../pdf/FIS-100P.pdf#view=Fit">�@�@FIS-100P</OPTION>               
- <OPTION value="../../pdf/FIS-100M.pdf#view=Fit">�@�@FIS-100M</OPTION>               
- <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\�\</OPTION>
+<OPTION value="" disabled selected>▼ご覧になりたい製品番号を選択して下さい。</option>
+ <OPTION value="" disabled>―――――――――――――――――――――――――――</OPTION> 
+ <OPTION value="../../pdf/FIS-T01.pdf#view=Fit">　　FIS-T01</OPTION>
+ <OPTION value="../../pdf/FIS-T02.pdf#view=Fit">　　FIS-T02</OPTION>
+ <OPTION value="../../pdf/FIS-T03.pdf#view=Fit">　　FIS-T03</OPTION>
+ <OPTION value="../../pdf/FIS-T04.pdf#view=Fit">　　FIS-T04</OPTION>
+ <OPTION value="../../pdf/FIS-T05.pdf#view=Fit">　　FIS-T05</OPTION>
+ <OPTION value="../../pdf/FIS-T06.pdf#view=Fit">　　FIS-T06</OPTION>
+ <OPTION value="../../pdf/FIS-T07.pdf#view=Fit">　　FIS-T07</OPTION>
+ <OPTION value="../../pdf/FIS-T08.pdf#view=Fit">　　FIS-T08</OPTION>
+ <OPTION value="" disabled>―――――――――――――――――――――――――――</OPTION> 
+ <OPTION value="../../pdf/FIS-N01.pdf#view=Fit">　　FIS-N01</OPTION>
+ <OPTION value="../../pdf/FIS-N02.pdf#view=Fit">　　FIS-N02</OPTION>
+ <OPTION value="../../pdf/FIS-N03.pdf#view=Fit">　　FIS-N03</OPTION>
+ <OPTION value="../../pdf/FIS-N04.pdf#view=Fit">　　FIS-N04</OPTION>
+ <OPTION value="../../pdf/FIS-N05.pdf#view=Fit">　　FIS-N05</OPTION>
+ <OPTION value="../../pdf/FIS-N06.pdf#view=Fit">　　FIS-N06</OPTION>
+ <OPTION value="" disabled>―――――――――――――――――――――――――――</OPTION> 
+ <OPTION value="../../pdf/FIS-S01.pdf#view=Fit">　　FIS-S01</OPTION> 
+ <OPTION value="" disabled>―――――――――――――――――――――――――――</OPTION>
+ <OPTION value="../../pdf/FIS-D01.pdf#view=Fit">　　FIS-D01</OPTION> 
+ <OPTION value="" disabled>―――――――――――――――――――――――――――</OPTION>
+ <OPTION value="../../pdf/FIS-100P.pdf#view=Fit">　　FIS-100P</OPTION>               
+ <OPTION value="../../pdf/FIS-100M.pdf#view=Fit">　　FIS-100M</OPTION>               
+ <OPTION value="" disabled>―――――――――――――――――――――――――――</OPTION>
 			</select>
-             <input type=button onClick="window.open().location.href=fis2.value" value="���@��">
+             <input type=button onClick="window.open().location.href=fis2.value" value="決　定">
 		</fieldset>
       </FORM></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
   
   <tr>
-    <td colspan="51" style="text-align: center; font-size: 10px;">Yahoo�A�v���ȂǂœK���\����ѐ�����������ɕ\���o���Ȃ��ꍇ�́A�ʂ̃u���E�U�A�v�������������������B</td>
+    <td colspan="51" style="text-align: center; font-size: 10px;">Yahooアプリなどで適合表および説明書が正常に表示出来ない場合は、別のブラウザアプリをお試しください。</td>
     <td><img src="images/spacer.gif" width="1" height="5" border="0" alt=""></td>
   </tr>
   <tr>
@@ -301,13 +320,13 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6"><div align="center"><span class="style14">��1�F</span></div></td>
-   <td colspan="14"><span class="style13">�G�A�R�����~�߂Ȃ��̂ŉJ�V���Ȃǂ̎��x�̍������ł�<br>
-���K���X��������ɂ����Ȃ�܂��B</span></td>
+   <td colspan="6"><div align="center"><span class="style14">例1：</span></div></td>
+   <td colspan="14"><span class="style13">エアコンを止めないので雨天時などの湿度の高い日でも<br>
+窓ガラスがくもりにくくなります。</span></td>
    <td rowspan="2" colspan="3"><img name="fis_r60_c21" src="images/fis_r60_c21.gif" width="20" height="270" border="0" id="fis_r60_c21" alt=""></td>
-   <td colspan="4"><div align="center"><span class="style14">��2�F</span></div></td>
-   <td colspan="24"><span class="style13">�J��Ԃ����G���W���Ďn�������炷�̂ŁA<br>
-�o�b�e���[�̕��S�Ƃ����z�̕��S���y�����܂��B</span></td>
+   <td colspan="4"><div align="center"><span class="style14">例2：</span></div></td>
+   <td colspan="24"><span class="style13">繰り返されるエンジン再始動を減らすので、<br>
+バッテリーの負担とお財布の負担を軽減します。</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
   <tr>
@@ -320,8 +339,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6"><div align="center"><span class="style14">��3�F</span></div></td>
-   <td colspan="45"><span class="style13">�M���Œ�Ԃ��Ă��A�G���W�����~�߂Ȃ��̂Ŕ��i�̃^�C�~���O���x��܂���B</span></td>
+   <td colspan="6"><div align="center"><span class="style14">例3：</span></div></td>
+   <td colspan="45"><span class="style13">信号で停車しても、エンジンを止めないので発進のタイミングが遅れません。</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -387,16 +406,16 @@ function MM_preloadImages() { //v3.0
    <td>&nbsp;</td>
     <ul><td colspan="48" valign="top" style="line-height:16px"><span class="style1"><span class="style2">
      </span>
-      <li class="style1">�{���i�͎蓮�ɂ��A�C�h�����O�X�g�b�v�@�\��ON/OFF��⏕���鐻�i�ł��B</li>
-       <li class="style1">�{���i�͊e�ԗ����ƂɓK�������܂��Ă��܂��B �K���ȊO�̎ԗ��ł͎g�p���Ȃ��ł��������B��K���̐��i�����t�����������������t�����@�Ȃǂɂ��s��Ɋւ��ẮA���Ђł͈�ؐӔC�𕉂��܂���B���A�K���Ԏ�ł����Ă��ԗ����[�J�[�ł̎d�l�ύX�ɂ�肨���t�����o���Ȃ��ꍇ������܂��B</li>
-       <li class="style1">�{���i�̋@�\���g�p�������ɂ��R������Ȃ�\��������܂��̂ŗ\�߂��������������B</li>
-       <li class="style1">�{���i���g�p���Ĕ����������̂�̏�A�j�����Ɋւ��Ă̐ӔC�͕��Ђł͈�ؕ����܂���̂ŗ\�߂��������������B</li>
-       <li class="style1">�{���i�̌�������t�����@�y�юg�p���@�ɂ�鎖�̓��Ɋւ��܂��ẮA���Ђł͈�ؐӔC�𕉂��܂���B</li>
-       <li class="style1">�{���i�̎��t���ɂ͎ԗ��p�l�����̒E�����K�v�ł��B�L�Y�t���A�j���ɒ��ӂ��č�Ƃ��s���Ă��������B</li>
-       <li class="style1">���w�����y�яC�����ł̖{���i�̎��t���E���O���Ɋ|����H���y�ѕ��Ђւ̑������̔�p�͂��q�l�����S�ƂȂ�܂��B
-        ���A�C�����̂��a����ɍۂ��Č����y�ё�֕i���݂̑��o���͍s���Ă���܂���B</li>
-       <li class="style1">�{���i�̍쓮�̗L���Ɋ֌W�Ȃ��A���̂ⓐ���Q���̐ӔC�͕��Ђł͈�ؐӔC�𕉂��܂���B</li>
-       <li class="style1">���i�̃f�U�C���A�d�l�A�O�ρA�F�����A���i���ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B�܂��A ���i�̎ʐ^���̐F�͎����Ƃ͂͑����قȂ�ꍇ������܂��̂ŁA���炩���߂��������������B</li>
+      <li class="style1">本製品は手動によるアイドリングストップ機能のON/OFFを補助する製品です。</li>
+       <li class="style1">本製品は各車両ごとに適合が決まっています。 適合以外の車両では使用しないでください。非適合の製品を取り付けした事や誤った取り付け方法などによる不具合に関しては、弊社では一切責任を負いません。又、適合車種であっても車両メーカーでの仕様変更によりお取り付けが出来ない場合があります。</li>
+       <li class="style1">本製品の機能を使用した事により燃費が悪くなる可能性がありますので予めご了承ください。</li>
+       <li class="style1">本製品を使用して発生した事故や故障、破損等に関しての責任は弊社では一切負いませんので予めご了承ください。</li>
+       <li class="style1">本製品の誤った取り付け方法及び使用方法による事故等に関しましては、弊社では一切責任を負いません。</li>
+       <li class="style1">本製品の取り付けには車両パネル等の脱着が必要です。キズ付け、破損に注意して作業を行ってください。</li>
+       <li class="style1">ご購入時及び修理等での本製品の取り付け・取り外しに掛かる工賃及び弊社への送料等の費用はお客様ご負担となります。
+        又、修理時のお預かりに際して交換及び代替品等の貸し出しは行っておりません。</li>
+       <li class="style1">本製品の作動の有無に関係なく、事故や盗難被害等の責任は弊社では一切責任を負いません。</li>
+       <li class="style1">製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。また、 製品の写真等の色は実物とはは多少異なる場合がありますので、あらかじめご了承ください。</li>
    </td>
    <td><img src="images/spacer.gif" width="1" height="150" border="0" alt=""></td>
   </tr>
@@ -413,18 +432,18 @@ function MM_preloadImages() { //v3.0
    <td>&nbsp;</td>
    <ul><td colspan="48" valign="top" style="line-height:16px"><span class="style1"><span class="style2">
      </span>
-     <li class="style1">�w�肳�ꂽ����T���ۂ́A�K���T�[�L�b�g�e�X�^�[���g�p���A���d�퓙�͎g�p���Ȃ��ł��������B</li>
-       <li class="style1">�d���n�[�l�X�������Ȃ��ł��������B�����ȋȂ��A�˂���A�����������M���H�Ȃǉ����Ȃ��悤�����ӂ��������B</li>
-       <li class="style1">�{���i�𕪉���������������肵�Ȃ��ł��������B</li>
-       <li class="style1">�{���i�̎��t���A�z���A�g�p���@���ԈႤ�Ǝԗ��̑��u�A�@��ނ�j�����͑������鋰�ꂪ����A�΍ЁA�̏�̌����ƂȂ�܂��B</li>
-       <li class="style1">�{���i�����t������ہA�n�[�l�X���ԑ̂̋��������Ɋ��ݍ��܂Ȃ��悤�ɂ����ӂ��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</li>
-       <li class="style1">�{���i�̎��t���͕K��IG OFF�i�G���W�����n�����Ȃ���ԁj�A��Ԃōs���Ă��������B</li>
-       <li class="style1">�ԗ����i�����O���č�Ƃ��s���ꍇ�́A���̎ԗ��̐�����������Q�Ƃ��Ă��������B</li>
-       <li class="style1">�ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{���̋@�\�ɕs��������ꍇ�ɂ͖{���i�����t�����͎g�p���Ȃ��ł��������B</li>
-       <li class="style1">�ԗ����Ƃ̎��t�������E���Ɋւ���T�|�[�g�͍s���Ă���܂���̂ł��������������B</li>
-       <li class="style1">�{���i�̎��t���́A���t���Z�p�̂���̔��X�ōs���Ă��������B</li>
-       <li class="style1">�ԗ����[�J�[�ł̎d�l�ύX���Ő���ɓ��삵�Ȃ��Ȃ�ꍇ������܂��B</li>
-       <li class="style1">�R�l�N�^�[��^�[�~�i���[�q�͊m���ɐڑ����Ă��������B</li>
+     <li class="style1">指定された線を探す際は、必ずサーキットテスターを使用し、検電器等は使用しないでください。</li>
+       <li class="style1">電源ハーネスを傷つけないでください。無理な曲げ、ねじり、引っ張りや加熱加工など加えないようご注意ください。</li>
+       <li class="style1">本製品を分解したり改造したりしないでください。</li>
+       <li class="style1">本製品の取り付け、配線、使用方法を間違うと車両の装置、機器類を破損又は損傷する恐れがあり、火災、故障の原因となります。</li>
+       <li class="style1">本製品を取り付けする際、ハーネスが車体の金属部分に噛み込まないようにご注意ください。火災・感電・故障の原因となります。</li>
+       <li class="style1">本製品の取り付けは必ずIG OFF（エンジンが始動しない状態）、状態で行ってください。</li>
+       <li class="style1">車両部品を取り外して作業を行う場合は、その車両の整備解説書を参照してください。</li>
+       <li class="style1">車両のバッテリーが弱っている状態及び、車両本来の機能に不備がある場合には本製品を取り付け又は使用しないでください。</li>
+       <li class="style1">車両ごとの取り付け資料・情報に関するサポートは行っておりませんのでご了承ください。</li>
+       <li class="style1">本製品の取り付けは、取り付け技術のある販売店で行ってください。</li>
+       <li class="style1">車両メーカーでの仕様変更等で正常に動作しなくなる場合があります。</li>
+       <li class="style1">コネクターやターミナル端子は確実に接続してください。</li>
    </td>
    <td><img src="images/spacer.gif" width="1" height="150" border="0" alt=""></td>
   </tr>
@@ -433,7 +452,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="51"><span class="style16">�ۏ؋K��</span></td>
+   <td colspan="51"><span class="style16">保証規定</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -441,37 +460,14 @@ function MM_preloadImages() { //v3.0
    <td>&nbsp;</td>
     <ul><td colspan="48" valign="top" style="line-height:16px"><span class="style1"><span class="style2">
      </span>
-      <li class="style1">�{���i��3�N�ۏ؂ƂȂ�܂��B</li>
-     <li class="style1">�戵�������ɏ]��������Ȏg�p��Ԃ̉��ŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��Ă͕��Ђł͈�ؐӔC�𕉂����˂܂��B</li>
+      <li class="style1">本製品は3年保証となります。</li>
+     <li class="style1">取扱説明書に従った正常な使用状態の下で不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等については弊社では一切責任を負いかねます。</li>
       </td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
-  <tr>
-   <td colspan="51"><img name="fis_r80_c1" src="images/fis_r80_c1.gif" width="1000" height="20" border="0" id="fis_r80_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="51"><img name="fis_r81_c1" src="images/fis_r81_c1.gif" width="1000" height="10" border="0" id="fis_r81_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td rowspan="2" colspan="40"><img name="fis_r82_c1" src="images/fis_r82_c1.gif" width="817" height="83" border="0" id="fis_r82_c1" alt=""></td>
-   <td colspan="6"><a href="fis.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('fis_r82_c41','','images/fis_r82_c41_f2.gif',1);"><img name="fis_r82_c41" src="images/fis_r82_c41.gif" width="85" height="15" border="0" id="fis_r82_c41" alt=""></a></td>
-   <td rowspan="2" colspan="5"><img name="fis_r82_c47" src="images/fis_r82_c47.gif" width="98" height="83" border="0" id="fis_r82_c47" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="6"><img name="fis_r83_c41" src="images/fis_r83_c41.gif" width="85" height="68" border="0" id="fis_r83_c41" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="68" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="51"><img name="fis_r84_c1" src="images/fis_r84_c1.gif" width="1000" height="79" border="0" id="fis_r84_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="79" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="51"><img name="fis_r85_c1" src="images/fis_r85_c1.gif" width="1000" height="7" border="0" id="fis_r85_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="7" border="0" alt=""></td>
-  </tr>
+ 
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

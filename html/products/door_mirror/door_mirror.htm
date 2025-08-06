@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>�I�[�g�h�A�~���[�R���g���[���[ / Bullcon - �t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>オートドアミラーコントローラー / Bullcon - フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -36,12 +38,48 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/door_mirror_r65_c2_s2.gif','images/door_mirror_r65_c26_s2.gif','images/door_mirror_r65_c52_s2.gif','images/door_mirror_r69_c1_s2.gif','images/door_mirror_r69_c11_s2.gif','images/door_mirror_r69_c20_s2.gif','images/door_mirror_r69_c29_s2.gif','images/door_mirror_r69_c47_s2.gif','images/door_mirror_r69_c54_s2.gif','images/door_mirror_r69_c61_s2.gif','images/door_mirror_r69_c68_s2.gif','images/door_mirror_r79_c4_s2.gif','images/door_mirror_r79_c14_s2.gif','images/door_mirror_r79_c22_s2.gif','images/door_mirror_r79_c31_s2.gif','images/door_mirror_r79_c43_s2.gif','images/door_mirror_r79_c49_s2.gif','images/door_mirror_r79_c56_s2.gif','images/door_mirror_r79_c63_s2.gif','images/door_mirror_r79_c69_s2.gif','images/door_mirror_r81_c4_s2.gif','images/door_mirror_r81_c14_s2.gif','images/door_mirror_r81_c22_s2.gif','images/door_mirror_r81_c31_s2.gif','images/door_mirror_r91_c64_s2.gif');">
-<table  cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="door_mirror20250108.png" fwpage="�y�[�W 1" fwbase="door_mirror.gif" fwstyle="Dreamweaver" fwdocid = "145977400" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table  cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="door_mirror20250108.png" fwpage="ページ 1" fwbase="door_mirror.gif" fwstyle="Dreamweaver" fwdocid = "145977400" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="7" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
@@ -120,26 +158,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
-
-   <tr><td colspan="74"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="74"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   
   <tr>
    <td colspan="74"><img name="door_mirror_r2_c1" src="images/door_mirror_r2_c1.gif" width="999" height="10" id="door_mirror_r2_c1" alt=""></td>
@@ -168,7 +186,7 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="5" bgcolor="#330033"><img name="door_mirror_r7_c1" src="images/door_mirror_r7_c1.gif" width="29" height="20" id="door_mirror_r7_c1" alt=""></td>
    <td><img name="door_mirror_r7_c6" src="images/door_mirror_r7_c6.gif" width="1" height="20" id="door_mirror_r7_c6" alt=""></td>
-   <td colspan="30" bgcolor="#330033" style="font-size: 14px; color: #FFFFFF;"><b>�Ԏ�ʓK���^�C�v</b></td>
+   <td colspan="30" bgcolor="#330033" style="font-size: 14px; color: #FFFFFF;"><b>車種別適合タイプ</b></td>
    <td colspan="39" bgcolor="#330033"><img name="door_mirror_r7_c37" src="images/door_mirror_r7_c37.gif" width="600" height="20" id="door_mirror_r7_c37" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
@@ -176,11 +194,11 @@ function MM_preloadImages() { //v3.0
    <td rowspan="14" colspan="7" bgcolor="#330033"><img name="door_mirror_r8_c1" src="images/door_mirror_r8_c1.gif" width="99" height="175" id="door_mirror_r8_c1" alt=""></td>
    <td rowspan="14"><img name="door_mirror_r8_c8" src="images/door_mirror_r8_c8.gif" width="1" height="175" id="door_mirror_r8_c8" alt=""></td>
    <td colspan="28" rowspan="14" bgcolor="#330033" style="font-size: 11px; color: #FFFFFF;">
-      <li> �����R���L�[�A���^�C�v�Ƃ`�b�b�A���^�C�v�����̍쓮�@�\�𓋍ڂ��Ă���A���D�݂ɉ������쓮�^�C�v�̑I�����\�ł��B�i��t���ɑI���\�j</li>
-      <li> �ԗ��X�C�b�`���i�[�����ꂽ�ꍇ�́A���A���ɂ����܂ō쓮���Ȃ��ȒPOFF�@�\�̗p�I�B</li>
-      <li> �Ⴒ���Ӂ�ADM�V���[�Y�̓h�A�~���[�J������̂݃R�l�N�^���ɂȂ��Ă���܂����A���̑��̔z���ɂ��Ă͌�����Ƃ��K�v�ł��B</li>
-       �iADM-501�́uACC�A���v�@�\������܂���B�j</td>
-   <td colspan="39" style="font-size: 13px;"><b>�@�g���^ / ���N�T�X / �X�o�� / �_�C�n�c</b></td>
+      <li> リモコンキー連動タイプとＡＣＣ連動タイプ両方の作動機能を搭載してあり、お好みに応じた作動タイプの選択が可能です。（取付時に選択可能）</li>
+      <li> 車両スイッチを格納側された場合は、復帰側にされるまで作動しない簡単OFF機能採用！。</li>
+      <li> ≪ご注意≫ADMシリーズはドアミラー開閉制御線のみコネクタ式になっておりますが、その他の配線については結線作業が必要です。</li>
+       （ADM-501は「ACC連動」機能がありません。）</td>
+   <td colspan="39" style="font-size: 13px;"><b>　トヨタ / レクサス / スバル / ダイハツ</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -189,9 +207,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r10_c37" src="images/door_mirror_r10_c37.gif" width="150" height="20" id="door_mirror_r10_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094060984</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��12,100�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��11,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094060984</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥12,100（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥11,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -200,9 +218,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r12_c37" src="images/door_mirror_r12_c37.gif" width="150" height="20" id="door_mirror_r12_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094060991</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��12,100�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��11,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094060991</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥12,100（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥11,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -211,9 +229,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r14_c37" src="images/door_mirror_r14_c37.gif" width="150" height="20" id="door_mirror_r14_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094061004</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��12,100�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��11,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094061004</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥12,100（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥11,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -222,9 +240,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r16_c37" src="images/door_mirror_r16_c37.gif" width="150" height="20" id="door_mirror_r16_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094061011</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��12,100�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��11,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094061011</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥12,100（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥11,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -233,9 +251,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r18_c37" src="images/door_mirror_r18_c37.gif" width="150" height="20" id="door_mirror_r18_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094061448</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��12,100�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��11,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094061448</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥12,100（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥11,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -243,7 +261,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
   </tr>
   <tr>
-   <td colspan="39" style="font-size: 13px;"><b>�@�j�b�T��</b></td>
+   <td colspan="39" style="font-size: 13px;"><b>　ニッサン</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -254,9 +272,9 @@ function MM_preloadImages() { //v3.0
    <td rowspan="16" colspan="35" bgcolor="#330033"><img name="door_mirror_r22_c1" src="images/door_mirror_r22_c1.gif" width="399" height="200" id="door_mirror_r22_c1" alt=""></td>
    <td rowspan="16"><img name="door_mirror_r22_c36" src="images/door_mirror_r22_c36.gif" width="1" height="200" id="door_mirror_r22_c36" alt=""></td>
    <td colspan="8"><img name="door_mirror_r22_c37" src="images/door_mirror_r22_c37.gif" width="150" height="20" id="door_mirror_r22_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094061028</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��12,100�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��11,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094061028</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥12,100（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥11,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -265,9 +283,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r24_c37" src="images/door_mirror_r24_c37.gif" width="150" height="20" id="door_mirror_r24_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094061035</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��12,100�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��11,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094061035</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥12,100（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥11,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -275,7 +293,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
   </tr>
   <tr>
-   <td colspan="39" style="font-size: 13px;"><b>�@�z���_</b></td>
+   <td colspan="39" style="font-size: 13px;"><b>　ホンダ</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -284,9 +302,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r28_c37" src="images/door_mirror_r28_c37.gif" width="150" height="20" id="door_mirror_r28_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094061042</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��12,100�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��11,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094061042</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥12,100（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥11,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -294,7 +312,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
   </tr>
   <tr>
-   <td colspan="39" style="font-size: 13px;"><b>�@�_�C�n�c / �g���^</b></td>
+   <td colspan="39" style="font-size: 13px;"><b>　ダイハツ / トヨタ</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -303,9 +321,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r32_c37" src="images/door_mirror_r32_c37.gif" width="150" height="20" id="door_mirror_r32_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094061165</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��12,100�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��11,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094061165</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥12,100（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥11,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -313,7 +331,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
   </tr>
   <tr>
-   <td colspan="39" style="font-size: 13px;"><b>�@���N�T�X �h�r��p</b></td>
+   <td colspan="39" style="font-size: 13px;"><b>　レクサス ＩＳ専用</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -322,9 +340,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r36_c37" src="images/door_mirror_r36_c37.gif" width="150" height="20" id="door_mirror_r36_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094061301</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��29,480�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��26,800�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094061301</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥29,480（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥26,800）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -339,7 +357,7 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="5" bgcolor="#003900"><img name="door_mirror_r39_c1" src="images/door_mirror_r39_c1.gif" width="29" height="20" id="door_mirror_r39_c1" alt=""></td>
    <td><img name="door_mirror_r39_c6" src="images/door_mirror_r39_c6.gif" width="1" height="20" id="door_mirror_r39_c6" alt=""></td>
-   <td colspan="30" bgcolor="#003900" style="font-size: 14px; color: #FFFFFF;"><b>�ėp�z���^�C�v</b></td>
+   <td colspan="30" bgcolor="#003900" style="font-size: 14px; color: #FFFFFF;"><b>汎用配線タイプ</b></td>
    <td colspan="39" bgcolor="#003900"><img name="door_mirror_r39_c37" src="images/door_mirror_r39_c37.gif" width="600" height="20" id="door_mirror_r39_c37" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
@@ -347,10 +365,10 @@ function MM_preloadImages() { //v3.0
    <td rowspan="5" colspan="15" bgcolor="#003900"><img name="door_mirror_r40_c1" src="images/door_mirror_r40_c1.gif" width="149" height="145" id="door_mirror_r40_c1" alt=""></td>
    <td rowspan="5"><img name="door_mirror_r40_c16" src="images/door_mirror_r40_c16.gif" width="1" height="145" id="door_mirror_r40_c16" alt=""></td>
    <td rowspan="5" colspan="20" bgcolor="#003900" style="font-size: 11px; color: #FFFFFF;">
-      <li>�h�A���b�N�Ńh�A�~���[���i�[�A�A�����b�N�Ńh�A�~���[�𕜋A���܂��B</li>
-      <li>�~�Ԍ�Ƀh�A�~���[���i�[���܂��̂ŁA�~�Ԏ��̌�����S�m�F���s���܂��B</li>
-      <li>���A�L�[���o����ڑ����鎖�ő��s���̌�쓮��h���܂��B</li></td>
-   <td colspan="39" style="font-size: 13px;"><b>�@�����R���L�[�A���@�i�h�A���b�N/�A�����b�N�A���j</b></td>
+      <li>ドアロックでドアミラーを格納、アンロックでドアミラーを復帰します。</li>
+      <li>降車後にドアミラーを格納しますので、降車時の後方安全確認も行えます。</li>
+      <li>又、キー検出線を接続する事で走行中の誤作動を防ぎます。</li></td>
+   <td colspan="39" style="font-size: 13px;"><b>　リモコンキー連動　（ドアロック/アンロック連動）</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -359,9 +377,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r42_c37" src="images/door_mirror_r42_c37.gif" width="150" height="20" id="door_mirror_r42_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094060199</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��12,100�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��11,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094060199</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥12,100（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥11,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -380,7 +398,7 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="5" bgcolor="#5E0000"><img name="door_mirror_r46_c1" src="images/door_mirror_r46_c1.gif" width="29" height="20" id="door_mirror_r46_c1" alt=""></td>
    <td><img name="door_mirror_r46_c6" src="images/door_mirror_r46_c6.gif" width="1" height="20" id="door_mirror_r46_c6" alt=""></td>
-   <td colspan="30" bgcolor="#5E0000" style="font-size: 14px; color: #FFFFFF;"><b>�ėp�z���^�C�v</b></td>
+   <td colspan="30" bgcolor="#5E0000" style="font-size: 14px; color: #FFFFFF;"><b>汎用配線タイプ</b></td>
    <td colspan="39" bgcolor="#5E0000"><img name="door_mirror_r46_c37" src="images/door_mirror_r46_c37.gif" width="600" height="20" id="door_mirror_r46_c37" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
@@ -388,9 +406,9 @@ function MM_preloadImages() { //v3.0
    <td rowspan="5" colspan="15" bgcolor="#5E0000"><img name="door_mirror_r47_c1" src="images/door_mirror_r47_c1.gif" width="149" height="145" id="door_mirror_r47_c1" alt=""></td>
    <td rowspan="5"><img name="door_mirror_r47_c16" src="images/door_mirror_r47_c16.gif" width="1" height="145" id="door_mirror_r47_c16" alt=""></td>
    <td rowspan="5" colspan="20" bgcolor="#5E0000" style="font-size: 11px; color: #FFFFFF;">
-      <li>�G���W���L�[���`�b�b�ɂ���ƃh�A�~���[�����A�A�L�[�n�e�e�����P�O�b��Ƀh�A�~���[���i�[���܂��B</li>
-      <li>���A�L�[���o����ڑ����鎖�ŃL�[�𔲂��Ă����P�O�b��Ɋi�[���鎖���\�ɂȂ�܂��B</li></td>
-   <td colspan="39" style="font-size: 13px;"><b>�@�`�b�b�A���i�G���W���n�m/�n�e�e�A���j</b></td>
+      <li>エンジンキーをＡＣＣにするとドアミラーが復帰、キーＯＦＦから約１０秒後にドアミラーを格納します。</li>
+      <li>又、キー検出線を接続する事でキーを抜いてから約１０秒後に格納する事も可能になります。</li></td>
+   <td colspan="39" style="font-size: 13px;"><b>　ＡＣＣ連動（エンジンＯＮ/ＯＦＦ連動）</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -399,9 +417,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r49_c37" src="images/door_mirror_r49_c37.gif" width="150" height="20" id="door_mirror_r49_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094060182</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��10,780�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��9,800�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094060182</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥10,780（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥9,800）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -420,14 +438,14 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="5" bgcolor="#003366"><img name="door_mirror_r53_c2" src="images/door_mirror_r53_c2.gif" width="29" height="20" id="door_mirror_r53_c2" alt=""></td>
    <td><img name="door_mirror_r53_c2" src="images/door_mirror_r53_c2.gif" width="1" height="20" id="door_mirror_r53_c2" alt=""></td>
-      <td colspan="30" bgcolor="#003366" style="font-size: 14px; color: #FFFFFF;"><b>ADL-�P�P�EADK-�X�W�p�I�v�V����</b></td>
+      <td colspan="30" bgcolor="#003366" style="font-size: 14px; color: #FFFFFF;"><b>ADL-１１・ADK-９８用オプション</b></td>
       <td colspan="39" bgcolor="#003366" style="font-size: 14px; color: #FFFFFF;"></td>
   </tr>
     
   <tr>
-   <td rowspan="4" colspan="35" style="font-size: 11px;"><li>�h�A�~���[�X�C�b�`���yD�z�^�C�v�̎ԗ��փI�[�g�h�A�~���[�R���g���[���[�𑕒�����ۂɕK�v�ł��B�i��Ƀg���^�ԁj</li></td>
+   <td rowspan="4" colspan="35" style="font-size: 11px;"><li>ドアミラースイッチが【D】タイプの車両へオートドアミラーコントローラーを装着する際に必要です。（主にトヨタ車）</li></td>
    <td rowspan="4"><img name="door_mirror_r54_c36" src="images/door_mirror_r54_c36.gif" width="1" height="50" id="door_mirror_r54_c36" alt=""></td>
-   <td colspan="39" style="font-size: 13px;"><b>�@�y�c�z�^�C�v�X�C�b�`�ԗ��p�I�v�V����</b></td>
+   <td colspan="39" style="font-size: 13px;"><b>　【Ｄ】タイプスイッチ車両用オプション</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -436,9 +454,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="8"><img name="door_mirror_r56_c37" src="images/door_mirror_r56_c37.gif" width="150" height="20" id="door_mirror_r56_c37" alt=""></td>
-   <td colspan="12" style="font-size: 11px;">JAN�F4950094060168</td>
-   <td colspan="9" style="font-size: 11px;">�̔����i�@��3,300�i�ō��j</td>
-   <td colspan="10" style="font-size: 11px;">�i�Ŕ����i�@��3,000�j</td>
+   <td colspan="12" style="font-size: 11px;">JAN：4950094060168</td>
+   <td colspan="9" style="font-size: 11px;">販売価格　￥3,300（税込）</td>
+   <td colspan="10" style="font-size: 11px;">（税抜価格　￥3,000）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -457,12 +475,12 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="33"><img name="door_mirror_r60_c1" src="images/door_mirror_r60_c1.gif" width="365" height="30" id="door_mirror_r60_c1" alt=""></td>
    <td><img name="door_mirror_r60_c34" src="images/door_mirror_r60_c34.gif" width="1" height="30" id="door_mirror_r60_c34" alt=""></td>
-   <td rowspan="2" colspan="41"><span style="line-height: 19px; font-size: 12px;"><b>ADL-11�FADK-98�@�X�C�b�`���ʕ��@</b><br>
-       <li>A�^�C�v��������v�b�V�����|�|�X�C�b�`�������Ɩ߂�^�C�v�B</li>
-       <li>B�^�C�v����c�[�v�b�V�����|�|�X�C�b�`�������Ɩ߂炸�A�ēx�����Ɩ߂�^�C�v��2�{��������̃^�C�v�B</li>
-       <li>C�^�C�v����V�[�\�[���|�|�|�|�X�C�b�`�����E�A���͏㉺�ɓ|���^�C�v�B�i�����@�\������܂ށj</li>
-       <li>D�^�C�v����c�[�v�b�V�����|�|�X�C�b�`�������Ɩ߂炸�A�ēx�����Ɩ߂�^�C�v��1�{��������̃^�C�v�B</li>
-       �@�iD�^�C�v�̎ԗ��ɂ͕ʓrMR-30���K�v�ɂȂ�܂��B�j</span></td>
+   <td rowspan="2" colspan="41"><span style="line-height: 19px; font-size: 12px;"><b>ADL-11：ADK-98　スイッチ識別方法</b><br>
+       <li>Aタイプ･･･ワンプッシュ式－－スイッチを押すと戻るタイプ。</li>
+       <li>Bタイプ･･･ツープッシュ式－－スイッチを押すと戻らず、再度押すと戻るタイプで2本制御方式のタイプ。</li>
+       <li>Cタイプ･･･シーソー式－－－－スイッチを左右、又は上下に倒すタイプ。（中立機能ありも含む）</li>
+       <li>Dタイプ･･･ツープッシュ式－－スイッチを押すと戻らず、再度押すと戻るタイプで1本制御方式のタイプ。</li>
+       　（Dタイプの車両には別途MR-30が必要になります。）</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
@@ -532,19 +550,19 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
   <tr>
-   <td colspan="9" style="text-align: center; font-size: 11px;">2025�N5��26���X�V</td>
+   <td colspan="9" style="text-align: center; font-size: 11px;">2025年5月26日更新</td>
    <td><img name="door_mirror_r70_c11" src="images/door_mirror_r70_c11.gif" width="1" height="20" id="door_mirror_r70_c11" alt=""></td>
-   <td colspan="8" style="text-align: center; font-size: 11px;">2025�N1��8���X�V</td>
+   <td colspan="8" style="text-align: center; font-size: 11px;">2025年1月8日更新</td>
    <td><img name="door_mirror_r70_c20" src="images/door_mirror_r70_c20.gif" width="1" height="20" id="door_mirror_r70_c20" alt=""></td>
-   <td colspan="8" style="text-align: center; font-size: 11px;">2025�N3��12���X�V</td>
+   <td colspan="8" style="text-align: center; font-size: 11px;">2025年3月12日更新</td>
    <td><img name="door_mirror_r70_c29" src="images/door_mirror_r70_c29.gif" width="1" height="20" id="door_mirror_r70_c29" alt=""></td>
-   <td colspan="12" style="text-align: center; font-size: 11px;">2025�N2��6���X�V</td>
-   <td colspan="5" style="text-align: center; font-size: 11px;">�K���͂���܂���</td>
+   <td colspan="12" style="text-align: center; font-size: 11px;">2025年2月6日更新</td>
+   <td colspan="5" style="text-align: center; font-size: 11px;">適合はありません</td>
    <td><img name="door_mirror_r70_c47" src="images/door_mirror_r70_c47.gif" width="1" height="20" id="door_mirror_r70_c47" alt=""></td>
-   <td colspan="7" style="text-align: center; font-size: 11px;">2023�N10��16���X�V</td>
-   <td colspan="7" style="text-align: center; font-size: 11px;">2025�N1��8���X�V</td>
-   <td colspan="7" style="text-align: center; font-size: 11px;">2024�N11��6���X�V</td>
-   <td colspan="7" style="text-align: center; font-size: 11px;">2025�N1��8���X�V</td>
+   <td colspan="7" style="text-align: center; font-size: 11px;">2023年10月16日更新</td>
+   <td colspan="7" style="text-align: center; font-size: 11px;">2025年1月8日更新</td>
+   <td colspan="7" style="text-align: center; font-size: 11px;">2024年11月6日更新</td>
+   <td colspan="7" style="text-align: center; font-size: 11px;">2025年1月8日更新</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -564,34 +582,34 @@ function MM_preloadImages() { //v3.0
    <td colspan="43" bgcolor="#265cff"><form action="#" class="style17">		
 		<div align="center">
 		  <fieldset>			
-		    <span class="style12" style="font-size: 14px; color: #FFFFFF;"><b>�戵������</b></span> 
+		    <span class="style12" style="font-size: 14px; color: #FFFFFF;"><b>取扱説明書</b></span> 
 	      <select name="adm" id="adm">
-            <OPTION value="" disabled selected>���i�Ԃ�I�����ĉ������B</option>
-	                     <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
-	                     <OPTION value="../pdf/ADM-101.pdf#view=Fit">�@ADM-101 �i�g���^�j</OPTION>
-	                     <OPTION value="../pdf/ADM-102.pdf#view=Fit">�@ADM-102 �i�g���^�j</OPTION>
-	                     <OPTION value="../pdf/ADM-103.pdf#view=Fit">�@ADM-103 �i�g���^�j</OPTION>
-	                     <OPTION value="../pdf/ADM-104.pdf#view=Fit">�@ADM-104 �i�g���^�j</OPTION>
-	                     <OPTION value="../pdf/ADM-105.pdf#view=Fit">�@ADM-105 �i�g���^�j</OPTION>
-	                     <OPTION value="../pdf/ADM-106.pdf#view=Fit">�@ADM-106-���Y�I�� �i�g���^�j</OPTION>
-	                     <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
-	                     <OPTION value="../pdf/ADM-201.pdf#view=Fit">�@ADM-201 �i�j�b�T���j</OPTION>
-	                     <OPTION value="../pdf/ADM-202.pdf#view=Fit">�@ADM-202 �i�j�b�T���j</OPTION>
-	                     <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
-	                     <OPTION value="../pdf/ADM-301.pdf#view=Fit">�@ADM-301 �i�z���_�j</OPTION>
-	                     <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
-	                     <OPTION value="../pdf/ADM-401.pdf#view=Fit">�@ADM-401 �i�_�C�n�c�j</OPTION>
-	                     <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
-	                     <OPTION value="../pdf/ADM-501.pdf#view=Fit">�@ADM-501-���Y�I�� �i���N�T�XIS�j</OPTION>
-	                     <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
-                         <OPTION value="../pdf/ADL-11.pdf#view=Fit">�@ADL-11 �i�ėp�����R���L�[�A���j</OPTION>
-	                     <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\</OPTION>
-                         <OPTION value="../pdf/ADK-98.pdf#view=Fit">�@ADK-98 �i�ėpACC�A���j</OPTION>
-	                     <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
-              <OPTION value="../pdf/cntroller_mr30.pdf#view=Fit">�@MR-30 �i�I�v�V�����p�[�c�j</OPTION>
-	                     <OPTION value="" disabled>�\�\�\�\�\�\�\�\�\�\�\�\</OPTION> 
+            <OPTION value="" disabled selected>▼品番を選択して下さい。</option>
+	                     <OPTION value="" disabled>――――――――――――</OPTION> 
+	                     <OPTION value="../pdf/ADM-101.pdf#view=Fit">　ADM-101 （トヨタ）</OPTION>
+	                     <OPTION value="../pdf/ADM-102.pdf#view=Fit">　ADM-102 （トヨタ）</OPTION>
+	                     <OPTION value="../pdf/ADM-103.pdf#view=Fit">　ADM-103 （トヨタ）</OPTION>
+	                     <OPTION value="../pdf/ADM-104.pdf#view=Fit">　ADM-104 （トヨタ）</OPTION>
+	                     <OPTION value="../pdf/ADM-105.pdf#view=Fit">　ADM-105 （トヨタ）</OPTION>
+	                     <OPTION value="../pdf/ADM-106.pdf#view=Fit">　ADM-106-生産終了 （トヨタ）</OPTION>
+	                     <OPTION value="" disabled>――――――――――――</OPTION> 
+	                     <OPTION value="../pdf/ADM-201.pdf#view=Fit">　ADM-201 （ニッサン）</OPTION>
+	                     <OPTION value="../pdf/ADM-202.pdf#view=Fit">　ADM-202 （ニッサン）</OPTION>
+	                     <OPTION value="" disabled>――――――――――――</OPTION> 
+	                     <OPTION value="../pdf/ADM-301.pdf#view=Fit">　ADM-301 （ホンダ）</OPTION>
+	                     <OPTION value="" disabled>――――――――――――</OPTION> 
+	                     <OPTION value="../pdf/ADM-401.pdf#view=Fit">　ADM-401 （ダイハツ）</OPTION>
+	                     <OPTION value="" disabled>――――――――――――</OPTION> 
+	                     <OPTION value="../pdf/ADM-501.pdf#view=Fit">　ADM-501-生産終了 （レクサスIS）</OPTION>
+	                     <OPTION value="" disabled>――――――――――――</OPTION> 
+                         <OPTION value="../pdf/ADL-11.pdf#view=Fit">　ADL-11 （汎用リモコンキー連動）</OPTION>
+	                     <OPTION value="" disabled>――――――――――――</OPTION>
+                         <OPTION value="../pdf/ADK-98.pdf#view=Fit">　ADK-98 （汎用ACC連動）</OPTION>
+	                     <OPTION value="" disabled>――――――――――――</OPTION> 
+              <OPTION value="../pdf/cntroller_mr30.pdf#view=Fit">　MR-30 （オプションパーツ）</OPTION>
+	                     <OPTION value="" disabled>――――――――――――</OPTION> 
             </select>
-		    <input type=button onClick="window.open().location.href=adm.value" value="���@��">
+		    <input type=button onClick="window.open().location.href=adm.value" value="決　定">
 	      </fieldset>
 	    </div>   </FORM></td>
    <td colspan="31"><img name="door_mirror_r74_c44" src="images/door_mirror_r74_c44.gif" width="500" height="50" id="door_mirror_r74_c44" alt=""></td>
@@ -667,18 +685,18 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="2" colspan="4"><img name="door_mirror_r85_c1" src="images/door_mirror_r85_c1.gif" width="14" height="125" id="door_mirror_r85_c1" alt=""></td>
-   <td colspan="71" style="font-size: 14px;"><b>���w���̑O��</b></td>
+   <td colspan="71" style="font-size: 14px;"><b>ご購入の前に</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="71" style="line-height: 19px; font-size: 12px;">
-       <li>ADM-501�������Ԏ�ʓK���^�C�v�̓����R���L�[�A���^�C�v�iADL-11�j�@�\�Ƃ`�b�b�A���^�C�v�iADK-98�j�̋@�\�𓋍ڂ��Ă���܂��̂ŁA���D�݂ɉ������I�����\�ł����A���^�C�v�̋@�\�𕹗p���鎖�͏o���܂���B</li>
-      �@�܂��A���C�����j�b�g�̃f�B�b�v�X�C�b�`�ł̑I���ɂȂ�܂��̂ŁA��t��̑I���͗e�Ղɂ͍s���܂���B<br>
-      �@���Ԏ�ʐ�p�^�C�v�̓h�A�~���[�i�[������̂݃R�l�N�^�[�ɂȂ��Ă���A���̑��̔z���͎ԗ��z���ւ̐ڑ����K�v�ł��̂ŗ\�߂����ӂ��������B<br>
-       <li>�G���W���X�^�[�^�[ �����ԂŁy B �z ���� �y C �z �^�C�v�̃h�A�~���[�ԗ��X�C�b�`�Œ����̐ݒ肪�o���Ȃ��ԗ��֑��������ꍇ�ɂ́A�G���W���X�^�[�^�[�쓮���Ƀh�A�~���[�����A����ꍇ������܂��̂ł����ӂ��������B</li>
-       <li>�^�[�{�^�C�}�[�����ԂŁy B �z ���� �y C �z �^�C�v�̃h�A�~���[�ԗ��X�C�b�`�Œ����̐ݒ肪�o���Ȃ��ԗ��֑��������ꍇ�ɂ́A�^�[�{�^�C�}�[�쓮���Ƀh�A�~���[�����A����ꍇ������܂��̂ł����ӂ��������B</li>
-       <li>�{���i�͍��Y�Ԑ�p�i�ł��B�O���Ԃɂ͂����t���o���܂���B</li>
-       <li>���i�̃f�U�C���A�d�l�A�O�ρA�F�����A���i���ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B�܂��A���i�̎ʐ^���̐F�͎����Ƃ͂͑����قȂ�ꍇ������܂��̂ŁA���炩���߂��������������B</li></td>
+       <li>ADM-501を除く車種別適合タイプはリモコンキー連動タイプ（ADL-11）機能とＡＣＣ連動タイプ（ADK-98）の機能を搭載しておりますので、お好みに応じた選択が可能ですが、両タイプの機能を併用する事は出来ません。</li>
+      　また、メインユニットのディップスイッチでの選択になりますので、取付後の選択は容易には行えません。<br>
+      　※車種別専用タイプはドアミラー格納制御線のみコネクターになっており、その他の配線は車両配線への接続が必要ですので予めご注意ください。<br>
+       <li>エンジンスターター 装着車で【 B 】 又は 【 C 】 タイプのドアミラー車両スイッチで中立の設定が出来ない車両へ装着した場合には、エンジンスターター作動時にドアミラーが復帰する場合がありますのでご注意ください。</li>
+       <li>ターボタイマー装着車で【 B 】 又は 【 C 】 タイプのドアミラー車両スイッチで中立の設定が出来ない車両へ装着した場合には、ターボタイマー作動時にドアミラーが復帰する場合がありますのでご注意ください。</li>
+       <li>本製品は国産車専用品です。外国車にはお取り付け出来ません。</li>
+       <li>製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。また、製品の写真等の色は実物とはは多少異なる場合がありますので、あらかじめご了承ください。</li></td>
    <td><img src="images/spacer.gif" width="1" height="105" alt=""></td>
   </tr>
   <tr>
@@ -688,31 +706,31 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="2" colspan="4"><img name="door_mirror_r88_c1" src="images/door_mirror_r88_c1.gif" width="14" height="142" id="door_mirror_r88_c1" alt=""></td>
-   <td colspan="71" style="font-size: 14px;"><b>���S�y�ю��t���Ɋւ��邲����</b></td>
+   <td colspan="71" style="font-size: 14px;"><b>安全及び取り付けに関するご注意</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="71" style="line-height: 19px; font-size: 12px;">
-       <li>�w�肳�ꂽ����T���Ƃ��͕K���T�[�L�b�g�e�X�^�[���g�p���A���d��i�����v�e�X�^�[�j���͎g�p���Ȃ��ł��������B</li>
-       <li>�{���i�����t������ۂ́A���̋@��ɉe����^���Ȃ��ꏊ�y�щ^�]�ɍ����x���̂Ȃ��ꏊ�ɐݒu���Ă��������B</li>
-       <li>�ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{���̋@�\�ɕs��������ꍇ�ɂ͖{���i�����t�����́A�g�p���Ȃ��ł��������B</li>
-       <li>���i������ɓ��삵�Ȃ�������A�ԗ��@��ɉe����^���鋰�ꂪ����܂��B</li>
-       <li>�{���i�̎��t���́A���t���Z�p�̂���̔��X�ōs���Ă��������B</li>
-       <li>�{���i�Ƒ��@��ƕ��p���Ďg�p����ꍇ�A���@��̎戵���������悭���ǂ݂ɂȂ萳�����g�p���@�Ŏg�p���Ă��������B</li>
-       <li>�w��ȊO�̓d���ł͎g�p���Ȃ��ł��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</li>
-       <li>�{���i�����t������ہA�d���̋ɐ��i�{�E�|�j���ԈႦ�Ȃ��悤�ɂ����ӂ��������B���A�d���R�[�h���ԑ̂̋��������ɐG��Ȃ��悤�ɂ����ӂ��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</li>
-       <li>���t���̍ۂɂ͕K���G���W�����~������Ԃōs���Ă��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</li></td>
+       <li>指定された線を探すときは必ずサーキットテスターを使用し、検電器（ランプテスター）等は使用しないでください。</li>
+       <li>本製品を取り付けする際は、他の機器に影響を与えない場所及び運転に差し支えのない場所に設置してください。</li>
+       <li>車両のバッテリーが弱っている状態及び、車両本来の機能に不備がある場合には本製品を取り付け又は、使用しないでください。</li>
+       <li>製品が正常に動作しなかったり、車両機器に影響を与える恐れがあります。</li>
+       <li>本製品の取り付けは、取り付け技術のある販売店で行ってください。</li>
+       <li>本製品と他機器と併用して使用する場合、他機器の取扱説明書もよくお読みになり正しい使用方法で使用してください。</li>
+       <li>指定以外の電圧では使用しないでください。火災・感電・故障の原因となります。</li>
+       <li>本製品を取り付けする際、電源の極性（＋・－）を間違えないようにご注意ください。又、電源コードが車体の金属部分に触れないようにご注意ください。火災・感電・故障の原因となります。</li>
+       <li>取り付けの際には必ずエンジンを停止した状態で行ってください。火災・感電・故障の原因となります。</li></td>
    <td><img src="images/spacer.gif" width="1" height="122" alt=""></td>
   </tr>
     <tr>
    <td rowspan="2" colspan="4"><img name="door_mirror_r88_c1" src="images/door_mirror_r88_c1.gif" width="14" height="40" id="door_mirror_r88_c1" alt=""></td>
-   <td colspan="71" style="font-size: 14px;"><b>�ۏ؋K��</b></td>
+   <td colspan="71" style="font-size: 14px;"><b>保証規定</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="71" style="line-height: 19px; font-size: 12px;">
-       <li>�{���i�͂P�N�ۏ؂ƂȂ�܂��B</li>
-       <li>�戵�������ɏ]��������Ȏg�p��Ԃ̂��Ƃŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��āA  ���Ђł͈�ؐӔC�𕉂����˂܂��B</li></td>
+       <li>本製品は１年保証となります。</li>
+       <li>取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について、  弊社では一切責任を負いかねます。</li></td>
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
   <tr>
@@ -720,23 +738,9 @@ function MM_preloadImages() { //v3.0
    <td><img name="door_mirror_r90_c75" src="images/door_mirror_r90_c75.gif" width="1" height="10" id="door_mirror_r90_c75" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="2" colspan="63"><img name="door_mirror_r91_c1" src="images/door_mirror_r91_c1.gif" width="816" height="93" id="door_mirror_r91_c1" alt=""></td>
-   <td colspan="6"><a href="door_mirror.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('door_mirror_r91_c64','','images/door_mirror_r91_c64_s2.gif',1);"><img name="door_mirror_r91_c64" src="images/door_mirror_r91_c64.gif" width="85" height="15" id="door_mirror_r91_c64" alt=""></a></td>
-   <td><img name="door_mirror_r91_c70" src="images/door_mirror_r91_c70.gif" width="1" height="15" id="door_mirror_r91_c70" alt=""></td>
-   <td rowspan="2" colspan="5"><img name="door_mirror_r91_c71" src="images/door_mirror_r91_c71.gif" width="98" height="93" id="door_mirror_r91_c71" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
-  </tr>
-  <tr>
-   <td><img name="door_mirror_r92_c64" src="images/door_mirror_r92_c64.gif" width="1" height="78" id="door_mirror_r92_c64" alt=""></td>
-   <td colspan="6"><img name="door_mirror_r92_c65" src="images/door_mirror_r92_c65.gif" width="85" height="78" id="door_mirror_r92_c65" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="78" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="74"><img name="door_mirror_r93_c1" src="images/door_mirror_r93_c1.gif" width="999" height="73" id="door_mirror_r93_c1" alt=""></td>
-   <td><img name="door_mirror_r93_c75" src="images/door_mirror_r93_c75.gif" width="1" height="73" id="door_mirror_r93_c75" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="73" alt=""></td>
-  </tr>
+  
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

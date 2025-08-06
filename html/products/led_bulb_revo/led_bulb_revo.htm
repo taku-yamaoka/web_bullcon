@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>LED REVOLUTION FOG BULB/Bullcon�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>LED REVOLUTION FOG BULB/Bullconフジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -56,6 +58,40 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -69,8 +105,10 @@ function MM_preloadImages() { //v3.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/led_bulb_revo_r34_c1_f2.gif','images/led_bulb_revo_r34_c10_f2.gif','images/led_bulb_revo_r34_c16_f2.gif','images/led_bulb_revo_r34_c22_f2.gif','images/led_bulb_revo_r34_c29_f2.gif','images/led_bulb_revo_r34_c38_f2.gif','images/led_bulb_revo_r34_c49_f2.gif','images/led_bulb_revo_r34_c53_f2.gif','images/led_bulb_revo_r34_c64_f2.gif','images/led_bulb_revo_r38_c2_f2.gif','images/led_bulb_revo_r38_c12_f2.gif','images/led_bulb_revo_r38_c26_f2.gif','images/led_bulb_revo_r38_c42_f2.gif','images/led_bulb_revo_r38_c55_f2.gif','images/led_bulb_revo_r85_c57_f2.gif','images/led_bulb_r27_c1_f2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="led_bulb_revo4.png" fwpage="�y�[�W 1" fwbase="led_bulb_revo.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="led_bulb_revo4.png" fwpage="ページ 1" fwbase="led_bulb_revo.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="4" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="6" height="1" border="0" alt=""></td>
@@ -146,25 +184,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
 
-  <tr><td colspan="71"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="71"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="71"><img name="led_bulb_revo_r15_c1" src="images/led_bulb_revo_r15_c1.gif" width="1000" height="36" border="0" id="led_bulb_revo_r15_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="36" border="0" alt=""></td>
@@ -175,7 +194,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="68" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="71" style="font-size: 16px; line-height: 18px; text-align: right"><B>�̔����i ���Q�P�C�V�W�O</B><span style="font-size: 14px">  �i�ō��j�@�i�Ŕ����i ���P�X�C�W�O�O�j</span></td>
+    <td colspan="71" style="font-size: 16px; line-height: 18px; text-align: right"><B>販売価格 ￥２１，７８０</B><span style="font-size: 14px">  （税込）　（税抜価格 ￥１９，８００）</span></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -189,12 +208,12 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td rowspan="2" colspan="12"><img name="led_bulb_revo_r18_c1" src="images/led_bulb_revo_r18_c1.gif" width="210" height="30" border="0" id="led_bulb_revo_r18_c1" alt=""></td>
    <td rowspan="14" colspan="17"><img name="led_bulb_revo_r18_c13" src="images/led_bulb_revo_r18_c13.gif" width="240" height="240" border="0" id="led_bulb_revo_r18_c13" alt=""></td>
-   <td colspan="42" rowspan="10" style="font-size: 15px; line-height: 20px">���k�d�c �q�d�u�n�k�t�s�h�n�m �k�d�c�t�H�O�o���u�͏]���̃n���Q���o���u�Ɠ����ȏ�̌��ʂ�����A��Ԃ�J�V���̑��s�ɂ��ǍD�Ȏ��E���m�ۂ��܂��B<br>
-    ���X���[�������v���k�d�c�Ɍ����ς݂̎ԗ��́ALED���m�ň��肵���F���̈׃h���X�A�b�v�Ɍ��ʓI�I<br>
-���������k�d�c���̗p���鎖�Ńn���Q���o���u�E�g�h�c�o���u�ɔ�ׂĒ�d�͉����ᔭ�M���������A�ԗ��t�H�O�����v���j�b�g�ɗD�����d�l���\�ɂ��܂����B<br>
-�����Ђ̂k�d�c �q�d�u�n�k�t�s�h�n�m �k�d�c�t�H�O �o���u�́A�A���~�j�E�����q�[�g�V���N�̗p�̂P���j�b�g���Ŗʓ|�Ȕz���̈����񂵂⃆�j�b�g�̌Œ�ʒu�ɔY�ޕK�v������܂���B<br>
-���M���o����ō��̋Z�p�ƍ��i���K�i�ɂ�萶�Y����Ă���A���肵���_���������I<br>
-�����Y�Ԃɑ����̗p����Ă���y�g�W/�g�P�P�z�y�g�P�U�z�y�o�r�w�Q�U�v�z�����C���i�b�v</td>
+   <td colspan="42" rowspan="10" style="font-size: 15px; line-height: 20px">◆ＬＥＤ ＲＥＶＯＬＵＴＩＯＮ ＬＥＤフォグバルブは従来のハロゲンバルブと同等以上の光量を放ち、夜間や雨天時の走行にも良好な視界を確保します。<br>
+    ◆スモールランプをＬＥＤに交換済みの車両は、LED同士で安定した色調の為ドレスアップに効果的！<br>
+◆高効率ＬＥＤを採用する事でハロゲンバルブ・ＨＩＤバルブに比べて低電力化＆低発熱化を実現、車両フォグランプユニットに優しい仕様を可能にしました。<br>
+◆弊社のＬＥＤ ＲＥＶＯＬＵＴＩＯＮ ＬＥＤフォグ バルブは、アルミニウム製ヒートシンク採用の１ユニット式で面倒な配線の引き回しやユニットの固定位置に悩む必要がありません。<br>
+◆信頼出来る最高の技術と高品質規格により生産されており、安定した点灯を実現！<br>
+◆国産車に多く採用されている【Ｈ８/Ｈ１１】【Ｈ１６】【ＰＳＸ２６Ｗ】をラインナップ</td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -227,7 +246,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="42"><span class="style4">�i�����ӁF �u���Y�f�B�[���[�I�v�V�����@�����O�C���~�t�t�H�O�����v�v�ɂ͎�t���o���܂���B�j</span></td>
+   <td colspan="42"><span class="style4">（ご注意： 「日産ディーラーオプション　リングイルミ付フォグランプ」には取付け出来ません。）</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -235,11 +254,11 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="5" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="2" colspan="12"><div align="center" class="style1">�ʐ^��SLL-F11W�ł��B</div></td>
+   <td rowspan="2" colspan="12"><div align="center" class="style1">写真はSLL-F11Wです。</div></td>
    <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="42"><div align="right"><span class="style5">�ʐ^�̓C���[�W�ł��B���g���̃��j�^�[������ۂ̎ԗ��������ɂ͐F���قȂ��Č�����ꍇ��������܂��B</span></div></td>
+   <td colspan="42"><div align="right"><span class="style5">写真はイメージです。お使いのモニター環境や実際の車両装着時には色が異なって見える場合が御座います。</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -250,7 +269,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="5" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="71"><span class="style7"><span class="style8">�@�@�Ԏ�ʃo���u�`��ꗗ�\</span>�@<span class="style11">���ԗ��o���u�`������������̂ł��B�{���i���t���K���\�ł͂���܂���̂ł����ӂ��������B</span></span></td>
+   <td colspan="71"><span class="style7"><span class="style8">　　車種別バルブ形状一覧表</span>　<span class="style11">※車両バルブ形状を示したものです。本製品取り付け適合表ではありませんのでご注意ください。</span></span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -291,7 +310,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="5" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="71"><span class="style7"><span class="style8">�@�@�k�d�c �q�d�u�n�k�t�s�h�n�m</span>�@�k�d�c�t�H�O�o���u�@<span class="style8">�`��E�T�C�Y�ڍ�</span>�@<span class="style11">�i�摜���N���b�N����ƕʃy�[�W�փ����N���܂��B�j</span></span></td>
+   <td colspan="71"><span class="style7"><span class="style8">　　ＬＥＤ ＲＥＶＯＬＵＴＩＯＮ</span>　ＬＥＤフォグバルブ　<span class="style8">形状・サイズ詳細</span>　<span class="style11">（画像をクリックすると別ページへリンクします。）</span></span></td>
    <td><img src="images/spacer.gif" width="1" height="38" border="0" alt=""></td>
   </tr>
   <tr>
@@ -326,15 +345,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="302" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="66" style="line-height: 18px"><span class="style11">���t���̂k�������`�ŘZ�p�l�W���ɂ߂�ƁA�o���u��[����]���܂��̂ŁA�Ԗ��ɈقȂ�Œ�p�x�Ɋ֌W�Ȃ���t���o���܂��B<br>
-     �@ 
-     �܂��A�㉺�ƎˁA���E�Ǝ˂ȂǁA���q�l�̌�g�p�p�r�₨�D�݂ɍ��킹���Ǝ˕����i�p�x�j���ݒ�\�ł��B<br>
-     �@ 
-    �i�����ӁF�����̍ۂ̓o���u���o�׎��̏�Ԃ���X�O�x�ȏ��]�����Ȃ��ł��������B�j</span></td>
+   <td colspan="66" style="line-height: 18px"><span class="style11">●付属のＬ字レンチで六角ネジを緩めると、バルブ先端が回転しますので、車毎に異なる固定角度に関係なく取付け出来ます。<br>
+     　 
+     また、上下照射、左右照射など、お客様の御使用用途やお好みに合わせた照射方向（角度）が設定可能です。<br>
+     　 
+    （ご注意：調整の際はバルブを出荷時の状態から９０度以上回転させないでください。）</span></td>
    <td><img src="images/spacer.gif" width="1" height="70" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="71"><span class="style7"><span class="style8">�@�@�k�d�c �q�d�u�n�k�t�s�h�n�m</span>�@�k�d�c�t�H�O�o���u�@<span class="style8">�_����r�C���[�W</span></span></td>
+   <td colspan="71"><span class="style7"><span class="style8">　　ＬＥＤ ＲＥＶＯＬＵＴＩＯＮ</span>　ＬＥＤフォグバルブ　<span class="style8">点灯比較イメージ</span></span></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
   <tr>
@@ -343,8 +362,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="2"><img name="led_bulb_revo_r45_c1" src="images/led_bulb_revo_r45_c1.gif" width="10" height="20" border="0" id="led_bulb_revo_r45_c1" alt=""></td>
-   <td colspan="21"><div align="right" class="style1">���f���ԗ��F���Y�@�G���O�����h�@E52</div></td>
-   <td colspan="45"><div align="center"><span class="style1">���g���̃��j�^�[���ɂ���Ă͎��ۂ̎ԗ��������ƐF��z�����قȂ��Č�����ꍇ��������܂��B</span></div></td>
+   <td colspan="21"><div align="right" class="style1">モデル車両：日産　エルグランド　E52</div></td>
+   <td colspan="45"><div align="center"><span class="style1">お使いのモニター環境によっては実際の車両装着時と色や配光が異なって見える場合が御座います。</span></div></td>
    <td colspan="3"><img name="led_bulb_revo_r45_c69" src="images/led_bulb_revo_r45_c69.gif" width="10" height="20" border="0" id="led_bulb_revo_r45_c69" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
@@ -354,7 +373,7 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="3" colspan="2"><img name="led_bulb_revo_r47_c1" src="images/led_bulb_revo_r47_c1.gif" width="10" height="75" border="0" id="led_bulb_revo_r47_c1" alt=""></td>
-   <td colspan="4"><span class="style16">���i�d�l</span></td>
+   <td colspan="4"><span class="style16">製品仕様</span></td>
    <td colspan="10">&nbsp;</td>
    <td>&nbsp;</td>
    <td colspan="16">&nbsp;</td>
@@ -366,25 +385,25 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4"><span class="style16">����d��</span></td>
-   <td colspan="10"><span class="style16">20�v/1��</span></td>
-   <td><span class="style16">����</span></td>
-   <td colspan="16"><span class="style16">1900�����i3000K�j/1��</span></td>
-   <td colspan="9"><span class="style16">����d��</span></td>
-   <td colspan="8"><span class="style16">12V�`14V</span></td>
-   <td colspan="8"><span class="style16">�h�����\</span></td>
+   <td colspan="4"><span class="style16">消費電力</span></td>
+   <td colspan="10"><span class="style16">20Ｗ/1灯</span></td>
+   <td><span class="style16">光束</span></td>
+   <td colspan="16"><span class="style16">1900ｌｍ（3000K）/1灯</span></td>
+   <td colspan="9"><span class="style16">動作電圧</span></td>
+   <td colspan="8"><span class="style16">12V～14V</span></td>
+   <td colspan="8"><span class="style16">防水性能</span></td>
    <td colspan="10"><span class="style16">IP68</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="4"><span class="style16">�F���x</span></td>
+   <td colspan="4"><span class="style16">色温度</span></td>
    <td colspan="10"><span class="style16">3000K/6500K</span></td>
    <td>&nbsp;</td>
-   <td colspan="16"><span class="style16">1800�����i6500K�j/1��</span></td>
-   <td colspan="9"><span class="style16">���쉷�x</span></td>
-   <td colspan="8"><span class="style16">�|30���`�{105��</span></td>
-   <td colspan="8"><span class="style16">����</span></td>
-   <td colspan="10"><span class="style16">��40000����</span></td>
+   <td colspan="16"><span class="style16">1800ｌｍ（6500K）/1灯</span></td>
+   <td colspan="9"><span class="style16">動作温度</span></td>
+   <td colspan="8"><span class="style16">－30℃～＋105℃</span></td>
+   <td colspan="8"><span class="style16">寿命</span></td>
+   <td colspan="10"><span class="style16">約40000時間</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -392,7 +411,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="71"><span class="style7"><span class="style8">�@�@�k�d�c �q�d�u�n�k�t�s�h�n�m</span>�@�k�d�c�t�H�O�o���u�@<span class="style8">�I�v�V����</span></span></td>
+   <td colspan="71"><span class="style7"><span class="style8">　　ＬＥＤ ＲＥＶＯＬＵＴＩＯＮ</span>　ＬＥＤフォグバルブ　<span class="style8">オプション</span></span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
@@ -401,22 +420,22 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="3" colspan="2"><img name="led_bulb_revo_r53_c1" src="images/led_bulb_revo_r53_c1.gif" width="10" height="160" border="0" id="led_bulb_revo_r53_c1" alt=""></td>
-   <td colspan="36"><div align="center"><span class="style18">LED REVOLUTION�@���艻���j�b�g�@<span class="style19">�g11/�g8�E�g16��p</span></span></div></td>
+   <td colspan="36"><div align="center"><span class="style18">LED REVOLUTION　安定化ユニット　<span class="style19">Ｈ11/Ｈ8・Ｈ16専用</span></span></div></td>
    <td rowspan="3" colspan="30"><img name="led_bulb_revo_r53_c39" src="images/led_bulb_revo_r53_c39.gif" width="400" height="120" border="0" id="led_bulb_revo_r53_c39" alt=""></td>
    <td rowspan="3" colspan="3"><img name="led_bulb_revo_r53_c69" src="images/led_bulb_revo_r53_c69.gif" width="10" height="160" border="0" id="led_bulb_revo_r53_c69" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-      <td colspan="10"><span style="font-size: 15px; line-height: 20px"><b>�i��<br>�r�k�k-�e�b�u�O�P</b></span></td>
-      <td colspan="14"><span style="font-size: 15px; line-height: 20px"><b>�̔����i<br>
-      ���P�O�C�V�W�O</b></span><span style="font-size: 13px">�i�ō��j</span></td>
-      <td colspan="12"><span style="font-size: 14px; line-height: 20px">�i�Ŕ����i���X�C�W�O�O�j</span></td>
+      <td colspan="10"><span style="font-size: 15px; line-height: 20px"><b>品番<br>ＳＬＬ-ＦＣＶ０１</b></span></td>
+      <td colspan="14"><span style="font-size: 15px; line-height: 20px"><b>販売価格<br>
+      ￥１０，７８０</b></span><span style="font-size: 13px">（税込）</span></td>
+      <td colspan="12"><span style="font-size: 14px; line-height: 20px">（税抜価格￥９，８００）</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="36"><span style="font-size: 13px; line-height: 20px">�A�C�h�����O�X�g�b�v�@�\�t�ԗ��̃G���W���Ďn�����Ƀt�H�O�����v���_�ł���̂�h�~���܂��B<br>
-   ���{���i��LED REVOLUTION�@LED�t�H�O�o���u��p�I�v�V�����ł��B<br>
-    �@ HID�⑼��LED�o���u�ɂ͎g�p���Ȃ��ł��������B<span style="color: #FF0308"> �y�P�Q�u�Ԑ�p�z</span></span></td>
+   <td colspan="36"><span style="font-size: 13px; line-height: 20px">アイドリングストップ機能付車両のエンジン再始動時にフォグランプが点滅するのを防止します。<br>
+   ※本製品はLED REVOLUTION　LEDフォグバルブ専用オプションです。<br>
+    　 HIDや他社LEDバルブには使用しないでください。<span style="color: #FF0308"> 【１２Ｖ車専用】</span></span></td>
    <td><img src="images/spacer.gif" width="1" height="60" border="0" alt=""></td>
   </tr>
   <tr>
@@ -458,89 +477,89 @@ function MM_preloadImages() { //v3.0
   </tr>
 
   <tr>
-    <td colspan="71"><span class="style6">���w���̑O��</span></td>
+    <td colspan="71"><span class="style6">ご購入の前に</span></td>
   <td><img src="images/spacer.gif" width="1" height="32" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="2"><img name="led_bulb_revo_r83_c1" src="images/led_bulb_revo_r83_c1.gif" width="10" height="200" border="0" id="led_bulb_revo_r83_c1" alt=""></td>
-   <td valign="top" style="line-height:16px"><span class="style1">��<br>
-   ��<br>
-   ��<br>
+   <td valign="top" style="line-height:16px"><span class="style1">●<br>
+   ●<br>
+   ●<br>
    <br>
-   ��<br>
-   ��<br>
-   ��<br>
-   ��<br>
-   ��<br>
-   ��<br>
-   ��<br>
-   ��<br>
-   ��<br>
-   ��<br>
-   ��<br>
-   ��<br>
+   ●<br>
+   ●<br>
+   ●<br>
+   ●<br>
+   ●<br>
+   ●<br>
+   ●<br>
+   ●<br>
+   ●<br>
+   ●<br>
+   ●<br>
+   ●<br>
    <br>
    <br>
-   ��<br>
+   ●<br>
    
    </span>
-   <td colspan="68" style="line-height:16px" valign="top"><span class="style1">LED�o���u�T�C�Y���m�F���A�ԗ��̎��t����ƃX�y�[�X�ⓔ����A�������ɃN���A�����X�����邩�m�F���Ă��������B<br>
-�{���i�́A�Ԏ�ɂ��d�C�I�ȓ����ő����o���Ȃ��ꍇ������܂��B<br>
-�Ԍ��Ή��i�Ƃ��Ĕ̔����Ă���܂����A�ʏ�̃n���Q���o���u�ƈقȂ锭���F�Ɍ����邽�߁A�������ɂ���Ă͂����H�ɕs�K���Ɣ��f�����ꍇ���������܂��B<span class="style23">(��)</span><br>
-���̏ꍇ�A�ʏ�̂��g�p�ɂ͖�肠��܂��񂪁A�Ԍ��̍ۂ͂�������n���Q���o���u�ɖ߂��Ă��������B����Ɋւ�邲�����͈�؂��󂯏o���܂���̂ŗ\�߂��������������B<br>
+   <td colspan="68" style="line-height:16px" valign="top"><span class="style1">LEDバルブサイズを確認し、車両の取り付け作業スペースや灯具内、灯具後方にクリアランスがあるか確認してください。<br>
+本製品は、車種により電気的な特性で装着出来ない場合があります。<br>
+車検対応品として販売しておりますが、通常のハロゲンバルブと異なる発光色に見えるため、検査官によってはごく稀に不適合と判断される場合がございます。<span class="style23">(※)</span><br>
+この場合、通常のご使用には問題ありませんが、車検の際はいったんハロゲンバルブに戻してください。これに関わるご請求は一切お受け出来ませんので予めご了承ください。<br>
 
-�{���i�͎����ԃt�H�O�����v��p�i�ł��B�w�b�h���C�g���֎Ԃւ̑����ɂ��ӔC�͈�ؕ������˂܂��̂ŗ\�߂��������������B<br>
-�{���i�_�����Ƀ��W�I���Ƀm�C�Y�����鎖������܂��B<br>
-�o���u�؂ꓙ�̌x�������_������ꍇ�͎��t�������Ȃ��ł��������B<br>
-�����V�X�e�������Ԃɂ͂����t���o���܂���B<br>
-�ԗ��ɂ���Ĉꕔ���J���Ȃǂ̉��H��K�v�Ƃ���ꍇ������܂��B<br>
-��������g�p�ɂ�鎖�̂Ȃǂ̐ӔC�͈�ؕ������˂܂��̂ŗ\�߂��������������B<br>
-�K���\�ɋL�ڂ���Ă���Ԏ�ȊO�͕ۏ؂̑ΏۊO�ɂȂ�܂��B<br>
-���t���̍ۂ̔j���Ɋւ��܂��ẮA�ۏ؂̑ΏۊO�ƂȂ�܂��B<br>
-�A�C�h�����O�X�g�b�v�t�ԂɎ��t�����ꍇ�A�G���W���Ďn�����Ɍ���������ꍇ������܂���SLL-FCV01�𑕒����邱�Ƃŉ��P����܂��B<br>
-LED REVOLUTION LED�t�H�O �o���u�̓n���Q�������v�ɔ�ׂĔ��M�ʂ����Ȃ��ׁA�t�H�O�����Y�ɕt���������X���n���ɂ����Ȃ�܂��B<br>
-���L�����t�ԗ��́A�����o���u�̑�����O��ɐ݌v����Ă���ׁA�{���i�𑕒�����Ɛ���ɍ쓮���Ȃ��Ȃ鋰�ꂪ����܂��B<br>
-�{���i���g�p�������ɂ��ԗ����u�̌�쓮�⓮��s�ǁA�����ɂ�蔭���������̂⑹�Q�ɂ��Ă͈�؂̐ӔC�𕉂����˂܂��̂ŗ\�߂��������������B<br>
-���Փ˔�Q�y���u���[�L�@�@�����[�_�[�N���[�Y�R���g���[���@�@���Ԑ���E�h�~�x���V�X�e���@�@���딭�i�}������@�\�@�@���N���A�����X�\�i�[<br>
-       �����Ԏx���V�X�e���@�@��AFS�@�@�����̑��A�J�����A�~���g���[�_�[�A���[�U�[���[�_�[�A�ԊO�����[�_�[�A�����g���g�p�������u�@�Ȃ�<br>
-���i�̃f�U�C���A�d�l�A�O�ρA�F�����A���i���ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B<br>
-       �܂��A���i�̎ʐ^���̐F�͎����Ƃ͂͑����قȂ�ꍇ������܂��̂ŁA���炩���߂��������������B</span></td>
+本製品は自動車フォグランプ専用品です。ヘッドライトや二輪車への装着による責任は一切負いかねますので予めご了承ください。<br>
+本製品点灯時にラジオ等にノイズが入る事があります。<br>
+バルブ切れ等の警告灯が点灯する場合は取り付けをしないでください。<br>
+減光システム装着車にはお取り付け出来ません。<br>
+車両によって一部穴開けなどの加工を必要とする場合があります。<br>
+誤ったご使用による事故などの責任は一切負いかねますので予めご了承ください。<br>
+適合表に記載されている車種以外は保証の対象外になります。<br>
+取り付けの際の破損に関しましては、保証の対象外となります。<br>
+アイドリングストップ付車に取り付けた場合、エンジン再始動時に光がちらつく場合がありますがSLL-FCV01を装着することで改善されます。<br>
+LED REVOLUTION LEDフォグ バルブはハロゲンランプに比べて発熱量が少ない為、フォグレンズに付着した雪や氷が溶けにくくなります。<br>
+下記装備付車両は、純正バルブの装着を前提に設計されている為、本製品を装着すると正常に作動しなくなる恐れがあります。<br>
+本製品を使用した事による車両装置の誤作動や動作不良、それらにより発生した事故や損害については一切の責任を負いかねますので予めご了承ください。<br>
+◆衝突被害軽減ブレーキ　　◆レーダークルーズコントロール　　◆車線逸脱防止支援システム　　◆誤発進抑制制御機能　　◆クリアランスソナー<br>
+       ◆駐車支援システム　　◆AFS　　◆その他、カメラ、ミリ波レーダー、レーザーレーダー、赤外線レーダー、超音波を使用した装置　など<br>
+製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。<br>
+       また、製品の写真等の色は実物とはは多少異なる場合がありますので、あらかじめご了承ください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="200" border="0" alt=""></td>
     <td>&nbsp;</td>
   </tr>
   
   <tr>
-   <td colspan="71"><span class="style6">���S�y�ю��t���Ɋւ��邲����</span></td>
+   <td colspan="71"><span class="style6">安全及び取り付けに関するご注意</span></td>
    <td><img src="images/spacer.gif" width="1" height="32" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="2"><img name="led_bulb_revo_r83_c1" src="images/led_bulb_revo_r83_c1.gif" width="10" height="200" border="0" id="led_bulb_revo_r83_c1" alt=""></td>
    <td rowspan="2" valign="top"><br>
-   <td colspan="68" rowspan="2" valign="top" style="line-height:16px;"><span class="style1">���A�[�V���O���̃V�X�e���𑕒��̂��Ԃ́A�쓮�s�ǂ��N�����ꍇ������܂��B<br>
-       �����t���̍ۂ́A���ƂƑ��k���s���Ă��������B����������������ꍇ�A�d�C�V���b�N���N�����ꍇ������܂��B<br>
-       ���{���i��12V�o�b�e���[�̎����Ԑ�p�ł��B�w��ȊO�̓d���̎ԗ��⎩���ԈȊO�Ɏg�p���Ȃ��ł��������B<br>
-       ���{���i�͍��Y�Ԑ�p�i�Ƃ��Đ݌v���Ă���܂��B�A���Ԃւ̑����͌̏�̌����ƂȂ�܂��̂Ŏg�p���Ȃ��ł��������B<br>
-       ���{���i�̎��t���A�z���A�g�p���@���ԈႤ�Ǝԗ��̑��u�A�@��ނ�j�����́A�������鋰�ꂪ����A�΍ЁA���d�A�̏�̌����ƂȂ�܂��B<br>
-       ���{���i��t�ɂ����āA���i�̌Œ�A�R�l�N�^�̐ڑ����m���ɍs���Ă��邩�m�F���Ă��������B<br>
-       ���_�����̃o���u�͑�ύ����ɂȂ�܂��B�M����ԂŐG���ƉΏ������鋰�ꂪ����܂��̂ŁA�o���u���\���ɗ₦�������m�F���Ă��������B<br>
-       ���_�����̃o���u�𒼎�����Ɩڂ��ɂ��Ȃ�����A���͏�Q�̌����ƂȂ鋰�ꂪ����܂��̂ŁA�_�����̓o���u�𒼎����Ȃ��ł��������B<br>
-       �����g�p�̍ۂ͎戵���������悭���ǂ݂̏�A���������g�����������B<br>
-       ���{���i�́A�Ԍ��Ή��i�i����Q�Ɓj�Ƃ��Đ������Ă���܂����ʏ�̃n���Q���o���u�ƈقȂ锭���F�Ɍ����邽�߁A�������ɂ���Ă͋H�ɕs�K���Ɣ��f�����ꍇ��������܂��B<br>
-       <span class="style21">��</span>���A�ꕔ�̎ԗ��t�H�O�����v�Ƒg�ݍ��킹���ꍇ�Ɍ��������Ȃǂ�����ɍs�Ȃ��Ȃ��ꍇ�͕s�K���Ɣ��f�����ꍇ��������܂��B<br>
-       <span class="style21">��</span>�����H�^���ԗ��@�̕ۈ���ɂ��A�O�������̓����F�́u���F����ђW���F�v�ƒ�߂��Ă���܂��B<br>
-       <span class="style21">��</span>�{���i��3000K�͌������̔��f�ɂ���Ă͎Ԍ��ɓK�����Ȃ��ꍇ������܂��̂ŗ\�߂��������������B<br>
-       <span class="style21">��</span>���̏ꍇ�A�ʏ�̎g�p�ɂ͖�肠��܂��񂪁A�Ԍ��̍ۂ͈�U�n���Q���o���u�ɖ߂��Ă��������B����Ɋւ�邲�����͈�؂��󂯂ł��܂���̂ŗ\�߂��������������B<br>
-     ���ԗ��ɂ���Ďg�p����Ă���o���u�̌`�󂪈قȂ�܂��̂ŁA���������߂̍ۂ͂��Ԃɍ������K�i�E�T�C�Y�y�сA �K���\�����m�F�̏エ�I�т��������B<br>
-     <span class="style21">��</span>���A�ԗ����C�g�̍\���ɂ���Ă̓V�F�[�h�⃉���v�����������ꍇ������܂��B�����ɍۂ��Ă͎��ԗ��̃N���A�����X�����m�F���������B<br>
-     ���w�肳�ꂽ����T���Ƃ��͕K���T�[�L�b�g�e�X�^�[���g�p���A���d��i�����v�e�X�^�[�j���͎g�p���Ȃ��ł��������B<br>
-     ���{���i�����t������ۂ́A���̋@��ɉe����^���Ȃ��ꏊ�y�щ^�]�ɍ����x���̂Ȃ��ꏊ�ɐݒu���Ă��������B<br>
-     ���ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{���̋@�\�ɕs��������ꍇ�ɂ͖{���i�����t�����́A�g�p���Ȃ��ł��������B<br>
-     <span class="style21">��</span>���i������ɓ��삵�Ȃ�������A�ԗ��@��ɉe����^���鋰�ꂪ����܂��B<br>
-     ���{���i�̎��t���́A���t���Z�p�̂���̔��X�ōs���Ă��������B<br>
-     ���{���i�Ƒ��@��ƕ��p���Ďg�p����ꍇ�A���@��̎戵���������悭���ǂ݂ɂȂ萳�����g�p���@�Ŏg�p���Ă��������B<br>
-     ���w��ȊO�̓d���ł͎g�p���Ȃ��ł��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B<br>
-     ���{���i�����t������ہA�d���̋ɐ��i�{�E�|�j���ԈႦ�Ȃ��悤�ɂ����ӂ��������B���A�d���R�[�h���ԑ̂̋��������ɐG��Ȃ��悤�ɂ����ӂ��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B<br>
-     �����t���̍ۂɂ͕K���G���W�����~������Ԃōs���Ă��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</span></td>
+   <td colspan="68" rowspan="2" valign="top" style="line-height:16px;"><span class="style1">●アーシング等のシステムを装着のお車は、作動不良を起こす場合があります。<br>
+       ●取り付けの際は、専門家と相談し行ってください。誤った扱いをした場合、電気ショックを起こす場合があります。<br>
+       ●本製品は12Vバッテリーの自動車専用です。指定以外の電圧の車両や自動車以外に使用しないでください。<br>
+       ●本製品は国産車専用品として設計しております。輸入車への装着は故障の原因となりますので使用しないでください。<br>
+       ●本製品の取り付け、配線、使用方法を間違うと車両の装置、機器類を破損又は、損傷する恐れがあり、火災、感電、故障の原因となります。<br>
+       ●本製品取付において、製品の固定、コネクタの接続が確実に行われているか確認してください。<br>
+       ●点灯中のバルブは大変高温になります。熱い状態で触れると火傷をする恐れがありますので、バルブが十分に冷えた事を確認してください。<br>
+       ●点灯中のバルブを直視すると目が痛くなったり、視力障害の原因となる恐れがありますので、点灯中はバルブを直視しないでください。<br>
+       ●ご使用の際は取扱説明書をよくお読みの上、正しくお使いください。<br>
+       ●本製品は、車検対応品（※印参照）として製造しておりますが通常のハロゲンバルブと異なる発光色に見えるため、検査官によっては稀に不適合と判断される場合が御座います。<br>
+       <span class="style21">○</span>又、一部の車両フォグランプと組み合わせた場合に光軸調整などが正常に行なえない場合は不適合と判断される場合が御座います。<br>
+       <span class="style21">○</span>※道路運送車両法の保安基準により、前部霧灯の灯光色は「白色および淡黄色」と定められております。<br>
+       <span class="style21">○</span>本製品の3000Kは検査官の判断によっては車検に適合しない場合がありますので予めご了承ください。<br>
+       <span class="style21">○</span>この場合、通常の使用には問題ありませんが、車検の際は一旦ハロゲンバルブに戻してください。これに関わるご請求は一切お受けできませんので予めご了承ください。<br>
+     ●車両によって使用されているバルブの形状が異なりますので、お買い求めの際はお車に合った規格・サイズ及び、 適合表をご確認の上お選びください。<br>
+     <span class="style21">○</span>又、車両ライトの構造によってはシェードやランプ後方が干渉する場合があります。装着に際しては実車両のクリアランスをご確認ください。<br>
+     ●指定された線を探すときは必ずサーキットテスターを使用し、検電器（ランプテスター）等は使用しないでください。<br>
+     ●本製品を取り付けする際は、他の機器に影響を与えない場所及び運転に差し支えのない場所に設置してください。<br>
+     ●車両のバッテリーが弱っている状態及び、車両本来の機能に不備がある場合には本製品を取り付け又は、使用しないでください。<br>
+     <span class="style21">○</span>製品が正常に動作しなかったり、車両機器に影響を与える恐れがあります。<br>
+     ●本製品の取り付けは、取り付け技術のある販売店で行ってください。<br>
+     ●本製品と他機器と併用して使用する場合、他機器の取扱説明書もよくお読みになり正しい使用方法で使用してください。<br>
+     ●指定以外の電圧では使用しないでください。火災・感電・故障の原因となります。<br>
+     ●本製品を取り付けする際、電源の極性（＋・－）を間違えないようにご注意ください。又、電源コードが車体の金属部分に触れないようにご注意ください。火災・感電・故障の原因となります。<br>
+     ●取り付けの際には必ずエンジンを停止した状態で行ってください。火災・感電・故障の原因となります。</span></td>
    <td><img src="images/spacer.gif" width="1" height="200" border="0" alt=""></td>
   </tr>
     
@@ -549,36 +568,20 @@ LED REVOLUTION LED�t�H�O �o���u�̓n���Q�������v�ɔ�ׂĔ��M�ʂ����Ȃ��ׁA�t�H�O�
    <td><img src="images/spacer.gif" width="1" height="200" border="0" alt=""></td>
   </tr>
     <tr>
-   <td colspan="71"><span class="style6">�ۏ؋K��</span></td>
+   <td colspan="71"><span class="style6">保証規定</span></td>
    <td><img src="images/spacer.gif" width="1" height="32" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="2">&nbsp;</td>
    <td rowspan="2" valign="top"><br>
-   <td colspan="68" rowspan="2" valign="top" style="line-height:16px;"><span class="style1">���{���i��1�N�ۏ؂ƂȂ�܂��B<br>
-       ���戵�������ɏ]��������Ȏg�p��Ԃ̉��ŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ���<br>
-�@�@���Ђł͈�ؐӔC�𕉂����˂܂��B</span></td>
+   <td colspan="68" rowspan="2" valign="top" style="line-height:16px;"><span class="style1">●本製品は1年保証となります。<br>
+       ●取扱説明書に従った正常な使用状態の下で不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について<br>
+　　弊社では一切責任を負いかねます。</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
     
-  <tr>
-   <td colspan="2">&nbsp;</td>
-   <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td rowspan="2" colspan="56"><img name="led_bulb_revo_r85_c1" src="images/led_bulb_revo_r85_c1.gif" width="817" height="93" border="0" id="led_bulb_revo_r85_c1" alt=""></td>
-   <td colspan="8"><a href="led_bulb_revo.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('led_bulb_revo_r85_c57','','images/led_bulb_revo_r85_c57_f2.gif',1);"><img name="led_bulb_revo_r85_c57" src="images/led_bulb_revo_r85_c57.gif" width="85" height="15" border="0" id="led_bulb_revo_r85_c57" alt=""></a></td>
-   <td rowspan="2" colspan="7"><img name="led_bulb_revo_r85_c65" src="images/led_bulb_revo_r85_c65.gif" width="98" height="93" border="0" id="led_bulb_revo_r85_c65" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="8"><img name="led_bulb_revo_r86_c57" src="images/led_bulb_revo_r86_c57.gif" width="85" height="78" border="0" id="led_bulb_revo_r86_c57" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="78" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="71"><img name="led_bulb_revo_r87_c1" src="images/led_bulb_revo_r87_c1.gif" width="1000" height="79" border="0" id="led_bulb_revo_r87_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="79" border="0" alt=""></td>
-  </tr>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

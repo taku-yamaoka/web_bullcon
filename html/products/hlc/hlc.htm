@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>�w�b�h���C�g�R���g���[���[ / Bullcon-�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>ヘッドライトコントローラー / Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -36,12 +38,48 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/hlc_r3_c17_s2.gif','images/hlc_r3_c24_s2.gif','images/hlc_r3_c30_s2.gif','images/hlc_r3_c37_s2.gif','images/hlc_r3_c46_s2.gif','images/hlc_r6_c1_s2.gif','images/hlc_r6_c9_s2.gif','images/hlc_r6_c19_s2.gif','images/hlc_r6_c27_s2.gif','images/hlc_r6_c35_s2.gif','images/hlc_r6_c42_s2.gif','images/hlc_r9_c3_s2.gif','images/hlc_r9_c7_s2.gif','images/hlc_r45_c2_s2.gif','images/hlc_r51_c1_s2.gif','images/hlc_r119_c43_s2.gif');">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="hlc_20220928.png" fwpage="�y�[�W 1" fwbase="hlc.gif" fwstyle="Dreamweaver" fwdocid = "1254523178" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="hlc_20220928.png" fwpage="ページ 1" fwbase="hlc.gif" fwstyle="Dreamweaver" fwdocid = "1254523178" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="12" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="8" height="1" alt=""></td>
@@ -96,25 +134,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
 
-   <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="50"><img name="hlc_r14_c1" src="images/hlc_r14_c1.gif" width="1000" height="30" id="hlc_r14_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
@@ -134,18 +153,18 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="3" colspan="9"><img name="hlc_r18_c1" src="images/hlc_r18_c1.gif" width="170" height="260" id="hlc_r18_c1" alt=""></td>
-   <td colspan="41" style="font-size: 25px"><b>���鎞���Ԃ̒���ԁA�M���҂��̒�Ԏ��Ƀw�b�h���C�g�������ŏ����I</b></td>
+   <td colspan="41" style="font-size: 25px"><b>薄暮時や夜間の駐停車、信号待ちの停車時にヘッドライトを自動で消灯！</b></td>
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
   <tr>
-   <td colspan="41" rowspan="2" style="font-size: 15px; line-height: 22px"><b>�V�t�g���o�[�̈ʒu��p�[�L���O�u���[�L�̏�ԁA�܂��͎ԑ�����ԗ��̏󋵂����m���� </b><br>
-     <b>�����I�Ɂw�w�b�h���C�g�݂̂������x������̂ŁA�ʓ|�ȃX�C�b�`���삩��������܂��B </b><br>
-     <b>������́A�ԗ������s���J�n����Ǝ����Ńw�b�h���C�g���_�����邽�߁A���͂ɗD�������S�^�]���\�ł��B </b><br>
+   <td colspan="41" rowspan="2" style="font-size: 15px; line-height: 22px"><b>シフトレバーの位置やパーキングブレーキの状態、または車速から車両の状況を検知して </b><br>
+     <b>自動的に『ヘッドライトのみを消灯』させるので、面倒なスイッチ操作から解放されます。 </b><br>
+     <b>消灯後は、車両が走行を開始すると自動でヘッドライトが点灯するため、周囲に優しい安全運転が可能です。 </b><br>
        <br>
-       <span style="font-size: 13px">���H�^���ԗ��@�̕ۈ�������ɂ��A�I�[�g���C�g�@�\���W�����ڂ��ꂽ�ԗ����������Ă��܂��B<br>
-     �V�^�ԈȊO�̊����ԗ����}�C�i�[�`�F���W�̃^�C�~���O�Łu���C�g�X�C�b�`�n�e�e�v�ݒ肪�����Ȃ��Ă��܂��B<br>
-     �����̋@�\�ɂ͎��������⌸���@�\���ݒ肳��Ă��Ȃ����߁A�G���W�����������܂܂̒���ԂŃw�b�h���C�g������������ɂ�<br>
-    �蓮�Ŗ��񃉃C�g�X�C�b�`�𑀍삷��K�v������܂����A�{���i�𑕒����邱�ƂŃX�C�b�`���삪�s�v�ɂȂ�܂��B</span></td>
+       <span style="font-size: 13px">道路運送車両法の保安基準改正により、オートライト機能が標準搭載された車両が増加しています。<br>
+     新型車以外の既存車両もマイナーチェンジのタイミングで「ライトスイッチＯＦＦ」設定が無くなっています。<br>
+     純正の機能には自動消灯や減光機能が設定されていないため、エンジンをかけたままの駐停車でヘッドライトを消灯させるには<br>
+    手動で毎回ライトスイッチを操作する必要がありますが、本製品を装着することでスイッチ操作が不要になります。</span></td>
    <td><img src="images/spacer.gif" width="1" height="80" alt=""></td>
   </tr>
   <tr>
@@ -162,17 +181,17 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="170" alt=""></td>
   </tr>
   <tr>
-   <td colspan="7" style="font-size: 12px; text-align: center">�y�V�t�g�|�W�V�����z</td>
-   <td colspan="4" style="font-size: 12px; text-align: center">�y�p�[�L���O�u���[�L�z</td>
-   <td colspan="7" style="font-size: 13px; text-align: center">�y�ԑ��z</td>
+   <td colspan="7" style="font-size: 12px; text-align: center">【シフトポジション】</td>
+   <td colspan="4" style="font-size: 12px; text-align: center">【パーキングブレーキ】</td>
+   <td colspan="7" style="font-size: 13px; text-align: center">【車速】</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="17" style="font-size: 13px; text-align: center">&lt;�X���[���_��/�w�b�h���C�g�_��&gt;</td>
+   <td colspan="17" style="font-size: 13px; text-align: center">&lt;スモール点灯/ヘッドライト点灯&gt;</td>
    <td colspan="7"><img name="hlc_r24_c18" src="images/hlc_r24_c18.gif" width="131" height="20" id="hlc_r24_c18" alt=""></td>
    <td colspan="4"><img name="hlc_r24_c25" src="images/hlc_r24_c25.gif" width="138" height="20" id="hlc_r24_c25" alt=""></td>
    <td colspan="7"><img name="hlc_r24_c29" src="images/hlc_r24_c29.gif" width="131" height="20" id="hlc_r24_c29" alt=""></td>
-   <td colspan="15" style="font-size: 13px; text-align: center">&lt;�X���[���_��/�w�b�h���C�g����&gt;</td>
+   <td colspan="15" style="font-size: 13px; text-align: center">&lt;スモール点灯/ヘッドライト消灯&gt;</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -193,12 +212,12 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="13"><img name="hlc_r29_c1" src="images/hlc_r29_c1.gif" width="220" height="170" id="hlc_r29_c1" alt=""></td>
-   <td colspan="13" style="font-size: 16px; line-height: 22px; vertical-align: top"><b>���^�k�d�c�X�C�b�`�^�C�v</b><p><span style="font-size: 14px; line-height: 22px">�c�Q�W�����~���Q�O�����~���݂X�����̏��^�X�C�b�`�Ȃ̂ŁA�u�R���\�[�����Ӂv�u�R�����J�o�[�v�u�V�t�g���o�[�t�߁v�u���[�^�[���v�Ȃǎg���₷���ꏊ�֐ݒu���\�B</span>
+   <td colspan="13" style="font-size: 16px; line-height: 22px; vertical-align: top"><b>小型ＬＥＤスイッチタイプ</b><p><span style="font-size: 14px; line-height: 22px">縦２８ｍｍ×幅２０ｍｍ×厚み９ｍｍの小型スイッチなので、「コンソール周辺」「コラムカバー」「シフトレバー付近」「メーター下」など使いやすい場所へ設置が可能。</span>
      <p>
-   <span style="font-size: 15px; line-height: 22px"><b>��g�k�b-�P�O�P��<br>��g�k�b-�P�O�Q��<br>��g�k�b-�P�O�R��<br>��g�k�b-�P�O�S��</b></span></td>
+   <span style="font-size: 15px; line-height: 22px"><b>≪ＨＬＣ-１０１≫<br>≪ＨＬＣ-１０２≫<br>≪ＨＬＣ-１０３≫<br>≪ＨＬＣ-１０４≫</b></span></td>
    <td colspan="10"><img name="hlc_r29_c27" src="images/hlc_r29_c27.gif" width="220" height="170" id="hlc_r29_c27" alt=""></td>
-   <td colspan="14" style="font-size: 16px; line-height: 22px; vertical-align: top"><b>�T�[�r�X�z�[���X�C�b�`�^�C�v</b><p><span style="font-size: 14px; line-height: 22px">�����T�[�r�X�z�[���Ɏ��܂�̂ŁA�����ڃX�b�L���A��t�����Ȃ��B</span><p>
-   <span style="font-size: 15px; line-height: 22px"><b>��g�k�b-�P�O�P�`��<br>��g�k�b-�P�O�Q�b��<br>��g�k�b-�P�O�R�b��<br>��g�k�b-�P�O�S�b��</b></span></td>
+   <td colspan="14" style="font-size: 16px; line-height: 22px; vertical-align: top"><b>サービスホールスイッチタイプ</b><p><span style="font-size: 14px; line-height: 22px">純正サービスホールに収まるので、見た目スッキリ、後付け感なし。</span><p>
+   <span style="font-size: 15px; line-height: 22px"><b>≪ＨＬＣ-１０１Ａ≫<br>≪ＨＬＣ-１０２Ｃ≫<br>≪ＨＬＣ-１０３Ｃ≫<br>≪ＨＬＣ-１０４Ｃ≫</b></span></td>
    <td><img src="images/spacer.gif" width="1" height="170" alt=""></td>
   </tr>
   <tr>
@@ -211,8 +230,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="hlc_r32_c1" src="images/hlc_r32_c1.gif" width="90" height="75" id="hlc_r32_c1" alt=""></td>
-   <td colspan="46" style="font-size: 16px; line-height: 22px"><b>���p�[�L���O�u���[�L/�p�[�L���O�V�t�g�|�W�V�����A�����[�h</b><br>
-      <span style="font-size: 14px; line-height: 22px">�ԗ������I�[�g���C�g�@�\�Ńw�b�h���C�g�_�����ɁA�p�[�L���O�u���[�L������s�����A�V�t�g�m�u���p�[�L���O�|�W�V�����ɓ��ꂽ�Ƃ��Ɏ����Ńw�b�h���C�g�݂̂��������܂��B</span></td>
+   <td colspan="46" style="font-size: 16px; line-height: 22px"><b>●パーキングブレーキ/パーキングシフトポジション連動モード</b><br>
+      <span style="font-size: 14px; line-height: 22px">車両純正オートライト機能でヘッドライト点灯中に、パーキングブレーキ操作を行うか、シフトノブをパーキングポジションに入れたときに自動でヘッドライトのみを消灯します。</span></td>
    <td><img src="images/spacer.gif" width="1" height="75" alt=""></td>
   </tr>
   <tr>
@@ -221,9 +240,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="hlc_r34_c1" src="images/hlc_r34_c1.gif" width="90" height="75" id="hlc_r34_c1" alt=""></td>
-   <td colspan="46" style="font-size: 16px; line-height: 22px"><b>���ԑ��A�����[�h</b><br>
-  <span style="font-size: 14px; line-height: 22px">�ԗ������I�[�g���C�g�@�\�Ńw�b�h���C�g�_�����ɁA�ԑ�0Km/h��2�b�ȏ�̒�Ԃ��p�������
-      �����Ńw�b�h���C�g�݂̂��������܂��B</span></td>
+   <td colspan="46" style="font-size: 16px; line-height: 22px"><b>●車速連動モード</b><br>
+  <span style="font-size: 14px; line-height: 22px">車両純正オートライト機能でヘッドライト点灯中に、車速0Km/hで2秒以上の停車が継続すると
+      自動でヘッドライトのみを消灯します。</span></td>
    <td><img src="images/spacer.gif" width="1" height="75" alt=""></td>
   </tr>
   <tr>
@@ -232,9 +251,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="hlc_r36_c1" src="images/hlc_r36_c1.gif" width="90" height="75" id="hlc_r36_c1" alt=""></td>
-   <td colspan="46" style="font-size: 16px; line-height: 22px"><b>���t��LED�X�C�b�`�A�����[�h</b><br>
-     <span style="font-size: 14px; line-height: 22px">�ԗ������I�[�g���C�g�@�\�Ńw�b�h���C�g�_�����ɁA���i�t����LED�X�C�b�`��Z��������ƁA�w�b�h���C�g�̂ݏ������܂��B</span> <br>
-      <span style="font-size: 12px">�i���S�̂��ߑ��s����LED�X�C�b�`����͍s��Ȃ��ł��������B�iLED�X�C�b�`�͑��s�����얳���j�j
+   <td colspan="46" style="font-size: 16px; line-height: 22px"><b>●付属LEDスイッチ連動モード</b><br>
+     <span style="font-size: 14px; line-height: 22px">車両純正オートライト機能でヘッドライト点灯中に、製品付属のLEDスイッチを短押しすると、ヘッドライトのみ消灯します。</span> <br>
+      <span style="font-size: 12px">（安全のため走行中のLEDスイッチ操作は行わないでください。（LEDスイッチは走行中操作無効））
     </span></td>
    <td><img src="images/spacer.gif" width="1" height="75" alt=""></td>
   </tr>
@@ -244,8 +263,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="hlc_r38_c1" src="images/hlc_r38_c1.gif" width="90" height="75" id="hlc_r38_c1" alt=""></td>
-   <td colspan="46" style="font-size: 16px; line-height: 22px"><b>�������e�i���X���[�h�i�������A�@�\�j</b><br>
-    <span style="font-size: 14px; line-height: 22px">�ԗ��̏����I�[�g���C�g�@�\��������Ԃɖ߂��郁���e�i���X���[�h�i�������A�@�\�i�m�[�}�����[�h�j�j�𓋍ځB</span></td>
+   <td colspan="46" style="font-size: 16px; line-height: 22px"><b>●メンテナンスモード（純正復帰機能）</b><br>
+    <span style="font-size: 14px; line-height: 22px">車両の純正オートライト機能を純正状態に戻せるメンテナンスモード（純正復帰機能（ノーマルモード））を搭載。</span></td>
    <td><img src="images/spacer.gif" width="1" height="65" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="75" alt=""></td>
   </tr>
@@ -254,7 +273,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
   </tr>
   <tr>
-   <td colspan="50" style="font-size: 13px; text-align: center">�����e�i���X���[�h�������A�e�탂�[�h�ł̃w�b�h���C�g������́A�ԗ������s���J�n����Ǝ����Ńw�b�h���C�g���_�����܂��B</td>
+   <td colspan="50" style="font-size: 13px; text-align: center">メンテナンスモードを除く、各種モードでのヘッドライト消灯後は、車両が走行を開始すると自動でヘッドライトが点灯します。</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -267,8 +286,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="220" alt=""></td>
   </tr>
   <tr>
-   <td colspan="26" style="font-size: 16px; text-align: center">�ԗ����s���@�i�w�b�h���C�g�_���j</td>
-   <td colspan="24" style="font-size: 16px; text-align: center">����Ԏ���M���҂��̈ꎞ��~�@�i�w�b�h���C�g�����j</td>
+   <td colspan="26" style="font-size: 16px; text-align: center">車両走行中　（ヘッドライト点灯）</td>
+   <td colspan="24" style="font-size: 16px; text-align: center">駐停車時や信号待ちの一時停止　（ヘッドライト消灯）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -310,7 +329,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
     <tr>
-   <td colspan="50"><div align="center" class="style10"><a href="../../pdf/multiple-connect.pdf" target="_blank" style="text-decoration: none; font-size: 15px; line-height: 20px"><b>����̎�t�ʒu�ɐڑ����镾�А��i�Ɋւ��邲���� �iPDF�j</b><br><span style="font-size: 13px">�i�t���[�e���r���O�@/�@�}�W�R�l�@/�@�J�����Z���N�^�[�@/�@�w�b�h���C�g�R���g���[���[�@/�@�ԑ��h�A���b�N���j�b�g�j</span></a></div></td>
+   <td colspan="50"><div align="center" class="style10"><a href="../../pdf/multiple-connect.pdf" target="_blank" style="text-decoration: none; font-size: 15px; line-height: 20px"><b>同一の取付位置に接続する弊社製品に関するご注意 （PDF）</b><br><span style="font-size: 13px">（フリーテレビング　/　マジコネ　/　カメラセレクター　/　ヘッドライトコントローラー　/　車速ドアロックユニット）</span></a></div></td>
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
     <tr>
@@ -342,8 +361,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="25" alt=""></td>
   </tr>
   <tr>
-   <td colspan="26" style="font-size: 16px; text-align: center"><b>�V�^�I�[�g���C�g�@�\�t�����C�g�X�C�b�`<span style="color: #FF0308">�i��t�\�j</span></b></td>
-   <td colspan="24" style="font-size: 16px; text-align: center"><b>�]���^�I�[�g���C�g�@�\�t�����C�g�X�C�b�`<span style="color: #1200FF">�i��t�s�j</span></b></td>
+   <td colspan="26" style="font-size: 16px; text-align: center"><b>新型オートライト機能付きライトスイッチ<span style="color: #FF0308">（取付可能）</span></b></td>
+   <td colspan="24" style="font-size: 16px; text-align: center"><b>従来型オートライト機能付きライトスイッチ<span style="color: #1200FF">（取付不可）</span></b></td>
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
@@ -351,7 +370,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="210" alt=""></td>
   </tr>
   <tr>
-   <td colspan="50" style="font-size: 11px; text-align: center">���C�g�X�C�b�`�̌`��͎ԗ���N���ɂ��قȂ�ꍇ������܂��B�܂��A�V�^���C�g�X�C�b�`�����ԗ��ł����Ă���L�y�쓮�m�F�Ԏ�z�ȊO�ɂ͂����t���ł��܂���B</td>
+   <td colspan="50" style="font-size: 11px; text-align: center">ライトスイッチの形状は車両や年式により異なる場合があります。また、新型ライトスイッチ装着車両であっても上記【作動確認車種】以外にはお取り付けできません。</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -395,73 +414,73 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
-   <td colspan="14" style="font-size: 12px;">�@�g�p�d��</td>
-   <td colspan="12" style="font-size: 12px;">�c�b�P�Q�u�E�}�C�i�X�A�[�X</td>
-   <td colspan="11" style="font-size: 12px;">���i�d��</td>
+   <td colspan="14" style="font-size: 12px;">　使用電源</td>
+   <td colspan="12" style="font-size: 12px;">ＤＣ１２Ｖ・マイナスアース</td>
+   <td colspan="11" style="font-size: 12px;">製品重量</td>
    <td colspan="13" style="font-size: 12px;"></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="14" style="font-size: 12px;">�@�{�̐��@</td>
-   <td colspan="12" style="font-size: 12px;">�v�V�R&times;�g�U�O&times;�c�P�W �i�����j</td>
-   <td colspan="11" style="font-size: 12px; text-align: right;">�i�{�̏d�ʁE�n�[�l�X�d�ʁE�X�C�b�`�d�ʁE</td>
-   <td colspan="13" style="font-size: 12px;">�p�b�P�[�W���O���d�ʁj</td>
+   <td colspan="14" style="font-size: 12px;">　本体寸法</td>
+   <td colspan="12" style="font-size: 12px;">Ｗ７３&times;Ｈ６０&times;Ｄ１８ （ｍｍ）</td>
+   <td colspan="11" style="font-size: 12px; text-align: right;">（本体重量・ハーネス重量・スイッチ重量・</td>
+   <td colspan="13" style="font-size: 12px;">パッケージング総重量）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="14" style="font-size: 12px;">�@�n�[�l�X��</td>
-   <td colspan="12" style="font-size: 12px;">�R�l�N�^�n�[�l�X:�T�O����</td>
-   <td colspan="11" style="font-size: 12px;">���g�k�b-�P�O�P��</td>
-   <td colspan="13" style="font-size: 12px;">�R�V���E�X�O���E�P�O���E�P�X�W��</td>
+   <td colspan="14" style="font-size: 12px;">　ハーネス長</td>
+   <td colspan="12" style="font-size: 12px;">コネクタハーネス:５０ｃｍ</td>
+   <td colspan="11" style="font-size: 12px;">＜ＨＬＣ-１０１＞</td>
+   <td colspan="13" style="font-size: 12px;">３７ｇ・９０ｇ・１０ｇ・１９８ｇ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="14"><img name="hlc_r90_c1" src="images/hlc_r90_c1.gif" width="250" height="20" id="hlc_r90_c1" alt=""></td>
-   <td colspan="12" style="font-size: 12px;">�d���n�[�l�X�F�P��<br></td>
-   <td colspan="11" style="font-size: 12px;">���g�k�b�|�P�O�P�`��</td>
-   <td colspan="13" style="font-size: 12px;">�R�V���E�X�O���E�R�U���E�Q�Q�U��</td>
+   <td colspan="12" style="font-size: 12px;">電源ハーネス：１ｍ<br></td>
+   <td colspan="11" style="font-size: 12px;">＜ＨＬＣ－１０１Ａ＞</td>
+   <td colspan="13" style="font-size: 12px;">３７ｇ・９０ｇ・３６ｇ・２２６ｇ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="14" style="font-size: 12px;">�@���g�k�b-10��������</td>
-<td colspan="12" style="font-size: 12px;">�k�d�c�X�C�b�`�F�P��</td>
-   <td colspan="11" style="font-size: 12px;">���g�k�b�|�P�O�Q��</td>
-   <td colspan="13" style="font-size: 12px;">�R�V���E�P�T�O���E�P�O���E�Q�T�W��</td>
+   <td colspan="14" style="font-size: 12px;">　＜ＨＬＣ-10＃同梱＞</td>
+<td colspan="12" style="font-size: 12px;">ＬＥＤスイッチ：１ｍ</td>
+   <td colspan="11" style="font-size: 12px;">＜ＨＬＣ－１０２＞</td>
+   <td colspan="13" style="font-size: 12px;">３７ｇ・１５０ｇ・１０ｇ・２５８ｇ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="14" style="font-size: 12px;">�@���g�k�b-10���`������</td>
-   <td colspan="12" style="font-size: 12px;">�T�[�r�X�z�[���X�C�b�`A�F�V�O����</td>
-   <td colspan="11" style="font-size: 12px;">���g�k�b�|�P�O�Q�b��</td>
-   <td colspan="13" style="font-size: 12px;">�R�V���E�P�T�O���E�R�U���E�Q�W�S��</td>
+   <td colspan="14" style="font-size: 12px;">　＜ＨＬＣ-10＃Ａ同梱＞</td>
+   <td colspan="12" style="font-size: 12px;">サービスホールスイッチA：７０ｃｍ</td>
+   <td colspan="11" style="font-size: 12px;">＜ＨＬＣ－１０２Ｃ＞</td>
+   <td colspan="13" style="font-size: 12px;">３７ｇ・１５０ｇ・３６ｇ・２８４ｇ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="14" style="font-size: 12px;">�@���g�k�b-10���b������</td>
-   <td colspan="12" style="font-size: 12px;">�T�[�r�X�z�[���X�C�b�`C�F�V�O����</td>
-   <td colspan="11" style="font-size: 12px;">���g�k�b�|�P�O�R��</td>
-   <td colspan="13" style="font-size: 12px;">�R�V���E�P�V�W���E�P�O���E�Q�X�Q��</td>
+   <td colspan="14" style="font-size: 12px;">　＜ＨＬＣ-10＃Ｃ同梱＞</td>
+   <td colspan="12" style="font-size: 12px;">サービスホールスイッチC：７０ｃｍ</td>
+   <td colspan="11" style="font-size: 12px;">＜ＨＬＣ－１０３＞</td>
+   <td colspan="13" style="font-size: 12px;">３７ｇ・１７８ｇ・１０ｇ・２９２ｇ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="14" style="font-size: 12px;">�@����d��</td>
-   <td colspan="12" style="font-size: 12px;">�P�O�O���`�ȉ�</td>
-   <td colspan="11" style="font-size: 12px;">���g�k�b�|�P�O�R�b��</td>
-   <td colspan="13" style="font-size: 12px;">�R�V���E�P�V�W���E�R�U���E�R�P�W��</td>
+   <td colspan="14" style="font-size: 12px;">　消費電流</td>
+   <td colspan="12" style="font-size: 12px;">１００ｍＡ以下</td>
+   <td colspan="11" style="font-size: 12px;">＜ＨＬＣ－１０３Ｃ＞</td>
+   <td colspan="13" style="font-size: 12px;">３７ｇ・１７８ｇ・３６ｇ・３１８ｇ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="14" style="font-size: 12px;">�@�쓮���x�͈�</td>
-   <td colspan="12" style="font-size: 12px;">�|�S�O���@�`�@�{�W�T��</td>
-   <td colspan="11" style="font-size: 12px;">���g�k�b�|�P�O�S��</td>
-   <td colspan="13" style="font-size: 12px;">�R�V���E�P�T�O���E�P�O���E�Q�T�W��</td>
+   <td colspan="14" style="font-size: 12px;">　作動温度範囲</td>
+   <td colspan="12" style="font-size: 12px;">－４０℃　～　＋８５℃</td>
+   <td colspan="11" style="font-size: 12px;">＜ＨＬＣ－１０４＞</td>
+   <td colspan="13" style="font-size: 12px;">３７ｇ・１５０ｇ・１０ｇ・２５８ｇ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="14"><img name="hlc_r96_c1" src="images/hlc_r96_c1.gif" width="250" height="20" id="hlc_r96_c1" alt=""></td>
    <td colspan="12"><img name="hlc_r96_c15" src="images/hlc_r96_c15.gif" width="250" height="20" id="hlc_r96_c15" alt=""></td>
-   <td colspan="11" style="font-size: 12px;">���g�k�b�|�P�O�S�b��</td>
-   <td colspan="13" style="font-size: 12px;">�R�V���E�P�T�O���E�R�U���E�Q�W�S��</td>
+   <td colspan="11" style="font-size: 12px;">＜ＨＬＣ－１０４Ｃ＞</td>
+   <td colspan="13" style="font-size: 12px;">３７ｇ・１５０ｇ・３６ｇ・２８４ｇ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -481,79 +500,67 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="190" alt=""></td>
   </tr>
   <tr>
-   <td colspan="50" style="font-size: 12px"><b>���w���̑O��</b></td>
+   <td colspan="50" style="font-size: 12px"><b>ご購入の前に</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <ul>
    <td colspan="50" style="font-size: 11px; line-height: 16px; vertical-align: top;">
-     <li>�{���i�̓��C�g�X�C�b�`�ɂ��w�b�h���C�gON/OFF��⏕���鐻�i�ł��B</li>
-     <li>�{���i�͓K���ȊO�̎ԗ��ɂ͎g�p���Ȃ��ł��������B���A�K���Ԏ�ł����Ă��ԗ����[�J�[�̎d�l�ύX�ɂ�肨���t�����o���Ȃ��ꍇ������܂��B</li>
-     <li>�T�[�r�X�z�[���X�C�b�`�^�C�v�K���m�F���̂�����</li>
-     �ԗ����̃T�[�r�X�z�[���̗L���A�T�C�Y�������Ă��邩���m�F���������B�܂��A�T�[�r�X�z�[�������łɎg�p����Ă���ꍇ�͎��t���ł��܂���B<br>
-     �T�[�r�X�z�[���̓����`��ɂ���ẮA���t���ɂ����i����ɂ����j�ꍇ������܂��B</li>
-     <li>�{���i������͎��͂����邢�󋵂ŃX���[�����C�g�݂̂�_�������邱�Ƃ͂ł��܂���B</li>
-     <li>�{���i������͒�Ԓ��ł����Ă����͂��Â��󋵂ŃG���W�����n������ƈ�u�w�b�h���C�g���_������ꍇ������܂����ُ�ł͂���܂���B</li>
-     <li>�{���i�̓��C�g�X�C�b�`���`�t�s�n�̈ʒu�ɂ���Ƃ��̂ݍ쓮���܂��B�i�蓮�Ńw�b�h���C�g��_�������Ă���ꍇ�ɂ͖{���i�ɂ�鎩�������͍쓮���܂���B�j</li>
-     <li>�{���i���g�p���Ĕ����������̂�̏�A�j�����Ɋւ��Ă̐ӔC�͕��Ђł͈�ؕ������˂܂��̂ł��炩���߂��������������B</li>
-     <li>�{���i�̌�������t�����@�y�юg�p���@�ɂ�鎖�̓��Ɋւ��܂��ẮA���Ђł͈�ؐӔC�𕉂����˂܂��B</li>
-     <li>�{���i�̎��t���ɂ͎ԗ��p�l�����̒E�����K�v�ł��B�L�Y�t���A�j���ɒ��ӂ��č�Ƃ��s���Ă��������B</li>
-     <li>���w�����y�яC�����ł̖{���i�̎��t���E���O���Ɋ|����H���y�ѕ��Ђւ̑������̔�p�͂��q�l�����S�ƂȂ�܂��B</li>
-     ���A�C�����̂��a����ɍۂ��Č����y�ё�֕i���݂̑��o���͍s���Ă���܂���B</li>
-     <li>�{���i�̍쓮�̗L���Ɋ֌W�Ȃ��A���̂ⓐ���Q���̐ӔC�͕��Ђł͈�ؐӔC�𕉂����˂܂��B</li>
-     <li>���i�̃f�U�C���A�d�l�A�O�ρA�F�����A���i���ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B</li>
-     �܂��A ���i�̎ʐ^���̐F�͎����Ƃ͑����قȂ�ꍇ������܂��̂ŁA���炩���߂��������������B</li>
-     <li>�Ԍ��Ή��i�Ƃ��Ĕ̔����Ă���܂����A�쓮���e�������ƈقȂ邽�ߌ������ɂ���Ă͕s�K���Ɣ��f�����ꍇ������܂��B</li>
-     <li>���鎞����і�Ԃ̑��s���Ƀw�b�h���C�g�����������܂ܑ��s���邱�Ƃ́A���H��ʖ@�ᔽ�ɂȂ�܂��̂Ő�΂ɍs��Ȃ��ł��������B</li>
-�܂��A�����Ȃ�ꍇ�ł����Ă����Ђł͈�ؐӔC�𕉂����˂܂��B</li></td></ul>
+     <li>本製品はライトスイッチによるヘッドライトON/OFFを補助する製品です。</li>
+     <li>本製品は適合以外の車両には使用しないでください。又、適合車種であっても車両メーカーの仕様変更によりお取り付けが出来ない場合があります。</li>
+     <li>サービスホールスイッチタイプ適合確認時のご注意</li>
+     車両側のサービスホールの有無、サイズが合っているかご確認ください。また、サービスホールがすでに使用されている場合は取り付けできません。<br>
+     サービスホールの内部形状によっては、取り付けにくい（入りにくい）場合があります。</li>
+     <li>本製品装着後は周囲が明るい状況でスモールライトのみを点灯させることはできません。</li>
+     <li>本製品装着後は停車中であっても周囲が暗い状況でエンジンを始動すると一瞬ヘッドライトが点灯する場合がありますが異常ではありません。</li>
+     <li>本製品はライトスイッチがＡＵＴＯの位置にあるときのみ作動します。（手動でヘッドライトを点灯させている場合には本製品による自動消灯は作動しません。）</li>
+     <li>本製品を使用して発生した事故や故障、破損等に関しての責任は弊社では一切負いかねますのであらかじめご了承ください。</li>
+     <li>本製品の誤った取り付け方法及び使用方法による事故等に関しましては、弊社では一切責任を負いかねます。</li>
+     <li>本製品の取り付けには車両パネル等の脱着が必要です。キズ付け、破損に注意して作業を行ってください。</li>
+     <li>ご購入時及び修理等での本製品の取り付け・取り外しに掛かる工賃及び弊社への送料等の費用はお客様ご負担となります。</li>
+     又、修理時のお預かりに際して交換及び代替品等の貸し出しは行っておりません。</li>
+     <li>本製品の作動の有無に関係なく、事故や盗難被害等の責任は弊社では一切責任を負いかねます。</li>
+     <li>製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。</li>
+     また、 製品の写真等の色は実物とは多少異なる場合がありますので、あらかじめご了承ください。</li>
+     <li>車検対応品として販売しておりますが、作動内容が純正と異なるため検査員によっては不適合と判断される場合があります。</li>
+     <li>薄暮時および夜間の走行中にヘッドライトを消灯したまま走行することは、道路交通法違反になりますので絶対に行わないでください。</li>
+また、いかなる場合であっても弊社では一切責任を負いかねます。</li></td></ul>
    <td><img src="images/spacer.gif" width="1" height="180" alt=""></td>
   </tr>
   <tr>
-   <td colspan="50" style="font-size: 12px"><b>���S�y�ю��t���Ɋւ��邲����</b></td>
+   <td colspan="50" style="font-size: 12px"><b>安全及び取り付けに関するご注意</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
     <ul>
    <td colspan="50" style="font-size: 11px; line-height: 16px; vertical-align: top">
-     <li>�w�肳�ꂽ����T���ۂ́A�K���T�[�L�b�g�e�X�^�[���g�p���A���d�퓙�͎g�p���Ȃ��ł��������B</li>
-     <li>�d���n�[�l�X�������Ȃ��ł��������B�����ȋȂ��A�˂���A�����������M���H�Ȃǉ����Ȃ��悤�����ӂ��������B</li>
-     <li>�{���i�𕪉���������������肵�Ȃ��ł��������B <br>
-     <li>�{���i�̎��t���A�z���A�g�p���@���ԈႤ�Ǝԗ��̑��u�A�@��ނ�j�����͑������鋰�ꂪ����A�΍ЁA�̏�̌����ƂȂ�܂��B</li>
-     <li>�{���i�����t������ہA�n�[�l�X���ԑ̂̋��������Ɋ��ݍ��܂Ȃ��悤�ɂ����ӂ��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</li>
-     <li>�{���i�̎��t���͕K��IG OFF�i�G���W�����n�����Ă��Ȃ���ԁj�A��Ԃōs���Ă��������B</li>
-     <li>�ԗ����i�����O���č�Ƃ��s���ꍇ�́A���̎ԗ��̐�����������Q�Ƃ��Ă��������B</li>
-     <li>�ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{���̋@�\�ɕs��������ꍇ�ɂ͖{���i�����t�����͎g�p���Ȃ��ł��������B</li>
-     <li>�ԗ����Ƃ̎��t�������E���Ɋւ���T�|�[�g�͍s���Ă���܂���̂ł��炩���߂��������������B</li>
-     <li>�{���i�̎��t���́A���t���Z�p�̂���̔��X�ōs���Ă��������B</li>
-     <li>�ԗ����[�J�[�ł̎d�l�ύX��A�b�v�f�[�g�ȂǂŐ���ɓ��삵�Ȃ��Ȃ�ꍇ������܂��B</li>
-    <li>�R�l�N�^�[��^�[�~�i���[�q�͊m���ɐڑ����Ă��������B</li></td></ul>
+     <li>指定された線を探す際は、必ずサーキットテスターを使用し、検電器等は使用しないでください。</li>
+     <li>電源ハーネスを傷つけないでください。無理な曲げ、ねじり、引っ張りや加熱加工など加えないようご注意ください。</li>
+     <li>本製品を分解したり改造したりしないでください。 <br>
+     <li>本製品の取り付け、配線、使用方法を間違うと車両の装置、機器類を破損又は損傷する恐れがあり、火災、故障の原因となります。</li>
+     <li>本製品を取り付けする際、ハーネスが車体の金属部分に噛み込まないようにご注意ください。火災・感電・故障の原因となります。</li>
+     <li>本製品の取り付けは必ずIG OFF（エンジンが始動していない状態）、状態で行ってください。</li>
+     <li>車両部品を取り外して作業を行う場合は、その車両の整備解説書を参照してください。</li>
+     <li>車両のバッテリーが弱っている状態及び、車両本来の機能に不備がある場合には本製品を取り付け又は使用しないでください。</li>
+     <li>車両ごとの取り付け資料・情報に関するサポートは行っておりませんのであらかじめご了承ください。</li>
+     <li>本製品の取り付けは、取り付け技術のある販売店で行ってください。</li>
+     <li>車両メーカーでの仕様変更やアップデートなどで正常に動作しなくなる場合があります。</li>
+    <li>コネクターやターミナル端子は確実に接続してください。</li></td></ul>
    <td><img src="images/spacer.gif" width="1" height="140" alt=""></td>
   </tr>
   <tr>
-   <td colspan="50" style="font-size: 12px"><b>�ۏ؋K��</b></td>
+   <td colspan="50" style="font-size: 12px"><b>保証規定</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
      <ul>
       <td colspan="50" style="font-size: 11px; line-height: 16px; vertical-align: top">
-       <li>�{���i��1�N�ۏ؂ƂȂ�܂��B</li>
-<li>�戵�������ɏ]��������Ȏg�p��Ԃ̉��ŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��Ă͕��Ђł͈�ؐӔC�𕉂����˂܂��B</li>
+       <li>本製品は1年保証となります。</li>
+<li>取扱説明書に従った正常な使用状態の下で不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等については弊社では一切責任を負いかねます。</li>
 </td></ul>
       
-  <tr>
-   <td rowspan="2" colspan="42"><img name="hlc_r119_c1" src="images/hlc_r119_c1.gif" width="838" height="49" id="hlc_r119_c1" alt=""></td>
-   <td colspan="5"><a href="hlc.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('hlc_r119_c43','','images/hlc_r119_c43_s2.gif',1);"><img name="hlc_r119_c43" src="images/hlc_r119_c43.gif" width="85" height="15" id="hlc_r119_c43" alt=""></a></td>
-   <td rowspan="2" colspan="3"><img name="hlc_r119_c48" src="images/hlc_r119_c48.gif" width="77" height="49" id="hlc_r119_c48" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="5"><img name="hlc_r120_c43" src="images/hlc_r120_c43.gif" width="85" height="34" id="hlc_r120_c43" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="34" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="50"><img name="hlc_r121_c1" src="images/hlc_r121_c1.gif" width="1000" height="74" id="hlc_r121_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="74" alt=""></td>
-  </tr>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

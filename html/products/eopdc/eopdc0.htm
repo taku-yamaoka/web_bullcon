@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>USB�d���R���o�[�^�[ / Bullcon-�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>USB電源コンバーター / Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -36,6 +38,40 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -49,8 +85,10 @@ function MM_preloadImages() { //v3.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/eopdc01_r20_c15_s2.gif','images/eopdc01_r44_c31_s2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="eop-dc01.png" fwpage="�y�[�W 1" fwbase="eopdc01.gif" fwstyle="Dreamweaver" fwdocid = "1371834020" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="eop-dc01.png" fwpage="ページ 1" fwbase="eopdc01.gif" fwstyle="Dreamweaver" fwdocid = "1371834020" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="5" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="15" height="1" alt=""></td>
@@ -95,17 +133,7 @@ function MM_preloadImages() { //v3.0
   </tr>
 
   <tr>
-    <td colspan="39"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_accessory/header.htm"
-  frameborder="0"
-  height="246px"
-  width="101%"
-  scrolling="no">
-</iframe> </td>
-  <tr>
-   <td colspan="17" style="font-size: 15px"><b>�X�}�[�g�t�H��/�^�u���b�g�Ȃǂ̏[�d���ł���USB�d�����݃��j�b�g</b></td>
+   <td colspan="17" style="font-size: 15px"><b>スマートフォン/タブレットなどの充電ができるUSB電源増設ユニット</b></td>
    <td colspan="22"><img name="eopdc01_r11_c18" src="images/eopdc01_r11_c18.gif" width="500" height="30" id="eopdc01_r11_c18" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
@@ -120,13 +148,13 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="25" style="font-size: 20px; line-height: 25px"><b>�ԗ��ւ̒��ڔz���ŏo�͍ő�RA</b><span style="font-size: 12px">(��)</span><b>�̂t�r�a�d�����Q�|�[�g���݁@<br>
-     �R���p�N�g�Ȗ{�̂ƂR�T�O�����̂t�r�a�P�[�u���̗p��<br>
-    �p�l������O���[�u�{�b�N�X���ł̎��t�����\�I</b></td>
+   <td colspan="25" style="font-size: 20px; line-height: 25px"><b>車両への直接配線で出力最大３A</b><span style="font-size: 12px">(※)</span><b>のＵＳＢ電源を２ポート増設　<br>
+     コンパクトな本体と３５０ｍｍのＵＳＢケーブル採用で<br>
+    パネル内やグローブボックス奥での取り付けが可能！</b></td>
    <td><img src="images/spacer.gif" width="1" height="90" alt=""></td>
   </tr>
   <tr>
-   <td colspan="25" style="font-size: 13px; text-align: right;">���i�Q�|�[�g���v�l�j</td>
+   <td colspan="25" style="font-size: 13px; text-align: right;">※（２ポート合計値）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -134,11 +162,11 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-      <td colspan="25" style="font-size: 16px; line-height: 25px"><b>�̔����i�F���R�C�V�S�O</b><span style="font-size: 14px">�i�ō��j<br>�i�Ŕ����i ���R�C�S�O�O�j</span>
+      <td colspan="25" style="font-size: 16px; line-height: 25px"><b>販売価格：￥３，７４０</b><span style="font-size: 14px">（税込）<br>（税抜価格 ￥３，４００）</span>
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
-   <td colspan="25"><span style="font-size: 16px; text-align: center;">�i�`�m�R�[�h�F�S�X�T�O�O�X�S�O�U�Q�R�X�P</span></td>
+   <td colspan="25"><span style="font-size: 16px; text-align: center;">ＪＡＮコード：４９５００９４０６２３９１</span></td>
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
@@ -155,53 +183,53 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="17" bgcolor="#5F5F5F" style="font-size: 13px; color: #FFFFFF;"><b>�t�r�a�d���R���o�[�^�[�i�d�n�o�|�c�b�O�P�j�d�l</b></td>
+   <td colspan="17" bgcolor="#5F5F5F" style="font-size: 13px; color: #FFFFFF;"><b>ＵＳＢ電源コンバーター（ＥＯＰ－ＤＣ０１）仕様</b></td>
    <td rowspan="12" colspan="22"><img name="eopdc01_r22_c18" src="images/eopdc01_r22_c18.gif" width="500" height="240" id="eopdc01_r22_c18" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" bgcolor="#DCDCDC" style="font-size: 13px">����</td>
-   <td colspan="11" bgcolor="#DCDCDC" style="font-size: 13px">�c�b�{�P�Q�u�`�Q�S�u�E�}�C�i�X�A�[�X</td>
+   <td colspan="6" bgcolor="#DCDCDC" style="font-size: 13px">入力</td>
+   <td colspan="11" bgcolor="#DCDCDC" style="font-size: 13px">ＤＣ＋１２Ｖ～２４Ｖ・マイナスアース</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="font-size: 13px">�o��</td>
-   <td colspan="11" style="font-size: 13px">�c�b�{�T�u/�l�`�w�R�`�@�i�P�T�v�j</td>
+   <td colspan="6" style="font-size: 13px">出力</td>
+   <td colspan="11" style="font-size: 13px">ＤＣ＋５Ｖ/ＭＡＸ３Ａ　（１５Ｗ）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" bgcolor="#DCDCDC" style="font-size: 13px">�쓮���x�͈�</td>
-   <td colspan="11" bgcolor="#DCDCDC" style="font-size: 13px">�|�Q�O�� �` �{�W�O��</td>
+   <td colspan="6" bgcolor="#DCDCDC" style="font-size: 13px">作動温度範囲</td>
+   <td colspan="11" bgcolor="#DCDCDC" style="font-size: 13px">－２０℃ ～ ＋８０℃</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="font-size: 13px">�O�`���@</td>
-   <td colspan="11" style="font-size: 13px">�v�S�T����&times;�g�R�Q����&times;�c�P�W���� �i�ˋN�������j</td>
+   <td colspan="6" style="font-size: 13px">外形寸法</td>
+   <td colspan="11" style="font-size: 13px">Ｗ４５ｍｍ&times;Ｈ３２ｍｍ&times;Ｄ１８ｍｍ （突起部除く）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" bgcolor="#DCDCDC" style="font-size: 13px">�P�[�u����</td>
-   <td colspan="11" bgcolor="#DCDCDC"  style="font-size: 13px; line-height: 18px">�t�r�a�P�[�u���F��R�T����<br>�d�����i�ԁj/�A�[�X���i���j�F�e��U�O����</td>
+   <td colspan="6" bgcolor="#DCDCDC" style="font-size: 13px">ケーブル長</td>
+   <td colspan="11" bgcolor="#DCDCDC"  style="font-size: 13px; line-height: 18px">ＵＳＢケーブル：約３５ｃｍ<br>電源線（赤）/アース線（黒）：各約６０ｃｍ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="font-size: 13px">�q���[�Y</td>
-   <td colspan="11" style="font-size: 13px">�Q�`�@�~�j�ǃq���[�Y</td>
+   <td colspan="6" style="font-size: 13px">ヒューズ</td>
+   <td colspan="11" style="font-size: 13px">２Ａ　ミニ管ヒューズ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" bgcolor="#DCDCDC" style="font-size: 13px">�p�b�P�[�W���O�T�C�Y</td>
-   <td colspan="11" bgcolor="#DCDCDC" style="font-size: 13px">�v�V�O &times; �g�P�X�U &times; �c�S�Q�@�i�����j</td>
+   <td colspan="6" bgcolor="#DCDCDC" style="font-size: 13px">パッケージングサイズ</td>
+   <td colspan="11" bgcolor="#DCDCDC" style="font-size: 13px">Ｗ７０ &times; Ｈ１９６ &times; Ｄ４２　（ｍｍ）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="font-size: 13px">���i�d��</td>
-   <td colspan="11" style="font-size: 13px">��W�O���@�i�n�[�l�X�E�q���[�Y�ފ܂ށj</td>
+   <td colspan="6" style="font-size: 13px">製品重量</td>
+   <td colspan="11" style="font-size: 13px">約８０ｇ　（ハーネス・ヒューズ類含む）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" bgcolor="#DCDCDC" style="font-size: 13px">�p�b�P�[�W���O���d��</td>
-   <td colspan="11" bgcolor="#DCDCDC" style="font-size: 13px">��P�P�T���@�i���E����ފ܂ށj</td>
+   <td colspan="6" bgcolor="#DCDCDC" style="font-size: 13px">パッケージング総重量</td>
+   <td colspan="11" bgcolor="#DCDCDC" style="font-size: 13px">約１１５ｇ　（箱・梱包材含む）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -224,9 +252,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
     <td>&nbsp;</td>
-    <td colspan="11"><a href="../eopspt/eopspt.htm" target="�Ȃ�"><img name="eopdc01_r37_c2" src="images/eopdc01_r37_c2.gif" width="330" height="210" id="eopdc01_r37_c2" alt=""></a></td>
-    <td colspan="13"><a href="../av-hdm01/av-hdm01.htm" target="�Ȃ�"><img name="eopdc01_r36_c13" src="images/eopdc01_r36_c13.gif" width="330" height="210" id="eopdc01_r36_c13" alt=""></a></td>
-    <td colspan="13"><a href="../magicone/magicone.htm" target="�Ȃ�"><img name="eopdc01_r36_c26" src="images/eopdc01_r36_c26.gif" width="330" height="210" id="eopdc01_r36_c26" alt=""></a></td>
+    <td colspan="11"><a href="../eopspt/eopspt.htm" target="なし"><img name="eopdc01_r37_c2" src="images/eopdc01_r37_c2.gif" width="330" height="210" id="eopdc01_r37_c2" alt=""></a></td>
+    <td colspan="13"><a href="../av-hdm01/av-hdm01.htm" target="なし"><img name="eopdc01_r36_c13" src="images/eopdc01_r36_c13.gif" width="330" height="210" id="eopdc01_r36_c13" alt=""></a></td>
+    <td colspan="13"><a href="../magicone/magicone.htm" target="なし"><img name="eopdc01_r36_c26" src="images/eopdc01_r36_c26.gif" width="330" height="210" id="eopdc01_r36_c26" alt=""></a></td>
     <td>&nbsp;</td>
     <td><img src="images/spacer.gif" width="1" height="210" alt=""></td>
   </tr>
@@ -235,73 +263,62 @@ function MM_preloadImages() { //v3.0
     <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="39"><span style="font-size: 15px">���w���̑O��</span></td>
+   <td colspan="39"><span style="font-size: 15px">ご購入の前に</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="2" style="font-size: 12px; vertical-align: top; line-height: 13px">     ��<br>
-    ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br><br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-       ��<br>
-    ��</td>
-   <td colspan="37" style="font-size: 12px; vertical-align: top; line-height: 13px">     �{���i��DC+12V/24�u�E�}�C�i�X�A�[�X�Ԑ�p�ł��B�w��ȊO�̓d���ł͎g�p���Ȃ��ł��������B<br>
-�w�肳�ꂽ����T������A�z����Ƃ��s���ۂ͕K���o�b�e���[�̃}�C�i�X�[�q���O���Ă����Ƃ��s���ĉ������B�O���Ȃ��ō�Ƃ��s���ƃV���[�g���鋰�ꂪ����A��ϊ댯�ł��B<br>
-�^�]�̖W���ɂȂ�l�ȏꏊ�ɂ͎��t�����Ȃ��ł��������B<br>
-�{���i�𕪉���������H�E���������Ȃ��ł��������B<br>
-�{���i�͎Ԏ����p���i�ł��B�G���W�����[����O�������ɐݒu���Ȃ��ł��������B�܂��AUSB���d�@��̓d���ȊO�̎g�p�͂��Ȃ��ł��������B<br>
-�{���i�̃q���[�Y��2A�ł��B�w���A�i�A���y�A�j�ȊO�Ŏg�p���Ȃ��ł��������B<br>
-�{���i�ɐ��Ȃǂ̉t�̂�������Ȃ��悤�ɂ��Ă��������B����A�t�� �����Z�������ꍇ�͒����Ɏg�p�𒆎~���ۏ؏��ƈꏏ�ɂ������グ�̔̔��X���͕��Ђɓ_�����˗�����<br>���������B<br>
-�{���i���牌���ُ͈L�E�ى�������ꍇ�͒����Ɏg�p�𒆎~���ۏ؏��ƈꏏ�ɂ������グ�̔̔��X���͕��Ђɓ_�����˗����Ă��������B<br>
-�G�A�o�b�O�̓����W����l�ȏꏊ�ւ̎��t����z���͍s��Ȃ��ł��������B<br>
-�{���i�̓d�����핢��؂��đ��@��̓d����ڑ����鎖�͐�΂ɍs��Ȃ��ł��������B<br>
-������A�K���r�j�[���e�[�v���Ő≏�������s���Ă��������B<br>
-�e�z����r���Őؒf���Ȃ��ŉ������B���A�d���������USB�P�[�u���͎ԗ��������ɐG��Ȃ��l�ɔz�����s���Ă��������B<br>
-�{���i�̎��t���͎��t���Z�p�̂���̔��X�ōs���Ă��������B<br>
-�{���i�����t����ہA���J�����ԗ��̈ꕔ�����H���č�Ƃ��s���ꍇ�́A���y�єj���ɂ����ӂ��������B����A�j�����̑��Q�������܂��Ă����Ђł͈�ؐӔC�𕉂����˂܂��B<br>
-�O�L���Q�ɂ��@��̌̏�₻��Ȃǂɕt������S�Ă̐����ɑ΂��Ă����Ђł͈�؂��󂯂ł��܂���̂ŗ\�߂��������������B<br>
-�d�l�y�ъO�ς͉��ǂ̂��߁A�\���Ȃ��ύX����ꍇ������܂��B</td>
+   <td colspan="2" style="font-size: 12px; vertical-align: top; line-height: 13px">     ●<br>
+    ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br><br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+       ●<br>
+    ●</td>
+   <td colspan="37" style="font-size: 12px; vertical-align: top; line-height: 13px">     本製品はDC+12V/24Ｖ・マイナスアース車専用です。指定以外の電圧では使用しないでください。<br>
+指定された線を探した後、配線作業を行う際は必ずバッテリーのマイナス端子を外してから作業を行って下さい。外さないで作業を行うとショートする恐れがあり、大変危険です。<br>
+運転の妨げになる様な場所には取り付けしないでください。<br>
+本製品を分解したり加工・改造等しないでください。<br>
+本製品は車室内用製品です。エンジンルームや外装部分に設置しないでください。また、USB給電機器の電源以外の使用はしないでください。<br>
+本製品のヒューズは2Aです。指定のA（アンペア）以外で使用しないでください。<br>
+本製品に水などの液体がかからないようにしてください。万一、液体 等が浸入した場合は直ちに使用を中止し保証書と一緒にお買い上げの販売店又は弊社に点検を依頼して<br>ください。<br>
+本製品から煙又は異臭・異音がする場合は直ちに使用を中止し保証書と一緒にお買い上げの販売店又は弊社に点検を依頼してください。<br>
+エアバッグの動作を妨げる様な場所への取り付けや配線は行わないでください。<br>
+本製品の電源線被覆を切って他機器の電源を接続する事は絶対に行わないでください。<br>
+結線後、必ずビニールテープ等で絶縁処理を行ってください。<br>
+各配線を途中で切断しないで下さい。又、電源線およびUSBケーブルは車両金属部に触れない様に配線を行ってください。<br>
+本製品の取り付けは取り付け技術のある販売店で行ってください。<br>
+本製品を取り付ける際、穴開け等車両の一部を加工して作業を行う場合は、傷及び破損にご注意ください。万一、破損等の損害が生じましても弊社では一切責任を負いかねます。<br>
+前記損害による機器の故障やそれなどに付随する全ての請求に対しても弊社では一切お受けできませんので予めご了承ください。<br>
+仕様及び外観は改良のため、予告なく変更する場合があります。</td>
    <td><img src="images/spacer.gif" width="1" height="215" alt=""></td>
   </tr>
   <tr>
-   <td colspan="39"><span style="font-size: 15px">�ۏ؋K��</span></td>
+   <td colspan="39"><span style="font-size: 15px">保証規定</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="2" style="font-size: 12px; vertical-align: top; line-height: 13px">��<br>��</td>
-   <td colspan="37" style="font-size: 12px; vertical-align: top; line-height: 13px">�{���i��1�N�ۏ؂ƂȂ�܂��B<br>
-     �戵�������ɏ]��������Ȏg�p��Ԃ̂��Ƃŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��ĕ��Ђł�
-    ��ؐӔC�𕉂����˂܂��B</td>
+   <td colspan="2" style="font-size: 12px; vertical-align: top; line-height: 13px">●<br>●</td>
+   <td colspan="37" style="font-size: 12px; vertical-align: top; line-height: 13px">本製品は1年保証となります。<br>
+     取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について弊社では
+    一切責任を負いかねます。</td>
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
   <tr>
    <td colspan="39"><img name="eopdc01_r43_c1" src="images/eopdc01_r43_c1.gif" width="1000" height="15" id="eopdc01_r43_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="2" colspan="30"><img name="eopdc01_r44_c1" src="images/eopdc01_r44_c1.gif" width="838" height="49" id="eopdc01_r44_c1" alt=""></td>
-   <td colspan="5"><a href="eopdc01.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('eopdc01_r44_c31','','images/eopdc01_r44_c31_s2.gif',1);"><img name="eopdc01_r44_c31" src="images/eopdc01_r44_c31.gif" width="85" height="15" id="eopdc01_r44_c31" alt=""></a></td>
-   <td rowspan="2" colspan="4"><img name="eopdc01_r44_c36" src="images/eopdc01_r44_c36.gif" width="77" height="49" id="eopdc01_r44_c36" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="5"><img name="eopdc01_r45_c31" src="images/eopdc01_r45_c31.gif" width="85" height="34" id="eopdc01_r45_c31" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="34" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="39"><img name="eopdc01_r46_c1" src="images/eopdc01_r46_c1.gif" width="1000" height="74" id="eopdc01_r46_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="74" alt=""></td>
-  </tr>
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

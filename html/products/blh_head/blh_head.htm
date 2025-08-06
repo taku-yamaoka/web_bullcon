@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>LED HEAD LAMP COMFORT / Bullcon-�t�W�d�@�H��</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>LED HEAD LAMP COMFORT / Bullcon-フジ電機工業</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}.style3 {font-size: 23px;
 	font-weight: bold;
@@ -54,6 +56,40 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -67,8 +103,10 @@ function MM_preloadImages() { //v3.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/blh_head_r21_c4_s2.gif','images/blh_head_r54_c2_s2.gif','images/blh_head_r54_c11_s2.gif','images/blh_head_r54_c15_s2.gif','images/blh_head_r54_c21_s2.gif','images/blh_head_r54_c25_s2.gif','images/blh_head_r54_c34_s2.gif','images/blh_head_r54_c46_s2.gif','images/blh_head_r54_c50_s2.gif','images/blh_head_r54_c61_s2.gif','images/blh_head_r83_c53_s2.gif')">
-<table  border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="led_head_comfort.png" fwpage="�y�[�W 1" fwbase="blh_head.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table  border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="led_head_comfort.png" fwpage="ページ 1" fwbase="blh_head.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="14" height="1" alt=""></td>
@@ -139,25 +177,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
 
-  <tr><td colspan="66"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="66"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="66"><img name="blh_head_r12_c1" src="images/blh_head_r12_c1.gif" width="1000" height="36" id="blh_head_r12_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="36" alt=""></td>
@@ -182,13 +201,13 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="66"><span class="style3">�k�d�c���W���[���������I�ɗ�p����M�`�����̍�������➑̂��̗p�����X�}�[�g�ȃf�U�C���I</span></td>
+   <td colspan="66"><span class="style3">ＬＥＤモジュールを効率的に冷却する熱伝導率の高い金属筐体を採用したスマートなデザイン！</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
   <tr>
    <td colspan="6"><img name="blh_head_r18_c1" src="images/blh_head_r18_c1.gif" width="60" height="40" id="blh_head_r18_c1" alt=""></td>
-   <td colspan="50" style="line-height:18px"><span class="style4">�k�d�c�͈�ʓI�ȃn���Q�������v�i��R�C�O�O�O���ԁj�̖�P�R�{�i��S�O�C�O�O�O���ԁj���̒������I<br>
-�����d�́i40W�j�ł���Ȃ��獂�����ϊ������łg�h�c�ɔ��閾�邳�������B</span></td>
+   <td colspan="50" style="line-height:18px"><span class="style4">ＬＥＤは一般的なハロゲンランプ（約３，０００時間）の約１３倍（約４０，０００時間）もの長寿命！<br>
+低消費電力（40W）でありながら高い光変換効率でＨＩＤに迫る明るさを実現。</span></td>
    <td colspan="10"><img name="blh_head_r18_c57" src="images/blh_head_r18_c57.gif" width="140" height="40" id="blh_head_r18_c57" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
@@ -205,12 +224,12 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="13"><a href="http://www.fuji-denki.co.jp/pdf/BLH_manual.pdf" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('blh_head_r21_c4','','images/blh_head_r21_c4_s2.gif',1);"><img name="blh_head_r21_c4" src="images/blh_head_r21_c4.gif" width="275" height="29" id="blh_head_r21_c4" alt=""></a></td>
-   <td colspan="25" style="text-align: center"><strong>�g�h�q�Q�^�C�v �i�a�k�g�|�U�O�g�h�q)</strong></td>
+   <td colspan="25" style="text-align: center"><strong>ＨＩＲ２タイプ （ＢＬＨ－６０ＨＩＲ)</strong></td>
    <td colspan="25"><img name="blh_head_r21_c42" src="images/blh_head_r21_c42.gif" width="350" height="29" id="blh_head_r21_c42" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="29" alt=""></td>
   </tr>
   <tr>
-    <td colspan="66"><span class="style2">�@���{���i�́w�g�h�q�Q�^�C�v�x�̃n���Q���w�b�h�����v���k�d�c�����鐻�i�ł��B���̑��̐��i�ɂ��Ă͉��L���i���N���b�N���Ă��������B</span></td>
+    <td colspan="66"><span class="style2">　※本製品は『ＨＩＲ２タイプ』のハロゲンヘッドランプをＬＥＤ化する製品です。その他の製品については下記製品をクリックしてください。</span></td>
     <td>&nbsp;</td>
   </tr>
   <tr>
@@ -233,8 +252,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6"><img name="blh_head_r25_c1" src="images/blh_head_r25_c1.gif" width="60" height="40" id="blh_head_r25_c1" alt=""></td>
-   <td colspan="60" style="line-height:18px"><span class="style4">�n���Q���o���u�ɔ�ׂĖ��邳�A�b�v�ň��S�^�]�B<br>
-�k�d�c�̐F�����Ȃ̂ŁA�ƎˑΏە��̐F���͂�����킩��A�ڂ̕��S���y�����܂��B</span></td>
+   <td colspan="60" style="line-height:18px"><span class="style4">ハロゲンバルブに比べて明るさアップで安全運転。<br>
+ＬＥＤの色が白なので、照射対象物の色もはっきりわかり、目の負担を軽減します。</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
   <tr>
@@ -255,7 +274,7 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6"><img name="blh_head_r30_c1" src="images/blh_head_r30_c1.gif" width="60" height="20" id="blh_head_r30_c1" alt=""></td>
-   <td colspan="60"><span class="style4">�n���Q���o���u�̃t�B�������g�Ɠ����ʒu�ɂk�d�c�̔����ʂ�z�u���Ă���̂ŁA���z�I�Ȕz���������I</span></td>
+   <td colspan="60"><span class="style4">ハロゲンバルブのフィラメントと同じ位置にＬＥＤの発光面を配置しているので、理想的な配光を実現！</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -276,7 +295,7 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6"><img name="blh_head_r35_c1" src="images/blh_head_r35_c1.gif" width="60" height="20" id="blh_head_r35_c1" alt=""></td>
-   <td colspan="60"><span class="style4">���m�ȃJ�b�g���C���ŁA�Ǝˎ��Ɍ��̊g�U���N����܂���B</span></td>
+   <td colspan="60"><span class="style4">正確なカットラインで、照射時に光の拡散が起こりません。</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -284,7 +303,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="170" alt=""></td>
   </tr>
   <tr>
-   <td colspan="66" style="text-align: right"><span class="style1">�ʐ^�̓C���[�W�ł��B���g���̃��j�^�[������ۂ̎ԗ��������ɂ͐F���قȂ��Č�����ꍇ��������܂��B</span></td>
+   <td colspan="66" style="text-align: right"><span class="style1">写真はイメージです。お使いのモニター環境や実際の車両装着時には色が異なって見える場合が御座います。</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -297,8 +316,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6"><img name="blh_head_r40_c1" src="images/blh_head_r40_c1.gif" width="60" height="40" id="blh_head_r40_c1" alt=""></td>
-   <td colspan="60" style="line-height:18px"><span class="style4">�o���u��[�̗�p�t�B���`����������A��p�������A�b�v�����Ȃ��珬�^���ɐ����B<br>
-�h���C�o�[���j�b�g�����^�Ńw�b�h���C�g���ɃX�y�[�X�����Ȃ��ԗ��ɂ������\�ɂȂ�܂����B</span></td>
+   <td colspan="60" style="line-height:18px"><span class="style4">バルブ後端の冷却フィン形状を見直し、冷却効率をアップさせながら小型化に成功。<br>
+ドライバーユニットも小型でヘッドライト裏にスペースが少ない車両にも装着可能になりました。</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
   <tr>
@@ -311,8 +330,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6"><img name="blh_head_r43_c1" src="images/blh_head_r43_c1.gif" width="60" height="40" id="blh_head_r43_c1" alt=""></td>
-   <td colspan="60" style="line-height:18px"><span class="style4">���J�j�J���@�\���ɗ͔r�������V���v���ȍ��ŁA�̏ᓙ�̃g���u���ɑ�������m�����X�ɒጸ�B<br>
-�V���v���݌v�̃����b�g���ő���ɐ��������n�C�N�I���e�B���n�C�p�t�H�[�}���X�������B</span></td>
+   <td colspan="60" style="line-height:18px"><span class="style4">メカニカル機構を極力排除したシンプルな作りで、故障等のトラブルに遭遇する確率を更に低減。<br>
+シンプル設計のメリットを最大限に生かしたハイクオリティ＆ハイパフォーマンスを実現。</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
   <tr>
@@ -325,9 +344,9 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6"><img name="blh_head_r46_c1" src="images/blh_head_r46_c1.gif" width="60" height="60" id="blh_head_r46_c1" alt=""></td>
-   <td colspan="60" style="line-height:18px"><span class="style4">�����z����������������F��A�w�b�h���C�g�p�Ȃ̂ɐԂ��疌�h�������ꂽ➑̂��������邱�Ƃ�����܂����A<br>
-���邳�ƌ��₷�����d������ƁA�����F�ɉe�����y�ڂ��\��������F���D�܂��������̂͌����܂ł�����܂���B<br>
-�k�d�c �g�d�`�c �k�`�l�o �b�n�l�e�n�q�s�́A�����F�Ɋ����Ȃ��V���o�[���^���J���[���̗p���Ă��܂��B</span></td>
+   <td colspan="60" style="line-height:18px"><span class="style4">光を吸収する特性を持つ黒色や、ヘッドライト用なのに赤い皮膜塗装がされた筐体を見かけることがありますが、<br>
+明るさと見やすさを重視すると、投光色に影響を及ぼす可能性がある色が好ましく無いのは言うまでもありません。<br>
+ＬＥＤ ＨＥＡＤ ＬＡＭＰ ＣＯＭＦＯＲＴは、投光色に干渉しないシルバーメタルカラーを採用しています。</span></td>
    <td><img src="images/spacer.gif" width="1" height="60" alt=""></td>
   </tr>
   <tr>
@@ -419,8 +438,8 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td rowspan="4" colspan="3"><img name="blh_head_r63_c1" src="images/blh_head_r63_c1.gif" width="25" height="170" id="blh_head_r63_c1" alt=""></td>
    <td rowspan="4" colspan="12"><img name="blh_head_r63_c4" src="images/blh_head_r63_c4.gif" width="250" height="170" id="blh_head_r63_c4" alt=""></td>
-   <td colspan="49" style="line-height:20px"><span class="style7">�ꕔ�Ԏ�̂g�S�w�b�h���C�g�ԂɁu�k�d�c �g�d�`�c �k�`�l�o �b�n�l�e�n�q�s�i�a�k�g�|�U�O�g�S�j�v�𑕒������ۂɁA���[�^�[���̃n�C�r�[���C���W�P�[�^�[�����v������ɓ_�����Ȃ��ꍇ������܂��B<br>
-��L�̎ԗ��Ńn�C�r�[�����Ƀn�C�r�[���C���W�P�[�^�[�����v��_��������ׂ̃A�_�v�^�[�ł��B</span></td>
+   <td colspan="49" style="line-height:20px"><span class="style7">一部車種のＨ４ヘッドライト車に「ＬＥＤ ＨＥＡＤ ＬＡＭＰ ＣＯＭＦＯＲＴ（ＢＬＨ－６０Ｈ４）」を装着した際に、メーター内のハイビームインジケーターランプが正常に点灯しない場合があります。<br>
+上記の車両でハイビーム時にハイビームインジケーターランプを点灯させる為のアダプターです。</span></td>
    <td rowspan="4" colspan="2"><img name="blh_head_r63_c65" src="images/blh_head_r63_c65.gif" width="25" height="170" id="blh_head_r63_c65" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="80" alt=""></td>
   </tr>
@@ -429,8 +448,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="22"><span class="style8">�r�k�g�|�g�q�O�P</span><br><span class="style11">�i�P�Q�u�Ԑ�p/�Q����j</span></td>
-   <td colspan="10"><span class="style10">�I�[�v�����i</span></td>
+   <td colspan="22"><span class="style8">ＳＬＨ－ＨＲ０１</span><br><span class="style11">（１２Ｖ車専用/２個入り）</span></td>
+   <td colspan="10"><span class="style10">オープン価格</span></td>
    <td colspan="17"><span class="style10">4950094071003</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
@@ -469,56 +488,56 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="66"><span class="style2">���w���̑O��</span></td>
+   <td colspan="66"><span class="style2">ご購入の前に</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="2">&nbsp;</td>
-   <td colspan="2" style="line-height:18px" valign="top"><span class="style1">��<br>
-��<br>
-��<br>
+   <td colspan="2" style="line-height:18px" valign="top"><span class="style1">●<br>
+●<br>
+●<br>
 <br>
 <br>
 <br>
 <br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
 <br>
 <br>
 <br>
-�� </span></span></td>
-   <td colspan="62" style="line-height:18px" valign="top"><span class="style1">LED�o���u�T�C�Y���m�F���A�ԗ��̎��t����ƃX�y�[�X�ⓔ����A�������ɃN���A�����X�����邩�m�F���Ă��������B<br>
-�{���i�́A�Ԏ�ɂ��d�C�I�ȓ����ő����o���Ȃ��ꍇ������܂��B<br>
-�Ԍ��Ή��i�Ƃ��Ĕ̔����Ă���܂����A�ʏ�̃n���Q���o���u�ƈقȂ锭���F�Ɍ����邽�߁A�������ɂ���Ă͂����H�ɕs�K���Ɣ��f�����ꍇ���������܂��B<span class="style14">(��)</span><br>
-���̏ꍇ�A�ʏ�̂��g�p�ɂ͖�肠��܂��񂪁A�Ԍ��̍ۂ͂�������n���Q���o���u�ɖ߂��Ă��������B����Ɋւ�邲�����͈�؂��󂯏o���܂���̂ŗ\�߂��������������B<br>
-<span class="style14">(��)</span>���H�^���ԗ��@�̕ۈ�������ɂ��O�Ɠ��̓����F���u���F�y�ђW���F�v����u���F�̂݁v�ɉ��肳��܂����B<br>
-�@�@���A�����Ԍ����Ɨ��s���@�l�R�������K��̉���ɂ��u����Ⴂ�O�Ɠ��i���[�r�[���j�̖��邳��6400cd�ȏ�ł��鎖�v���`���t������Ă��܂����A<br>
-�@�@�ԗ��w�b�h���C�g�����Y�̓܂��ϐF�̏�Ԃɂ���Ă͊�l�𖞂����Ȃ��ꍇ������܂��B<br>
-�{���i�͎����ԃw�b�h���C�g��p�i�ł��B�t�H�O�����v���֎Ԃւ̑����ɂ��ӔC�͈�ؕ������˂܂��̂ŗ\�߂��������������B<br>
-�{���i�_�����Ƀ��W�I���Ƀm�C�Y�����鎖������܂��B<br>
-�o���u�؂ꓙ�̌x�������_������ꍇ�͎��t�������Ȃ��ł��������B<br>
-�����V�X�e�������Ԃɂ͂����t���o���܂���B<br>
-�ԗ��ɂ���Ĉꕔ���J���Ȃǂ̉��H��K�v�Ƃ���ꍇ������܂��B<br>
-��������g�p�ɂ�鎖�̂Ȃǂ̐ӔC�͈�ؕ������˂܂��̂ŗ\�߂��������������B<br>
-�K���\�ɋL�ڂ���Ă���Ԏ�ȊO�͕ۏ؂̑ΏۊO�ɂȂ�܂��B<br>
-���t���̍ۂ̔j���Ɋւ��܂��ẮA�ۏ؂̑ΏۊO�ƂȂ�܂��B<br>
-�A�C�h�����O�X�g�b�v�t�ԂɎ��t�����ꍇ�A�G���W���Ďn����������ꍇ������܂��B<br>
-LED�w�b�h�����v�R���t�H�[�g�̓n���Q�������v�ɔ�ׂĔ��M�ʂ����Ȃ��ׁA�w�b�h���C�g�ɕt���������X���n���ɂ����Ȃ�܂��B<br>
-���L�����t�ԗ��́A�����o���u�̑�����O��ɐ݌v����Ă���ׁA�{���i�𑕒�����Ɛ���ɍ쓮���Ȃ��Ȃ鋰�ꂪ����܂��B<br>
-�{���i���g�p�������ɂ��ԗ����u�̌�쓮�⓮��s�ǁA�����ɂ�蔭���������̂⑹�Q�ɂ��Ă͈�؂̐ӔC�𕉂����˂܂��̂ŗ\�߂��������������B<br>
-���Փ˔�Q�y���u���[�L�@�@�����[�_�[�N���[�Y�R���g���[���@�@���Ԑ���E�h�~�x���V�X�e���@�@���딭�i�}������@�\�@�@���N���A�����X�\�i�[�@�@�����Ԏx���V�X�e���@�@��AFS�@�@<br>
-�����̑��A�J�����A�~���g���[�_�[�A���[�U�[���[�_�[�A�ԊO�����[�_�[�A�����g���g�p�������u�@�Ȃ�<br>
-���i�̃f�U�C���A�d�l�A�O�ρA�F�������ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B�܂��A���i�̎ʐ^���̐F�͎����Ƃ͂͑����قȂ�ꍇ������܂��̂ŁA<br>
-���炩���߂��������������B</span></td>
+● </span></span></td>
+   <td colspan="62" style="line-height:18px" valign="top"><span class="style1">LEDバルブサイズを確認し、車両の取り付け作業スペースや灯具内、灯具後方にクリアランスがあるか確認してください。<br>
+本製品は、車種により電気的な特性で装着出来ない場合があります。<br>
+車検対応品として販売しておりますが、通常のハロゲンバルブと異なる発光色に見えるため、検査官によってはごく稀に不適合と判断される場合がございます。<span class="style14">(※)</span><br>
+この場合、通常のご使用には問題ありませんが、車検の際はいったんハロゲンバルブに戻してください。これに関わるご請求は一切お受け出来ませんので予めご了承ください。<br>
+<span class="style14">(※)</span>道路運送車両法の保安基準改正により前照灯の灯光色が「白色及び淡黄色」から「白色のみ」に改定されました。<br>
+　　又、自動車検査独立行政法人審査事務規定の改定により「すれ違い前照灯（ロービーム）の明るさが6400cd以上である事」が義務付けされていますが、<br>
+　　車両ヘッドライトレンズの曇りや変色の状態によっては基準値を満たさない場合があります。<br>
+本製品は自動車ヘッドライト専用品です。フォグランプや二輪車への装着による責任は一切負いかねますので予めご了承ください。<br>
+本製品点灯時にラジオ等にノイズが入る事があります。<br>
+バルブ切れ等の警告灯が点灯する場合は取り付けをしないでください。<br>
+減光システム装着車にはお取り付け出来ません。<br>
+車両によって一部穴開けなどの加工を必要とする場合があります。<br>
+誤ったご使用による事故などの責任は一切負いかねますので予めご了承ください。<br>
+適合表に記載されている車種以外は保証の対象外になります。<br>
+取り付けの際の破損に関しましては、保証の対象外となります。<br>
+アイドリングストップ付車に取り付けた場合、エンジン再始動時ちらつく場合があります。<br>
+LEDヘッドランプコンフォートはハロゲンランプに比べて発熱量が少ない為、ヘッドライトに付着した雪や氷が溶けにくくなります。<br>
+下記装備付車両は、純正バルブの装着を前提に設計されている為、本製品を装着すると正常に作動しなくなる恐れがあります。<br>
+本製品を使用した事による車両装置の誤作動や動作不良、それらにより発生した事故や損害については一切の責任を負いかねますので予めご了承ください。<br>
+◆衝突被害軽減ブレーキ　　◆レーダークルーズコントロール　　◆車線逸脱防止支援システム　　◆誤発進抑制制御機能　　◆クリアランスソナー　　◆駐車支援システム　　◆AFS　　<br>
+◆その他、カメラ、ミリ波レーダー、レーザーレーダー、赤外線レーダー、超音波を使用した装置　など<br>
+製品のデザイン、仕様、外観、色合い等につきましては予告なく変更や生産を終了する場合があります。また、製品の写真等の色は実物とはは多少異なる場合がありますので、<br>
+あらかじめご了承ください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="260" alt=""></td>
   </tr>
   <tr>
@@ -526,55 +545,55 @@ LED�w�b�h�����v�R���t�H�[�g�̓n���Q�������v�ɔ�ׂĔ��M�ʂ����Ȃ��ׁA�w�b�h���C�
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="66"><span class="style2">���S�y�ю��t���Ɋւ��邲����</span></td>
+   <td colspan="66"><span class="style2">安全及び取り付けに関するご注意</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="2">&nbsp;</td>
-   <td colspan="2" style="line-height:18px" valign="top"><span class="style1">��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
+   <td colspan="2" style="line-height:18px" valign="top"><span class="style1">●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
 <br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��<br>
-��</span></td>
-   <td colspan="62" style="line-height:18px" valign="top"><span class="style1">�{���i��DC12V/24V�E�}�C�i�X�A�[�X�Ԑ�p�ł��B�w��ȊO�̓d���ł͎g�p���Ȃ��ł��������B<br>
-H4�^�C�v�̎ԗ��Ńn�C�r�[���C���W�P�[�^�[�����v���_�����Ȃ��ꍇ�͕ʔ���́u�n�C�r�[���C���W�P�[�^�[�����[�FSLH-HR01�i12V�Ԑ�p�j�v���K�v�ɂȂ�ꍇ������܂��B<br>
-�ԗ��ɂ���Ă̓n�C�r�[���C���W�P�[�^�[�����[�FSLH-HR01�i12V�Ԑ�p�j�v�𑕒����Ă��n�C�r�[���C���W�P�[�^�[���_�����Ȃ��ꍇ������܂��B<br>
-�{���i�y�юԗ��n�[�l�X�������Ȃ��悤�ɂ����ӂ��������B���A�����ȋȂ��A�˂���A�����������M���H�Ȃǂ��s��Ȃ��ł��������B<br>
-�{���i�̕����y�щ������s��Ȃ��ł��������B<br>
-�{���i�̎��t���A�z���A�g�p���@���ԈႦ��Ǝԗ��̑��u�A�@��ނ�j�����͑������鋰�ꂪ����A�΍ЁA�̏�̌����ƂȂ�܂��B<br>
-�{���i�̎��t���͕K��IG OFF�i�G���W�����n�����Ȃ���ԁj�A�w�b�h�����v������������Ԃōs���Ă��������B<br>
-�_��������������LED�w�b�h�����v�R���t�H�[�g�{�̂�n���Q���o���u�͑�ύ����ɂȂ��Ă���A�M����Ԃ̂܂ܐG���ƉΏ������鋰�ꂪ�����ϊ댯�ł��B<br>
-LED�w�b�h�����v�R���t�H�[�g�{�̂�n���Q���o���u���[���ɗ₦�������m�F���Ă����Ƃ��s���Ă��������B<br>
-�_�����̌��𒼎�����Ɩڂ��ɂ��Ȃ�����A���͏�Q�̌����ɂȂ鋰�ꂪ����܂��B<br>
-�ԗ����i�����O���č�Ƃ��s���ꍇ�́A���̎ԗ��̐�����������Q�Ƃ��Ă��������B<br>
-�ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{���̋@�\�ɕs��������ꍇ�ɂ͖{���i�����t�����͎g�p���Ȃ��ł��������B<br>
-�ԗ����Ƃ̎��t�������E���Ɋւ���T�|�[�g�͍s���Ă���܂���̂ł��������������B<br>
-�{���i�̎��t���ɂ́A���t���Z�p�̂���̔��X�ōs���Ă��������B<br>
-�ԗ��\����ꕔ�Ԏ�Ŏ��t�����ł��Ȃ��ꍇ������܂��B<br>
-���K�E���s���킸�O���Ԃւ̃T�|�[�g�͍s���Ă��܂���B<br>
-�R�l�N�^�[��^�[�~�i���[�q�͊m���ɐڑ����Ă��������B<br>
-LED�������͎�ŐG��Ȃ��ł��������B�����⏝���t���Ɣj���̌����ƂȂ�܂��B�������t�����ꍇ�́A�A���R�[�����_�炩���z���Ɋ܂܂����₩�ɂӂ�����Ă��������B<br>
-LED�f�q�������Ȃ��l�ɂ��Ă��������B���邳��z������������ꂸ�A�Ԍ���ɕs�K���ƂȂ鋰�ꂪ����܂��B<br>
-���t����͕K�������������s���Ă��������B<br>
-IG OFF�i�G���W�����n�����Ȃ���ԁj�Œ����ԓ_�������Ȃ��ł��������B�o�b�e���[�オ����N�����\��������܂��B<br>
-���O�����n���Q���o���u�͖{���i�戵�������y�ѕۏ؏��Ƌ��ɑ�؂ɕۊǂ��Ă��������B</span></td>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●<br>
+●</span></td>
+   <td colspan="62" style="line-height:18px" valign="top"><span class="style1">本製品はDC12V/24V・マイナスアース車専用です。指定以外の電圧では使用しないでください。<br>
+H4タイプの車両でハイビームインジケーターランプが点灯しない場合は別売りの「ハイビームインジケーターリレー：SLH-HR01（12V車専用）」が必要になる場合があります。<br>
+車両によってはハイビームインジケーターリレー：SLH-HR01（12V車専用）」を装着してもハイビームインジケーターが点灯しない場合があります。<br>
+本製品及び車両ハーネスを傷つけないようにご注意ください。又、無理な曲げ、ねじり、引っ張りや加熱加工なども行わないでください。<br>
+本製品の分解及び改造を行わないでください。<br>
+本製品の取り付け、配線、使用方法を間違えると車両の装置、機器類を破損又は損傷する恐れがあり、火災、故障の原因となります。<br>
+本製品の取り付けは必ずIG OFF（エンジンが始動しない状態）、ヘッドランプを消灯した状態で行ってください。<br>
+点灯中や消灯直後にLEDヘッドランプコンフォート本体やハロゲンバルブは大変高温になっており、熱い状態のまま触れると火傷をする恐れがあり大変危険です。<br>
+LEDヘッドランプコンフォート本体やハロゲンバルブが充分に冷えた事を確認してから作業を行ってください。<br>
+点灯中の光を直視すると目が痛くなったり、視力障害の原因になる恐れがあります。<br>
+車両部品を取り外して作業を行う場合は、その車両の整備解説書を参照してください。<br>
+車両のバッテリーが弱っている状態及び、車両本来の機能に不備がある場合には本製品を取り付け又は使用しないでください。<br>
+車両ごとの取り付け資料・情報に関するサポートは行っておりませんのでご了承ください。<br>
+本製品の取り付けには、取り付け技術のある販売店で行ってください。<br>
+車両構造上一部車種で取り付けができない場合があります。<br>
+正規・並行を問わず外国車へのサポートは行っていません。<br>
+コネクターやターミナル端子は確実に接続してください。<br>
+LED発光部は手で触れないでください。油分や傷が付くと破損の原因となります。油分が付いた場合は、アルコールを柔らかい布等に含ませ速やかにふき取ってください。<br>
+LED素子を傷つけない様にしてください。明るさや配光特性が得られず、車検基準に不適合となる恐れがあります。<br>
+取り付け後は必ず光軸調整を行ってください。<br>
+IG OFF（エンジンが始動しない状態）で長時間点灯させないでください。バッテリー上がりを起こす可能性があります。<br>
+取り外したハロゲンバルブは本製品取扱説明書及び保証書と共に大切に保管してください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="260" alt=""></td>
   </tr>
   <tr>
@@ -582,40 +601,21 @@ IG OFF�i�G���W�����n�����Ȃ���ԁj�Œ����ԓ_�������Ȃ��ł��������B�o�b�e���[�オ
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="66"><span class="style2">�ۏ؋K��</span></td>
+   <td colspan="66"><span class="style2">保証規定</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="2">&nbsp;</td>
-   <td colspan="2" style="line-height:18px" valign="top"><span class="style1">��<br>
-��</span></td>
-   <td colspan="62" style="line-height:18px" valign="top"><span class="style1">�{���i��3�N�ۏ؂ƂȂ�܂��B<br>
-�戵�������ɏ]��������Ȏg�p��Ԃ̂��Ƃŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��āA<br>
-���Ђł͈�ؐӔC�𕉂����˂܂��B</span></td>
+   <td colspan="2" style="line-height:18px" valign="top"><span class="style1">●<br>
+●</span></td>
+   <td colspan="62" style="line-height:18px" valign="top"><span class="style1">本製品は3年保証となります。<br>
+取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について、<br>
+弊社では一切責任を負いかねます。</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="66"><img name="blh_head_r81_c1" src="images/blh_head_r81_c1.gif" width="1000" height="20" id="blh_head_r81_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="66"><img name="blh_head_r82_c1" src="images/blh_head_r82_c1.gif" width="1000" height="10" id="blh_head_r82_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
-  </tr>
-  <tr>
-   <td rowspan="2" colspan="52"><img name="blh_head_r83_c1" src="images/blh_head_r83_c1.gif" width="817" height="83" id="blh_head_r83_c1" alt=""></td>
-   <td colspan="9"><a href="../blh_head/blh_head.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('blh_head_r83_c53','','images/blh_head_r83_c53_s2.gif',1);"><img name="blh_head_r83_c53" src="images/blh_head_r83_c53.gif" width="85" height="15" id="blh_head_r83_c53" alt=""></a></td>
-   <td rowspan="2" colspan="5"><img name="blh_head_r83_c62" src="images/blh_head_r83_c62.gif" width="98" height="83" id="blh_head_r83_c62" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="9"><img name="blh_head_r84_c53" src="images/blh_head_r84_c53.gif" width="85" height="68" id="blh_head_r84_c53" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="68" alt=""></td>
-  </tr>
-  <tr>
-    <td colspan="66"><img name="blh_head_r85_c1" src="images/blh_head_r85_c1.gif" width="1000" height="79" id="blh_head_r85_c1" alt=""></td>
-    <td><img src="images/spacer.gif" width="1" height="79" alt=""></td>
-  </tr>
+  </tr> 
+  
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

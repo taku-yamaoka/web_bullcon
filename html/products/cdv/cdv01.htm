@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>DVD/CD PLAYER / Bullcon-�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>DVD/CD PLAYER / Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -37,12 +39,48 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/cdv01_r2_c19_s2.gif','images/cdv01_r2_c26_s2.gif','images/cdv01_r2_c32_s2.gif','images/cdv01_r2_c38_s2.gif','images/cdv01_r2_c46_s2.gif','images/cdv01_r5_c1_s2.gif','images/cdv01_r5_c12_s2.gif','images/cdv01_r5_c20_s2.gif','images/cdv01_r5_c28_s2.gif','images/cdv01_r5_c37_s2.gif','images/cdv01_r5_c44_s2.gif','images/cdv01_r8_c6_s2.gif','images/cdv01_r8_c8_s2.gif','images/cdv01_r24_c1_s2.gif','images/cdv01_r24_c9_s2.gif','images/cdv01_r24_c15_s2.gif','images/cdv01_r24_c21_s2.gif','images/cdv01_r24_c28_s2.gif','images/cdv01_r24_c36_s2.gif','images/cdv01_r24_c41_s2.gif','images/cdv01_r25_c1_s2.gif','images/cdv01_r25_c15_s2.gif','images/cdv01_r25_c28_s2.gif','images/cdv01_r25_c41_s2.gif','images/cdv01_r26_c1_s2.gif','images/cdv01_r26_c15_s2.gif','images/cdv01_r26_c28_s2.gif','images/cdv01_r26_c41_s2.gif','images/cdv01_r27_c1_s2.gif','images/cdv01_r27_c15_s2.gif');">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="cd-dvd_20240717.png" fwpage="�y�[�W 1" fwbase="cdv01.gif" fwstyle="Dreamweaver" fwdocid = "1379248506" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="cd-dvd_20240717.png" fwpage="ページ 1" fwbase="cdv01.gif" fwstyle="Dreamweaver" fwdocid = "1379248506" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="3" height="1" alt=""></td>
@@ -99,25 +137,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
 
-  <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/aa.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="27"><img name="cdv01_r11_c1" src="images/cdv01_r11_c1.gif" width="500" height="10" id="cdv01_r11_c1" alt=""></td>
    <td colspan="25"><img name="cdv01_r11_c28" src="images/cdv01_r11_c28.gif" width="500" height="10" id="cdv01_r11_c28" alt=""></td>
@@ -134,10 +153,10 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="14"><img name="cdv01_r14_c1" src="images/cdv01_r14_c1.gif" width="250" height="50" id="cdv01_r14_c1" alt=""></td>
-   <td colspan="13"><span style="font-size: 16px; line-height: 20px"><b>�̔����i ���P�Q�C�P�O�O </b></span><span style="font-size: 13px">�i�ō��j<br>
-�@�@�i�Ŕ����i ���P�P�C�O�O�O�j</span></td>
-   <td colspan="13"><b style="font-size: 16px; line-height: 18px">�i�`�m�R�[�h�F<br>
-    �S�X�T�O�O�X�S�O�U�R�Q�V�T</b></td>
+   <td colspan="13"><span style="font-size: 16px; line-height: 20px"><b>販売価格 ￥１２，１００ </b></span><span style="font-size: 13px">（税込）<br>
+　　（税抜価格 ￥１１，０００）</span></td>
+   <td colspan="13"><b style="font-size: 16px; line-height: 18px">ＪＡＮコード：<br>
+    ４９５００９４０６３２７５</b></td>
    <td colspan="12"><img name="cdv01_r14_c41" src="images/cdv01_r14_c41.gif" width="250" height="50" id="cdv01_r14_c41" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
@@ -187,8 +206,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>-->
     <tr>
-   <td colspan="52" bgcolor="#FFF5A5" style="text-align: center; color: #FF0308; line-height: 15px"><b>���쓮�m�F�Ԏ�ꗗ�\�ɂ��Ă̂����Ӂ�</b><br>
-      �ꕔ���ǂ̍ۂ�<b>�u�^���v</b>���ύX����Ă��Ȃ��ԗ�������܂��B�@<b>�u�Ԗ��v�u�N���v�u�^���v�u�f�B�X�v���C�I�[�f�B�I�̎d�l�v�uUSB�|�[�g�̌`��v</b>�̑S�Ă���v���Ă��邱�Ƃ����m�F���������B</td>
+   <td colspan="52" bgcolor="#FFF5A5" style="text-align: center; color: #FF0308; line-height: 15px"><b>＜作動確認車種一覧表についてのご注意＞</b><br>
+      一部改良の際に<b>「型式」</b>が変更されていない車両があります。　<b>「車名」「年式」「型式」「ディスプレイオーディオの仕様」「USBポートの形状」</b>の全てが一致していることをご確認ください。</td>
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <!--<tr>
@@ -210,8 +229,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
     <tr>
-   <td colspan="14" style="text-align: center; font-size: 11px;">2025�N6��24���X�V</td>
-   <td colspan="13" style="text-align: center; font-size: 11px;">2025�N5��12���X�V</td>
+   <td colspan="14" style="text-align: center; font-size: 11px;">2025年6月24日更新</td>
+   <td colspan="13" style="text-align: center; font-size: 11px;">2025年5月12日更新</td>
    <td colspan="13">&nbsp;</td>
    <td colspan="12">&nbsp;</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
@@ -247,13 +266,13 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="2" colspan="6"><img name="cdv01_r30_c1" src="images/cdv01_r30_c1.gif" width="30" height="50" id="cdv01_r30_c1" alt=""></td>
-   <td colspan="20" rowspan="2" style="font-size: 11px; line-height: 13px">�����ӁF�Ԏ�E�f�B�X�v���C�I�[�f�B�I�̋@��ɂ��A�C�R���̕\���͈قȂ�܂��B<br>
-     �@�@�@�@�@�v���[���[�Ƀ��f�B�A���}������Ă���ꍇ��<br>
-   �@�@�@�@�@ �s DISC �t�ł͂Ȃ��y DVD �z�܂��́y CD �z���\������܂��B</td>
+   <td colspan="20" rowspan="2" style="font-size: 11px; line-height: 13px">ご注意：車種・ディスプレイオーディオの機種によりアイコンの表示は異なります。<br>
+     　　　　　プレーヤーにメディアが挿入されている場合は<br>
+   　　　　　 《 DISC 》ではなく【 DVD 】または【 CD 】が表示されます。</td>
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
-   <!--<td colspan="24" style="font-size: 11px" align="center">�����ӁF�X�L�b�v�@�\�̓f�B�X�v���C�I�[�f�B�I�̋@�\�Ɉˑ����邽�߉�ʏ�ł̑�����\�ł��B</td>-->
+   <!--<td colspan="24" style="font-size: 11px" align="center">ご注意：スキップ機能はディスプレイオーディオの機能に依存するため画面上での操作も可能です。</td>-->
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -269,8 +288,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="339" alt=""></td>
   </tr>
   <tr>
-   <td colspan="26" style="text-align: center">�����ӁFUSB�P�[�u���𔲂��Ɩ{�̂����Z�b�g����邽�߃��W���[���@�\�͍쓮���܂���B<br>
-    �i�ŏ�����̍Đ��ɂȂ�܂��B�j</td>
+   <td colspan="26" style="text-align: center">ご注意：USBケーブルを抜くと本体がリセットされるためレジューム機能は作動しません。<br>
+    （最初からの再生になります。）</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -291,17 +310,17 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="27"><img name="cdv01_r38_c1" src="images/cdv01_r38_c1.gif" width="500" height="160" id="cdv01_r38_c1" alt=""></td>
    <td rowspan="2" colspan="2"><img name="cdv01_r38_c28" src="images/cdv01_r38_c28.gif" width="10" height="180" id="cdv01_r38_c28" alt=""></td>
-   <td colspan="23" rowspan="2" bgcolor="#BFEFFF"><span style="font-size: 13px; line-height: 18px"><b>�K���\�ɓ���m�F�̋L�ڂ�����Ԏ��USB�V���{���}�[�N���󎚂���Ă���<br>
-     ����USB�ʐM�|�[�g�ɐڑ�����Ǝg�p�o���܂��B<br>
-    �K���\�ɋL�ڂ̂Ȃ��ԗ��֐ڑ����ꂽ�ۂ̍쓮�͕ۏؒv�����˂܂��B</b></span>
-       <p style="font-size: 13px; line-height: 18px"><b>���Ђ�
-�yEOP-SP01TA�z�yEOP-SP01TC�z�yEOP-SP01TU�z<br>
-�yEOP-HZ01TU�z�yEOP-HZ02TU�z��USB�� <span style="font-size: 15px; color: #1200FF;">�s�ʐM�|�[�g�Ή��t</span> �ł��B<br>
-  �K���\�L�ڂ̎ԗ��Őڑ������ʐM�|�[�g�ł���Ύg�p�\�ł��B</b></p></td>
+   <td colspan="23" rowspan="2" bgcolor="#BFEFFF"><span style="font-size: 13px; line-height: 18px"><b>適合表に動作確認の記載がある車種でUSBシンボルマークが印字されている<br>
+     純正USB通信ポートに接続すると使用出来ます。<br>
+    適合表に記載のない車両へ接続された際の作動は保証致しかねます。</b></span>
+       <p style="font-size: 13px; line-height: 18px"><b>弊社の
+【EOP-SP01TA】【EOP-SP01TC】【EOP-SP01TU】<br>
+【EOP-HZ01TU】【EOP-HZ02TU】のUSBは <span style="font-size: 15px; color: #1200FF;">《通信ポート対応》</span> です。<br>
+  適合表記載の車両で接続元が通信ポートであれば使用可能です。</b></p></td>
    <td><img src="images/spacer.gif" width="1" height="160" alt=""></td>
   </tr>
   <tr>
-   <td colspan="27" bgcolor="#BFEFFF" style="font-size: 12px" align="center">���̈󎚂̃|�[�g�ɂ͒ʐM�p�A�[�d�p�ǂ�����ڑ��ł��܂��B</td>
+   <td colspan="27" bgcolor="#BFEFFF" style="font-size: 12px" align="center">この印字のポートには通信用、充電用どちらも接続できます。</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -316,11 +335,11 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="6"><img name="cdv01_r42_c1" src="images/cdv01_r42_c1.gif" width="30" height="60" id="cdv01_r42_c1" alt=""></td>
-   <td colspan="21" bgcolor="#FFDFBF" style="font-size: 12px; text-align: center;">���̈󎚂̃|�[�g�͏[�d��p�|�[�g�̂��ߒʐM�pUSB�͐ڑ��ł��܂���B</td>
+   <td colspan="21" bgcolor="#FFDFBF" style="font-size: 12px; text-align: center;">この印字のポートは充電専用ポートのため通信用USBは接続できません。</td>
    <td colspan="3"><img name="cdv01_r42_c28" src="images/cdv01_r42_c28.gif" width="30" height="60" id="cdv01_r42_c28" alt=""></td>
-   <td colspan="22" bgcolor="#F0F0E1" style="font-size: 12px; line-height: 16px">�󎚂̂Ȃ�USB�|�[�g��USB�|�[�g�̐ڑ��������m�F���������B<br>
-     �ڑ������ʐM�|�[�g�ł���ΐڑ��\�ł����A<br>
-    USB�|�[�g�̎d�l�ŒʐM�@�\��������Ă��Ȃ��ꍇ�͐ڑ��ł��܂���B</td>
+   <td colspan="22" bgcolor="#F0F0E1" style="font-size: 12px; line-height: 16px">印字のないUSBポートはUSBポートの接続元をご確認ください。<br>
+     接続元が通信ポートであれば接続可能ですが、<br>
+    USBポートの仕様で通信機能が備わっていない場合は接続できません。</td>
    <td><img src="images/spacer.gif" width="1" height="60" alt=""></td>
   </tr>
   <tr>
@@ -345,11 +364,11 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="3"><img name="cdv01_r47_c1" src="images/cdv01_r47_c1.gif" width="10" height="15" id="cdv01_r47_c1" alt=""></td>
-   <td colspan="46" style="font-size: 11px; line-height: 13px">���P�F�u�f�B�X�N�ǂݍ��ݒ��v���J��Ԃ��ꍇ��A�{���i�̍쓮���s����ɂȂ�ꍇ�͓d�͕s���������̉\��������܂��B�t���́y�t�r�a�⏕�d���P�[�u���i5�u�o�͂̂���t�r�a�|�[�g��<br>
-       �@�@�@�S�Ăł��g�p���������܂��B�j�z���ԗ��t�r�a�|�[�g�ɐڑ����ēd�������肳���Ă��������B���̎��A���o�C���o�b�e���[�Ȃǎԗ��ȊO�̓d���͎g�p���Ȃ��ł��������B�i�ڑ��ڍׂ�<br>
-     �@�@�@�戵�������Ŋm�F���Ă��������j<br>
-      ���Q�F�ԗ��̂t�r�a�ʐM�|�[�g�A�[�d�p�|�[�g���s������-�b�����Ȃ��A�[�d�p�|�[�g�Ɂu�t�r�a�⏕�d���P�[�u���v���g�p�����ۂ́A�ʓr�u�t�r�a�ϊ��P�[�u��(�d�n�o-�t�r�a-�b�`)�v��<br>
-    �@�@�@���������߂��������B</td>
+   <td colspan="46" style="font-size: 11px; line-height: 13px">※１：「ディスク読み込み中」を繰り返す場合や、本製品の作動が不安定になる場合は電力不足が原因の可能性があります。付属の【ＵＳＢ補助電源ケーブル（5Ｖ出力のあるＵＳＢポートの<br>
+       　　　全てでご使用いただけます。）】を車両ＵＳＢポートに接続して電源を安定させてください。この時、モバイルバッテリーなど車両以外の電源は使用しないでください。（接続詳細は<br>
+     　　　取扱説明書で確認してください）<br>
+      ※２：車両のＵＳＢ通信ポート、充電用ポートがＴｙｐｅ-Ｃしかなく、充電用ポートに「ＵＳＢ補助電源ケーブル」を使用される際は、別途「ＵＳＢ変換ケーブル(ＥＯＰ-ＵＳＢ-ＣＡ)」を<br>
+    　　　お買い求めください。</td>
    <td colspan="3"><img name="cdv01_r47_c50" src="images/cdv01_r47_c50.gif" width="10" height="15" id="cdv01_r47_c50" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="15" alt=""></td>
   </tr>
@@ -386,8 +405,8 @@ function MM_preloadImages() { //v3.0
    <td colspan="11" style="font-size: 13px; line-height: 14px; text-align: center">USB3.0 Micro-B</td>
    <td colspan="10"style="font-size: 13px; line-height: 14px; text-align: center">USB3.0 Micro-B/<br>USB3.1 Type-A  </td>
    <td colspan="8" style="font-size: 13px; line-height: 14px; text-align: center">USB Type-C/<br>USB3.1 Type-A</td>
-   <td colspan="8" style="font-size: 13px; line-height: 14px; text-align: center">DC�v���O/<br>USB2.0 Type-A</td>
-   <td colspan="9" style="font-size: 13px; line-height: 14px; text-align: center">�\</td>
+   <td colspan="8" style="font-size: 13px; line-height: 14px; text-align: center">DCプラグ/<br>USB2.0 Type-A</td>
+   <td colspan="9" style="font-size: 13px; line-height: 14px; text-align: center">―</td>
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
@@ -395,15 +414,15 @@ function MM_preloadImages() { //v3.0
    <td colspan="10"style="font-size: 13px; line-height: 14px; text-align: center">150cm</td>
    <td colspan="8" style="font-size: 13px; line-height: 14px; text-align: center">16cm</td>
    <td colspan="8" style="font-size: 13px; line-height: 14px; text-align: center">60cm</td>
-   <td colspan="9" style="font-size: 13px; line-height: 14px; text-align: center">���ʈ��A4�T�C�Y</td>
+   <td colspan="9" style="font-size: 13px; line-height: 14px; text-align: center">両面印刷A4サイズ</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="11" style="font-size: 13px; line-height: 14px; text-align: center">278��</td>
-   <td colspan="10" style="font-size: 13px; line-height: 14px; text-align: center">72��</td>
+   <td colspan="11" style="font-size: 13px; line-height: 14px; text-align: center">278ｇ</td>
+   <td colspan="10" style="font-size: 13px; line-height: 14px; text-align: center">72ｇ</td>
    <td colspan="8" style="font-size: 13px; line-height: 14px; text-align: center">12g</td>
    <td colspan="8" style="font-size: 13px; line-height: 14px; text-align: center">14g</td>
-   <td colspan="9" style="font-size: 13px; line-height: 14px; text-align: center">1��</td>
+   <td colspan="9" style="font-size: 13px; line-height: 14px; text-align: center">1枚</td>
    <td><img src="images/spacer.gif" width="1" height="21" alt=""></td>
   </tr>
   <tr>
@@ -429,19 +448,19 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="2"><img name="cdv01_r59_c1" src="images/cdv01_r59_c1.gif" width="4" height="36" id="cdv01_r59_c1" alt=""></td>
-   <td colspan="7" style="font-size: 13px; line-height: 14px; text-align: center">���i��<br>DVD/CD�v���[���[</td>
+   <td colspan="7" style="font-size: 13px; line-height: 14px; text-align: center">製品名<br>DVD/CDプレーヤー</td>
    <td><img name="cdv01_r59_c10" src="images/cdv01_r59_c10.gif" width="1" height="36" id="cdv01_r59_c10" alt=""></td>
-   <td colspan="5" style="font-size: 13px; line-height: 14px; text-align: center">�i��<br>�`�u-�b�c�u�O�P</td>
+   <td colspan="5" style="font-size: 13px; line-height: 14px; text-align: center">品番<br>ＡＶ-ＣＤＶ０１</td>
    <td><img name="cdv01_r59_c16" src="images/cdv01_r59_c16.gif" width="1" height="36" id="cdv01_r59_c16" alt=""></td>
-   <td colspan="5" style="font-size: 13px; line-height: 14px; text-align: center">��i�d��<br>�c�b�T�u</td>
+   <td colspan="5" style="font-size: 13px; line-height: 14px; text-align: center">定格電流<br>ＤＣ５Ｖ</td>
    <td><img name="cdv01_r59_c22" src="images/cdv01_r59_c22.gif" width="1" height="36" id="cdv01_r59_c22" alt=""></td>
-   <td colspan="4" style="font-size: 13px; line-height: 14px; text-align: center">�s�[�N�d��<br>��P�`�ȉ�</td>
+   <td colspan="4" style="font-size: 13px; line-height: 14px; text-align: center">ピーク電流<br>約１Ａ以下</td>
    <td><img name="cdv01_r59_c27" src="images/cdv01_r59_c27.gif" width="1" height="36" id="cdv01_r59_c27" alt=""></td>
-   <td colspan="7" style="font-size: 13px; line-height: 14px; text-align: center">����d��<br>��S�T�O���`</td>
+   <td colspan="7" style="font-size: 13px; line-height: 14px; text-align: center">消費電流<br>約４５０ｍＡ</td>
    <td><img name="cdv01_r59_c35" src="images/cdv01_r59_c35.gif" width="1" height="36" id="cdv01_r59_c35" alt=""></td>
-   <td colspan="3" style="font-size: 13px; line-height: 14px; text-align: center">����d��<br>�Q.�T�v�ȉ�</td>
+   <td colspan="3" style="font-size: 13px; line-height: 14px; text-align: center">消費電力<br>２.５Ｗ以下</td>
    <td><img name="cdv01_r59_c39" src="images/cdv01_r59_c39.gif" width="1" height="36" id="cdv01_r59_c39" alt=""></td>
-   <td colspan="7" style="font-size: 13px; line-height: 14px; text-align: center">�쓮���x�͈�<br>�|�T���`�{�R�O��</td>
+   <td colspan="7" style="font-size: 13px; line-height: 14px; text-align: center">作動温度範囲<br>－５℃～＋３０℃</td>
    <td><img name="cdv01_r59_c47" src="images/cdv01_r59_c47.gif" width="1" height="36" id="cdv01_r59_c47" alt=""></td>
    <td colspan="3" style="font-size: 13px; line-height: 14px; text-align: center">&nbsp;</td>
    <td colspan="2"><img name="cdv01_r59_c51" src="images/cdv01_r59_c51.gif" width="4" height="36" id="cdv01_r59_c51" alt=""></td>
@@ -469,26 +488,26 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="cdv01_r64_c1" src="images/cdv01_r64_c1.gif" width="15" height="20" id="cdv01_r64_c1" alt=""></td>
-   <td colspan="44"><b><span style="font-size: 13px">���w���O�ɕK�����ǂ݉������B</span></b></td>
+   <td colspan="44"><b><span style="font-size: 13px">ご購入前に必ずお読み下さい。</span></b></td>
    <td colspan="4"><img name="cdv01_r64_c49" src="images/cdv01_r64_c49.gif" width="15" height="20" id="cdv01_r64_c49" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="4"><img name="cdv01_r65_c1" src="images/cdv01_r65_c1.gif" width="15" height="170" id="cdv01_r65_c1" alt=""></td>
    <td colspan="44" style="font-size: 12px; line-height: 16px">
-       <li>�{���i�͏�p�����Ԑ�p�i�ł��B���Ўw��ȊO�̎ԗ���@��Ɛڑ����ꂽ���Ƃɂ��s��A�̏�Ɋւ��ĕ��Ђł͈�؂̐ӔC�𕉂��܂���B</li>
-     <li>�K���ԗ��ł����Ă��֘A���镔�i�iUSB�|�[�g ���j���s�̕i���Ɍ�������Ă���ꍇ�A����ɍ쓮���Ȃ��ꍇ������܂��B</li>
-     <li>�{���i�̓|�[�^�u���v���[���[�ł��B�ԗ��֌Œ�ݒu���Ă̎g�p��z�肵�����i�ł͂���܂���B�ቷ�E�����ɎN�����ƌ̏�̌����ƂȂ�܂��̂ŁA���Ԏ��͎ԓ��ɕ��u���Ȃ��ł��������B</li>
-     <li>�f�B�X�v���C�I�[�f�B�I�̎d�l�ύX�A�A�b�v�f�[�g�ɔ����{���i������Ɏg�p�ł��Ȃ��Ȃ�\��������܂����A���̏ꍇ�ɂ����ĕ��Ђł͈�؂̐ӔC�𕉂��܂���B</li>
-     <li>����������CD/DVD�Đ��@�\��������Ă���ԗ�����ы@��Ŗ{���i�͎g�p�ł��܂���B</li>
-     <li>�{���i��DVD-ROM/DVD-R/DVD+R/DVD-RW/DVD+RW/DVD-RAM/CD-ROM/CD-R/CD-RW�̋K�i�Ɋ�Â������i�ł����A ���{�����ɂ����Đ��K�̔����ꂽ�f���pDVD-ROM�i���[�W�����R�[�h�Q�j/ ���y�pCD-ROM�ł̍쓮�m�F�̂ݍs���Ă���A����DVD/CD�����DVD-R/DVD+R/DVD-RW/DVD+RW/DVD-RAM/CD-R/CD-RW���g�p���č쐬���ꂽDVD/CD�ł̍Đ��ۏ؂͂��������˂܂��B</li>
-       <li>�n��f�W�^�������EBS�f�W�^�������Ȃǂ̉f���f�[�^���ƒ�p���R�[�_�[�Ȃǂ��g�p���ď������܂ꂽDVD�ɂ��Ă͍쓮�m�F���s���Ă��Ȃ����߁A��L���ڂɏ����čĐ��ۏ؂͂��������˂܂��B</li>
-<li>�f�[�^�L�^�����ŏ������݂���Ă���DVD/CD�͐�΂ɑ}�����Ȃ��ł��������B�ԗ��@�킪�j������\��������A���������j����s��Ȃǂ̏�Q�ɂ��ĕ��Ђł͈�؂̐ӔC�𕉂��܂���B</li>
-<li>8cm�f�B�X�N����ѓ���`��̃f�B�X�N�ɂ��Ă͍쓮�m�F���s���Ă���܂���B</li>
-<li>BD�iBlu-ray/�u���[���C�f�B�X�N�j�ɂ͑Ή����Ă��܂���B</li>
-<li>USB�ϊ��P�[�u���iUSB TYPE-C&rarr;USB TYPE-A�j�̕t���͂P�{�ł��B�����{�K�v�ȏꍇ�͕ʓr�uUSB�ϊ��P�[�u��(EOP-USB-CA)�v�����������߂��������B</li>
-       <li>�d�l����ъO�ς͉��ǂׁ̈A�\���Ȃ��ύX����ꍇ������܂��B</li>
-      <li><span style="font-size: 13px; line-height: 16px; color: #FF0308;"><b>�{���i�ōĐ����� �y �f�� �z �𑖍s���ɂ����y���݂����������߂ɂ́A�ʔ���<a href="../TVing/TVing.htm"> �wFreeTVing(�t���[�e���r���O)�x</a> ���K�v�ł��B</b></span></li></td>
+       <li>本製品は乗用自動車専用品です。弊社指定以外の車両や機器と接続されたことによる不具合、故障に関して弊社では一切の責任を負いません。</li>
+     <li>適合車両であっても関連する部品（USBポート 等）が市販品等に交換されている場合、正常に作動しない場合があります。</li>
+     <li>本製品はポータブルプレーヤーです。車両へ固定設置しての使用を想定した製品ではありません。低温・高温に晒されると故障の原因となりますので、駐車時は車内に放置しないでください。</li>
+     <li>ディスプレイオーディオの仕様変更、アップデートに伴い本製品が正常に使用できなくなる可能性がありますが、この場合において弊社では一切の責任を負いません。</li>
+     <li>純正装備でCD/DVD再生機能が備わっている車両および機器で本製品は使用できません。</li>
+     <li>本製品はDVD-ROM/DVD-R/DVD+R/DVD-RW/DVD+RW/DVD-RAM/CD-ROM/CD-R/CD-RWの規格に基づいた製品ですが、 日本国内において正規販売された映像用DVD-ROM（リージョンコード２）/ 音楽用CD-ROMでの作動確認のみ行っており、複製DVD/CDおよびDVD-R/DVD+R/DVD-RW/DVD+RW/DVD-RAM/CD-R/CD-RWを使用して作成されたDVD/CDでの再生保証はいたしかねます。</li>
+       <li>地上デジタル放送・BSデジタル放送などの映像データを家庭用レコーダーなどを使用して書き込まれたDVDについては作動確認を行っていないため、上記項目に準じて再生保証はいたしかねます。</li>
+<li>データ記録方式で書き込みされているDVD/CDは絶対に挿入しないでください。車両機器が破損する可能性があり、発生した破損や不具合などの障害について弊社では一切の責任を負いません。</li>
+<li>8cmディスクおよび特殊形状のディスクについては作動確認を行っておりません。</li>
+<li>BD（Blu-ray/ブルーレイディスク）には対応していません。</li>
+<li>USB変換ケーブル（USB TYPE-C&rarr;USB TYPE-A）の付属は１本です。複数本必要な場合は別途「USB変換ケーブル(EOP-USB-CA)」をお買い求めください。</li>
+       <li>仕様および外観は改良の為、予告なく変更する場合があります。</li>
+      <li><span style="font-size: 13px; line-height: 16px; color: #FF0308;"><b>本製品で再生した 【 映像 】 を走行中にもお楽しみいただくためには、別売の<a href="../TVing/TVing.htm"> 『FreeTVing(フリーテレビング)』</a> が必要です。</b></span></li></td>
    <td colspan="4"><img name="cdv01_r65_c49" src="images/cdv01_r65_c49.gif" width="15" height="170" id="cdv01_r65_c49" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="170" alt=""></td>
   </tr>
@@ -498,25 +517,25 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="cdv01_r68_c1" src="images/cdv01_r68_c1.gif" width="15" height="20" id="cdv01_r68_c1" alt=""></td>
-   <td colspan="44"><b><span style="font-size: 13px">���S����юg�p�Ɋւ��邲����</span></b></td>
+   <td colspan="44"><b><span style="font-size: 13px">安全および使用に関するご注意</span></b></td>
    <td colspan="4"><img name="cdv01_r68_c49" src="images/cdv01_r68_c49.gif" width="15" height="20" id="cdv01_r68_c49" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="4"><img name="cdv01_r69_c1" src="images/cdv01_r69_c1.gif" width="15" height="125" id="cdv01_r69_c1" alt=""></td>
    <td colspan="44" style="font-size: 12px; line-height: 16px">
-       <li>�{���i��USB���d�iDC+5V�j��p�ł��B�w��ȊO�̓d���ł͎g�p���Ȃ��ł��������B</li>
-     <li>���˓�����������ꏊ�ȂǍ����ɂȂ�ꏊ�ł͎g�p���Ȃ��ł��������B</li>
-     <li>�g�p���͖{�@�������ɂȂ�ꏊ�ł��g�p���������B�c��X�΂�����ԂŎg�p����ƃ��f�B�A�̓ǂݎ��s�ǂ⑹���̌����ɂȂ鋰�ꂪ����܂��B</li>
-     <li>�΍Ђ⊴�d�̋��ꂪ����܂��̂ŁA�J�Ȃǂ̐�������������A�����x�̏ꏊ�ł͎g�p���Ȃ��ł��������B</li>
-     <li>�΍Ђ⊴�d�̌����ƂȂ�܂��̂Ő�΂ɕ���������Ȃǂ��s��Ȃ��ł��������B</li>
-     <li>�{���i�́uCLASS1���[�U�[���i�v�ł��B���[�U�[�̌���l�̂ɏƎ˂��Ȃ��ł��������B�܂����[�U�[���𒼎����Ȃ��ł��������B</li>
-     <li>�{���i�̑��삨��юg�p�A�ԗ��ڑ��ɂ����Ă͉^�]�Ɏx�Ⴊ�Ȃ��悤�ɂ��Ă��������B</li>
-       <li>�{���i���g�p���Ĕ����������́A�̏�A�j������ш��S�^�]�`���ᔽ�ɂ�锱���A���_���Ɋւ��Ă̐ӔC�͕��Ђł͈�ؐӔC�𕉂��܂���̂ŗ\�߂��������������B</li>
-      <li>�f�B�X�N�Đ�����DVD/CD�v���[���[�{�̂��ԗ�������O������A�f�B�X�N�ǂݍ��݁i��ʂɁu�f�B�X�N��ǂݍ���ł��܂��v�\���j����USB�P�[�u���̔��������⑼�\�[�X�ւ̐؂�ւ��������Ȃ�Ȃ��ł��������B�쓮���s����ɂȂ�{���i��ԗ��@�킪�̏�i�j���j���錴���ƂȂ�܂��B
+       <li>本製品はUSB給電（DC+5V）専用です。指定以外の電圧では使用しないでください。</li>
+     <li>直射日光が当たる場所など高温になる場所では使用しないでください。</li>
+     <li>使用時は本機が水平になる場所でご使用ください。縦や傾斜した状態で使用するとメディアの読み取り不良や損傷の原因になる恐れがあります。</li>
+     <li>火災や感電の恐れがありますので、雨などの水がかかったり、高湿度の場所では使用しないでください。</li>
+     <li>火災や感電の原因となりますので絶対に分解や改造などを行わないでください。</li>
+     <li>本製品は「CLASS1レーザー製品」です。レーザーの光を人体に照射しないでください。またレーザー光を直視しないでください。</li>
+     <li>本製品の操作および使用、車両接続においては運転に支障がないようにしてください。</li>
+       <li>本製品を使用して発生した事故、故障、破損および安全運転義務違反による罰金、減点等に関しての責任は弊社では一切責任を負いませんので予めご了承ください。</li>
+      <li>ディスク再生中にDVD/CDプレーヤー本体を車両から取り外したり、ディスク読み込み（画面に「ディスクを読み込んでいます」表示）中はUSBケーブルの抜き差しや他ソースへの切り替えをおこなわないでください。作動が不安定になり本製品や車両機器が故障（破損）する原因となります。
 </li>
-      <li>�{���i��F�����Ȃ��A���f�B�A���Đ��ł��Ȃ��Ȃǂ̏Ǐ󂪔��������ꍇ�́A�{���i�����O������ԂŃf�B�X�v���C�I�[�f�B�I�̍ċN�������������������B<br>
-        ��x�̍ċN���ŏǏ󂪉��P����Ȃ��ꍇ�́A�ċN���𕡐��񂨎������������B</li></td>
+      <li>本製品を認識しない、メディアが再生できないなどの症状が発生した場合は、本製品を取り外した状態でディスプレイオーディオの再起動をお試しください。<br>
+        一度の再起動で症状が改善されない場合は、再起動を複数回お試しください。</li></td>
    <td colspan="4"><img name="cdv01_r69_c49" src="images/cdv01_r69_c49.gif" width="15" height="125" id="cdv01_r69_c49" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="125" alt=""></td>
   </tr>
@@ -526,15 +545,15 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="cdv01_r71_c1" src="images/cdv01_r71_c1.gif" width="15" height="20" id="cdv01_r71_c1" alt=""></td>
-   <td colspan="44"><b><span style="font-size: 13px">�ۏ؋K��</span></b></td>
+   <td colspan="44"><b><span style="font-size: 13px">保証規定</span></b></td>
    <td colspan="4"><img name="cdv01_r71_c49" src="images/cdv01_r71_c49.gif" width="15" height="20" id="cdv01_r71_c49" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="4"><img name="cdv01_r72_c1" src="images/cdv01_r72_c1.gif" width="15" height="50" id="cdv01_r72_c1" alt=""></td>
    <td colspan="44" style="font-size: 12px; line-height: 16px">
-       <li>�{���i�͓��{�����ɂ����Ď戵�������ɏ]��������Ȏg�p�����ꂽ�ꍇ�Ɍ���1�N�Ԃ̕ۏ؂��L���ł��B</li>
-         <li>�戵�������ɏ]��������Ȏg�p��Ԃ̂��Ƃŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�Ɋ�Â��C��������܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ��ĕ��Ђł͈�؂̐ӔC�𕉂��܂���B</li></td>
+       <li>本製品は日本国内において取扱説明書に従った正常な使用をされた場合に限り1年間の保証が有効です。</li>
+         <li>取扱説明書に従った正常な使用状態のもとで不具合が生じた場合は、保証書の記載内容に基づき修理を承りますが、脱着にかかる工賃や製品を使用して生じた損害等について弊社では一切の責任を負いません。</li></td>
    <td colspan="4"><img name="cdv01_r72_c49" src="images/cdv01_r72_c49.gif" width="15" height="50" id="cdv01_r72_c49" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
   </tr>
@@ -544,29 +563,23 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td colspan="4"><img name="cdv01_r74_c1" src="images/cdv01_r74_c1.gif" width="15" height="20" id="cdv01_r74_c1" alt=""></td>
-   <td colspan="44"><b><span style="font-size: 13px">�E�F�u�T�C�g�f�ڂ̒��쌠�E���W���ɂ���</span></b></td>
+   <td colspan="44"><b><span style="font-size: 13px">ウェブサイト掲載の著作権・商標権について</span></b></td>
    <td colspan="4"><img name="cdv01_r74_c49" src="images/cdv01_r74_c49.gif" width="15" height="20" id="cdv01_r74_c49" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="4"><img name="cdv01_r75_c1" src="images/cdv01_r75_c1.gif" width="15" height="65" id="cdv01_r75_c1" alt=""></td>
    <td colspan="44" style="font-size: 12px; line-height: 16px">
-       <li>wi-fi�EMiracast��wi-fi Alliance�̓o�^���W�ł��B</li>
-     <li>Bluetooth���[�h�}�[�N����у��S��Bluetooth SIG, Inc.�̓o�^���W�ł��B</li>
-     <li>DVD ���S�́CDVD �t�H�[�}�b�g���S���C�Z���V���O(��)�̓o�^���W�ł��B</li>
-    <li>CD ���S�́CKoninklijke Philips N.V.�̃I�����_����т��̑��̍��ɂ�����o�^���W�ł��B</li></td>
+       <li>wi-fi・Miracastはwi-fi Allianceの登録商標です。</li>
+     <li>BluetoothワードマークおよびロゴはBluetooth SIG, Inc.の登録商標です。</li>
+     <li>DVD ロゴは，DVD フォーマットロゴライセンシング(株)の登録商標です。</li>
+    <li>CD ロゴは，Koninklijke Philips N.V.のオランダおよびその他の国における登録商標です。</li></td>
    <td colspan="4"><img name="cdv01_r75_c49" src="images/cdv01_r75_c49.gif" width="15" height="65" id="cdv01_r75_c49" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="65" alt=""></td>
   </tr>
-  <tr>
-   <td colspan="52"><img name="cdv01_r76_c1" src="images/cdv01_r76_c1.gif" width="1000" height="10" id="cdv01_r76_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="52"><img name="cdv01_r77_c1" src="images/cdv01_r77_c1.gif" width="1000" height="93" id="cdv01_r77_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="93" alt=""></td>
-  </tr>
   
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

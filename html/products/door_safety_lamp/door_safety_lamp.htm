@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>�h�A�Z�[�t�e�B�����v/Bullcon-�t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>ドアセーフティランプ/Bullcon-フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -44,6 +46,40 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -57,8 +93,10 @@ function MM_preloadImages() { //v3.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/door_safety_lamp_r47_c28_f2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="door_safety_lamp-7.png" fwpage="�y�[�W 1" fwbase="door_safety_lamp.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="door_safety_lamp-7.png" fwpage="ページ 1" fwbase="door_safety_lamp.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="10" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="28" height="1" border="0" alt=""></td>
@@ -96,25 +134,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
 
-   <tr><td colspan="58"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="58"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="33"><img name="door_safety_lamp_r11_c1" src="images/door_safety_lamp_r11_c1.gif" width="1000" height="36" border="0" id="door_safety_lamp_r11_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="36" border="0" alt=""></td>
@@ -130,9 +149,9 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="6"><a href="../pdf/DSL-911.pdf" target="_blank"><img name="door_safety_lamp_r14_c1" src="images/door_safety_lamp_r14_c1.gif" width="218" height="39" border="0" id="door_safety_lamp_r14_c1" alt=""></a></td>
    <td colspan="15"><div align="right"></div></td>
-      <td colspan="12"><span style="font-size: 17px; line-height: 25px"><B>�̔����i ���W�C�T�W�O</B></span><span style="font-size: 13px; line-height: 25px">�i�ō��j<BR>
-        �i�Ŕ����i ���V�C�W�O�O�j</span><BR>
-      <span style="font-size: 16px">JAN�R�[�h �S�X�T�O�O�X�S�O�U�P�V�X�O</span></td>
+      <td colspan="12"><span style="font-size: 17px; line-height: 25px"><B>販売価格 ￥８，５８０</B></span><span style="font-size: 13px; line-height: 25px">（税込）<BR>
+        （税抜価格 ￥７，８００）</span><BR>
+      <span style="font-size: 16px">JANコード ４９５００９４０６１７９０</span></td>
     <td><img src="images/spacer.gif" width="1" height="39" border="0" alt=""></td>
   </tr>
   <tr>
@@ -140,11 +159,11 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="33"><span class="style5" style="line-height:25px">�h�A�Z�[�t�e�B�����v�̓h�A���J������������ɒm�点��Ǔ˖h�~�ׂ̈̐��i�ł��B<br>
-     �����̃J�[�e�V�[�����v�����ł͈ʒu�A�p�x�A���ʂɂ���ăh�A���J���Ă��鎖������֔F��������ɂ͕s�\���ȏꍇ������܂��B<br>
-     ������甗��ԗ��ցy�h�A���J���Ă��遁�~�Ԃ��邩������Ȃ��z��F��������ׁA���ɖ��邢2W�n�C�p���[LED��_�������Ē��ӂ𑣂��܂��B<br>
-     ���F���ɗD�ꂽ�FLED���̗p���鎖�Ŕ���E��Ԃ����łȂ��A�����ɂ����̌��ʂ𔭊����A����̈��S�ȍ~�Ԃ��T�|�[�g���܂��B<br>
-    ��2����Ɏ�����������o�b�e���[�ی��H�t�B</span></td>
+   <td colspan="33"><span class="style5" style="line-height:25px">ドアセーフティランプはドアが開いた事を後方に知らせる追突防止の為の製品です。<br>
+     純正のカーテシーランプだけでは位置、角度、光量によってドアが開いている事を後方へ認識させるには不十分な場合があります。<br>
+     後方から迫る車両へ【ドアが開いている＝降車するかもしれない】を認識させる為、非常に明るい2WハイパワーLEDを点灯させて注意を促します。<br>
+     視認性に優れた青色LEDを採用する事で薄暮・夜間だけでなく、日中にもその効果を発揮し、乗員の安全な降車をサポートします。<br>
+    約2分後に自動消灯するバッテリー保護回路付。</span></td>
    <td><img src="images/spacer.gif" width="1" height="120" border="0" alt=""></td>
   </tr>
   <tr>
@@ -173,97 +192,97 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="9" colspan="15"><img name="door_safety_lamp_r22_c1" src="images/door_safety_lamp_r22_c1.gif" width="500" height="180" border="0" id="door_safety_lamp_r22_c1" alt=""></td>
-   <td colspan="7"><div align="center" class="style7">�d���d��</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�{�W�u�`�{�P�U�u�E�}�C�i�X�A�[�X</span></td>
+   <td colspan="7"><div align="center" class="style7">電源電圧</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　＋８Ｖ～＋１６Ｖ・マイナスアース</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="7"><div align="center" class="style7">����d��</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�T�O�O���`�ȉ�/�P�Q�u��</span></td>
+   <td colspan="7"><div align="center" class="style7">消費電流</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　５００ｍＡ以下/１２Ｖ時</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="7"><div align="center" class="style7">�ۊǉ��x�͈�</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�|�S�O���`�{�W�T��</span></td>
+   <td colspan="7"><div align="center" class="style7">保管温度範囲</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　－４０℃～＋８５℃</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="7"><div align="center" class="style7">���쉷�x�͈�</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�|�Q�O���`�{�V�T��</span></td>
+   <td colspan="7"><div align="center" class="style7">動作温度範囲</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　－２０℃～＋７５℃</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="7"><div align="center" class="style7">�Ǝˊp</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�����@/�@�����@�P�W�O��</span></td>
+   <td colspan="7"><div align="center" class="style7">照射角</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　垂直　/　水平　１８０°</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="7"><div align="center" class="style7">����</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�P�W���[����</span></td>
+   <td colspan="7"><div align="center" class="style7">光束</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　１８ルーメン</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="7"><div align="center" class="style7">LED�d�l</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�F�Q�v�@�o�n�v�d�q �k�d�c</span></td>
+   <td colspan="7"><div align="center" class="style7">LED仕様</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　青色２Ｗ　ＰＯＷＥＲ ＬＥＤ</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="7"><div align="center" class="style7">�ی쓙��</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�h�o�U�V</span></td>
+   <td colspan="7"><div align="center" class="style7">保護等級</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　ＩＰ６７</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="7"><div align="center" class="style7">���o�[�����O</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@���P�W�D�P/�P�X�D�W/�Q�R�D�O/�Q�T�D�O/�Q�U�D�W�i�����j</span></td>
+   <td colspan="7"><div align="center" class="style7">ラバーリング</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　Φ１８．１/１９．８/２３．０/２５．０/２６．８（ｍｍ）</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
    <td rowspan="5"><img name="door_safety_lamp_r31_c1" src="images/door_safety_lamp_r31_c1.gif" width="10" height="100" border="0" id="door_safety_lamp_r31_c1" alt=""></td>
-   <td colspan="6"><span class="style7">�i�P�j�@LED�n�[�l�X�~�Q</span></td>
+   <td colspan="6"><span class="style7">（１）　LEDハーネス×２</span></td>
    <td rowspan="5"><img src="images/door_safety_lamp_r31_c8.gif" alt="" name="door_safety_lamp_r31_c8" width="10" height="100" border="0" class="style1" id="door_safety_lamp_r31_c8"></td>
-   <td colspan="6"><span class="style7">�i�S�j�@���o�[�����O�~�T��i�e�Q�j</span></td>
+   <td colspan="6"><span class="style7">（４）　ラバーリング×５種（各２個）</span></td>
    <td rowspan="5"><img name="door_safety_lamp_r31_c15" src="images/door_safety_lamp_r31_c15.gif" width="10" height="100" border="0" id="door_safety_lamp_r31_c15" alt=""></td>
-   <td colspan="7"><div align="center" class="style7">�q���[�Y</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�R�`</span></td>
+   <td colspan="7"><div align="center" class="style7">ヒューズ</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　３Ａ</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6"><span class="style7">�i�Q�j�@�d���n�[�l�X�~�Q</span></td>
-   <td colspan="6"><span class="style7">�i�T�j�@�����o���h�~�P�O</span></td>
-   <td colspan="7"><div align="center" class="style7">�_������</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@��P�Q�O�b</span></td>
+   <td colspan="6"><span class="style7">（２）　電源ハーネス×２</span></td>
+   <td colspan="6"><span class="style7">（５）　結束バンド×１０</span></td>
+   <td colspan="7"><div align="center" class="style7">点灯時間</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　約１２０秒</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6"><span class="style7">�@�@�@�@�E�R�D�S���~�Q�D�O��</span></td>
-   <td colspan="6"><span class="style7">�i�U�j�@���t���h�~�V�[���~�U</span></td>
-   <td colspan="7"><div align="center" class="style7">�P�[�X�ގ�</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�A���~�j�E��</span></td>
+   <td colspan="6"><span class="style7">　　　　・３．４ｍ×２．０ｍ</span></td>
+   <td colspan="6"><span class="style7">（６）　傷付き防止シール×６</span></td>
+   <td colspan="7"><div align="center" class="style7">ケース材質</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　アルミニウム</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6"><span class="style7">�@�@�@�@�E�Q�D�O���~�Q�D�O��</span></td>
-   <td colspan="6"><span class="style7">�i�V�j�@����^�b�v�~�R</span></td>
-   <td colspan="7"><div align="center" class="style7">�����Y�ގ�</div></td>
-   <td><div align="center" class="style7">�F</div></td>
-   <td colspan="10"><span class="style7">�@�|���J�[�{�l�[�g</span></td>
+   <td colspan="6"><span class="style7">　　　　・２．０ｍ×２．０ｍ</span></td>
+   <td colspan="6"><span class="style7">（７）　分岐タップ×３</span></td>
+   <td colspan="7"><div align="center" class="style7">レンズ材質</div></td>
+   <td><div align="center" class="style7">：</div></td>
+   <td colspan="10"><span class="style7">　ポリカーボネート</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6"><span class="style7">�i�R�j�@�R�`�q���[�Y���~�P</span></td>
-   <td colspan="6"><span class="style7">�@�@�@�@�戵�E��t�������~�e1��</span></td>
+   <td colspan="6"><span class="style7">（３）　３Ａヒューズ線×１</span></td>
+   <td colspan="6"><span class="style7">　　　　取扱・取付説明書×各1部</span></td>
    <td colspan="7"><img name="door_safety_lamp_r35_c16" src="images/door_safety_lamp_r35_c16.gif" width="170" height="20" border="0" id="door_safety_lamp_r35_c16" alt=""></td>
    <td><img name="door_safety_lamp_r35_c23" src="images/door_safety_lamp_r35_c23.gif" width="20" height="20" border="0" id="door_safety_lamp_r35_c23" alt=""></td>
    <td colspan="10"><img name="door_safety_lamp_r35_c24" src="images/door_safety_lamp_r35_c24.gif" width="310" height="20" border="0" id="door_safety_lamp_r35_c24" alt=""></td>
@@ -274,47 +293,47 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="33"><span class="style7">���w���O�ɕK�����ǂ݂��������B</span></td>
+   <td colspan="33"><span class="style7">ご購入前に必ずお読みください。</span></td>
    <td><img src="images/spacer.gif" width="1" height="25" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="33"><span class="style4" style="line-height:18px">���{���i�͎ԗ��̃T�[�r�X�z�[���Ɏ��t���������܂��B�K���A�����\��ԗ��̃T�[�r�X�z�[�����a�����m�F�̏エ�������߂��������B<br>
-     �@�@
-     �i���o�[�����O��5�T�C�Y�i��18.1/19.8/23.0/25.0/26.8�����j�𓯍����Ă���܂��B�j<br>
-    ���h�A�X�C�b�`�����}�C�i�X�R���g���[���ȊO�̎ԗ��ɂ͎��t���o���܂���B</span></td>
+   <td colspan="33"><span class="style4" style="line-height:18px">●本製品は車両のサービスホールに取り付けいたします。必ず、装着予定車両のサービスホール穴径をご確認の上お買い求めください。<br>
+     　　
+     （ラバーリングは5サイズ（Φ18.1/19.8/23.0/25.0/26.8ｍｍ）を同梱しております。）<br>
+    ●ドアスイッチ線がマイナスコントロール以外の車両には取り付け出来ません。</span></td>
    <td><img src="images/spacer.gif" width="1" height="50" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="33"><span class="style7">���S�y�ю��t���Ɋւ��邲����</span></td>
+   <td colspan="33"><span class="style7">安全及び取り付けに関するご注意</span></td>
    <td><img src="images/spacer.gif" width="1" height="25" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="33"><span class="style4" style="line-height:18px">���{���i��DC+12V�E�{�f�B�[�A�[�X�Ԑ�p�i�ł��B�w��ȊO�̓d���ł͎g�p���Ȃ��ł��������B<br>
-     ���{���i�̎��t���͎��t���Z�p�̂���̔��X�ōs���Ă��������B<br>
-     ���{���i�̔z�����@���t���@�y�юg�p���@�����Ǝԗ��̑��u�A�@��ނ�j���܂��͑������鋰�ꂪ����܂��B<br>
-     ���_�����̌��𒼎����Ȃ��ł��������B���͏�Q�̌����ɂȂ�܂��B<br>
-     ���z����Ƃ̍ہA�d���̋ɐ��i�{�E�|�j���ԈႦ�Ȃ��悤�ɂ����ӂ��������B���A�d�����i+12V�j�̐����ԗ��̋��������ɐG��Ȃ��悤�ɂ����ӂ��������B<br>
-     ���d�����̔핢��؂��đ��@��̓d����ڑ����鎖�͐�΂ɍs��Ȃ��ł��������B<br>
-     ��������͕K���r�j�[���e�[�v���Ő≏�������s���Ă��������B<br>
-     ���w�肳�ꂽ����T���Ƃ��͕K���T�[�L�b�g�e�X�^�[���g�p���A���d��i�����v�e�X�^�[�j���͎g�p���Ȃ��ł��������B<br>
-     ���z����Ƃ��s���ۂ͕K���o�b�e���[�̃}�C�i�X�[�q���O���Ă����Ƃ��s���Ă��������B�O�����ɍ�Ƃ��s���ƃV���[�g���鋰�ꂪ����A��ϊ댯�ł��B<br>
-     ���z����Ƃ̍ہA������������A�����ȋȂ��A�˂���A���������M���H�����s��Ȃ��ł��������B<br>
-     ���{���i�𕪉���������H�A�������Ȃ��ł��������B<br>
-     ���z����͉^�]�̖W���ɂȂ�Ȃ��l�A�����o���h���ő��˂Ă��������B<br>
-     �������i�p���[�E�C���h�E��h�A���b�N���[�^�[�A�h�A�J���j�Ƀn�[�l�X�ނ����ݍ��܂Ȃ��l�ɔz���̈����񂵂��s���Ă��������B<br>
-     ���{���i���g�p���Ĕ����������̂�̏�A�j���y�ш��S�^�]�`���ᔽ�ɂ�锱���A���_���Ɋւ��Ă̐ӔC�͕��Ђł͈�ؐӔC�𕉂��܂���̂ŁA�\�߂��������������B<br>
-     �����i�̃f�U�C���A�d�l�A�O�ρA�F�����A���i���ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B�܂��A���i�̎ʐ^���̐F�͎����Ƃ͂͑����قȂ�ꍇ������܂��̂ŁA<br>
-�@ ���炩���߂��������������B<br></span></td>
+   <td colspan="33"><span class="style4" style="line-height:18px">●本製品はDC+12V・ボディーアース車専用品です。指定以外の電圧では使用しないでください。<br>
+     ●本製品の取り付けは取り付け技術のある販売店で行ってください。<br>
+     ●本製品の配線方法や取付方法及び使用方法を誤ると車両の装置、機器類を破損または損傷する恐れがあります。<br>
+     ●点灯中の光を直視しないでください。視力障害の原因になります。<br>
+     ●配線作業の際、電源の極性（＋・－）を間違えないようにご注意ください。又、電源側（+12V）の線が車両の金属部分に触れないようにご注意ください。<br>
+     ●電源線の被覆を切って他機器の電源を接続する事は絶対に行わないでください。<br>
+     ●結線後は必ずビニールテープ等で絶縁処理を行ってください。<br>
+     ●指定された線を探すときは必ずサーキットテスターを使用し、検電器（ランプテスター）等は使用しないでください。<br>
+     ●配線作業を行う際は必ずバッテリーのマイナス端子を外してから作業を行ってください。外さずに作業を行うとショートする恐れがあり、大変危険です。<br>
+     ●配線作業の際、線を傷つけたり、無理な曲げ、ねじり、引張りや加熱加工等を行わないでください。<br>
+     ●本製品を分解したり加工、改造しないでください。<br>
+     ●配線後は運転の妨げにならない様、結束バンド等で束ねてください。<br>
+     ●可動部（パワーウインドウやドアロックモーター、ドア開閉等）にハーネス類を挟み込まない様に配線の引き回しを行ってください。<br>
+     ●本製品を使用して発生した事故や故障、破損及び安全運転義務違反による罰金、減点等に関しての責任は弊社では一切責任を負いませんので、予めご了承ください。<br>
+     ●製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。また、製品の写真等の色は実物とはは多少異なる場合がありますので、<br>
+　 あらかじめご了承ください。<br></span></td>
    <td><img src="images/spacer.gif" width="1" height="200" border="0" alt=""></td>
   </tr>
    <tr>
-   <td colspan="33"><span class="style7">�ۏ؋K��</span></td>
+   <td colspan="33"><span class="style7">保証規定</span></td>
    <td><img src="images/spacer.gif" width="1" height="25" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="33"><span class="style4" style="line-height:18px">���{���i��3�N�ۏ؂ƂȂ�܂��B<br>
-       ���戵�������ɏ]��������Ȏg�p��Ԃ̉��ŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ���<br>
-�@�@���Ђł͈�ؐӔC�𕉂����˂܂��B</span></td>
+   <td colspan="33"><span class="style4" style="line-height:18px">●本製品は3年保証となります。<br>
+       ●取扱説明書に従った正常な使用状態の下で不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について<br>
+　　弊社では一切責任を負いかねます。</span></td>
    <td><img src="images/spacer.gif" width="1" height="50" border="0" alt=""></td>
   </tr>
   <tr>
@@ -335,24 +354,9 @@ function MM_preloadImages() { //v3.0
    <td colspan="33"><img name="door_safety_lamp_r45_c1" src="images/door_safety_lamp_r45_c1.gif" width="1000" height="10" border="0" id="door_safety_lamp_r45_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="3" colspan="27"><img name="door_safety_lamp_r46_c1" src="images/door_safety_lamp_r46_c1.gif" width="818" height="65" border="0" id="door_safety_lamp_r46_c1" alt=""></td>
-   <td colspan="3"><img name="door_safety_lamp_r46_c28" src="images/door_safety_lamp_r46_c28.gif" width="85" height="30" border="0" id="door_safety_lamp_r46_c28" alt=""></td>
-   <td rowspan="3" colspan="3"><img name="door_safety_lamp_r46_c31" src="images/door_safety_lamp_r46_c31.gif" width="97" height="65" border="0" id="door_safety_lamp_r46_c31" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="3"><a href="door_safety_lamp.htm" onMouseOut="MM_swapImgRestore();" onMouseOver="MM_swapImage('door_safety_lamp_r47_c28','','images/door_safety_lamp_r47_c28_f2.gif',1);"><img name="door_safety_lamp_r47_c28" src="images/door_safety_lamp_r47_c28.gif" width="85" height="15" border="0" id="door_safety_lamp_r47_c28" alt=""></a></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="3"><img name="door_safety_lamp_r48_c28" src="images/door_safety_lamp_r48_c28.gif" width="85" height="20" border="0" id="door_safety_lamp_r48_c28" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="33"><img name="door_safety_lamp_r49_c1" src="images/door_safety_lamp_r49_c1.gif" width="1000" height="78" border="0" id="door_safety_lamp_r49_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="78" border="0" alt=""></td>
-  </tr>
+  
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

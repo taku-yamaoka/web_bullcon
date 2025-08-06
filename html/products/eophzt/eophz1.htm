@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML>
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>USB/HDMI‰„’·ƒP[ƒuƒ‹iƒgƒˆƒ^USBƒ^ƒCƒvj / Bullcon-ƒtƒW“d‹@H‹ÆŠ”Ž®‰ïŽÐ</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>USB/HDMIå»¶é•·ã‚±ãƒ¼ãƒ–ãƒ«ï¼ˆãƒˆãƒ¨ã‚¿USBã‚¿ã‚¤ãƒ—ï¼‰ / Bullcon-ãƒ•ã‚¸é›»æ©Ÿå·¥æ¥­æ ªå¼ä¼šç¤¾</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -36,12 +38,48 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // ãƒ¬ã‚¹ãƒãƒ³ã‚¹ãŒæˆåŠŸã§ãªã‘ã‚Œã°ã‚¨ãƒ©ãƒ¼ã‚’æŠ•ã’ã‚‹
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿæ™‚ã®ä»£æ›¿å‡¦ç†ï¼ˆä¾‹: ã‚¨ãƒ©ãƒ¼ãƒ¡ãƒƒã‚»ãƒ¼ã‚¸ã‚’è¡¨ç¤ºï¼‰
+        document.getElementById('header-placeholder').innerHTML = '<p>ãƒ˜ãƒƒãƒ€ãƒ¼ã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸã€‚</p>';
+    });
+
+    // ãƒ•ãƒƒã‚¿ãƒ¼ã®èª­ã¿è¾¼ã¿
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // ãƒ¬ã‚¹ãƒãƒ³ã‚¹ãŒæˆåŠŸã§ãªã‘ã‚Œã°ã‚¨ãƒ©ãƒ¼ã‚’æŠ•ã’ã‚‹
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // ã‚¨ãƒ©ãƒ¼ç™ºç”Ÿæ™‚ã®ä»£æ›¿å‡¦ç†
+        document.getElementById('footer-placeholder').innerHTML = '<p>ãƒ•ãƒƒã‚¿ãƒ¼ã®èª­ã¿è¾¼ã¿ã«å¤±æ•—ã—ã¾ã—ãŸã€‚</p>';
+    });
 //-->
 </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/eophz_r2_c10_s2.gif','images/eophz_r2_c16_s2.gif','images/eophz_r2_c23_s2.gif','images/eophz_r2_c29_s2.gif','images/eophz_r2_c35_s2.gif','images/eophz_r5_c1_s2.gif','images/eophz_r5_c8_s2.gif','images/eophz_r5_c13_s2.gif','images/eophz_r5_c19_s2.gif','images/eophz_r5_c27_s2.gif','images/eophz_r5_c33_s2.gif','images/eophz_r8_c4_s2.gif','images/eophz_r8_c5_s2.gif','images/eophz_r32_c4_s2.gif','images/eophz_r32_c21_s2.gif','images/eophz_r36_c22_s2.gif','images/eophz_r36_c32_s2.gif','images/eophz_r38_c21_s2.gif');">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="usb-hdmiHZ02Q2023915.png" fwpage="ƒy[ƒW 1" fwbase="eophz.gif" fwstyle="Dreamweaver" fwdocid = "1530577462" fwnested="0" -->
+   <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+   <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="usb-hdmiHZ02ï¼¿2023915.png" fwpage="ãƒšãƒ¼ã‚¸ 1" fwbase="eophz.gif" fwstyle="Dreamweaver" fwdocid = "1530577462" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="5" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="5" height="1" alt=""></td>
@@ -83,17 +121,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="10" height="1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
   </tr>
-
-  <tr>
-    <td colspan="39"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_accessory/header.htm"
-  frameborder="0"
-  height="246px"
-  width="101%"
-  scrolling="no">
-</iframe> </td>
   
   <tr>
    <td colspan="11"><img name="eophz_r11_c1" src="images/eophz_r11_c1.gif" width="330" height="80" id="eophz_r11_c1" alt=""></td>
@@ -106,15 +133,15 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="189" alt=""></td>
   </tr>
   <tr>
-   <td colspan="38" style="font-size: 15px"><b>‚t‚r‚aƒ|[ƒg‚ÆHDMIƒ|[ƒg‚ðŽè‚Ì“Í‚­êŠ‚ÖˆÚÝ‚Å‚«‚é‰„’·ƒP[ƒuƒ‹</b></td>
+   <td colspan="38" style="font-size: 15px"><b>ï¼µï¼³ï¼¢ãƒãƒ¼ãƒˆã¨HDMIãƒãƒ¼ãƒˆã‚’æ‰‹ã®å±Šãå ´æ‰€ã¸ç§»è¨­ã§ãã‚‹å»¶é•·ã‚±ãƒ¼ãƒ–ãƒ«</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="38" style="font-size: 15px"><b>ŽÔ—¼‚t‚r‚aƒpƒlƒ‹‚É‚g‚c‚l‚h‹@”\‚ðƒvƒ‰ƒXA‚g‚c‚l‚h-‚`to‚dƒ^ƒCƒvƒP[ƒuƒ‹•t‘®‚Å‚g‚c‚l‚h-‚dƒ^ƒCƒv‘Î‰žƒiƒrƒQ[ƒVƒ‡ƒ“‚Öƒ_ƒCƒŒƒNƒgÚ‘±‚ª‰Â”\B</b></td>
+   <td colspan="38" style="font-size: 15px"><b>è»Šä¸¡ï¼µï¼³ï¼¢ãƒ‘ãƒãƒ«ã«ï¼¨ï¼¤ï¼­ï¼©æ©Ÿèƒ½ã‚’ãƒ—ãƒ©ã‚¹ã€ï¼¨ï¼¤ï¼­ï¼©-ï¼¡toï¼¥ã‚¿ã‚¤ãƒ—ã‚±ãƒ¼ãƒ–ãƒ«ä»˜å±žã§ï¼¨ï¼¤ï¼­ï¼©-ï¼¥ã‚¿ã‚¤ãƒ—å¯¾å¿œãƒŠãƒ“ã‚²ãƒ¼ã‚·ãƒ§ãƒ³ã¸ãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆæŽ¥ç¶šãŒå¯èƒ½ã€‚</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="38" style="font-size: 15px"><b>ƒ³‚Ì‚æ‚¤‚ÈŒ©‚½–Ú‚ÆŽg‚¢S’n</b></td>
+   <td colspan="38" style="font-size: 15px"><b>ç´”æ­£ã®ã‚ˆã†ãªè¦‹ãŸç›®ã¨ä½¿ã„å¿ƒåœ°</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -128,25 +155,25 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" alt=""></td>
   </tr>
   <tr>
-   <td colspan="17" style="text-align: center; font-size: 12px; line-height: 16px">ƒgƒˆƒ^USBƒpƒlƒ‹ + HDMI-AtoEƒP[ƒuƒ‹ + HDMI-AtoAƒP[ƒuƒ‹<br>
-      <span style="font-size: 11px">iEOP-SP01TUj@ @@@iAV-DH06j@@@@@@@@@@@@@</span></td>
-   <td colspan="19" style="text-align: center; font-size: 12px; line-height: 16px">ƒgƒˆƒ^USBƒpƒlƒ‹ + HDMI-AtoEƒP[ƒuƒ‹ + HDMI-AtoAƒP[ƒuƒ‹ + USB•ÏŠ·ƒP[ƒuƒ‹<br>
-      <span style="font-size: 11px">iEOP-SP01TUj@ @@iAV-DH06j@@@@@@@@@@@@@@@@iEOP-USB-CAj</span></td>
+   <td colspan="17" style="text-align: center; font-size: 12px; line-height: 16px">ãƒˆãƒ¨ã‚¿USBãƒ‘ãƒãƒ« + HDMI-AtoEã‚±ãƒ¼ãƒ–ãƒ« + HDMI-AtoAã‚±ãƒ¼ãƒ–ãƒ«<br>
+      <span style="font-size: 11px">ï¼ˆEOP-SP01TUï¼‰ã€€ ã€€ã€€ã€€ï¼ˆAV-DH06ï¼‰ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€</span></td>
+   <td colspan="19" style="text-align: center; font-size: 12px; line-height: 16px">ãƒˆãƒ¨ã‚¿USBãƒ‘ãƒãƒ« + HDMI-AtoEã‚±ãƒ¼ãƒ–ãƒ« + HDMI-AtoAã‚±ãƒ¼ãƒ–ãƒ« + USBå¤‰æ›ã‚±ãƒ¼ãƒ–ãƒ«<br>
+      <span style="font-size: 11px">ï¼ˆEOP-SP01TUï¼‰ã€€ ã€€ã€€ï¼ˆAV-DH06ï¼‰ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ã€€ï¼ˆEOP-USB-CAï¼‰</span></td>
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
   <tr>
-   <td colspan="17" style="text-align: center"><span style="font-size: 16px; line-height: 20px"><b>”Ì”„‰¿ŠiF‚P‚S,‚O‚W‚O</b></span></td>
-   <td colspan="19" style="text-align: center"><span style="font-size: 16px; line-height: 20px"><b>”Ì”„‰¿ŠiF‚P‚T,‚P‚W‚O</b></span></td>
+   <td colspan="17" style="text-align: center"><span style="font-size: 16px; line-height: 20px"><b>è²©å£²ä¾¡æ ¼ï¼šï¿¥ï¼‘ï¼”,ï¼ï¼˜ï¼</b></span></td>
+   <td colspan="19" style="text-align: center"><span style="font-size: 16px; line-height: 20px"><b>è²©å£²ä¾¡æ ¼ï¼šï¿¥ï¼‘ï¼•,ï¼‘ï¼˜ï¼</b></span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="17" style="text-align: center"><span style="font-size: 15px; line-height: 20px">iÅ”²‰¿Ši ‚P‚Q,‚W‚O‚Oj</span></td>
-   <td colspan="19" style="text-align: center"><span style="font-size: 15px; line-height: 20px">iÅ”²‰¿Ši ‚P‚R,‚W‚O‚Oj</span></td>
+   <td colspan="17" style="text-align: center"><span style="font-size: 15px; line-height: 20px">ï¼ˆç¨ŽæŠœä¾¡æ ¼ ï¿¥ï¼‘ï¼’,ï¼˜ï¼ï¼ï¼‰</span></td>
+   <td colspan="19" style="text-align: center"><span style="font-size: 15px; line-height: 20px">ï¼ˆç¨ŽæŠœä¾¡æ ¼ ï¿¥ï¼‘ï¼“,ï¼˜ï¼ï¼ï¼‰</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="17" style="text-align: center"><span style="font-size: 15px; line-height: 20px">‚i‚`‚mƒR[ƒhF‚S‚X‚T‚O‚O‚X‚S‚O‚U‚Q‚W‚S‚P</span></td>
-   <td colspan="19" style="text-align: center"><span style="font-size: 15px; line-height: 20px">‚i‚`‚mƒR[ƒhF‚S‚X‚T‚O‚O‚X‚S‚O‚U‚R‚P‚T‚Q</span></td>
+   <td colspan="17" style="text-align: center"><span style="font-size: 15px; line-height: 20px">ï¼ªï¼¡ï¼®ã‚³ãƒ¼ãƒ‰ï¼šï¼”ï¼™ï¼•ï¼ï¼ï¼™ï¼”ï¼ï¼–ï¼’ï¼˜ï¼”ï¼‘</span></td>
+   <td colspan="19" style="text-align: center"><span style="font-size: 15px; line-height: 20px">ï¼ªï¼¡ï¼®ã‚³ãƒ¼ãƒ‰ï¼šï¼”ï¼™ï¼•ï¼ï¼ï¼™ï¼”ï¼ï¼–ï¼“ï¼‘ï¼•ï¼’</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -270,13 +297,13 @@ function MM_preloadImages() { //v3.0
    <td rowspan="5" colspan="14"><div class="movie-wrap" align="center"><iframe src="https://www.youtube.com/embed/gS3NWKXY7K0?loop=1&playlist=gS3NWKXY7K0" width="480" height="270" frameborder="0" style="" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div></td>
    <td rowspan="5" colspan="2"><img name="eophz_r35_c17" src="images/eophz_r35_c17.gif" width="10" height="270" id="eophz_r35_c17" alt=""></td>
    <td rowspan="5" colspan="2"><img name="eophz_r35_c19" src="images/eophz_r35_c19.gif" width="10" height="270" id="eophz_r35_c19" alt=""></td>
-   <td colspan="17" style="font-size: 16px; line-height: 25px" valign="top"><b>ŽÔ—¼‚t‚r‚aƒpƒlƒ‹‚É‚g‚c‚l‚h‹@”\‚ðƒvƒ‰ƒXA<br>
-‚g‚c‚l‚h-‚`to‚dƒ^ƒCƒvƒP[ƒuƒ‹‚Å‚g‚c‚l‚h-‚dƒ^ƒCƒv‘Î‰ž<br>
-ƒiƒrƒQ[ƒVƒ‡ƒ“‚Éƒ_ƒCƒŒƒNƒg‚ÈÚ‘±‚ª‰Â”\B<br>
-ƒ³‚Ì‚æ‚¤‚ÉƒLƒŒƒC‚ÉŽû‚Ü‚Á‚ÄŽg‚¢‚â‚·‚¢I</b><br><br>
+   <td colspan="17" style="font-size: 16px; line-height: 25px" valign="top"><b>è»Šä¸¡ï¼µï¼³ï¼¢ãƒ‘ãƒãƒ«ã«ï¼¨ï¼¤ï¼­ï¼©æ©Ÿèƒ½ã‚’ãƒ—ãƒ©ã‚¹ã€<br>
+ï¼¨ï¼¤ï¼­ï¼©-ï¼¡toï¼¥ã‚¿ã‚¤ãƒ—ã‚±ãƒ¼ãƒ–ãƒ«ã§ï¼¨ï¼¤ï¼­ï¼©-ï¼¥ã‚¿ã‚¤ãƒ—å¯¾å¿œ<br>
+ãƒŠãƒ“ã‚²ãƒ¼ã‚·ãƒ§ãƒ³ã«ãƒ€ã‚¤ãƒ¬ã‚¯ãƒˆãªæŽ¥ç¶šãŒå¯èƒ½ã€‚<br>
+ç´”æ­£ã®ã‚ˆã†ã«ã‚­ãƒ¬ã‚¤ã«åŽã¾ã£ã¦ä½¿ã„ã‚„ã™ã„ï¼</b><br><br>
       
-      <span style="font-size: 13px">‘–s’†‚ÌŽ‹’®‚É‚Í•Ê“ryFREETVINGz‚ª•K—v‚Å‚·B<br>
-Ú‚µ‚­‚ÍyFREETVINGz‚Ì»•iƒy[ƒW‹y‚Ñ“K‡•\‚ð‚²Šm”F‚­‚¾‚³‚¢B</span></td>
+      <span style="font-size: 13px">èµ°è¡Œä¸­ã®è¦–è´ã«ã¯åˆ¥é€”ã€FREETVINGã€‘ãŒå¿…è¦ã§ã™ã€‚<br>
+è©³ã—ãã¯ã€FREETVINGã€‘ã®è£½å“ãƒšãƒ¼ã‚¸åŠã³é©åˆè¡¨ã‚’ã”ç¢ºèªãã ã•ã„ã€‚</span></td>
    <td rowspan="5"><img name="eophz_r35_c38" src="images/eophz_r35_c38.gif" width="10" height="270" id="eophz_r35_c38" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="152" alt=""></td>
   </tr>
@@ -296,7 +323,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="40" alt=""></td>
   </tr>
   <tr>
-   <td colspan="17" style="text-align: center; font-size: 11px; line-height: 16px">¶‚Ì‰f‘œ‚ª³í‚É•\Ž¦‚³‚ê‚È‚¢Aê‡‚ÍAã‚Ìƒ{ƒ^ƒ“‚ðƒNƒŠƒbƒN‚µ‚ÄYoutube‚Å‚²Šm”F‚­‚¾‚³‚¢</td>
+   <td colspan="17" style="text-align: center; font-size: 11px; line-height: 16px">å·¦ã®æ˜ åƒãŒæ­£å¸¸ã«è¡¨ç¤ºã•ã‚Œãªã„ã€å ´åˆã¯ã€ä¸Šã®ãƒœã‚¿ãƒ³ã‚’ã‚¯ãƒªãƒƒã‚¯ã—ã¦Youtubeã§ã”ç¢ºèªãã ã•ã„</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -304,51 +331,51 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
   <tr>
-   <td colspan="16" bgcolor="#CDD7FF"  style="font-size: 13px" align="center">‚t‚r‚a/‚g‚c‚l‚h‰„’·ƒP[ƒuƒ‹i‚d‚n‚o|‚g‚y‚O‚P‚s‚tjŽd—l<br></td>
+   <td colspan="16" bgcolor="#CDD7FF"  style="font-size: 13px" align="center">ï¼µï¼³ï¼¢/ï¼¨ï¼¤ï¼­ï¼©å»¶é•·ã‚±ãƒ¼ãƒ–ãƒ«ï¼ˆï¼¥ï¼¯ï¼°ï¼ï¼¨ï¼ºï¼ï¼‘ï¼´ï¼µï¼‰ä»•æ§˜<br></td>
    <td colspan="4"><img name="eophz_r41_c17" src="images/eophz_r41_c17.gif" width="20" height="20" id="eophz_r41_c17" alt=""></td>
-   <td colspan="18" bgcolor="#CDD7FF" style="font-size: 13px" align="center">‚t‚r‚a/‚g‚c‚l‚h‰„’·ƒP[ƒuƒ‹i‚d‚n‚o|‚g‚y‚O‚Q‚s‚tjŽd—l</td>
+   <td colspan="18" bgcolor="#CDD7FF" style="font-size: 13px" align="center">ï¼µï¼³ï¼¢/ï¼¨ï¼¤ï¼­ï¼©å»¶é•·ã‚±ãƒ¼ãƒ–ãƒ«ï¼ˆï¼¥ï¼¯ï¼°ï¼ï¼¨ï¼ºï¼ï¼’ï¼´ï¼µï¼‰ä»•æ§˜</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="font-size: 12px" align="center">‚g‚c‚l‚h</td>
-   <td colspan="10" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX to ‚g‚c‚l‚h‚s‚™‚‚…‚`ƒIƒX<br>
-    ‚u‚…‚’‚PD‚S@ƒnƒCƒXƒs[ƒhƒP[ƒuƒ‹iƒpƒlƒ‹•t‘®j</td>
+   <td colspan="6" style="font-size: 12px" align="center">ï¼¨ï¼¤ï¼­ï¼©</td>
+   <td colspan="10" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ to ï¼¨ï¼¤ï¼­ï¼©ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹<br>
+    ï¼¶ï½…ï½’ï¼‘ï¼Žï¼”ã€€ãƒã‚¤ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚±ãƒ¼ãƒ–ãƒ«ï¼ˆãƒ‘ãƒãƒ«ä»˜å±žï¼‰</td>
    <td colspan="4"><img name="eophz_r42_c17" src="images/eophz_r42_c17.gif" width="20" height="20" id="eophz_r42_c17" alt=""></td>
-   <td colspan="4" style="font-size: 12px" align="center">‚g‚c‚l‚h</td>
-   <td colspan="14" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX to ‚g‚c‚l‚h‚s‚™‚‚…‚`ƒIƒX<br>
-‚u‚…‚’‚PD‚S@ƒnƒCƒXƒs[ƒhƒP[ƒuƒ‹iƒpƒlƒ‹•t‘®j</td>
+   <td colspan="4" style="font-size: 12px" align="center">ï¼¨ï¼¤ï¼­ï¼©</td>
+   <td colspan="14" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ to ï¼¨ï¼¤ï¼­ï¼©ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹<br>
+ï¼¶ï½…ï½’ï¼‘ï¼Žï¼”ã€€ãƒã‚¤ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚±ãƒ¼ãƒ–ãƒ«ï¼ˆãƒ‘ãƒãƒ«ä»˜å±žï¼‰</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
 
   <tr>
    <td colspan="6" bgcolor="#CDD7FF" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒIƒX to ‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒIƒX<br>
-    ‚u‚…‚’‚PD‚S@ƒnƒCƒXƒs[ƒhƒP[ƒuƒ‹</td>
+   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹ to ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹<br>
+    ï¼¶ï½…ï½’ï¼‘ï¼Žï¼”ã€€ãƒã‚¤ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚±ãƒ¼ãƒ–ãƒ«</td>
    <td colspan="4"><img name="eophz_r44_c17" src="images/eophz_r44_c17.gif" width="20" height="20" id="eophz_r44_c17" alt=""></td>
    <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒIƒX to ‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒIƒX<br>
-‚u‚…‚’‚PD‚S@ƒnƒCƒXƒs[ƒhƒP[ƒuƒ‹</td>
+   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹ to ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹<br>
+ï¼¶ï½…ï½’ï¼‘ï¼Žï¼”ã€€ãƒã‚¤ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚±ãƒ¼ãƒ–ãƒ«</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   
   <tr>
    <td colspan="6" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="10" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX to ‚g‚c‚l‚h-‚s‚™‚‚…EƒIƒX<br>     ‚u‚…‚’‚PD‚S@ƒnƒCƒXƒs[ƒhƒP[ƒuƒ‹</td>
+   <td colspan="10" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ to ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…Eã‚ªã‚¹<br>     ï¼¶ï½…ï½’ï¼‘ï¼Žï¼”ã€€ãƒã‚¤ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚±ãƒ¼ãƒ–ãƒ«</td>
    <td colspan="4"><img name="eophz_r46_c17" src="images/eophz_r46_c17.gif" width="20" height="20" id="eophz_r46_c17" alt=""></td>
    <td colspan="4" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="14" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX to ‚g‚c‚l‚h-‚s‚™‚‚…EƒIƒX<br>
-‚u‚…‚’‚PD‚S@ƒnƒCƒXƒs[ƒhƒP[ƒuƒ‹</td>
+   <td colspan="14" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ to ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…Eã‚ªã‚¹<br>
+ï¼¶ï½…ï½’ï¼‘ï¼Žï¼”ã€€ãƒã‚¤ã‚¹ãƒ”ãƒ¼ãƒ‰ã‚±ãƒ¼ãƒ–ãƒ«</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
  
   <tr>
-   <td colspan="6" bgcolor="#CDD7FF" style="font-size: 12px" align="center">‚t‚r‚a</td>
-   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">‚t‚r‚a-‚s‚™‚‚…‚`ƒƒX to ‚t‚r‚a-‚s‚™‚‚…‚`ƒIƒX<br>
-    ƒf[ƒ^“]‘—E[“d‘Î‰ž@‚t‚r‚a‚QD‚O</td>
+   <td colspan="6" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ï¼µï¼³ï¼¢</td>
+   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">ï¼µï¼³ï¼¢-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ to ï¼µï¼³ï¼¢-ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹<br>
+    ãƒ‡ãƒ¼ã‚¿è»¢é€ãƒ»å……é›»å¯¾å¿œã€€ï¼µï¼³ï¼¢ï¼’ï¼Žï¼</td>
    <td colspan="4"><img name="eophz_r48_c17" src="images/eophz_r48_c17.gif" width="20" height="20" id="eophz_r48_c17" alt=""></td>
-   <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">‚t‚r‚a</td>
-   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">‚t‚r‚a-‚s‚™‚‚…‚`ƒƒX to ‚t‚r‚a-‚s‚™‚‚…‚`ƒIƒX<br>
-ƒf[ƒ^“]‘—E[“d‘Î‰ž@‚t‚r‚a‚QD‚O</td>
+   <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ï¼µï¼³ï¼¢</td>
+   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">ï¼µï¼³ï¼¢-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ to ï¼µï¼³ï¼¢-ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹<br>
+ãƒ‡ãƒ¼ã‚¿è»¢é€ãƒ»å……é›»å¯¾å¿œã€€ï¼µï¼³ï¼¢ï¼’ï¼Žï¼</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
 
@@ -356,58 +383,58 @@ function MM_preloadImages() { //v3.0
    <td colspan="6" style="font-size: 12px" align="center">&nbsp;</td>
    <td colspan="10" style="font-size: 12px">&nbsp;</td>
    <td colspan="4"><img name="eophz_r50_c17" src="images/eophz_r50_c17.gif" width="20" height="20" id="eophz_r50_c17" alt=""></td>
-   <td colspan="4" style="font-size: 12px" align="center">USB•ÏŠ·ƒn[ƒlƒX</td>
-   <td colspan="14" style="font-size: 12px">‚t‚r‚a-‚s‚™‚‚…CƒIƒX to ‚t‚r‚a-‚s‚™‚‚…‚`ƒƒX<br>
-ƒf[ƒ^“]‘—E[“d‘Î‰ž@‚t‚r‚a‚QD‚O</td>
+   <td colspan="4" style="font-size: 12px" align="center">USBå¤‰æ›ãƒãƒ¼ãƒã‚¹</td>
+   <td colspan="14" style="font-size: 12px">ï¼µï¼³ï¼¢-ï¼´ï½™ï½ï½…Cã‚ªã‚¹ to ï¼µï¼³ï¼¢-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹<br>
+ãƒ‡ãƒ¼ã‚¿è»¢é€ãƒ»å……é›»å¯¾å¿œã€€ï¼µï¼³ï¼¢ï¼’ï¼Žï¼</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   
   <tr>
-   <td colspan="6" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ƒpƒlƒ‹¡–@</td>
-   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">‚v‚Q‚QD‚T‚‚&times;‚g‚Q‚UD‚R‚‚&times;‚c‚RD‚O‚‚</td>
+   <td colspan="6" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ãƒ‘ãƒãƒ«å¯¸æ³•</td>
+   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">ï¼·ï¼’ï¼’ï¼Žï¼•ï½ï½&times;ï¼¨ï¼’ï¼–ï¼Žï¼“ï½ï½&times;ï¼¤ï¼“ï¼Žï¼ï½ï½</td>
    <td colspan="4"><img name="eophz_r52_c17" src="images/eophz_r52_c17.gif" width="20" height="20" id="eophz_r52_c17" alt=""></td>
-   <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ƒpƒlƒ‹¡–@</td>
-   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">‚v‚Q‚QD‚T‚‚&times;‚g‚Q‚UD‚R‚‚&times;‚c‚RD‚O‚‚</td>
+   <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ãƒ‘ãƒãƒ«å¯¸æ³•</td>
+   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">ï¼·ï¼’ï¼’ï¼Žï¼•ï½ï½&times;ï¼¨ï¼’ï¼–ï¼Žï¼“ï½ï½&times;ï¼¤ï¼“ï¼Žï¼ï½ï½</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="font-size: 12px" align="center">·ž¡–@</td>
-   <td colspan="10" style="font-size: 12px">‚v‚P‚WD‚P‚‚&times;‚g‚Q‚RD‚O‚‚&times;‚c‚R‚WD‚X‚‚ iƒƒbƒN•”ŠÜ‚Þj</td>
+   <td colspan="6" style="font-size: 12px" align="center">å·®è¾¼å¯¸æ³•</td>
+   <td colspan="10" style="font-size: 12px">ï¼·ï¼‘ï¼˜ï¼Žï¼‘ï½ï½&times;ï¼¨ï¼’ï¼“ï¼Žï¼ï½ï½&times;ï¼¤ï¼“ï¼˜ï¼Žï¼™ï½ï½ ï¼ˆãƒ­ãƒƒã‚¯éƒ¨å«ã‚€ï¼‰</td>
    <td colspan="4"><img name="eophz_r53_c17" src="images/eophz_r53_c17.gif" width="20" height="20" id="eophz_r53_c17" alt=""></td>
-   <td colspan="4" style="font-size: 12px" align="center">·ž¡–@</td>
-   <td colspan="14" style="font-size: 12px">‚v‚P‚WD‚P‚‚&times;‚g‚Q‚RD‚O‚‚&times;‚c‚R‚WD‚X‚‚ iƒƒbƒN•”ŠÜ‚Þj</td>
+   <td colspan="4" style="font-size: 12px" align="center">å·®è¾¼å¯¸æ³•</td>
+   <td colspan="14" style="font-size: 12px">ï¼·ï¼‘ï¼˜ï¼Žï¼‘ï½ï½&times;ï¼¨ï¼’ï¼“ï¼Žï¼ï½ï½&times;ï¼¤ï¼“ï¼˜ï¼Žï¼™ï½ï½ ï¼ˆãƒ­ãƒƒã‚¯éƒ¨å«ã‚€ï¼‰</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ƒn[ƒlƒX’·</td>
-   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX to ‚g‚c‚l‚h‚s‚™‚‚…‚`ƒIƒXF–ñ‚R‚Oc‚</td>
+   <td colspan="6" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ãƒãƒ¼ãƒã‚¹é•·</td>
+   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ to ï¼¨ï¼¤ï¼­ï¼©ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹ï¼šç´„ï¼“ï¼cï½</td>
    <td colspan="4"><img name="eophz_r54_c17" src="images/eophz_r54_c17.gif" width="20" height="20" id="eophz_r54_c17" alt=""></td>
-   <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ƒn[ƒlƒX’·</td>
-   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX to ‚g‚c‚l‚h‚s‚™‚‚…‚`ƒIƒXF–ñ‚R‚Oc‚</td>
+   <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ãƒãƒ¼ãƒã‚¹é•·</td>
+   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ to ï¼¨ï¼¤ï¼­ï¼©ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹ï¼šç´„ï¼“ï¼cï½</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="6" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="10" style="font-size: 12px">‚t‚r‚a|‚s‚™‚‚…F‚`ƒƒX to ‚t‚r‚a|‚s‚™‚‚…F‚`ƒIƒXF–ñ‚R‚Oc‚</td>
+   <td colspan="10" style="font-size: 12px">ï¼µï¼³ï¼¢ï¼ï¼´ï½™ï½ï½…ï¼šï¼¡ãƒ¡ã‚¹ to ï¼µï¼³ï¼¢ï¼ï¼´ï½™ï½ï½…ï¼šï¼¡ã‚ªã‚¹ï¼šç´„ï¼“ï¼cï½</td>
    <td colspan="4"><img name="eophz_r55_c17" src="images/eophz_r55_c17.gif" width="20" height="20" id="eophz_r55_c17" alt=""></td>
    <td colspan="4" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="14" style="font-size: 12px">‚t‚r‚a|‚s‚™‚‚…F‚`ƒƒX to ‚t‚r‚a|‚s‚™‚‚…F‚`ƒIƒXF–ñ‚R‚Oc‚</td>
+   <td colspan="14" style="font-size: 12px">ï¼µï¼³ï¼¢ï¼ï¼´ï½™ï½ï½…ï¼šï¼¡ãƒ¡ã‚¹ to ï¼µï¼³ï¼¢ï¼ï¼´ï½™ï½ï½…ï¼šï¼¡ã‚ªã‚¹ï¼šç´„ï¼“ï¼cï½</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="6" bgcolor="#CDD7FF" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX  to ‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX –ñ‚Q‚O‚Oc‚</td>
+   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹  to ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ ç´„ï¼’ï¼ï¼cï½</td>
    <td colspan="4"><img name="eophz_r56_c17" src="images/eophz_r56_c17.gif" width="20" height="20" id="eophz_r56_c17" alt=""></td>
    <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX  to ‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX –ñ‚Q‚O‚Oc‚</td>
+   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹  to ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ ç´„ï¼’ï¼ï¼cï½</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
    <td colspan="6" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="10" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒIƒX to ‚g‚c‚l‚h-‚s‚™‚‚…EƒƒXF–ñ‚P‚T‚Oc‚</td>
+   <td colspan="10" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹ to ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…Eãƒ¡ã‚¹ï¼šç´„ï¼‘ï¼•ï¼cï½</td>
    <td colspan="4"><img name="eophz_r57_c17" src="images/eophz_r57_c17.gif" width="20" height="20" id="eophz_r57_c17" alt=""></td>
    <td colspan="4" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="14" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒIƒX to ‚g‚c‚l‚h-‚s‚™‚‚…EƒƒXF–ñ‚P‚T‚Oc‚</td>
+   <td colspan="14" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹ to ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…Eãƒ¡ã‚¹ï¼šç´„ï¼‘ï¼•ï¼cï½</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -415,31 +442,31 @@ function MM_preloadImages() { //v3.0
    <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">&nbsp;</td>
    <td colspan="4"><img name="eophz_r58_c17" src="images/eophz_r58_c17.gif" width="20" height="20" id="eophz_r58_c17" alt=""></td>
    <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">&nbsp;</td>
-   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">‚t‚r‚a-‚s‚™‚‚…CƒƒX to ‚t‚r‚a-‚s‚™‚‚…‚`ƒIƒX F–ñ‚P‚Uc‚</td>
+   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">ï¼µï¼³ï¼¢-ï¼´ï½™ï½ï½…Cãƒ¡ã‚¹ to ï¼µï¼³ï¼¢-ï¼´ï½™ï½ï½…ï¼¡ã‚ªã‚¹ ï¼šç´„ï¼‘ï¼–cï½</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" style="font-size: 12px" align="center">’†ŒpƒAƒ_ƒvƒ^[</td>
-   <td colspan="10" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX to ‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒXF–ñ‚Tc‚</td>
+   <td colspan="6" style="font-size: 12px" align="center">ä¸­ç¶™ã‚¢ãƒ€ãƒ—ã‚¿ãƒ¼</td>
+   <td colspan="10" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ to ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ï¼šç´„ï¼•cï½</td>
    <td colspan="4"><img name="eophz_r59_c17" src="images/eophz_r59_c17.gif" width="20" height="20" id="eophz_r59_c17" alt=""></td>
-   <td colspan="4" style="font-size: 12px" align="center">’†ŒpƒAƒ_ƒvƒ^[</td>
-   <td colspan="14" style="font-size: 12px">‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒX to ‚g‚c‚l‚h-‚s‚™‚‚…‚`ƒƒXF–ñ‚Tc‚</td>
+   <td colspan="4" style="font-size: 12px" align="center">ä¸­ç¶™ã‚¢ãƒ€ãƒ—ã‚¿ãƒ¼</td>
+   <td colspan="14" style="font-size: 12px">ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ to ï¼¨ï¼¤ï¼­ï¼©-ï¼´ï½™ï½ï½…ï¼¡ãƒ¡ã‚¹ï¼šç´„ï¼•cï½</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="6" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ƒpƒbƒP[ƒWƒ“ƒOƒTƒCƒY</td>
-   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">‚v‚P‚O‚O &times; ‚g‚P‚V‚O &times; ‚c‚U‚O@i‚‚j</td>
+   <td colspan="6" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãƒ³ã‚°ã‚µã‚¤ã‚º</td>
+   <td colspan="10" bgcolor="#CDD7FF" style="font-size: 12px">ï¼·ï¼‘ï¼ï¼ &times; ï¼¨ï¼‘ï¼—ï¼ &times; ï¼¤ï¼–ï¼ã€€ï¼ˆï½ï½ï¼‰</td>
    <td rowspan="3" colspan="4"><img name="eophz_r60_c17" src="images/eophz_r60_c17.gif" width="20" height="40" id="eophz_r60_c17" alt=""></td>
-   <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ƒpƒbƒP[ƒWƒ“ƒOƒTƒCƒY</td>
-   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">‚v‚P‚O‚O &times; ‚g‚P‚V‚O &times; ‚c‚U‚O@i‚‚j</td>
+   <td colspan="4" bgcolor="#CDD7FF" style="font-size: 12px" align="center">ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãƒ³ã‚°ã‚µã‚¤ã‚º</td>
+   <td colspan="14" bgcolor="#CDD7FF" style="font-size: 12px">ï¼·ï¼‘ï¼ï¼ &times; ï¼¨ï¼‘ï¼—ï¼ &times; ï¼¤ï¼–ï¼ã€€ï¼ˆï½ï½ï¼‰</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
  
   <tr>
-   <td colspan="6" style="font-size: 12px" align="center">ƒpƒbƒP[ƒWƒ“ƒO‘d—Ê</td>
-   <td colspan="10" style="font-size: 12px">‚Q‚R‚R‚‡@i” E«•ïÞŠÜ‚Þj</td>
-   <td colspan="4" style="font-size: 12px" align="center">ƒpƒbƒP[ƒWƒ“ƒO‘d—Ê</td>
-   <td colspan="14" style="font-size: 12px">‚Q‚S‚O‚‡@i” E«•ïÞŠÜ‚Þj</td>
+   <td colspan="6" style="font-size: 12px" align="center">ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãƒ³ã‚°ç·é‡é‡</td>
+   <td colspan="10" style="font-size: 12px">ï¼’ï¼“ï¼“ï½‡ã€€ï¼ˆç®±ãƒ»æ¢±åŒ…æå«ã‚€ï¼‰</td>
+   <td colspan="4" style="font-size: 12px" align="center">ãƒ‘ãƒƒã‚±ãƒ¼ã‚¸ãƒ³ã‚°ç·é‡é‡</td>
+   <td colspan="14" style="font-size: 12px">ï¼’ï¼”ï¼ï½‡ã€€ï¼ˆç®±ãƒ»æ¢±åŒ…æå«ã‚€ï¼‰</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -447,7 +474,7 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="38" style="font-size: 12px" align="right">–{»•i‚¨Žæ‚è•t‚¯‚ÌÛ‚É‚ÍAŽÔ—¼‘¤ƒpƒlƒ‹“à‚Ì‰œs‚É90mmˆÈã‚Ì—]—T‚ª‚ ‚é‚±‚Æ‚ðŠm”F‚µ‚Ä‚­‚¾‚³‚¢B</td>
+   <td colspan="38" style="font-size: 12px" align="right">æœ¬è£½å“ãŠå–ã‚Šä»˜ã‘ã®éš›ã«ã¯ã€è»Šä¸¡å´ãƒ‘ãƒãƒ«å†…ã®å¥¥è¡Œã«90mmä»¥ä¸Šã®ä½™è£•ãŒã‚ã‚‹ã“ã¨ã‚’ç¢ºèªã—ã¦ãã ã•ã„ã€‚</td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
@@ -456,8 +483,8 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td><img name="eophz_r66_c1" src="images/eophz_r66_c1.gif" width="5" height="210" id="eophz_r66_c1" alt=""></td>
-   <td colspan="12"><a href="../eopspt/eopspt.htm" target="‚È‚µ"><img name="eophz_r66_c2" src="images/eophz_r66_c2.gif" width="330" height="210" id="eophz_r66_c2" alt=""></a></td>
-   <td colspan="12"><a href="../eophzt/eophz.htm" target="‚È‚µ"><img name="eophz_r66_c14" src="images/eophz_r66_c14.gif" width="330" height="210" id="eophz_r66_c14" alt=""></a></td>
+   <td colspan="12"><a href="../eopspt/eopspt.htm" target="ãªã—"><img name="eophz_r66_c2" src="images/eophz_r66_c2.gif" width="330" height="210" id="eophz_r66_c2" alt=""></a></td>
+   <td colspan="12"><a href="../eophzt/eophz.htm" target="ãªã—"><img name="eophz_r66_c14" src="images/eophz_r66_c14.gif" width="330" height="210" id="eophz_r66_c14" alt=""></a></td>
    <td colspan="13"><img name="eophz_r66_c26" src="images/eophz_r66_c26.gif" width="335" height="210" id="eophz_r66_c26" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="210" alt=""></td>
   </tr>
@@ -466,32 +493,23 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" alt=""></td>
   </tr>
      <tr>
-   <td colspan="38" style="font-size: 13px"><b>¡‚²w“ü‚Ì‘O‚É‚¨“Ç‚Ý‚­‚¾‚³‚¢B</b></td>
+   <td colspan="38" style="font-size: 13px"><b>â– ã”è³¼å…¥ã®å‰ã«ãŠèª­ã¿ãã ã•ã„ã€‚</b></td>
    <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
   </tr>
   <tr>
-   <td colspan="38" style="font-size: 12px; line-height: 17px; vertical-align: top">œ –{»•i‚Í•ŽèÈ‹y‚ÑŒã•”ÀÈ‚Ì•û‚ÉŽ‹’®‚µ‚Ä‚¢‚½‚¾‚­‚½‚ß‚Ì»•i‚Å‚·B‰^“]ŽÒ‚ÍˆÀ‘Sã‚Ì‚½‚ß‘–s’†A‰æ–Ê‚Ì’Ž‹E‘€ì‚ðâ‘Î‚És‚í‚È‚¢‚Å‚­‚¾‚³‚¢B<br>
-         @@‚Ü‚½AƒfƒBƒXƒvƒŒƒCƒI[ƒfƒBƒI— ƒ³USBƒpƒlƒ‹‚Ö‚Ì‘•’…‚Ì‚½‚ßŽÔ—¼ƒpƒlƒ‹‚âƒ†ƒjƒbƒg‚Ì’E’…ì‹Æ‚ª•K—v‚Å‚·B<br>
-       œ ‘–s’†‚à‰f‘œ‚ðŽ‹’®‚·‚éê‡‚Í•Ê“r@‚e‚’‚…‚…‚s‚u‚‰‚Ž‚‡@‚ª•K—v‚É‚È‚è‚Ü‚·B<br>
-       œ EOP-HZ02TUŽæ‚è•t‚¯ŽžAuƒ³USB TypeC’[Žq‚Í@USB  TypeA’[Žq‚É•ÏŠ·‚³‚ê‚Ü‚·B<br>
-       @@E “]‘—‘¬“xA‹Ÿ‹‹“d—¬‚ÍŠe‹KŠi‚É€‚¶‚Ü‚·B<br>         
-@@E‚²Žg—p‚É‚È‚é‹@Ší‚Ì«”\‚É‚æ‚Á‚ÄA‹Ÿ‹‹‚³‚ê‚é“d—¬’l‚ªˆÙ‚È‚è‚Ü‚·B<br>
-@@EUSB Power Delivery ”ñ‘Î‰ž <br>
+   <td colspan="38" style="font-size: 12px; line-height: 17px; vertical-align: top">â— æœ¬è£½å“ã¯åŠ©æ‰‹å¸­åŠã³å¾Œéƒ¨åº§å¸­ã®æ–¹ã«è¦–è´ã—ã¦ã„ãŸã ããŸã‚ã®è£½å“ã§ã™ã€‚é‹è»¢è€…ã¯å®‰å…¨ä¸Šã®ãŸã‚èµ°è¡Œä¸­ã€ç”»é¢ã®æ³¨è¦–ãƒ»æ“ä½œã‚’çµ¶å¯¾ã«è¡Œã‚ãªã„ã§ãã ã•ã„ã€‚<br>
+         ã€€ã€€ã¾ãŸã€ãƒ‡ã‚£ã‚¹ãƒ—ãƒ¬ã‚¤ã‚ªãƒ¼ãƒ‡ã‚£ã‚ªè£ç´”æ­£USBãƒ‘ãƒãƒ«ã¸ã®è£…ç€ã®ãŸã‚è»Šä¸¡ãƒ‘ãƒãƒ«ã‚„ãƒ¦ãƒ‹ãƒƒãƒˆã®è„±ç€ä½œæ¥­ãŒå¿…è¦ã§ã™ã€‚<br>
+       â— èµ°è¡Œä¸­ã‚‚æ˜ åƒã‚’è¦–è´ã™ã‚‹å ´åˆã¯åˆ¥é€”ã€€ï¼¦ï½’ï½…ï½…ï¼´ï¼¶ï½‰ï½Žï½‡ã€€ãŒå¿…è¦ã«ãªã‚Šã¾ã™ã€‚<br>
+       â— EOP-HZ02TUå–ã‚Šä»˜ã‘æ™‚ã€ã€Œç´”æ­£USB TypeCç«¯å­ã¯ã€€USB  TypeAç«¯å­ã«å¤‰æ›ã•ã‚Œã¾ã™ã€‚<br>
+       ã€€ã€€ãƒ» è»¢é€é€Ÿåº¦ã€ä¾›çµ¦é›»æµã¯å„è¦æ ¼ã«æº–ã˜ã¾ã™ã€‚<br>         
+ã€€ã€€ãƒ»ã”ä½¿ç”¨ã«ãªã‚‹æ©Ÿå™¨ã®æ€§èƒ½ã«ã‚ˆã£ã¦ã€ä¾›çµ¦ã•ã‚Œã‚‹é›»æµå€¤ãŒç•°ãªã‚Šã¾ã™ã€‚<br>
+ã€€ã€€ãƒ»USB Power Delivery éžå¯¾å¿œ <br>
        </td>
    <td><img src="images/spacer.gif" width="1" height="130" alt=""></td>
   </tr>
-  <tr>
-   <td colspan="38"><img name="eophz_r69_c1" src="images/eophz_r69_c1.gif" width="1000" height="20" id="eophz_r69_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="20" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="38"><img name="eophz_r70_c1" src="images/eophz_r70_c1.gif" width="1000" height="76" id="eophz_r70_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="76" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="38"><img name="eophz_r71_c1" src="images/eophz_r71_c1.gif" width="1000" height="5" id="eophz_r71_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="5" alt=""></td>
-  </tr>
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>

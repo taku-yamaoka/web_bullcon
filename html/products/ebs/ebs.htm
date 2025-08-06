@@ -1,9 +1,11 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE HTML">
 <!-- saved from url=(0014)about:internet -->
 <html>
 <head>
-<title>���[���u�����J�[�V�X�e�� / Bullcon - �t�W�d�@�H�Ɗ������</title>
-<meta http-equiv="Content-Type" content="text/html; charset=shift_jis">
+<title>ユーロブリンカーシステム / Bullcon - フジ電機工業株式会社</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<link rel="stylesheet" href="/css/header.css">
+<link rel="stylesheet" href="/css/footer.css">
 <style type="text/css">
 td img {display: block;}body {
 	margin-left: 0px;
@@ -56,6 +58,40 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
+fetch('/html/_header.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load header: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('header-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching header:', error);
+        // エラー発生時の代替処理（例: エラーメッセージを表示）
+        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
+    });
+
+    // フッターの読み込み
+    fetch('/html/_footer.html')
+    .then(response => {
+        if (!response.ok) {
+            // レスポンスが成功でなければエラーを投げる
+            throw new Error('Failed to load footer: ' + response.statusText);
+        }
+        return response.text();
+    })
+    .then(data => {
+        document.getElementById('footer-placeholder').innerHTML = data;
+    })
+    .catch(error => {
+        console.error('Error fetching footer:', error);
+        // エラー発生時の代替処理
+        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
+    });
 //-->
 </script>
     
@@ -69,8 +105,10 @@ function MM_preloadImages() { //v3.0
         </script>
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/ebs_r31_c22_f2.gif','images/ebs_r43_c8_f2.gif','images/ebs_r43_c21_f2.gif','images/ebs_r43_c35_f2.gif','images/ebs_r43_c51_f2.gif','images/ebs_r63_c56_f2.gif','images/ebs_r70_c1_f2.gif','images/ebs_r70_c17_f2.gif','images/ebs_r70_c26_f2.gif','images/ebs_r70_c40_f2.gif','images/ebs_r70_c47_f2.gif','images/ebs_r70_c62_f2.gif')">
-<table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="EuroBlinkerSystem180913.png" fwpage="�y�[�W 1" fwbase="ebs.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
+  <div id="header-placeholder"></div>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
+<!-- fwtable fwsrc="EuroBlinkerSystem180913.png" fwpage="ページ 1" fwbase="ebs.gif" fwstyle="Dreamweaver" fwdocid = "1066949579" fwnested="0" -->
   <tr>
    <td><img src="images/spacer.gif" width="8" height="1" border="0" alt=""></td>
    <td><img src="images/spacer.gif" width="2" height="1" border="0" alt=""></td>
@@ -148,25 +186,6 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="1" border="0" alt=""></td>
   </tr>
 
-   <tr><td colspan="73"><iframe 
-  id="myFrame"
-  class="frame"
-  src="../header_top/header.htm"
-  frameborder="0"
-  height="176px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
-     
-    <tr><td colspan="73"><iframe 
-  id="myFrame1"
-  class="frame"
-  src="../header_category/ca.htm"
-  frameborder="0"
-  height="70px"
-  width="101%"
-  scrolling="no">
-</iframe> </td></tr>
   <tr>
    <td colspan="73"><img name="ebs_r14_c1" src="images/ebs_r14_c1.gif" width="1000" height="30" border="0" id="ebs_r14_c1" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
@@ -184,16 +203,16 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="12"><img name="ebs_r17_c1" src="images/ebs_r17_c1.gif" width="130" height="240" border="0" id="ebs_r17_c1" alt=""></td>
    <td colspan="10"><img name="ebs_r17_c13" src="images/ebs_r17_c13.gif" width="180" height="240" border="0" id="ebs_r17_c13" alt=""></td>
-   <td colspan="51"><span class="style2" style="line-height:28px">���Ԃ̃E�C���J�[�����[���X�^�C���ɐi��������I</span><br>
+   <td colspan="51"><span class="style2" style="line-height:28px">愛車のウインカーをユーロスタイルに進化させる！</span><br>
      <ul class="style13" style="line-height:20px">
-     <li><strong>�E�C���J�[���o�[���y�������N���b�N���邾���ŃE�C���J�[�𐔉񂾂��_�ł����邱�Ƃ��o���܂��B</strong></li>
-     <li><strong>�_�ŉ񐔂�3��/4��/5��/OFF�i������ԁj�̒�����A���q�l�ɍ��킹���I�����\�ł��B</strong></li>
-     <li><strong>�_�œ���I����ɁA�E�C���J�[���o�[��߂��K�v������܂���B</strong></li>
+     <li><strong>ウインカーレバーを軽くワンクリックするだけでウインカーを数回だけ点滅させることが出来ます。</strong></li>
+     <li><strong>点滅回数は3回/4回/5回/OFF（純正状態）の中から、お客様に合わせた選択が可能です。</strong></li>
+     <li><strong>点滅動作終了後に、ウインカーレバーを戻す必要がありません。</strong></li>
      </ul>
 
-    <ul class="style14" style="line-height:18px"><li>�{���i �y ���[���u�����J�[�V�X�e�� �z �͉��B�Ԃɑ����̗p����Ă���@�u�����A�N�V�����E�C���J�[�v �@�\���A���̋@�\���ݒ肳��Ă��Ȃ��ԗ��֑������邱�Ƃ��o���鐻�i�ł��B</li>
-<li>�����A�N�V�����E�C���J�[�@�\�Ƃ́A�E�C���J�[���o�[���P�񂾂����b�N��O�܂œ|���ƁA�ݒ肳�ꂽ�񐔂ŃE�C���J�[���_�ł���@�\�ŁA�Ԑ��ύX�Ȃǂ̍ۂɔ��ɕ֗��ł��B</li>    
-�܂��A�E�C���J�[�����Y��ɂ����͂ւ̌�F���̖h�~�ɂ����ʂ𔭊����܂��B</ul></td>
+    <ul class="style14" style="line-height:18px"><li>本製品 【 ユーロブリンカーシステム 】 は欧州車に多く採用されている　「ワンアクションウインカー」 機能を、その機能が設定されていない車両へ装着することが出来る製品です。</li>
+<li>ワンアクションウインカー機能とは、ウインカーレバーを１回だけロック手前まで倒すと、設定された回数でウインカーが点滅する機能で、車線変更などの際に非常に便利です。</li>    
+また、ウインカー消し忘れによる周囲への誤認事故防止にも効果を発揮します。</ul></td>
    <td><img src="images/spacer.gif" width="1" height="240" border="0" alt=""></td>
   </tr>
   <tr>
@@ -210,21 +229,21 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="70" style="line-height:25px"><span class="style4">�Ԑ��ύX���ȂǂŃE�C���J�[���o���ƁA�Ԑ��ύX����o�����E�C���J�[���������A�����Ɠ_�ł��Ă��邱�Ƃ��Ă���܂��񂩁H<br>
-    �{���i�𑕒�����ƁA�E�C���J�[���o�[���y�������N���b�N���邾���ŃE�C���J�[��3�`5�񂾂��_�ł����A���̌�͎����ŏ������܂��B</span></td>
+   <td colspan="70" style="line-height:25px"><span class="style4">車線変更時などでウインカーを出すと、車線変更後も出したウインカーが消えず、ずっと点滅していることってありませんか？<br>
+    本製品を装着すると、ウインカーレバーを軽くワンクリックするだけでウインカーを3～5回だけ点滅させ、その後は自動で消灯します。</span></td>
    <td><img src="images/spacer.gif" width="1" height="50" border="0" alt=""></td>
   </tr>
   <tr>
-   <td rowspan="2" colspan="70" style="line-height:20px"><div align="left" class="style14"><ul><li class="style8">�d�q���䎮�E�C���J�[�����[�̗p�Ԃɂ����t���\</li>
-       �]���̃��J�j�J���E�C���J�[�����[�ԗ������ł͂Ȃ��A�ŐV�̓d�q���䎮�E�C���J�[�����[���̗p����Ă���ԗ��ɂ��Ή��B<br>
-       <li class="style8">�Ԑ��ύX���T�|�[�g</li>
-       �E�C���J�[���o�[���y�������N���b�N����ƃE�C���J�[���ݒ�񐔂����_�ł��邽�߃X�}�[�g�ȎԐ��ύX���A�V�X�g���܂��B<br>
-       <li class="style8">�I�ׂ�_�ŉ�</li>
-       �_�ŉ񐔂́B3��E4��E5���3��ނ���A���q�l�̂��D�݂őI���ł��܂��B�i�댯�ł��̂ő��s���ɐݒ�ύX�͍s��Ȃ��ł��������B�j<br>
-       <li class="style8">�_�ŃL�����Z���@�\</li>
-       ���[���u�����J�[�_�ō쓮���Ƀ��o�[�𔽑Α��Ƀ����N���b�N����Ɠ_�ł��L�����Z������܂��B<br>
-       <li class="style8">�������A�@�\</li>
-    ������Ԃɖ߂��鏃�����A�@�\�iOFF���[�h�j�𓋍ځB</ul></div></td>
+   <td rowspan="2" colspan="70" style="line-height:20px"><div align="left" class="style14"><ul><li class="style8">電子制御式ウインカーリレー採用車にも取り付け可能</li>
+       従来のメカニカルウインカーリレー車両だけではなく、最新の電子制御式ウインカーリレーが採用されている車両にも対応。<br>
+       <li class="style8">車線変更をサポート</li>
+       ウインカーレバーを軽くワンクリックするとウインカーが設定回数だけ点滅するためスマートな車線変更をアシストします。<br>
+       <li class="style8">選べる点滅回数</li>
+       点滅回数は。3回・4回・5回の3種類から、お客様のお好みで選択できます。（危険ですので走行中に設定変更は行わないでください。）<br>
+       <li class="style8">点滅キャンセル機能</li>
+       ユーロブリンカー点滅作動中にレバーを反対側にワンクリックすると点滅がキャンセルされます。<br>
+       <li class="style8">純正復帰機能</li>
+    純正状態に戻せる純正復帰機能（OFFモード）を搭載。</ul></div></td>
    <td><img src="images/spacer.gif" width="1" height="166" border="0" alt=""></td>
   </tr>
   <tr>
@@ -239,8 +258,8 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="375" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="32"><div align="center" class="style8">EURO BLINKER SYSTEM  ������<br><span class="style9">�i�T��_�łɐݒ�j</span></div></td>
-   <td colspan="41"><div align="center" class="style8">�m�[�}����</div></td>
+   <td colspan="32"><div align="center" class="style8">EURO BLINKER SYSTEM  装着車<br><span class="style9">（５回点滅に設定）</span></div></td>
+   <td colspan="41"><div align="center" class="style8">ノーマル車</div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -264,11 +283,11 @@ function MM_preloadImages() { //v3.0
   <tr>
    <td colspan="19"><img name="ebs_r31_c3" src="images/ebs_r31_c3.gif" width="290" height="50" border="0" id="ebs_r31_c3" alt=""></td>
    <td colspan="26"><a href="../pdf/ebs_fit.pdf" target="_blank" onMouseOver="MM_swapImage('ebs_r31_c22','','images/ebs_r31_c22_f2.gif',1);" onMouseOut="MM_swapImgRestore()"><img name="ebs_r31_c22" src="images/ebs_r31_c22.gif" width="400" height="50" border="0" id="ebs_r31_c22" alt=""></a></td>
-   <td colspan="22"><span class="style9">�@�@2024�N2��7���X�V</span></td>
+   <td colspan="22"><span class="style9">　　2024年2月7日更新</span></td>
    <td><img src="images/spacer.gif" width="1" height="50" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="73"><div align="center"><span class="style9">���f�ڎԗ��ɂ͂����t���ł��܂���B�܂��A�f�ڎԎ�ł����Ă����s�A���Ԃɂ͂����t���ł��܂���B</span></div></td>
+   <td colspan="73"><div align="center"><span class="style9">未掲載車両にはお取り付けできません。また、掲載車種であっても並行輸入車にはお取り付けできません。</span></div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -287,13 +306,13 @@ function MM_preloadImages() { //v3.0
   </tr>
   <tr>
    <td rowspan="10" colspan="5"><img name="ebs_r36_c3" src="images/ebs_r36_c3.gif" width="61" height="212" border="0" id="ebs_r36_c3" alt=""></td>
-   <td colspan="11"><div align="center" class="style10">�}���`�n�[�l�X�^�C�v</div></td>
+   <td colspan="11"><div align="center" class="style10">マルチハーネスタイプ</div></td>
    <td rowspan="10" colspan="2"><img name="ebs_r36_c19" src="images/ebs_r36_c19.gif" width="30" height="212" border="0" id="ebs_r36_c19" alt=""></td>
-   <td colspan="10"><div align="center" class="style10">�Ԏ�ʐ�p�n�[�l�X�^�C�v</div></td>
+   <td colspan="10"><div align="center" class="style10">車種別専用ハーネスタイプ</div></td>
    <td rowspan="10" colspan="4"><img name="ebs_r36_c31" src="images/ebs_r36_c31.gif" width="30" height="212" border="0" id="ebs_r36_c31" alt=""></td>
-   <td colspan="14"><div align="center" class="style10">�Ԏ�ʐ�p�n�[�l�X�^�C�v</div></td>
+   <td colspan="14"><div align="center" class="style10">車種別専用ハーネスタイプ</div></td>
    <td rowspan="10" colspan="2"><img name="ebs_r36_c49" src="images/ebs_r36_c49.gif" width="30" height="212" border="0" id="ebs_r36_c49" alt=""></td>
-   <td colspan="15"><div align="center"><span class="style10">�Ԏ�ʐ�p�n�[�l�X�^�C�v</span></div></td>
+   <td colspan="15"><div align="center"><span class="style10">車種別専用ハーネスタイプ</span></div></td>
    <td rowspan="10" colspan="4"><img name="ebs_r36_c66" src="images/ebs_r36_c66.gif" width="61" height="212" border="0" id="ebs_r36_c66" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="30" border="0" alt=""></td>
   </tr>
@@ -312,17 +331,17 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="11"><div align="center" style="line-height: 16px; font-size: 12px">�̔����i ���P�O�C�V�W�O�i�ō��j</div></td>
-   <td colspan="10"><div align="center" style="line-height: 16px; font-size: 12px">�̔����i ���P�O�C�V�W�O�i�ō��j</div></td>
-   <td colspan="14"><div align="center" style="line-height: 16px; font-size: 12px">�̔����i ���P�O�C�V�W�O�i�ō��j</div></td>
-   <td colspan="15"><div align="center" style="line-height: 16px; font-size: 12px">�̔����i ���P�O�C�V�W�O�i�ō��j</div></td>
+   <td colspan="11"><div align="center" style="line-height: 16px; font-size: 12px">販売価格 ￥１０，７８０（税込）</div></td>
+   <td colspan="10"><div align="center" style="line-height: 16px; font-size: 12px">販売価格 ￥１０，７８０（税込）</div></td>
+   <td colspan="14"><div align="center" style="line-height: 16px; font-size: 12px">販売価格 ￥１０，７８０（税込）</div></td>
+   <td colspan="15"><div align="center" style="line-height: 16px; font-size: 12px">販売価格 ￥１０，７８０（税込）</div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-    <td colspan="11" style="text-align: center; font-size: 12px;">�i�Ŕ����i ���X�C�W�O�O�j</td>
-    <td colspan="10" style="text-align: center; font-size: 12px;">�i�Ŕ����i ���X�C�W�O�O�j
-    <td colspan="14" style="text-align: center; font-size: 12px;">�i�Ŕ����i ���X�C�W�O�O�j
-    <td colspan="15" style="text-align: center; font-size: 12px;">�i�Ŕ����i ���X�C�W�O�O�j
+    <td colspan="11" style="text-align: center; font-size: 12px;">（税抜価格 ￥９，８００）</td>
+    <td colspan="10" style="text-align: center; font-size: 12px;">（税抜価格 ￥９，８００）
+    <td colspan="14" style="text-align: center; font-size: 12px;">（税抜価格 ￥９，８００）
+    <td colspan="15" style="text-align: center; font-size: 12px;">（税抜価格 ￥９，８００）
     <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -333,10 +352,10 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="11"><div align="center"><span class="style9">JAN�R�[�h�F4950094061974</span></div></td>
-   <td colspan="10"><div align="center" class="style9">JAN�R�[�h�F4950094061981</div></td>
-   <td colspan="14"><div align="center" class="style9">JAN�R�[�h�F4950094061998</div></td>
-   <td colspan="15"><div align="center" class="style9">JAN�R�[�h�F4950094062001</div></td>
+   <td colspan="11"><div align="center"><span class="style9">JANコード：4950094061974</span></div></td>
+   <td colspan="10"><div align="center" class="style9">JANコード：4950094061981</div></td>
+   <td colspan="14"><div align="center" class="style9">JANコード：4950094061998</div></td>
+   <td colspan="15"><div align="center" class="style9">JANコード：4950094062001</div></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
@@ -372,24 +391,24 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="69"><span class="style11">���w���̑O��</span></td>
+   <td colspan="69"><span class="style11">ご購入の前に</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="69" valign="top" style="line-height:16px"><ul class="style12"><li>�ԗ��E�C���J�[���o�[�̎�ށA�`��ɂ���ẮA�N���b�N�����F�������ɂ����ꍇ������܂��B</li>
-     <li>�{���i�͓K���Ԏ�ȊO�ɂ͂����t���͏o���܂���B�K������m�F�Ԏ�ꗗ�����m�F���������B
-     �܂��A�f�ڎԗ��ł����Ă����s�A���Ԃ͓K���O�ƂȂ�܂��̂ŗ\�߂��������������B</li>
-     <li>����m�F�Ԏ�ꗗ���f�ڎԎ�ւ̎��t���Ɋւ���T�|�[�g�E�y�ѕۏ؂͈�؍s���Ă���܂���B�܂��A���K�E���s���킸�O���Ԃւ̃T�|�[�g���s���Ă���܂���B</li>
-     <li>�����̎�t�E�戵�������ȊO�̎��t�������E���Ɋւ���T�|�[�g�͍s���Ă���܂���B</li>
-     <li>�����̎�t�E�戵�����������n�ǂ��������A���S�ɍ�Ƃ��s���Ă��������B</li>
-     <li>�{���i�͍��Y�����Ԃ̏��������w�����p�i�ł��B�ԗ��̂��̑����ΗށE�ЊO�E�C���J�[���֎Ԃւ̑����ɂ��ӔC�͈�ؕ������˂܂��B</li>
-     <li>�ԗ��̏����@�\�ɓ��@�\�����ڂ���Ă���ꍇ�ɂ͎��t���ł��܂���B</li>
-     <li>�{���i�ɂ̓E�C���J�[�n�C�t���b�V���L�����Z���@�\�͂���܂���B</li>
-     <li>�{���i�͍��E�E�C���J�[��p�i�ł��B�n�U�[�h�����v�̃����A�N�V�����@�\�͂���܂���B</li>
-     <li>�{���i���g�p�������ɂ��ԗ����u�̌�쓮�⓮��s�ǁA�����ɂ�萶�������̂⑹�Q�̏C���ɂ������p�ɂ��ĕ��Ђł͈�؂̐ӔC�𕉂����˂܂��B</li>
-     <li>���t���̍ۂ̔j���Ɋւ��܂��ẮA�ۏ؂̑ΏۊO�ł��B</li>
-     <li>���i�̃f�U�C���A�d�l�A�O�ρA�F�����A���i���ɂ��܂��Ă͗\���Ȃ��ύX�␶�Y���I������ꍇ������܂��B�܂��A
-    ���i�̎ʐ^���̐F�͎����Ƃ͂͑����قȂ�ꍇ������܂��̂ŁA���炩���߂��������������B</span></ul></td>
+   <td colspan="69" valign="top" style="line-height:16px"><ul class="style12"><li>車両ウインカーレバーの種類、形状によっては、クリック操作を認識させにくい場合があります。</li>
+     <li>本製品は適合車種以外にはお取り付けは出来ません。必ず動作確認車種一覧をご確認ください。
+     また、掲載車両であっても並行輸入車は適合外となりますので予めご了承ください。</li>
+     <li>動作確認車種一覧未掲載車種への取り付けに関するサポート・及び保証は一切行っておりません。また、正規・並行を問わず外国車へのサポートも行っておりません。</li>
+     <li>同梱の取付・取扱説明書以外の取り付け資料・情報に関するサポートは行っておりません。</li>
+     <li>同梱の取付・取扱説明書をご熟読いただき、安全に作業を行ってください。</li>
+     <li>本製品は国産自動車の純正方向指示器専用品です。車両のその他灯火類・社外ウインカーや二輪車への装着による責任は一切負いかねます。</li>
+     <li>車両の純正機能に同機能が搭載されている場合には取り付けできません。</li>
+     <li>本製品にはウインカーハイフラッシュキャンセル機能はありません。</li>
+     <li>本製品は左右ウインカー専用品です。ハザードランプのワンアクション機能はありません。</li>
+     <li>本製品を使用した事による車両装置の誤作動や動作不良、それらにより生じた事故や損害の修復にかかる費用について弊社では一切の責任を負いかねます。</li>
+     <li>取り付けの際の破損に関しましては、保証の対象外です。</li>
+     <li>製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。また、
+    製品の写真等の色は実物とはは多少異なる場合がありますので、あらかじめご了承ください。</span></ul></td>
    <td><img src="images/spacer.gif" width="1" height="80" border="0" alt=""></td>
   </tr>
   
@@ -398,61 +417,46 @@ function MM_preloadImages() { //v3.0
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="69"><span class="style11">���S�y�ю��t���Ɋւ��邲����</span></td>
+   <td colspan="69"><span class="style11">安全及び取り付けに関するご注意</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="69" valign="top" style="line-height:16px"><ul class="style12">
-   <li>���s���̐ݒ�ύX�͑�ϊ댯�ł��̂ŁA��΂ɍs��Ȃ��ł��������B</li>
-     <li>�w�肳�ꂽ����T���Ƃ��͕K���T�[�L�b�g�e�X�^�[���g�p���A���d��i�����v�e�X�^�[�j���͎g�p���Ȃ��ł��������B</li>
-     <li>�{���i�y�юԗ��n�[�l�X�������Ȃ��悤�ɂ����ӂ��������B���A�����ȋȂ��A�˂���A�����������M���H�Ȃǂ��s��Ȃ��ł��������B</li>
-     <li>�{���i�̕���������͍s��Ȃ��ł��������B</li>
-    <li>�{���i�̎��t���A�z���A�g�p���@���ԈႦ��Ǝԗ��̑��u�A�@��ނ�j�����͑������鋰�ꂪ����A�΍ЁA�̏�̌����ƂȂ�܂��B</li>
-     <li>�{���i��12V�Ԑ�p�i�ł��B�w��ȊO�̓d���ł͎g�p���Ȃ��ł��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</li>
-     <li>�{���i�����t������ہA�d���̋ɐ��i�{�E�|�j���ԈႦ�Ȃ��悤�ɂ����ӂ��������B
-     ���A�d���R�[�h���ԑ̂̋��������ɐG��Ȃ��悤�ɂ����ӂ��������B�΍ЁE���d�E�̏�̌����ƂȂ�܂��B</li>
-     <li>�{���i�̎��t���͕K��IG OFF�i�G���W�����n�����Ȃ���ԁj�A�E�C���J�[�����v�E�n�U�[�h�����v������������Ԃōs���Ă��������B</li>
-     <li>�ԗ����i�����O���č�Ƃ��s���ꍇ�́A���̎ԗ��̐�����������Q�Ƃ��Ă��������B</li>
-     <li>�ԗ��̃o�b�e���[������Ă����ԋy�сA�ԗ��{���̋@�\�ɕs��������ꍇ�ɂ͖{���i�����t�����͎g�p���Ȃ��ł��������B</li>
-     <li>�{���i�̎��t���ɂ́A���t���Z�p�̂���̔��X�ōs���Ă��������B</li>
-     <li>�R�l�N�^�[��^�[�~�i���[�q�͊m���ɐڑ����Ă��������B</li>
-     <li>�{���i�����t������ۂ́A���̋@��ɉe����^���Ȃ��ꏊ�y�щ^�]�ɍ����x���̂Ȃ��ꏊ�ɐݒu���Ă��������B</li>
-    <li>�{���i�Ƒ��@��ƕ��p���Ďg�p����ꍇ�A���@��̎戵���������悭���ǂ݂ɂȂ萳�����g�p���@�Ŏg�p���Ă��������B</li></ul></td>
+   <li>走行中の設定変更は大変危険ですので、絶対に行わないでください。</li>
+     <li>指定された線を探すときは必ずサーキットテスターを使用し、検電器（ランプテスター）等は使用しないでください。</li>
+     <li>本製品及び車両ハーネスを傷つけないようにご注意ください。又、無理な曲げ、ねじり、引っ張りや加熱加工なども行わないでください。</li>
+     <li>本製品の分解や改造は行わないでください。</li>
+    <li>本製品の取り付け、配線、使用方法を間違えると車両の装置、機器類を破損又は損傷する恐れがあり、火災、故障の原因となります。</li>
+     <li>本製品は12V車専用品です。指定以外の電圧では使用しないでください。火災・感電・故障の原因となります。</li>
+     <li>本製品を取り付けする際、電源の極性（＋・－）を間違えないようにご注意ください。
+     又、電源コードが車体の金属部分に触れないようにご注意ください。火災・感電・故障の原因となります。</li>
+     <li>本製品の取り付けは必ずIG OFF（エンジンが始動しない状態）、ウインカーランプ・ハザードランプを消灯した状態で行ってください。</li>
+     <li>車両部品を取り外して作業を行う場合は、その車両の整備解説書を参照してください。</li>
+     <li>車両のバッテリーが弱っている状態及び、車両本来の機能に不備がある場合には本製品を取り付け又は使用しないでください。</li>
+     <li>本製品の取り付けには、取り付け技術のある販売店で行ってください。</li>
+     <li>コネクターやターミナル端子は確実に接続してください。</li>
+     <li>本製品を取り付けする際は、他の機器に影響を与えない場所及び運転に差し支えのない場所に設置してください。</li>
+    <li>本製品と他機器と併用して使用する場合、他機器の取扱説明書もよくお読みになり正しい使用方法で使用してください。</li></ul></td>
    <td><img src="images/spacer.gif" width="1" height="150" border="0" alt=""></td>
   </tr>
   <tr>
-   <td colspan="69"><span class="style11">�ۏ؋K��</span></td>
+   <td colspan="69"><span class="style11">保証規定</span></td>
    <td><img src="images/spacer.gif" width="1" height="20" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="69" valign="top" style="line-height:16px"><ul class="style12">
-   <li>�{���i��3�N�ۏ؂ƂȂ�܂��B<br>
-   <li>�戵�������ɏ]��������Ȏg�p��Ԃ̉��ŕs����������ꍇ�́A�ۏ؏��̋L�ړ��e�ɂ�蕔�i������v���܂����A�E���ɂ�����H���␻�i���g�p���Đ��������Q���ɂ���
-    �@���Ђł͈�ؐӔC�𕉂����˂܂��B</li></ul></td>
+   <li>本製品は3年保証となります。<br>
+   <li>取扱説明書に従った正常な使用状態の下で不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について
+    　弊社では一切責任を負いかねます。</li></ul></td>
    <td><img src="images/spacer.gif" width="1" height="40" border="0" alt=""></td>
   </tr>
   <tr>
    <td colspan="69"><img name="ebs_r62_c2" src="images/ebs_r62_c2.gif" width="986" height="10" border="0" id="ebs_r62_c2" alt=""></td>
    <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
   </tr>
-  <tr>
-   <td rowspan="2" colspan="55"><img name="ebs_r63_c1" src="images/ebs_r63_c1.gif" width="817" height="93" border="0" id="ebs_r63_c1" alt=""></td>
-   <td colspan="8"><a href="ebs.htm" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('ebs_r63_c56','','images/ebs_r63_c56_f2.gif',1);"><img name="ebs_r63_c56" src="images/ebs_r63_c56.gif" width="85" height="15" border="0" id="ebs_r63_c56" alt=""></a></td>
-   <td rowspan="2" colspan="10"><img name="ebs_r63_c64" src="images/ebs_r63_c64.gif" width="98" height="93" border="0" id="ebs_r63_c64" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="15" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="8"><img name="ebs_r64_c56" src="images/ebs_r64_c56.gif" width="85" height="78" border="0" id="ebs_r64_c56" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="78" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="73"><img name="ebs_r65_c1" src="images/ebs_r65_c1.gif" width="1000" height="73" border="0" id="ebs_r65_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="73" border="0" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="73"><img name="ebs_r72_c1" src="images/ebs_r72_c1.gif" width="1000" height="10" border="0" id="ebs_r72_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="10" border="0" alt=""></td>
-  </tr>
+
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
 </table>
+  <div id="footer-placeholder"></div>
 </body>
 </html>
