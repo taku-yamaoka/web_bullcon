@@ -59,6 +59,27 @@
     margin: 0 auto;
 }
 
+/* もっと見るボタンのスタイル */
+.load-more-button {
+    display: block;
+    width: 200px;
+    margin: 40px auto 20px;
+    padding: 12px 20px;
+    font-size: 16px;
+    font-weight: bold;
+    color: #fff;
+    background-color: #00479d;
+    border: 1px solid #00479d;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.load-more-button:hover {
+    background-color: #fff;
+    color: #00479d;
+}
+
 .news-list-item {
     display: block;
     padding: 20px;
