@@ -23,6 +23,6 @@ document.addEventListener('DOMContentLoaded', function() {
         sliderItems[currentIndex].style.opacity = 1;
     }
 
-    // 5秒ごとにスライドを切り替える
-    setInterval(showNextSlide, 5000);
+    // 4秒ごとにスライドを切り替える
+    setInterval(showNextSlide, 4000);
 });

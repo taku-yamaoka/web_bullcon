@@ -81,6 +81,7 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-top: 80px;
 }
 
 .hero-slider {
@@ -266,7 +267,7 @@ a:hover {
 
 .about-image {
     flex-shrink: 0;
-    width: 50%;
+    width: 30%;
 }
 
 .about-image img {
