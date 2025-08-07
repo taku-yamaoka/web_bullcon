@@ -1,5 +1,5 @@
 /*==================================
-  ヘッダー
+  Header
 ==================================*/
 .header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
@@ -10,14 +10,14 @@
     background-color: #fff;
 }
 
-/* ヘッダー全体を覆うコンテナの幅調整 */
+/* Container width adjustment */
 .container {
-    max-width: 1200px; 
+    max-width: 1200px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-/* 上段ヘッダー */
+/* Header top section */
 .header-top {
     padding: 3px;
     width: 100%;
@@ -56,19 +56,21 @@
     padding-right: 10px;
 }
 
-/* 下段ヘッダー */
+/* Header bottom section */
 .header-bottom {
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 5px 0;
+    position: relative;
 }
 
-/* ナビゲーションメニュー */
+/* Navigation menu */
 .header-nav {
     display: flex;
     justify-content: flex-start;
     align-items: center;
+    width: 100%;
 }
 
 .nav-list {
@@ -76,10 +78,11 @@
     list-style: none;
     margin: 0;
     padding: 0;
+    width: 100%;
 }
 
 .nav-item {
-    position: relative; /* ドロップダウンメニューの基準位置に */
+    position: relative; /* ドロップダウンメニューの基準位置 */
     padding: 0 15px;
 }
 
@@ -97,82 +100,79 @@
     color: #00479d;
 }
 
-/* ドロップダウンメニューのスタイル (PC用) */
+/* シンプルなドロップダウンメニューのスタイル */
 .dropdown-menu {
-    /* ここを修正: fixedに変更して全幅表示を確実に */
-    position: fixed; 
-    top: 166px; 
+    position: absolute;
+    top: 100%;
     left: 0;
-    right: 0;
-    
-    background-color: rgba(255, 255, 255, 0.95);
+    min-width: 250px; /* メニューの最小幅を設定 */
+    background-color: #fff;
     z-index: 920;
     
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     
-    padding: 30px 0;
+    padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 親要素にホバーしたときにドロップダウンを表示 */
+/* 親要素(.nav-item)にホバーしたときにドロップダウンを表示 */
 .nav-item:hover > .dropdown-menu {
     visibility: visible;
     opacity: 1;
 }
 
-/* ドロップダウンリストのスタイルを修正 */
 .dropdown-list {
-    display: flex;
     list-style: none;
     padding: 0;
-    margin: 0 auto; /* ここを修正: 中央揃え */
-    gap: 30px;
-    max-width: 1200px; /* ここを修正: ヘッダーと同じ最大幅に */
-    flex-wrap: wrap;
+    margin: 0;
 }
 
+/* ドロップダウン内の項目 */
 .dropdown-list li {
-    padding: 0;
-    min-width: 200px;
-    font-size: 16px;
+    position: relative; /* サブメニューの基準位置 */
 }
 
-/* ドロップダウンの項目スタイル */
-.dropdown-list li > a {
+.dropdown-list li a {
     display: block;
     padding: 10px 20px;
-    white-space: nowrap;
-    font-weight: bold;
     color: #333;
     text-decoration: none;
-    border-bottom: 1px solid #eee;
 }
 
-.dropdown-list li > a:hover {
+.dropdown-list li a:hover {
     background-color: #f0f0f0;
 }
 
 /* サブドロップダウンメニュー */
 .sub-dropdown-list,
 .sub-sub-dropdown-list {
+    position: absolute;
+    top: 0;
+    left: 100%; /* 親メニューの右側に表示 */
+    min-width: 250px;
+    background-color: #fff;
     list-style: none;
-    padding: 0;
+    padding: 10px 0;
     margin: 0;
-    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+/* ホバーでサブメニューを表示 */
+.has-sub-dropdown:hover > .sub-dropdown-list {
+    visibility: visible;
+    opacity: 1;
 }
 
 .sub-dropdown-list li a,
 .sub-sub-dropdown-list li a {
-    font-weight: normal;
-    padding: 5px 20px;
-}
-
-/* ホバーで表示 */
-.has-sub-dropdown:hover > .sub-dropdown-list {
-    visibility: visible;
-    opacity: 1;
+    padding: 8px 20px;
+    white-space: nowrap;
 }
 
 /* ハンバーガーメニューはPCでは非表示 */
@@ -184,17 +184,27 @@
   レスポンシブデザイン (モバイル用)
 ==================================*/
 @media (max-width: 768px) {
-    /* モバイルではナビゲーション全体を非表示に */
     .header-nav {
         display: none;
     }
-    /* ハンバーガーメニューはモバイルで表示 */
     .hamburger-menu {
-        display: flex; 
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 30px;
+        height: 20px;
+        cursor: pointer;
+        padding: 0;
+        background: none;
+        border: none;
     }
-    
-    /* モバイルではドロップダウンメニューを非表示 */
+    .hamburger-menu span {
+        display: block;
+        height: 2px;
+        background-color: #333;
+        width: 100%;
+    }
     .dropdown-menu {
-        display: none; 
+        display: none;
     }
 }
