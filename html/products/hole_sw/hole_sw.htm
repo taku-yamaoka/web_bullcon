@@ -39,46 +39,15 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
-fetch('/html/_header.html')
-    .then(response => {
-        if (!response.ok) {
-            // レスポンスが成功でなければエラーを投げる
-            throw new Error('Failed to load header: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error fetching header:', error);
-        // エラー発生時の代替処理（例: エラーメッセージを表示）
-        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
-    });
-
-    // フッターの読み込み
-    fetch('/html/_footer.html')
-    .then(response => {
-        if (!response.ok) {
-            // レスポンスが成功でなければエラーを投げる
-            throw new Error('Failed to load footer: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error fetching footer:', error);
-        // エラー発生時の代替処理
-        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
-    });
 //-->
 </script>
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/hole_sw_r2_c10_s2.gif','images/hole_sw_r2_c15_s2.gif','images/hole_sw_r2_c19_s2.gif','images/hole_sw_r2_c23_s2.gif','images/hole_sw_r5_c1_s2.gif','images/hole_sw_r5_c7_s2.gif','images/hole_sw_r5_c10_s2.gif','images/hole_sw_r5_c15_s2.gif','images/hole_sw_r5_c19_s2.gif','images/hole_sw_r5_c23_s2.gif','images/hole_sw_r8_c3_s2.gif','images/hole_sw_r8_c5_s2.gif','images/hole_sw_r8_c8_s2.gif','images/hole_sw_r21_c1_s2.gif','images/hole_sw_r21_c11_s2.gif','images/hole_sw_r21_c20_s2.gif','images/hole_sw_r23_c1_s2.gif','images/hole_sw_r23_c11_s2.gif','images/hole_sw_r23_c20_s2.gif','images/hole_sw_r48_c24_s2.gif')">
   <div id="header-placeholder"></div>
-  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="80" alt=""></td></tr>
   <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
 <!-- fwtable fwsrc="holesw20240201.png" fwpage="ページ 1" fwbase="hole_sw.gif" fwstyle="Dreamweaver" fwdocid = "354586575" fwnested="0" -->
   <tr>

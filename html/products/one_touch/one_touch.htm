@@ -46,43 +46,11 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
-fetch('/html/_header.html')
-    .then(response => {
-        if (!response.ok) {
-            // レスポンスが成功でなければエラーを投げる
-            throw new Error('Failed to load header: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error fetching header:', error);
-        // エラー発生時の代替処理（例: エラーメッセージを表示）
-        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
-    });
-
-    // フッターの読み込み
-    fetch('/html/_footer.html')
-    .then(response => {
-        if (!response.ok) {
-            // レスポンスが成功でなければエラーを投げる
-            throw new Error('Failed to load footer: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error fetching footer:', error);
-        // エラー発生時の代替処理
-        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
-    });
 //-->
 </script>
-    
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213571806-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -94,7 +62,7 @@ fetch('/html/_header.html')
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/one_touch_r24_c32_f2.gif')">
   <div id="header-placeholder"></div>
-  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="80" alt=""></td></tr>
   <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
 <!-- fwtable fwsrc="one_touch.png" fwpage="ページ 1" fwbase="one_touch.gif" fwstyle="Dreamweaver" fwdocid = "162877623" fwnested="0" -->
   <tr>

@@ -46,43 +46,11 @@ function MM_openBrWindow(theURL,winName,features) { //v2.0
   window.open(theURL,winName,features);
 }
 
-fetch('/html/_header.html')
-    .then(response => {
-        if (!response.ok) {
-            // レスポンスが成功でなければエラーを投げる
-            throw new Error('Failed to load header: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error fetching header:', error);
-        // エラー発生時の代替処理（例: エラーメッセージを表示）
-        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
-    });
-
-    // フッターの読み込み
-    fetch('/html/_footer.html')
-    .then(response => {
-        if (!response.ok) {
-            // レスポンスが成功でなければエラーを投げる
-            throw new Error('Failed to load footer: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error fetching footer:', error);
-        // エラー発生時の代替処理
-        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
-    });
 //-->
 </script>
-    
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+
     <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213571806-1"></script>
         <script>
         window.dataLayer = window.dataLayer || [];
@@ -94,7 +62,7 @@ fetch('/html/_header.html')
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/steering_sw_r3_c34_f2.gif','images/steering_sw_r3_c47_f2.gif','images/steering_sw_r3_c59_f2.gif','images/steering_sw_r3_c66_f2.gif','images/steering_sw_r8_c7_f2.gif','images/steering_sw_r9_c5_f2.gif','images/steering_sw_r13_c5_f2.gif','images/steering_sw_r13_c15_f2.gif','images/steering_sw_r13_c26_f2.gif','images/steering_sw_r13_c42_f2.gif','images/steering_sw_r13_c51_f2.gif','images/steering_sw_r13_c65_f2.gif','images/steering_sw_r30_c50_f2.gif','images/steering_sw_r30_c63_f2.gif','images/steering_sw_r34_c3_f2.gif','images/steering_sw_r34_c11_f2.gif','images/steering_sw_r34_c19_f2.gif','images/steering_sw_r41_c4_f2.gif','images/steering_sw_r45_c3_f2.gif','images/steering_sw_r45_c8_f2.gif','images/steering_sw_r45_c16_f2.gif','images/steering_sw_r45_c21_f2.gif','images/steering_sw_r45_c27_f2.gif','images/steering_sw_r45_c37_f2.gif','images/steering_sw_r45_c45_f2.gif','images/steering_sw_r45_c53_f2.gif','images/steering_sw_r76_c61_f2.gif')">
   <div id="header-placeholder"></div>
-  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="80" alt=""></td></tr>
   <table border="0" cellpadding="0" cellspacing="0" width="1000"
 align="center">
   <tr>

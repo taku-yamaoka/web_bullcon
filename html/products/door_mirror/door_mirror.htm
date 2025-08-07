@@ -39,46 +39,15 @@ function MM_preloadImages() { //v3.0
     if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
 }
 
-fetch('/html/_header.html')
-    .then(response => {
-        if (!response.ok) {
-            // レスポンスが成功でなければエラーを投げる
-            throw new Error('Failed to load header: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        document.getElementById('header-placeholder').innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error fetching header:', error);
-        // エラー発生時の代替処理（例: エラーメッセージを表示）
-        document.getElementById('header-placeholder').innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
-    });
-
-    // フッターの読み込み
-    fetch('/html/_footer.html')
-    .then(response => {
-        if (!response.ok) {
-            // レスポンスが成功でなければエラーを投げる
-            throw new Error('Failed to load footer: ' + response.statusText);
-        }
-        return response.text();
-    })
-    .then(data => {
-        document.getElementById('footer-placeholder').innerHTML = data;
-    })
-    .catch(error => {
-        console.error('Error fetching footer:', error);
-        // エラー発生時の代替処理
-        document.getElementById('footer-placeholder').innerHTML = '<p>フッターの読み込みに失敗しました。</p>';
-    });
 //-->
 </script>
+<script src="/js/header.js"></script>
+<script src="/js/footer.js"></script>
+
 </head>
 <body bgcolor="#ffffff" onLoad="MM_preloadImages('images/door_mirror_r65_c2_s2.gif','images/door_mirror_r65_c26_s2.gif','images/door_mirror_r65_c52_s2.gif','images/door_mirror_r69_c1_s2.gif','images/door_mirror_r69_c11_s2.gif','images/door_mirror_r69_c20_s2.gif','images/door_mirror_r69_c29_s2.gif','images/door_mirror_r69_c47_s2.gif','images/door_mirror_r69_c54_s2.gif','images/door_mirror_r69_c61_s2.gif','images/door_mirror_r69_c68_s2.gif','images/door_mirror_r79_c4_s2.gif','images/door_mirror_r79_c14_s2.gif','images/door_mirror_r79_c22_s2.gif','images/door_mirror_r79_c31_s2.gif','images/door_mirror_r79_c43_s2.gif','images/door_mirror_r79_c49_s2.gif','images/door_mirror_r79_c56_s2.gif','images/door_mirror_r79_c63_s2.gif','images/door_mirror_r79_c69_s2.gif','images/door_mirror_r81_c4_s2.gif','images/door_mirror_r81_c14_s2.gif','images/door_mirror_r81_c22_s2.gif','images/door_mirror_r81_c31_s2.gif','images/door_mirror_r91_c64_s2.gif');">
   <div id="header-placeholder"></div>
-  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="50" alt=""></td></tr>
+  <tr><td colspan="30"><img src="images/spacer.gif" width="1" height="80" alt=""></td></tr>
   <table  cellpadding="0" cellspacing="0" width="1000" align="center">
 <!-- fwtable fwsrc="door_mirror20250108.png" fwpage="ページ 1" fwbase="door_mirror.gif" fwstyle="Dreamweaver" fwdocid = "145977400" fwnested="0" -->
   <tr>
