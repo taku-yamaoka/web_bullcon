@@ -1,88 +1,107 @@
 /*==================================
-  製品新着情報ページ
+  トップページのお知らせスタイル
 ==================================*/
-
-.news-section {
-    padding: 60px 0;
-}
-
-.news-list {
-    list-style: none;
-    padding: 0;
-    margin: 0 auto;
+#news-placeholder {
     max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
 .news-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
     border-bottom: 1px solid #e0e0e0;
-    padding: 20px 0;
+    text-decoration: none;
+    color: #333;
     transition: background-color 0.3s ease;
 }
 
-.news-item:last-child {
-    border-bottom: none;
-}
-
-.news-item a {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 20px;
-    text-decoration: none;
-    color: #333;
-}
-
 .news-item:hover {
-    background-color: #f9f9f9;
+    background-color: #f5f5f5;
 }
 
 .news-item time {
-    font-size: 0.9em;
-    color: #666;
-    flex-shrink: 0;
-    width: 90px;
+    font-size: 14px;
+    color: #888;
+    min-width: 100px; /* 日付の幅を固定 */
+    margin-right: 20px;
 }
 
-.news-category {
-    background-color: #00479d;
-    color: #fff !important;
-    padding: 4px 10px;
-    border-radius: 4px;
-    font-size: 0.8em;
+.news-item .news-title {
+    font-size: 16px;
     font-weight: bold;
-    flex-shrink: 0;
-    width: 100px;
-    text-align: center;
+    line-height: 1.5;
 }
 
-.news-title {
-    font-size: 1em;
-    font-weight: normal;
-    margin: 0;
-    flex-grow: 1;
+/* クリック不可なアイテムのスタイル */
+.news-item.non-clickable {
+    cursor: default;
+    background-color: #f9f9f9;
+    color: #999;
+}
+
+.news-item.non-clickable:hover {
+    background-color: #f9f9f9; /* ホバー効果を無効化 */
 }
 
 /*==================================
-  レスポンシブデザイン
+  ニュース一覧のスタイル
 ==================================*/
-@media (max-width: 768px) {
-    .news-item a {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 5px;
-        /* スマートフォンでは左寄せに戻す */
-        justify-content: flex-start;
-    }
 
-    .news-item time {
-        width: auto;
-    }
-    
-    .news-category {
-        width: auto;
-    }
+.news-list-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 0;
 
-    .news-title {
-        font-size: 0.9em;
-    }
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.news-list-item {
+    display: block;
+    padding: 20px;
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    text-decoration: none;
+    color: #333;
+    transition: all 0.3s ease;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+}
+
+/* クリック可能なアイテムにのみホバー効果を適用 */
+.news-list-item:not(.non-clickable):hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #00479d;
+}
+
+/* クリック不可なアイテムのスタイル */
+.non-clickable {
+    cursor: default; 
+    opacity: 0.8;
+    background-color: #f9f9f9;
+    color: #999;
+}
+
+
+.news-list-item time {
+    display: block;
+    font-size: 14px;
+    color: #888;
+    margin-bottom: 5px;
+}
+
+.news-list-item .news-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 1.5;
+    margin-bottom: 5px;
+}
+
+.news-list-item .news-summary {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
 }
