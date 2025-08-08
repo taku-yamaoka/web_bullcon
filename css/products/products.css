@@ -100,33 +100,6 @@
     flex-grow: 1;
 }
 
-/* 共通スタイル */
-.container {
-    max-width: 1000px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
-.section-title {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.section-title-en {
-    display: block;
-    font-size: 1.5em;
-    font-weight: bold;
-    color: #00479d;
-    letter-spacing: 0.1em;
-}
-
-.section-title-jp {
-    display: block;
-    font-size: 2.5em;
-    font-weight: bold;
-    color: #333;
-}
-
 @media (max-width: 768px) {
     .products-section {
         padding: 40px 0;

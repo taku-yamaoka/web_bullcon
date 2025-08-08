@@ -1,0 +1,82 @@
+/*==================================
+  グローバルスタイル
+==================================*/
+:target {
+    scroll-margin-top: 80px;
+}
+
+body {
+    font-family: 'Noto Sans JP', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background-color: #fffdfd;
+    margin: 0;
+    padding-top: 100px;
+}
+
+a {
+    text-decoration: none;
+    color: #00479d;
+    transition: opacity 0.3s ease;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.button-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.button {
+    display: inline-block;
+    padding: 12px 30px;
+    background-color: #00479d;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid #00479d;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #00479d;
+}
+
+
+/*==================================
+  レスポンシブ対応
+==================================*/
+@media (max-width: 768px) {
+    .section-title-jp {
+        font-size: 28px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .hero-text {
+        font-size: 1.5rem;
+    }
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-text .section-title {
+        text-align: center;
+    }
+}
