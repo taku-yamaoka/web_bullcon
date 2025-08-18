@@ -19,7 +19,7 @@
 
 /* Header top section */
 .header-top {
-    padding: 3px;
+    padding-top: 3px;
     width: 100%;
 }
 
@@ -52,7 +52,7 @@
 }
 
 .search-icon img {
-    padding-left: 30px;
+    padding-left: 50px;
     padding-right: 10px;
 }
 
@@ -83,7 +83,7 @@
 
 .nav-item {
     position: relative; /* ドロップダウンメニューの基準位置 */
-    padding: 0 15px;
+    padding: 0 0 0 60px;
 }
 
 .nav-item a,
@@ -113,7 +113,6 @@
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
     
-    padding: 10px 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
@@ -169,10 +168,27 @@
     opacity: 1;
 }
 
+.has-sub-dropdown a {
+    display: flex; 
+    align-items: center; 
+    justify-content: space-between;
+}
+
 .sub-dropdown-list li a,
 .sub-sub-dropdown-list li a {
     padding: 8px 20px;
     white-space: nowrap;
+}
+
+.new-window-icon {
+    height: 10px;
+}
+
+.right_arrow_icon {
+    float: right;
+    height: 10px;
+    width: auto;
+    padding-top: 8px;
 }
 
 /* ハンバーガーメニューはPCでは非表示 */

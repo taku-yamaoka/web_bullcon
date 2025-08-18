@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/header.css">
     <link rel="stylesheet" href="/css/footer.css">
+    <link rel="stylesheet" href="/css/index.css">
     <link rel="stylesheet" href="/css/news/news.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -32,62 +33,40 @@
             <div class="slider-item" style="background-image: url('/images/slide_banner/SPH2.jpg');">
                 <a href="/html/products/sph/sph.htm" target="_blank"></a>
             </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/AV-CDV01.jpg');">
-                <a href="/html/products/cdv/cdv01.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/AV-C64.jpg');">
-                <a href="/html/products/magicone/av-c64/av-c64.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/ms-239-308_zrv2.jpg');">
-                <a href="/html/products/TVing/TVing.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/CROWNseries.jpg');">
-                <a href="/html/products/TVing/TVing.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/CLX_250_111.jpg');">
-                <a href="/html/products/TVing/TVing.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/CTN-109AS2.jpg');">
-                <a href="/html/products/TVing/TVing.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/NX-RX_110as.jpg');">
-                <a href="/html/products/TVing/TVing.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/EOP-HZ01TU.jpg');">
-                <a href="/html/products/eophzt/eophz.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/eopspt.jpg');">
-                <a href="/html/products/eopspt/eopspt.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/LEXUS_CTN106-2.jpg');">
-                <a href="/html/products/TVing/TVing.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/90noah-voxy235-2.jpg');">
-                <a href="/html/products/TVing/TVing.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/HLC.jpg');">
-                <a href="/html/products/hlc/hlc.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/ctn-307svezel_fit.jpg');">
-                <a href="/html/products/" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/HDMI_DC.jpg');">
-                <a href="/html/products/av-hdm01/av-hdm01.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/cs300banner_rev.jpg');">
-                <a href="https://www.youtube.com/watch?v=qE8SlX8hYgM" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/sdlct.jpg');">
-                <a href="/html/products/sdlct/sdlct.htm" target="_blank"></a>
-            </div>
-            <div class="slider-item" style="background-image: url('/images/slide_banner/fis_banner.jpg');">
-                <a href="/html/products/fis/fis.htm" target="_blank"></a>
-            </div>
             <div class="slider-item" style="background-image: url('/images/slide_banner/sll-slrl2.jpg');">
                 <a href="/html/products/super_led_roomlamp2/super_led_roomlamp2.htm" target="_blank"></a>
             </div>
             <div class="slider-item" style="background-image: url('/images/slide_banner/banner-bullcon.jpg');"></div>
+            <button class="slider-control prev-button"><span>&lt;</span></button>
+            <button class="slider-control next-button"><span>&gt;</span></button>
+            <div class="hero-pagination"></div>
         </div>
+    </section>
+
+    <section class="news-section">
+        <div class="split-content-container container">
+        <section class="product-news-section" id="product-news-section">
+            <div class="container">
+                <div class="news-section-title">製品新着情報</div>
+                <div id="products-news-placeholder"></div>
+                <div class="news-button-container">
+                    <a href="/html/news/products_news.html" class="news-button">一覧はこちら</a>
+                    <img src="/images/common/new_window_icon.png" class="new-window-icon">
+                </div>
+            </div>
+        </section>
+
+        <section class="announce-section" id="announce-news-section">
+            <div class="container">
+                <div class="news-section-title">NEWS & TOPICS</div>
+                <div id="announce-placeholder"></div>
+                <div class="news-button-container">
+                    <a href="/html/news/topic_news.html" class="news-button">一覧はこちら</a>
+                    <img src="/images/common/new_window_icon.png" class="new-window-icon">
+                </div>
+            </div>
+        </section>
+    </div>
     </section>
 
     <section class="products-section container">
@@ -135,45 +114,21 @@
         </div>
     </section>
 
-    <section class="product-news-section" id="product-news-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="section-title-en">PRODUCT NEWS</span>
-                <span class="section-title-jp">製品の新着情報</span>
-            </h2>
-            <div id="products-news-placeholder"></div>
-            <div class="button-container">
-                <a href="/html/news/products_news.html" class="button">製品の新着情報一覧</a>
-            </div>
-        </div>
-    </section>
     
-    <section class="news-section" id="announce-news-section">
-        <div class="container">
-            <h2 class="section-title">
-                <span class="section-title-en">NEWS & TOPICS</span>
-                <span class="section-title-jp">ニュース&トピック</span>
-            </h2>
-            <div id="news-placeholder"></div>
-            <div class="button-container">
-                <a href="/html/news/topic_news.html" class="button">新着情報一覧</a>
-            </div>
-        </div>
-    </section>
 
     <section class="about-section">
         <div class="container">
+            <h2 class="section-title-comp">
+                <span class="section-title-en">ABOUT US</span>
+                <span class="section-title-jp">企業情報</span>
+            </h2>
             <div class="about-flex">
                 <div class="about-image">
                     <img src="/images/company/company_r12_c20.gif" alt="フジ電機工業の企業イメージ">
                 </div>
                 <div class="about-text">
-                    <h2 class="section-title">
-                        <span class="section-title-en">ABOUT US</span>
-                        <span class="section-title-jp">企業情報</span>
-                    </h2>
                     <p>フジ電機工業は、お客様のカーライフを豊かにするための製品を開発・提供しています。長年にわたり培ってきた技術力と品質へのこだわりで、安心・安全・快適なドライブをサポートします。</p>
-                    <a href="/html/company/about.html" class="button">会社概要はこちら</a>
+                    <a href="/html/company/about.html" class="company-button">会社概要はこちら</a>
                 </div>
             </div>
         </div>

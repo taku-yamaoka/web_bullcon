@@ -1,0 +1,348 @@
+.section-title {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.section-title-en {
+    display: block;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 700;
+    padding-left: 15px;
+    letter-spacing: 0.1em;
+    color: #00479d;
+}
+
+.section-title-jp {
+    display: block;
+    text-align: left;
+    font-size: 32px;
+    font-weight: 700;
+    margin-top: 5px;
+    padding-left: 15px;
+    position: relative;
+    padding-bottom: 10px;
+}
+
+.section-title-jp::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    transform: translateX(-50%);
+    width: 100%; 
+    height: 3px;
+    background-color: #00479d;
+}
+
+/*==================================
+  ヒーローセクション
+==================================*/
+.hero {
+    position: relative;
+    height: 500px;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 100px;
+}
+
+.hero-slider {
+    position: relative;
+    align-self: center;
+    width: 1500px;
+    height: 100%;
+    overflow: hidden;
+}
+
+.slider-item {
+    width: 100%;
+    height: 100%;
+    background-size: cover;
+    background-position: center;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    position: absolute;
+}
+
+.slider-item a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.slider-item:first-of-type {
+    opacity: 1; /* 初期表示のスライド */
+}
+
+/* 左右の操作ボタン */
+.slider-control {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    padding: 15px 10px;
+    margin: 15px 10px;
+    cursor: pointer;
+    z-index: 10;
+    font-size: 32px;
+    transition: background-color 0.3s ease;
+}
+
+.slider-control:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+.prev-button {
+    left: 0;
+}
+
+.next-button {
+    right: 0;
+}
+
+/* ページネーション（点） */
+.hero-pagination {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+    z-index: 20;
+    background-color: rgba(0, 0, 0, 0.3); 
+    padding: 8px 15px; 
+    border-radius: 20px; 
+    border: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.pagination-dot {
+    width: 12px;
+    height: 12px;
+    background-color: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    z-index: 21;
+}
+
+.pagination-dot.active {
+    background-color: #fff;
+}
+
+/*==================================
+  新着情報セクション
+==================================*/
+/* 分割コンテンツコンテナ */
+.split-content-container {
+    display: flex;
+    flex-direction: column; /* 垂直方向に並べる */
+    gap: 80px; /* セクション間の余白 */
+    padding-top: 20px;
+}
+
+.news-section-title {
+    text-align: center;
+    margin-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+.news-section {
+    margin-top: 20px;
+}
+
+.news-button-container {
+    text-align: right;
+    margin-top: 20px;
+}
+
+.news-button {
+    display: inline-block;
+    padding: 5px 10px; 
+    color: #000;
+    font-weight: 600;
+    border-bottom: 1px solid #333;
+   
+}
+
+.news-button:hover {
+    background-color: #fff;
+    color: #00479d;
+    transform: translateY(-2px); 
+}
+
+@media (min-width: 992px) {
+    .split-content-container {
+        flex-direction: row; /* 992px以上の画面幅で横並びに変更 */
+    }
+}
+
+/* 製品の新着情報セクション */
+.product-news-section .news-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+.product-news-section .news-list a {
+    height: 100%; /* 親要素(Gridコンテナ)の高さに合わせる */
+}
+
+/* 新着情報セクション */
+.announce-section .announce-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+}
+.announce-section .announce-list a {
+    height: 100%; 
+}
+
+
+/* ==================================
+ 製品セクション
+==================================*/
+.products-section {
+    margin-top: 150px;
+}
+
+.products-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+}
+
+.product-card {
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+}
+
+.product-card a {
+    display: block;
+    color: inherit;
+}
+
+.product-figure {
+    margin: 0;
+}
+
+.product-figure img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.product-text {
+    padding: 20px;
+}
+
+.product-text h3 {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0;
+    margin-bottom: 10px;
+}
+
+.product-text p {
+    font-size: 14px;
+    color: #666;
+    margin: 0;
+}
+
+/*==================================
+  企業情報セクション
+==================================*/
+
+.about-section {
+    padding: 150px 0;
+}
+
+.about-flex {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+.about-image {
+    flex-shrink: 0;
+    width: 20%;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.about-text  {
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+
+.company-button {
+    display: inline-block;
+    margin-top: 100px;
+    padding: 15px 40px; 
+    background-color: #00479d;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: 700;
+    border: 1px solid #00479d;
+    transition: all 0.3s ease;
+}
+
+.company-button:hover {
+    background-color: #fff;
+    color: #00479d;
+    transform: translateY(-2px); 
+}
+
+/*==================================
+  レスポンシブ対応
+==================================*/
+@media (max-width: 768px) {
+    .section-title-jp {
+        font-size: 28px;
+    }
+
+    .hero {
+        height: 300px;
+    }
+
+    .slider-control {
+        padding: 10px 5px;
+        font-size: 18px;
+    }
+    .hero-pagination {
+        bottom: 10px;
+    }
+    .pagination-dot {
+        width: 10px;
+        height: 10px;
+    }
+
+    .about-flex {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+    }
+
+    .about-text .section-title {
+        text-align: center;
+    }
+}
