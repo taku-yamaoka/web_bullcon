@@ -167,7 +167,6 @@
     color: #000;
     font-weight: 600;
     border-bottom: 1px solid #333;
-   
 }
 
 .news-button:hover {
@@ -203,69 +202,118 @@
 }
 
 
-/* ==================================
- 製品セクション
+/*==================================
+  製品セクション (修正版)
 ==================================*/
 .products-section {
-    margin-top: 150px;
+    padding: 80px 0; /* 上下の余白 */
 }
 
-.products-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 30px;
+.product-showcase {
+    display: flex;
+    flex-direction: column; /* 縦に並べる */
+    gap: 50px; /* 各製品間の余白 */
 }
 
-.product-card {
+.product-item {
+    display: flex;
+    flex-direction: column; /* デフォルトは縦並び */
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
     overflow: hidden;
-    transition: transform 0.3s ease;
 }
 
-.product-card:hover {
-    transform: translateY(-5px);
+@media (min-width: 768px) {
+    .product-item {
+        flex-direction: row; /* 画面が広い場合は横並び */
+    }
+
+    /* 奇数番目のアイテムは、画像が左側に来るように */
+    .product-item:nth-child(odd) {
+        flex-direction: row;
+    }
+
+    /* 偶数番目のアイテムは、画像が右側に来るように */
+    .product-item:nth-child(even) {
+        flex-direction: row-reverse;
+    }
 }
 
-.product-card a {
-    display: block;
-    color: inherit;
+.product-image {
+    flex-basis: 66.666%; /* 親要素の2/3の幅 */
+    overflow: hidden;
 }
 
-.product-figure {
-    margin: 0;
-}
-
-.product-figure img {
+.product-image img {
     width: 100%;
-    height: auto;
+    height: 100%;
+    object-fit: cover;
     display: block;
 }
 
-.product-text {
-    padding: 20px;
+.product-text-content {
+    flex-basis: 33.333%; /* 親要素の1/3の幅 */
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-.product-text h3 {
-    font-size: 20px;
+.product-text-content h3 {
+    font-size: 28px;
     font-weight: 700;
-    margin-top: 0;
     margin-bottom: 10px;
 }
 
-.product-text p {
-    font-size: 14px;
-    color: #666;
-    margin: 0;
+.product-text-content p {
+    font-size: 16px;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    position: relative;
 }
+
+.product-link {
+    display: inline-block;
+    padding: 0;
+    color: #000;
+    font-weight: 600;
+    position: relative;
+    transition: all 0.3s ease;
+    text-align: left;
+}
+
+/* リンクテキストの下に下線を作成 */
+.product-link::after {
+    content: '';
+    position: absolute;
+    bottom: -3px; /* テキストからの余白を調整 */
+    left: 0;
+    width: 100px;
+    height: 1px;
+    background-color: #333;
+    transition: width 0.3s ease;
+}
+
+.product-link:hover {
+    color: #00479d;
+    background-color: transparent; /* 背景色を透明に戻す */
+    transform: none; /* ホバー時の変形を無効化 */
+}
+
+.product-link:hover::after {
+    width: 100%; /* ホバー時は下線を元の幅に戻す */
+    background-color: #00479d;
+}
+
 
 /*==================================
   企業情報セクション
 ==================================*/
 
 .about-section {
-    padding: 150px 0;
+    padding: 60px 0;
 }
 
 .about-flex {

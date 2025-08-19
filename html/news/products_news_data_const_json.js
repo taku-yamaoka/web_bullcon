@@ -4,7 +4,7 @@ const productNewsData = [
         date: "2024.08.07",
         title: "新商品「XXX」を発売します(クリック可能サンプル)",
         summary: "高性能な新製品「XXX」の発売が決定いたしました。詳細はこちらをご確認ください。",
-        url: "/html/products/sph/sph.htm"
+        url: "../../html/products/CAR_ACCESSORY/sph/sph.htm"
     },
     {
         id: "002",

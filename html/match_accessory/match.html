@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>車種適合検索</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/match_accessory/match.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+    <main>
+        <div class="spacer"></div>
+        <div class="container match-container">
+            <h2 class="section-title">
+                <span class="section-title-en">CONFORMITY INSPECTION</span>
+                <span class="section-title-jp">車種適合検索</span>
+            </h2>
+            <div class="content-wrapper">
+                <div class="form-area">
+                    <div class="form-group">
+                        <label for="maker-select">メーカー</label>
+                        <select id="maker-select" class="form-select">
+                            <option value="">メーカーを選択してください</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="model-select">車種</label>
+                        <select id="model-select" class="form-select" disabled>
+                            <option value="">車種を選択してください</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="year-select">年式</label>
+                        <select id="year-select" class="form-select" disabled>
+                            <option value="">年式を選択してください</option>
+                        </select>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="model-number-select">型式</label>
+                        <select id="model-number-select" class="form-select" disabled>
+                            <option value="">型式を選択してください</option>
+                        </select>
+                    </div>
+                    <button id="search-button" class="btn-primary" disabled>適合品番を検索</button>
+                </div>
+
+                <div id="result" class="result-area">
+                    <p>検索結果がここに表示されます。</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <div id="footer-placeholder"></div>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/footer.js"></script>
+    <script src="../../js/match_accessory/tmp_car_type.js"></script>
+    <script src="../../js/match_accessory/match.js"></script>
+</body>
+</html>

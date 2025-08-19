@@ -18,7 +18,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const newsListHtml = displayedNews.map(news => {
             const itemTag = news.url ? 'a' : 'div';
             const hrefAttribute = news.url ? `href="${news.url}"` : '';
-            const icon = news.url ? '<img src="/images/common/new_window_icon.png" class="new-window-icon">' : '';
+            const icon = news.url ? '<img src="../../images/common/new_window_icon.png" class="new-window-icon">' : '';
 
             return `
                 <${itemTag} ${hrefAttribute} class="news-list-item ${news.url ? '' : 'non-clickable'}">

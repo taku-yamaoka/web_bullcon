@@ -83,7 +83,7 @@
 
 .nav-item {
     position: relative; /* ドロップダウンメニューの基準位置 */
-    padding: 0 0 0 60px;
+    padding: 0 0 0 50px;
 }
 
 .nav-item a,
