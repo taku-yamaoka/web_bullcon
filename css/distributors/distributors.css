@@ -3,6 +3,7 @@
 ==================================*/
 .distributors-container {
     padding: 60px 0;
+    max-width: 900px;
 }
 
 .page-title {

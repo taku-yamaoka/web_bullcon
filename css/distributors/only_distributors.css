@@ -1,0 +1,78 @@
+/* ヘッダーのスタイル */
+.site-header iframe {
+    display: block;
+}
+
+/* メインコンテンツのスタイル */
+.main-content {
+    padding: 30px 40px;
+    border-radius: 12px;
+    margin: 40px auto;
+    max-width: 900px;
+}
+
+.page-title {
+    text-align: center;
+    color: #00479d;
+    font-size: 2.5em;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+/* ガイドライン/注意書きのスタイル */
+.guidelines {
+    margin-bottom: 40px;
+    border-top: 2px solid #eee;
+    padding-top: 20px;
+}
+
+.guideline-item {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 20px;
+}
+
+.guideline-item .icon {
+    color: #d9534f;
+    font-size: 1.5em;
+    margin-right: 15px;
+    flex-shrink: 0;
+}
+
+.anotation-info {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.6;
+    font-weight: bold;
+}
+
+/* メーカーボタンのスタイル */
+.button-group {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-bottom: 40px;
+}
+
+.maker-button {
+    display: block;
+    padding: 12px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    text-align: center;
+    transition: background-color 0.3s ease;
+    min-width: 120px;
+}
+
+.maker-button:hover {
+    background-color: #0056b3;
+}

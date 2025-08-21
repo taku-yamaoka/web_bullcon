@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>閲覧ID登録申請 - Bullcon | フジ電機工業株式会社</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/distributors/regist_form.css">
+</head>
+<body>
+    <div id="header-placeholder"></div>
+
+    <main>
+        <div class="spacer"></div>
+        <div class="container">
+            <h2 class="section-title">
+                <span class="section-title-en">NEW REGIST</span>
+                <span class="section-title-jp">閲覧ID登録申請</span>
+            </h2>
+
+            <section class="contact-section">
+                <p class="privacy-note">
+                    ※当社の<a href="../../html/privacy_policy/privacy_policy.html" class="privacy-link">プライバシーポリシー</a>をご一読の上、お問い合わせください。
+                </p>
+
+                <form action="https://www.fuji-denki.co.jp/cgi-bin/mpmail/mpmail.cgi" method="post" class="contact-form">                  
+                    <div class="form-item">
+                        <div class="label-area">
+                            <label for="name">店舗名（法人名）<br><span class="required-text">＊（必須）</span></label>
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="name" id="name" size="60">
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="label-area">
+                            <label for="kana">店舗名（フリガナ）<br><span class="required-text">＊（必須）</span></label>
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="kana" id="kana" size="60">
+                            <p class="sub-text-kana">（カタカナでご記入下さい。）</p>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="label-area">
+                            <label for="zip">申請者名<br><span class="required-text">＊（必須）</span></label>
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="name2" id="name2" size="50">
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="label-area">
+                            <label for="tel">郵便<br><span class="optional-text">＊（必須）</span></label>
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="zip" id="zip" size="50">
+                            <p class="sub-text">（- ハイフンなしの７桁）</p>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="label-area">
+                            <label for="address">ご住所<br><span class="required-text">＊（必須）</span></label>
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="adress" id="address" size="100">
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="label-area">
+                            <label for="tel">代表電話番号<br><span class="optional-text">＊（必須）</span></label>
+                            <p class="sub-text">（携帯電話番号可）</p>
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="tel" id="tel" size="50">
+                            <p class="sub-text">（- ハイフンが必要）</p>
+                        </div>
+                    </div>
+
+                    <div class="form-item">
+                        <div class="label-area">
+                            <label for="address">製品の仕入先名<br><span class="required-text">＊（必須）</span></label>
+                        </div>
+                        <div class="input-area">
+                            <input type="text" name="route" id="route" size="100">
+                        </div>
+                    </div>
+                    
+                    <div class="form-item">
+                        <div class="label-area">
+                            <label for="mailaddress">メールアドレス<br><span class="required-text">＊（必須）</span></label>
+                        </div>
+                        <div class="input-area mail-address">
+                            <input type="text" name="mailaddress" id="mailaddress" size="80">
+                            <p class="required-confirm-text">（＊確認のためにもう一度入力して下さい。）</p>
+                            <input type="text" name="mailaddress2" size="80" placeholder="（確認）">
+                        </div>
+                    </div>
+                    
+                    <div class="form-buttons">
+                        <input type="submit" name="submitButtonName" value="確認" class="submit-button">
+                        <input type="reset" name="SubmitButtonName" value="クリア" class="reset-button">
+                    </div>
+                    
+                    <div class="important-notes">
+                        <p>●車種別配線参考資料登録申請でお申し込み後、IDとパスワード発行しメールにてご連絡いたします。<br>
+                        　尚、正式ＩＤを発行までの期間、仮IDを発行致しますのでそちらでご閲覧下さい。<br>
+                        　正式ID発行後は仮IDパスワードは使用できなくなりますのでご注意下さい。</p>
+                        <p>●E-mailアドレスが間違っている場合、認証番号及び登録完了通知を当社よりお客様に送信する事が出来ませんので、<br>
+                        　必ず半角英数でご記入下さいますようお願いいたします。</p>
+                    </div>
+                </form>
+            </section>
+        </div>
+    </main>
+
+<div id="footer-placeholder"></div>
+
+<script src="../../js/header.js"></script>
+<script src="../../js/footer.js"></script>
+</body>
+</html>
