@@ -1,4 +1,4 @@
-fetch('/html/_header.html') // TODO テスト用に差し替え中
+fetch('/html/_header.html')
     .then(response => {
         if (!response.ok) {
             // レスポンスが成功でなければエラーを投げる
