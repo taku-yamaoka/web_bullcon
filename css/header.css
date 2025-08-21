@@ -18,11 +18,6 @@
 }
 
 /* Header top section */
-.header-top {
-    padding-top: 3px;
-    width: 100%;
-}
-
 .header-top .header-inner {
     display: flex;
     justify-content: space-between;
@@ -61,7 +56,6 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 5px 0;
     position: relative;
 }
 
