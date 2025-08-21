@@ -5,8 +5,8 @@
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     position: fixed;
     top: 0;
-    z-index: 1000;
     width: 100%;
+    z-index: 1000;
     background-color: #fff;
 }
 
@@ -17,7 +17,7 @@
     padding: 0 20px;
 }
 
-/* Header top section */
+/* Header Sections */
 .header-top .header-inner {
     display: flex;
     justify-content: space-between;
@@ -25,13 +25,8 @@
     max-width: 100%;
 }
 
-.header-logo {
-    margin-left: 0px;
-}
-
 .header-logo img {
     height: 50px;
-    width: auto;
 }
 
 .social-links {
@@ -43,10 +38,9 @@
 .social-icon img,
 .search-icon img {
     height: 30px;
-    width: auto;
 }
 
-.search-icon img {
+.search-icon {
     padding-left: 50px;
     padding-right: 10px;
 }
@@ -61,9 +55,6 @@
 
 /* Navigation menu */
 .header-nav {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
     width: 100%;
 }
 
@@ -76,8 +67,8 @@
 }
 
 .nav-item {
-    position: relative; /* ドロップダウンメニューの基準位置 */
-    padding: 0 0 0 50px;
+    position: relative;
+    padding: 0 25px 0 25px;
 }
 
 .nav-item a,
@@ -94,26 +85,36 @@
     color: #00479d;
 }
 
-/* シンプルなドロップダウンメニューのスタイル */
+/*==================================
+  Dropdown Menu
+==================================*/
+/* ドロップダウンメニューの初期状態（非表示） */
 .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
-    min-width: 250px; /* メニューの最小幅を設定 */
+    width: 100%;
     background-color: #fff;
     z-index: 920;
     
     visibility: hidden;
     opacity: 0;
+    pointer-events: none; /* ホバーしていないときにクリックできないようにする */
     transition: opacity 0.3s ease, visibility 0.3s ease;
-    
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-/* 親要素(.nav-item)にホバーしたときにドロップダウンを表示 */
-.nav-item:hover > .dropdown-menu {
+/* JavaScriptで追加される表示用のクラス */
+.dropdown-menu.is-visible {
     visibility: visible;
     opacity: 1;
+    pointer-events: auto; /* 表示時にクリック可能にする */
+}
+
+/* ドロップダウン内のコンテナ */
+.dropdown-list-container {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .dropdown-list {
@@ -122,7 +123,6 @@
     margin: 0;
 }
 
-/* ドロップダウン内の項目 */
 .dropdown-list li {
     position: relative; /* サブメニューの基準位置 */
 }
@@ -138,31 +138,33 @@
     background-color: #f0f0f0;
 }
 
-/* サブドロップダウンメニュー */
+/*==================================
+  Sub-Dropdown Menus
+==================================*/
 .sub-dropdown-list,
 .sub-sub-dropdown-list {
     position: absolute;
     top: 0;
-    left: 100%; /* 親メニューの右側に表示 */
+    left: 100%;
     min-width: 250px;
     background-color: #fff;
     list-style: none;
     padding: 10px 0;
     margin: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
+    
     visibility: hidden;
     opacity: 0;
     transition: opacity 0.3s ease, visibility 0.3s ease;
 }
 
-/* ホバーでサブメニューを表示 */
+/* ホバーでサブメニューを表示（この部分はCSSの:hoverで問題ありません） */
 .has-sub-dropdown:hover > .sub-dropdown-list {
     visibility: visible;
     opacity: 1;
 }
 
-.has-sub-dropdown a {
+.has-sub-dropdown > a {
     display: flex; 
     align-items: center; 
     justify-content: space-between;
@@ -174,29 +176,26 @@
     white-space: nowrap;
 }
 
-.new-window-icon {
+.new-window-icon,
+.right_arrow_icon {
     height: 10px;
+    width: auto;
 }
 
 .right_arrow_icon {
     float: right;
-    height: 10px;
-    width: auto;
     padding-top: 8px;
 }
 
-/* ハンバーガーメニューはPCでは非表示 */
-.hamburger-menu {
-    display: none;
-}
-
 /*==================================
-  レスポンシブデザイン (モバイル用)
+  Responsive Design (Mobile)
 ==================================*/
 @media (max-width: 768px) {
-    .header-nav {
+    .header-nav,
+    .dropdown-menu {
         display: none;
     }
+    
     .hamburger-menu {
         display: flex;
         flex-direction: column;
@@ -208,13 +207,11 @@
         background: none;
         border: none;
     }
+    
     .hamburger-menu span {
         display: block;
         height: 2px;
         background-color: #333;
         width: 100%;
-    }
-    .dropdown-menu {
-        display: none;
     }
 }
