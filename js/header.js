@@ -29,7 +29,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
 });
 
-// 3. ドロップダウンメニューの動作を初期化する関数
+// ドロップダウンメニューの動作を初期化する関数
 function initializeDropdowns(container) {
     const navItemsWithDropdown = container.querySelectorAll('.nav-item.has-dropdown');
     const dropdownMenus = container.querySelectorAll('.dropdown-menu');
@@ -47,10 +47,12 @@ function initializeDropdowns(container) {
                 clearTimeout(timeoutId);
             }
 
+            // 全てのドロップダウンを非表示にする
             dropdownMenus.forEach(menu => {
                 menu.classList.remove('is-visible');
             });
 
+            // 該当のドロップダウンを表示
             if (targetDropdown) {
                 targetDropdown.classList.add('is-visible');
                 activeDropdown = targetDropdown;

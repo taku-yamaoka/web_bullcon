@@ -27,6 +27,7 @@
 
 .header-logo img {
     height: 50px;
+    width: 350px;
 }
 
 .social-links {
@@ -51,6 +52,7 @@
     justify-content: space-between;
     align-items: center;
     position: relative;
+    padding-bottom: 10px;
 }
 
 /* Navigation menu */
@@ -67,7 +69,6 @@
 }
 
 .nav-item {
-    position: relative;
     padding: 0 25px 0 25px;
 }
 
@@ -77,12 +78,38 @@
     color: #333;
     font-weight: bold;
     display: block;
-    padding: 10px 0;
 }
 
 .nav-item:hover > a,
 .nav-item:hover > .dropdown-toggle {
     color: #00479d;
+}
+
+/* ナビゲーションリンクのフレックスコンテナ設定 */
+.nav-item > a,
+.nav-item > .dropdown-toggle {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 1;
+}
+
+/* ドロップダウン矢印アイコンのスタイル */
+.bottom_arrow_icon {
+    width: 10px;
+    height: auto;
+    margin-top: 10px; 
+    transition: transform 0.3s ease;
+}
+
+/* ホバー時に画像を回転させる */
+.nav-item.has-dropdown:hover .bottom_arrow_icon,
+.dropdown-menu.is-visible .bottom_arrow_icon {
+    transform: rotate(180deg);
 }
 
 /*==================================
@@ -97,18 +124,28 @@
     background-color: #fff;
     z-index: 920;
     
+    /* アニメーションの初期状態 */
     visibility: hidden;
     opacity: 0;
-    pointer-events: none; /* ホバーしていないときにクリックできないようにする */
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transform: translateY(-20px);
+    
+    pointer-events: none;
+    
+    /* アニメーションの時間を設定 */
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.5s ease;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    max-height: 80vh;
+    overflow-y: auto;
 }
 
 /* JavaScriptで追加される表示用のクラス */
 .dropdown-menu.is-visible {
+    /* アニメーションの最終状態 */
     visibility: visible;
     opacity: 1;
-    pointer-events: auto; /* 表示時にクリック可能にする */
+    transform: translateY(0);
+    pointer-events: auto;
 }
 
 /* ドロップダウン内のコンテナ */
@@ -129,7 +166,7 @@
 
 .dropdown-list li a {
     display: block;
-    padding: 10px 20px;
+    padding: 10px 0;
     color: #333;
     text-decoration: none;
 }
@@ -144,24 +181,29 @@
 .sub-dropdown-list,
 .sub-sub-dropdown-list {
     position: absolute;
-    top: 0;
-    left: 100%;
-    min-width: 250px;
+    top: 100%;
+    left: 20%;
+    width: 100%;
     background-color: #fff;
     list-style: none;
     padding: 10px 0;
     margin: 0;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     
+    /* アニメーションの初期状態 */
     visibility: hidden;
     opacity: 0;
-    transition: opacity 0.3s ease, visibility 0.3s ease;
+    transform: translateX(-10px);
+    
+    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
 }
 
-/* ホバーでサブメニューを表示（この部分はCSSの:hoverで問題ありません） */
+/* ホバーでサブメニューを表示 */
+.has-dropdown:hover > .dropdown-list,
 .has-sub-dropdown:hover > .sub-dropdown-list {
     visibility: visible;
     opacity: 1;
+    transform: translateY(0);
 }
 
 .has-sub-dropdown > a {
@@ -178,13 +220,17 @@
 
 .new-window-icon,
 .right_arrow_icon {
-    height: 10px;
-    width: auto;
+    width: 10px;
+    height: auto;
 }
 
 .right_arrow_icon {
-    float: right;
-    padding-top: 8px;
+    margin-left: 8px;
+    transition: transform 0.3s ease;
+}
+
+.has-sub-dropdown:hover .right_arrow_icon {
+    transform: rotate(90deg);
 }
 
 /*==================================
