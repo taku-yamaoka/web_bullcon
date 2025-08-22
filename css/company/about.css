@@ -1,13 +1,15 @@
 /*==================================
   会社概要ページ専用スタイル
 ==================================*/
-.company-flex {
+.campany-container {
     max-width: 800px;
+    margin:0 auto;
+}
+.company-flex {
     display: flex;
     gap: 50px;
     align-items: flex-start;
     justify-content: center;
-    margin:0 auto;
 }
 
 .company-details {
