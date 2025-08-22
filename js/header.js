@@ -7,11 +7,43 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.text();
         })
         .then(data => {
+            const parser = new DOMParser();
+            const doc = parser.parseFromString(data, 'text/html');
+
+            const headerTopElement = doc.querySelector('.header-top');
+            const headerBottomElement = doc.querySelector('.header-bottom');
+            
             const headerPlaceholder = document.getElementById('header-placeholder');
+
             if (headerPlaceholder) {
-                headerPlaceholder.innerHTML = data;
-                initializeDropdowns(headerPlaceholder);
-                initializeDropdownImages(headerPlaceholder);
+                if (headerTopElement) {
+                    headerPlaceholder.innerHTML = headerTopElement.outerHTML;
+                }
+                
+                if (headerBottomElement) {
+                    headerPlaceholder.insertAdjacentHTML('afterend', headerBottomElement.outerHTML);
+                }
+
+                setTimeout(() => {
+                    const topContainer = document.querySelector('.header-top');
+                    const bottomContainer = document.querySelector('.header-bottom');
+                    
+                    if (topContainer && bottomContainer) {
+                        initializeDropdowns(bottomContainer);
+                        initializeDropdownImages(bottomContainer);
+                        
+                        // IntersectionObserverの代わりに、scrollイベントリスナーを追加
+                        const headerTopHeight = topContainer.offsetHeight;
+
+                        window.addEventListener('scroll', () => {
+                            if (window.scrollY > headerTopHeight) {
+                                bottomContainer.classList.add('is-stuck');
+                            } else {
+                                bottomContainer.classList.remove('is-stuck');
+                            }
+                        });
+                    }
+                }, 50);
             } else {
                 console.error("Error: Element with id 'header-placeholder' not found.");
             }
@@ -27,13 +59,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
 function initializeDropdowns(container) {
     const navItemsWithDropdown = container.querySelectorAll('.nav-item.has-dropdown');
-    const dropdownMenus = container.querySelectorAll('.dropdown-menu');
+    const dropdownMenus = document.querySelectorAll('.dropdown-menu');
     let activeDropdown = null;
     let timeoutId = null;
 
     navItemsWithDropdown.forEach(navItem => {
         const targetId = navItem.dataset.dropdownTarget;
-        const targetDropdown = container.querySelector(`#${targetId}`);
+        const targetDropdown = document.querySelector(`#${targetId}`);
 
         navItem.addEventListener('mouseenter', () => {
             if (timeoutId) {
@@ -72,7 +104,7 @@ function initializeDropdowns(container) {
 
 function initializeDropdownImages(container) {
     const dropdownLinks = container.querySelectorAll('.dropdown-list a');
-    const dropdownImageContainer = container.querySelector('.dropdown-image-container');
+    const dropdownImageContainer = document.querySelector('.dropdown-image-container');
     const dropdownImage = dropdownImageContainer ? dropdownImageContainer.querySelector('img') : null;
     const dropdownDescription = dropdownImageContainer ? dropdownImageContainer.querySelector('p') : null;
 

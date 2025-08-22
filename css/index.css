@@ -45,7 +45,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 100px;
+    margin-top: 50px;
 }
 
 .hero-slider {
@@ -136,6 +136,11 @@
 /*==================================
   新着情報セクション
 ==================================*/
+/* 分割コンテンツコンテナ */
+.main-content {
+    margin: 0 auto;
+    max-width: 1300px;
+}
 /* 分割コンテンツコンテナ */
 .split-content-container {
     display: flex;

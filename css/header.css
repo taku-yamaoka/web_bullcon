@@ -3,7 +3,6 @@
 ==================================*/
 .header {
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    top: 0;
     width: 100%;
     z-index: 1000;
     background-color: #fff;
@@ -40,14 +39,29 @@
 
 /* Header bottom section */
 .header-bottom {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    z-index: 1000;
+    
+    background-color: #fff; /* デフォルトの背景色 */
+    
     display: flex;
     justify-content: center;
     align-items: center;
     position: sticky;
-    top: 0;
+    top: 0px;
     z-index: 999;
+    padding-top: 20px;
     padding-bottom: 10px;
     padding-left: 20px;
+    
+    transition: background-color 0.5s ease-in-out, color 0.5s ease-in-out; /* 背景色と文字色にtransitionを適用 */
+}
+
+/* stickyになったときに適用されるスタイル */
+.header-bottom.is-stuck {
+    background-color: rgba(0, 0, 0, 0.8);
+    color: #fff; /* フォントの色を白に変更して見やすくする */
 }
 
 /* Navigation menu */
@@ -64,15 +78,22 @@
 }
 
 .nav-item {
+    position: relative;
     padding: 0 25px 0 25px;
 }
 
 .nav-item a,
 .dropdown-toggle {
     text-decoration: none;
-    color: #333;
+    color: #333; /* デフォルトの文字色 */
     font-weight: bold;
     display: block;
+}
+
+/* is-stuckクラスが付いている場合のナビゲーションリンクの色を変更 */
+.header-bottom.is-stuck .nav-item a,
+.header-bottom.is-stuck .dropdown-toggle {
+    color: rgba(255, 255, 255, 0.8);;
 }
 
 .nav-item:hover > a,
@@ -115,7 +136,7 @@
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.8);
     z-index: 920;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     
@@ -144,7 +165,7 @@
 
 /* ドロップダウン内のコンテナ（左側：リスト） */
 .dropdown-list-container {
-    width: 25%; /* メニューリストの幅を50%に固定 */
+    width: 25%;
     padding-right: 20px;
 }
 
@@ -154,7 +175,7 @@
 
 /* ドロップダウン内のコンテナ（右側：画像とテキスト） */
 .dropdown-image-container {
-    width: 75%; /* 画像とテキストのコンテナ幅を50%に固定 */
+    width: 75%;
     height: auto;
     overflow: hidden;
     display: flex;
@@ -163,7 +184,6 @@
     align-items: center;
     padding-left: 20px;
     
-    /* フェードインアニメーションの初期設定 */
     opacity: 0;
     transition: opacity 0.5s ease-in-out;
 }
@@ -175,17 +195,17 @@
 
 /* 画像とテキストのスタイル */
 #dropdown-image {
-    width: 180px; /* 画像サイズを大きく調整 */
+    width: 180px;
     height: auto;
     object-fit: contain;
-    margin-bottom: 15px; /* テキストとの間隔を広げる */
+    margin-bottom: 15px;
 }
 
 #dropdown-description {
-    font-size: 1em; /* テキストサイズを少し大きく */
+    font-size: 1em;
     color: #fff;
     margin-top: 10px;
-    line-height: 1.5; /* 行の高さを調整 */
+    line-height: 1.5;
 }
 
 .dropdown-list {
@@ -197,7 +217,6 @@
     align-items: flex-start;
 }
 
-/* リスト項目のスタイル */
 .dropdown-list li {
     width: 100%;
     max-width: 250px; 
@@ -211,24 +230,12 @@
     text-decoration: none;
 }
 
-.dropdown-list li a {
-    display: block;
-    padding: 10px 0;
-    color: #fff;
-    text-decoration: none;
-}
-
 .dropdown-list li a:hover {
     background-color: rgba(255, 255, 255, 0.1);
-
-}
-
-.dropdown-list li a[data-image] {
-    --image-url: url(attr(data-image));
 }
 
 /*common*/
-.new-window-icon{
+.new-window-icon {
     width: 10px;
     height: auto;
 }
