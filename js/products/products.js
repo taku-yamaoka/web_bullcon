@@ -1,51 +1,50 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const tabs = document.querySelectorAll('.category-tab');
+document.addEventListener('DOMContentLoaded', function() {
+    const categoryTabs = document.querySelectorAll('.category-tab');
     const productItems = document.querySelectorAll('.product-item');
-    const productsGrid = document.querySelector('.products-grid');
 
-    // フィルタリング処理を統合した関数
-    function applyFilter(category) {
-        tabs.forEach(t => {
-            if (t.dataset.category === category) {
-                t.classList.add('active');
-            } else {
-                t.classList.remove('active');
-            }
-        });
+    // URLからカテゴリ情報を取得
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialCategory = urlParams.get('category') || 'all';
 
-        const visibleItems = [];
+    function filterProducts(category) {
+        // すべてのタブから 'active' クラスを削除
+        categoryTabs.forEach(tab => tab.classList.remove('active'));
 
+        // 選択されたカテゴリのタブをアクティブにする
+        const activeTab = document.querySelector(`.category-tab[data-category="${category}"]`);
+        if (activeTab) {
+            activeTab.classList.add('active');
+        }
+
+        // 製品をフィルタリング
         productItems.forEach(item => {
-            if (category === 'all' || item.dataset.category === category) {
+            if (category === 'all' || item.classList.contains(category)) {
                 item.style.display = 'block';
-                visibleItems.push(item);
             } else {
                 item.style.display = 'none';
             }
         });
-
-        if (visibleItems.length < 3) {
-            productsGrid.style.justifyContent = 'flex-start';
-        } else {
-            productsGrid.style.justifyContent = 'space-between';
-        }
     }
 
-    // ページの読み込み時：URLのクエリパラメータに基づいてフィルタリングを実行
-    const urlParams = new URLSearchParams(window.location.search);
-    const urlCategory = urlParams.get('category');
+    // ページ読み込み時に初期フィルタリングを実行
+    filterProducts(initialCategory);
 
-    if (urlCategory) {
-        applyFilter(urlCategory);
-    } else {
-        applyFilter('all');
-    }
-
-    // タブのクリックイベント (この部分は残します)
-    tabs.forEach(tab => {
+    // タブにクリックイベントリスナーを設定
+    categoryTabs.forEach(tab => {
         tab.addEventListener('click', () => {
-            const category = tab.dataset.category;
-            applyFilter(category);
+            const selectedCategory = tab.getAttribute('data-category');
+            filterProducts(selectedCategory);
+
+            // URLの変更（任意）
+            const newUrl = window.location.origin + window.location.pathname + `?category=${selectedCategory}`;
+            window.history.pushState({ path: newUrl }, '', newUrl);
         });
+    });
+
+    // 戻る/進むボタンでのブラウザ履歴操作に対応（任意）
+    window.addEventListener('popstate', function() {
+        const urlParams = new URLSearchParams(window.location.search);
+        const category = urlParams.get('category') || 'all';
+        filterProducts(category);
     });
 });

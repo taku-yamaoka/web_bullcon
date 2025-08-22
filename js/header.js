@@ -1,6 +1,4 @@
 document.addEventListener('DOMContentLoaded', () => {
-
-    // 1. ヘッダーを非同期で読み込み、DOMに挿入する
     fetch('/html/_header.html')
         .then(response => {
             if (!response.ok) {
@@ -12,9 +10,8 @@ document.addEventListener('DOMContentLoaded', () => {
             const headerPlaceholder = document.getElementById('header-placeholder');
             if (headerPlaceholder) {
                 headerPlaceholder.innerHTML = data;
-                
-                // 2. DOM挿入後に、ドロップダウンの制御スクリプトを実行する
                 initializeDropdowns(headerPlaceholder);
+                initializeDropdownImages(headerPlaceholder);
             } else {
                 console.error("Error: Element with id 'header-placeholder' not found.");
             }
@@ -26,14 +23,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 headerPlaceholder.innerHTML = '<p>ヘッダーの読み込みに失敗しました。</p>';
             }
         });
-
 });
 
-// ドロップダウンメニューの動作を初期化する関数
 function initializeDropdowns(container) {
     const navItemsWithDropdown = container.querySelectorAll('.nav-item.has-dropdown');
     const dropdownMenus = container.querySelectorAll('.dropdown-menu');
-    
     let activeDropdown = null;
     let timeoutId = null;
 
@@ -41,25 +35,21 @@ function initializeDropdowns(container) {
         const targetId = navItem.dataset.dropdownTarget;
         const targetDropdown = container.querySelector(`#${targetId}`);
 
-        // マウスが navItem に入ったときの処理
         navItem.addEventListener('mouseenter', () => {
             if (timeoutId) {
                 clearTimeout(timeoutId);
             }
 
-            // 全てのドロップダウンを非表示にする
             dropdownMenus.forEach(menu => {
                 menu.classList.remove('is-visible');
             });
 
-            // 該当のドロップダウンを表示
             if (targetDropdown) {
                 targetDropdown.classList.add('is-visible');
                 activeDropdown = targetDropdown;
             }
         });
 
-        // マウスが navItem から出たときの処理
         navItem.addEventListener('mouseleave', () => {
             timeoutId = setTimeout(() => {
                 if (activeDropdown && !navItem.matches(':hover') && !activeDropdown.matches(':hover')) {
@@ -70,7 +60,6 @@ function initializeDropdowns(container) {
         });
     });
 
-    // ドロップダウンメニュー自体からマウスが外れたときの処理
     dropdownMenus.forEach(menu => {
         menu.addEventListener('mouseleave', () => {
             if (activeDropdown) {
@@ -79,4 +68,40 @@ function initializeDropdowns(container) {
             }
         });
     });
+}
+
+function initializeDropdownImages(container) {
+    const dropdownLinks = container.querySelectorAll('.dropdown-list a');
+    const dropdownImageContainer = container.querySelector('.dropdown-image-container');
+    const dropdownImage = dropdownImageContainer ? dropdownImageContainer.querySelector('img') : null;
+    const dropdownDescription = dropdownImageContainer ? dropdownImageContainer.querySelector('p') : null;
+
+    if (!dropdownImage || !dropdownDescription) return;
+
+    dropdownLinks.forEach(link => {
+        const imageUrl = link.getAttribute('data-image');
+        const description = link.getAttribute('data-description');
+        
+        link.addEventListener('mouseenter', () => {
+            if (imageUrl) {
+                dropdownImage.src = imageUrl;
+                dropdownDescription.textContent = description;
+                dropdownImageContainer.classList.add('is-visible');
+            }
+        });
+        
+        link.addEventListener('mouseleave', () => {
+            const isHoveringAnotherLink = Array.from(dropdownLinks).some(otherLink => otherLink.matches(':hover'));
+            if (!isHoveringAnotherLink) {
+                dropdownImageContainer.classList.remove('is-visible');
+            }
+        });
+    });
+
+    const productDropdown = container.querySelector('#product-dropdown');
+    if (productDropdown) {
+        productDropdown.addEventListener('mouseleave', () => {
+            dropdownImageContainer.classList.remove('is-visible');
+        });
+    }
 }

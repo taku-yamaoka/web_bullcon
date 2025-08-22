@@ -5,10 +5,9 @@
 
 /* メインコンテンツのスタイル */
 .main-content {
-    padding: 30px 40px;
     border-radius: 12px;
-    margin: 40px auto;
-    max-width: 900px;
+    margin: 0px auto;
+    max-width: 800px;
 }
 
 .page-title {

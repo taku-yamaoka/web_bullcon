@@ -2,7 +2,7 @@
   特定商取引法に基づく表記ページ
 ==================================*/
 .tsuhan-container {
-    padding: 60px 0;
+    max-width: 800px;
 }
 
 .regulation-section {

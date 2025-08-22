@@ -10,13 +10,6 @@
     background-color: #fff;
 }
 
-/* Container width adjustment */
-.container {
-    max-width: 1200px;
-    margin: 0 auto;
-    padding: 0 20px;
-}
-
 /* Header Sections */
 .header-top .header-inner {
     display: flex;
@@ -49,10 +42,11 @@
 /* Header bottom section */
 .header-bottom {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     position: relative;
     padding-bottom: 10px;
+    padding-left: 20px;
 }
 
 /* Navigation menu */
@@ -115,122 +109,127 @@
 /*==================================
   Dropdown Menu
 ==================================*/
-/* ドロップダウンメニューの初期状態（非表示） */
 .dropdown-menu {
     position: absolute;
     top: 100%;
     left: 0;
     width: 100%;
-    background-color: #fff;
+    background-color: rgba(0, 0, 0, 0.9);
     z-index: 920;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     
-    /* アニメーションの初期状態 */
     visibility: hidden;
     opacity: 0;
     transform: translateY(-20px);
     
     pointer-events: none;
     
-    /* アニメーションの時間を設定 */
     transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.5s ease;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-
     max-height: 80vh;
     overflow-y: auto;
+    
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
 }
 
-/* JavaScriptで追加される表示用のクラス */
 .dropdown-menu.is-visible {
-    /* アニメーションの最終状態 */
     visibility: visible;
     opacity: 1;
     transform: translateY(0);
     pointer-events: auto;
 }
 
-/* ドロップダウン内のコンテナ */
+/* ドロップダウン内のコンテナ（左側：リスト） */
 .dropdown-list-container {
-    max-width: 1200px;
-    margin: 0 auto;
+    width: 25%; /* メニューリストの幅を50%に固定 */
+    padding-right: 20px;
+}
+
+.dropdown-border {
+    border-right: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+/* ドロップダウン内のコンテナ（右側：画像とテキスト） */
+.dropdown-image-container {
+    width: 75%; /* 画像とテキストのコンテナ幅を50%に固定 */
+    height: auto;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 20px;
+    
+    /* フェードインアニメーションの初期設定 */
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+/* ホバー時に表示するためのクラス */
+.dropdown-image-container.is-visible {
+    opacity: 1;
+}
+
+/* 画像とテキストのスタイル */
+#dropdown-image {
+    width: 180px; /* 画像サイズを大きく調整 */
+    height: auto;
+    object-fit: contain;
+    margin-bottom: 15px; /* テキストとの間隔を広げる */
+}
+
+#dropdown-description {
+    font-size: 1em; /* テキストサイズを少し大きく */
+    color: #fff;
+    margin-top: 10px;
+    line-height: 1.5; /* 行の高さを調整 */
 }
 
 .dropdown-list {
     list-style: none;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
+/* リスト項目のスタイル */
 .dropdown-list li {
-    position: relative; /* サブメニューの基準位置 */
+    width: 100%;
+    max-width: 250px; 
+    text-align: left; 
 }
 
 .dropdown-list li a {
     display: block;
     padding: 10px 0;
-    color: #333;
+    color: #fff;
+    text-decoration: none;
+}
+
+.dropdown-list li a {
+    display: block;
+    padding: 10px 0;
+    color: #fff;
     text-decoration: none;
 }
 
 .dropdown-list li a:hover {
-    background-color: #f0f0f0;
+    background-color: rgba(255, 255, 255, 0.1);
+
 }
 
-/*==================================
-  Sub-Dropdown Menus
-==================================*/
-.sub-dropdown-list,
-.sub-sub-dropdown-list {
-    position: absolute;
-    top: 100%;
-    left: 20%;
-    width: 100%;
-    background-color: #fff;
-    list-style: none;
-    padding: 10px 0;
-    margin: 0;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    
-    /* アニメーションの初期状態 */
-    visibility: hidden;
-    opacity: 0;
-    transform: translateX(-10px);
-    
-    transition: opacity 0.3s ease, visibility 0.3s ease, transform 0.3s ease;
+.dropdown-list li a[data-image] {
+    --image-url: url(attr(data-image));
 }
 
-/* ホバーでサブメニューを表示 */
-.has-dropdown:hover > .dropdown-list,
-.has-sub-dropdown:hover > .sub-dropdown-list {
-    visibility: visible;
-    opacity: 1;
-    transform: translateY(0);
-}
-
-.has-sub-dropdown > a {
-    display: flex; 
-    align-items: center; 
-    justify-content: space-between;
-}
-
-.sub-dropdown-list li a,
-.sub-sub-dropdown-list li a {
-    padding: 8px 20px;
-    white-space: nowrap;
-}
-
-.new-window-icon,
-.right_arrow_icon {
+/*common*/
+.new-window-icon{
     width: 10px;
     height: auto;
-}
-
-.right_arrow_icon {
-    margin-left: 8px;
-    transition: transform 0.3s ease;
-}
-
-.has-sub-dropdown:hover .right_arrow_icon {
-    transform: rotate(90deg);
 }
 
 /*==================================

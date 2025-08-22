@@ -2,7 +2,7 @@
   採用情報ページ専用スタイル
 ==================================*/
 .recruit-container {
-    padding: 60px 0;
+    max-width: 800px;
 }
 
 .recruit-message {

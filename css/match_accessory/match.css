@@ -1,7 +1,5 @@
 .match-container {
-    padding: 30px 40px;
     width: 100%;
-    
     display: flex;
     flex-direction: column;
     align-items: center;
