@@ -134,7 +134,9 @@ function generateTable(data, headerData) {
     });
     thead.appendChild(subHeaderRow);
 
-    data.forEach(item => {
+    const sortedData = [...data].sort(customSort);
+
+    sortedData.forEach(item => {
         const row = document.createElement('tr');
         const allColumns = headerData.flatMap(header => header.subHeaders);
         allColumns.forEach(col => {
@@ -247,4 +249,45 @@ function displayNotes(data, productName) {
     notesHtml += '</ul>';
     notesContainer.innerHTML = notesHtml;
     notesContainer.style.display = 'block';
+}
+
+function customSort(a, b) {
+    // --- 車名 (car_model) で昇順比較 (タイブレーク) ---
+    if (a.car_model < b.car_model) {
+        return -1; // aをbより前に (年式が古い方が前)
+    }
+    if (a.car_model > b.car_model) {
+        return 1;  // aをbより後に
+    }
+    // --- 年式 (print_date) で昇順比較 (タイブレーク) ---
+    if (a.print_date < b.print_date) {
+        return -1; // aをbより前に (年式が古い方が前)
+    }
+    if (a.print_date > b.print_date) {
+        return 1;  // aをbより後に
+    }
+    // --- モデル年 (year) で昇順比較 (タイブレーク) ---
+    if (a.year < b.year) {
+        return -1; // aをbより前に (年式が古い方が前)
+    }
+    if (a.year > b.year) {
+        return 1;  // aをbより後に
+    }
+    // --- 型式 (model_number) で昇順比較 (タイブレーク) ---
+    if (a.model_number < b.model_number) {
+        return -1; // aをbより前に (年式が古い方が前)
+    }
+    if (a.model_number > b.model_number) {
+        return 1;  // aをbより後に
+    }
+    // --- モニター型式 (monitor_number) で昇順比較 (タイブレーク) ---
+    if (a.monitor_number < b.monitor_number) {
+        return -1; // aをbより前に (年式が古い方が前)
+    }
+    if (a.monitor_number > b.monitor_number) {
+        return 1;  // aをbより後に
+    }
+    
+    // 全ての条件で同じ場合
+    return 0;
 }

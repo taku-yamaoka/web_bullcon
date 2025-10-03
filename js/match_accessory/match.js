@@ -44,12 +44,10 @@ document.addEventListener('DOMContentLoaded', async() => {
 export const initializeAndGetCarModel = async() => {
     // キャッシュが存在する場合は、即座にキャッシュデータを返す
     if (carModelCache) {
-        console.log("Using cached car model data.");
         return carModelCache;
     }
 
     // キャッシュが存在しない場合は、APIからデータを取得し、キャッシュする
-    console.log("Fetching car model data from API.");
     const carModel = await getCompatibilityData(CAR_MODEL_API , "");
     
     // 取得したデータをキャッシュに保存
@@ -61,12 +59,10 @@ export const initializeAndGetCarModel = async() => {
 export const initializeAndGetMonitorNumber = async() => {
     // キャッシュが存在する場合は、即座にキャッシュデータを返す
     if (monitorNumberCache) {
-        console.log("Using cached monitor number data.");
         return monitorNumberCache;
     }
 
     // キャッシュが存在しない場合は、APIからデータを取得し、キャッシュする
-    console.log("Fetching monitor number data from API.");
     const monitorNumList = await getCompatibilityData(MONITOR_NUMBER_LIST_API , "");
     
     // 取得したデータをキャッシュに保存

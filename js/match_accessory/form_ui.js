@@ -34,7 +34,6 @@ async function generateSpecificProductForm (formContainer, productInfo, state) {
 
     const carModel = await initializeAndGetCarModel();
     const monitorList = await initializeAndGetMonitorNumber();
-    console.log(monitorList);
 
     /* 
      * maker: full
