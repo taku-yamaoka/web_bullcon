@@ -149,7 +149,7 @@ async function generateSpecificProductForm (formContainer, productInfo, state) {
                     if (selectedYear === 'unknown') {
                         const inputValue = selectedProductCode !== null ? selectedProductCode : '';
                         productCodeGroup.innerHTML += `
-                            <input type="text" id="product-code-input" class="form-input" placeholder="モニター型番を入力" value="${inputValue}">
+                            <input type="search" id="product-code-input" class="form-input" placeholder="モニター型番を入力" value="${inputValue}">
                             <ul id="product-code-suggestions" class="suggestions-list"></ul>
                         `;
                         formContainer.appendChild(productCodeGroup);
@@ -287,7 +287,7 @@ export function checkFieldsFilled(state, productInfo) {
         if (selectedYear === 'unknown') {
             return selectedProduct && selectedMaker && selectedProductCode;
         } else {
-            return selectedProduct && selectedMaker && selectedYear;
+            return selectedProduct && selectedMaker && selectedYear && selectedProductCode;
         }
     }
     return selectedProduct !== null;
