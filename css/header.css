@@ -40,7 +40,7 @@
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  padding: clamp(10px, 1.5vw, 15px) clamp(15px, 2vw, var(--header-padding-base));
+  padding: clamp(10px, 1.5vw, 15px) clamp(15px, 2vw, var(--header-padding-base)) 0;
 }
 
 .header-logo img {
@@ -108,14 +108,14 @@
   list-style: none;
   margin: 0;
   width: 100%;
+  height: 100%;
   box-sizing: border-box;
   justify-content: space-evenly;
-  gap: clamp(2px, 1vw, var(--nav-list-gap-base));
 }
 
 .nav-item {
   position: relative;
-  padding: 0 clamp(3px, 1vw, 20px);
+  padding: 0 clamp(10px, 2vw, 40px) clamp(10px, 2vw, 40px);
   font-size: clamp(12px, 1.2vw, var(--nav-item-font-size-base));
   white-space: nowrap;
 }
