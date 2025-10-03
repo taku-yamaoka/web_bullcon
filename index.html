@@ -11,6 +11,46 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
+
+     <style>
+        /* テーブルの基本設定: 幅を100%にし、列幅を固定する */
+        .simple-table {
+            width: 100%;
+            table-layout: fixed;
+            border-collapse: collapse; /* 罫線の重複を避ける */
+            font-family: Arial, sans-serif;
+        }
+
+        /* セル（ヘッダーとデータ）の共通スタイル */
+        .simple-table th, 
+        .simple-table td {
+            padding: 8px 10px;
+            text-align: left;
+            border: 1px solid #ccc; /* 簡素な罫線 */
+            word-break: break-word; /* 長い単語の折り返し */
+        }
+
+        /* ヘッダー行のスタイル */
+        .simple-table thead tr:first-child th {
+            background-color: #f0f0f0;
+            font-weight: bold;
+            color: #333;
+        }
+
+        /* 列幅の指定 (等分) */
+        /* 3列なので、ここでは各列に約33.33%の幅を割り当てます */
+        .col-date {
+            width: 20%; /* 日付は短いため少し狭く */
+        }
+        .col-target {
+            width: 25%;
+        }
+        .col-content {
+            width: 55%; /* 内容は長くなるため広く */
+        }
+    </style>
+
+
 </head>
 <body>
 
@@ -19,6 +59,36 @@
 <main>
     <div class="container">
         <div class="main-content">
+
+
+            <div style="max-width: 800px; margin: 20px auto; font-size: 0.8em;">
+    <h2>更新情報　最後に消すやつ</h2>    
+    <table class="simple-table">
+        <thead>
+            <!-- 1行目: カラム名 (ヘッダー) -->
+            <tr>
+                <th class="col-date">日付</th>
+                <th class="col-target">対象</th>
+                <th class="col-content">内容</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- 2行目以降: データ行 -->
+            <tr>
+                <td rowspan="6">25/10/03</td>
+                <td>製品詳細ページ 左部製品リスト</td>
+                <td>品番ページ表示時、製品リストのタブを<br>修正前：品番ページまで自動で開く<br>修正：カテゴリまで自動で開く</td>
+            </tr>
+            <tr><td>ヘッダー</td><td>カクツキを解消しました</td></tr>
+            <tr><td rowspan="2">トップページ</td><td>お知らせと製品新着情報の順番を入れ替えました</td></tr>
+            <tr><td>ページ最下部にアクセスカウンターを設置しました(カウント数は現行HPのままとなっています)</td></tr>
+            <tr><td>適合検索</td><td>・結果出力のフォントを調整しました。<br>・車種>年式, モニターモデル>型番 で昇順ソートしました<br>・メーカー表示順を(トヨタ、レクサス、ニッサン、ホンダ、ミツビシ、スズキ、スバル、ダイハツ、マツダ)でソートしました<br>・車種、モニタードロップダウンを昇順ソートしました。</td></tr>
+            <tr><td>適合PDF一覧ページ</td><td>x軸スクロールバーをテーブル上部にも設置しました。</td></tr>
+        </tbody>
+    </table>
+</div>
+
+
             <section class="hero">
                 <div class="hero-slider">
                     <div class="slider-item" style="background-image: url('./images/slide_banner/banner_freetving.jpg');">
