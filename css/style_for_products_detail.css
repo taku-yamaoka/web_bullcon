@@ -175,20 +175,17 @@ a:hover {
 .product-item-header.current-product {
     background-color: var(--color-link-text);
     color: var(--color-body-text-dark);
-    font-weight: bold;
 }
 
 /* 選択中の製品ヘッダー内のリンク（<a>タグ）のスタイル */
 .product-item-header.current-product a {
-    color: var(--color-body-text-dark);
-    font-weight: bold;
+    color: var(--color-body-text-dark) !important;
 }
 
 /* 選択中のサブページリンクのスタイル */
 .sub-pages-list a.current-product {
     background-color: var(--color-link-text);
-    color: var(--color-body-text-dark);
-    font-weight: bold;
+    color: var(--color-body-text-dark) !important;
 }
 
 /* トグルボタンのスタイル */

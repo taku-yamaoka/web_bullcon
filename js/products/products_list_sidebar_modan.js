@@ -116,6 +116,8 @@ document.addEventListener('DOMContentLoaded', () => {
                                 const subPageUrlPath = subPage.url.replace(/\/+$/, '');
                                 if (currentUrlPath.endsWith(subPageUrlPath)) {
                                     subPageLink.classList.add('current-product');
+                                    // サブページが現在地の場合、親要素にもクラスを追加
+                                    productDiv.classList.add('current-product'); 
                                     isCurrentCategory = true;
                                     isCurrentProduct = true;
                                 }
@@ -145,10 +147,10 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         });
                         
-                        if (isCurrentProduct) {
+                        /*if (isCurrentProduct) {
                             subPagesUl.style.display = 'block';
                             productToggleBtn.style.transform = 'rotate(90deg)';
-                        }
+                        }*/
 
                     } else {
                          productListItem.appendChild(productDiv);

@@ -19,22 +19,25 @@ document.addEventListener('DOMContentLoaded', () => {
         contentWrapper.appendChild(mainTable);
     }
 
+    // 既存の要素の配置を変更（サイドバーとコンテンツを並列にするため）
     footerPlaceholder.parentNode.insertBefore(contentWrapper, footerPlaceholder);
     footerPlaceholder.parentNode.insertBefore(sidebarContainer, contentWrapper);
 
     const setSidebarHeight = () => {
+        // スクロール高さを取得する前に、サイドバーが配置されていることが重要
         const headerHeight = headerPlaceholder.offsetHeight + 40;
-        const footerHeight = footerPlaceholder.offsetHeight;
+        const contentHeight = contentWrapper.offsetHeight;
         const documentHeight = document.body.scrollHeight;
+        const newHeight = documentHeight - headerHeight - footerPlaceholder.offsetHeight - 150; 
 
-        const newHeight = documentHeight - headerHeight - footerHeight - 150;
-
-        sidebarContainer.style.maxHeight = `${newHeight}px`;
+        // 最小高さを設定することで、コンテンツが短いページでも最低限の表示を確保
+        const minHeight = 400; // 例として400px
+        sidebarContainer.style.maxHeight = `${Math.max(newHeight, minHeight)}px`;
     };
 
     setSidebarHeight();
     window.addEventListener('resize', setSidebarHeight);
-
+    
     // products_data.jsonから製品データを読み込む
     fetch('/html/products/products_data.json')
         .then(response => {
@@ -102,6 +105,8 @@ document.addEventListener('DOMContentLoaded', () => {
 
                     let isCurrentProduct = false;
                     const productUrlPath = product.main_page.url.replace(/\/+$/, '');
+                    
+                    // 製品メインページが現在地の場合
                     if (currentUrlPath.endsWith(productUrlPath)) {
                         productDiv.classList.add('current-product');
                         isCurrentCategory = true;
@@ -123,6 +128,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         product.sub_pages.forEach(subPage => {
                             const subPageListItem = document.createElement('li');
                             const subPageLink = document.createElement('a');
+                            
                             if (subPage.url) {
                                 subPageLink.href = subPage.url;
                                 subPageLink.style.color = "#00479d";
@@ -130,6 +136,10 @@ document.addEventListener('DOMContentLoaded', () => {
                                 const subPageUrlPath = subPage.url.replace(/\/+$/, '');
                                 if (currentUrlPath.endsWith(subPageUrlPath)) {
                                     subPageLink.classList.add('current-product');
+                                    
+                                    // サブページが現在地の場合、親要素にもクラスを追加
+                                    productDiv.classList.add('current-product'); 
+                                    
                                     isCurrentCategory = true;
                                     isCurrentProduct = true;
                                 }
@@ -140,8 +150,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                 subPageLink.style.pointerEvents = 'none';
                             }
                             subPageLink.textContent = subPage.name;
-                            
-                            
                             
                             subPageListItem.appendChild(subPageLink);
                             subPagesUl.appendChild(subPageListItem);
@@ -162,14 +170,14 @@ document.addEventListener('DOMContentLoaded', () => {
                             }
                         });
                         
-                        if (isCurrentProduct) {
+                        // サブページが現在地の場合、自動でサブリストを開く
+                        /*if (isCurrentProduct) {
                             subPagesUl.style.display = 'block';
                             productToggleBtn.style.transform = 'rotate(90deg)';
-                        }
-
+                        }*/
                     } else {
-                         productListItem.appendChild(productDiv);
-                         productsUl.appendChild(productListItem);
+                            productListItem.appendChild(productDiv);
+                            productsUl.appendChild(productListItem);
                     }
                 });
 

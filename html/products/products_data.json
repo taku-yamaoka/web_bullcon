@@ -483,10 +483,10 @@
               "url": "/html/products/LED_BULB/led_bulb_revo/led_bulb_revo.htm"
             },
             "sub_pages": [
-              { "name": "SLL-F11W", "url": "/html/products/LED_BULB/led_bulb_revo/led_bulb_revo_size/led_bulb_revo_size.htm", "manual_url": "/pdf/products/LED_BULB/LED%20REVOLUTION.pdf"},
-              { "name": "SLL-F16W", "url": "/html/products/LED_BULB/led_bulb_revo/led_bulb_revo_size/led_bulb_revo_size.htm", "manual_url": "/pdf/products/LED_BULB/LED%20REVOLUTION.pdf"},
-              { "name": "SLL-F26W", "url": "/html/products/LED_BULB/led_bulb_revo/led_bulb_revo_size/led_bulb_revo_size.htm", "manual_url": "/pdf/products/LED_BULB/LED%20REVOLUTION.pdf"},
-              { "name": "SLL-F26Y", "url": "/html/products/LED_BULB/led_bulb_revo/led_bulb_revo_size/led_bulb_revo_size.htm", "manual_url": "/pdf/products/LED_BULB/LED%20REVOLUTION.pdf"}
+              { "name": "SLL-F11W", "url": "/html/products/LED_BULB/led_bulb_revo/led_bulb_revo_size/led_bulb_revo_size.htm?f11w", "manual_url": "/pdf/products/LED_BULB/LED%20REVOLUTION.pdf"},
+              { "name": "SLL-F16W", "url": "/html/products/LED_BULB/led_bulb_revo/led_bulb_revo_size/led_bulb_revo_size.htm?f16w", "manual_url": "/pdf/products/LED_BULB/LED%20REVOLUTION.pdf"},
+              { "name": "SLL-F26W", "url": "/html/products/LED_BULB/led_bulb_revo/led_bulb_revo_size/led_bulb_revo_size.htm?f26w", "manual_url": "/pdf/products/LED_BULB/LED%20REVOLUTION.pdf"},
+              { "name": "SLL-F26Y", "url": "/html/products/LED_BULB/led_bulb_revo/led_bulb_revo_size/led_bulb_revo_size.htm?26y", "manual_url": "/pdf/products/LED_BULB/LED%20REVOLUTION.pdf"}
             ]
           },
           {
