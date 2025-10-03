@@ -24,6 +24,10 @@ html, body, ul, p {
   padding: 0;
 }
 
+body {
+    padding-top: 150px; /* ヘッダー分下げる */
+}
+
 :target {
     scroll-margin-top: 80px;
 }

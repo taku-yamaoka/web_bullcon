@@ -298,44 +298,69 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-//==================================
-// スクロール時のヘッダー固定機能
-//==================================
-function initializeHeaderScroll() {
-    const mainHeader = document.querySelector('.header');
-    if (!mainHeader) return;
+    //==================================
+    // スクロール時のヘッダー固定機能
+    //==================================
+    function initializeHeaderScroll() {
+        const mainHeader = document.querySelector('.header');
+        if (!mainHeader) return;
 
-    let lastScrollY = window.scrollY;
+        // ヘッダーがDOMに挿入され次第、すぐに fixed 状態（is-stuck）にする。
+        // スクロール時の position: fixed への切り替えをなくし、カクつきを防ぐ。
+        mainHeader.classList.add('is-stuck');
 
-    const handleScroll = () => {
-        const currentScrollY = window.scrollY;
-        const headerHeight = mainHeader.offsetHeight;
+        // ヘッダーが fixed になった分のスペースを body に付与する。（CSSで処理推奨だが、JSで対応する場合）
+        // const headerHeight = mainHeader.offsetHeight;
+        // document.body.style.paddingTop = `${headerHeight}px`;
 
-        // 一定のスクロール量（例：ヘッダーの高さ）を超えたら固定
-        if (currentScrollY > headerHeight) {
-            mainHeader.classList.add('is-stuck');
-        } else {
-            mainHeader.classList.remove('is-stuck');
-        }
+        let lastScrollY = window.scrollY;
+        let ticking = false; // requestAnimationFrame制御用フラグ
 
-        // スクロールダウン（下方向）の検知
-        // ヘッダーの高さ分スクロールしたら隠す
-        if (currentScrollY > lastScrollY && currentScrollY > headerHeight) {
-            mainHeader.classList.add('is-hidden');
-        } 
-        // スクロールアップ（上方向）の検知、またはページ最上部に戻ったら表示
-        else if (currentScrollY < lastScrollY || currentScrollY <= 0) {
-            mainHeader.classList.remove('is-hidden');
-        }
-        
-        lastScrollY = currentScrollY;
-    };
+        const updateHeaderState = () => {
+            const currentScrollY = window.scrollY;
+            // is-stuckが適用済みのため、ヘッダーの高さは非表示判定にのみ使用
+            const headerHeight = mainHeader.offsetHeight; 
+
+            // ヘッダーの高さ分を超えて、さらにこのピクセル数スクロールしたら非表示にする閾値
+            const SCROLL_THRESHOLD = 50;
+            const hideTriggerPosition = headerHeight + SCROLL_THRESHOLD;
+
+            // 【is-stuck ロジックを削除】: 既に上で fixed にしているため不要。
+
+            // 1. スクロールダウン（下方向）の検知
+            // 非表示トリガー位置を超えた場合のみ隠す
+            if (currentScrollY > lastScrollY && currentScrollY > hideTriggerPosition) {
+                mainHeader.classList.add('is-hidden');
+            }
+            // 2. スクロールアップ（上方向）の検知 OR ページ最上部近くに戻った場合 (最上部からSCROLL_THRESHOLDの範囲)
+            else if (currentScrollY < lastScrollY || currentScrollY <= SCROLL_THRESHOLD) {
+                mainHeader.classList.remove('is-hidden');
+            }
+
+            lastScrollY = currentScrollY;
+            ticking = false; // 処理完了
+        };
+
+        const handleScroll = () => {
+            if (!ticking) {
+                // ブラウザの描画タイミングに合わせて処理を実行
+                window.requestAnimationFrame(() => {
+                    updateHeaderState();
+                });
+                ticking = true; // 処理中
+            }
+        };
+
+        // スクロールイベントリスナーを追加 (RAF経由)
+        window.addEventListener('scroll', handleScroll);
+
+        // リサイズ時にも状態を更新（ヘッダーの高さが変わる可能性があるため）
+        window.addEventListener('resize', updateHeaderState);
+
+        // 初期化時にも一度実行
+        updateHeaderState();
+    }
     
-    // スクロールイベントリスナーを追加
-    window.addEventListener('scroll', handleScroll);
-    window.addEventListener('load', handleScroll);
-    window.addEventListener('resize', handleScroll);
-}
     //==================================
     // 製品ページの機能
     //==================================
