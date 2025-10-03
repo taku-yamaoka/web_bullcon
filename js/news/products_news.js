@@ -170,8 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // ページネーションボタン押下後にページの先頭に戻る
         window.scrollTo({
-            top: 0,
-            behavior: 'smooth'
+            top: 200,
         });
     }
 
@@ -198,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const li = document.createElement('li');
             li.classList.add('product-item');
 
-            // ★★★ 1. ヘッダー: 日付とタイトル、ニュースタイプとバッジをまとめるコンテナ ★★★
+            // ヘッダー: 日付とタイトル、ニュースタイプとバッジをまとめるコンテナ 
             const headerContainer = document.createElement('div');
             headerContainer.classList.add('product-info-header');
             
@@ -257,7 +256,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             li.appendChild(headerContainer);
 
-            // ★★★ 2. Brandラベル ★★★
+            // Brandラベル
             // brandsが空でない場合にのみ、brandLabelsGroupを生成
             if (item.brands.length > 0 && !item.brands.includes('ALL')) {
                 const brandLabelsGroup = document.createElement('div');
@@ -279,7 +278,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 li.appendChild(brandLabelsGroup);
             }
 
-            // ★★★ 3. 対象車種 ★★★
+            // 対象車種
             // car_modelが存在し、かつ1つ以上の要素が含まれている場合にのみ表示
             if (item.title_data && item.title_data.car_model && item.title_data.car_model.length > 0) {
                 const carModelInfoDiv = document.createElement('div');
@@ -288,7 +287,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 li.appendChild(carModelInfoDiv);
             }
 
-            // ★★★ 4. 本文 ★★★
+            // 本文
             const bodyDiv = document.createElement('div');
             bodyDiv.classList.add('product-fulltext-body');
             if (item.body) {

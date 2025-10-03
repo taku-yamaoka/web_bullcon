@@ -136,6 +136,7 @@ a:hover {
 
     body {
         line-height: 1.6; /* 行の高さを調整して可読性を向上 */
+        padding-top: 0;
     }
 
     .section-title {
