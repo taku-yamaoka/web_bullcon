@@ -245,7 +245,7 @@ label {
 .result-table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 0.7em;
+    font-size: 1em;
     min-width: 1000px; /* テーブルが狭い画面で崩れないように最小幅を設定 */
 }
 

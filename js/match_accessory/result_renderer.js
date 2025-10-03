@@ -145,11 +145,11 @@ function generateTable(data, headerData) {
                 } else {
                     const priceExclTax = `<span style="font-size: 0.8em;">税別: ${(item[col.priceKeys.excl] || '').replace('\\', '￥')}</span>`;
                     const priceInclTax = `<span style="font-size: 0.8em;">税込: ${(item[col.priceKeys.incl] || '').replace('\\', '￥')}</span>`;
-                    const navCtrl = col.option && col.option.nav ? `<br><span style="font-size: 0.6em;">ナビ操作: ${(item[col.option.nav] || '-').replace('\\', '￥')}</span>` : '';
-                    const vehiclePos = col.option && col.option.vehicle_pos ? `<br><span style="font-size: 0.6em;">自車位置: ${(item[col.option.vehicle_pos] || '-').replace('\\', '￥')}</span>` : '';
-                    const excl_input = col.option && col.option.excl_input ? `<br><span style="font-size: 0.6em;">外部入力: ${(item[col.option.excl_input] || '-').replace('\\', '￥')}</span>` : '';
-                    const tv = col.option && col.option.tv ? `<br><span style="font-size: 0.6em;">デジタルテレビ: ${(item[col.option.tv] || '-').replace('\\', '￥')}</span>` : '';
-                    const dvd = col.option && col.option.dvd ? `<br><span style="font-size: 0.6em;">DVD視聴: ${(item[col.option.dvd] || '-').replace('\\', '￥')}</span>` : '';
+                    const navCtrl = col.option && col.option.nav ? `<br><span style="font-size: 0.8em;">ナビ操作: ${(item[col.option.nav] || '-').replace('\\', '￥')}</span>` : '';
+                    const vehiclePos = col.option && col.option.vehicle_pos ? `<br><span style="font-size: 0.8em;">自車位置: ${(item[col.option.vehicle_pos] || '-').replace('\\', '￥')}</span>` : '';
+                    const excl_input = col.option && col.option.excl_input ? `<br><span style="font-size: 0.8em;">外部入力: ${(item[col.option.excl_input] || '-').replace('\\', '￥')}</span>` : '';
+                    const tv = col.option && col.option.tv ? `<br><span style="font-size: 0.8em;">デジタルテレビ: ${(item[col.option.tv] || '-').replace('\\', '￥')}</span>` : '';
+                    const dvd = col.option && col.option.dvd ? `<br><span style="font-size: 0.8em;">DVD視聴: ${(item[col.option.dvd] || '-').replace('\\', '￥')}</span>` : '';
                     td.innerHTML = `<b>${item[col.key]}</b><br>${priceExclTax}<br>${priceInclTax}<br>${navCtrl}${vehiclePos}${excl_input}${tv}${dvd}`;
                 }
             } else if (col.key === 'notes') {
