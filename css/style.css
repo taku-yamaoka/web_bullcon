@@ -24,6 +24,16 @@ html, body, ul, p {
   padding: 0;
 }
 
+h1, h2, h3 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+}
+
+img {
+    height: 0;
+    width: 0;
+}
+
 body {
     padding-top: 150px; /* ヘッダー分下げる */
 }

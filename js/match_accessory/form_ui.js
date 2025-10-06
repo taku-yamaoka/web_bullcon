@@ -63,9 +63,6 @@ async function generateSpecificProductForm (formContainer, productInfo, state) {
     
     // OptionTypeが選択されている、または固定されている場合
     if (currentOptionType) {
-        // 選択されたオプションフローの情報を取得
-        const optionFlow = productInfo.optionFlows[selectedOptionType];
-        
         // --- ラベルの文言を決定 ---
         let directInputLabelText;
         if (selectedOptionType === 'maker') {
@@ -297,7 +294,7 @@ export function checkFieldsFilled(state, productInfo) {
     const processType = productInfo.optionFlows[currentOptionType]?.processType;
 
     if (processType === 'maker_process') {
-        // maker_process: 製品、メーカー、車種、年、月が必須
+        // maker_process: 製品、メーカー、車種が必須
         return selectedMaker && selectedModel;
     } else if (processType === 'dealer_process') {
         // dealer_process: 製品、メーカー、モニター年が必須

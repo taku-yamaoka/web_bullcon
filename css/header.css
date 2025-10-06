@@ -3,10 +3,10 @@
 ==================================*/
 :root {
   --header-padding-base: 20px;
-  --header-logo-height-base: 50px;
+  --header-logo-height-base: 25vw;
   --header-utility-gap-base: 30px;
   --header-social-gap-base: 30px;
-  --nav-item-font-size-base: 18px;
+  --nav-item-font-size-base: 1.4em;
   --nav-list-gap-base: 150px;
   --header-nav-margin-top-base: 50px;
 }
@@ -40,12 +40,18 @@
   justify-content: space-between;
   align-items: center;
   max-width: 100%;
-  padding: clamp(10px, 1.5vw, 15px) clamp(15px, 2vw, var(--header-padding-base)) 0;
+  padding: 0 clamp(15px, 2vw, var(--header-padding-base));
+}
+
+.header-logo{
+  height: auto;
+  width: clamp(10vw, 10vw, var(--header-logo-height-base));
+  margin-left: clamp(10px, 2vw, 20px);
 }
 
 .header-logo img {
-  height: clamp(30px, 3vw, var(--header-logo-height-base));
-  width: auto;
+  height: 100%;
+  width: 100%;
   margin-left: clamp(10px, 2vw, 20px);
 }
 
@@ -83,6 +89,7 @@
 
 .header-search-button img {
   height: clamp(10px, 2.5vw, 25px);
+  width: auto;
 }
 
 .social-links {
@@ -115,8 +122,8 @@
 
 .nav-item {
   position: relative;
-  padding: 0 clamp(10px, 2vw, 40px) clamp(10px, 2vw, 40px);
-  font-size: clamp(12px, 1.2vw, var(--nav-item-font-size-base));
+  padding: 0 clamp(5px, 15px, 40px) clamp(10px, 2vw, 40px);
+  font-size: clamp(0.8em, 1em, var(--nav-item-font-size-base));
   white-space: nowrap;
 }
 
@@ -377,9 +384,9 @@
   }
 
   .header-logo img {
-    height: 40px;
-    width: auto;
-    margin: 0;
+    height: auto;
+    width: 150px;
+    margin: 5px 0;
   }
 
   .social-links {

@@ -8,14 +8,20 @@ import { initializeAndGetMonitorNumber } from './match.js';
 let formState = {
     selectedProduct: null,
     selectedOptionType: null,
-    selectedInputType: null,         // NEW: 入力タイプ (select or text)
-    selectedDirectInputText: null,   // NEW: 直接入力されたテキスト
+    selectedInputType: null,        // NEW: 入力タイプ (select or text)
+    selectedDirectInputText: null,  // NEW: 直接入力されたテキスト
     selectedMaker: null,
     selectedModel: null,
     selectedYear: null,
     selectedMonth: null,
     selectedProductCode: null
 };
+
+// --- 適合情報関連の項目をリセットするためのヘルパー関数 (今回は未使用だが定義は残す) ---
+function resetModelOnward(state) {
+    state.selectedModel = null;
+}
+// --------------------------------------------------------
 
 /**
  * フォームの変更を処理し、UIの状態を更新する
@@ -33,65 +39,44 @@ function handleFormChange(event) {
     // OptionTypeの処理
     if (target.name === 'option-type') {
         formState.selectedOptionType = target.value;
-        // OptionTypeが変わったら、InputType以降の全てをリセット
-        formState.selectedInputType = null;
         formState.selectedDirectInputText = null;
-        formState.selectedMaker = null;
-        formState.selectedModel = null;
-        formState.selectedYear = null;
-        formState.selectedMonth = null;
-        formState.selectedProductCode = null;
     } 
-    // NEW: InputTypeの処理
+    // InputTypeの処理
     else if (target.name === 'input-type') {
         formState.selectedInputType = target.value;
-        // InputTypeが変わったら、下位の全てをリセット (直接入力テキストと選択肢)
-        formState.selectedDirectInputText = null;
-        formState.selectedMaker = null;
-        formState.selectedModel = null;
-        formState.selectedYear = null;
-        formState.selectedMonth = null;
-        formState.selectedProductCode = null;
     }
     // ドロップダウンの変更処理
     else {
         switch (target.id) {
             case 'product-select':
                 formState.selectedProduct = target.value || null;
-                // 製品が変わったら、OptionType以降をリセット
-                formState.selectedOptionType = null;
-                formState.selectedInputType = null;
-                formState.selectedDirectInputText = null;
-                formState.selectedMaker = null;
-                formState.selectedModel = null;
-                formState.selectedYear = null;
-                formState.selectedMonth = null;
-                formState.selectedProductCode = null;
                 
-                // 特定製品のOptionType固定処理 (form_ui.jsのロジックと連携)
+                // 1. Option Type と Input Type の状態維持
                 const productInfo = Object.values(PRODUCTS_DATA).find(p => p.name === formState.selectedProduct);
-                if (productInfo && (productInfo.name === 'リアモニター出力ユニット' || productInfo.name === 'カメラセレクター')) {
+                
+                // 特定製品のOptionType固定処理
+                const isFixedOptionTypeProduct = productInfo && (productInfo.name === 'リアモニター出力ユニット' || productInfo.name === 'カメラセレクター');
+                
+                if (isFixedOptionTypeProduct) {
+                    // 固定オプションの製品は強制上書き
                     formState.selectedOptionType = 'maker';
-                    formState.selectedInputType = 'select'; // 固定タイプはデフォルトで選択式に設定
+                    formState.selectedInputType = 'select';
                 }
+                
+                // 2. 適合情報（メーカー以下の項目）の選択状態を完全に維持します。
+                // すべてのリストが共通であるため、リセット処理は行いません。
+                // 以前のリセット処理: resetModelOnward(formState); は削除されました。
+                
                 break;
             case 'maker-select':
                 formState.selectedMaker = target.value || null;
-                formState.selectedModel = null;
-                formState.selectedYear = null;
-                formState.selectedMonth = null;
-                formState.selectedProductCode = null;
+                resetModelOnward(formState); 
                 break;
             case 'model-select':
                 formState.selectedModel = target.value || null;
-                formState.selectedYear = null;
-                formState.selectedMonth = null;
-                formState.selectedProductCode = null;
                 break;
             case 'year-select':
                 formState.selectedYear = target.value || null;
-                formState.selectedMonth = null;
-                formState.selectedProductCode = null;
                 if (formState.selectedYear === 'unknown') {
                     formState.selectedProductCode = ''; // 年式不明の場合はテキスト入力のため空文字列で初期化
                 }
@@ -269,7 +254,6 @@ export function setupEventListeners() {
 
             if (!productInfo || !checkFieldsFilled(formState, productInfo)) {
                 // ここはcheckFieldsFilledでチェックされているはずだが、念のため
-                // alert()は使えないためコンソールに出力
                 console.error('すべての必須項目を入力してください。');
                 return;
             }
