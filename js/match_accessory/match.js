@@ -12,6 +12,7 @@ let monitorNumberCache = null;
 
 // DOM読み込み後の初期処理
 document.addEventListener('DOMContentLoaded', async() => {
+    // 必要なデータをAPIから取得し、キャッシュに保存（初回アクセス時のみ実行）
     await initializeAndGetCarModel();
     await initializeAndGetMonitorNumber();
 
@@ -20,17 +21,18 @@ document.addEventListener('DOMContentLoaded', async() => {
     renderForm('form-container', {
         selectedProduct: null,
         selectedOptionType: null,
+        selectedInputType: null, 
         selectedMaker: null,
         selectedModel: null,
         selectedYear: null,
         selectedMonth: null,
-        selectedProductCode: null
+        selectedProductCode: null,
     });
 
-    // イベントリスナーを設定
+    // フォームの変更やクリックイベントのリスナーを設定
     setupEventListeners();
 
-    // テーブルのpdf出力処理 
+    // 適合結果テーブルのPDF出力ボタンのイベント処理
     const exportButton = document.getElementById('exportPdfButton');
     
     if (exportButton) {
@@ -41,6 +43,10 @@ document.addEventListener('DOMContentLoaded', async() => {
     }
 });
 
+/**
+ * 車種モデルデータをAPIから取得し、キャッシュする
+ * @returns {Promise<object>} 車種モデルデータ
+ */
 export const initializeAndGetCarModel = async() => {
     // キャッシュが存在する場合は、即座にキャッシュデータを返す
     if (carModelCache) {
@@ -56,6 +62,10 @@ export const initializeAndGetCarModel = async() => {
     return carModel;
 };
 
+/**
+ * モニター品番リストをAPIから取得し、キャッシュする
+ * @returns {Promise<object>} モニター品番リスト
+ */
 export const initializeAndGetMonitorNumber = async() => {
     // キャッシュが存在する場合は、即座にキャッシュデータを返す
     if (monitorNumberCache) {
@@ -63,10 +73,10 @@ export const initializeAndGetMonitorNumber = async() => {
     }
 
     // キャッシュが存在しない場合は、APIからデータを取得し、キャッシュする
-    const monitorNumList = await getCompatibilityData(MONITOR_NUMBER_LIST_API , "");
+    const monitorNumberList = await getCompatibilityData(MONITOR_NUMBER_LIST_API , "");
     
     // 取得したデータをキャッシュに保存
-    monitorNumberCache = monitorNumList;
+    monitorNumberCache = monitorNumberList;
     
-    return monitorNumList;
+    return monitorNumberList;
 };
