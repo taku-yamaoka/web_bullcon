@@ -29,11 +29,12 @@ try {
 $params = [
     'product' => $_GET['product'] ?? '',
     'option' => $_GET['option'] ?? '',
+    'directInput' => $_GET['directInput'] ?? '',
     'maker' => $_GET['maker'] ?? '',
     'model' => $_GET['model'] ?? '',
     'year' => $_GET['year'] ?? '',
     'month' => $_GET['month'] ?? '',
-    'productCode' => $_GET['productCode'] ?? '',
+    'productCode' => $_GET['productCode'] ?? ($_GET['directInput'] ?? ''),
 ];
 
 try {

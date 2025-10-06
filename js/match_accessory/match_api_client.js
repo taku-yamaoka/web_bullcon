@@ -6,6 +6,7 @@
  * @returns {Promise<object>} 適合品番データ。
  */
 export async function getCompatibilityData(apiUrl, params) {
+    console.log(params);
     let query;
     if (params) {
         const searchParams = new URLSearchParams(params).toString();

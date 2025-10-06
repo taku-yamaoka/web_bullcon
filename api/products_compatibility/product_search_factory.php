@@ -9,8 +9,9 @@ class ProductSearchFactory
         if ($option === 'maker') {
             return new YearFuncProductsSearch(
                 $product,
+                $params['directInput'],
                 $params['maker'], 
-                $params['model'], 
+                $params['model'],
                 $params['year'], 
                 $params['month']
             );

@@ -5,6 +5,7 @@ require_once './products_compatibility/product_search_interface.php';
 class YearFuncProductsSearch implements ProductSearchInterface
 {
     private $dbTableName;
+    private $directInput;
     private $maker;
     private $model;
     private $userDateTimestamp;
@@ -19,12 +20,13 @@ class YearFuncProductsSearch implements ProductSearchInterface
         'camera_selector' => 'camera_selector'
     ];
 
-    public function __construct($product, $maker, $model, $year, $month)
+    public function __construct($product, $directInput, $maker, $model, $year, $month)
     {
         if (!isset($this->productToTableMap[$product]) || $this->productToTableMap[$product] === '') {
             throw new \InvalidArgumentException("無効な製品名またはテーブルが未定義です: " . $product);
         }
         $this->dbTableName = $this->productToTableMap[$product];
+        $this->directInput = $directInput;
         $this->maker = $maker;
         $this->model = $model;
         $this->userDateTimestamp = strtotime("{$year}-{$month}-01");
@@ -32,12 +34,20 @@ class YearFuncProductsSearch implements ProductSearchInterface
 
     public function getSql(): string
     {
-        return "SELECT * FROM $this->dbTableName WHERE maker = ? AND car_model LIKE ?";
+        if($this->directInput) {
+            return "SELECT * FROM $this->dbTableName WHERE model_number LIKE ?"; // 型式直接入力の場合
+        } else {
+            return "SELECT * FROM $this->dbTableName WHERE maker = ? AND car_model LIKE ?";
+        }
     }
 
     public function getParams(): array
     {
-        return [$this->maker, "{$this->model}%"];
+        if($this->directInput) {
+            return ["%{$this->directInput}%"];
+        } else {
+            return [$this->maker, "{$this->model}%"];
+        }
     }
 
     public function postProcess(array $data): array
@@ -102,12 +112,21 @@ class ProductCodeFuncSearch implements ProductSearchInterface
 
     public function getSql(): string
     {
-        return "SELECT * FROM $this->dbTableName WHERE maker = ? AND monitor_number LIKE ?";
+        if ($this->maker) {
+            return "SELECT * FROM $this->dbTableName WHERE maker = ? AND monitor_number LIKE ?";
+        } else {
+            return "SELECT * FROM $this->dbTableName WHERE monitor_number LIKE ?";
+        }
     }
 
     public function getParams(): array
     {
-        return [$this->maker, "{$this->productCode}%"];
+        if ($this->maker) {
+            return [$this->maker, "{$this->productCode}%"];
+        } else {
+            return ["%{$this->productCode}%"];
+        }
+        
     }
 
     public function postProcess(array $data): array
