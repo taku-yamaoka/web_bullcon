@@ -33,7 +33,7 @@ document.addEventListener('DOMContentLoaded', async() => {
     setupEventListeners();
 
     // 適合結果テーブルのPDF出力ボタンのイベント処理
-    const exportButton = document.getElementById('exportPdfButton');
+    const exportButton = document.getElementById('export-pdf-button');
     
     if (exportButton) {
         exportButton.addEventListener('click', () => {

@@ -69,7 +69,7 @@ export async function exportTableToPdf(tableContainerId) {
     }
 
     const tableHeader = tableElement.querySelector('thead');
-    const exportButton = document.getElementById('exportPdfButton');
+    const exportButton = document.getElementById('export-pdf-button');
     
     let originalTableContainerStyles = null;
     let originalHeaderPosition = 'static';

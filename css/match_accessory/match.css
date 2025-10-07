@@ -226,7 +226,8 @@ label {
 }
 
 /* pdf保存ボタンのスタイル */
-#exportPdfButton {
+#export-pdf-button,
+#show-saved-items-button {
     align-self: flex-end;
     margin-top: 20px;
     margin-right: 20px; 
@@ -286,7 +287,7 @@ label {
     max-width: 100px; /*js側で固定しているので無効値 */
     /* テキストがこの最大幅を超えた場合に折り返すようにする */
     word-wrap: break-word;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 /* 検索結果が見つからない場合のスタイル */
@@ -349,10 +350,29 @@ label {
     word-wrap: break-word; /* 長いテキストの折り返し */
 }
 
+#close-saved-items-button {
+    padding: 5px 8px;
+}
 
 /* レスポンシブ対応 */
 @media screen and (max-width: 768px) {
     .annotation p{
+        font-size: 0.9em;
+    }
+
+    .result-table thead th {
+        font-size: 0.8em;
+    }
+    .result-table td {
+        font-size: 0.9em;
+    }
+
+    /* 保存リストのレイアウト */
+    .saved-items-table thead th {
+        font-size: 0.8em;
+    }
+
+    .saved-items-table td {
         font-size: 0.9em;
     }
 }

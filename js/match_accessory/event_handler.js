@@ -269,7 +269,7 @@ export function setupEventListeners() {
 function resetResultArea() {
     const messageContainer = document.getElementById('message-container');
     const tableContainer = document.getElementById('results-table-container');
-    const exportPdfButton = document.getElementById('exportPdfButton');
+    const exportPdfButton = document.getElementById('export-pdf-button');
     const notesContainer = document.getElementById('notes-list-container');
     const pdfLinkContainer = document.getElementById('pdf-link-container');
 
