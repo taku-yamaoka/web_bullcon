@@ -37,7 +37,10 @@ async function generateSpecificProductForm (formContainer, productInfo, state) {
 
     /* 1. オプションタイプ (maker / dealer) */
     let currentOptionType;
-    const isFixedOptionType = productInfo.name === 'リアモニター出力ユニット' || productInfo.name === 'カメラセレクター';
+    const isFixedOptionType = 
+        productInfo.name === 'リアモニター出力ユニット' || 
+        productInfo.name === 'カメラセレクター' ||
+        productInfo.name === 'ステアリングスイッチコントローラー';
     
     if (isFixedOptionType) {
         currentOptionType = 'maker';
@@ -103,7 +106,7 @@ async function generateSpecificProductForm (formContainer, productInfo, state) {
             directInputGroup.className = 'form-group';
             directInputGroup.innerHTML = `
                 <label for="direct-input-text">${directInputLabelText}</label>
-                <input type="text" id="direct-input-text" class="form-input" placeholder="${directInputLabelText}を入力してください" value="${selectedDirectInputText || ''}">
+                <input type="text" id="direct-input-text" class="form-input" placeholder="${directInputLabelText}を入力してください(部分一致)" value="${selectedDirectInputText || ''}">
             `;
             formContainer.appendChild(directInputGroup);
 

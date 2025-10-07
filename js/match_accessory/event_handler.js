@@ -8,8 +8,8 @@ import { initializeAndGetMonitorNumber } from './match.js';
 let formState = {
     selectedProduct: null,
     selectedOptionType: null,
-    selectedInputType: null,        // NEW: 入力タイプ (select or text)
-    selectedDirectInputText: null,  // NEW: 直接入力されたテキスト
+    selectedInputType: null,        // 入力タイプ (select or text)
+    selectedDirectInputText: null,  // 直接入力されたテキスト
     selectedMaker: null,
     selectedModel: null,
     selectedYear: null,
@@ -55,7 +55,9 @@ function handleFormChange(event) {
                 const productInfo = Object.values(PRODUCTS_DATA).find(p => p.name === formState.selectedProduct);
                 
                 // 特定製品のOptionType固定処理
-                const isFixedOptionTypeProduct = productInfo && (productInfo.name === 'リアモニター出力ユニット' || productInfo.name === 'カメラセレクター');
+                const isFixedOptionTypeProduct = productInfo && (productInfo.name === 'リアモニター出力ユニット' ||
+                    productInfo.name === 'カメラセレクター' ||
+                    productInfo.name === 'ステアリングスイッチコントローラー');
                 
                 if (isFixedOptionTypeProduct) {
                     // 固定オプションの製品は強制上書き
