@@ -12,8 +12,7 @@
 }
 
 .section-description {
-    /* clamp(最小値14px, 基準値3vw, 最大値16px) */
-    font-size: clamp(14px, 3vw, 16px); 
+    font-size: var(--font-size-body-text);
     text-align: center;
     color: var(--color-body-text-2);
     margin-bottom: 30px;
@@ -27,17 +26,18 @@
     background-color: #ffeaea;
     /* モバイル用にpaddingを統一 */
     padding: 10px; 
+    font-size: var(--font-size-caption);;
 }
 
 .guideline-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
+    font-size: var(--font-size-body-text);
 }
 
 .anotation-info {
-    /* clamp(最小値14px, 基準値3.5vw, 最大値16px) */
-    font-size: clamp(14px, 3.5vw, 16px); 
+    font-size: var(--font-size-body-text);
     line-height: 1.6;
     font-weight: bold;
     text-align: center;
@@ -48,8 +48,7 @@
     text-align: center;
     background-color: rgb(206, 233, 252);
     font-weight: bold;
-    /* clamp(最小値13px, 基準値3vw, 最大値15px) */
-    font-size: clamp(13px, 3vw, 15px); 
+    font-size: var(--font-size-body-text);
     padding: 8px 0; /* バーとして機能させるためのpadding */
 }
 

@@ -5,16 +5,8 @@
     max-width: 800px;
 }
 
-.page-title {
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--color-header-text);
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 .section-lead {
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
     line-height: 1.5;
     
     margin-bottom: 30px;
@@ -30,7 +22,7 @@
     background-color: #f9f9f9;
     margin-bottom: 20px;
     /* スクロールエリア内のテキストスタイルを設定 */
-    font-size: 13px; 
+    font-size: var(--font-size-caption);
     line-height: 1.5;
     color: var(--color-body-text-2);
 }
@@ -39,7 +31,7 @@
 
 /* 利用規約タイトル */
 #terms-scroll-area .terms-title {
-    font-size: 1.4em;
+    font-size: var(--font-size-h5);
     font-weight: 700;
     border-bottom: 2px solid #ccc;
     padding-bottom: 5px;
@@ -49,7 +41,7 @@
 
 /* 各条文の見出し */
 #terms-scroll-area h4.term-heading {
-    font-size: 1.1em;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     margin-top: 20px;
     margin-bottom: 5px;
@@ -117,13 +109,13 @@
 }
 
 .login-info p {
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
     line-height: 1.6;
     margin: 0;
 }
 
 .log-note {
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
     color: var(--color-body-text-2);
     margin-top: 10px;
 }
@@ -136,9 +128,9 @@
 #register-button,
 .button-login {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 10px 30px;
     margin: 0 10px;
-    font-size: 18px;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     color: #fff;
     text-decoration: none;
@@ -193,29 +185,6 @@
         transform: scale(1.0);
         box-shadow: none;
     }
-}
-
-
-/* --- フッターメニュー --- */
-.footer-menu {
-    margin-top: 20px;
-    border-top: 1px solid #ddd;
-    padding: 20px 0;
-}
-
-.footer-nav {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
-}
-
-.footer-nav a {
-    text-decoration: none;
-    color: var(--color-link-text);
-    font-size: 15px;
 }
 
 /* レスポンシブ対応 */

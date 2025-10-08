@@ -7,43 +7,6 @@
     margin: 0 auto;
 }
 
-/* タイトルと説明文の共通スタイル */
-.section-title {
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.section-title-en {
-    display: block;
-    text-align: center;
-    font-size: 14px;
-    font-weight: 500;
-    letter-spacing: 0.2em;
-    color: var(--color-body-text-2);
-    text-transform: uppercase;
-}
-
-.section-title-jp {
-    display: block;
-    text-align: center;
-    font-size: 32px;
-    font-weight: 700;
-    position: relative;
-    padding-bottom: 15px;
-    color: var(--color-body-text);
-}
-
-.section-title-jp::after {
-    content: '';
-    position: absolute;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 80px;
-    height: 2px;
-    background-color: #00479d;
-}
-
 /* ツリー構造の基本スタイル */
 .sitemap-tree,
 .sitemap-tree ul {
@@ -80,7 +43,7 @@
     top: 50%;
     transform: translateY(-50%);
     color: var(--color-link-text);
-    font-size: 1.2em;
+    font-size: var(--font-size-body-text);
 }
 
 

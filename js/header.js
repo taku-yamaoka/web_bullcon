@@ -91,8 +91,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 imageData.id = `image-${product.id}`;
                 imageData.innerHTML = `
                     <img src="${product.image_path}" alt="">
-                    <h4 class="product-title">${product.name}</h4>
-                    <p class="product-description">${product.short_description}</p>
+                    <p class="header-product-title">${product.name}</p>
+                    <p class="header-product-description">${product.short_description}</p>
                 `;
                 dataContainer.appendChild(imageData);
             });

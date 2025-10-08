@@ -10,11 +10,11 @@
 
 .annotation {
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
     background-color: #f7f7f7;
     border: 1px solid #ddd;
     border-left: 5px solid #0056b3;
-    font-size: 14px;
+    font-size: var(--font-size-caption);
     line-height: 1.6;
 }
 
@@ -34,13 +34,14 @@
     border-radius: 6px;
     background-color: #ffffff;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid var(--color-accent-3);
 }
 
 .category-summary {
     display: block;
     cursor: pointer;
     padding: 18px 25px;
-    font-size: 1em;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     color: #333;
     border-radius: 5px 5px 0 0;
@@ -54,7 +55,7 @@
     content: '▶';
     position: absolute;
     right: 25px; 
-    font-size: 0.8em;
+    font-size: var(--font-size-caption);
     top: 50%;
     transform: translateY(-50%);
     transition: transform 0.2s ease;
@@ -96,7 +97,7 @@
 table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px;
+    font-size: var(--font-size-caption);
     min-width: 1000px; 
     table-layout: fixed; 
     
@@ -224,20 +225,15 @@ td.bg-yellow {
 /* レスポンシブ対応 */
 @media screen and (max-width: 768px) {
     table {
-        font-size: 12px;
         min-width: 700px; 
     }
     th, td {
         padding: 8px;
     }
-    .annotation p{
-        font-size: 0.9em;
-    }
     .pdf-icon {
         width: 20px;
     }
     .category-summary {
-        font-size: 0.9em;
         padding: 15px 15px;
     }
 }

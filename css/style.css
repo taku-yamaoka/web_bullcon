@@ -2,10 +2,13 @@
   グローバルスタイル
 ==================================*/
 :root {
+    font-size: 100%;
+
     --color-background: #fff;
     --color-background-border: #e0e0e0;
     --color-accent: #333;
     --color-accent-2: #666;
+    --color-accent-3: #00479d;
     --color-overray: rgba(0, 0, 0, 0.5);
     --color-header-text: #000;
     --color-body-text: #333;
@@ -17,6 +20,13 @@
     --color-submit-button-hovar: #002d6b;
     --color-disabled-button: #ccc;
     --color-white-emphasis: #f0f0f0;
+
+    --font-size-h2: clamp(1.25rem, 1.0vw + 1rem, 2rem);
+    --font-size-h3: clamp(1.1rem, 0.8vw + 1rem, 1.5rem);
+    --font-size-h4: clamp(1.0rem, 0.4vw + 1rem, 1.2rem);
+    --font-size-h5: clamp(0.9rem, 0.2vw + 1rem, 1.1rem);
+    --font-size-body-text: clamp(0.875rem, 0.1vw + 0.8rem, 1rem);
+    --font-size-caption: clamp(0.8rem, 0.1vw + 0.7rem, 0.9rem);
 }
 
 html, body, ul, p {
@@ -76,16 +86,16 @@ a:hover {
 
 .section-title-en {
     display: block;
-    font-size: 16px;
+    font-size: var(--font-size-h5);
     font-weight: 500;
     letter-spacing: 0.2em;
-    color: var(--color-body-text-2);
+    color: var(--color-accent-3);
     text-transform: uppercase;
 }
 
 .section-title-jp {
     display: block;
-    font-size: 32px;
+    font-size: var(--font-size-h3);
     font-weight: 700;
     margin-top: 5px;
     position: relative;
@@ -112,11 +122,12 @@ a:hover {
 .button {
     display: inline-block;
     padding: 15px 40px; 
-    background-color: var(--color-accent);
+    background-color: var(--color-accent-3);
     color: #fff;
     border-radius: 50px;
     font-weight: 500;
-    border: 1px solid var(--color-accent);
+    font-size: var(--font-size-body-text);
+    border: 1px solid var(--color-accent-3);
     transition: all 0.3s ease;
     text-transform: uppercase;
     letter-spacing: 0.1em;
@@ -138,6 +149,9 @@ a:hover {
   Responsive Design (Mobile)
 ==================================*/
 @media (max-width: 768px) {
+    :root {
+        font-size: 87.5%;
+    }
     .container {
         margin-top: 140px;
         margin-bottom: 50px;
@@ -153,12 +167,7 @@ a:hover {
         margin-bottom: 30px; /* タイトルの下部の余白を小さく */
     }
 
-    .section-title-en {
-        font-size: 14px; /* 英字タイトルのフォントサイズを小さく */
-    }
-
     .section-title-jp {
-        font-size: 24px; /* 日本語タイトルのフォントサイズを小さく */
         margin-top: 3px;
     }
 
@@ -172,6 +181,5 @@ a:hover {
 
     .button {
         padding: 12px 30px; /* ボタンのパディングを小さく */
-        font-size: 14px; /* ボタンのフォントサイズを小さく */
     }
 }

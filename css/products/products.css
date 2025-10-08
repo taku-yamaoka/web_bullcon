@@ -21,7 +21,7 @@
 }
 
 .sidebar-title {
-    font-size: 1.3em;
+    font-size: var(--font-size-h4);
     font-weight: bold;
     color: var(--color-main-text);
     margin-bottom: 15px;
@@ -48,7 +48,7 @@
     border: none;
     padding: 10px 15px;
     border-radius: 4px;
-    font-size: 1em;
+    font-size: var(--font-size-body-text);
     font-weight: normal;
     transition: background-color 0.3s ease, color 0.3s ease;
     cursor: pointer;
@@ -112,13 +112,13 @@
 .product-title {
     margin: 5px 0;
     color: var(--color-body-text);
-    font-size: 1em;
+    font-size: var(--font-size-body-text);
 }
 
 .product-details {
     padding: 0;
     text-align: left;
-    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    font-size: var(--font-size-caption);
 }
 
 /*==================================
@@ -149,7 +149,7 @@
 }
 
 .mobile-menu-title {
-    font-size: 1.1em;
+    font-size: var(--font-size-body-text);
     margin: 0;
 }
 
@@ -157,7 +157,7 @@
     background: none;
     color: var(--color-body-text);
     border: none;
-    font-size: 2em;
+    font-size: var(--font-size-h2);
     cursor: pointer;
     line-height: 1;
 }
@@ -175,7 +175,7 @@
     width: 100%;
     text-align: left;
     padding: clamp(11px, 1vw, 15px) 20px;
-    font-size: clamp(0.9rem, 2vw, 1rem);
+    font-size: var(--font-size-body-text);
     cursor: pointer;
     transition: background-color 0.2s ease;
 }
@@ -231,7 +231,7 @@
         border: 1px solid #ddd;
         border-left: none;
         padding: 15px 15px 15px 10px;
-        font-size: 1.1em;
+        font-size: var(--font-size-body-text);
         font-weight: bold;
         cursor: pointer;
         border-radius: 0 4px 4px 0;
@@ -243,7 +243,7 @@
 
     .mobile-menu-toggle::after {
         content: '›';
-        font-size: 1.5em;
+        font-size: var(--font-size-h2);
         line-height: 1;
         transition: transform 0.3s ease;
     }

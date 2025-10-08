@@ -2,6 +2,8 @@
   グローバルスタイル
 ==================================*/
 :root {
+    font-size: 100%;
+
     --color-background: #fff;
     --color-background-border: #e0e0e0;
     --color-accent: #333;
@@ -15,8 +17,15 @@
     --color-link-text-hovar: #002d6b;
     --color-submit-button: #00479d;
     --color-submit-button-hovar: #002d6b;
-    --color-disabled-button: #cccccc;
+    --color-disabled-button: #ccc;
     --color-white-emphasis: #f0f0f0;
+
+    --font-size-h2: clamp(1.25rem, 1.0vw + 1rem, 2rem);
+    --font-size-h3: clamp(1.1rem, 0.8vw + 1rem, 1.5rem);
+    --font-size-h4: clamp(1.0rem, 0.4vw + 1rem, 1.2rem);
+    --font-size-h5: clamp(0.9rem, 0.2vw + 1rem, 1.1rem);
+    --font-size-body-text: clamp(0.875rem, 0.1vw + 0.8rem, 1rem);
+    --font-size-caption: clamp(0.8rem, 0.1vw + 0.7rem, 0.9rem);
 }
 
 html, body {
@@ -98,7 +107,7 @@ a:hover {
 }
 
 .product-sidebar-container h3 {
-    font-size: 1.2em;
+    font-size: var(--font-size-h4);
     font-weight: bold;
     color: var(--color-body-text);
     border-bottom: 2px solid #ccc;
@@ -136,7 +145,7 @@ a:hover {
 
 /* カテゴリ名のスタイル */
 .category-header strong {
-    font-size: 1em;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     color: var(--color-body-text);
     flex-grow: 1;
@@ -144,7 +153,7 @@ a:hover {
 
 /* 製品名のスタイル */
 .products-sublist .product-item-header {
-    font-size: 0.9em;
+    font-size: var(--font-size-body-text);
     color: var(--color-body-text);
     
     padding-left: 20px; 
@@ -163,7 +172,7 @@ a:hover {
 
 /* サブページのリンクスタイル */
 .sub-pages-list a {
-    font-size: 0.8em;
+    font-size: var(--font-size-caption);
     font-weight: normal;
     color: var(--color-body-text-2);
     padding: 4px 10px 4px 30px;
@@ -209,6 +218,10 @@ a:hover {
   モバイル対応
 ==================================*/
 @media (max-width: 768px) {
+    :root {
+        font-size: 87.5%;
+    }
+
     .container {
         padding-left: 15px;
         padding-right: 15px;

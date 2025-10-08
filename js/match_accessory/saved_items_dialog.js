@@ -37,7 +37,6 @@ function renderSavedItemsList() {
         // 製品ごとのコンテナを作成
         const productSection = document.createElement('div');
         productSection.className = 'product-section';
-        productSection.style.marginBottom = '20px';
 
         // 製品名タイトル
         const title = document.createElement('h4');
@@ -46,9 +45,7 @@ function renderSavedItemsList() {
         
         // 製品ごとのテーブルを作成
         const table = document.createElement('table');
-        table.className = 'saved-items-table'; // スタイル付けのためにクラスを追加
-        table.style.width = '100%';
-        table.style.borderCollapse = 'collapse';
+        table.className = 'saved-items-table'; 
 
         // --- テーブルヘッダーの生成 ---
         const thead = document.createElement('thead');
@@ -57,9 +54,7 @@ function renderSavedItemsList() {
             const th = document.createElement('th');
             th.textContent = header.label;
             th.setAttribute('colspan', header.subHeaders.length);
-            th.style.border = '1px solid #ddd';
-            th.style.padding = '8px';
-            th.style.textAlign = 'left';
+            th.className = 'saved-th saved-th-group';
             headerRow.appendChild(th);
         });
         thead.appendChild(headerRow);
@@ -74,17 +69,12 @@ function renderSavedItemsList() {
             } else {
                 thSub.textContent = col.label;
             }
-            thSub.style.border = '1px solid #ddd';
-            thSub.style.padding = '8px';
-            thSub.style.textAlign = 'left';
-            thSub.width = '80px';
+            thSub.className = 'saved-th saved-th-sub';
             subHeaderRow.appendChild(thSub);
         });
         const actionTh = document.createElement('th');
         actionTh.textContent = '操作';
-        actionTh.style.border = '1px solid #ddd';
-        actionTh.style.padding = '8px';
-        actionTh.width = '15px';
+        actionTh.className = 'saved-th saved-th-action';
         subHeaderRow.appendChild(actionTh);
         thead.appendChild(subHeaderRow);
         table.appendChild(thead);
@@ -94,8 +84,10 @@ function renderSavedItemsList() {
         itemValues.forEach(item => {
             const rowId = getRowUniqueId(item);
             const row = document.createElement('tr');
+            row.className = 'saved-tr'; 
             allColumns.forEach(col => {
                 const td = document.createElement('td');
+                td.className = 'saved-td'; 
                 if (col.priceKeys) {
                     // 価格とオプション列
                     td.innerHTML = createPriceCellHtml(item, col);
@@ -106,14 +98,11 @@ function renderSavedItemsList() {
                     // 標準データ列
                     td.innerHTML = (item[col.key] || '').replace(/\n/g, '<br>');
                 }
-                td.style.border = '1px solid #ddd';
-                td.style.padding = '8px';
                 row.appendChild(td);
             });
-            // 削除ボタン用のセル
+            
             const actionTd = document.createElement('td');
-            actionTd.style.border = '1px solid #ddd';
-            actionTd.style.padding = '8px';
+            actionTd.className = 'saved-td saved-td-action'; 
             const removeButton = document.createElement('button');
             removeButton.textContent = '削除';
             removeButton.className = 'remove-saved-item-button';

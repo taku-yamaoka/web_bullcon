@@ -15,7 +15,7 @@
     cursor: pointer;
     border: none;
     background-color: transparent;
-    font-size: 16px;
+    font-size: var(--font-size-body-text);
     color: var(--color-body-text-2);
     transition: color 0.3s;
     text-align: center;
@@ -63,7 +63,7 @@
     padding: 12px 15px;
     border: 1px solid var(--color-background-border);
     border-radius: 5px;
-    font-size: 1em;
+    font-size: var(--font-size-body-text);
     max-width: 500px;
     transition: border-color 0.3s ease;
 }
@@ -80,7 +80,7 @@
     color: var(--color-body-text-dark);
     border: none;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: var(--font-size-body-text);
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease;
 }
@@ -129,7 +129,7 @@
 
 .results-title {
     color: var(--color-body-text-2);
-    font-size: 1.8em;
+    font-size: var(--font-size-h5);
     margin-bottom: 25px;
     padding-bottom: 10px;
     border-bottom: 2px solid #eee;
@@ -169,7 +169,7 @@
 }
 
 .result-title {
-    font-size: 1.2em;
+    font-size: var(--font-size-h5);
     font-weight: 600;
     margin: 0;
     display: flex;
@@ -178,13 +178,13 @@
 }
 
 .result-description {
-    font-size: 0.9em;
+    font-size: var(--font-size-body-text);
     color: #777;
     margin-top: 5px;
 }
 
 .result-url {
-    font-size: 0.8em;
+    font-size: var(--font-size-caption);
     color: var(--color-body-text-2);
     margin-top: 5px;
     word-break: break-all;
@@ -192,16 +192,21 @@
 
 /* product名を少し小さく */
 .result-product-name {
-    font-size: 0.8em;
+    font-size: var(--font-size-caption);
     color: var(--color-body-text-2);
     margin-top: 5px;
+}
+
+.result-title img{
+    height: 20px;
+    width: auto;
 }
 
 /* 検索結果の概要とページネーションのスタイル */
 .results-summary {
     text-align: right;
     margin: 30px 0 10px;
-    font-size: 0.9em;
+    font-size: var(--font-size-caption);
     color: var(--color-body-text-2);
     font-weight: 500;
 }
@@ -221,7 +226,7 @@
     color: white;
     border: none;
     border-radius: 5px;
-    font-size: 1em;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
@@ -249,16 +254,11 @@
 /* レスポンシブ対応 */
 @media (max-width: 768px) {
     .result-title-h3 {
-        font-size: 1em;
         font-weight: 400;
         margin: 0;
         display: flex;
         align-items: center;
         gap: 10px;
-    }
-
-    .no-results {
-        font-size: 0.9em;
     }
 
     .search-form {
@@ -274,19 +274,10 @@
 
     .search-button {
         width: 100%;
-        font-size: 1rem;
-    }
-
-    .result-title{
-        font-size: 0.9em;
     }
 
     .result-title img{
         height: 20px;
         width: auto;
-    }
-
-    .result-url{
-        font-size: 0.6em;
     }
 }

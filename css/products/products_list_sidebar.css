@@ -35,7 +35,7 @@ main {
 }
 
 .product-sidebar-container h3 {
-    font-size: 1.2em;
+    font-size: var(--font-size-h4);
     font-weight: bold;
     color: var(--color-body-text);
     border-bottom: 2px solid #ccc;
@@ -73,7 +73,7 @@ main {
 
 /* カテゴリ名のスタイル */
 .category-header strong {
-    font-size: 1em;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     color: var(--color-body-text);
     flex-grow: 1;
@@ -81,7 +81,7 @@ main {
 
 /* 製品名のスタイル */
 .products-sublist .product-item-header {
-    font-size: 0.9em;
+    font-size: var(--font-size-body-text);
 }
 
 .products-sublist .product-item-header a {
@@ -97,7 +97,7 @@ main {
 
 /* サブページのリンクスタイル */
 .sub-pages-list a {
-    font-size: 0.8em;
+    font-size: var(--font-size-body-text);
     font-weight: normal;
     padding: 4px 10px;
     color: var(--color-body-text-2);
