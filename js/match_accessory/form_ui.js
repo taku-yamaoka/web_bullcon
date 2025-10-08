@@ -40,7 +40,8 @@ async function generateSpecificProductForm (formContainer, productInfo, state) {
     const isFixedOptionType = 
         productInfo.name === 'リアモニター出力ユニット' || 
         productInfo.name === 'カメラセレクター' ||
-        productInfo.name === 'ステアリングスイッチコントローラー';
+        productInfo.name === 'ステアリングスイッチコントローラー' ||
+        productInfo.name === 'DVD/CDプレイヤー';
     
     if (isFixedOptionType) {
         currentOptionType = 'maker';

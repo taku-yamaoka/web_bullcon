@@ -55,9 +55,11 @@ function handleFormChange(event) {
                 const productInfo = Object.values(PRODUCTS_DATA).find(p => p.name === formState.selectedProduct);
                 
                 // 特定製品のOptionType固定処理
-                const isFixedOptionTypeProduct = productInfo && (productInfo.name === 'リアモニター出力ユニット' ||
+                const isFixedOptionTypeProduct = productInfo && (
+                    productInfo.name === 'リアモニター出力ユニット' ||
                     productInfo.name === 'カメラセレクター' ||
-                    productInfo.name === 'ステアリングスイッチコントローラー');
+                    productInfo.name === 'ステアリングスイッチコントローラー' ||
+                    productInfo.name === 'DVD/CDプレイヤー');
                 
                 if (isFixedOptionTypeProduct) {
                     // 固定オプションの製品は強制上書き

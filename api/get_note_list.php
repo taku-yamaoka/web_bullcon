@@ -15,7 +15,8 @@ $tableNameList  = [
     'notes_dvd_player',
     'notes_camera_selector',
     'notes_back_camera',
-    'notes_steering_switch_controller'
+    'notes_steering_switch_controller',
+    'notes_dvd_player'
 ];
 
 

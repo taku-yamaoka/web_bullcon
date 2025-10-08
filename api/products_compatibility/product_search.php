@@ -18,7 +18,8 @@ class YearFuncProductsSearch implements ProductSearchInterface
         'magicone_rm_ha' => 'magicone_rm_ha_maker',
         'magicone_vtr_hdmi' => 'magicone_vtr_hdmi_maker',
         'camera_selector' => 'camera_selector',
-        'steering_swt_ctrl' => 'steering_switch_controller'
+        'steering_swt_ctrl' => 'steering_switch_controller',
+        'dvd_cd_player' => 'dvd_cd_player',
     ];
 
     public function __construct($product, $directInput, $maker, $model, $year, $month)

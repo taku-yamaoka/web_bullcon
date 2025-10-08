@@ -106,7 +106,8 @@ const initializeAndGetMapNotes = async() => {
         'magicone_rm_ha': noteList.notes_rearmonitor_vtr_hdmi || [],
         'magicone_vtr_hdmi': noteList.notes_rearmonitor_vtr_hdmi || [],
         'camera_selector': noteList.notes_camera_selector || [],
-        'steering_swt_ctrl': noteList.notes_steering_switch_controller || []
+        'steering_swt_ctrl': noteList.notes_steering_switch_controller || [],
+        'dvd_cd_player': noteList.notes_dvd_player || []
     };
     
     // 取得したデータをキャッシュに保存

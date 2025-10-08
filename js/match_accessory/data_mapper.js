@@ -498,6 +498,45 @@ export const PRODUCTS_DATA = {
                 ]
             },
         }
+    },
+    'dvd_cd_player': {
+        name: 'DVD/CDプレイヤー',
+        productKey: 'dvd_cd_player',
+        optionFlows: {
+            'maker': {
+                processType: 'maker_process',
+                pdf_paths: {
+                    'トヨタ': '../../pdf/products/AV_ACCESSORY/cdv01-toyota.pdf',
+                    'レクサス': '../../pdf/products/AV_ACCESSORY/cdv01-lexus.pdf',
+                    'ニッサン': '',
+                    'ホンダ': '',
+                    'マツダ': '',
+                    'スバル': '',
+                    'スズキ': '',
+                    'ダイハツ': '',
+                    'ミツビシ': '',
+                    'イスズ': ''
+                },
+                header: [
+                    { label: '車両情報', subHeaders: [
+                        { key: 'car_model', label: '車名' },
+                        { key: 'print_date', label: '年式' },
+                        { key: 'model_number', label: '型式' },
+                        { key: 'specification', label: '仕様' },
+                    ]},
+                    { label: 'DVD/CDプレイヤー', subHeaders: [
+                        { key: 'product_number', label: '品番',
+                            priceKeys: { excl: 'price_excl_tax', incl: 'price_incl_tax' },
+                            option: { cd: 'cd', dvd: 'dvd', rear: 'リアモニター表示' }
+                        },
+                        { key: 'usb', label: '接続先車両USBタイプ'}
+                    ]},
+                    { label: '注意事項', subHeaders: [
+                        { key: 'notes', label: '備考' }
+                    ]}
+                ]
+            },
+        }
     }
 };
 

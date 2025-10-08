@@ -293,10 +293,14 @@ export function createPriceCellHtml(item, column) {
         `<br><span style="font-size: 0.9em;">外部入力: ${(item[column.option.excl_input] || '-').replace('\\', '￥')}</span>` : '';
     const tv = column.option?.tv ? 
         `<br><span style="font-size: 0.9em;">デジタルテレビ: ${(item[column.option.tv] || '-').replace('\\', '￥')}</span>` : '';
+    const cd = column.option?.cd ? 
+        `<br><span style="font-size: 0.9em;">CD再生: ${(item[column.option.cd] || '-').replace('\\', '￥')}</span>` : '';
     const dvd = column.option?.dvd ? 
         `<br><span style="font-size: 0.9em;">DVD視聴: ${(item[column.option.dvd] || '-').replace('\\', '￥')}</span>` : '';
+    const rearDisplay = column.option?.rear ? 
+        `<br><span style="font-size: 0.9em;">リアモニター表示: ${(item[column.option.rear] || '-').replace('\\', '￥')}</span>` : '';
 
-    return `<b>${value}</b><br>${priceExclTax}<br>${priceInclTax}${navCtrl}${vehiclePos}${exclInput}${tv}${dvd}`;
+    return `<b>${value}</b><br>${priceExclTax}<br>${priceInclTax}${navCtrl}${vehiclePos}${exclInput}${tv}${cd}${dvd}${rearDisplay}`;
 }
 
 /**
