@@ -1,5 +1,5 @@
 // メーカー名をキーとしてリスト化
-const manufacturerKeys = ["toyota", "lexus", "nissan", "honda", "mitsubishi", "subaru", "suzuki", "daihatsu", "mazda"];
+const manufacturerKeys = ["toyota", "lexus", "nissan", "honda", "mitsubishi", "subaru", "suzuki", "daihatsu", "mazda", "isuzu"];
 const pdfListContainer = document.getElementById('pdf-list-container');
 const loadingMessage = document.getElementById('loading-message');
 
@@ -127,6 +127,7 @@ async function renderCategoryTables(data) {
                 <th>スズキ</th>
                 <th>ダイハツ</th>
                 <th>マツダ</th>
+                <th>イスズ</th>
             </tr>
         `;
         table.appendChild(thead);
@@ -170,7 +171,7 @@ async function renderCategoryTables(data) {
                 // 適合情報セル
                 if (rowData.links.note) {
                     const tdNote = document.createElement('td');
-                    tdNote.setAttribute('colspan', 9); // メーカー9列分を結合
+                    tdNote.setAttribute('colspan', 10); // メーカー9列分を結合
                     tdNote.classList.add('bg-yellow');
                     const a = document.createElement('a');
                     a.href = rowData.links.link;

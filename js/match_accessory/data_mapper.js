@@ -15,7 +15,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '../../pdf/products/TVing/TVing_New_m_subaru.pdf',
                     'スズキ': '../../pdf/products/TVing/TVing_New_m_suzuki.pdf',
                     'ダイハツ': '../../pdf/products/TVing/TVing_New_m_daihatsu.pdf',
-                    'ミツビシ': '../../pdf/products/TVing/TVing_New_m_mitsubishi.pdf'
+                    'ミツビシ': '../../pdf/products/TVing/TVing_New_m_mitsubishi.pdf',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -64,7 +65,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '../../pdf/products/TVing/TVing_New_d_subaru.pdf',
                     'スズキ': '../../pdf/products/TVing/TVing_New_d_suzuki.pdf',
                     'ダイハツ': '../../pdf/products/TVing/TVing_New_d_daihatsu.pdf',
-                    'ミツビシ': '../../pdf/products/TVing/TVing_New_d_mitsubishi.pdf'
+                    'ミツビシ': '../../pdf/products/TVing/TVing_New_d_mitsubishi.pdf',
+                    'イスズ': ''
                 },
                 header: [
                     { label: 'モニター情報', subHeaders: [
@@ -114,7 +116,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '../../pdf/products/MAGICONE/magicone_c_m_subaru.pdf',
                     'スズキ': '../../pdf/products/MAGICONE/magicone_c_m_suzuki.pdf',
                     'ダイハツ': '../../pdf/products/MAGICONE/magicone_c_m_daihatsu.pdf',
-                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_c_m_mitsubishi.pdf'
+                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_c_m_mitsubishi.pdf',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -147,7 +150,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '',
                     'スズキ': '../../pdf/products/MAGICONE/magicone_c_d_suzuki.pdf',
                     'ダイハツ': '../../pdf/products/MAGICONE/magicone_c_d_daihatsu.pdf',
-                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_c_d_mitsubishi.pdf'
+                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_c_d_mitsubishi.pdf',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -182,7 +186,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '../../pdf/products/MAGICONE/magicone_c_m_subaru.pdf',
                     'スズキ': '../../pdf/products/MAGICONE/magicone_c_m_suzuki.pdf',
                     'ダイハツ': '../../pdf/products/MAGICONE/magicone_c_m_daihatsu.pdf',
-                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_c_m_mitsubishi.pdf'
+                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_c_m_mitsubishi.pdf',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -212,7 +217,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '',
                     'スズキ': '../../pdf/products/MAGICONE/magicone_c_d_suzuki.pdf',
                     'ダイハツ': '../../pdf/products/MAGICONE/magicone_c_d_daihatsu.pdf',
-                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_c_d_mitsubishi.pdf'
+                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_c_d_mitsubishi.pdf',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -247,7 +253,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '',
                     'スズキ': '',
                     'ダイハツ': '',
-                    'ミツビシ': ''
+                    'ミツビシ': '',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -286,7 +293,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '',
                     'スズキ': '',
                     'ダイハツ': '',
-                    'ミツビシ': ''
+                    'ミツビシ': '',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -317,7 +325,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '',
                     'スズキ': '',
                     'ダイハツ': '../../pdf/products/MAGICONE/magicone_r_d_daihatsu.pdf',
-                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_r_d_mitsubishi.pdf'
+                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_r_d_mitsubishi.pdf',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -353,7 +362,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '',
                     'スズキ': '',
                     'ダイハツ': '',
-                    'ミツビシ': ''
+                    'ミツビシ': '',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -394,7 +404,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '',
                     'スズキ': '',
                     'ダイハツ': '../../pdf/products/MAGICONE/magicone_r_d_daihatsu.pdf',
-                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_r_d_mitsubishi.pdf'
+                    'ミツビシ': '../../pdf/products/MAGICONE/magicone_r_d_mitsubishi.pdf',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -429,7 +440,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '',
                     'スズキ': '',
                     'ダイハツ': '',
-                    'ミツビシ': ''
+                    'ミツビシ': '',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [
@@ -465,7 +477,8 @@ export const PRODUCTS_DATA = {
                     'スバル': '',
                     'スズキ': '',
                     'ダイハツ': '',
-                    'ミツビシ': ''
+                    'ミツビシ': '',
+                    'イスズ': ''
                 },
                 header: [
                     { label: '車両情報', subHeaders: [

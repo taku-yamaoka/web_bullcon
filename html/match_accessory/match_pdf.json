@@ -19,7 +19,8 @@
           "subaru": { "pdf": "../../pdf/products/TVing/TVing_New_m_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/TVing/TVing_New_m_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/TVing/TVing_New_m_daihatsu.pdf" },
-          "mazda": { "pdf": "../../pdf/products/TVing/TVing_New_m_mazda.pdf" }
+          "mazda": { "pdf": "../../pdf/products/TVing/TVing_New_m_mazda.pdf" },
+          "isuzu": { "pdf": "-" }
         }
       },
       {
@@ -34,7 +35,8 @@
           "subaru": { "pdf": "../../pdf/products/TVing/TVing_New_d_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/TVing/TVing_New_d_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/TVing/TVing_New_d_daihatsu.pdf" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       },  
       {
@@ -49,7 +51,8 @@
           "subaru": { "pdf": "../../pdf/products/TVing/TVing_Old_m_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/TVing/TVing_Old_m_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/TVing/TVing_Old_m_daihatsu.pdf" },
-          "mazda": { "pdf": "../../pdf/products/TVing/TVing_Old_m_mazda.pdf" }
+          "mazda": { "pdf": "../../pdf/products/TVing/TVing_Old_m_mazda.pdf" },
+          "isuzu": { "pdf": "-" }
         }
       },
       {
@@ -64,7 +67,8 @@
           "subaru": { "pdf": "../../pdf/products/TVing/TVing_Old_d_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/TVing/TVing_Old_d_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/TVing/TVing_Old_d_daihatsu.pdf" },
-          "mazda": { "pdf": "../../pdf/products/TVing/TVing_Old_d_mazda.pdf" }
+          "mazda": { "pdf": "../../pdf/products/TVing/TVing_Old_d_mazda.pdf" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -89,7 +93,8 @@
           "subaru": { "pdf": "../../pdf/products/MAGICONE/magicone_c_m_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/MAGICONE/magicone_c_m_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/MAGICONE/magicone_c_m_daihatsu.pdf" },
-          "mazda": { "pdf": "../../pdf/products/MAGICONE/magicone_c_m_mazda.pdf" }
+          "mazda": { "pdf": "../../pdf/products/MAGICONE/magicone_c_m_mazda.pdf" },
+          "isuzu": { "pdf": "-" }
         }
       },
       {
@@ -104,7 +109,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       },
       {
@@ -119,7 +125,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "../../pdf/products/MAGICONE/magicone_c_d_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/MAGICONE/magicone_c_d_daihatsu.pdf" },
-          "mazda": { "pdf": "../../pdf/products/MAGICONE/magicone_c_d_mazda.pdf" }
+          "mazda": { "pdf": "../../pdf/products/MAGICONE/magicone_c_d_mazda.pdf" },
+          "isuzu": { "pdf": "-" }
         }
       },
       {
@@ -134,7 +141,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "../../pdf/products/MAGICONE/magicone_r_d_daihatsu.pdf" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -159,7 +167,8 @@
           "subaru": { "pdf": "../../pdf/products/LED_BULB/bulb_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/LED_BULB/bulb_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/LED_BULB/bulb_daihatsu.pdf"},
-          "mazda": { "pdf": "../../pdf/products/LED_BULB/bulb_mazda.pdf" }
+          "mazda": { "pdf": "../../pdf/products/LED_BULB/bulb_mazda.pdf" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -198,7 +207,8 @@
           "subaru": { "pdf": "動作未確認" },
           "suzuki": { "pdf": "動作未確認" },
           "daihatsu": { "pdf": "動作未確認" },
-          "mazda": { "pdf": "動作未確認" }
+          "mazda": { "pdf": "動作未確認" },
+          "isuzu": { "pdf": "動作未確認" }
         }
       }
     ]
@@ -219,7 +229,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -240,7 +251,8 @@
           "subaru": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_daihatsu.pdf" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -265,7 +277,8 @@
           "subaru": { "pdf": "../../pdf/products/CAR_ACCESSORY/light_crew_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/CAR_ACCESSORY/light_crew_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/CAR_ACCESSORY/light_crew_daihatsu.pdf"},
-          "mazda": { "pdf": "../../pdf/products/CAR_ACCESSORY/light_crew_mazda.pdf" }
+          "mazda": { "pdf": "../../pdf/products/CAR_ACCESSORY/light_crew_mazda.pdf" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -286,7 +299,8 @@
           "subaru": { "pdf": "../../pdf/products/CAR_ACCESSORY/controller_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/CAR_ACCESSORY/controller_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/CAR_ACCESSORY/controller_daihatsu.pdf" },
-          "mazda": { "pdf": "../../pdf/products/CAR_ACCESSORY/controller_mazda.pdf" }
+          "mazda": { "pdf": "../../pdf/products/CAR_ACCESSORY/controller_mazda.pdf" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -307,7 +321,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -328,7 +343,8 @@
           "subaru": { "pdf": "../../pdf/products/CAR_ACCESSORY/fis_fix_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/CAR_ACCESSORY/fis_fix_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/CAR_ACCESSORY/fis_fix_daihatsu.pdf" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -349,7 +365,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -370,7 +387,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -391,7 +409,8 @@
           "subaru": { "pdf": "../../pdf/products/CAR_ACCESSORY/shasoku_dousa_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/CAR_ACCESSORY/shasoku_dousa_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/CAR_ACCESSORY/shasoku_dousa_daihatsu.pdf" },
-          "mazda": { "pdf": "../../pdf/products/CAR_ACCESSORY/shasoku_dousa_mazda.pdf" }
+          "mazda": { "pdf": "../../pdf/products/CAR_ACCESSORY/shasoku_dousa_mazda.pdf" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -412,7 +431,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "../../pdf/products/CAR_ACCESSORY/answer_wh.pdf" }
+          "mazda": { "pdf": "../../pdf/products/CAR_ACCESSORY/answer_wh.pdf" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -451,7 +471,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -476,7 +497,8 @@
           "subaru": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_daihatsu.pdf" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -511,7 +533,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       },
       {
@@ -526,7 +549,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "../../pdf/products/MAGICONE/magicone_r_d_daihatsu.pdf" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -547,7 +571,8 @@
           "subaru": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_subaru.pdf" },
           "suzuki": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_suzuki.pdf" },
           "daihatsu": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_daihatsu.pdf" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
@@ -572,7 +597,8 @@
           "subaru": { "pdf": "-" },
           "suzuki": { "pdf": "-" },
           "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "-" }
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
