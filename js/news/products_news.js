@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function fetchProductsData() {
         const jsonFiles = [
-            './products_news/car_accessory_news_data.json',
-            './products_news/av_accessory_news_data.json'
+            './products_news/av_accessory_news_data.json',
+            './products_news/car_accessory_news_data.json'
         ];
 
         Promise.all(jsonFiles.map(file =>

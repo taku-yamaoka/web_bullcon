@@ -80,10 +80,15 @@
 /* SNSアイコンのスタイル */
 .footer-sns a {
     background-color: var(--color-background);
-    padding: 18px 2px 0 3px;
+    padding: 15px 2px 0 3px;
     margin-left: 15px;
     border-radius: 10%;
     transition: color 0.3s ease;
+}
+
+.footer-sns img {
+    height: 25px;
+    width: auto;
 }
 
 /*==================================
@@ -145,7 +150,7 @@
     /* SNSアイコンのスタイル */
     .footer-sns a {
         background-color: var(--color-background);
-        padding: 10px 3px 0 3px;
+        padding: 15px 3px 0 3px;
         margin-left: 15px;
         border-radius: 10%;
         transition: color 0.3s ease;

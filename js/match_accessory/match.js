@@ -6,15 +6,18 @@ import { getCompatibilityData } from './match_api_client.js';
 
 const CAR_MODEL_API = '../../api/get_car_model.php';
 const MONITOR_NUMBER_LIST_API = '../../api/get_monitor_list.php';
+const NOTE_LIST_API = '../../api/get_note_list.php';
 
 let carModelCache = null;
 let monitorNumberCache = null;
+let noteCash = null;
 
 // DOM読み込み後の初期処理
 document.addEventListener('DOMContentLoaded', async() => {
     // 必要なデータをAPIから取得し、キャッシュに保存（初回アクセス時のみ実行）
     await initializeAndGetCarModel();
     await initializeAndGetMonitorNumber();
+    await initializeAndGetMapNotes();
 
     // フォームを初期描画
     // この時点ではformStateが空なので、製品選択のみが表示されます
@@ -47,7 +50,7 @@ document.addEventListener('DOMContentLoaded', async() => {
  * 車種モデルデータをAPIから取得し、キャッシュする
  * @returns {Promise<object>} 車種モデルデータ
  */
-export const initializeAndGetCarModel = async() => {
+const initializeAndGetCarModel = async() => {
     // キャッシュが存在する場合は、即座にキャッシュデータを返す
     if (carModelCache) {
         return carModelCache;
@@ -66,7 +69,7 @@ export const initializeAndGetCarModel = async() => {
  * モニター品番リストをAPIから取得し、キャッシュする
  * @returns {Promise<object>} モニター品番リスト
  */
-export const initializeAndGetMonitorNumber = async() => {
+const initializeAndGetMonitorNumber = async() => {
     // キャッシュが存在する場合は、即座にキャッシュデータを返す
     if (monitorNumberCache) {
         return monitorNumberCache;
@@ -79,4 +82,41 @@ export const initializeAndGetMonitorNumber = async() => {
     monitorNumberCache = monitorNumberList;
     
     return monitorNumberList;
+};
+
+/**
+ * 注意事項リストをAPIから取得し、キャッシュする
+ * @returns {Promise<object>} 注意事項リスト
+ */
+const initializeAndGetMapNotes = async() => {
+    // キャッシュが存在する場合は、即座にキャッシュデータを返す
+    if (noteCash) {
+        return noteCash;
+    }
+
+    // キャッシュが存在しない場合は、APIからデータを取得し、キャッシュする
+    const noteList = await getCompatibilityData(NOTE_LIST_API , "");
+
+    // 製品名と注意事項マップの対応
+    const notesMap = {
+        'televing': noteList.notes_tving || [],
+        'magicone_bk_un': noteList.notes_back_camera || [],
+        'magicone_bk_ha': noteList.notes_back_camera || [],
+        'magicone_rm_un': noteList.notes_rearmonitor_vtr_hdmi || [],
+        'magicone_rm_ha': noteList.notes_rearmonitor_vtr_hdmi || [],
+        'magicone_vtr_hdmi': noteList.notes_rearmonitor_vtr_hdmi || [],
+        'camera_selector': noteList.notes_camera_selector || [],
+        'steering_swt_ctrl': noteList.notes_steering_switch_controller || []
+    };
+    
+    // 取得したデータをキャッシュに保存
+    noteCash = notesMap;
+    
+    return notesMap;
+};
+
+export {
+    initializeAndGetCarModel,
+    initializeAndGetMonitorNumber,
+    initializeAndGetMapNotes
 };

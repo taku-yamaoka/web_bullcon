@@ -9,7 +9,7 @@
     "rows": [
       {
         "category": "メーカーオプション",
-        "category2": "H31(2019/5~)",
+        "category2": "H31(2019)年5月 <b>以降</b> 登録車",
         "links": {
           "toyota": { "pdf": "../../pdf/products/TVing/TVing_New_m_toyota.pdf" },
           "lexus": { "pdf": "../../pdf/products/TVing/TVing_New_m_lexus.pdf" },
@@ -21,10 +21,25 @@
           "daihatsu": { "pdf": "../../pdf/products/TVing/TVing_New_m_daihatsu.pdf" },
           "mazda": { "pdf": "../../pdf/products/TVing/TVing_New_m_mazda.pdf" }
         }
+      },
+      {
+        "category": "ディーラーオプション",
+        "category2": "H31(2019)年5月 <b>以降</b> 登録車",
+        "links": {
+          "toyota": { "pdf": "../../pdf/products/TVing/TVing_New_d_toyota.pdf" },
+          "lexus": { "pdf": "-" },
+          "nissan": { "pdf": "../../pdf/products/TVing/TVing_New_d_nissan.pdf" },
+          "honda": { "pdf": "../../pdf/products/TVing/TVing_New_d_honda.pdf" },
+          "mitsubishi": { "pdf": "../../pdf/products/TVing/TVing_New_d_mitsubishi.pdf" },
+          "subaru": { "pdf": "../../pdf/products/TVing/TVing_New_d_subaru.pdf" },
+          "suzuki": { "pdf": "../../pdf/products/TVing/TVing_New_d_suzuki.pdf" },
+          "daihatsu": { "pdf": "../../pdf/products/TVing/TVing_New_d_daihatsu.pdf" },
+          "mazda": { "pdf": "-" }
+        }
       },  
       {
         "category": "メーカーオプション",
-        "category2": "H31(~2019/4)",
+        "category2": "H31(2019)年4月 <b>以前</b> 登録車",
         "links": {
           "toyota": { "pdf": "../../pdf/products/TVing/TVing_Old_m_toyota.pdf" },
           "lexus": { "pdf": "../../pdf/products/TVing/TVing_Old_m_lexus.pdf" },
@@ -39,22 +54,7 @@
       },
       {
         "category": "ディーラーオプション",
-        "category2": "H31(2019/5~)",
-        "links": {
-          "toyota": { "pdf": "../../pdf/products/TVing/TVing_New_d_toyota.pdf" },
-          "lexus": { "pdf": "-" },
-          "nissan": { "pdf": "../../pdf/products/TVing/TVing_New_d_nissan.pdf" },
-          "honda": { "pdf": "../../pdf/products/TVing/TVing_New_d_honda.pdf" },
-          "mitsubishi": { "pdf": "../../pdf/products/TVing/TVing_New_d_mitsubishi.pdf" },
-          "subaru": { "pdf": "../../pdf/products/TVing/TVing_New_d_subaru.pdf" },
-          "suzuki": { "pdf": "../../pdf/products/TVing/TVing_New_d_suzuki.pdf" },
-          "daihatsu": { "pdf": "../../pdf/products/TVing/TVing_New_d_daihatsu.pdf" },
-          "mazda": { "pdf": "-" }
-        }
-      },
-      {
-        "category": "ディーラーオプション",
-        "category2": "H31(~2019/4)",
+        "category2": "H31(2019)年4月 <b>以前</b> 登録車",
         "links": {
           "toyota": { "pdf": "../../pdf/products/TVing/TVing_Old_d_toyota.pdf" },
           "lexus": { "pdf": "-" },

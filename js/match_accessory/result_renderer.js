@@ -1,24 +1,9 @@
 import { getCompatibilityData } from './match_api_client.js';
-import { 
-    TVING_NOTES_DATA, MAGICONE_BK_NOTES_DATA, MAGICONE_RM_VTR_NOTES_DATA,
-    CAMERA_SELECTOR_NOTES_DATA,
-    STEERING_SWT_CTRL_NOTES_DATA
-} from './data_mapper.js';
+import { initializeAndGetMapNotes } from './match.js';
 
 // APIエンドポイントURL
 const MATCH_API_URL = '../../api/get_products_compatibility.php';
 
-// 製品名と注意事項マップの対応
-const NOTES_MAP = {
-    'televing': TVING_NOTES_DATA,
-    'magicone_bk_un': MAGICONE_BK_NOTES_DATA,
-    'magicone_bk_ha': MAGICONE_BK_NOTES_DATA,
-    'magicone_rm_un': MAGICONE_RM_VTR_NOTES_DATA,
-    'magicone_rm_ha': MAGICONE_RM_VTR_NOTES_DATA,
-    'magicone_vtr_hdmi': MAGICONE_RM_VTR_NOTES_DATA,
-    'camera_selector': CAMERA_SELECTOR_NOTES_DATA,
-    'steering_swt_ctrl': STEERING_SWT_CTRL_NOTES_DATA
-};
 
 // 特定のメーカー名
 const MAKER_HONDA = 'ホンダ';
@@ -465,12 +450,14 @@ function generateTable(data, headerData, productName) {
  * @param {Array<object>} data - 検索結果データ
  * @param {string} productName - 検索対象の製品名
  */
-function displayNotes(data, productName) {
+async function displayNotes(data, productName) {
     const notesContainer = document.getElementById('notes-list-container');
     if (!notesContainer) return;
 
+    const noteMap = await initializeAndGetMapNotes();
+
     // 製品名に対応する注意事項セットを取得。ない場合は空のオブジェクトを使用。
-    const noteSet = NOTES_MAP[productName] || {};
+    const noteSet = noteMap[productName] || {};
 
     const uniqueNotes = new Set();
     data.forEach(item => {
