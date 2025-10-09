@@ -7,9 +7,9 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【10.5ｲﾝﾁ ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ 装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -20,7 +20,7 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【ﾒｰｶｰｵﾌﾟｼｮﾝDVDﾌﾟﾚｰﾔｰ非装着 10.5ｲﾝﾁ ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus 装着車】"},
-      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/web_test/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -36,7 +36,7 @@
     "body": [
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\"><2025年10月6日 販売開始></spam>", "align": "center"},
       { "type": "html", "content": "【14ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】<br>【12.3ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】<br>【12.3ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車】<br>【9.8ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】<br>【8ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０９ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -54,7 +54,7 @@
     "body": [
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\"><2025年10月6日 販売開始></spam>", "align": "center"},
       { "type": "html", "content": "【14ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】<br>【12.3ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】<br>【9.8ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１０ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -65,7 +65,7 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【14ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車・LCA無車】<br>【9.8ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車・LCA無車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０７ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -76,9 +76,9 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【12.3ｲﾝﾁ ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ 装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -89,7 +89,7 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【ﾒｰｶｰｵﾌﾟｼｮﾝDVDﾌﾟﾚｰﾔｰ非装着 10.5ｲﾝﾁ ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus 装着車】<br>【ﾒｰｶｰｵﾌﾟｼｮﾝDVDﾌﾟﾚｰﾔｰ非装着 8ｲﾝﾁ ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ 装着車】"},
-      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/web_test/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -99,9 +99,9 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【10.5インチ ディスプレイオーディオPlus装着車】<br>【8インチ ディスプレイオーディオ装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -111,9 +111,9 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AS』", "FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111ASC』", "FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AST』"], "car_model": ["カローラクロスハイブリッド（ZVG13.16 MXGH15）　R7/9～"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -123,7 +123,7 @@
     "brand": ["スズキ"],
     "body": [
       { "type": "html", "content": "メーカーオプション　バックアイカメラ・スズキコネクト対応通信機 装着車"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c66.html\" target=\"_blank\">『AV-C66』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c66/av-c66.htm\" target=\"_blank\">『AV-C66』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -133,7 +133,7 @@
     "brand": ["スズキ"],
     "body": [
       { "type": "html", "content": "ディーラーオプション　バックアイカメラ装着車 ≪５極コネクター仕様車≫"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c67.html\" target=\"_blank\">『AV-C67』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c67/av-c67.htm\" target=\"_blank\">『AV-C67』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "※【ﾃﾞｨｰﾗｰｵﾌﾟｼｮﾝ ﾊﾞｯｸｱｲｶﾒﾗ≪RCAﾋﾟﾝﾌﾟﾗｸﾞ仕様車≫】には取り付けできません。", "align": "right"}
     ]
   },
@@ -144,11 +144,11 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "10.5インチディスプレイオーディオPlus装着車<br>8インチディスプレイオーディオ装着車"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"},
-      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/web_test/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -158,8 +158,8 @@
     "brand": ["スバル"],
     "body": [
       { "type": "html", "content": "11.6インチセンターインフォメーションディスプレイ装着車"},
-      { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-233』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-233』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-233』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-233』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -168,10 +168,10 @@
     "title_data": {"product": ["FreeTVing ｵｰﾄﾀｲﾌﾟ『FFT-240』","FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-240』", "TELENAVing ｵｰﾄﾀｲﾌﾟ『CTN-309』", "TELENAVing TV切替ﾀｲﾌﾟ『CTN-309S』"], "car_model": ["シビック　（FL1：M/C後）　R6/9～　【Google搭載Honda CONNECTﾃﾞｨｽﾌﾟﾚｰ付車】", "シビックe:HEV　（FL4：M/C後）　R6/9～　【Google搭載Honda CONNECTﾃﾞｨｽﾌﾟﾚｰ付車】"]},
     "brand": ["ホンダ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-240』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-240』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-309』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing TV切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-309S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-240』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-240』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-309』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing TV切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-309S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -180,11 +180,11 @@
     "title_data": {"product": ["FreeTVing ｵｰﾄﾀｲﾌﾟ『FFT-232』", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-232』", "FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ『MS-232A』", "FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ『MS-232C』", "MAGICONE バックカメラ接続ハーネス『AV-C59』"], "car_model": ["トヨタディーラーオプション　2025年モデル　NMZK-W75DE", "ダイハツディーラーオプション 2025年モデル　NMZK-W75DE"]},
     "brand": ["トヨタ", "ダイハツ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-232』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-232』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-232A』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-232C』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c59/av-c59.htm\" target=\"_blank\">『AV-C59』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-232』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-232』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-232A』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-232C』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c59/av-c59.htm\" target=\"_blank\">『AV-C59』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -194,7 +194,7 @@
     "brand": ["ダイハツ"],
     "body": [
       { "type": "html", "content": "（純正ナビ装着用アップグレードパック付車）"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c48/av-c48.htm\" target=\"_blank\">『AV-C48』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c48/av-c48.htm\" target=\"_blank\">『AV-C48』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -204,7 +204,7 @@
     "brand": ["レクサス"],
     "body": [
       { "type": "html", "content": "12.3インチディスプレイオーディオ（コネクティッドナビ対応）Plus付車"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１０ＡＳ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -215,7 +215,7 @@
     "brand": ["ダイハツ"],
     "body": [
       { "type": "html", "content": "純正ナビ装着用アップグレードパック+パノラマモニター対応カメラ"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c50/av-c50.htm\" target=\"_blank\">『AV-C50』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c50/av-c50.htm\" target=\"_blank\">『AV-C50』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -225,8 +225,8 @@
     "brand": ["ダイハツ"],
     "body": [
       { "type": "html", "content": "9インチスマホ連携ディスプレイオーディオ装着車"},
-      { "type":"html", "content": "<p><b>FreeTVing <span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-701』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-701S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing <span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-701』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-701S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -235,9 +235,9 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AS』", "FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111ASC』", "FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AST』"], "car_model": ["ＧＲカローラ　（GZEA14H）　R4/12～"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -248,9 +248,9 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "12.3インチディスプレイオーディオPlus付車"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -261,9 +261,9 @@
     "brand": ["レクサス"],
     "body": [
       { "type": "html", "content": "12.3インチディスプレイオーディオPlus付車"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１０ＡＳ】自車位置は追従します。", "align":"right"},
-      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/web_test/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -273,10 +273,10 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "12.3インチディスプレイオーディオPlus付車"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111S』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111S』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１０ＡＳ/１１０ＡＳＣ】自車位置は追従します。", "align":"right"},
-      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/web_test/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -286,9 +286,9 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "12.3インチディスプレイオーディオPlus付車"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -299,7 +299,7 @@
     "brand": ["レクサス"],
     "body": [
       { "type": "html", "content": "12.3インチディスプレイオーディオPlus付車"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０９ＡＳ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -309,8 +309,8 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C61』（カメラ視点固定式）", "MAGICONE バックカメラ接続ユニット『AV-C62』（カメラ切替式）"], "car_model": ["N VAN e:　（JJ3）　R6/10～（ナビ装着用スペシャルパッケージ付車）", "フリード　（GT1.2.3.4）　　R6/7～（ナビ装着用スペシャルパッケージ付車）【マルチビューカメラシステム無】）", "フリード　e:HEV（GT5.6.7.8）　　R6/7～（ナビ装着用スペシャルパッケージ付車）【マルチビューカメラシステム無】）"]},
     "brand": ["ホンダ"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
     ]
   },
   {
@@ -320,8 +320,8 @@
     "brand": ["スズキ"],
     "body": [
       { "type": "html", "content": "99090-69U25-P01（CN-FZ10A7ZA）10インチスタンダードプラスモデル<br>99098-69U25-P02（CN-FZ8A6ZA）8インチスタンダードプラスモデル<br>99098-69U35-P03（CN-HZ8A5ZA）8インチスタンダードモデル<br>99097-80T35-P04（CN-HZ7A5WZA）7インチスタンダードモデル"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -334,7 +334,7 @@
       { "type": "html", "content": "99098-69U25-P02（CN-FZ8A6ZA）8インチスタンダードプラスモデル<br>99098-69U35-P03（CN-HZ8A5ZA）8インチスタンダードモデル<br>99097-80T35-P04（CN-HZ7A5WZA）7インチスタンダードモデル<br>99098-69U45-K01（SKX-S809）8インチエントリーモデル<br>99097-80T45-K02（KXM-E509W）7インチエントリーモデル"},
       { "type": "paragraph", "content": "2024年モデルナビゲーション"},
       { "type": "html", "content": "99099-77R23-N01（AVIC-RQS720ZS）9インチスタイリッシュモデル"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-194』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-194』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -355,7 +355,7 @@
       { "type": "html", "content": "VXM-194Ci　　VXM-194VFi　　VXU-195NBi"},
       { "type": "paragraph", "content": "2017年モデル"},
       { "type": "html", "content": "VXM-184Ci　　VXM-185VFEi　　VXM-185VFi　　VXM-185VFNi　　VXU-185NBi"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c09/av-c09.htm\" target=\"_blank\">『AV-C09』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c09/av-c09.htm\" target=\"_blank\">『AV-C09』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -364,7 +364,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-109AS』"], "car_model": ["アルファード PHEV　（AAHP45）　R7/2～【14インチディスプレイオーディオ（コネクティッドナビ対応）付車】【LCA（レーンチェンジアシスト）装着車】", "ヴェルファイア PHEV　（AAHP45）　R7/2～【14インチディスプレイオーディオ（コネクティッドナビ対応）付車】【LCA（レーンチェンジアシスト）装着車】"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０９ＡＳ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -374,7 +374,7 @@
     "title_data": {"product": ["DVD/CDプレーヤー『AV-CDV01』"], "car_model": ["アルファード PHEV　（AAHP45）　R7/2～【14インチディスプレイオーディオ（コネクティッドナビ対応）付車】メーカーオプションDVDプレーヤー非装着車", "ヴェルファイア PHEV　（AAHP45）　R7/2～【14インチディスプレイオーディオ（コネクティッドナビ対応）付車】メーカーオプションDVDプレーヤー非装着車"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/web_test/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -383,10 +383,10 @@
     "title_data": {"product": ["FreeTVing『FFT-231』", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-231』", "TELENAVing『BTN-S31』", "TELENAVing『BTN-S31C』"], "car_model": ["デリカD:2　（MBD7S）　R7/2～【全方位モニタ付メモリーナビゲーション（9インチHDディスプレイ）装着車】"]},
     "brand": ["ミツビシ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31C』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31C』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -395,7 +395,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-603S』"], "car_model": ["CX-80　（KL3P）　R6/10～", "CX-80 ハイブリッド　（KL3R3P）　R6/10～", "CX-80 PHEV　（KL5S3P）　R6/10～"]},
     "brand": ["マツダ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-603S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-603S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -405,16 +405,16 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "アルファードハイブリッド　（AAHH40W 45W）　R7/1～<br>【9.8インチディスプレイオーディオ（コネクティッドナビ対応）付車】<br>【LCA（レーンチェンジアシスト）非装着車】"},
-      { "type":"html", "content": "<p><b>MAGICONE HDMIハーネス<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/VTR_H/av-dh06/av-dh06.htm\" target=\"_blank\">『AV-DH06』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE HDMIハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/VTR_H/av-dh06/av-dh06.htm\" target=\"_blank\">『AV-DH06』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０７ＡＳ】自車位置は追従します。", "align":"right"},
       { "type": "html", "content": "アルファード　（AGH40W 45W）　R7/1～　（一部改良後）<br>アルファードハイブリッド　（AAHH40W 45W）　R7/1～　（一部改良後）<br>【14インチディスプレイオーディオ（コネクティッドナビ対応）Plus付車】<br>【LCA（レーンチェンジアシスト）非装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０７ＡＳ/ＣＴＮ-１０７ＡＳＣ】自車位置は追従します。", "align":"right"},
       { "type": "html", "content": "アルファード　（AGH40W 45W）　R7/1～　（一部改良後）<br>アルファードハイブリッド　（AAHH40W 45W）　R7/1～　（一部改良後）<br>ヴェルファイア　（TAHA40W 45W）　R7/1～　（一部改良後）<br>ヴェルファイアハイブリッド　（AAHH40W 45W）　R7/1～　（一部改良後）<br>【14インチディスプレイオーディオ（コネクティッドナビ対応）Plus付車】<br>【LCA（レーンチェンジアシスト）装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109ASC』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０９ＡＳ/ＣＴＮ-１０９ＡＳＣ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -426,7 +426,7 @@
     "body": [
       { "type": "html", "content": "【9.8インチディスプレイオーディオ（コネクティッドナビ対応）付車】※メーカーオプションDVDプレーヤー非装着車<br>アルファードハイブリッド　（AAHH40W 45W）　R7/1～"},
       { "type": "html", "content": "【14インチディスプレイオーディオ（コネクティッドナビ対応）付車】※メーカーオプションDVDプレーヤー非装着車<br>アルファード　（AGH40W 45W）　R7/1～　（一部改良後）<br>アルファードハイブリッド　（AAHH40W 45W）　R7/1～　（一部改良後）<br>アルファードハイブリッド エグゼクティブラウンジ　（AAHH40W 45W）　R5/7～<br>ヴェルファイア　（TAHA40W 45W）　R7/1～　（一部改良後）<br>ヴェルファイアハイブリッド　（AAHH40W 45W）　R7/1～　（一部改良後）<br>ヴェルファイアハイブリッド エグゼクティブラウンジ　（AAHH40W 45W）　R5/7～"},
-      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/web_test/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -436,10 +436,10 @@
     "brand": ["スズキ"],
     "body": [
        { "type": "html", "content": "【全方位モニター付メモリーナビゲーション（9インチHDディスプレイ）装着車】<br>ソリオ　（MAD7S）　R7/2～<br>ソリオバンディット　（MAD7S）　R7/2～"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31C』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31C』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -448,8 +448,8 @@
     "title_data": {"product": ["FreeTVing『CTN-102』", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-102S』"], "car_model": ["ルーミー　（M900A.M910A）　R6/12～　9インチディスプレイオーディオ付車"]},
     "brand": ["トヨタ"],
     "body": [      
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-102』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-102S』</a></span></b></p>", "align": "right"}      
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-102』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-102S』</a></span></b></p>", "align": "right"}      
     ]
   },
   {
@@ -458,7 +458,7 @@
     "title_data": {"product": ["FreeTVing『CTN-502S』"], "car_model": ["アウトランダーPHEV　（GN0W）　R6/11～（12.3インチHDディスプレイ スマートフォン連携ナビゲーション）"]},
     "brand": ["トヨタ"],
     "body": [      
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-502S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-502S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -467,8 +467,8 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AS』", "FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AST』"], "car_model": ["GX　（VJA252W）　R6/5～　【14インチ ディスプレイオーディオ付車（コネクティッドナビ対応）Plus付車】"]},
     "brand": ["レクサス"],
     "body": [      
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/ＣＴＮ-１１１ＡＳＣT】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -478,10 +478,10 @@
     "title_data": {"product": ["FreeTVing『FFT-231』", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-231』", "TELENAVing『BTN-S31』", "TELENAVing『BTN-S31C』"], "car_model": ["フロンクス　（WDB3S WEB3S）　R6/10～ 【全方位モニター付メモリーナビゲーション（9インチHDディスプレイ）装着車"]},
     "brand": ["スズキ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31C』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31C』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -490,9 +490,9 @@
     "title_data": {"product": ["DVD/CDプレーヤー『AV-CDV01』"]},
     "brand": [],
     "body": [
-      { "type": "image", "url": "/web_test/html/products/images/slide_banner/banner_dvd.jpg", "alt": "dvd/cdプレイヤー"},
+      { "type": "image", "url": "/html/products/images/slide_banner/banner_dvd.jpg", "alt": "dvd/cdプレイヤー"},
       { "type": "html", "content": "車両のUSBポートに接続するだけで<br>純正ディスプレイオーディオでCD/DVDが楽しめる。<br>薄型・軽量のポータブルプレーヤー"},
-      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/web_test/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -501,10 +501,10 @@
     "title_data": {"product": ["FreeTVing『FFT-231』", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-231』", "TELENAVing『BTN-S31』", "TELENAVing『BTN-S31C』"], "car_model": ["スペーシアギア　（MK54S　MK94S）　R6/9～【全方位モニター付メモリーナビゲーション（9インチHDディスプレイ）装着車】"]},
     "brand": ["スズキ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31C』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31C』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -513,8 +513,8 @@
     "title_data": {"product": ["FreeTVing『CTN-104』", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-104S』"], "car_model": ["レックス　（A201F）　R4/11～【9インチスマホ連携ディスプレイオーディオ付車】"]},
     "brand": ["スバル"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-104』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-104S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-104』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-104S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -524,8 +524,8 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "LXM-245ZFEi （8インチHonda CONNECTナビ）"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-236』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-236』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-236』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-236』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -538,7 +538,7 @@
       { "type": "html", "content": "ダイハツ　ハイゼットカーゴ　（S700V S700W S710V S710W）　R4/1～<br>（ｽﾏﾎ連携ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ非装着車＋視界補助ﾊﾟｯｸ付車（ｽﾏｰﾄｲﾝﾅｰﾐﾗｰにﾊﾞｯｸｶﾒﾗ映像あり））"},
       { "type": "html", "content": "ダイハツ　ハイゼットトラック　（S500P S510P）　R4/1～<br>（ｽﾏﾎ連携ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ非装着車＋視界補助ﾊﾟｯｸ付車（ｽﾏｰﾄｲﾝﾅｰﾐﾗｰにﾊﾞｯｸｶﾒﾗ映像あり））"},
       { "type": "html", "content": "トヨタ　ピクシスバン　（S700M S710M）　R4/1～<br>（視界補助ﾊﾟｯｸ付車（ｽﾏｰﾄｲﾝﾅｰﾐﾗｰにﾊﾞｯｸｶﾒﾗ映像あり））"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c64/av-c64.htm\" target=\"_blank\">『AV-C64』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c64/av-c64.htm\" target=\"_blank\">『AV-C64』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -549,7 +549,7 @@
     "body": [
       { "type": "html", "content": "ダイナカーゴ　1.0ton　　R5/8～<br>（TRY230 GDY231.281）<br>（ﾊﾞｯｸｶﾒﾗ＆ﾊﾞｯｸﾓﾆﾀｰ付ｲﾝﾅｰﾐﾗｰ装着車（全車標準装備）"},
       { "type": "html", "content": "ダイナカーゴ　2.0ton　　R5/10～<br>（XZC605.645.655.675.710 XZU600H/W.602W.605.640/W.642W.645.650.652W.655 675.685.695.700/A.702/A.710.712.720.722.730.732.775）<br>（ﾊﾞｯｸｶﾒﾗ＆ﾃﾞｼﾞﾀﾙｲﾝﾅｰﾐﾗｰ装着車（全車標準装備））"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c63/av-c63.htm\" target=\"_blank\">『AV-C63』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c63/av-c63.htm\" target=\"_blank\">『AV-C63』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -559,7 +559,7 @@
     "brand": ["スズキ"],
     "body": [
       { "type": "html", "content": "全方位モニター付メモリーナビゲーション（9インチHDディスプレイ）装着車"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31C』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31C』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -568,9 +568,9 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AS』", "FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111ASC』", "FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AST』"], "car_model": ["ランドクルーザー250　（GDJ250W）　R6/5～ 【8インチ ディスプレイオーディオ付車】"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -580,7 +580,7 @@
     "title_data": {"product": ["TELENAVing『CTN-203』"], "car_model": ["ノートオーラ　（FE13.FSNE13）　R6/6～"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-203』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-203』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -589,8 +589,8 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C13』『AV-C13FA』"], "car_model": ["エクストレイル　（T33 SNT33）　R6/7～（ｲﾝﾃﾘｼﾞｪﾝﾄﾙｰﾑﾐﾗｰ+ｲﾝﾃﾘｼﾞｪﾝﾄｱﾗｳﾝﾄﾞﾋﾞｭｰﾓﾆﾀｰ装着車）"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -599,7 +599,7 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C25GN』"], "car_model": ["キャラバン　（E26）　R6/6～（ﾃﾞｨｽﾌﾟﾚｲ付自動防眩式ﾙｰﾑﾐﾗｰ+ﾊﾞｯｸﾋﾞｭｰﾓﾆﾀｰ+ﾃﾞｨｰﾗｰｵﾌﾟｼｮﾝﾅﾋ装着車）"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c25gn/av-c25gn.htm\" target=\"_blank\">『AV-C25GN』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25gn/av-c25gn.htm\" target=\"_blank\">『AV-C25GN』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -608,9 +608,9 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C61』（カメラ視点固定式）", "MAGICONE バックカメラ接続ユニット『AV-C62』（カメラ切替式）", "ステアリングスイッチ切替ユニット『SWC-H006』"], "car_model": ["ヴェゼル　（RV3.4）　R6/5～　（ﾅﾋﾞ装着用ｽﾍﾟｼｬﾙﾊﾟｯｹｰｼﾞ付車）", "ヴェゼル e:HEV　（RV5.6）　　R6/5～　（ﾅﾋﾞ装着用ｽﾍﾟｼｬﾙﾊﾟｯｹｰｼﾞ付車）"]},
     "brand": ["ホンダ"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>ステアリングスイッチ切替ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/swc-h006/swc-h006.htm\" target=\"_blank\">『SWC-H006』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>ステアリングスイッチ切替ユニット<span style=\"color: blue;\"><a href=\"/html/products/swc-h006/swc-h006.htm\" target=\"_blank\">『SWC-H006』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
     ]
   },
   {
@@ -619,8 +619,8 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C13』", "MAGICONE バックカメラ接続ユニット『AV-C13FA』"], "car_model": ["キャラバン　（E26）　R6/6～（ｲﾝﾃﾘｼﾞｪﾝﾄﾙｰﾑﾐﾗｰ+ｲﾝﾃﾘｼﾞｪﾝﾄｱﾗｳﾝﾄﾞﾋﾞｭｰﾓﾆﾀｰ装着車）"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -629,7 +629,7 @@
     "title_data": {"product": ["FreeTVing 『スズキ　ディーラーオプション』"], "car_model": ["スズキディーラーオプション　2024年モデル　99097-69T34-P15（CN-HZ795W / 7ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）"]},
     "brand": ["スズキ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『スズキ ディーラーオプション』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『スズキ ディーラーオプション』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -639,9 +639,9 @@
     "brand": ["トヨタ"],
     "body": [
       { "type":"html", "content": "【12.3インチ ディスプレイオーディオPlus装着車】<br>【12.3インチ ディスプレイオーディオ装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -651,9 +651,9 @@
     "brand": ["トヨタ"],
     "body": [
       { "type":"html", "content": "【12.3インチ ディスプレイオーディオPlus装着車】<br>【12.3インチ ディスプレイオーディオ装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -664,10 +664,10 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\"><2024年7月1日 販売開始></spam>", "align": "center"},
-      { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-239』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-239』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-308』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing TV切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-308S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-239』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-239』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-308』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing TV切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-308S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -676,7 +676,7 @@
     "title_data": {"product": ["FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-110ASC』"], "car_model": ["クラウンセダン　（AZSH32/ハイブリッド）　R5/11～【12.3インチディスプレイオーディオ付車】"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110ASC』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\">≪ご注意≫ＦＣＥＶ車（ＫＺＳＭ３０）はサービスホールに空きが無い為、お取り付けできません。</spam>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１０ＡＳC】自車位置は追従します。", "align": "right"}
     ]
@@ -687,8 +687,8 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C61』（カメラ視点固定式）", "MAGICONE バックカメラ接続ユニット『AV-C62』（カメラ切替式）"], "car_model": ["N-VAN　（JJ1.2）　R6/5～　（ナビ装着用スペシャルパッケージ付車）", "ZR-V　（RZ3.5）　　R5/4～　（ナビ装着用スペシャルパッケージ付車）【マルチビューカメラシステム無】）", "ZR-V　e:HEV（RZ4.6）　　R5/4～　（ナビ装着用スペシャルパッケージ付車）【マルチビューカメラシステム無】）"]},
     "brand": ["ホンダ"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
     ]
   },
   {
@@ -697,7 +697,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-109AS』"], "car_model": ["LM　≪6シート≫　（TAWH15W）　R6/5～"]},
     "brand": ["レクサス"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０９ＡＳ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -709,7 +709,7 @@
     "body": [
       { "type": "html", "content": "【バックモニター内蔵自動防眩インナーミラー付 + 「NMZK-W73D」装着車】"},
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\"><2024年6月3日 販売開始></spam>", "align": "center"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c25g/av-c25g.htm\" target=\"_blank\">『AV-C25G』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25g/av-c25g.htm\" target=\"_blank\">『AV-C25G』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -720,7 +720,7 @@
     "body": [
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\"><2024年6月3日 販売開始></spam>", "align": "center"},
       { "type": "html", "content": "【バックモニター内蔵自動防眩インナーミラー付 + 「NMZK-W73D」装着車】"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c25g/av-c25g.htm\" target=\"_blank\">『AV-C25G』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25g/av-c25g.htm\" target=\"_blank\">『AV-C25G』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -732,7 +732,7 @@
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\"><2024年6月3日 販売開始></spam>", "align": "center"},
       { "type": "html", "content": "日産<br>【バックビューモニター＋ディーラーオプションナビゲーション装着車】<br>デイズ　（B43W B44W B45W B46W B47W B48W）　H31/4～<br>ルークス　（B44A B47A）　R5/6～"},
       { "type": "html", "content": "三菱<br>【リアビューモニター付ルームミラー＋ディーラーオプションナビゲーション装着車】<br>ekクロス　（B34W B35W B37W B38W）　R5/12～　（EV除く）<br>ekスペース　（B34A B37A）　R5/5～<br>ekワゴン　（B33W B36W）　R5/12～<br>デリカミニ　（B34A B35A B37A B38A）　R5/5～"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c25g/av-c25g.htm\" target=\"_blank\">『AV-C25G』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25g/av-c25g.htm\" target=\"_blank\">『AV-C25G』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -742,7 +742,7 @@
     "brand": ["ミツビシ"],
     "body": [
       { "type": "html", "content": "（スマートフォン連携ナビゲーション）"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-502S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-502S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -751,9 +751,9 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AS』", "FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111ASC』", "FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AST』"], "car_model": ["GRヤリス　（GXPA16）　R6/2～（一部改良後）　【ディスプレイオーディオ装着車】"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -763,8 +763,8 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C61』『AV-C62』"], "car_model": ["WR-V　（DG5）　R6/3～　【ナビ装着用スペシャルパッケージ付車】"]},
     "brand": ["ホンダ"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
     ]
   },
   {
@@ -773,7 +773,7 @@
     "title_data": {"product": ["ステアリングスイッチ切替ユニット『SWC-H006』"], "car_model": ["WR-V　（DG5）　R6/3～"]},
     "brand": ["ホンダ"],
     "body": [
-      { "type":"html", "content": "<p><bステアリングスイッチ切替ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/swc-h006/swc-h006.htm\" target=\"_blank\">『SWC-H006』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><bステアリングスイッチ切替ユニット<span style=\"color: blue;\"><a href=\"/html/products/swc-h006/swc-h006.htm\" target=\"_blank\">『SWC-H006』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -784,7 +784,7 @@
     "body": [
       { "type": "html", "content": "ホンダディーラーオプション　2024年モデルナビゲーション<br>LXM-242ZFNi （9インチHonda CONNECTナビ）"},
       { "type": "html", "content": "ホンダディーラーオプション　2023年モデルナビゲーション<br>VXM-247VFEi （8インチプレミアムインターナビ）"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『ホンダ　ディーラーオプション』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『ホンダ　ディーラーオプション』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -793,7 +793,7 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C25』"], "car_model": ["ekクロス　（B34W B35W B37W B38）　R5/12～　（リアビューモニター付ルームミラー装着車）","ekスペース　（B34A B37A）　R5/5～　（リアビューモニター付ルームミラー装着車）", "ekワゴン　（B33W B36W）　R5/12～　 （リアビューモニター付ルームミラー装着車）"]},
     "brand": ["ミツビシ"],
     "body": [
-      { "type":"html", "content": "<p><bMAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c25/av-c25.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><bMAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25/av-c25.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -802,8 +802,8 @@
     "title_data": {"product": ["FreeTVing『FFT-233』","FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-233』"], "car_model": ["レヴォーグ　レイバック　（VN5）　R5/10～　【11.6インチセンターインフォメーションディスプレイ装着車】"]},
     "brand": ["スバル"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-233』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-233』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-233』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-233』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -812,7 +812,7 @@
     "title_data": {"product": ["TELENAVing『CTN-602』"], "car_model": ["CX-3　（DKLFY DKLAY DK8FY DK8AY）　R6/3（改良後）～　(地上ﾃﾞｼﾞﾀﾙTVチューナー付車）"]},
     "brand": ["マツダ"],
     "body": [
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-602』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-602』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -821,7 +821,7 @@
     "title_data": {"product": ["TELENAVing『CTN-203』"], "car_model": ["ノート　（E13.SNE13）　R6/1～"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-203』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-203』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -831,7 +831,7 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "ホンダディーラーオプション　2023年モデルナビゲーション<br>LXM-247VFNi（9インチHonda CONNECTナビ）<br>LXU-247NBi（N-WGN/N-ONE専用　9インチHonda CONNECTナビ）<br>VXM-247VFNi　※（9インチプレミアムインターナビ）"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『ホンダ　ディーラーオプション』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『ホンダ　ディーラーオプション』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -840,7 +840,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-109AS』"], "car_model": ["LM　≪4シート≫　（TAWH15W）　R5/12～"]},
     "brand": ["レクサス"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０９ＡＳ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -850,7 +850,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-110AS』"], "car_model": ["UXハイブリッド　（MZAH11.16）　R6/1～　【12.3インチディスプレイオーディオ（コネクティッドナビ対応）Plus付車】"]},
     "brand": ["レクサス"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１０ＡＳ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -860,7 +860,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-110AS』"], "car_model": ["LBX　（MAYH10.15）　R5/12～"]},
     "brand": ["レクサス"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１０ＡＳ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -870,7 +870,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AS』"], "car_model": ["クラウンスポーツ　PHEV　（AZSH37W）　R5/10～　【12.3インチディスプレイオーディオ付車】"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -882,9 +882,9 @@
     "body": [
       { "type": "html", "content": "スズキディーラーオプション　2024年モデル<br>　99098-53U44-K11（SKX-S808 / 8ｲﾝﾁｴﾝﾄﾘｰﾓﾃﾞﾙ）"},
       { "type": "html", "content": "スズキディーラーオプション　2023年モデル<br>　99090-53U23-P01（CN-FZ1087ZA / 10ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>　99098-53U23-P02（CN-FZ886ZA / 8ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>　99097-69T23-P03（CN-FZ786WZA / 7ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>　99098-53U33-P04（CN-HZ885ZA / 8ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>　99097-69T33-P05（CN-HZ785WZA / 7ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>　99098-53U43-K01（SKX-S807 / 8ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>　99097-69T43-K02（KXM-E507W / 7ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『スズキ　ディーラーオプション』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『スズキ　ディーラーオプション』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "ミツビシディーラーオプション　2023年モデル<br>　MM223D-LM　（MZ609962NP / オリジナル9型ナビゲーション)"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『ミツビシ　ディーラーオプション』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『ミツビシ　ディーラーオプション』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -893,7 +893,7 @@
     "title_data": {"product": ["ステアリングスイッチ切替ユニット『SWC-H006』"], "car_model": ["ステップワゴン / ステップワゴンｅ:ＨＥＶ　（RP6/7/8）　R4/6～", "Ｎ-ＢＯＸ　（JF5/6）　Ｒ5/10～"]},
     "brand": ["ホンダ"],
     "body": [
-      { "type":"html", "content": "<p><bステアリングスイッチ切替ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/swc-h006/swc-h006.htm\" target=\"_blank\">『SWC-H006』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><bステアリングスイッチ切替ユニット<span style=\"color: blue;\"><a href=\"/html/products/swc-h006/swc-h006.htm\" target=\"_blank\">『SWC-H006』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -902,9 +902,9 @@
     "title_data": {"product": ["FreeTVing『FFT-231』", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-231』", "TELENAVing『BTN-S31』"], "car_model": ["フレアワゴン　（MM54S MM94S）　R6/1～（メモリーナビゲーション（9インチHDディスプレイ）付車）"]},
     "brand": ["マツダ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -913,9 +913,9 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AS』", "FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111ASC』", "FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AST』"], "car_model": ["ヤリス　（MXPA10.15　KSP210（ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車））　R6/2～", "ヤリスハイブリッド　（MXPH14.17（ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車））　R6/2～", "ヤリスクロス　（MXPB10.15（ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車））　R6/2～", "ヤリスクロスハイブリッド　（MXPJ10.15（ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車））　R6/2～"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -927,7 +927,7 @@
     "body": [
       { "type": "html", "content": "ニッサンディーラーオプション　2023年モデル<br> MM223D-L（9インチ）　　MM223D-Le（9インチ）<br> MJ123D-A　（7インチ）　　MJ123D-W　（7インチ）"},
       { "type": "html", "content": "ニッサンディーラーオプション　2022年モデル<br> MJ322D-L　　MJ322D-W　　MM222D-Le　　MM222D-L<br> MJ122D-A　　MJ122D-W　　DA22J"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c55/av-c55.htm\" target=\"_blank\">『AV-C55』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c55/av-c55.htm\" target=\"_blank\">『AV-C55』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -938,7 +938,7 @@
     "body": [
       { "type": "html", "content": "トヨタ　ディーラーオプション　2023年モデル<br>　　　NMZN-Y73D　NMZK-W73D"},
       { "type": "html", "content": "ダイハツ　ディーラーオプション　2023年モデル<br>　　　NMZL-Y73D　NMZN-Y73D　NMZL-W73D<br>　　　NMZN-W73D　NMZK-W73D　NMZN-Z73DS"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c55/av-c55.htm\" target=\"_blank\">『AV-C59』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c55/av-c55.htm\" target=\"_blank\">『AV-C59』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -948,7 +948,7 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "トヨタ　ディーラーオプション　2022年モデル<br>　　　NMZK-W72D"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c46/av-c46.htm\" target=\"_blank\">『AV-C46』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c46/av-c46.htm\" target=\"_blank\">『AV-C46』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -958,7 +958,7 @@
     "brand": ["トヨタ", "ニッサン", "ホンダ", "ミツビシ", "ダイハツ"],
     "body": [
       { "type": "html", "content": "HDMI（タイプA端子）出力機能のあるスマートフォン・タブレット・ストリーミング機・ゲーム機などの映像と音声を、HDMI（タイプＥ）入力端子搭載のナビゲーション画面でお楽しみいただけます"},
-      { "type":"html", "content": "<p><b>MAGICONE HDMIハーネス<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/VTR_H/av-dh06/av-dh06.htm\" target=\"_blank\">『AV-DH06』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE HDMIハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/VTR_H/av-dh06/av-dh06.htm\" target=\"_blank\">『AV-DH06』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -967,7 +967,7 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C25』"], "car_model": ["ランドクルーザー70　（GDJ76W）　R5/11～（自動防眩インナーミラー（バックモニター内蔵）付車）"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c46/av-c46.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c46/av-c46.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -978,7 +978,7 @@
     "body": [
       { "type": "html", "content": "ニッサンディーラーオプション　2023年モデル<br> MM323D-L（9インチ　キックス専用）<br> MJ323D-L（9インチ　日産サクラ専用）<br> MJ323D-W　（7インチ）<br> MM223D-Le/L　（9インチ）"},
       { "type": "html", "content": "一部対象外の車両がありますので、必ず適合表をご確認ください。"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -987,7 +987,7 @@
     "title_data": {"product": ["TELENAVing『CTN-602』"], "car_model": ["MAZDA 2　（DJLFS DJLAS DJ5FS DJ5AS）　R6/1～（改良後）(8.8インチセンターディスプレイ+地上デジタルTVチューナー付車）"]},
     "brand": ["マツダ"],
     "body": [
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-602』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-602』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -997,7 +997,7 @@
     "brand": ["ミツビシ"],
     "body": [
       { "type": "html", "content": "オリジナル9型ナビゲーション　DA22JM （MZ594852）"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1006,7 +1006,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-110AS』"], "car_model": ["クラウンセダン　（AZSH32 KZSM30）　R5/11～【12.3インチディスプレイオーディオ付車】"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１０ＡＳ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -1016,7 +1016,7 @@
     "title_data": {"product": ["TELENAVing『CTN-202』"], "car_model": ["フェアレディZ　（RZ34）　R5/8～"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-202』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-202』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1026,8 +1026,8 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "VXU-245FTi　（フィット専用 9ｲﾝﾁHonda CONNECTナビゲーション）"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-198』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-198』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1038,8 +1038,8 @@
     "body": [
       { "type": "html", "content": "＜2024年1月16日販売開始＞", "align":"center"},
       { "type": "html", "content": "VX-240ZFE　　（8インチディスプレイオーディオ）<br>　　【 テレビ・ナビゲーション機能はありません。 】"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-238』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-238』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-238』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-238』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【 本製品は外部入力機器映像を走行中に視聴するための製品です。 】", "align":"right"}
     ]
   },{
@@ -1049,8 +1049,8 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "LXU-242NBi　（N-BOX専用 9ｲﾝﾁHonda CONNECTナビゲーション）<br>LXM-247VFLi　（11.4ｲﾝﾁHonda CONNECTﾅﾋﾞ）"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-236』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-236』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-236』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-236』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1059,9 +1059,9 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AS』", "FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111ASC』", "FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-111AST』"], "car_model": ["グランエース　（GDH303W）　R5/11～【ディスプレイオーディオ（コネクティッドナビ対応）Plus付車】"]},
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -1072,7 +1072,7 @@
     "brand": ["スズキ"],
     "body": [
        { "type": "html", "content": "【全方位モニター付メモリーナビゲーション装着車】<br>スペーシア　（MK94S）　R5/12～<br>スペーシアカスタム　（MK54S MK94S）　R5/12～"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c58/av-c58.htm\" target=\"_blank\">『AV-C58』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c58/av-c58.htm\" target=\"_blank\">『AV-C58』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1082,8 +1082,8 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "【ナビ装着用スペシャルパッケージ（マルチビューカメラシステム無車）】"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
     ]
   },
   {
@@ -1092,9 +1092,9 @@
     "title_data": {"product": ["FreeTVing『FFT-231』", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-231』", "TELENAVing『BTN-S31』"], "car_model": ["スイフト　（ZCEDS ZDEDS）　R5/12～ 【全方位モニター付メモリーナビゲーション（9インチHDディスプレイ）装着車】"]},
     "brand": ["スズキ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1104,9 +1104,9 @@
     "brand": ["スズキ"],
     "body": [
       { "type": "html", "content": "【全方位モニター付メモリーナビゲーション（9インチHDディスプレイ）装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-231』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『BTN-S31』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1115,7 +1115,7 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C25』"], "car_model": ["ルークス　（B44A B47A）　R5/6～ （ﾊﾞｯｸﾋﾞｭｰﾓﾆﾀ付ﾙｰﾑﾐﾗｰ装着車）"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c25/av-c25.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25/av-c25.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1125,9 +1125,9 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【ディスプレイオーディオ装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１１ＡＳ/１１１ＡＳＣ/１１１ＡＳＴ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -1137,7 +1137,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-110AS』"], "car_model": ["RZ　（XEBM10.15）　R5/4～ 【14インチディスプレイオーディオ（コネクティッドナビ対応）Plus装着車】"]},
     "brand": ["レクサス"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１０ＡＳ】自車位置は追従します。", "align":"right"}
     ]
   },
@@ -1148,8 +1148,8 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "VXU-245VZi（ｳﾞｪｾﾞﾙ専用 9ｲﾝﾁﾌﾟﾚﾐｱﾑｲﾝﾀｰﾅﾋﾞ（Honda CONNECT対応））"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-198』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-198』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1158,7 +1158,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-603S』"], "car_model": ["CX-30　（DMEJ3R　DM8R）　R5/11～（改良後）"]},
     "brand": ["マツダ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-603S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-603S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1167,7 +1167,7 @@
     "title_data": {"product": ["TELENAVing『CTN-602』"], "car_model": ["CX-5　（KFEP KF2P KF5P）　R5/11～（改良後）　(MAZDA CONNECT + 地上ﾃﾞｼﾞﾀﾙTVチューナー付車）"]},
     "brand": ["マツダ"],
     "body": [
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-602』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-602』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1177,8 +1177,8 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "VXM-245ZFEi　　（N BOX専用　8インチHonda CONNECTナビ）"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-236』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-236』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-236』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-236』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1188,7 +1188,7 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "USBポートとHDMIポートを手の届く場所へ移設できる延長ケーブル<br>車両ＵＳＢパネルにＨＤＭＩ機能をプラス、ＨＤＭＩ-ＡtoＥタイプケーブル付属で<br>ＨＤＭＩ-Ｅタイプ対応ナビゲーションへダイレクト接続が可能。<br>純正のような見た目と使い心地。"},
-      { "type":"html", "content": "<p><b>MAGICONE HDMIハーネス（トヨタUSBパネルタイプ）<span style=\"color: blue;\"><a href=\"/web_test/html/products/eophzt/eophz.htm\" target=\"_blank\">『EOP-HZ02TU』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE HDMIハーネス（トヨタUSBパネルタイプ）<span style=\"color: blue;\"><a href=\"/html/products/eophzt/eophz.htm\" target=\"_blank\">『EOP-HZ02TU』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1199,7 +1199,7 @@
     "body": [      
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\">【LCA（レーンチェンジアシスト）装着車】</spam>"},
       { "type": "html", "content": "アルファード　（AGH40W 45W）　R5/7～<br>　　　【14インチディスプレイオーディオ Plus付車】<br>アルファードハイブリッド　（AAHH40W 45W）　R5/7～<br>　　　【14インチディスプレイオーディオ Plus付車】<br>ヴェルファイア　（TAHA40W 45W）　R5/7～<br>　　　【14インチディスプレイオーディオ Plus付車】<br>ヴェルファイアハイブリッド　（AAHH40W 45W）　R5/7～<br>　　　【14インチディスプレイオーディオ Plus付車】<br>プリウス　（MXWH60 65）　R5/1～<br>　　　【12.3インチ Plus/12.3インチ/8インチ ディスプレイオーディオ付車】<br>プリウスＰＨＥＶ　（MXWH61）　R5/1～<br>　　　【12.3インチディスプレイオーディオ Plus付車】"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109ASC』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０９ＡＳＣ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -1211,7 +1211,7 @@
     "body": [
       { "type": "html", "content": "【14インチディスプレイオーディオ（コネクティッドナビ対応）Plus付車】"},
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\">【LCA（レーンチェンジアシスト）装着車】</spam>"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０９ＡＳＣ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -1223,10 +1223,10 @@
     "body": [
       { "type": "html", "content": "【14インチディスプレイオーディオ（コネクティッドナビ対応）Plus付車】"},
       { "type": "html", "content": "<span style=\"color: blue;\"\"font-size: 1.1rem;\">【LCA（レーンチェンジアシスト）非装着車】</spam>"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０７ＡＳ/ＣＴＮ-１０７ＡＳＣ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -1237,7 +1237,7 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "HDMI（タイプA端子）出力機能のあるスマートフォン・タブレット・ストリーミング機・ゲーム機などの映像と音声を、HDMI（タイプＥ）入力端子搭載のナビゲーション画面でお楽しみいただけます。"},
-      { "type":"html", "content": "<p><b>MAGICONE HDMIハーネス<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/VTR_H/av-dh06/av-dh06.htm\" target=\"_blank\">『AV-DH06』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE HDMIハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/VTR_H/av-dh06/av-dh06.htm\" target=\"_blank\">『AV-DH06』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1247,7 +1247,7 @@
     "brand": ["レクサス"],
     "body": [
       { "type": "html", "content": "【12.3インチディスプレイオーディオ（コネクティッドナビ対応）Plus装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-106AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-106AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０６ＡＳ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -1258,12 +1258,12 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "（12.3インチディスプレイオーディオ（コネクティッドナビ対応）Plus付車）"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『ST-235』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『ST-235』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０７ＡＳ/ＣＴＮ-１０７ＡＳＣ/ＣＴＮ-１０７ＡＳＴ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -1274,7 +1274,7 @@
     "brand": ["スバル"],
     "body": [
       { "type": "html", "content": "H0014SJ040SS　 (フォレスター DIATONEサウンドビルトインナビ（8インチ））"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-152』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-152』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1284,7 +1284,7 @@
     "brand": ["レクサス"],
     "body": [
       { "type": "html", "content": "【12.3インチディスプレイオーディオ（コネクティッドナビ対応）Plus装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１１０ＡＳ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -1295,7 +1295,7 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【12.3インチ ディスプレイオーディオPlus装着車】<br>【12.3インチ ディスプレイオーディオ装着車】<br>【8インチ ディスプレイオーディオ装着車"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-109AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０９ＡＳ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -1305,7 +1305,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-603S』"], "car_model": ["MAZDA3ファストバック　（BP5R BPFJ3R BP8R BPEK3R）　R5/6～（改良後）", "MAZDA3セダン　（BPFJ3R BP8R）　R5/6～（改良後）", "CX-60 PHEV　（KH5S3P）　R4/9～"]},
     "brand": ["マツダ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-603S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-603S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1315,7 +1315,7 @@
     "brand": ["トヨタ", "レクサス"],
     "body": [
       { "type": "html", "content": "【12.3インチ/8インチディスプレイオーディオ装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-106AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-106AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０６ＡＳ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -1326,7 +1326,7 @@
     "brand": ["レクサス"],
     "body": [
       { "type": "html", "content": "【14インチ/9.8インチディスプレイオーディオ装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-105AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-105AS』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０５ＡＳ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -1336,7 +1336,7 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C25』"], "car_model": ["デリカミニ　（B34A B35A B37A B38A）　R5/5～　（ﾘｱﾋﾞｭｰﾓﾆﾀ付ﾙｰﾑﾐﾗｰ装着車）"]},
     "brand": ["ミツビシ"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c25/av-c25.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25/av-c25.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1345,8 +1345,8 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C13』", "MAGICONE バックカメラ接続ユニット『AV-C13FA』"], "car_model": ["デリカミニ　（B34A B35A B37A B38A）　R5/5～　（ﾏﾙﾁｱﾗｳﾝﾄﾞﾋﾞｭｰﾓﾆﾀ装着車）"]},
     "brand": ["ミツビシ"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1356,8 +1356,8 @@
     "brand": ["ミツビシ"],
     "body": [
       { "type": "html", "content": "オリジナル9型ナビゲーション　MM222D-LM （MZ609927NP）"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c55/av-c55.htm\" target=\"_blank\">『AV-C55』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c55/av-c55.htm\" target=\"_blank\">『AV-C55』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1366,7 +1366,7 @@
     "title_data": {"product": ["TELENAVing『CTN-601』"], "car_model": ["MAZDA2　改良後モデル（DJLFS DJLAS DJ5FS DJ5AS）　R5/4～ （MAZDA CONNECT＋地上デジタルTVチューナー付"]},
     "brand": ["マツダ"],
     "body": [
-      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-601』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-601』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1375,8 +1375,8 @@
     "title_data": {"product": ["FreeTVing『FFT-233』", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-233』"], "car_model": ["インプレッサ　（GU7 GUE）　R5/4～　11.6インチセンターインフォメーションディスプレイ付車"]},
     "brand": ["スバル"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-233』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-233』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-233』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-233』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1386,8 +1386,8 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "VXU-235VZi（ｳﾞｪｾﾞﾙ専用 9ｲﾝﾁﾌﾟﾚﾐｱﾑｲﾝﾀｰﾅﾋﾞ（Honda CONNECT対応））"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-198』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-198』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1396,7 +1396,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-204S』"], "car_model": ["セレナ e-Power含む　（C28 FC28 GC28 GFC28）　R5/1～　【Nissan Connectナビ付車】"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-204S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-204S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1405,7 +1405,7 @@
     "title_data": {"product": ["ステアリングスイッチ切替ユニット『SWC-N005』"], "car_model": ["エクストレイル　（Ｔ33　ＳＮＴ33）　R4/8～"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>ステアリングスイッチ切替ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/swc-n005/swc-n005.htm\" target=\"_blank\">『SWC-N005』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>ステアリングスイッチ切替ユニット<span style=\"color: blue;\"><a href=\"/html/products/swc-n005/swc-n005.htm\" target=\"_blank\">『SWC-N005』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1415,8 +1415,8 @@
     "brand": ["ニッサン"],
     "body": [
       { "type": "html", "content": "インテリジェントアラウンドビューモニター映像を市販ナビゲーションに出力"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1425,7 +1425,7 @@
     "title_data": {"product": ["ステアリングスイッチ切替ユニット『SWC-N005』"], "car_model": ["セレナ　　（C28　FC28）　R5/1～", "セレナ　e-Power　（GC28 GFC28）　R5/1～"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>ステアリングスイッチ切替ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/swc-n005/swc-n005.htm\" target=\"_blank\">『SWC-N005』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>ステアリングスイッチ切替ユニット<span style=\"color: blue;\"><a href=\"/html/products/swc-n005/swc-n005.htm\" target=\"_blank\">『SWC-N005』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1434,7 +1434,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-603S』"], "car_model": ["CX-60　（KH5P/ガソリン車）　R4/9～", "CX-60　（KH3P/ディーゼル車）　R4/9～"]},
     "brand": ["マツダ"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-603S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-603S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1445,8 +1445,8 @@
     "body": [
       { "type": "html", "content": "2023年モデル　ディーラーオプションナビゲーション<br> VXU-235FTi（ﾌｨｯﾄ専用 9ｲﾝﾁﾌﾟﾚﾐｱﾑｲﾝﾀｰﾅﾋﾞ（Honda CONNECT対応））"},
       { "type": "html", "content": "2022年モデル　ディーラーオプションナビゲーション<br> VXM-237VFEi"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-198』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-198』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1457,7 +1457,7 @@
     "body": [
       { "type": "html", "content": "MM522D-L(10インチ)　MJ322D-L(9インチ)　MJ322D-W(7インチ)<br> MM222D-L(9インチ)　MM222D-Le(9インチ)　MJ122D-W(7インチ)<br> MJ122D-A(7インチ)　DA22J(9インチディスプレイオーディオ"},
       { "type": "html", "content": "一部対象外の車両がありますので、必ず適合表をご確認ください。"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1469,8 +1469,8 @@
       { "type": "html", "content": "トヨタディーラーオプション　2023年モデル<br>　NMZK-W73D"},
       { "type": "html", "content": "ダイハツディーラーオプション 2023年モデル<br>　NMZL-W73D / NMZK-W73D"},
       { "type": "html", "content": "ダイハツディーラーオプション 2022年モデル<br>　NMZN-Z72DS / NMZN-Y72DS / NMZN-Y72D"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235A』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235A』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1480,8 +1480,8 @@
     "brand": ["ニッサン"],
     "body": [
       { "type": "html", "content": "インテリジェントアラウンドビューモニター映像を市販ナビゲーションに出力"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1491,12 +1491,12 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【12.3インチ ディスプレイオーディオPlus装着車/LCA非装着車】<br>【12.3インチ ディスプレイオーディオ装着車/LCA非装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『ST-235』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『ST-235』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AST』</a></span></b></p>", "align": "right"},
       { "type": "html", "content": "【ＣＴＮ-１０７ＡＳ/ＣＴＮ-１０７ＡＳＣ/ＣＴＮ-１０７ＡＳＴ】自車位置は追従します。", "align": "right"}
     ]
   },
@@ -1506,8 +1506,8 @@
     "title_data": {"product": ["FreeTVing『FFT-233』", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-233』"], "car_model": ["クロストレック　（GUD GUE）　R4/12～　11.6インチセンターインフォメーションディスプレイ付車"]},
     "brand": ["スバル"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-233』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-233』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-233』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-233』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1517,8 +1517,8 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "LXU-237NBi<br>（N-BOX/N-WGN/N-ONE専用 9ｲﾝﾁﾌﾟﾚﾐｱﾑｲﾝﾀｰﾅﾋﾞ（Honda CONNECT対応））"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-236』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-236』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-236』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-236』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1528,8 +1528,8 @@
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "VXM-237VFNi　　VXM-235Ci　　VXM-234VFi"},
-      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-198』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-198』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1538,7 +1538,7 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C01』"], "car_model": ["カローラスポーツ　（MZEA12H（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））　R4/10～", "カローラスポーツハイブリッド　（ZWE219H（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））　R4/10～", "カローラセダン　（MZEA17（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））　R4/10～", "カローラセダンハイブリッド　（ZWE215 ZWE219（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））　R4/10～", "カローラツーリング　（MZEA17W（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））　R4/10～", "カローラツーリングハイブリッド　（ZWE215W ZWE219W（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））　R4/10～", "プリウス（Xグレード（法人向け））　ZVW60.65（ナビレディセット付車）　R5/1～"]},
     "brand": ["ミツビシ"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c01/av-c01.htm\" target=\"_blank\">『AV-C01』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c01/av-c01.htm\" target=\"_blank\">『AV-C01』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1548,12 +1548,12 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【8インチ ディスプレイオーディオ装着車/LCA非装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『ST-235』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AST』</a></span></b></p>", "align": "right"}    ]
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『ST-235』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AST』</a></span></b></p>", "align": "right"}    ]
   },
   {
     "date": "2023年2月20日",
@@ -1562,9 +1562,9 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【10.5インチ ディスプレイオーディオPlus装着車】<br>【10.5インチ ディスプレイオーディオ装着車】<br>【8インチ ディスプレイオーディオ装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-108AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-108ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-108AST』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-108AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-108ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-108AST』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1574,10 +1574,10 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【10.5インチ ディスプレイオーディオPlus装着車】<br>【8インチ ディスプレイオーディオ装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-235C』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1586,8 +1586,8 @@
     "title_data": {"product": ["MAGICONE バックカメラ接続ユニット『AV-C61』（カメラ視点固定式）", "MAGICONE バックカメラ接続ユニット『AV-C62』（カメラ切替式）"], "car_model": ["N-WGN　JH3.4（ナビ装着用スペシャルパッケージ）　R4/9～", "N-ONE　JG3.4（ナビ装着用スペシャルパッケージ）　R4/9～"]},
     "brand": ["ホンダ"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/web_test/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c61/av-c61.htm\" target=\"_blank\">『AV-C61』</a></span>(カメラ視点固定式)</b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c62/av-c62.htm\" target=\"_blank\">『AV-C62』</a></span>(カメラ視点切替式)</b></p>", "align": "right"}
     ]
   },
   {
@@ -1597,7 +1597,7 @@
     "brand": ["ダイハツ"],
     "body": [
       { "type":"html", "content": "NMZN-W73D"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-237』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-237』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1607,9 +1607,9 @@
     "brand": ["トヨタ"],
     "body": [
       { "type": "html", "content": "【10.5インチ ディスプレイオーディオPlus装着車】<br>【8インチ ディスプレイオーディオ装着車】"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AST』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-107AST』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1618,7 +1618,7 @@
     "title_data": {"product": ["FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『CTN-204S』"], "car_model": ["セレナ　（C28 FC28）　R5/1～　【Nissan Connectナビ付車/ガソリン車】"]},
     "brand": ["ニッサン"],
     "body": [
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-204S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-204S』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -1628,7 +1628,7 @@
     "brand": ["ダイハツ"],
     "body": [
       { "type":"html", "content": "NMZL-W73D"},
-      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/web_test/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-204S』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-204S』</a></span></b></p>", "align": "right"}
     ]
   }
 ]
