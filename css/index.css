@@ -210,7 +210,6 @@
     max-height: 800px;
     overflow-y: auto;
     list-style: none;
-    padding: 0 50px;
 }
 /* 各製品情報アイテムのスタイル */
 .product-item {
