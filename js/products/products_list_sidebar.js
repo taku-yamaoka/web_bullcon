@@ -65,10 +65,18 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.id = 'sidebar-overlay';
         overlay.style.opacity = '0';
         overlay.style.display = 'none';
-        document.body.appendChild(overlay);
-
+        
+        // **********************************************
+        // 修正点: オーバーレイを document.body.appendChild(overlay) から変更し、
+        //         contentWrapperやsidebarContainerと同じ親ノード内に挿入する
+        //         (CSSのz-index調整を前提)
+        // **********************************************
+        footerPlaceholder.parentNode.insertBefore(sidebarContainer, footerPlaceholder);
         footerPlaceholder.parentNode.insertBefore(contentWrapper, footerPlaceholder);
-        footerPlaceholder.parentNode.insertBefore(sidebarContainer, contentWrapper);
+        // オーバーレイを挿入: ここで overlay を挿入することで、DOM上でヘッダーやボディのコンテンツの近くに配置
+        footerPlaceholder.parentNode.insertBefore(overlay, contentWrapper);
+        // **********************************************
+
 
         // トグルボタンの作成
         const controlWrapper = document.createElement('div');
@@ -146,22 +154,18 @@ document.addEventListener('DOMContentLoaded', () => {
             // 内部閉じるボタンは、開く時に表示
             closeButton.style.display = isClosed ? 'block' : 'none';
 
-            // ヘッダー要素が存在する場合、サイドバーが開いている間は非表示にする
-            if (headerElement) {
-                headerElement.style.display = isClosed ? 'none' : ''; 
-            }
-
             // オーバーレイの表示切り替え
             if (isClosed) {
                 overlay.style.display = 'block';
                 setTimeout(() => { overlay.style.opacity = '1'; }, 10);
+                setSidebarPositionsAndHeight();
             } else {
                 overlay.style.opacity = '0';
-                setTimeout(() => { overlay.style.display = 'none'; }, 300); 
+                setTimeout(() => { 
+                    overlay.style.display = 'none'; 
+                    setSidebarPositionsAndHeight();
+                }, 300); 
             }
-            
-            // 位置と高さを再計算
-            setSidebarPositionsAndHeight();
         };
 
         toggleButton.addEventListener('click', toggleSidebar);
@@ -325,10 +329,6 @@ document.addEventListener('DOMContentLoaded', () => {
                                 }
                             });
                             
-                            if (isCurrentProduct) {
-                                subPagesUl.style.display = 'block';
-                                productToggleBtn.style.transform = 'rotate(90deg)';
-                            }
                         } else {
                                 productListItem.appendChild(productDiv);
                                 productsUl.appendChild(productListItem);
