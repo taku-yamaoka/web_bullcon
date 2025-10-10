@@ -481,9 +481,6 @@
     }
     .product-info-body {
         flex-direction: column;
-        justify-content: space-between;
-        flex-wrap: nowrap; 
-        border-top: 1px dotted var(--color-background-border);
     }
     .type-and-badge-container {
         width: 100%;
