@@ -259,6 +259,18 @@
     flex-shrink: 0;
 }
 
+
+.product-info-body {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+    border-top: 1px dotted var(--color-background-border);
+}
+
+.car-model-info-group {
+    align-items: flex-start;
+}
+
 /* 個々のラベルの共通スタイル */
 .products-news-label {
     display: inline-block;
@@ -276,12 +288,12 @@
 
 /* Brandラベルグループ */
 .brand-labels-group {
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
     padding-top: 8px;
-    border-top: 1px dotted var(--color-background-border);
 }
 
 /* 対象車種のラベルのスタイル */
@@ -290,14 +302,13 @@
     flex-wrap: wrap;
     gap: 5px;
     margin-top: 5px;
-    align-items: center; 
+    align-self: flex-start;
 }
 .car-model-label {
     font-size: var(--font-size-body-text);
     font-weight: bold;
     color: var(--color-accent-2);
     flex-shrink: 0;
-    vertical-align: middle;
 }
 .car-models {
     font-size: var(--font-size-body-text);
@@ -325,8 +336,8 @@
     color: var(--color-body-text);
     line-height: 1.4;
     padding: 10px 0 0 0;
-    border-top: 1px dashed var(--color-background-border);
     margin-top: 10px;
+    align-self: flex-end;
 }
 .product-fulltext-body div,
 .product-fulltext-body ul {

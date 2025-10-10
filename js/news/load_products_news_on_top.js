@@ -16,8 +16,8 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function fetchProductsData() {
         const jsonFiles = [
-            './html/news/products_news/car_accessory_news_data.json',
-            './html/news/products_news/av_accessory_news_data.json'
+            './html/news/products_news/av_accessory_news_data.json',
+            './html/news/products_news/car_accessory_news_data.json'
         ];
 
         Promise.all(jsonFiles.map(file =>
@@ -137,6 +137,13 @@ document.addEventListener('DOMContentLoaded', () => {
             headerContainer.appendChild(typeAndBadgeContainer);
             li.appendChild(headerContainer);
 
+            /* product-info-body */
+            const productInfoBody = document.createElement('div');
+            productInfoBody.classList.add('product-info-body');
+
+            /* car model info group */
+            const carModelInfoGroup = document.createElement('div');
+            carModelInfoGroup.classList.add('car-model-info-group');
             if (item.brands.length > 0 && !item.brands.includes('ALL')) {
                 const brandLabelsGroup = document.createElement('div');
                 brandLabelsGroup.classList.add('brand-labels-group');
@@ -154,16 +161,18 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     brandLabelsGroup.appendChild(brandLabel);
                 });
-                li.appendChild(brandLabelsGroup);
+                carModelInfoGroup.appendChild(brandLabelsGroup);
             }
 
             if (item.title_data && item.title_data.car_model && item.title_data.car_model.length > 0) {
                 const carModelInfoDiv = document.createElement('div');
                 carModelInfoDiv.classList.add('car-model-info');
                 carModelInfoDiv.innerHTML = `<span class="car-model-label">対象車種：</span><span class="car-models">${item.title_data.car_model.join('<br>')}</span>`;
-                li.appendChild(carModelInfoDiv);
+                carModelInfoGroup.appendChild(carModelInfoDiv);
             }
+            productInfoBody.appendChild(carModelInfoGroup);
 
+            /* fulltext body */
             const bodyDiv = document.createElement('div');
             bodyDiv.classList.add('product-fulltext-body');
             if (item.body) {
@@ -210,7 +219,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             }
-            li.appendChild(bodyDiv);
+            productInfoBody.appendChild(bodyDiv);
+            li.appendChild(productInfoBody);
             productsList.appendChild(li);
         });
     }
