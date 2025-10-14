@@ -73,7 +73,7 @@
 }
 
 /* レスポンシブ対応（最小調整） */
-@media (max-width: 480px) {
+@media (max-width: 768px) {
     .main-content {
         padding: 0 10px;
     }

@@ -104,24 +104,13 @@ document.addEventListener('DOMContentLoaded', () => {
     // ヘッダー関連の機能を初期化する関数
     //==================================
     function initializeHeaderFunctions() {
-        // モバイルナビゲーションの位置設定ロジック
         const mobileNav = document.querySelector('.mobile-nav');
         let mobileNavOverlay = document.querySelector('.mobile-nav-overlay');
-        const mainHeader = document.querySelector('.header');
 
         if (!mobileNavOverlay) {
             mobileNavOverlay = document.createElement('div');
             mobileNavOverlay.classList.add('mobile-nav-overlay');
             document.body.appendChild(mobileNavOverlay);
-        }
-
-        if (mainHeader && mobileNav && mobileNavOverlay) {
-            const setMobileNavPosition = () => {
-                mobileNav.style.top = `${mainHeader.offsetHeight}px`;
-                mobileNavOverlay.style.top = `${mainHeader.offsetHeight}px`;
-            };
-            setMobileNavPosition();
-            window.addEventListener('resize', setMobileNavPosition);
         }
 
         // メガメニューの初期化
@@ -308,10 +297,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // ヘッダーがDOMに挿入され次第、すぐに fixed 状態（is-stuck）にする。
         // スクロール時の position: fixed への切り替えをなくし、カクつきを防ぐ。
         mainHeader.classList.add('is-stuck');
-
-        // ヘッダーが fixed になった分のスペースを body に付与する。（CSSで処理推奨だが、JSで対応する場合）
-        // const headerHeight = mainHeader.offsetHeight;
-        // document.body.style.paddingTop = `${headerHeight}px`;
 
         let lastScrollY = window.scrollY;
         let ticking = false; // requestAnimationFrame制御用フラグ

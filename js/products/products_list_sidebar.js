@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
         overlay.style.display = 'none';
         
         // **********************************************
-        // 修正点: オーバーレイを document.body.appendChild(overlay) から変更し、
+        // オーバーレイを document.body.appendChild(overlay) から変更し、
         //         contentWrapperやsidebarContainerと同じ親ノード内に挿入する
         //         (CSSのz-index調整を前提)
         // **********************************************
