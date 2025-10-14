@@ -170,7 +170,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // ページネーションボタン押下後にページの先頭に戻る
         window.scrollTo({
-            top: 200,
+            top: 0,
         });
     }
 

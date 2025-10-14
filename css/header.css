@@ -231,7 +231,7 @@
 }
 
 .dropdown-border {
-  border-right: 1px solid rgba(0, 0, 0, 0.2);
+  border-right: 1px solid var(--color-accent-3);
 }
 
 .dropdown-list li.is-hovered,
@@ -295,8 +295,35 @@
   background-color: var(--color-white-emphasis);
 }
 
-#news-dropdown {
-  justify-content: flex-start;
+
+#news-dropdown,
+#match-dropdown {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+#news-dropdown .dropdown-list,
+#match-dropdown .dropdown-list{
+  flex-direction: row;
+  text-align: center;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.dropdown-title {
+  vertical-align:auto;
+}
+
+.dropdown-title img {
+  height: 30px;
+  width: auto;
+  padding-right: 20px;
+}
+
+#news-dropdown .dropdown-list a,
+#match-dropdown .dropdown-list a {
+  border-bottom: 1px solid var(--color-accent-3);
 }
 
 .new-window-icon {
