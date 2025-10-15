@@ -49,13 +49,11 @@ document.addEventListener('DOMContentLoaded', () => {
         allProductsData = allProductsData.map(item => {
             const newsType = item.type;
             const brands = Array.isArray(item.brand) ? item.brand : (item.brand ? [item.brand] : []);
-            const titleData = item.title_data || {};
             
             return {
                 ...item,
                 newsType: newsType,
                 brands: brands,
-                title_data: titleData
             };
         }).sort((a, b) => {
             const dateA = new Date(a.date.replace(/(\d{4})年(\d{1,2})月(\d{1,2})日/, '$1-$2-$3'));
@@ -96,10 +94,10 @@ document.addEventListener('DOMContentLoaded', () => {
             const titleContainer = document.createElement('div');
             titleContainer.classList.add('product-title');
             
-            if (item.title_data && item.title_data.product && item.title_data.product.length > 0) {
+            if (item.product && item.product.length > 0) {
                 const productNamesList = document.createElement('ul');
                 productNamesList.classList.add('product-names');
-                item.title_data.product.forEach(prodName => {
+                item.product.forEach(prodName => {
                     const productLi = document.createElement('li');
                     productLi.textContent = prodName;
                     productNamesList.appendChild(productLi);
@@ -164,13 +162,32 @@ document.addEventListener('DOMContentLoaded', () => {
                 carModelInfoGroup.appendChild(brandLabelsGroup);
             }
 
-            if (item.title_data && item.title_data.car_model && item.title_data.car_model.length > 0) {
+
+            const contextGroup = document.createElement('div');
+            contextGroup.classList.add('context-group');
+
+            if (item.car_models && item.car_models.length > 0) {
                 const carModelInfoDiv = document.createElement('div');
                 carModelInfoDiv.classList.add('car-model-info');
-                carModelInfoDiv.innerHTML = `<span class="car-model-label">対象車種：</span><span class="car-models">${item.title_data.car_model.join('<br>')}</span>`;
+                let carModelText = '<span class="car-model-label">対象車種：</span>';
+                item.car_models.forEach(carModel => {
+                    if (carModel.plane_text) {
+                        console.log("plane");
+                        carModelText += `<span class="car-model"><span class="plane-text">${carModel.plane_text}</span></span>`;
+                    } else {
+                        console.log("aaa");
+                        let carSpecification = '';
+                        if (carModel.specification) {
+                            carSpecification =  `<span class="specification">${carModel.specification}</span>`;
+                        }
+                    
+                        carModelText += `<span class="car-model"><span class="model-name">・${carModel.model_name}</span>${carSpecification}</span>`;
+                    }
+                });
+                carModelInfoDiv.innerHTML = carModelText;
                 carModelInfoGroup.appendChild(carModelInfoDiv);
             }
-            productInfoBody.appendChild(carModelInfoGroup);
+            contextGroup.appendChild(carModelInfoGroup);
 
             /* fulltext body */
             const bodyDiv = document.createElement('div');
@@ -219,7 +236,8 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             }
-            productInfoBody.appendChild(bodyDiv);
+            contextGroup.appendChild(bodyDiv);
+            productInfoBody.appendChild(contextGroup);
             li.appendChild(productInfoBody);
             productsList.appendChild(li);
         });

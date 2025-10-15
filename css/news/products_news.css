@@ -261,10 +261,15 @@
 
 
 .product-info-body {
+    display: flex; 
+    border-top: 1px dotted var(--color-background-border);
+    flex-direction: column;
+}
+
+.context-group {
     display: flex;
     justify-content: space-between;
     flex-wrap: nowrap; 
-    border-top: 1px dotted var(--color-background-border);
 }
 
 .car-model-info-group {
@@ -303,6 +308,7 @@
     gap: 5px;
     margin-top: 5px;
     align-self: flex-start;
+    flex-direction: column;
 }
 .car-model-label {
     font-size: var(--font-size-body-text);
@@ -310,12 +316,21 @@
     color: var(--color-accent-2);
     flex-shrink: 0;
 }
-.car-models {
+.car-model {
+    display: flex;
+    flex-direction: column;
+}
+.plane-text,
+.model-name {
     font-size: var(--font-size-body-text);
     color: var(--color-body-text);
-    line-height: 1.6;
+    line-height: 1.1;
     flex-grow: 1;
-    vertical-align: middle;
+}
+.specification {
+    margin-left: 20px;
+    font-size: var(--font-size-caption);
+    color: var(--color-accent-2);
 }
 
 /* Newバッジのスタイル */
@@ -335,6 +350,7 @@
     font-size: var(--font-size-body-text);
     color: var(--color-body-text);
     line-height: 1.4;
+    flex-grow: 1; 
     padding: 10px 0 0 0;
     margin-top: 10px;
     align-self: flex-end;
