@@ -9,7 +9,7 @@
     "rows": [
       {
         "category": "メーカーオプション",
-        "category2": "H31(2019)年5月 <b>以降</b> 登録車",
+        "category2": "R1(2019)年5月 <b>以降</b> 登録車",
         "links": {
           "toyota": { "pdf": "../../pdf/products/TVing/TVing_New_m_toyota.pdf" },
           "lexus": { "pdf": "../../pdf/products/TVing/TVing_New_m_lexus.pdf" },
@@ -25,7 +25,7 @@
       },
       {
         "category": "ディーラーオプション",
-        "category2": "H31(2019)年5月 <b>以降</b> 登録車",
+        "category2": "R1(2019)年5月 <b>以降</b> 登録車",
         "links": {
           "toyota": { "pdf": "../../pdf/products/TVing/TVing_New_d_toyota.pdf" },
           "lexus": { "pdf": "-" },
