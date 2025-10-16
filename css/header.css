@@ -285,7 +285,8 @@
   color: var(--color-accent);
   text-decoration: none;
   font-weight: bold;
-  font-size: var(--font-size-body-text);;
+  font-size: var(--font-size-body-text);
+  white-space: nowrap;
 }
 
 .dropdown-list li a:hover,
