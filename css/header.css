@@ -1,5 +1,5 @@
 /*==================================
-  Header
+ Header
 ==================================*/
 :root {
   --header-padding-base: 20px;
@@ -11,7 +11,7 @@
 
   --color-mobile-overray: rgba(0, 0, 0, 0.5);
 
-  --font-size-header: clamp(0.9rem, 0.2vw + 0.8rem, 1.1rem);;
+  --font-size-header: clamp(0.9rem, 0.2vw + 0.8rem, 1.1rem);
 }
 
 .header {
@@ -130,6 +130,10 @@
   white-space: nowrap;
 }
 
+.nav-item.has-dropdown {
+  cursor: pointer; 
+}
+
 .nav-item a,
 .dropdown-toggle {
   text-decoration: none;
@@ -145,7 +149,6 @@
   color: var(--color-link-text);
 }
 
-.nav-item:hover .bottom_arrow_icon,
 .nav-item.is-active .bottom_arrow_icon {
   filter: invert(1);
   transform: rotate(180deg);
@@ -172,7 +175,7 @@
 }
 
 /*==================================
-  Dropdown Menu (3-column layout)
+ Dropdown Menu (2-column layout - Product Mega Menu)
 ==================================*/
 .dropdown-menu {
   position: absolute;
@@ -193,7 +196,7 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: clamp(15px, 2vw, 25px);
+  padding: clamp(15px, 2vw, 25px) 10%;
 }
 
 .dropdown-menu.is-visible {
@@ -203,61 +206,78 @@
   pointer-events: auto;
 }
 
-.dropdown-menu-inner {
-  display: flex;
-  justify-content: space-between;
-}
-
-.dropdown-list-container {
-  width: 30%;
+/* 2分割レイアウト */
+#product-dropdown .dropdown-list-container {
+  width: 10%; /* 左側: カテゴリーリスト */
   flex: 1;
 }
 
 .sub-dropdown-list-container {
-  width: 30%;
-  padding-right: clamp(15px, 2vw, 25px);
+  width: 90%; /* 右側: 製品画像グリッド */
+  padding-right: 0;
   padding-left: clamp(15px, 2vw, 25px);
-  flex: 2;
-}
-
-.dropdown-image-container {
-  width: 30%;
-  padding-left: clamp(15px, 2vw, 25px);
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: center;
-  flex: 1.5;
+  flex: 2.5; /* 幅を広めに取る */
 }
 
 .dropdown-border {
+  /* 左側のコンテナに適用し、右側との区切り線にする */
   border-right: 1px solid var(--color-accent-3);
 }
 
-.dropdown-list li.is-hovered,
-.sub-dropdown-list-container li:hover {
-  background-color: var(--color-white-emphasis);
-  color: var(--color-link-text);
-}
-
-.dropdown-image-container img {
+/* 製品画像グリッドのスタイル */
+.product-grid-view {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 最小120pxで自動調整 */
+  gap: clamp(15px, 2vw, 25px);
+  padding: clamp(5px, 1vw, 15px);
   width: 100%;
-  max-width: clamp(200px, 25vw, 250px);
-  height: auto;
-  object-fit: contain;
-  margin-bottom: clamp(10px, 1.5vw, 15px);
+  box-sizing: border-box;
 }
 
-.dropdown-image-container .header-product-title {
+.grid-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  text-decoration: none;
+  color: var(--color-body-text);
+  transition: opacity 0.2s ease;
+}
+
+.grid-item:hover {
+  opacity: 0.8;
+}
+
+.grid-item img {
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1 / 1; /* 正方形に近く表示（必要に応じて調整） */
+  object-fit: contain;
+  margin-bottom: 5px;
+}
+
+.grid-product-title {
+  font-size: clamp(0.8rem, 0.1vw + 0.7rem, 0.95rem);
+  font-weight: bold;
+  margin: 0;
+  padding: 0;
+  line-height: 1.3;
+}
+
+.grid-view-all {
+  grid-column: 1 / -1; /* グリッド全体幅を使用 */
+  text-align: right;
+  padding-top: 10px;
   font-size: var(--font-size-body-text);
   font-weight: bold;
+  color: var(--color-link-text);
 }
-.dropdown-image-container p {
-  font-size: var(--font-size-body-text);
-  color: var(--color-accent);
-  line-height: 1.5;
-  text-align: left;
-  width: 80%;
+/* -------------------------------------- */
+
+
+.dropdown-list li.is-hovered {
+  background-color: var(--color-white-emphasis);
+  color: var(--color-link-text);
 }
 
 .dropdown-list,
@@ -270,14 +290,12 @@
   align-items: flex-start;
 }
 
-.dropdown-list li,
-.sub-dropdown-list-container li {
+.dropdown-list li {
   width: 100%;
   list-style: none;
 }
 
-.dropdown-list li a,
-.sub-dropdown-list-container li a {
+.dropdown-list li a {
   display: block;
   width: 100%;
   padding: clamp(8px, 1.5vw, 10px) clamp(15px, 2vw, 20px);
@@ -289,8 +307,8 @@
   white-space: nowrap;
 }
 
-.dropdown-list li a:hover,
-.sub-dropdown-list-container li a:hover {
+
+.dropdown-list li a:hover {
   color: var(--color-link-text);
   text-decoration: underline;
   background-color: var(--color-white-emphasis);
@@ -309,7 +327,7 @@
   flex-direction: row;
   text-align: center;
   margin-top: 30px;
-  gap: 20px;
+  gap: 15%;
 }
 
 .dropdown-title {
@@ -322,8 +340,10 @@
   padding-right: 20px;
 }
 
-#news-dropdown .dropdown-list a,
-#match-dropdown .dropdown-list a {
+#news-dropdown .dropdown-list li,
+#match-dropdown .dropdown-list li {
+  display: inline-block;
+  justify-content: center;
   border-bottom: 1px solid var(--color-accent-3);
 }
 
@@ -333,7 +353,7 @@
 }
 
 /*==================================
-  Responsive Design (Mobile)
+ Responsive Design (Mobile)
 ==================================*/
 .mobile-nav,
 .hamburger-menu {

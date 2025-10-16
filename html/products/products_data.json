@@ -4,7 +4,7 @@
       {
         "id": "freetving",
         "name": "フリーテレビング/テレナビング",
-        "url": "/html/products/products.html?category=freeTV",
+        "url": "/html/products/products.html?category=freetving",
         "products": [
           {
             "id": "freetving_auto",
