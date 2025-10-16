@@ -405,7 +405,7 @@ label {
 }
 
 /* レスポンシブ対応 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     .result-table thead th,
     .result-table td {
         font-size: var(--font-size-mobile-table);

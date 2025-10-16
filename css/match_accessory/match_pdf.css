@@ -223,7 +223,7 @@ td.bg-yellow {
 
 
 /* レスポンシブ対応 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     table {
         min-width: 700px; 
     }

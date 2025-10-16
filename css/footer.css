@@ -121,7 +121,7 @@
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .footer-sections {
         flex-direction: column;
         gap: 20px;

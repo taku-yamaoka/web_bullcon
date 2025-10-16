@@ -90,7 +90,7 @@
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
      .company-flex {
         flex-direction: column;
         align-items: center; /* 💡 子要素を水平方向に中央寄せ */

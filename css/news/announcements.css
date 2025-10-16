@@ -67,7 +67,7 @@
 }
 
 /* --- レスポンシブ対応の追加 --- */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     /* お知らせセクションの左右パディングを調整 */
     .announcements-section {
         padding: 0 15px;

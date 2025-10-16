@@ -11,7 +11,7 @@
 
   --color-mobile-overray: rgba(0, 0, 0, 0.5);
 
-  --font-size-header: clamp(0.9rem, 0.2vw + 0.8rem, 1.1rem);
+  --font-size-header: clamp(0.7rem, 1vw, 1.1rem);
 }
 
 .header {
@@ -49,13 +49,13 @@
 
 .header-logo{
   height: auto;
-  width: clamp(300px, 18vw, var(--header-logo-height-base));
+  width: clamp(100px, 18vw, var(--header-logo-height-base));
   margin-left: clamp(10px, 2vw, 15px);
 }
 
 .header-logo img {
   height: 100%;
-  width: 100%;
+  width: clamp(60px, 12vw, 300px);
 }
 
 .header-utility {
@@ -227,9 +227,8 @@
 /* 製品画像グリッドのスタイル */
 .product-grid-view {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* 最小120pxで自動調整 */
-  gap: clamp(15px, 2vw, 25px);
-  padding: clamp(5px, 1vw, 15px);
+  grid-template-columns: repeat(auto-fit, minmax(clamp(60px, 10vw, 150px), 1fr)); /* 最小120pxで自動調整 */
+  gap: clamp(15px, 3vw, 25px);
   width: 100%;
   box-sizing: border-box;
 }
@@ -303,10 +302,13 @@
   color: var(--color-accent);
   text-decoration: none;
   font-weight: bold;
-  font-size: var(--font-size-body-text);
+  font-size: clamp(0.6rem, 0.4vw + 0.5rem, 0.9rem);
   white-space: nowrap;
 }
 
+#product-dropdown .dropdown-list li a {
+  white-space: wrap;
+}
 
 .dropdown-list li a:hover {
   color: var(--color-link-text);
@@ -360,7 +362,7 @@
   display: none;
 }
 
-@media (max-width: 768px) {
+@media (max-width: 600px) {
   .header {
     position: fixed;
     top: 0;
@@ -440,7 +442,7 @@
 
   .header-logo img {
     height: auto;
-    width: 150px;
+    width: 100px;
     margin: 5px 0;
   }
 

@@ -24,9 +24,9 @@
     --font-size-h2: clamp(1.25rem, 1.0vw + 1rem, 2rem);
     --font-size-h3: clamp(1.1rem, 0.8vw + 1rem, 1.5rem);
     --font-size-h4: clamp(1.0rem, 0.4vw + 1rem, 1.2rem);
-    --font-size-h5: clamp(0.9rem, 0.2vw + 1rem, 1.1rem);
-    --font-size-body-text: clamp(0.875rem, 0.1vw + 0.8rem, 1rem);
-    --font-size-caption: clamp(0.8rem, 0.1vw + 0.7rem, 0.9rem);
+    --font-size-h5: clamp(0.9rem, 0.8vw + 0.5rem, 1.1rem);
+    --font-size-body-text: clamp(0.8rem, 0.4vw + 0.6rem, 1rem);
+    --font-size-caption: clamp(0.7rem, 0.3vw + 0.5rem, 0.9rem);
 }
 
 html, body, ul, p {
@@ -148,7 +148,7 @@ a:hover {
 /*==================================
   Responsive Design (Mobile)
 ==================================*/
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     :root {
         font-size: 87.5%;
     }

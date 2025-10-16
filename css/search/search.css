@@ -252,7 +252,7 @@
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .result-title-h3 {
         font-weight: 400;
         margin: 0;

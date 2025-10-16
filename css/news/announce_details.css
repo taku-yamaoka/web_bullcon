@@ -47,7 +47,7 @@
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .announcement-article {
         margin: 20px 15px;
         padding: 20px;
