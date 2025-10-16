@@ -210,6 +210,9 @@
     .product-grid {
         grid-template-columns: repeat(3, 1fr);
     }
+    .product-details {
+        line-height: 1.3;
+    }
 }
 
 @media (max-width: 600px) {
