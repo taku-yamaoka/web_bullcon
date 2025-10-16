@@ -3,6 +3,11 @@
 ==================================*/
 :root {
     font-size: 100%;
+    /* iOSでのテキスト自動拡大（ランドスケープモードなど）を無効化 */
+    -webkit-text-size-adjust: 100%; 
+  
+    /* タップ時の青いハイライトを透明にして非表示にする */
+    -webkit-tap-highlight-color: transparent;
 
     --color-background: #fff;
     --color-background-border: #e0e0e0;

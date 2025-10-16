@@ -306,8 +306,8 @@
   white-space: nowrap;
 }
 
-#product-dropdown .dropdown-list li a {
-  white-space: wrap;
+#product-dropdown > .dropdown-list-container > .dropdown-list li a {
+  white-space: normal;
 }
 
 .dropdown-list li a:hover {
@@ -334,6 +334,7 @@
 
 .dropdown-title {
   vertical-align:auto;
+  font-size: var(--font-size-body-text);
 }
 
 .dropdown-title img {
@@ -360,6 +361,12 @@
 .mobile-nav,
 .hamburger-menu {
   display: none;
+}
+
+@media (max-width: 1000px) {
+  .grid-product-title {
+    font-weight: 400;
+  }
 }
 
 @media (max-width: 600px) {
