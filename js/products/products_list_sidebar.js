@@ -221,12 +221,6 @@ document.addEventListener('DOMContentLoaded', () => {
                 caution1.style.fontSize = '12px'
                 caution1.style.color = '#00479d'
                 sidebarContainer.appendChild(caution1);
-                
-                const caution2 = document.createElement('p');
-                caution2.textContent = '※緑文字は取扱説明書PDFにリンクします。';
-                caution2.style.fontSize = '12px'
-                caution2.style.color = '#3F9877'
-                sidebarContainer.appendChild(caution2);
 
                 const productList = document.createElement('ul');
                 productList.className = 'category-list';
@@ -278,60 +272,78 @@ document.addEventListener('DOMContentLoaded', () => {
                         }
 
                         if (product.sub_pages && product.sub_pages.length > 0) {
-                            const productToggleBtn = document.createElement('img');
-                            productToggleBtn.src = '/images/common/right_arrow_icon.png';
-                            productToggleBtn.alt = 'トグル';
-                            productToggleBtn.className = 'toggle-btn sub-toggle-btn';
-                            productDiv.appendChild(productToggleBtn);
+                            // 1. sub_pagesの中に一つでも url を持つページがあるかチェックする
+                            const hasValidSubPages = product.sub_pages.some(subPage => subPage.url); 
 
-                            const subPagesUl = document.createElement('ul');
-                            subPagesUl.className = 'sub-pages-list';
-                            subPagesUl.style.display = 'none';
+                            // 2. 新しい条件 (hasValidSubPages) で全体を囲む
+                            if (hasValidSubPages) {
+                                // アイコンの作成と付与
+                                const productToggleBtn = document.createElement('img');
+                                productToggleBtn.src = '/images/common/right_arrow_icon.png';
+                                productToggleBtn.alt = 'トグル';
+                                productToggleBtn.className = 'toggle-btn sub-toggle-btn';
+                                productDiv.appendChild(productToggleBtn);
+                            
+                                // サブページUL要素の準備
+                                const subPagesUl = document.createElement('ul');
+                                subPagesUl.className = 'sub-pages-list';
+                                subPagesUl.style.display = 'none';
+                            
+                                // サブページのループ処理
+                                product.sub_pages.forEach(subPage => {
+                                    const subPageListItem = document.createElement('li');
+                                    const subPageLink = document.createElement('a');
+                                    let isInsert = false;
 
-                            product.sub_pages.forEach(subPage => {
-                                const subPageListItem = document.createElement('li');
-                                const subPageLink = document.createElement('a');
-                                
-                                if (subPage.url) {
-                                    subPageLink.href = subPage.url;
-                                    subPageLink.style.color = "#00479d";
-
-                                    const subPageUrlPath = subPage.url.replace(/\/+$/, '');
-                                    if (currentUrlPath.endsWith(subPageUrlPath)) {
-                                        subPageLink.classList.add('current-product');
-                                        productDiv.classList.add('current-product'); 
-                                        isCurrentCategory = true;
-                                        isCurrentProduct = true;
+                                    // subPage.urlが存在するかどうかでリンクを設定
+                                    if (subPage.url) {
+                                        subPageLink.href = subPage.url;
+                                        subPageLink.style.color = "#00479d";
+                                    
+                                        const subPageUrlPath = subPage.url.replace(/\/+$/, '');
+                                        if (currentUrlPath.endsWith(subPageUrlPath)) {
+                                            subPageLink.classList.add('current-product');
+                                            productDiv.classList.add('current-product'); 
+                                            isCurrentCategory = true;
+                                            isCurrentProduct = true;
+                                            isInsert = true;
+                                        }
+                                    } else {
+                                        // urlがない場合はリンク無効化
+                                        subPageLink.style.pointerEvents = 'none';
                                     }
-                                } else if((subPage.manual_url)){ 
-                                    subPageLink.href = subPage.manual_url;
-                                    subPageLink.style.color = "#3F9877";
-                                } else {
-                                    subPageLink.style.pointerEvents = 'none';
-                                }
-                                subPageLink.textContent = subPage.name;
-                                
-                                subPageListItem.appendChild(subPageLink);
-                                subPagesUl.appendChild(subPageListItem);
-                            });
-                            
-                            productListItem.appendChild(productDiv);
-                            productListItem.appendChild(subPagesUl);
-                            productsUl.appendChild(productListItem);
 
-                            productDiv.addEventListener('click', () => {
-                                if (subPagesUl.style.display === 'none') {
-                                    subPagesUl.style.display = 'block';
-                                    productToggleBtn.style.transform = 'rotate(90deg)';
-                                } else {
-                                    subPagesUl.style.display = 'none';
-                                    productToggleBtn.style.transform = 'rotate(0deg)';
-                                }
-                            });
+                                    subPageLink.textContent = subPage.name;
+                                
+                                    // isInsertの条件（currentUrlPathとの一致）に関わらず、リストアイテムをULに追加
+                                    subPageListItem.appendChild(subPageLink);
+                                    subPagesUl.appendChild(subPageListItem);
+                                });
+
+                                // DOMに追加
+                                productListItem.appendChild(productDiv);
+                                productListItem.appendChild(subPagesUl);
+                                productsUl.appendChild(productListItem);
                             
-                        } else {
+                                // トグル機能の追加
+                                productDiv.addEventListener('click', () => {
+                                    if (subPagesUl.style.display === 'none') {
+                                        subPagesUl.style.display = 'block';
+                                        productToggleBtn.style.transform = 'rotate(90deg)';
+                                    } else {
+                                        subPagesUl.style.display = 'none';
+                                        productToggleBtn.style.transform = 'rotate(0deg)';
+                                    }
+                                });
+                            } else {
+                                // sub_pagesは存在するが、urlを持つページがない場合
                                 productListItem.appendChild(productDiv);
                                 productsUl.appendChild(productListItem);
+                            }
+                        } else {
+                            // sub_pagesが存在しない、または要素数0の場合
+                            productListItem.appendChild(productDiv);
+                            productsUl.appendChild(productListItem);
                         }
                     });
 

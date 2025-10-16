@@ -83,6 +83,9 @@
     color: var(--color-body-text);
     text-decoration: none;
 }
+.products-sublist .product-item-header a:hover {
+    color: var(--color-link-text);
+}
 /* サブページリストのスタイル */
 .sub-pages-list {
     list-style: none;
@@ -137,12 +140,14 @@
     transition: transform 0.3s ease;
     flex-shrink: 0;
     margin-left: 5px;
+    background-color: rgba(0, 71, 157, 0.1);
+    border-radius: 50%;
+    padding: 8px;
 }
 /* トグルボタンの画像が回転した状態 */
 .toggle-btn.rotated {
     transform: rotate(90deg);
 }
-
 /* ========================================= */
 /* サイドバーの背景オーバーレイ */
 /* ========================================= */
