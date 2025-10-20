@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
     const announcementsList = document.getElementById('announcements-list');
-    fetch('../../api/get_announcements_title.php')
+    fetch('../../api/web_page/get_announcements_title.php')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

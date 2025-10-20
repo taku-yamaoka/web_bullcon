@@ -2,7 +2,7 @@
 header('Content-Type: application/json; charset=UTF-8');
 
 // このPHPファイルからの相対パス
-$directory = '../html/news/announcements/';
+$directory = '../../html/news/announcements/';
 
 // クエリパラメータから取得件数を取得。デフォルトは無制限
 $limit = isset($_GET['limit']) ? intval($_GET['limit']) : null;

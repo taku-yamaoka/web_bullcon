@@ -7,7 +7,7 @@ document.addEventListener('DOMContentLoaded', () => {
         return;
     }
 
-    fetch('./api/get_announcements_title.php?limit=5')
+    fetch('./api/web_page/get_announcements_title.php?limit=5')
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

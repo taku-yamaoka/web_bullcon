@@ -172,10 +172,8 @@ document.addEventListener('DOMContentLoaded', () => {
                 let carModelText = '<span class="car-model-label">対象車種：</span>';
                 item.car_models.forEach(carModel => {
                     if (carModel.plane_text) {
-                        console.log("plane");
                         carModelText += `<span class="car-model"><span class="plane-text">${carModel.plane_text}</span></span>`;
                     } else {
-                        console.log("aaa");
                         let carSpecification = '';
                         if (carModel.specification) {
                             carSpecification =  `<span class="specification">${carModel.specification}</span>`;

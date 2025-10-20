@@ -3,7 +3,7 @@ header('Content-Type: application/json; charset=UTF-8');
 header('Access-Control-Allow-Origin: *'); // CORS対策のため追加
 header('Access-Control-Allow-Methods: GET');
 
-$config = require __DIR__ . '/../../../secret/hp_config.php'; //TODO: 本番環境では../を一つ抜く！！！
+$config = require __DIR__ . '/../../../../secret/hp_config.php'; //TODO: 本番環境では../を一つ抜く！！！
 define('DB_HOST', $config['DB_HOST']);
 define('DB_NAME', $config['DB_NAME']);
 define('DB_USER', $config['DB_USER']);

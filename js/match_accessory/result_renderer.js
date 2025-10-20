@@ -2,7 +2,7 @@ import { getCompatibilityData } from './match_api_client.js';
 import { initializeAndGetMapNotes } from './match.js';
 
 // APIエンドポイントURL
-const MATCH_API_URL = '../../api/get_products_compatibility.php';
+const MATCH_API_URL = '../../api/web_page/get_products_compatibility.php';
 
 
 // 特定のメーカー名

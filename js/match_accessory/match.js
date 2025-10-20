@@ -4,9 +4,9 @@ import { setupEventListeners } from './event_handler.js';
 import { exportTableToPdf } from './result_table_exporter.js'; 
 import { getCompatibilityData } from './match_api_client.js';
 
-const CAR_MODEL_API = '../../api/get_car_model.php';
-const MONITOR_NUMBER_LIST_API = '../../api/get_monitor_list.php';
-const NOTE_LIST_API = '../../api/get_note_list.php';
+const CAR_MODEL_API = '../../api/web_page/get_car_model.php';
+const MONITOR_NUMBER_LIST_API = '../../api/web_page/get_monitor_list.php';
+const NOTE_LIST_API = '../../api/web_page/get_note_list.php';
 
 let carModelCache = null;
 let monitorNumberCache = null;
