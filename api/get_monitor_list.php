@@ -3,11 +3,12 @@ header('Content-Type: application/json; charset=UTF-8');
 header('Access-Control-Allow-Origin: *'); // CORS対策のため追加
 header('Access-Control-Allow-Methods: GET');
 
-define('DB_HOST', '127.0.0.1');
-define('DB_NAME', 'web_page');
-define('DB_USER', 'fuji23f6');
-define('DB_PASS', 'fuji-buru-');
-define('DB_PORT', '5432');
+$config = require __DIR__ . '/../../../secret/hp_config.php'; //TODO: 本番環境では../を一つ抜く！！！
+define('DB_HOST', $config['DB_HOST']);
+define('DB_NAME', $config['DB_NAME']);
+define('DB_USER', $config['DB_USER']);
+define('DB_PASS', $config['DB_PASS']);
+define('DB_PORT', $config['DB_PORT']);
 
 $tableName  = 'monitor_number_list';
 
