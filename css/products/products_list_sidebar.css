@@ -108,6 +108,9 @@
 .product-item-header.current-product a {
     color: var(--color-body-text-dark) !important;
 }
+.product-item-header.current-product img {
+    background-color: var(--color-background) !important;
+}
 .sub-pages-list a.current-product {
     background-color: var(--color-link-text);
     color: var(--color-body-text-dark) !important;
