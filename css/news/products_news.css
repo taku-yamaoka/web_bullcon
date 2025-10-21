@@ -85,8 +85,7 @@
 /* 各タブグループの共通スタイル */
 .tabs-group {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-evenly;
     padding-top: 10px;
     background-color: var(--color-background);
     position: relative;
@@ -114,7 +113,6 @@
 .news-type-group .tab-item {
     flex-grow: 1;
     min-width: unset;
-    max-width: 200px;
 }
 
 /* 2段目のタブ（Brand）専用スタイル */
@@ -129,7 +127,14 @@
 }
 
 .brand-group::before {
-    width: 120%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 113%;
+    height: 2px;
+    background-color: var(--color-background-border);
+    z-index: 0;
 }
 
 .brand-group .tab-item {
