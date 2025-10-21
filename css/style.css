@@ -50,7 +50,7 @@ img {
 }
 
 body {
-    padding-top: 150px; /* ヘッダー分下げる */
+    padding-top: 130px; /* ヘッダー分下げる */
 }
 
 :target {
@@ -63,6 +63,7 @@ body {
     margin: 0 auto;
     padding: 10px 20px 30px 20px;
     min-height: 100vh;
+    z-index: 999;
 }
 
 body {

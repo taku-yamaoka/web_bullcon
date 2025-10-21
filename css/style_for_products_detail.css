@@ -49,7 +49,7 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.8;
     color: var(--color-body-text);
-    padding-top: 150px; /* ヘッダー分下げる */
+    padding-top: 100px; /* ヘッダー分下げる */
     background-color: var(--color-background);
     margin: 0;
 }

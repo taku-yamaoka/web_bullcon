@@ -227,11 +227,10 @@
         top: 100px;
         left: 100%;
         transform: translateX(0);
-        z-index: 110;
         width: 10px;
         text-align: left;
         background-color: rgba(0, 0, 0, 0.05);
-        border: 1px solid #ddd;
+        border: 1px solid rgba(0, 0, 0, 0.05);
         border-left: none;
         padding: 15px 15px 15px 10px;
         font-size: var(--font-size-body-text);
