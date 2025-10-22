@@ -199,7 +199,11 @@ async function renderCategoryTables(data) {
 
                             const dateElement = document.createElement('div');
                             dateElement.textContent = '日付取得中...'; // ローディングテキスト
-                            dateElement.style.fontSize = "0.85em";
+                            if (window.innerWidth < 600) {
+                              dateElement.style.fontSize = "0.65em";
+                            } else {
+                              dateElement.style.fontSize = "0.85em";
+                            }
                             dateElement.style.marginTop = "5px";
                             dateElement.classList.add('date-text');
                             tdLink.appendChild(a);
