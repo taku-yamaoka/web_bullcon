@@ -58,14 +58,16 @@
 
 .contact-info {
     text-align: left;
-    margin-top: 80px;
+    margin-top: 25px;
+    padding-top: 25px;
     font-size: var(--font-size-body-text);
     line-height: 1.8;
+    border-top: 1px solid var(--color-background-border);
 }
 
 /* 連絡先詳細部分のスタイル */
 .contact-detail {
-    margin-top: 50px;
+    padding-top: 10px;
     font-size: var(--font-size-body-text);
     line-height: 1.5; 
 }
@@ -77,9 +79,5 @@
 .contact-detail .tel-info,
 .contact-detail .fax-info {
     color: var(--color-body-text-2);
-}
-
-.cybertrust-seal {
-    text-align: center;
-    margin-top: 50px;
+    padding-left: 20px;
 }
