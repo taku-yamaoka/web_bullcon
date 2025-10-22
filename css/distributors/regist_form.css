@@ -47,12 +47,12 @@
 
 .required-text {
     color: red;
-    font-size: var(--font-size-body-text);
+    font-size: var(--font-size-caption);
 }
 
 .optional-text {
     color: #1200FF;
-    font-size: var(--font-size-body-text);
+    font-size: var(--font-size-caption);
 }
 
 .sub-text, .sub-text-kana {
@@ -89,7 +89,7 @@
 }
 
 .required-confirm-text {
-    font-size: var(--font-size-body-text);
+    font-size: var(--font-size-caption);
     color: red;
     margin: 5px 0;
 }

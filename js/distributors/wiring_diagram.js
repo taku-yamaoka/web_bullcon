@@ -25,7 +25,7 @@ document.addEventListener('DOMContentLoaded', () => {
         documentSelect.disabled = true;
         
         if (executeButton) {
-            // ⭐ input type="button" のため disabled 属性で制御（クラス制御も残すが、disabledが強い）
+            // input type="button" のため disabled 属性で制御（クラス制御も残すが、disabledが強い）
             executeButton.disabled = true;
             executeButton.classList.add('disabled-button'); 
             // input type="button" なので href は不要ですが、前のコードとの互換性確保のため削除
@@ -39,7 +39,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // 2. イベントリスナーの設定
     // ----------------------------------------------------------------
 
-    // 💡 レベル1 (製品カテゴリ) の変更処理
+    // レベル1 (製品カテゴリ) の変更処理
     productSelect.addEventListener('change', () => {
         const productValue = productSelect.value;
         
@@ -59,7 +59,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // 💡 レベル2 (メーカー名) の変更処理
+    // レベル2 (メーカー名) の変更処理
     makerSelect.addEventListener('change', () => {
         const makerValue = makerSelect.value;
         
@@ -78,7 +78,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    // 💡 レベル3 (資料名) の変更処理 
+    // レベル3 (資料名) の変更処理 
     documentSelect.addEventListener('change', () => {
         if (executeButton) {
             if (documentSelect.value !== '0') {
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
     
-    // ⭐ 💡 実行ボタンのクリックイベント (input type="button" 用に修正)
+    // 実行ボタンのクリックイベント (input type="button" 用に修正)
     if (executeButton) {
         executeButton.addEventListener('click', () => {
             // disabled属性が効いているはずだが、念のため二重チェック
@@ -125,7 +125,7 @@ document.addEventListener('DOMContentLoaded', () => {
         
         // レベル3のリセット時、実行ボタンも無効化する
         if (selectElement === documentSelect && executeButton) {
-            // ⭐ disabled属性とクラスを設定
+            // disabled属性とクラスを設定
             executeButton.disabled = true;
             executeButton.classList.add('disabled-button');
         }
