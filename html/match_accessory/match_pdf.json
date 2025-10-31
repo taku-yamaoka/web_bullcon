@@ -416,28 +416,6 @@
     ]
   },
   {
-    "productName": "ドアロックアンサーシステム",
-    "productLink": "../../html/products/CAR_ACCESSORY/answer_system/answer_system.htm",
-    "rows": [
-      {
-        "category": "専用ハーネス適合",
-        "category2": "-",
-        "links": {
-          "toyota": { "pdf": "../../pdf/products/CAR_ACCESSORY/answer_wh.pdf" },
-          "lexus": { "pdf": "-" },
-          "nissan": { "pdf": "../../pdf/products/CAR_ACCESSORY/answer_wh.pdf" },
-          "honda": { "pdf": "../../pdf/products/CAR_ACCESSORY/answer_wh.pdf" },
-          "mitsubishi": { "pdf": "-" },
-          "subaru": { "pdf": "-" },
-          "suzuki": { "pdf": "-" },
-          "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "../../pdf/products/CAR_ACCESSORY/answer_wh.pdf" },
-          "isuzu": { "pdf": "-" }
-        }
-      }
-    ]
-  },
-  {
     "productName": "ブレーキ4灯化ユニット",
     "productLink": "../../html/products/CAR_ACCESSORY/brake4/brake4.htm",
     "rows": [
