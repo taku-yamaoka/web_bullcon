@@ -149,46 +149,6 @@
   },
   {
     "type": "category",
-    "categoryName": "LEDランプ"
-  },
-  {
-    "productName": "LEDヘッドランプ",
-    "productLink": "../../html/products/LED_BULB/glh-h/glh-h.htm",
-    "rows": [
-      {
-        "category": "車種別バルブ形状一覧",
-        "category2": "<a href=\"../../html/products/LED_BULB/glh-h/glh-h.htm\">LEDヘッドランプ グロリアス Hｼﾘｰｽﾞ</a><br><a href=\"../../html/products/LED_BULB/glh-dsr/glh-dsr.htm\">LEDヘッドランプ グロリアス Dｼﾘｰｽﾞ</a><br><a href=\"../../html/products/LED_BULB/blh_head/blh_head.htm\">LED ヘッドランプコンフォート</a><br><a href=\"../../html/products/LED_BULB/clh_head/clh_head.htm\">LED ヘッドランプコンフォート2</a><br>も右記に同じ",
-        "links": {
-          "toyota": { "pdf": "../../pdf/products/LED_BULB/bulb_toyota.pdf" },
-          "lexus": { "pdf": "../../pdf/products/LED_BULB/bulb_lexus.pdf" },
-          "nissan": { "pdf": "../../pdf/products/LED_BULB/bulb_nissan.pdf" },
-          "honda": { "pdf": "../../pdf/products/LED_BULB/bulb_honda.pdf" },
-          "mitsubishi": { "pdf": "../../pdf/products/LED_BULB/bulb_mitsubishi.pdf" },
-          "subaru": { "pdf": "../../pdf/products/LED_BULB/bulb_subaru.pdf" },
-          "suzuki": { "pdf": "../../pdf/products/LED_BULB/bulb_suzuki.pdf" },
-          "daihatsu": { "pdf": "../../pdf/products/LED_BULB/bulb_daihatsu.pdf"},
-          "mazda": { "pdf": "../../pdf/products/LED_BULB/bulb_mazda.pdf" },
-          "isuzu": { "pdf": "-" }
-        }
-      }
-    ]
-  },
-  {
-    "productName": "スーパーLEDルームランプ2",
-    "productLink": "../../html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm",
-    "rows": [
-      {
-        "category": "車種別",
-        "category2": "-",
-        "links": {
-          "note": "適合は製品詳細ページをご確認ください",
-          "link": "../../html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm"
-        }
-      }
-    ]
-  },
-  {
-    "type": "category",
     "categoryName": "AVアクセサリー"
   },
   {
@@ -425,6 +385,46 @@
           "daihatsu": { "pdf": "../../pdf/products/CAR_ACCESSORY/hole_size_list_daihatsu.pdf" },
           "mazda": { "pdf": "-" },
           "isuzu": { "pdf": "-" }
+        }
+      }
+    ]
+  },
+  {
+    "type": "category",
+    "categoryName": "LEDランプ"
+  },
+  {
+    "productName": "LEDヘッドランプ",
+    "productLink": "../../html/products/LED_BULB/glh-h/glh-h.htm",
+    "rows": [
+      {
+        "category": "車種別バルブ形状一覧",
+        "category2": "<a href=\"../../html/products/LED_BULB/glh-h/glh-h.htm\">LEDヘッドランプ グロリアス Hｼﾘｰｽﾞ</a><br><a href=\"../../html/products/LED_BULB/glh-dsr/glh-dsr.htm\">LEDヘッドランプ グロリアス Dｼﾘｰｽﾞ</a><br><a href=\"../../html/products/LED_BULB/blh_head/blh_head.htm\">LED ヘッドランプコンフォート</a><br><a href=\"../../html/products/LED_BULB/clh_head/clh_head.htm\">LED ヘッドランプコンフォート2</a><br>も右記に同じ",
+        "links": {
+          "toyota": { "pdf": "../../pdf/products/LED_BULB/bulb_toyota.pdf" },
+          "lexus": { "pdf": "../../pdf/products/LED_BULB/bulb_lexus.pdf" },
+          "nissan": { "pdf": "../../pdf/products/LED_BULB/bulb_nissan.pdf" },
+          "honda": { "pdf": "../../pdf/products/LED_BULB/bulb_honda.pdf" },
+          "mitsubishi": { "pdf": "../../pdf/products/LED_BULB/bulb_mitsubishi.pdf" },
+          "subaru": { "pdf": "../../pdf/products/LED_BULB/bulb_subaru.pdf" },
+          "suzuki": { "pdf": "../../pdf/products/LED_BULB/bulb_suzuki.pdf" },
+          "daihatsu": { "pdf": "../../pdf/products/LED_BULB/bulb_daihatsu.pdf"},
+          "mazda": { "pdf": "../../pdf/products/LED_BULB/bulb_mazda.pdf" },
+          "isuzu": { "pdf": "-" }
+        }
+      }
+    ]
+  },
+  {
+    "productName": "スーパーLEDルームランプ2",
+    "productLink": "../../html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm",
+    "rows": [
+      {
+        "category": "車種別",
+        "category2": "-",
+        "links": {
+          "note": "適合は製品詳細ページをご確認ください",
+          "link": "../../html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm"
         }
       }
     ]
