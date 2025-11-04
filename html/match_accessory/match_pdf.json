@@ -214,28 +214,6 @@
     ]
   },
   {
-    "productName": "ステアリングスイッチ 切替ユニット/コントローラー",
-    "productLink": "../../html/products/AV_ACCESSORY/swc-exc/swc-exc.htm",
-    "rows": [
-      {
-        "category": "動作確認車種",
-        "category2": "-",
-        "links": {
-          "toyota": { "pdf": "../../pdf/products/AV_ACCESSORY/swc_m_toyota.pdf" },
-          "lexus": { "pdf": "../../pdf/products/AV_ACCESSORY/swc_m_lexus.pdf" },
-          "nissan": { "pdf": "../../pdf/products/AV_ACCESSORY/swc_m_nissan.pdf" },
-          "honda": { "pdf": "../../pdf/products/AV_ACCESSORY/swc_m_honda.pdf" },
-          "mitsubishi": { "pdf": "-" },
-          "subaru": { "pdf": "-" },
-          "suzuki": { "pdf": "-" },
-          "daihatsu": { "pdf": "-" },
-          "mazda": { "pdf": "-" },
-          "isuzu": { "pdf": "-" }
-        }
-      }
-    ]
-  },
-  {
     "type": "category",
     "categoryName": "カーアクセサリー"
   },
@@ -403,6 +381,28 @@
         "links": {
           "note": "適合は製品詳細ページをご確認ください",
           "link": "../../html/products/CAR_ACCESSORY/brake4/brake4.htm"
+        }
+      }
+    ]
+  },
+  {
+    "productName": "ステアリングスイッチ 切替ユニット/コントローラー",
+    "productLink": "../../html/products/CAR_ACCESSORY/swc-exc/swc-exc.htm",
+    "rows": [
+      {
+        "category": "動作確認車種",
+        "category2": "-",
+        "links": {
+          "toyota": { "pdf": "../../pdf/products/CAR_ACCESSORY/swc_m_toyota.pdf" },
+          "lexus": { "pdf": "../../pdf/products/CAR_ACCESSORY/swc_m_lexus.pdf" },
+          "nissan": { "pdf": "../../pdf/products/CAR_ACCESSORY/swc_m_nissan.pdf" },
+          "honda": { "pdf": "../../pdf/products/CAR_ACCESSORY/swc_m_honda.pdf" },
+          "mitsubishi": { "pdf": "-" },
+          "subaru": { "pdf": "-" },
+          "suzuki": { "pdf": "-" },
+          "daihatsu": { "pdf": "-" },
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]
