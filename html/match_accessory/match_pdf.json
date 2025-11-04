@@ -236,28 +236,6 @@
     ]
   },
   {
-    "productName": "サービスホールスイッチ",
-    "productLink": "../../html/products/AV_ACCESSORY/hole_sw/hole_sw.htm",
-    "rows": [
-      {
-        "category": "サービスホール形状適合",
-        "category2": "-",
-        "links": {
-          "toyota": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_toyota.pdf" },
-          "lexus": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_lexus.pdf" },
-          "nissan": { "pdf": "-" },
-          "honda": { "pdf": "-" },
-          "mitsubishi": { "pdf": "-" },
-          "subaru": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_subaru.pdf" },
-          "suzuki": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_suzuki.pdf" },
-          "daihatsu": { "pdf": "../../pdf/products/AV_ACCESSORY/hole_size_list_daihatsu.pdf" },
-          "mazda": { "pdf": "-" },
-          "isuzu": { "pdf": "-" }
-        }
-      }
-    ]
-  },
-  {
     "type": "category",
     "categoryName": "カーアクセサリー"
   },
@@ -425,6 +403,28 @@
         "links": {
           "note": "適合は製品詳細ページをご確認ください",
           "link": "../../html/products/CAR_ACCESSORY/brake4/brake4.htm"
+        }
+      }
+    ]
+  },
+  {
+    "productName": "サービスホールスイッチ",
+    "productLink": "../../html/products/CAR_ACCESSORY/hole_sw/hole_sw.htm",
+    "rows": [
+      {
+        "category": "サービスホール形状適合",
+        "category2": "-",
+        "links": {
+          "toyota": { "pdf": "../../pdf/products/CAR_ACCESSORY/hole_size_list_toyota.pdf" },
+          "lexus": { "pdf": "../../pdf/products/CAR_ACCESSORY/hole_size_list_lexus.pdf" },
+          "nissan": { "pdf": "-" },
+          "honda": { "pdf": "-" },
+          "mitsubishi": { "pdf": "-" },
+          "subaru": { "pdf": "../../pdf/products/CAR_ACCESSORY/hole_size_list_subaru.pdf" },
+          "suzuki": { "pdf": "../../pdf/products/CAR_ACCESSORY/hole_size_list_suzuki.pdf" },
+          "daihatsu": { "pdf": "../../pdf/products/CAR_ACCESSORY/hole_size_list_daihatsu.pdf" },
+          "mazda": { "pdf": "-" },
+          "isuzu": { "pdf": "-" }
         }
       }
     ]

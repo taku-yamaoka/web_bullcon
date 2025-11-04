@@ -680,20 +680,6 @@
               { "name": "SWC-T002", "url": "", "manual_url": "/pdf/products/AV_ACCESSORY/swc-t002.pdf" },
               { "name": "SWC-H003", "url": "", "manual_url": "/pdf/products/AV_ACCESSORY/swc-h003.pdf" }
             ]
-          },
-          {
-            "id": "hole_sw",
-            "name": "サービスホールスイッチ",
-            "short_description": "対応製品に付属の「LEDスイッチ」を「サービスホールスイッチ」へ変更できます。",
-            "image_path": "/images/products/service_hall_switch.jpg",
-            "main_page": {
-              "url": "/html/products/AV_ACCESSORY/hole_sw/hole_sw.htm"
-            },
-            "sub_pages": [
-              { "name": "SW-PTA01", "url": "", "manual_url": "/pdf/products/TVing/tvswsize.pdf" },
-              { "name": "SWC-PTC01", "url": "", "manual_url": "/pdf/products/TVing/tvswsize.pdf" },
-              { "name": "SWC-PTC02", "url": "", "manual_url": "/pdf/products/TVing/tvswsize.pdf" }
-            ]
           }
         ]
       },
@@ -893,6 +879,20 @@
               { "name": "BKU-02", "url": "", "manual_url": "/pdf/products/CAR_ACCESSORY/BKU-02.pdf" },
               { "name": "BKU-03", "url": "", "manual_url": "/pdf/products/CAR_ACCESSORY/BKU-03.pdf" },
               { "name": "BKU-04", "url": "", "manual_url": "/pdf/products/CAR_ACCESSORY/BKU-04.pdf" }
+            ]
+          },
+          {
+            "id": "hole_sw",
+            "name": "サービスホールスイッチ",
+            "short_description": "対応製品に付属の「LEDスイッチ」を「サービスホールスイッチ」へ変更できます。",
+            "image_path": "/images/products/service_hall_switch.jpg",
+            "main_page": {
+              "url": "/html/products/CAR_ACCESSORY/hole_sw/hole_sw.htm"
+            },
+            "sub_pages": [
+              { "name": "SW-PTA01", "url": "", "manual_url": "/pdf/products/TVing/tvswsize.pdf" },
+              { "name": "SWC-PTC01", "url": "", "manual_url": "/pdf/products/TVing/tvswsize.pdf" },
+              { "name": "SWC-PTC02", "url": "", "manual_url": "/pdf/products/TVing/tvswsize.pdf" }
             ]
           }
         ]
