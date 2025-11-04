@@ -423,7 +423,7 @@
             "main_page": {
               "url": "/html/products/AV_ACCESSORY/cha/cha01.htm"
             },
-            "sub_pages": [{ "name": "AV-CDV01", "url": "", "manual_url": "/pdf/products/AV_ACCESSORY/AV-CDV01.pdf"}]
+            "sub_pages": [{ "name": "AV-CHA01", "url": "", "manual_url": "/pdf/products/AV_ACCESSORY/AV-CHA01.pdf"}]
           },
           {
             "id": "dvd_cd_player",
