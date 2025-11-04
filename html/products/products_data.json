@@ -641,6 +641,19 @@
             "sub_pages": [{ "name": "AV-CDV01", "url": "", "manual_url": "/pdf/products/AV_ACCESSORY/AV-CDV01.pdf"}]
           },
           {
+            "id": "av_hdm01",
+            "name": "HDMI変換ユニット",
+            "short_description": "HDMIデジタル映像・音声をRCAアナログ映像・音声に変換します。",
+            "image_path": "/images/products/hdmi_convert_unit.jpg",
+            "main_page": {
+              "url": "/html/products/AV_ACCESSORY/av-hdm01/av-hdm01.htm"
+            },
+            "sub_pages": [
+              { "name": "AV-HDM01", "url": "", "manual_url": "/pdf/products/AV_ACCESSORY/av-hdm01.pdf" },
+              { "name": "AV-HDM01DC", "url": "", "manual_url": "/pdf/products/AV_ACCESSORY/av-hdm01DC.pdf" }
+            ]
+          },
+          {
             "id": "swc_exc",
             "name": "ステアリングスイッチ切替ユニット",
             "short_description": "純正ステアリングスイッチで市販ナビゲーションが操作できます。",
@@ -1007,19 +1020,6 @@
             "sub_pages": [
               { "name": "EOP-HZ01TU", "url": "", "manual_url": "/pdf/products/HDMI_USB/EOP-HZ01TU.pdf" },
               { "name": "EOP-HZ02TU", "url": "", "manual_url": "/pdf/products/HDMI_USB/EOP-HZ02TU.pdf" }
-            ]
-          },
-          {
-            "id": "av_hdm01",
-            "name": "HDMI変換ユニット",
-            "short_description": "HDMIデジタル映像・音声をRCAアナログ映像・音声に変換します。",
-            "image_path": "/images/products/hdmi_convert_unit.jpg",
-            "main_page": {
-              "url": "/html/products/HDMI_USB/av-hdm01/av-hdm01.htm"
-            },
-            "sub_pages": [
-              { "name": "AV-HDM01", "url": "", "manual_url": "/pdf/products/HDMI_USB/AV-HDM01.pdf" },
-              { "name": "AV-HDM01DC", "url": "", "manual_url": "/pdf/products/HDMI_USB/AV-HDM01DC.pdf" }
             ]
           },
           {
