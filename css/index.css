@@ -470,6 +470,9 @@
 
 /* モバイル表示 (600px以下) */
 @media (max-width: 600px) {
+    .container {
+        margin-top: 40px; /*topページだけデザイン調整のためContainer marginを上書き*/
+    }
     .hero-slider {
         display: none;
     }

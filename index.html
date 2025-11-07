@@ -12,46 +12,6 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
-
-     <style>
-        /* テーブルの基本設定: 幅を100%にし、列幅を固定する */
-        .simple-table {
-            width: 100%;
-            table-layout: fixed;
-            border-collapse: collapse; /* 罫線の重複を避ける */
-            font-family: Arial, sans-serif;
-        }
-
-        /* セル（ヘッダーとデータ）の共通スタイル */
-        .simple-table th, 
-        .simple-table td {
-            padding: 8px 10px;
-            text-align: left;
-            border: 1px solid #ccc; /* 簡素な罫線 */
-            word-break: break-word; /* 長い単語の折り返し */
-        }
-
-        /* ヘッダー行のスタイル */
-        .simple-table thead tr:first-child th {
-            background-color: #f0f0f0;
-            font-weight: bold;
-            color: #333;
-        }
-
-        /* 列幅の指定 (等分) */
-        /* 3列なので、ここでは各列に約33.33%の幅を割り当てます */
-        .col-date {
-            width: 20%; /* 日付は短いため少し狭く */
-        }
-        .col-target {
-            width: 25%;
-        }
-        .col-content {
-            width: 55%; /* 内容は長くなるため広く */
-        }
-    </style>
-
-
 </head>
 <!-- Google tag (gtag.js) -->
 <!-- Google Analyticse計測用タグです。全てのページに埋め込んでください。 -->
@@ -71,115 +31,9 @@
 <main>
     <div class="container">
         <div class="main-content">
-
-
-            <details><summary style="background-color: rgb(235, 186, 186);">修正/更新 情報 10/21 11:00</summary>
-            <div style="max-width: 800px; margin: 20px auto; font-size: 0.8em;">
-    
-    <table class="simple-table">
-        <thead>
-            <!-- 1行目: カラム名 (ヘッダー) -->
-            <tr>
-                <th class="col-date">日付</th>
-                <th class="col-target">対象</th>
-                <th class="col-content">内容</th>
-            </tr>
-        </thead>
-        <tbody>
-            <tr>
-                <td rowspan="1">25/10/21</td>
-                <td rowspan="1">ヘッダー</td>
-                <td>ヘッダー縦幅を縮小、サイト内検索窓を拡張しました。<br>　→100px以下の場合はサイト内検索枠は非表示とします。</td>
-            </tr>
-            <tr>
-                <td rowspan="3">25/10/20</td>
-                <td rowspan="2">全体</td>
-                <td>製品詳細ページのSEO対策を追加しました。(品番ページは対応想定外)</td>
-                <tr><td>一部ios表示不具合を修正しました</td></tr>
-                <tr><td rowspan="1">サイトマップ</td><td>デザインを更新しました。</td></tr>
-            </tr>
-            <tr>
-                <td rowspan="2">25/10/17</td>
-                <td rowspan="2">全体</td>
-                <td>製品詳細ページ以外のSEO対策を追加しました。</td>
-                <tr><td>GAを導入しました。</td></tr>
-            </tr>
-            <tr>
-                <td rowspan="5">25/10/16</td>
-                <td rowspan="3">ヘッダー</td>
-                <td>製品情報タブ内のデザインを変更しました</td>
-                <tr><td>モバイル表示ヘッダーの幅を狭めました</td></tr>
-                <tr><td>ヘッダータブ、および製品情報タブ内カテゴリリストのホバー処理を廃止し、クリックで以下アイテムを表示するようにしました</td></tr>
-                <tr><td>全体</td><td>モバイル表示の閾値を768pxから600pxに変更しました（画面ローテートでのPC表示対策）</td></tr>
-                <tr><td>製品詳細ページサイドバー</td><td>説明書リンクを削除、ドロップダウンを視覚的にわかりやすくしました</td></tr>
-            </tr>
-            <tr>
-                <td rowspan="2">25/10/15</td>
-                <td rowspan="1">トップ、製品新着情報</td>
-                <td>製品新着情報のデザイン変更及び検索ロジックの更新</td>
-                <tr><td rowspan="1">適合PDF一覧ページ</td><td>2019年5月以降を H31からR1に表記変更しました。</td></tr>
-            </tr>
-            <tr>
-                <td rowspan="4">25/10/14</td>
-                <td rowspan="3">ヘッダー</td>
-                <td>製品情報押下時の製品一覧ページへの遷移をなくしました。</td>
-                <tr><td>モバイルヘッダー表示時にヘッダーとドロップダウンが重なるデグレを修正しました。</td></tr>
-                <tr><td>新着情報、適合情報のドロップダウンデザインを更新しました。</td></tr>
-                <tr><td rowspan="1">トップページ/製品新着一覧</td><td>1アイテムごとのマージン、パディングを調整しました</td></tr>
-                
-            </tr>
-            <tr>
-                <td rowspan="1">25/10/09</td>
-                <td rowspan="1">製品詳細ページ</td>
-                <td>サイドバー表示のロジックおよびデザイン変更</td>
-            </tr>
-            <tr>
-                <td rowspan="3">25/10/08</td>
-                <td rowspan="2">適合検索ページ</td>
-                <td>注意事項リストを内部保持からDB管理に移管しました。</td>
-                <tr><td>DVD/CD プレイヤーの適合検索が可能になりました。</td></tr>
-                <tr><td>全般</td><td>フォントサイズの共通化、および見た目のバランス調整を行いました。</td></tr>
-            </tr>
-            <tr>
-                <td rowspan="4">25/10/07</td>
-                <td rowspan="3">適合検索ページ</td>
-                <td>検索結果の一時保存ができるようになりました。</td>
-                <tr><td>出力結果のフォントサイズを再調整しました。</td></tr>
-                <tr><td>ステアリングスイッチコントローラの適合検索が可能になりました</td></tr>
-                <tr><td>配線図情報（会員専用ページ）</td><td>ページを新規作成しフッターにリンクしました</td></tr>
-            </tr>
-            <tr>
-                <td rowspan="3">25/10/06</td>
-                <td>適合PDF一覧ページ</td>
-                <td>表示デザインを見直しました。（人によって所感ありそうなので暫定。。）<br>・テーブルをカテゴリ別に分離<br>・伴ってヘッダー固定をy軸からx軸に変更</td>
-                <tr><td rowspan="2">適合検索</td><td>型式・モニター型番を直接指定し検索できるようにしました。</td></tr>
-                <tr><td>製品、オプションタイプ等パラメータを切り替えても入力情報を残すようにしました。</td></tr>
-            </tr>
-            <tr>
-                <td rowspan="7">25/10/03</td>
-                <td>製品詳細ページ 左部製品リスト</td>
-                <td>品番ページ表示時、製品リストのタブを<br>修正前：品番ページまで自動で開く<br>修正：カテゴリまで自動で開く</td>
-            </tr>
-            <tr><td>ヘッダー</td><td>・カクツキを解消しました<br>・ヘッダーホバーの領域を調整しました。</td></tr>
-            <tr><td rowspan="2">トップページ</td><td>お知らせと製品新着情報の順番を入れ替えました</td></tr>
-            <tr><td>ページ最下部にアクセスカウンターを設置しました(カウント数は現行HPのままとなっています)</td></tr>
-            <tr><td>適合検索</td><td>・結果出力のフォントを調整しました。<br>・車種>年式, モニターモデル>型番 で昇順ソートしました<br>・メーカー表示順を(トヨタ、レクサス、ニッサン、ホンダ、ミツビシ、スズキ、スバル、ダイハツ、マツダ)でソートしました<br>・車種、モニタードロップダウンを昇順ソートしました。</td></tr>
-            <tr><td>適合PDF一覧ページ</td><td>x軸スクロールバーをテーブル上部にも設置しました。</td></tr>
-            <tr><td>全検索入力box</td><td>テキストの一括削除ボタンを設置しました。(テキスト入力後に表示)<br>サイト内検索/取説検索/製品新着情報/適合検索 ディーラオプション 年式不明の場合</td></tr>
-            <tr>
-                <td>25/10/01</td>
-                <td>適合検索</td>
-                <td>・[適合検索] 品番検索ボタンのenabled/disabled条件を修正しました。<br>・[適合検索] メーカーオプション選択時、年式未入力でも検索ボタンをenabledとするようにしました。<br>→ 対象メーカー、車種のみの情報を抽出ことも可能にするよう変更しました。</td>
-            </tr>
-        </tbody>
-    </table>
-</div>
-</details>
-
-
             <section class="hero">
                 <div class="hero-slider">
-                    <div class="slider-item" style="background-image: url('./images/slide_banner/banner_freetving.jpg');">
+                    <div class="slider-item" style="background-image: url('./images/slide_banner/Xtrail_206s.jpg');">
                         <a href="./html/products/TVing/TVing.htm" target="_blank"></a>
                     </div>
                     <div class="slider-item" style="background-image: url('./images/slide_banner/banner_magicone.jpg');">
@@ -196,7 +50,7 @@
                     </div>
                 </div>
                 <div class="hero-slider-mobile">
-                    <div class="slider-item-mobile" style="background-image: url('./images/slide_banner/ms-240-309_cvic_250-600.jpg');">
+                    <div class="slider-item-mobile" style="background-image: url('./images/slide_banner/Xtrail_206s_S.jpg');">
                         <a href="./html/products/TVing/TVing.htm" target="_blank"></a>
                     </div>
                     <div class="slider-item-mobile" style="background-image: url('./images/slide_banner/AV-C64250-600.jpg');">
