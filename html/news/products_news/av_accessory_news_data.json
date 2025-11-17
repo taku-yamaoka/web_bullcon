@@ -1,12 +1,89 @@
 [
   {
+    "date": "2025年11月14日",
+    "type": "新製品情報",
+    "product": ["カーアダプター"],
+    "brand": [],
+    "body": [
+      { "type": "image", "url": "/images/slide_banner/AV-CHA01_250-950.jpg", "alt": "カーHDMIアダプター"},
+      { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\">【2025年11月17日 販売開始】</spam>", "align": "center"},
+      { "type": "html", "content": "車両のUSBポートに接続するだけで<br>CarPlay対応ディスプレイオーディオやナビゲーションでHDMI機器が楽しめる。"},
+      { "type": "html", "content": "<p><b>カーHDMIアダプター<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cha/cha01.htm\" target=\"_blank\">『AV-CHA01』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年11月11日",
+    "type": "新製品情報",
+    "product": ["FreeTVing"],
+    "car_models": [ 
+      {"model_name":"デリカミニ　R7/11～　（BB1A BB2A BB5A BB6A）",
+    "specification":"MAGICONE【Google搭載インフォテイメントシステム（12.3インチ）付車】"}],
+    "brand": ["ミツビシ"],
+    "body": [
+      { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\">【2025年11月12日 販売開始】</spam>", "align": "center"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-503S』</a></span></b></p>", "align": "right"} 
+    ]
+  },
+  {
+    "date": "2025年11月11日",
+    "type": "適合情報",
+    "product": ["FreeTVing / MAGICONE バックカメラ接続ハーネス"],
+    "car_models": [ 
+      {"model_name":"ルークス　R7/11～　（BB1A　BB2A　BB5A　BB6A）",
+    "specification":"FreeTVing【NissanConnectインフォテイメントシステム（12.3インチ）付車】"},
+      {"model_name":"ルークス　R7/11～　（BB1A BB5A）",
+    "specification":"MAGICONE【オーディオレス+ディスプレイ付自動防眩インナーミラー+インテリジェントアラウンドビューモニター装着車】"}],
+    "brand": ["ニッサン"],
+    "body": [
+      { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-206S』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年11月11日",
+    "type": "適合情報",
+    "product": ["FreeTVing / MAGICONE バックカメラ接続ハーネス"],
+    "car_models": [{"model_name":"ニッサンディーラーオプション　2025年モデル　NM1"}],
+    "brand": ["ニッサン"],
+    "body": [
+      { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c55/av-c55.htm\" target=\"_blank\">『AV-C55』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年11月7日",
+    "type": "新製品情報",
+    "product": ["FreeTVing/TELENAVing"],
+    "car_models": [ 
+      {"model_name":"エクストレイル　R7/10～　（T33 SNT33）"}
+    ],
+    "brand": ["ニッサン"],
+    "body": [
+      { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\">【2025年11月10日 販売開始】</spam>", "align": "center"},
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-206S』</a></span></b></p>", "align": "right"} 
+    ]
+  },
+  {
+    "date": "2025年11月5日",
+    "type": "適合情報",
+    "product": ["MAGICONE バックカメラ接続ユニット"], 
+    "car_models": [{"model_name":"デリカミニ　R7/11～　（BA1A BA2A BA5A BA6A）",
+    "specification":"【オーディオレス＋自動防眩ルームミラー（マルチアラウンドモニター付）装着車】"}],
+    "brand": ["ミツビシ"],
+    "body": [
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
     "date": "2025年11月4日",
     "type": "新製品情報",
     "product": ["MAGICONE バックカメラ接続ユニット"],
     "car_models": [
       {"model_name":"カムロード　R5/8～　（TRY230.GDY231.281）"},
-      {"model_name":"ダイナ カーゴ　1.0ton　R5/8～　（TRY230.GDY231.281）　<br>","specification":"【ﾊﾞｯｸｶﾒﾗ＆ﾊﾞｯｸﾓﾆﾀｰ付ｲﾝﾅｰﾐﾗｰ装着車（全車標準装備）】"},
-      {"model_name":"ダイナ カーゴ　2.0ton　R5/10～　<br>（XZC605.645.655.675.710 XZU600H/W.602W.605.640/W.642W.645.<br>650.652W.655 675.685.695.700/A.702/A.710.712.720.722.730.732.775）　<br>","specification":"（ﾊﾞｯｸｶﾒﾗ＆ﾃﾞｼﾞﾀﾙｲﾝﾅｰﾐﾗｰ装着車（全車標準装備））"}
+      {"model_name":"ダイナ カーゴ　1.0ton　R5/8～　（TRY230.GDY231.281）　<br>","specification":"【バックカメラ＆バックモニター付インナーミラー装着車（全車標準装備）】"},
+      {"model_name":"ダイナ カーゴ　2.0ton　R5/10～　<br>（XZC605.645.655.675.710 XZU600H/W.602W.605.640/W.642W.645.<br>650.652W.655 675.685.695.700/A.702/A.710.712.720.722.730.732.775）　<br>","specification":"【バックカメラ＆デジタルインナーミラー装着車（全車標準装備）】"}
     ],
     "brand": ["トヨタ"],
     "body": [
@@ -47,7 +124,7 @@
     "date": "2025年10月7日",
     "type": "適合情報",
     "product": ["FreeTVing"],
-    "car_models": [ {"model_name":"アクア 　R7/9～　(MXPK11.16）", "specification":"【10.5ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車】"}],
+    "car_models": [ {"model_name":"アクア 　R7/9～　(MXPK11.16）", "specification":"【10.5インチディスプレイオーディオ付車】"}],
     "brand": ["トヨタ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
@@ -60,7 +137,7 @@
     "type": "適合情報",
     "product": ["DVD/CDプレーヤー"],
     "car_models": [
-      {"model_name":"アクア　R7/9～ 　(MXPK11.16）", "specification": "【ﾒｰｶｰｵﾌﾟｼｮﾝDVDﾌﾟﾚｰﾔｰ非装着 10.5ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車】"}],
+      {"model_name":"アクア　R7/9～ 　(MXPK11.16）", "specification": "【ﾒｰｶｰｵﾌﾟｼｮﾝDVDﾌﾟﾚｰﾔｰ非装着 10.5インチディスプレイオーディオ付車】"}],
     "brand": ["トヨタ"],
     "body": [
       { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
@@ -71,11 +148,11 @@
     "type": "新製品情報",
     "product": ["FreeTVing"], 
     "car_models": [
-      {"model_name":"アルファード （HV/PHEV含む）　R5/7～　(AGH40W.45W.AAHH40W.45W.AAHP45W）", "specification": "【14ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車・LCA付車】"},
-      {"model_name":"ヴェルファイア （HV/PHEV含む）　R5/7～（TAHA40W.45W.AAHH40W.45W.AAHP45W）", "specification": "【14ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車・LCA付車】"},
-      {"model_name":"プリウス （PHEV含む）　R5/1～　（MXWH60.65.ZVW60.65.MXWH61）", "specification": "【12.3ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】【12.3ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車】【8ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車】"},
-      {"model_name":"LBX MORIZO RR　【MT】　R6/8～（GAYA16）", "specification":"【9.8ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】"},
-      {"model_name": "LM　R5/12～　（TAWH15W）", "specification":"【14ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】"}],
+      {"model_name":"アルファード （HV/PHEV含む）　R5/7～　(AGH40W.45W.AAHH40W.45W.AAHP45W）", "specification": "【14インチディスプレイオーディオPlus付車・LCA付車】"},
+      {"model_name":"ヴェルファイア （HV/PHEV含む）　R5/7～（TAHA40W.45W.AAHH40W.45W.AAHP45W）", "specification": "【14インチディスプレイオーディオPlus付車・LCA付車】"},
+      {"model_name":"プリウス （PHEV含む）　R5/1～　（MXWH60.65.ZVW60.65.MXWH61）", "specification": "【12.3インチディスプレイオーディオPlus付車】【12.3インチディスプレイオーディオ付車】【8インチディスプレイオーディオ付車】"},
+      {"model_name":"LBX MORIZO RR　【MT】　R6/8～（GAYA16）", "specification":"【9.8インチディスプレイオーディオPlus付車】"},
+      {"model_name": "LM　R5/12～　（TAWH15W）", "specification":"【14インチディスプレイオーディオPlus付車】"}],
     "brand": ["トヨタ", "レクサス"],
     "body": [
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\"><2025年10月6日 販売開始></spam>", "align": "center"},
@@ -87,14 +164,14 @@
     "type": "新製品情報",
     "product": ["FreeTVing"],
     "car_models": [
-      {"model_name":"クラウン （HV/FCEV含む）　R5/11～（AZSH32.KZSM30）", "specification":"【12.3ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】"},
+      {"model_name":"クラウン （HV/FCEV含む）　R5/11～（AZSH32.KZSM30）", "specification":"【12.3インチディスプレイオーディオPlus付車】"},
       {"model_name":"ハリアー （ハイブリッド含む）　R5/11～　（AZSH32.KZSM30）"},
-      {"model_name":"ハリアーPHEV　R5/7～　（AXUP85）", "specification":"【12.3ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】"},
+      {"model_name":"ハリアーPHEV　R5/7～　（AXUP85）", "specification":"【12.3インチディスプレイオーディオPlus付車】"},
       {"model_name":"LBX 　R5/12～　（MAYH10.15）"},
-      {"model_name":"LBX MORIZO RR　【AT】　R6/8～　（GAYA16）", "specification": "【9.8ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】"},
-      {"model_name":"LX （ハイブリッド含む）　R7/4～　（VJA310W.VJH310W）","specification": "【12.3ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】"},
-      {"model_name":"NX （ハイブリッド含む）　R5/3～　（AAZA20.25.TAZA25.AAZH20.25.26）","specification":"【14ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】"},
-      {"model_name":"RX （ハイブリッド含む）　R4/12～　（TALA10.15.TALH17.AALH10.15.16）","specification":"【14ｲﾝﾁﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus付車】"}
+      {"model_name":"LBX MORIZO RR　【AT】　R6/8～　（GAYA16）", "specification": "【9.8インチディスプレイオーディオPlus付車】"},
+      {"model_name":"LX （ハイブリッド含む）　R7/4～　（VJA310W.VJH310W）","specification": "【12.3インチディスプレイオーディオPlus付車】"},
+      {"model_name":"NX （ハイブリッド含む）　R5/3～　（AAZA20.25.TAZA25.AAZH20.25.26）","specification":"【14インチディスプレイオーディオPlus付車】"},
+      {"model_name":"RX （ハイブリッド含む）　R4/12～　（TALA10.15.TALH17.AALH10.15.16）","specification":"【14インチディスプレイオーディオPlus付車】"}
     ],
     "brand": ["トヨタ", "レクサス"],
     "body": [
@@ -129,7 +206,7 @@
     "type": "適合情報",
     "product": ["DVD/CDプレーヤー"],
     "car_models": [
-      {"plane_text":"【ﾒｰｶｰｵﾌﾟｼｮﾝDVDﾌﾟﾚｰﾔｰ非装着 10.5ｲﾝﾁ ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵPlus 装着車】<br>【ﾒｰｶｰｵﾌﾟｼｮﾝDVDﾌﾟﾚｰﾔｰ非装着 8ｲﾝﾁ ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ 装着車】"},
+      {"plane_text":"【ﾒｰｶｰｵﾌﾟｼｮﾝDVDﾌﾟﾚｰﾔｰ非装着 10.5インチ ディスプレイオーディオPlus 装着車】<br>【ﾒｰｶｰｵﾌﾟｼｮﾝDVDﾌﾟﾚｰﾔｰ非装着 8インチ ディスプレイオーディオ 装着車】"},
       {"model_name":"ヴォクシー　R7/9～　＜一部改良後＞　（MZRA90W.95W）"},
       {"model_name":"ヴォクシーハイブリッド　R7/9～　＜一部改良後＞　（ZWR90W.95W）"},
       {"model_name":"ノア　R7/9～　＜一部改良後＞　（MZRA90W.95W）"},
@@ -198,8 +275,8 @@
     "date": "2025年8月28日",
     "type": "適合情報",
     "product": ["FreeTVing / DVD/CDプレイヤー"],
-    "car_models": [{"model_name":"シエンタ　R7/8～　＜一部改良後＞　（MXPC10G）", "specification":"【10.5インチディスプレイオーディオPlus装着車<br>8インチディスプレイオーディオ装着車】"},
-    {"model_name":"シエンタハイブリッド　R7/8～　＜一部改良後＞　（MXPL10G.15G)","specification":"【10.5インチディスプレイオーディオPlus装着車<br>8インチディスプレイオーディオ装着車】"}],
+    "car_models": [{"model_name":"シエンタ　R7/8～　＜一部改良後＞　（MXPC10G）", "specification":"【10.5インチディスプレイオーディオPlus装着車】<br>【8インチディスプレイオーディオ装着車】"},
+    {"model_name":"シエンタハイブリッド　R7/8～　＜一部改良後＞　（MXPL10G.15G)","specification":"【10.5インチディスプレイオーディオPlus装着車】<br>【8インチディスプレイオーディオ装着車】"}],
     "brand": ["トヨタ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
@@ -223,8 +300,8 @@
     "type": "新製品情報",
     "product": ["FreeTVing"], 
     "car_models": [
-      {"model_name":"シビック　R6/9～　（FL1：M/C後）", "specification": "【Google搭載Honda CONNECTﾃﾞｨｽﾌﾟﾚｰ付車】"},
-      {"model_name":"シビックe:HEV　R6/9～　（FL4：M/C後）", "specification":"【Google搭載Honda CONNECTﾃﾞｨｽﾌﾟﾚｰ付車】"}],
+      {"model_name":"シビック　R6/9～　（FL1：M/C後）", "specification": "【Google搭載Honda CONNECTディスプレー付車】"},
+      {"model_name":"シビックe:HEV　R6/9～　（FL4：M/C後）", "specification":"【Google搭載Honda CONNECTディスプレー付車】"}],
     "brand": ["ホンダ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-240』</a></span></b></p>", "align": "right"},
@@ -288,7 +365,7 @@
   {
     "date": "2025年6月6日",
     "type": "適合情報",
-    "product": ["FreeTVing"], "car_models": [{"model_name":"ＧＲカローラ　R4/12～　（GZEA14H）"}],
+    "product": ["FreeTVing"], "car_models": [{"model_name":"GRカローラ　R4/12～　（GZEA14H）"}],
     "brand": ["トヨタ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
@@ -582,7 +659,7 @@
     "product": ["DVD/CDプレーヤー"],
     "brand": [],
     "body": [
-      { "type": "image", "url": "/web_test/images/slide_banner/banner_dvd.jpg", "alt": "dvd/cdプレイヤー"},
+      { "type": "image", "url": "/images/slide_banner/banner_dvd.jpg", "alt": "dvd/cdプレイヤー"},
       { "type": "html", "content": "車両のUSBポートに接続するだけで<br>純正ディスプレイオーディオでCD/DVDが楽しめる。<br>薄型・軽量のポータブルプレーヤー"},
       { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
     ]
@@ -624,9 +701,9 @@
     "type": "新製品情報",
     "product": ["MAGICONE バックカメラ接続ユニット"], 
     "car_models": [
-        {"model_name":"ダイハツ　アトレー　R4/1～　（S700V.S700W.S710V.S710W）","specification":"【ｽﾏﾎ連携ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ非装着車＋視界補助ﾊﾟｯｸ付車（ｽﾏｰﾄｲﾝﾅｰﾐﾗｰにﾊﾞｯｸｶﾒﾗ映像あり）】"},
-        {"model_name":"ダイハツ　ハイゼットカーゴ　R4/1～　（S700V.S700W.S710V.S710W）","specification":"【ｽﾏﾎ連携ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ非装着車＋視界補助ﾊﾟｯｸ付車（ｽﾏｰﾄｲﾝﾅｰﾐﾗｰにﾊﾞｯｸｶﾒﾗ映像あり）】"}, 
-        {"model_name":"ダイハツ　ハイゼットトラック　R4/1～　（S500P.S510P）","specification":"【ｽﾏﾎ連携ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ非装着車＋視界補助ﾊﾟｯｸ付車（ｽﾏｰﾄｲﾝﾅｰﾐﾗｰにﾊﾞｯｸｶﾒﾗ映像あり）】"}, 
+        {"model_name":"ダイハツ　アトレー　R4/1～　（S700V.S700W.S710V.S710W）","specification":"【ｽﾏﾎ連携ディスプレイオーディオ非装着車＋視界補助ﾊﾟｯｸ付車（ｽﾏｰﾄｲﾝﾅｰﾐﾗｰにﾊﾞｯｸｶﾒﾗ映像あり）】"},
+        {"model_name":"ダイハツ　ハイゼットカーゴ　R4/1～　（S700V.S700W.S710V.S710W）","specification":"【ｽﾏﾎ連携ディスプレイオーディオ非装着車＋視界補助ﾊﾟｯｸ付車（ｽﾏｰﾄｲﾝﾅｰﾐﾗｰにﾊﾞｯｸｶﾒﾗ映像あり）】"}, 
+        {"model_name":"ダイハツ　ハイゼットトラック　R4/1～　（S500P.S510P）","specification":"【ｽﾏﾎ連携ディスプレイオーディオ非装着車＋視界補助ﾊﾟｯｸ付車（ｽﾏｰﾄｲﾝﾅｰﾐﾗｰにﾊﾞｯｸｶﾒﾗ映像あり）】"}, 
         {"model_name":"トヨタ　ピクシスバン　R4/1～　（S700M.S710M）","specification":"【視界補助ﾊﾟｯｸ付車（ｽﾏｰﾄｲﾝﾅｰﾐﾗｰにﾊﾞｯｸｶﾒﾗ映像あり）】"}],
     "brand": ["ダイハツ", "トヨタ"],
     "body": [
@@ -638,8 +715,8 @@
     "type": "新製品情報",
     "product": ["MAGICONE バックカメラ接続ユニット"], 
     "car_models": [
-      {"model_name":"ダイナカーゴ　1.0ton　R5/8～（TRY230.GDY231.281）","specification":"【ﾊﾞｯｸｶﾒﾗ＆ﾊﾞｯｸﾓﾆﾀｰ付ｲﾝﾅｰﾐﾗｰ装着車（全車標準装備）】"}, 
-      {"model_name":"ダイナカーゴ　2.0ton　R5/10～（XZC605.645.655.675.710 XZU600H/W.602W.605.640/W.642W.645.650.652W.655 675.685.695.700/A.702/A.710.712.720.722.730.732.775）","specification":"【ﾊﾞｯｸｶﾒﾗ＆ﾃﾞｼﾞﾀﾙｲﾝﾅｰﾐﾗｰ装着車（全車標準装備）】"}],
+      {"model_name":"ダイナカーゴ　1.0ton　R5/8～（TRY230.GDY231.281）","specification":"【バックカメラ＆バックモニター付インナーミラー装着車（全車標準装備）】"}, 
+      {"model_name":"ダイナカーゴ　2.0ton　R5/10～（XZC605.645.655.675.710 XZU600H/W.602W.605.640/W.642W.645.650.652W.655 675.685.695.700/A.702/A.710.712.720.722.730.732.775）","specification":"【バックカメラ＆デジタルインナーミラー装着車（全車標準装備）】"}],
     "brand": ["トヨタ"],
     "body": [
       { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c63/av-c63.htm\" target=\"_blank\">『AV-C63』</a></span></b></p>", "align": "right"}
@@ -685,7 +762,7 @@
   {
     "date": "2024年8月9日",
     "type": "適合情報",
-    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"エクストレイル　R6/7～　（T33.SNT33）","specification":"【ｲﾝﾃﾘｼﾞｪﾝﾄﾙｰﾑﾐﾗｰ+ｲﾝﾃﾘｼﾞｪﾝﾄｱﾗｳﾝﾄﾞﾋﾞｭｰﾓﾆﾀｰ装着車】"}],
+    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"エクストレイル　R6/7～　（T33.SNT33）","specification":"【インテリジェントルームミラー＋インテリジェントアラウンドビューモニター装着車】"}],
     "brand": ["ニッサン"],
     "body": [
       { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
@@ -717,7 +794,7 @@
   {
     "date": "2024年7月18日",
     "type": "適合情報",
-    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"キャラバン　R6/6～　（E26）","specification":"【ｲﾝﾃﾘｼﾞｪﾝﾄﾙｰﾑﾐﾗｰ+ｲﾝﾃﾘｼﾞｪﾝﾄｱﾗｳﾝﾄﾞﾋﾞｭｰﾓﾆﾀｰ装着車】"}],
+    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"キャラバン　R6/6～　（E26）","specification":"【インテリジェントルームミラー＋インテリジェントアラウンドビューモニター装着車】"}],
     "brand": ["ニッサン"],
     "body": [
       { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
@@ -727,7 +804,7 @@
   {
     "date": "2024年7月16日",
     "type": "適合情報",
-    "product": ["FreeTVing 『スズキ　ディーラーオプション』"], "car_models": [{"model_name":"スズキディーラーオプション　2024年モデル","specification":"99097-69T34-P15（CN-HZ795W / 7ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）"}],
+    "product": ["FreeTVing 『スズキ　ディーラーオプション』"], "car_models": [{"model_name":"スズキディーラーオプション　2024年モデル","specification":"99097-69T34-P15（CN-HZ795W / 7インチスタンダードモデル）"}],
     "brand": ["スズキ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『スズキ ディーラーオプション』</a></span></b></p>", "align": "right"}
@@ -760,8 +837,8 @@
     "type": "新製品情報",
     "product": ["FreeTVing/TELENAVing"], 
     "car_models": [
-      {"model_name":"ZR-V　R5/4～　（RZ3.5）","specification":"【HONDA CONNECTﾃﾞｨｽﾌﾟﾚｰ付車】"}, 
-      {"model_name":"ZR-V e:HEV　R5/4～　（RZ4.6）","specification":"【HONDA CONNECTﾃﾞｨｽﾌﾟﾚｰ付車】"}],
+      {"model_name":"ZR-V　R5/4～　（RZ3.5）","specification":"【HONDA CONNECTディスプレー付車】"}, 
+      {"model_name":"ZR-V e:HEV　R5/4～　（RZ4.6）","specification":"【HONDA CONNECTディスプレー付車】"}],
     "brand": ["ホンダ"],
     "body": [
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\"><2024年7月1日 販売開始></spam>", "align": "right"},
@@ -927,7 +1004,7 @@
   {
     "date": "2024年3月18日",
     "type": "適合情報",
-    "product": ["TELENAVing"], "car_models": [{"model_name":"CX-3　R6/3～　＜一部改良後＞　（DKLFY.DKLAY.DK8FY.DK8AY）","specification":"【地上ﾃﾞｼﾞﾀﾙTVチューナー付車】"}],
+    "product": ["TELENAVing"], "car_models": [{"model_name":"CX-3　R6/3～　＜一部改良後＞　（DKLFY.DKLAY.DK8FY.DK8AY）","specification":"【地上デジタルTVチューナー付車】"}],
     "brand": ["マツダ"],
     "body": [
       { "type":"html", "content": "<p><b>TELENAVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-602』</a></span></b></p>", "align": "right"}
@@ -991,8 +1068,8 @@
     "date": "2024年2月19日",
     "type": "適合情報",
     "product": ["FreeTVing"], "car_models": [
-      {"model_name":"スズキ　ディーラーオプション　2024年モデル","specification":"99098-53U44-K11（SKX-S808 / 8ｲﾝﾁｴﾝﾄﾘｰﾓﾃﾞﾙ）"}, 
-      {"model_name":"スズキ　ディーラーオプション　2023年モデル","specification":"99090-53U23-P01（CN-FZ1087ZA / 10ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>99098-53U23-P02（CN-FZ886ZA / 8ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>99097-69T23-P03（CN-FZ786WZA / 7ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>99098-53U33-P04（CN-HZ885ZA / 8ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>99097-69T33-P05（CN-HZ785WZA / 7ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>99098-53U43-K01（SKX-S807 / 8ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）<br>99097-69T43-K02（KXM-E507W / 7ｲﾝﾁｽﾀﾝﾀﾞｰﾄﾞﾓﾃﾞﾙ）"}
+      {"model_name":"スズキ　ディーラーオプション　2024年モデル","specification":"99098-53U44-K11（SKX-S808 / 8インチエントリーモデル）"}, 
+      {"model_name":"スズキ　ディーラーオプション　2023年モデル","specification":"99090-53U23-P01（CN-FZ1087ZA / 10インチスタンダードモデル）<br>99098-53U23-P02（CN-FZ886ZA / 8インチスタンダードモデル）<br>99097-69T23-P03（CN-FZ786WZA / 7インチスタンダードモデル）<br>99098-53U33-P04（CN-HZ885ZA / 8インチスタンダードモデル）<br>99097-69T33-P05（CN-HZ785WZA / 7インチスタンダードモデル）<br>99098-53U43-K01（SKX-S807 / 8インチスタンダードモデル）<br>99097-69T43-K02（KXM-E507W / 7インチスタンダードモデル）"}
     ],
     "brand": ["スズキ"],
     "body": [
@@ -1035,10 +1112,10 @@
     "date": "2024年2月14日",
     "type": "適合情報",
     "product": ["FreeTVing"], "car_models": [
-      {"model_name":"ヤリス　R6/2～　（MXPA10.15.KSP210【ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車】）"}, 
-      {"model_name":"ヤリスハイブリッド　R6/2～　（MXPH14.17【ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車】）"}, 
-      {"model_name":"ヤリスクロス　R6/2～　（MXPB10.15【ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車】）"}, 
-      {"model_name":"ヤリスクロスハイブリッド　R6/2～　（MXPJ10.15【ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ付車】）"}],
+      {"model_name":"ヤリス　R6/2～　（MXPA10.15.KSP210【ディスプレイオーディオ付車】）"}, 
+      {"model_name":"ヤリスハイブリッド　R6/2～　（MXPH14.17【ディスプレイオーディオ付車】）"}, 
+      {"model_name":"ヤリスクロス　R6/2～　（MXPB10.15【ディスプレイオーディオ付車】）"}, 
+      {"model_name":"ヤリスクロスハイブリッド　R6/2～　（MXPJ10.15【ディスプレイオーディオ付車】）"}],
     "brand": ["トヨタ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
@@ -1150,7 +1227,7 @@
   {
     "date": "2024年1月19日",
     "type": "適合情報",
-    "product": ["FreeTVing", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-198』"], "car_models": [{"model_name":"ホンダディーラーオプション　2023年モデルナビゲーション","specification":"VXU-245FTi　（フィット専用 9ｲﾝﾁHonda CONNECTナビゲーション）"}],
+    "product": ["FreeTVing", "FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ『MS-198』"], "car_models": [{"model_name":"ホンダディーラーオプション　2023年モデルナビゲーション","specification":"VXU-245FTi　（フィット専用 9インチHonda CONNECTナビゲーション）"}],
     "brand": ["ホンダ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
@@ -1172,7 +1249,7 @@
     "date": "2024年1月15日",
     "type": "適合情報",
     "product": ["FreeTVing"], "car_models": [
-      {"model_name":"ホンダディーラーオプション　2023年モデルナビゲーション","specification": "LXU-242NBi　（N-BOX専用 9ｲﾝﾁHonda CONNECTナビゲーション）<br>LXM-247VFLi　（11.4ｲﾝﾁHonda CONNECTﾅﾋﾞ）"}],
+      {"model_name":"ホンダディーラーオプション　2023年モデルナビゲーション","specification": "LXU-242NBi　（N-BOX専用 9インチHonda CONNECTナビゲーション）<br>LXM-247VFLi　（11.4インチHonda CONNECTﾅﾋﾞ）"}],
     "brand": ["ホンダ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-236』</a></span></b></p>", "align": "right"},
@@ -1240,7 +1317,7 @@
   {
     "date": "2023年12月21日",
     "type": "適合情報",
-    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"ルークス　R5/6～　（B44A.B47A）","specification":"【ﾊﾞｯｸﾋﾞｭｰﾓﾆﾀ付ﾙｰﾑﾐﾗｰ装着車】"}],
+    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"ルークス　R5/6～　（B44A.B47A）","specification":"【バックビューモニター付ルームミラー装着車】"}],
     "brand": ["ニッサン"],
     "body": [
       { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25/av-c25.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
@@ -1272,7 +1349,7 @@
   {
     "date": "2023年11月6日",
     "type": "適合情報",
-    "product": ["FreeTVing"], "car_models": [{"model_name":"ホンダディーラーオプション　2023年モデルナビゲーション","specification":"VXU-245VZi（ｳﾞｪｾﾞﾙ専用 9ｲﾝﾁﾌﾟﾚﾐｱﾑｲﾝﾀｰﾅﾋﾞ（Honda CONNECT対応））"}],
+    "product": ["FreeTVing"], "car_models": [{"model_name":"ホンダディーラーオプション　2023年モデルナビゲーション","specification":"VXU-245VZi（ｳﾞｪｾﾞﾙ専用 9インチプレミアムインターナビ（Honda CONNECT対応））"}],
     "brand": ["ホンダ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
@@ -1529,7 +1606,7 @@
   {
     "date": "2023年6月2日",
     "type": "適合情報",
-    "product": ["FreeTVing"], "car_models": [{"model_name":"ホンダ　ディーラーオプション　2024/2023年モデルナビゲーション","specification":"VXU-235VZi（ｳﾞｪｾﾞﾙ専用 9ｲﾝﾁﾌﾟﾚﾐｱﾑｲﾝﾀｰﾅﾋﾞ（Honda CONNECT対応））"}],
+    "product": ["FreeTVing"], "car_models": [{"model_name":"ホンダ　ディーラーオプション　2024/2023年モデルナビゲーション","specification":"VXU-235VZi（ヴェゼル専用 9インチプレミアムインターナビ（Honda CONNECT対応））"}],
     "brand": ["ホンダ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-198』</a></span></b></p>", "align": "right"},
@@ -1557,7 +1634,7 @@
   {
     "date": "2023年4月19日",
     "type": "適合情報",
-    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"セレナ　e-Power　R5/1～　（GC28.GFC28）","specification":"【ｲﾝﾃﾘｼﾞｪﾝﾄｱﾗｳﾝﾄﾞﾋﾞｭｰﾓﾆﾀｰ装着車】"}],
+    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"セレナ　e-Power　R5/1～　（GC28.GFC28）","specification":"【インテリジェントアラウンドビューモニター装着車】"}],
     "brand": ["ニッサン"],
     "body": [
       { "type": "html", "content": "インテリジェントアラウンドビューモニター映像を市販ナビゲーションに出力","align":"right"},
@@ -1589,7 +1666,7 @@
     "date": "2023年4月4日",
     "type": "適合情報",
     "product": ["FreeTVing"], "car_models": [
-      {"model_name":"ホンダ　ディーラーオプション　2023年モデルナビゲーション","specification":"VXU-235FTi（ﾌｨｯﾄ専用 9ｲﾝﾁﾌﾟﾚﾐｱﾑｲﾝﾀｰﾅﾋﾞ（Honda CONNECT対応））"},
+      {"model_name":"ホンダ　ディーラーオプション　2023年モデルナビゲーション","specification":"VXU-235FTi（ﾌｨｯﾄ専用 9インチプレミアムインターナビ（Honda CONNECT対応））"},
       {"model_name":"ホンダ　ディーラーオプション　2022年モデルナビゲーション","specification":"VXM-237VFEi"}
     ],
     "brand": ["ホンダ"],
@@ -1624,7 +1701,7 @@
   {
     "date": "2023年3月9日",
     "type": "適合情報",
-    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"セレナ　e-Power除く　R5/1～　（C28.FC28）","specification":"【ｲﾝﾃﾘｼﾞｪﾝﾄｱﾗｳﾝﾄﾞﾋﾞｭｰﾓﾆﾀｰ装着車】"}],
+    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"セレナ　e-Power除く　R5/1～　（C28.FC28）","specification":"【インテリジェントアラウンドビューモニター装着車】"}],
     "brand": ["ニッサン"],
     "body": [
       { "type": "html", "content": "インテリジェントアラウンドビューモニター映像を市販ナビゲーションに出力","align":"right"},
@@ -1659,7 +1736,7 @@
   {
     "date": "2023年2月27日",
     "type": "適合情報",
-    "product": ["FreeTVing"], "car_models": [{"model_name":"ホンダ ディーラーオプション2023年モデルナビゲーション","specification":"LXU-237NBi（N-BOX/N-WGN/N-ONE専用 9ｲﾝﾁﾌﾟﾚﾐｱﾑｲﾝﾀｰﾅﾋﾞ（Honda CONNECT対応））"}],
+    "product": ["FreeTVing"], "car_models": [{"model_name":"ホンダ ディーラーオプション2023年モデルナビゲーション","specification":"LXU-237NBi（N-BOX/N-WGN/N-ONE専用 9インチプレミアムインターナビ（Honda CONNECT対応））"}],
     "brand": ["ホンダ"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-236』</a></span></b></p>", "align": "right"},
@@ -1680,12 +1757,12 @@
     "date": "2023年2月20日",
     "type": "適合情報",
     "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [
-      {"model_name":"カローラスポーツ　R4/10～　（MZEA12H（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））"}, 
-      {"model_name":"カローラスポーツハイブリッド　R4/10～　（ZWE219H（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））"}, 
-      {"model_name":"カローラセダン　R4/10～　（MZEA17（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））"}, 
-      {"model_name":"カローラセダンハイブリッド　R4/10～　（ZWE215.ZWE219（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））"}, 
-      {"model_name":"カローラツーリング　R4/10～　（MZEA17W（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））"}, 
-      {"model_name":"カローラツーリングハイブリッド　R4/10～　（ZWE215W.ZWE219W（ﾅﾋﾞﾚﾃﾞｨﾊﾟｯｹｰｼﾞ付車））"}, 
+      {"model_name":"カローラスポーツ　R4/10～　（MZEA12H（ナビレディパッケージ付車））"}, 
+      {"model_name":"カローラスポーツハイブリッド　R4/10～　（ZWE219H（ナビレディパッケージ付車））"}, 
+      {"model_name":"カローラセダン　R4/10～　（MZEA17（ナビレディパッケージ付車））"}, 
+      {"model_name":"カローラセダンハイブリッド　R4/10～　（ZWE215.ZWE219（ナビレディパッケージ付車））"}, 
+      {"model_name":"カローラツーリング　R4/10～　（MZEA17W（ナビレディパッケージ付車））"}, 
+      {"model_name":"カローラツーリングハイブリッド　R4/10～　（ZWE215W.ZWE219W（ナビレディパッケージ付車））"}, 
       {"model_name":"プリウス（Xグレード（法人向け））　R5/1～　ZVW60.65（ナビレディセット付車）"}],
     "brand": ["ミツビシ"],
     "body": [
