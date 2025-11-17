@@ -373,6 +373,7 @@
     font-size: var(--font-size-body-text);
     color: var(--color-body-text);
     line-height: 1.4;
+    flex-grow: 1;
     padding: 10px 0 0 0;
     align-self: flex-end;
 }
