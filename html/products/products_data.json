@@ -658,10 +658,10 @@
               "url": "/html/products/CAR_ACCESSORY/swc-exc/swc-exc.htm"
             },
             "sub_pages": [
-              { "name": "SWC-H004", "url": "/html/products/CAR_ACCESSORY/swc-exc/swc-h004/swc-h004.htm", "manual_url": "/pdf/products/AV_ACCESSORY/SWC-H004.pdf" },
-              { "name": "SWC-N005", "url": "/html/products/CAR_ACCESSORY/swc-exc/swc-n005/swc-n005.htm", "manual_url": "/pdf/products/AV_ACCESSORY/SWC-N005.pdf" },
-              { "name": "SWC-H006", "url": "/html/products/CAR_ACCESSORY/swc-exc/swc-h006/swc-h006.htm", "manual_url": "/pdf/products/AV_ACCESSORY/SWC-H006.pdf" },
-              { "name": "SWC-T007", "url": "/html/products/CAR_ACCESSORY/swc-exc/swc-t007/swc-t007.htm", "manual_url": "/pdf/products/AV_ACCESSORY/SWC-T007.pdf" }
+              { "name": "SWC-H004", "url": "/html/products/CAR_ACCESSORY/swc-exc/swc-h004/swc-h004.htm", "manual_url": "/pdf/products/CAR_ACCESSORY/SWC-H004.pdf" },
+              { "name": "SWC-N005", "url": "/html/products/CAR_ACCESSORY/swc-exc/swc-n005/swc-n005.htm", "manual_url": "/pdf/products/CAR_ACCESSORY/SWC-N005.pdf" },
+              { "name": "SWC-H006", "url": "/html/products/CAR_ACCESSORY/swc-exc/swc-h006/swc-h006.htm", "manual_url": "/pdf/products/CAR_ACCESSORY/swc-h006.pdf" },
+              { "name": "SWC-T007", "url": "/html/products/CAR_ACCESSORY/swc-exc/swc-t007/swc-t007.htm", "manual_url": "/pdf/products/CAR_ACCESSORY/swc-t007.pdf" }
             ]
           },
           {
@@ -673,8 +673,8 @@
               "url": "/html/products/CAR_ACCESSORY/steering_sw/steering_sw.htm"
             },
             "sub_pages": [
-              { "name": "SWC-T002", "url": "", "manual_url": "/pdf/products/AV_ACCESSORY/swc-t002.pdf" },
-              { "name": "SWC-H003", "url": "", "manual_url": "/pdf/products/AV_ACCESSORY/swc-h003.pdf" }
+              { "name": "SWC-T002", "url": "", "manual_url": "/pdf/products/CAR_ACCESSORY/swc-t002.pdf" },
+              { "name": "SWC-H003", "url": "", "manual_url": "/pdf/products/CAR_ACCESSORY/swc-h003.pdf" }
             ]
           },
           {
