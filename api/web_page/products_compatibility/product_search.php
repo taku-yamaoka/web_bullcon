@@ -31,7 +31,16 @@ class YearFuncProductsSearch implements ProductSearchInterface
         $this->directInput = $directInput;
         $this->maker = $maker;
         $this->model = $model;
-        $this->userDateTimestamp = strtotime("{$year}-{$month}-01");
+
+        if (is_null($year)) {
+            $this->userDateTimestamp = false;
+        } else {
+            if (!is_null($month)) {
+                $this->userDateTimestamp = strtotime("{$year}-{$month}-01");
+            } else {
+                $this->userDateTimestamp = strtotime("{$year}-01-01"); //yearのみ入力のケース
+            }
+        }
     }
 
     public function getSql(): string

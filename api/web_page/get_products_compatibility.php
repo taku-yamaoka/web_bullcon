@@ -28,14 +28,14 @@ try {
 
 // ユーザーからのGETパラメータを配列にまとめる
 $params = [
-    'product' => $_GET['product'] ?? '',
-    'option' => $_GET['option'] ?? '',
-    'directInput' => $_GET['directInput'] ?? '',
-    'maker' => $_GET['maker'] ?? '',
-    'model' => $_GET['model'] ?? '',
-    'year' => $_GET['year'] ?? '',
-    'month' => $_GET['month'] ?? '',
-    'productCode' => $_GET['productCode'] ?? ($_GET['directInput'] ?? ''),
+    'product' => convertNullString($_GET['product'] ?? ''),
+    'option' => convertNullString($_GET['option'] ?? ''),
+    'directInput' => convertNullString($_GET['directInput'] ?? ''),
+    'maker' => convertNullString($_GET['maker'] ?? ''),
+    'model' => convertNullString($_GET['model'] ?? ''),
+    'year' => convertNullString($_GET['year'] ?? ''),
+    'month' => convertNullString($_GET['month'] ?? ''),
+    'productCode' => convertNullString($_GET['productCode'] ?? ($_GET['directInput'] ?? '')),
 ];
 
 try {
@@ -60,4 +60,11 @@ try {
     http_response_code(400);
     echo json_encode(['error' => $e->getMessage()]);
     exit;
+}
+
+function convertNullString($value) {
+    if ($value === 'null') {
+        return null;
+    }
+    return $value;
 }

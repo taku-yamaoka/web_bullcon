@@ -136,6 +136,7 @@ async function handleSearch(formState, productInfo) {
         const { selectedMaker, selectedModel, selectedYear, selectedMonth, selectedProductCode } = formState;
 
         let queryModel = selectedModel;
+        let queryYear = selectedYear;
         let queryMonth = selectedMonth;
         let queryProductCode = selectedProductCode;
         
@@ -150,12 +151,13 @@ async function handleSearch(formState, productInfo) {
         } else {
             // maker_process: 未選択は null または空文字列としてAPIに渡す
             queryModel = selectedModel === '' ? null : selectedModel;
+            queryYear = selectedYear === '' ? null : selectedYear;
             queryMonth = selectedMonth === '' ? null : selectedMonth;
             queryProductCode = selectedProductCode === '' ? null : selectedProductCode;
         }
 
-        const yearMatch = selectedYear ? selectedYear.match(/\d{4}/) : null;
-        const yearForQuery = yearMatch ? yearMatch[0] : '';
+        const yearMatch = queryYear ? queryYear.match(/\d{4}/) : null;
+        const yearForQuery = yearMatch ? yearMatch[0] : null;
         
         params = {
             product: productKey,
