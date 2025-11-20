@@ -539,6 +539,10 @@
     .product-fulltext-body ul {
         padding-left: 15px;
     }
+    .product-fulltext-body img {
+        height: auto;
+        width: 100%;
+    }
 }
 
 /* Newバッジに光るアニメーションを追加 */
