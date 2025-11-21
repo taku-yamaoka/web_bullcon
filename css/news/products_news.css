@@ -520,6 +520,7 @@
     .product-fulltext-body img {
         height: auto;
         width: 100%;
+        object-fit:contain;
     }
     
     /* ページネーションの調整 */

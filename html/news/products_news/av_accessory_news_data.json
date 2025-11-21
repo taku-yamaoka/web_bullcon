@@ -1,13 +1,77 @@
 [
   {
+    "date": "2025年11月20日",
+    "type": "適合情報",
+    "product": ["FreeTVing / MAGICONE バックカメラ接続ハーネス"], 
+    "car_models": [
+        {"plane_text":"【ニッサンディーラーオプション　2025年モデル】"},
+        {"model_name":" DJ1 ","specification":"【9インチディスプレイオーディオ】"}],
+    "brand": ["ニッサン"],
+    "body": [
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c55/av-c55.htm\" target=\"_blank\">『AV-C55』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年11月20日",
+    "type": "適合情報",
+    "product": ["MAGICONE バックカメラ接続ユニット"],
+    "car_models": [ 
+      {"model_name":"ekスペース　R7/11～　（BA1A　BA5A）",
+    "specification":"【オーディオレス+自動防眩ルームミラー（マルチアラウンドモニター付）装着車】"}],
+    "brand": ["ミツビシ"],
+    "body": [
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年11月20日",
+    "type": "適合情報",
+    "product": ["FreeTVing / MAGICONE バックカメラ接続ハーネス"], 
+    "car_models": [
+        {"plane_text":"【ミツビシディーラーオプション　2025年モデル】"},
+        {"model_name":" MZ609118 ","specification":"【オリジナル9型ナビゲーション】"},
+        {"model_name":" MZ594858 ","specification":"【オリジナル9型ディスプレイオーディオ】"}],
+    "brand": ["ミツビシ"],
+    "body": [
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-225』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c55/av-c55.htm\" target=\"_blank\">『AV-C55』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年11月18日",
+    "type": "適合情報",
+    "product": ["FreeTVing"], 
+    "car_models": [
+      {"model_name":"アコードe:HEV　R6/3～　（CY2）", "specification": "【Google搭載Honda CONNECTディスプレー付車】"}],
+    "brand": ["ホンダ"],
+    "body": [
+      { "type":"html", "content": "<p><b>TELENAVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-309』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>TELENAVing TV切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-309S』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年11月18日",
+    "type": "適合情報",
+    "product": ["FreeTVing"], 
+    "car_models": [
+        {"plane_text":"【スズキディーラーオプション　2024年モデルナビゲーション】"},
+        {"model_name":" 99099-77R23-N01（AVIC-RQS720ZS）","specification":"【9インチスタイリッシュモデル】"}],
+    "brand": ["スズキ"],
+    "body": [
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『FFT-194』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
     "date": "2025年11月14日",
     "type": "新製品情報",
     "product": ["カーアダプター"],
     "brand": [],
     "body": [
-      { "type": "image", "url": "/images/slide_banner/AV-CHA01_250-950.jpg", "alt": "カーHDMIアダプター"},
+      { "type": "image", "url": "/images/slide_banner/AV-CHA01_250-600.jpg", "alt": "カーHDMIアダプター"},
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\">【2025年11月17日 販売開始】</spam>", "align": "center"},
-      { "type": "html", "content": "車両のUSBポートに接続するだけで<br>CarPlay対応ディスプレイオーディオやナビゲーションでHDMI機器が楽しめる。", "align": "left"},
+      { "type": "html", "content": "<p>車両のUSBポートに接続するだけで<br>CarPlay対応ディスプレイオーディオやナビゲーションでHDMI機器が楽しめる。</p>", "align": "left"},
       { "type": "html", "content": "<p><b>カーHDMIアダプター<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cha/cha01.htm\" target=\"_blank\">『AV-CHA01』</a></span></b></p>", "align": "right"}
     ]
   },
@@ -36,8 +100,8 @@
     "brand": ["ニッサン"],
     "body": [
       { "type":"html", "content": "<p><b>FreeTVing ｵｰﾄﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-206S』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ハーネス<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13/av-c13.htm\" target=\"_blank\">『AV-C13』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c13fa/av-c13fa.htm\" target=\"_blank\">『AV-C13FA』</a></span></b></p>", "align": "right"}
     ]
   },
   {
@@ -659,7 +723,7 @@
     "product": ["DVD/CDプレーヤー"],
     "brand": [],
     "body": [
-      { "type": "image", "url": "/images/slide_banner/banner_dvd.jpg", "alt": "dvd/cdプレイヤー"},
+      { "type": "image", "url": "/images/slide_banner/AV-CDV01_250-600.jpg", "alt": "dvd/cdプレイヤー"},
       { "type": "html", "content": "車両のUSBポートに接続するだけで<br>純正ディスプレイオーディオでCD/DVDが楽しめる。<br>薄型・軽量のポータブルプレーヤー"},
       { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
     ]
