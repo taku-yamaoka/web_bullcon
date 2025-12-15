@@ -12,7 +12,8 @@ $files = glob($directory . '*.html');
 
 $announcements = [];
 foreach ($files as $file) {
-    $content = file_get_contents($file);
+    // ファイル全体ではなく、先頭4KBのみ読み込む（タイトルと日付は上部にあるはず）
+    $content = file_get_contents($file, false, null, 0, 4096);
     
     // <title>タグの内容を抽出
     if (preg_match('/<title>(.*?)<\/title>/', $content, $matches)) {
@@ -20,9 +21,19 @@ foreach ($files as $file) {
         
         // 日付情報を抽出
         $date = null;
+        $sortTimestamp = 0; // ソート用のタイムスタンプ初期値
+
         if (preg_match('/<p class="announcement-date">(.*?)<\/p>/', $content, $date_matches)) {
-            $date = $date_matches[1];
-            $date = str_replace('公開日：', '', $date);
+            $dateStr = $date_matches[1];
+            $date = str_replace('公開日：', '', $dateStr);
+            
+            // ソート用にタイムスタンプを計算しておく
+            // "YYYY年M月D日" 形式を想定
+            if (preg_match('/(\d{4})年(\d{1,2})月(\d{1,2})日/', $date, $dMatches)) {
+                 $sortTimestamp = mktime(0, 0, 0, $dMatches[2], $dMatches[3], $dMatches[1]);
+            } else {
+                 $sortTimestamp = strtotime($date); // フォールバック
+            }
         }
         
         // -------------------------
@@ -40,21 +51,28 @@ foreach ($files as $file) {
         $announcements[] = [
             'title' => $title,
             'url' => $url,
-            'date' => $date
+            'date' => $date,
+            '_sort_ts' => $sortTimestamp // ソート用一次データ
         ];
     }
 }
 
 // 日付で並び替え（新しい順）
+// 計算済みのタイムスタンプを使用して高速化
 usort($announcements, function($a, $b) {
-    $dateA = preg_replace('/(\d{4})年(\d{1,2})月(\d{1,2})日/', '$1-$2-$3', $a['date']);
-    $dateB = preg_replace('/(\d{4})年(\d{1,2})月(\d{1,2})日/', '$1-$2-$3', $b['date']);
-    return strtotime($dateB) - strtotime($dateA);
+    // 降順
+    return $b['_sort_ts'] - $a['_sort_ts'];
 });
 
 // 指定された件数にデータを制限
 if ($limit !== null && $limit > 0) {
     $announcements = array_slice($announcements, 0, $limit);
 }
+
+// 出力前にソート用キーを削除
+foreach ($announcements as &$item) {
+    unset($item['_sort_ts']);
+}
+unset($item);
 
 echo json_encode($announcements, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);

@@ -45,56 +45,49 @@ class YearFuncProductsSearch implements ProductSearchInterface
 
     public function getSql(): string
     {
+        $sql = "";
         if($this->directInput) {
-            return "SELECT * FROM $this->dbTableName WHERE model_number LIKE ?"; // 型式直接入力の場合
+            $sql = "SELECT * FROM $this->dbTableName WHERE model_number LIKE ?"; // 型式直接入力の場合
         } else {
-            return "SELECT * FROM $this->dbTableName WHERE maker = ? AND car_model LIKE ?";
+            $sql = "SELECT * FROM $this->dbTableName WHERE maker = ? AND car_model LIKE ?";
         }
+
+        if ($this->userDateTimestamp !== false) {
+            // start_date がNULL または userDate以前
+            // かつ
+            // end_date がNULL または userDate以後
+            $sql .= " AND (start_date IS NULL OR start_date <= ?) AND (end_date IS NULL OR end_date >= ?)";
+        }
+
+        return $sql;
     }
 
     public function getParams(): array
     {
+        $params = [];
         if($this->directInput) {
-            return ["%{$this->directInput}%"];
+            $params[] = "%{$this->directInput}%";
         } else {
-            return [$this->maker, "{$this->model}%"];
+            $params[] = $this->maker;
+            $params[] = "{$this->model}%";
         }
+
+        if ($this->userDateTimestamp !== false) {
+            $dateStr = date('Y-m-d', $this->userDateTimestamp);
+            $params[] = $dateStr;
+            $params[] = $dateStr;
+        }
+
+        return $params;
     }
 
     public function postProcess(array $data): array
     {
-        if ($this->userDateTimestamp === false) {
-            return $data; // 年月がclientから送信されなかった場合は、全データを返却する
-        }
-
-        $filteredData = [];
-        foreach ($data as $item) {
-            $startDate = $item['start_date'] ?? '';
-            $endDate = $item['end_date'] ?? '';
-
-            if ($this->isDateMatch($startDate, $endDate)) {
-                $filteredData[] = $item;
-            }
-        }
-        return $filteredData;
+        // SQL側で絞り込み済みのため、そのまま返却
+        return $data;
     }
 
-    private function isDateMatch($startDateString, $endDateString): bool
-    {
-        $startDate = $startDateString ? strtotime($startDateString) : false;
-        $endDate = $endDateString ? strtotime("last day of {$endDateString}") : false;
 
-        if ($startDate && $endDate) {
-            return $this->userDateTimestamp >= $startDate && $this->userDateTimestamp <= $endDate;
-        }
-        if ($startDate) {
-            return $this->userDateTimestamp >= $startDate;
-        }
-        if ($endDate) {
-            return $this->userDateTimestamp <= $endDate;
-        }
-        return false;
-    }
 }
 
 class ProductCodeFuncSearch implements ProductSearchInterface
