@@ -383,7 +383,7 @@
             "sub_pages": [
               { "name": "AV-R11", "url": "/html/products/MAGICONE/REAR_EX/av-r11/av-r11.htm", "manual_url": "/pdf/products/MAGICONE/AV-R11.pdf" },
               { "name": "AV-R12", "url": "/html/products/MAGICONE/REAR_EX/av-r12/av-r12.htm", "manual_url": "/pdf/products/MAGICONE/AV-R12.pdf" },
-              { "name": "AV-AMP01", "url": "html/products/MAGICONE/OPTION/av-amp01/av-amp01.htm", "manual_url": "/pdf/products/MAGICONE/AV-AMP01.pdf" },
+              { "name": "AV-AMP01", "url": "/html/products/MAGICONE/OPTION/av-amp01/av-amp01.htm", "manual_url": "/pdf/products/MAGICONE/AV-AMP01.pdf" },
               { "name": "AV-FD01", "url": "/html/products/MAGICONE/OPTION/av-fd01/av-fd01.htm", "manual_url": "/pdf/products/MAGICONE/AV-FD01.pdf" }
             ]
           },
