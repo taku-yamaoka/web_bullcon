@@ -46,6 +46,11 @@
     margin: 20px 0; /* 上下の余白を指定 */
 }
 
+.attached-img img{
+    width: 100%;
+    height: auto;
+}
+
 /* レスポンシブ対応 */
 @media (max-width: 600px) {
     .announcement-article {
