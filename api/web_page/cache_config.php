@@ -18,11 +18,11 @@ return [
     
     // 各エンドポイントのTTL設定（秒単位）
     'ttl' => [
-        'car_model' => 86400,      // 24時間
-        'monitor_list' => 86400,   // 24時間
-        'note_list' => 86400,      // 24時間
+        'car_model' => 604800,      // 1週間
+        'monitor_list' => 604800,   // 1週間
+        'note_list' => 604800,      // 1週間
         'announcements' => 86400,   // 1時間
-        'compatibility' => 86400,  // 24時間
+        'compatibility' => 604800,  // 1週間
     ],
     
     // キャッシュクリア用の認証トークン
