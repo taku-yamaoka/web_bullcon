@@ -21,8 +21,8 @@ return [
         'car_model' => 86400,      // 24時間
         'monitor_list' => 86400,   // 24時間
         'note_list' => 86400,      // 24時間
-        'announcements' => 3600,   // 1時間
-        'compatibility' => 1800,   // 30分
+        'announcements' => 86400,   // 1時間
+        'compatibility' => 86400,  // 24時間
     ],
     
     // キャッシュクリア用の認証トークン
