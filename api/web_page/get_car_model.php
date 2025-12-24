@@ -3,6 +3,20 @@ header('Content-Type: application/json; charset=UTF-8');
 header('Access-Control-Allow-Origin: *'); // CORS対策のため追加
 header('Access-Control-Allow-Methods: GET');
 
+// キャッシュマネージャーを読み込み
+require_once __DIR__ . '/cache_manager.php';
+
+// キャッシュキーを生成
+$cacheKey = 'car_model_list';
+$cacheTTL = CacheManager::getTTL('car_model');
+
+// キャッシュから取得を試みる
+$cachedData = CacheManager::get($cacheKey, $cacheTTL);
+if ($cachedData !== false) {
+    echo $cachedData;
+    exit;
+}
+
 $config = require __DIR__ . '/../../../../secret/hp_config.php'; //TODO: 本番環境では../を一つ抜く！！！
 define('DB_HOST', $config['DB_HOST']);
 define('DB_NAME', $config['DB_NAME']);
@@ -78,8 +92,14 @@ uksort($organizedData, function ($keyA, $keyB) use ($orderMap) {
     return $keyA <=> $keyB;
 });
 
-// JSONオブジェクトを直接出力
-echo json_encode($organizedData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+// JSONオブジェクトを生成
+$jsonOutput = json_encode($organizedData, JSON_PRETTY_PRINT | JSON_UNESCAPED_UNICODE);
+
+// キャッシュに保存
+CacheManager::set($cacheKey, $jsonOutput, $cacheTTL);
+
+// 出力
+echo $jsonOutput;
 
 } catch (PDOException $e) {
     http_response_code(500);

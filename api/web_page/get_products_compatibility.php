@@ -3,6 +3,9 @@ header('Content-Type: application/json; charset=UTF-8');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET');
 
+// キャッシュマネージャーを読み込み
+require_once __DIR__ . '/cache_manager.php';
+
 // ファクトリークラスを読み込む
 require_once './products_compatibility/product_search_factory.php';
 
@@ -38,6 +41,17 @@ $params = [
     'productCode' => convertNullString($_GET['productCode'] ?? ($_GET['directInput'] ?? '')),
 ];
 
+// キャッシュキーを生成（パラメータのハッシュを使用）
+$cacheKey = 'compatibility_' . md5(json_encode($params));
+$cacheTTL = CacheManager::getTTL('compatibility');
+
+// キャッシュから取得を試みる
+$cachedData = CacheManager::get($cacheKey, $cacheTTL);
+if ($cachedData !== false) {
+    echo $cachedData;
+    exit;
+}
+
 try {
     // ファクトリーを使って適切な処理クラスのインスタンスを生成
     $searchProcessor = ProductSearchFactory::create($params['product'], $params['option'], $params);
@@ -53,8 +67,14 @@ try {
     // 後処理を実行
     $filteredData = $searchProcessor->postProcess($allPartsData);
     
+    // JSONオブジェクトを生成
+    $jsonOutput = json_encode($filteredData);
+    
+    // キャッシュに保存
+    CacheManager::set($cacheKey, $jsonOutput, $cacheTTL);
+    
     // フィルタリングされたデータをJSON形式で返す
-    echo json_encode($filteredData);
+    echo $jsonOutput;
 
 } catch (Exception $e) {
     http_response_code(400);

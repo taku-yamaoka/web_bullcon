@@ -1,11 +1,25 @@
 <?php
 header('Content-Type: application/json; charset=UTF-8');
 
+// キャッシュマネージャーを読み込み
+require_once __DIR__ . '/cache_manager.php';
+
 // このPHPファイルからの相対パス
 $directory = '../../html/news/announcements/';
 
 // クエリパラメータから取得件数を取得。デフォルトは無制限
 $limit = isset($_GET['limit']) ? intval($_GET['limit']) : null;
+
+// キャッシュキーを生成（limitパラメータを含む）
+$cacheKey = 'announcements_' . ($limit ?? 'all');
+$cacheTTL = CacheManager::getTTL('announcements');
+
+// キャッシュから取得を試みる
+$cachedData = CacheManager::get($cacheKey, $cacheTTL);
+if ($cachedData !== false) {
+    echo $cachedData;
+    exit;
+}
 
 // HTMLファイルのみを対象にファイルリストを取得
 $files = glob($directory . '*.html');
@@ -75,4 +89,11 @@ foreach ($announcements as &$item) {
 }
 unset($item);
 
-echo json_encode($announcements, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+// JSONオブジェクトを生成
+$jsonOutput = json_encode($announcements, JSON_UNESCAPED_UNICODE | JSON_PRETTY_PRINT);
+
+// キャッシュに保存
+CacheManager::set($cacheKey, $jsonOutput, $cacheTTL);
+
+// 出力
+echo $jsonOutput;
