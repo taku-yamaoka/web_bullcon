@@ -1,5 +1,53 @@
 [
   {
+    "date": "2025年12月8日",
+    "type": "適合情報",
+    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [
+      {"model_name":"プロボックスバン　R7/12～　（NCP160V165V）","specification":"【バックモニター内蔵自動防眩インナーミラー付車】"},
+      {"model_name":"プロボックスバンハイブリッド　R7/12～　（NHP160V）","specification":"【バックモニター内蔵自動防眩インナーミラー付車】"}],
+    "brand": ["トヨタ"],
+    "body": [
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25/av-c25.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年12月8日",
+    "type": "適合情報",
+    "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [
+      {"model_name":"プロボックスバン　R7/12～　（NCP160V165V）","specification":"【バックモニター内蔵自動防眩インナーミラー付 + 「NMZK-W75DE」装着車】"},
+      {"model_name":"プロボックスバンハイブリッド　R7/12～　（NHP160V）","specification":"【バックモニター内蔵自動防眩インナーミラー付 + 「NMZK-W75DE」装着車】"}],
+    "brand": ["トヨタ"],
+    "body": [
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25g/av-c25g.htm\" target=\"_blank\">『AV-C25G』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年12月5日",
+    "type": "適合情報",
+    "product": ["FreeTVing"],
+    "car_models": [ {"model_name":"ランドクルーザー 300 　R7/4～　(FJA300W VJA300W）", "specification":"【8インチディスプレイオーディオ（コネクティッドナビ対応）付車】"}],
+    "brand": ["トヨタ"],
+    "body": [
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-110AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年12月4日",
+    "type": "適合情報",
+    "product": ["FreeTVing"],
+    "car_models": [ {"model_name":"bZ4X 　R7/10～　(XEAM11.15）", "specification":"【12.3インチディスプレイオーディオ（コネクティッドナビ対応）Plus付車】"}],
+    "brand": ["トヨタ"],
+    "body": [
+      { "type":"html", "content": "<p><b>FreeTVing LEDｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AS』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｻｰﾋﾞｽﾎｰﾙｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111ASC』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>FreeTVing ｽﾃｱﾘﾝｸﾞｽｲｯﾁ切替ﾀｲﾌﾟ<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『CTN-111AST』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>DVD/CDプレーヤー<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cdv/cdv01.htm\" target=\"_blank\">『AV-CDV01』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
     "date": "2025年11月20日",
     "type": "適合情報",
     "product": ["FreeTVing / MAGICONE バックカメラ接続ハーネス"], 
@@ -71,7 +119,7 @@
     "body": [
       { "type": "image", "url": "/images/slide_banner/AV-CHA01_250-600.jpg", "alt": "カーHDMIアダプター"},
       { "type": "html", "content": "<span style=\"color: red;\"\"font-size: 1.1rem;\">【2025年11月17日 販売開始】</spam>", "align": "center"},
-      { "type": "html", "content": "<p>車両のUSBポートに接続するだけで<br>CarPlay対応ディスプレイオーディオやナビゲーションでHDMI機器が楽しめる。</p>", "align": "left"},
+      { "type": "html", "content": "車両のUSBポートに接続するだけで<br>CarPlay対応ディスプレイオーディオやナビゲーションでHDMI機器が楽しめる。"},
       { "type": "html", "content": "<p><b>カーHDMIアダプター<span style=\"color: blue;\"><a href=\"/html/products/AV_ACCESSORY/cha/cha01.htm\" target=\"_blank\">『AV-CHA01』</a></span></b></p>", "align": "right"}
     ]
   },
@@ -80,7 +128,7 @@
     "type": "新製品情報",
     "product": ["FreeTVing"],
     "car_models": [ 
-      {"model_name":"デリカミニ　R7/11～　（BB1A BB2A BB5A BB6A）",
+      {"model_name":"デリカミニ　R7/11～　（BA1A BA2A BA5A BA6A）",
     "specification":"MAGICONE【Google搭載インフォテイメントシステム（12.3インチ）付車】"}],
     "brand": ["ミツビシ"],
     "body": [
@@ -549,7 +597,7 @@
         {"plane_text":"ホンダディーラーオプション　2022/2021/2020/2019/2018/2017年モデル"},
         {"model_name": "2022年モデル", "specification":"VXM-234VFi　　VXM-224VFi　　VXM-225VFEi　　VXM-227VFEi　　VXU-225FTi"},
         {"model_name": "2021年モデル", "specification":"VXM-225Ci　　 VXM-227VFNi　　VXU-227NBi　　VXM-215VFEi　　VXU-215VZi"},
-        {"model_name": "2020年モデル", "specification":"VXM-214VFi　　VXN-215Ci　　VXM-217VFEi　　VXM-217VFNi　　VXU-215FTi<br>VXU-217NBi　　VXU-217SWi　　VXU-205FTi"},
+        {"model_name": "2020年モデル", "specification":"VXM-214VFi　　VXM-215Ci　　VXM-217VFEi　　VXM-217VFNi　　VXU-215FTi<br>VXU-217NBi　　VXU-217SWi　　VXU-205FTi"},
         {"model_name": "2019年モデル", "specification":"VXM-205Ci　　VXM-205VFEi　　VXM-207VFEi　　VXM-207VFNi　　VXU-207NBi<br>VXU-207SWi"},
         {"model_name": "2018年モデル", "specification":"VXM-194Ci　　VXM-194VFi　　VXU-195NBi"},
         {"model_name": "2017年モデル", "specification":"VXM-184Ci　　VXM-185VFEi　　VXM-185VFi　　VXM-185VFNi　　VXU-185NBi"}
@@ -1238,7 +1286,7 @@
     "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [{"model_name":"ランドクルーザー70　R5/11～　（GDJ76W）","specification":"【自動防眩インナーミラー（バックモニター内蔵）付車】"}],
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c46/av-c46.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
+      { "type":"html", "content": "<p><b>MAGICONE バックカメラ接続ユニット<span style=\"color: blue;\"><a href=\"/html/products/MAGICONE/BACK_CAMERA/av-c25/av-c25.htm\" target=\"_blank\">『AV-C25』</a></span></b></p>", "align": "right"}
     ]
   },
   {

@@ -1,4 +1,21 @@
 [
+  {
+    "date": "2025年12月8日",
+    "type": "適合情報",
+    "product": ["フリーアイドリングストップ"], 
+    "car_models":[{"model_name":"ルークス　R7/11～　（BB#A）"}],
+    "brand": ["ニッサン"],
+    "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FIS-100M』</a></span></b></p>", "align": "right"}]
+  },
+  {
+    "date": "2025年12月8日",
+    "type": "適合情報",
+    "product": ["フリーアイドリングストップ"], 
+    "car_models":[{"model_name":"ekスペース　R7/11～　（BA#A）"},
+    {"model_name":"デリカミニ　R7/11～　（BA#A）"}],
+    "brand": ["ミツビシ"],
+    "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FIS-100M』</a></span></b></p>", "align": "right"}]
+  },
    {
     "date": "2025年10月7日",
     "type": "適合情報",
