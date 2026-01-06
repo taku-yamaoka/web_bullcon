@@ -100,6 +100,65 @@
     }
 }
 
+/* --- ページネーションのスタイル --- */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 5px;
+}
+.page-info {
+    display: block; 
+    width: 100%; 
+    text-align: center;   
+    margin-top: 10px; 
+    font-size: var(--font-size-caption);
+}
+.pagination-button {
+    background-color: var(--color-white-emphasis);
+    border: 1px solid var(--color-background-border);
+    color: var(--color-body-text);
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-size-caption);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    min-width: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+.pagination-button:hover:not(.active):not(.disabled) {
+    background-color: #e0e0e0;
+    color: #007bff;
+}
+.pagination-button.active {
+    background-color: #3498db;
+    color: var(--color-body-text-dark);
+    border-color: #3498db;
+    font-weight: bold;
+    cursor: default;
+}
+.pagination-button.disabled {
+    background-color: #f8f8f8;
+    color: #aaa;
+    cursor: not-allowed;
+    border-color: #eee;
+}
+
+/* レスポンシブ対応 - ページネーション */
+@media (max-width: 600px) {
+    .pagination-container {
+        gap: 3px;
+        margin-top: 20px;
+    }
+    .pagination-button {
+        padding: 6px 8px;
+        min-width: 30px;
+    }
+}
+
 /* Newバッジに光るアニメーションを追加 */
 @keyframes glowing-pulse {
     0% {

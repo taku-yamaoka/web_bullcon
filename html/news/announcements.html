@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -17,32 +18,35 @@
 <!-- Google Analyticse計測用タグです。全てのページに埋め込んでください。 -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0R1H3RK4W"></script>
 <script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
 
-  gtag('config', 'G-X0R1H3RK4W');
+    gtag('config', 'G-X0R1H3RK4W');
 </script>
+
 <body>
 
-<div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
 
-<main>
-    <div class="container">
-        <section class="announcements-section">
-            <h2 class="section-title">
-                <span class="section-title-en">ANNOUNCEMENTS</span>
-                <span class="section-title-jp">お知らせ</span>
-            </h2>
-            <ul id="announcements-list" class="announcements-list"></ul>
-        </section>
-    </div>
-</main>
+    <main>
+        <div class="container">
+            <section class="announcements-section">
+                <h2 class="section-title">
+                    <span class="section-title-en">ANNOUNCEMENTS</span>
+                    <span class="section-title-jp">お知らせ</span>
+                </h2>
+                <ul id="announcements-list" class="announcements-list"></ul>
+                <div id="pagination-container" class="pagination-container"></div>
+            </section>
+        </div>
+    </main>
 
-<div id="footer-placeholder"></div>
+    <div id="footer-placeholder"></div>
 
-<script src="../../js/header.js"></script>
-<script src="../../js/footer.js"></script>
-<script src="../../js/news/announcements.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/footer.js"></script>
+    <script src="../../js/news/announcements.js"></script>
 </body>
+
 </html>
