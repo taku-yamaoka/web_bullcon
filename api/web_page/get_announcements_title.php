@@ -10,10 +10,12 @@ $directory = '../../html/news/announcements/';
 // クエリパラメータから取得件数を取得。デフォルトは無制限
 $limit = isset($_GET['limit']) ? intval($_GET['limit']) : null;
 
-// ディレクトリの最終更新日時を取得（新しいファイルが追加されたらキャッシュを無効化）
+// ディレクトリの状態を取得（ファイルの追加・更新・削除を検知）
 $directoryMtime = 0;
+$fileCount = 0;
 if (is_dir($directory)) {
     $files = glob($directory . '*.html');
+    $fileCount = count($files);
     foreach ($files as $file) {
         $mtime = filemtime($file);
         if ($mtime > $directoryMtime) {
@@ -22,8 +24,9 @@ if (is_dir($directory)) {
     }
 }
 
-// キャッシュキーを生成（limitパラメータとディレクトリの最終更新日時を含む）
-$cacheKey = 'announcements_' . ($limit ?? 'all') . '_' . $directoryMtime;
+// キャッシュキーを生成（limitパラメータ、ファイル数、最終更新日時を含む）
+// ファイル数を含めることで、削除時にもキャッシュが無効化される
+$cacheKey = 'announcements_' . ($limit ?? 'all') . '_' . $fileCount . '_' . $directoryMtime;
 $cacheTTL = CacheManager::getTTL('announcements');
 
 
