@@ -17,7 +17,7 @@ if ($cachedData !== false) {
     exit;
 }
 
-$config = require __DIR__ . '/../../../../secret/hp_config.php'; //TODO: 本番環境では../を一つ抜く！！！
+$config = require __DIR__ . '/../../../secret/hp_config.php';
 define('DB_HOST', $config['DB_HOST']);
 define('DB_NAME', $config['DB_NAME']);
 define('DB_USER', $config['DB_USER']);
