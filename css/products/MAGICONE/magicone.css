@@ -10,8 +10,8 @@
     background-color: #fff;
 }
 
-/* Image Utilities */
-img {
+/* Image Utilities - Scoped to page content to avoid breaking footer/header */
+.page-container img {
     display: block;
     /* Removes bottom space in layout */
     max-width: 100%;
@@ -151,7 +151,7 @@ img {
 }
 
 /* Footer Links */
-.footer-links {
+.magicone-footer-links {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -162,13 +162,6 @@ img {
     margin: 0;
 }
 
-/* Footer Banner */
-.footer-banner {
-    position: relative;
-    width: 100%;
-    display: flex;
-}
-
 /* Separators (Image Replacements) */
 .separator-gray-3 {
     height: 3px;
@@ -177,20 +170,6 @@ img {
     border-bottom: 1px solid #ccc;
     /* Optional definition if it was a line */
     width: 100%;
-}
-
-.separator-gray-20 {
-    height: 20px;
-    background-color: #ededed;
-    width: 100%;
-}
-
-.separator-header-30 {
-    height: 30px;
-    background-color: #e0e0e0;
-    /* Darker header separation */
-    width: 100%;
-    margin-bottom: 10px;
 }
 
 /* Mobile Responsiveness */
