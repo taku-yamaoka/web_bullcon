@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <title>MAGICONE / Bullcon-フジ電機工業株式会社</title>
+    <meta charset="utf-8">
+    <meta name="description"
+        content="Bullcon マジコネ（MAGICONE）は、純正・市販ナビ/モニターへのバックカメラや外部機器（VTR/HDMI）の接続、リアモニター増設を可能にする車種別専用ハーネス・ユニットシリーズ。">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="../../../css/style_for_products_detail.css">
+    <link rel="stylesheet" href="../../../css/header.css">
+    <link rel="stylesheet" href="../../../css/footer.css">
+    <link rel="stylesheet" href="../../../css/products/products_list_sidebar.css">
+    <link rel="stylesheet" href="../../../css/products/magicone_modern.css">
+
+    <!-- Global Scripts -->
+    <script src="../../../js/header.js" defer></script>
+    <script src="../../../js/products/products_list_sidebar.js" defer></script>
+    <script src="../../../js/footer.js" defer></script>
+    <script>
+        function resizeIframe(obj) {
+            try {
+                // Reset height to allow shrinking
+                obj.style.height = 'auto';
+                // Set height to content height + buffer to prevent scrollbar flicker
+                var newHeight = obj.contentWindow.document.body.scrollHeight + 20;
+                obj.style.height = newHeight + 'px';
+                // Explicitly disable scroll
+                obj.style.overflow = 'hidden';
+                obj.contentWindow.document.body.style.overflow = 'hidden';
+            } catch (e) {
+                console.warn("Cannot resize iframe due to cross-origin or load error", e);
+            }
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            var iframes = document.querySelectorAll("iframe");
+            iframes.forEach(function (iframe) {
+                // Ensure scrolling="no" equivalent via JS just in case
+                iframe.setAttribute("scrolling", "no");
+
+                iframe.addEventListener("load", function () {
+                    resizeIframe(this);
+                });
+                // Initial try if already loaded (cached)
+                if (iframe.contentWindow && iframe.contentWindow.document.body) {
+                    resizeIframe(iframe);
+                }
+            });
+
+            // Optional: Resize on window resize (in case iframe content layout changes)
+            window.addEventListener('resize', function () {
+                iframes.forEach(function (iframe) {
+                    resizeIframe(iframe);
+                });
+            });
+        });
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213571806-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'UA-213571806-1');
+    </script>
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-X0R1H3RK4W"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+        gtag('config', 'G-X0R1H3RK4W');
+    </script>
+
+    <!-- Preload Images Logic (Simplified/Removed as modern browsers handle this well, 
+     but keeping the rollover script logic availability if needed, 
+     though we will use CSS hover if possible. For now, strict port.) -->
+    <!-- Keeping strictly to structure change first. -->
+
+</head>
+
+<body>
+    <div id="header-placeholder"></div>
+
+    <div class="spacer-40"></div>
+
+    <main class="page-container">
+        <!-- Row 13: 3 images side by side -->
+        <div class="image-row">
+            <img src="images/magicone_r13_c1.gif" alt="">
+            <img src="images/magicone_r13_c17.gif" alt="">
+        </div>
+
+        <!-- Separator / Header -->
+        <img src="images/magicone_r15_c1.gif" alt="" style="width: 100%;">
+        <div class="spacer-20"></div>
+
+        <!-- Product Description Area -->
+        <div class="product-description">
+            <div class="product-image">
+                <img src="images/magicone_r17_c1.gif" alt="">
+            </div>
+            <div class="product-text">
+                <b>◆バックカメラ接続ユニット</b><br>
+                <span class="sub-text">・<span class="red-wavy-underline"><b>純正バックカメラ映像</b></span>を、<span
+                        class="red-wavy-underline"><b>市販ナビゲーション</b></span>に映し出します。<br>
+                    ・<span class="red-wavy-underline"><b>純正バックカメラ映像</b></span>を、<span
+                        class="red-wavy-underline"><b>分岐して市販ナビゲーション</b></span>に映し出します。</span>
+                <br>
+                <b>◆バックカメラ接続ハーネス</b><br>
+                <span class="sub-text">・<span class="red-wavy-underline"><b>市販バックカメラ映像</b></span>を、<span
+                        class="red-wavy-underline"><b>純正ナビゲーションや純正モニター</b></span>に映し出します。<br>
+                    ・<span class="red-wavy-underline"><b>市販バックカメラ映像</b></span>を、<span
+                        class="red-wavy-underline"><b>市販ナビゲーションや市販モニター</b></span>に<span
+                        class="red-wavy-underline"><b>車両純正ハーネス</b></span>経由で映し出します。</span>
+                <br>
+                <b>◆ＶＴＲハーネス/HDMIハーネス</b><br>
+                <span class="sub-text">・<span
+                        class="red-wavy-underline"><b>外部機器映像（ミラーリング・DVDプレーヤー・ゲーム機）</b></span>を、<span
+                        class="red-wavy-underline"><b>純正モニター</b></span>に映し出します。</span>
+                <br>
+                <b>◆リアモニター接続ユニット</b><br>
+                <span class="sub-text">・<span class="red-wavy-underline"><b>リアモニター出力機能付きナビゲーション</b></span>と、<span
+                        class="red-wavy-underline"><b>純正後席ディスプレイ</b></span>を接続出来ます。</span>
+                <br>
+                <b>◆リアモニター出力ハーネス</b><br>
+                <span class="sub-text">・<span class="red-wavy-underline"><b>純正オプション</b></span>でリアモニターが<span
+                        class="red-wavy-underline"><b>設定されていない車両</b></span>に、<span
+                        class="red-wavy-underline"><b>市販リアモニターを増設</b></span>出来ます。</span>
+                <br>
+                <b>◆リアモニター増設ハーネス</b><br>
+                <span class="sub-text">・純正リアモニターが装着されている車両に、<span
+                        class="red-wavy-underline"><b>さらにリアモニターを増設</b></span>出来ます。</span>
+            </div>
+        </div>
+
+        <div class="spacer-20"></div>
+
+        <!-- Catalog Link Row -->
+        <div class="image-row">
+            <img src="images/magicone_r19_c1.gif" alt="">
+            <a href="../../../pdf/products/MAGICONE/magicone_catalog.pdf" target="_blank">
+                <img src="images/magicone_r19_c24.gif" alt="Catalog">
+            </a>
+        </div>
+
+        <!-- Connection Unit Iframe -->
+        <div class="iframe-container">
+            <!-- Using loading="lazy" for native lazy loading support -->
+            <iframe src="magicone_conf_link/CUW.htm" height="329" loading="lazy" scrolling="no"></iframe>
+        </div>
+
+        <!-- Separator -->
+        <div class="separator-gray-3"></div>
+
+        <!-- Text Link: Kenwood Navi -->
+        <div class="caution-link-box">
+            <a href="../../../pdf/products/COMMON/kenwood-navi.pdf" target="_blank">
+                <b>本製品作動時における　「自車位置表示不正確」　及び　「車速信号エラー」　について （PDF）</b>
+            </a>
+        </div>
+
+        <!-- Separator -->
+        <div class="separator-gray-3"></div>
+
+        <!-- Text Link: Multiple Connect -->
+        <div class="caution-link-box">
+            <a href="../../../pdf/products/COMMON/multiple-connect.pdf" target="_blank">
+                <b>同一の取付位置に接続する弊社製品に関するご注意 （PDF）</b><br>
+                <span style="font-size: 13px">（フリーテレビング　/　マジコネ　/　カメラセレクター　/　ヘッドライトコントローラー　/　車速ドアロックユニット）</span>
+            </a>
+        </div>
+
+        <!-- Separator -->
+        <div class="separator-gray-3"></div>
+        <div class="spacer-20"></div>
+
+        <div class="image-row">
+            <img src="images/magicone_r22_c1.gif" alt="">
+            <a href="../../../pdf/products/MAGICONE/magicone_price.pdf" target="_blank">
+                <img src="images/magicone_r22_c24.gif" alt="">
+            </a>
+        </div>
+
+        <!-- Back Camera Iframe -->
+        <div class="iframe-container">
+            <iframe src="./BACK_CAMERA/magicone_bc_link/magicone_bc.htm" height="2170" loading="lazy"
+                scrolling="no"></iframe>
+        </div>
+
+        <div class="spacer-10"></div>
+
+        <!-- VTR RCA Iframe -->
+        <div class="iframe-container">
+            <iframe src="./VTR_H/magicone_vtrrca_link/magicone_vtrrca.htm" height="470" loading="lazy"
+                scrolling="no"></iframe>
+        </div>
+
+        <div class="spacer-10"></div>
+
+        <!-- VTR HDMI Iframe -->
+        <div class="iframe-container">
+            <iframe src="./VTR_H/magicone_vtrhdmi_link/magicone_vtrhdmi.htm" height="195" loading="lazy"
+                scrolling="no"></iframe>
+        </div>
+
+        <div class="spacer-10"></div>
+
+        <!-- Rear Monitor Iframe -->
+        <div class="iframe-container">
+            <iframe src="./REAR_EX/magicone_rrr_link/magicone_rrr.htm" height="415" loading="lazy"
+                scrolling="no"></iframe>
+        </div>
+
+        <div class="spacer-10"></div>
+
+        <!-- Option Iframe -->
+        <div class="iframe-container">
+            <iframe src="./OPTION/magicone_op_link/magicone_op.htm" height="290" loading="lazy" scrolling="no"></iframe>
+        </div>
+
+        <div class="spacer-30"></div>
+        <div class="separator-gray-3"></div>
+        <div class="spacer-30"></div>
+
+        <!-- Caution Text by Product Number -->
+        <div class="caution-section">
+            <div class="caution-header">品番別注意事項</div>
+
+            <div class="caution-text">
+                <b>AV-C01・C04・C05・C06・C07・C11・C12・C13FA・C13FB・C18・C19・C21・C22・C23・C25・C26・C28・C32・C33</b>
+                ○接続する機器は別途ご用意ください。<br>
+                ○品番によっては延長コード等が付属しておりませんので、別途ご用意ください。<br>
+                ○純正ナビゲーションでのバックカメラ補正機能が無くなるため、映し出される映像（範囲）が変わります。<br>
+                ○取付されているカメラ位置により映し出される範囲が大幅に変わる場合は、カメラの取り付け位置を調整して頂くか新しいナビゲーション側での補正機能で調整してください。<br>
+                ○ガイドラインはナビゲーション自体の機能であり、元々その機能が無い機種では表示されません。又、表示される機種であっても正確に表示されない場合があります。<br>
+                ○純正ディーラーオプションのバックカメラの仕様変更により、本製品が対応出来ない事があります。<br>
+                ○車両によりミラー裏コネクターに化粧カバーが取り付けられている場合がありますが、本製品取り付け時、化粧カバーが使用できなくなる場合があります。
+
+                <b>AV-C02・03・C08・C09・C10・C14・C15・C16・C17・C20・C27</b>
+                ○バックカメラ・延長コードは付属しておりませんので別途ご用意ください。
+
+                <b>AV-C24</b>
+                ○純正ナビゲーションでのバックカメラ補正機能が無くなる為、映写される映像範囲が変化する場合があります。<br>
+                ○「後退時左右確認サポート機能」、「自動俯瞰(ふかん)機能」は使用出来ません。<br>
+                ○ガイドラインは固定表示（ステアリング動作に非連動）され、表示を消す事は出来ません。
+
+                <b>AV-V01・02・03</b>
+                ○接続する機器・延長コード等は付属しておりませんので別途ご用意ください。<br>
+                ○停車時のみ、VTR映像をお楽しみいただけます。但し、当社製品フリーテレビング又はテレナビングを装着していただきますと走行中もお楽しみ頂ける様になります。<br>
+                ○本製品は同乗者の方専用に開発されたものです。従って運転者の方は安全上の為、走行中の画面注視や操作等は絶対に行わないでください。<br>
+                　 安全運転義務違反となり法律で処罰される場合があります。
+
+                <b>AV-R01・03・04・05・06・07・08・09・10</b>
+                ○モニター・延長コードは付属しておりませんので別途ご用意ください。<br>
+                ○外部カメラやナビゲーション等の映像は市販のモニターには映りません。<br>
+                ○構造上、増設したモニターにはフロントモニターで選局されたチャンネルしか映りません。<br>
+                ○走行中はリアモニターにのみテレビ等の映像が映し出されます。<br>
+                　 但し、当社製品フリーテレビング又はテレナビングを装着していただきますとフロントモニターでも走行中にお楽しみ頂ける様になります。<br>
+                ○本製品は同乗者の方専用に開発されたものです。従って運転者の方は安全上の為、走行中の画面注視や操作等は絶対に行わないでください。<br>
+                　 安全運転義務違反となり法律で処罰される場合があります。
+
+                <b>AV-R02</b>
+                ○メーカーオプションのリアモニター装着車専用品であり、純正リアモニター非装着車にはお取り付け出来ません。<br>
+                ○モニター・延長コードは付属しておりませんので別途ご用意ください。<br>
+                ○外部カメラやナビゲーション等の映像は市販モニターには映りません。<br>
+                ○構造上、増設したモニターにはフロントモニターで選局されたチャンネルしか映りません。<br>
+                ○走行中はリアモニターにのみテレビ等の映像が映し出されます。<br>
+                　 但し、当社製品フリーテレビング又はテレナビングを装着して頂きますとフロントモニターでも走行中にお楽しみ頂ける様になります。<br>
+                ○本製品は同乗者の方専用に開発されたものです。従って運転者の方は安全上の為、走行中の画面注視や操作等は絶対に行わないでください。<br>
+                　 安全運転義務違反となり法律で処罰される場合があります。
+            </div>
+        </div>
+
+        <!-- Read before purchase -->
+        <div class="spacer-20"></div>
+        <div class="caution-section">
+            <div class="caution-header">ご購入前にお読みください</div>
+            <div class="caution-text">
+                ●マジコネは、助手席及び、同乗者の方専用に開発されたものです。従って、運転者の方は安全上の為、走行中に画面を注視する事やナビゲーションの操作等を絶対に行わないでください。<br>
+                　安全運転義務違反となり、法律で処罰される場合があります。<br>
+                ●ご使用の際には、取扱説明書をよくお読みの上、正しくお使いください。又、他機器と併用して使用する場合、他機器の取扱説明書もよくお読みになり、正しい使用方法で使用してください。<br>
+                ●商品の取付けの際には、他機器に影響を与えない場所及び、運転に差し支えのない場所に設置してください。<br>
+                ●商品の取付けの際には、各部品は確実に取付けを行ってください。取付けが不十分ですと商品が正常に作動しなかったり、故障の原因となります。<br>
+                ●車両のバッテリーが弱っている状態及び、車両本体の機能に不備がある場合には商品を取付け又は、使用しないでください。<br>
+                　 商品が正常に作動しなかったり、車両機器に影響を与える恐れがあります。<br>
+                ●商品の取付けは、取付け技術のある販売店で行ってください。<br>
+                ●掲載の商品は取付け不可能な車種もありますので、あらかじめ販売店にご相談ください。<br>
+                ●取付けの際には、必ずエンジンを停止した状態で行ってください。火災・感電・故障・事故の原因となります。<br>
+                ●誤った取付け、配線をした場合は、誤作動や車両に重大な支障をきたす原因となる場合があります。その場合、当社は一切の責任を負いかねます。<br>
+                ●車両の点検及び、修理を依頼される場合は、正確な検査の妨げになる恐れがありますので、必ず本製品を取り外してください。<br>
+                ●製品のデザイン、仕様、外観、色合い、価格等につきましては予告なく変更や生産を終了する場合があります。<br>
+                　また、製品の写真等の色は実物とはは多少異なる場合がありますので、あらかじめご了承ください。
+            </div>
+        </div>
+
+        <!-- Warranty -->
+        <div class="spacer-20"></div>
+        <div class="caution-section">
+            <div class="caution-header">保証規定</div>
+            <div class="caution-text">
+                ●本製品は1年保証となります。<br>
+                ●取扱説明書に従った正常な使用状態の下で不具合が生じた場合は、保証書の記載内容により部品交換を致しますが、脱着にかかる工賃や製品を使用して生じた損害等について<br>
+                　 弊社では一切責任を負いかねます。
+            </div>
+        </div>
+
+        <div class="spacer-40"></div>
+        <img src="images/magicone_r36_c1.gif" alt="" style="width: 100%;">
+        <div class="spacer-35"></div>
+
+        <!-- Related Products Graphic Links -->
+        <div class="footer-links">
+            <div class="footer-link-item">
+                <a href="../CAMERA/av-fbc/av-fbc.htm" target="_self"><img src="images/av-fbc_link.gif" alt="AV-FBC"></a>
+            </div>
+            <div class="footer-link-item">
+                <a href="../MONITER/av-m0.htm" target="_self"><img src="images/av-m0_link.gif" alt="AV-M0"></a>
+            </div>
+            <div class="footer-link-item">
+                <a href="../AV_ACCESSORY/av-hdm01/av-hdm01.htm" target="_self"><img src="images/hdm01_link.gif"
+                        alt="AV-HDM01"></a>
+            </div>
+            <!-- Breaking to new line? Original was table rows. -->
+            <div class="footer-link-item">
+                <a href="../TVing/TVing.htm" target="_self"><img src="images/TVing_link.gif" alt="TVing"></a>
+            </div>
+            <div class="footer-link-item">
+                <a href="../CAR_ACCESSORY/hole_sw/hole_sw.htm" target="_self"><img src="images/magicone_r41_c14.gif"
+                        alt="Hole Switch"></a>
+            </div>
+            <!-- There was an empty cell in the original table, flexbox simply flows them. -->
+        </div>
+
+        <div class="spacer-40"></div>
+
+    </main>
+
+    <div id="footer-placeholder"></div>
+</body>
+
+</html>
