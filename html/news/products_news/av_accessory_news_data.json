@@ -1,5 +1,27 @@
 [
   {
+    "date": "2025年12月15日",
+    "type": "新製品情報",
+    "product": ["FreeTVing"], "car_models": [
+      {"model_name":"ニッサン　ディーラーオプション","specification":"2025年モデル/2023年モデル/2022年モデル/2021年モデル"}
+    ],
+    "brand": ["ニッサン"],
+    "body": [
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-225』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2025年12月15日",
+    "type": "新製品情報",
+    "product": ["FreeTVing"], "car_models": [
+      {"model_name":"ミツビシ　ディーラーオプション","specification":"2025年モデル"}
+    ],
+    "brand": ["ミツビシ"],
+    "body": [
+      { "type":"html", "content": "<p><b>FreeTVing<span style=\"color: blue;\"><a href=\"/html/products/TVing/TVing.htm\" target=\"_blank\">『MS-225』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
     "date": "2025年12月8日",
     "type": "適合情報",
     "product": ["MAGICONE バックカメラ接続ユニット"], "car_models": [
