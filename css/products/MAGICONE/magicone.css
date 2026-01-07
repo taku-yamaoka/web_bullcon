@@ -174,13 +174,17 @@
 
 /* Mobile Responsiveness */
 @media (max-width: 768px) {
+    .body {
+        display: flex;
+    }
+
     .product-description {
         flex-direction: column;
     }
 
     .product-image {
         width: 100%;
-        max-width: 330px;
+        /* max-width: 330px; */
         margin-bottom: 10px;
     }
 
