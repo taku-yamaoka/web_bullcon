@@ -32,9 +32,9 @@
     width: 100%;
     height: 3px;
     background-color: #d1121d;
-    
+
     /* ズレを微調整する */
-    transform: translateY(2px); 
+    transform: translateY(2px);
 }
 
 .tab-content {
@@ -56,7 +56,7 @@
     background-color: #fff;
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
     margin-bottom: 40px;
 }
 
@@ -117,7 +117,7 @@
     background-color: #fff;
     max-height: 200px;
     overflow-y: auto;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .autocomplete-items div {
@@ -131,11 +131,13 @@
 }
 
 /* 検索結果のスタイル */
-.results-section, .site-search-results-section, .manual-search-results-section {
+.results-section,
+.site-search-results-section,
+.manual-search-results-section {
     background-color: var(--color-background);
     padding: 30px;
     border-radius: 8px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
 }
 
 .results-title {
@@ -208,7 +210,7 @@
     margin-top: 5px;
 }
 
-.result-title img{
+.result-title img {
     height: 20px;
     width: auto;
 }
@@ -241,18 +243,18 @@
     font-weight: bold;
     cursor: pointer;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
-    box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .pagination-controls button:hover {
     background-color: #34495e;
     transform: translateY(-2px);
-    box-shadow: 0 6px 8px rgba(0,0,0,0.15);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.15);
 }
 
 .pagination-controls button:active {
     transform: translateY(0);
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
 .pagination-controls button:disabled {
@@ -274,7 +276,7 @@
 
     .search-form {
         height: auto;
-        flex-direction: column; 
+        flex-direction: column;
     }
 
     .site-search-input,
@@ -287,8 +289,30 @@
         width: 100%;
     }
 
-    .result-title img{
+    .result-title img {
         height: 20px;
         width: auto;
     }
+}
+
+/* 検索に関する注意事項 */
+.search-notice {
+    background-color: #fff3cd;
+    color: #856404;
+    border: 1px solid #ffeeba;
+    padding: 15px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    font-size: var(--font-size-body-text);
+    line-height: 1.6;
+}
+
+.search-notice a {
+    color: #856404;
+    text-decoration: underline;
+    font-weight: bold;
+}
+
+.search-notice a:hover {
+    color: #533f03;
 }
