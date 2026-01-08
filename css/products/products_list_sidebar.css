@@ -3,31 +3,34 @@
 /* ========================================= */
 
 .product-sidebar-container {
-    display: block; 
-    position: fixed; 
+    display: block;
+    position: fixed;
     /* topはJSで動的に設定されますが、fixedである必要があります */
     left: 0;
-    width: 350px; /* ドロワーメニュー時の幅 */
+    width: 350px;
+    /* ドロワーメニュー時の幅 */
     height: 100%;
     background-color: var(--color-background);
     border: 1px solid var(--color-background);
-    border-radius: 0 8px 8px 0; /* ドロワー時の角丸 */
+    border-radius: 0 8px 8px 0;
+    /* ドロワー時の角丸 */
     padding: 15px;
     box-shadow: 5px 0 15px rgba(0, 0, 0, 0.3);
-    z-index: 1002; 
-    
+    z-index: 1002;
+
     /* スクロールを機能させる設定 */
-    overflow-y: auto; 
-    
+    overflow-y: auto;
+
     /* transformとtopの両方にtransitionを設定し、スムーズな移動を実現 */
-    transform: translateX(-100%); 
-    transition: transform 0.3s ease-out; 
+    transform: translateX(-100%);
+    transition: transform 0.3s ease-out;
 }
 
 /* サイドバーが開いた状態 */
 .product-sidebar-container.sidebar-open {
     transform: translateX(0);
 }
+
 /* サイドバーが閉じた状態 */
 .product-sidebar-container.sidebar-closed {
     transform: translateX(-100%);
@@ -42,15 +45,18 @@
     padding-bottom: 5px;
     margin-bottom: 15px;
 }
+
 .product-sidebar-container ul {
     list-style: none;
     padding: 0;
     margin: 0;
     color: var(--color-body-text-2);
 }
+
 .product-sidebar-container li {
     margin-bottom: 8px;
 }
+
 /* カテゴリと製品のヘッダー共通スタイル */
 .category-header,
 .product-item-header {
@@ -62,10 +68,12 @@
     cursor: pointer;
     transition: background-color 0.2s;
 }
+
 .category-header:hover,
 .product-item-header:hover {
     background-color: var(--color-white-emphasis);
 }
+
 /* カテゴリ名のスタイル */
 .category-header strong {
     font-size: var(--font-size-body-text);
@@ -73,24 +81,29 @@
     color: var(--color-body-text);
     flex-grow: 1;
 }
+
 /* 製品名のスタイル */
 .products-sublist .product-item-header {
     font-size: var(--font-size-body-text);
     color: var(--color-body-text);
-    padding-left: 20px; 
+    padding-left: 20px;
 }
+
 .products-sublist .product-item-header a {
     color: var(--color-body-text);
     text-decoration: none;
 }
+
 .products-sublist .product-item-header a:hover {
     color: var(--color-link-text);
 }
+
 /* サブページリストのスタイル */
 .sub-pages-list {
     list-style: none;
     margin-top: 5px;
 }
+
 /* サブページのリンクスタイル */
 .sub-pages-list a {
     font-size: var(--font-size-caption);
@@ -100,17 +113,21 @@
     display: block;
     text-decoration: none;
 }
+
 /* 選択中の要素のスタイル */
 .product-item-header.current-product {
     background-color: var(--color-link-text);
     color: var(--color-body-text-dark);
 }
+
 .product-item-header.current-product a {
     color: var(--color-body-text-dark) !important;
 }
+
 .product-item-header.current-product img {
     background-color: var(--color-background) !important;
 }
+
 .sub-pages-list a.current-product {
     background-color: var(--color-link-text);
     color: var(--color-body-text-dark) !important;
@@ -146,24 +163,28 @@
     background-color: rgba(0, 71, 157, 0.1);
     border-radius: 50%;
     padding: 8px;
+    box-sizing: content-box;
 }
+
 /* トグルボタンの画像が回転した状態 */
 .toggle-btn.rotated {
     transform: rotate(90deg);
 }
+
 /* ========================================= */
 /* サイドバーの背景オーバーレイ */
 /* ========================================= */
 #sidebar-overlay {
-    position: fixed; 
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); 
-    z-index: 1001; 
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1001;
     transition: opacity 0.3s ease;
-    opacity: 0; /* JSで切り替える */
+    opacity: 0;
+    /* JSで切り替える */
 }
 
 /* ========================================= */
@@ -171,13 +192,13 @@
 /* ========================================= */
 #sidebar-control-wrapper {
     /* topはJSで動的に設定*/
-    transition: top 0.3s ease-in-out; 
-    position: fixed; 
-    left: 20px; 
+    transition: top 0.3s ease-in-out;
+    position: fixed;
+    left: 20px;
     z-index: 999;
-    
-    opacity: 0; 
-    transition: top 0.3s ease-in-out, opacity 0.3s; 
+
+    opacity: 0;
+    transition: top 0.3s ease-in-out, opacity 0.3s;
 }
 
 .sidebar-toggle-btn {
@@ -194,6 +215,7 @@
     padding: 8px;
     transition: background-color 0.3s;
 }
+
 .sidebar-toggle-btn span {
     display: block;
     width: 100%;
@@ -202,13 +224,16 @@
     border-radius: 2px;
     transition: transform 0.3s, opacity 0.3s;
 }
+
 /* 開閉時のアニメーション */
 .sidebar-toggle-btn.is-active span:nth-child(1) {
     transform: translateY(8px) rotate(45deg);
 }
+
 .sidebar-toggle-btn.is-active span:nth-child(2) {
     opacity: 0;
 }
+
 .sidebar-toggle-btn.is-active span:nth-child(3) {
     transform: translateY(-8px) rotate(-45deg);
 }
@@ -216,25 +241,28 @@
 @media (max-width: 600px) {
     .product-sidebar-container {
         /* モバイルでは画面幅いっぱいに広げる */
-        width: 100%; 
-        
+        width: 100%;
+
         /* 画面上端から下端まで広げる */
         height: 100% !important;
-        max-height: 100vh !important; /* JSによる max-height を上書き */
-        
+        max-height: 100vh !important;
+        /* JSによる max-height を上書き */
+
         /* top/left は 0 に固定 */
-        top: 0 !important;   /* JSの!importantを上書き */
+        top: 0 !important;
+        /* JSの!importantを上書き */
         left: 0;
-        
+
         /* ドロワーメニューとして全画面を覆うため、角丸と影をリセット */
         border-radius: 0;
         box-shadow: none;
     }
-    
+
     /* モバイルでは閉じるボタンを右上に固定（position: absoluteで十分ですが、念のため） */
     .sidebar-close-btn {
-        position: fixed; /* ドロワーが開いても追従 */
-        right: 15px; 
+        position: fixed;
+        /* ドロワーが開いても追従 */
+        right: 15px;
         top: 15px;
     }
 }
