@@ -14,6 +14,11 @@
     <link rel="stylesheet" href="../../../css/footer.css">
     <link rel="stylesheet" href="../../../css/products/products_list_sidebar.css">
     <link rel="stylesheet" href="../../../css/products/MAGICONE/magicone.css">
+    <style>
+        .hidden-category {
+            display: none !important;
+        }
+    </style>
 
     <!-- Global Scripts -->
     <script src="../../../js/header.js" defer></script>
@@ -36,24 +41,67 @@
         }
 
         document.addEventListener("DOMContentLoaded", function () {
+            // --- Dynamic Content Switching Logic ---
+            const params = new URLSearchParams(window.location.search);
+            const categories = ['bc_unit', 'bc_harness', 'vtr_harness', 'rm_unit', 'rm_harness'];
+            let activeCategory = null;
+
+            // Identify active category from URL
+            for (const cat of categories) {
+                if (params.has(cat)) {
+                    activeCategory = cat;
+                    break;
+                }
+            }
+
+            if (activeCategory) {
+                const groups = document.querySelectorAll('.product-group');
+                groups.forEach(group => {
+                    const groupCats = group.getAttribute('data-category').split(' ');
+                    if (!groupCats.includes(activeCategory)) {
+                        group.classList.add('hidden-category');
+                    }
+                });
+
+                // Update Title
+                const titleMap = {
+                    'bc_unit': 'バックカメラ接続ユニット',
+                    'bc_harness': 'バックカメラ接続ハーネス',
+                    'vtr_harness': 'VTRハーネス',
+                    'rm_unit': 'リアモニター接続ユニット',
+                    'rm_harness': 'リアモニター接続/増設ハーネス'
+                };
+                if (titleMap[activeCategory]) {
+                    document.title = titleMap[activeCategory] + ' / Bullcon-フジ電機工業株式会社';
+                }
+            }
+            // ---------------------------------------
+
             var iframes = document.querySelectorAll("iframe");
             iframes.forEach(function (iframe) {
                 // Ensure scrolling="no" equivalent via JS just in case
                 iframe.setAttribute("scrolling", "no");
 
                 iframe.addEventListener("load", function () {
-                    resizeIframe(this);
+                    // Only resize if visible
+                    if (iframe.offsetParent !== null) {
+                        resizeIframe(this);
+                    }
                 });
                 // Initial try if already loaded (cached)
                 if (iframe.contentWindow && iframe.contentWindow.document.body) {
-                    resizeIframe(iframe);
+                    if (iframe.offsetParent !== null) {
+                        resizeIframe(iframe);
+                    }
                 }
             });
 
             // Optional: Resize on window resize (in case iframe content layout changes)
             window.addEventListener('resize', function () {
                 iframes.forEach(function (iframe) {
-                    resizeIframe(iframe);
+                    if (iframe.offsetParent !== null) {
+                        resizeIframe(iframe);
+                    }
                 });
             });
         });
@@ -104,36 +152,46 @@
                 <img src="images/magicone_r17_c1.gif" alt="">
             </div>
             <div class="product-text">
-                <b>◆バックカメラ接続ユニット</b><br>
-                <span class="sub-text">・<span class="red-wavy-underline"><b>純正バックカメラ映像</b></span>を、<span
-                        class="red-wavy-underline"><b>市販ナビゲーション</b></span>に映し出します。<br>
-                    ・<span class="red-wavy-underline"><b>純正バックカメラ映像</b></span>を、<span
-                        class="red-wavy-underline"><b>分岐して市販ナビゲーション</b></span>に映し出します。</span>
-                <br>
-                <b>◆バックカメラ接続ハーネス</b><br>
-                <span class="sub-text">・<span class="red-wavy-underline"><b>市販バックカメラ映像</b></span>を、<span
-                        class="red-wavy-underline"><b>純正ナビゲーションや純正モニター</b></span>に映し出します。<br>
-                    ・<span class="red-wavy-underline"><b>市販バックカメラ映像</b></span>を、<span
-                        class="red-wavy-underline"><b>市販ナビゲーションや市販モニター</b></span>に<span
-                        class="red-wavy-underline"><b>車両純正ハーネス</b></span>経由で映し出します。</span>
-                <br>
-                <b>◆ＶＴＲハーネス/HDMIハーネス</b><br>
-                <span class="sub-text">・<span
-                        class="red-wavy-underline"><b>外部機器映像（ミラーリング・DVDプレーヤー・ゲーム機）</b></span>を、<span
-                        class="red-wavy-underline"><b>純正モニター</b></span>に映し出します。</span>
-                <br>
-                <b>◆リアモニター接続ユニット</b><br>
-                <span class="sub-text">・<span class="red-wavy-underline"><b>リアモニター出力機能付きナビゲーション</b></span>と、<span
-                        class="red-wavy-underline"><b>純正後席ディスプレイ</b></span>を接続出来ます。</span>
-                <br>
-                <b>◆リアモニター出力ハーネス</b><br>
-                <span class="sub-text">・<span class="red-wavy-underline"><b>純正オプション</b></span>でリアモニターが<span
-                        class="red-wavy-underline"><b>設定されていない車両</b></span>に、<span
-                        class="red-wavy-underline"><b>市販リアモニターを増設</b></span>出来ます。</span>
-                <br>
-                <b>◆リアモニター増設ハーネス</b><br>
-                <span class="sub-text">・純正リアモニターが装着されている車両に、<span
-                        class="red-wavy-underline"><b>さらにリアモニターを増設</b></span>出来ます。</span>
+                <div class="product-group" data-category="bc_unit">
+                    <b>◆バックカメラ接続ユニット</b><br>
+                    <span class="sub-text">・<span class="red-wavy-underline"><b>純正バックカメラ映像</b></span>を、<span
+                            class="red-wavy-underline"><b>市販ナビゲーション</b></span>に映し出します。<br>
+                        ・<span class="red-wavy-underline"><b>純正バックカメラ映像</b></span>を、<span
+                            class="red-wavy-underline"><b>分岐して市販ナビゲーション</b></span>に映し出します。</span>
+                    <br>
+                </div>
+                <div class="product-group" data-category="bc_harness">
+                    <b>◆バックカメラ接続ハーネス</b><br>
+                    <span class="sub-text">・<span class="red-wavy-underline"><b>市販バックカメラ映像</b></span>を、<span
+                            class="red-wavy-underline"><b>純正ナビゲーションや純正モニター</b></span>に映し出します。<br>
+                        ・<span class="red-wavy-underline"><b>市販バックカメラ映像</b></span>を、<span
+                            class="red-wavy-underline"><b>市販ナビゲーションや市販モニター</b></span>に<span
+                            class="red-wavy-underline"><b>車両純正ハーネス</b></span>経由で映し出します。</span>
+                    <br>
+                </div>
+                <div class="product-group" data-category="vtr_harness">
+                    <b>◆ＶＴＲハーネス/HDMIハーネス</b><br>
+                    <span class="sub-text">・<span
+                            class="red-wavy-underline"><b>外部機器映像（ミラーリング・DVDプレーヤー・ゲーム機）</b></span>を、<span
+                            class="red-wavy-underline"><b>純正モニター</b></span>に映し出します。</span>
+                    <br>
+                </div>
+                <div class="product-group" data-category="rm_unit">
+                    <b>◆リアモニター接続ユニット</b><br>
+                    <span class="sub-text">・<span class="red-wavy-underline"><b>リアモニター出力機能付きナビゲーション</b></span>と、<span
+                            class="red-wavy-underline"><b>純正後席ディスプレイ</b></span>を接続出来ます。</span>
+                    <br>
+                </div>
+                <div class="product-group" data-category="rm_harness">
+                    <b>◆リアモニター出力ハーネス</b><br>
+                    <span class="sub-text">・<span class="red-wavy-underline"><b>純正オプション</b></span>でリアモニターが<span
+                            class="red-wavy-underline"><b>設定されていない車両</b></span>に、<span
+                            class="red-wavy-underline"><b>市販リアモニターを増設</b></span>出来ます。</span>
+                    <br>
+                    <b>◆リアモニター増設ハーネス</b><br>
+                    <span class="sub-text">・純正リアモニターが装着されている車両に、<span
+                            class="red-wavy-underline"><b>さらにリアモニターを増設</b></span>出来ます。</span>
+                </div>
             </div>
         </div>
 
@@ -186,7 +244,7 @@
         </div>
 
         <!-- Back Camera Iframe -->
-        <div class="iframe-container">
+        <div class="iframe-container product-group" data-category="bc_unit bc_harness">
             <iframe src="./BACK_CAMERA/magicone_bc_link/magicone_bc.htm" height="2170" loading="lazy"
                 scrolling="no"></iframe>
         </div>
@@ -194,7 +252,7 @@
         <div class="spacer-10"></div>
 
         <!-- VTR RCA Iframe -->
-        <div class="iframe-container">
+        <div class="iframe-container product-group" data-category="vtr_harness">
             <iframe src="./VTR_H/magicone_vtrrca_link/magicone_vtrrca.htm" height="470" loading="lazy"
                 scrolling="no"></iframe>
         </div>
@@ -202,7 +260,7 @@
         <div class="spacer-10"></div>
 
         <!-- VTR HDMI Iframe -->
-        <div class="iframe-container">
+        <div class="iframe-container product-group" data-category="vtr_harness">
             <iframe src="./VTR_H/magicone_vtrhdmi_link/magicone_vtrhdmi.htm" height="195" loading="lazy"
                 scrolling="no"></iframe>
         </div>
@@ -210,7 +268,7 @@
         <div class="spacer-10"></div>
 
         <!-- Rear Monitor Iframe -->
-        <div class="iframe-container">
+        <div class="iframe-container product-group" data-category="rm_unit rm_harness">
             <iframe src="./REAR_EX/magicone_rrr_link/magicone_rrr.htm" height="415" loading="lazy"
                 scrolling="no"></iframe>
         </div>
@@ -218,7 +276,7 @@
         <div class="spacer-10"></div>
 
         <!-- Option Iframe -->
-        <div class="iframe-container">
+        <div class="iframe-container product-group" data-category="rm_unit rm_harness">
             <iframe src="./OPTION/magicone_op_link/magicone_op.htm" height="290" loading="lazy" scrolling="no"></iframe>
         </div>
 
