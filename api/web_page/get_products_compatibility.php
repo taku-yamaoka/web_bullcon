@@ -3,6 +3,11 @@ header('Content-Type: application/json; charset=UTF-8');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET');
 
+if (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest') {
+    header('HTTP/1.1 403 Forbidden');
+    exit;
+}
+
 // キャッシュマネージャーを読み込み
 require_once __DIR__ . '/cache_manager.php';
 
@@ -25,7 +30,8 @@ try {
     $pdo->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
 } catch (PDOException $e) {
     http_response_code(500);
-    echo json_encode(['error' => 'データベース接続エラー: ' . $e->getMessage()]);
+    error_log('Database connection error: ' . $e->getMessage());
+    echo json_encode(['error' => 'サーバーエラーが発生しました。']);
     exit;
 }
 
@@ -78,7 +84,8 @@ try {
 
 } catch (Exception $e) {
     http_response_code(400);
-    echo json_encode(['error' => $e->getMessage()]);
+    error_log('API Error: ' . $e->getMessage());
+    echo json_encode(['error' => 'リクエスト処理中にエラーが発生しました。']);
     exit;
 }
 

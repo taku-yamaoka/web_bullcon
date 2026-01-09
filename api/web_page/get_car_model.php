@@ -3,6 +3,11 @@ header('Content-Type: application/json; charset=UTF-8');
 header('Access-Control-Allow-Origin: *'); // CORS対策のため追加
 header('Access-Control-Allow-Methods: GET');
 
+if (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest') {
+    header('HTTP/1.1 403 Forbidden');
+    exit;
+}
+
 // キャッシュマネージャーを読み込み
 require_once __DIR__ . '/cache_manager.php';
 
@@ -103,6 +108,7 @@ echo $jsonOutput;
 
 } catch (PDOException $e) {
     http_response_code(500);
-    echo json_encode(['error' => 'Database connection failed: ' . $e->getMessage()]);
+    error_log('Database connection failed: ' . $e->getMessage());
+    echo json_encode(['error' => 'サーバーエラーが発生しました。']);
 }
 ?>

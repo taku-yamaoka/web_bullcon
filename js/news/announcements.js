@@ -6,7 +6,11 @@ document.addEventListener('DOMContentLoaded', () => {
     let currentPage = 1;
     const ITEMS_PER_PAGE = 10;
 
-    fetch('../../api/web_page/get_announcements_title.php')
+    fetch('../../api/web_page/get_announcements_title.php', {
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');

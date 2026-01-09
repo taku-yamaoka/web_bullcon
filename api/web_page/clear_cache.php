@@ -10,6 +10,11 @@ header('Content-Type: application/json; charset=UTF-8');
 header('Access-Control-Allow-Origin: *');
 header('Access-Control-Allow-Methods: GET');
 
+if (!isset($_SERVER['HTTP_X_REQUESTED_WITH']) || strtolower($_SERVER['HTTP_X_REQUESTED_WITH']) !== 'xmlhttprequest') {
+    header('HTTP/1.1 403 Forbidden');
+    exit;
+}
+
 require_once __DIR__ . '/cache_manager.php';
 
 // 設定を読み込む

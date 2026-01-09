@@ -134,7 +134,8 @@ def process_files(src_dir, dist_dir):
         for file in files:
             if file.lower().endswith('.js'):
                 # Avoid processing minification scripts if they are in src path
-                if file.startswith('minify') or file.endswith('.py'):
+                filename = file.lower()
+                if filename.startswith('minify') or filename.endswith('.py'):
                     continue
 
                 src_path = os.path.join(root, file)
@@ -173,16 +174,13 @@ def process_files(src_dir, dist_dir):
 
 if __name__ == "__main__":
     current_dir = os.path.dirname(os.path.abspath(__file__))
-    # Assuming this script is running from js/minify_safe.py or similar
-    # Adjust base_dir logic if needed. 
-    # If script is in 'workspace/web_bullcon/js', base_dir is 'workspace/web_bullcon'
-    
-    # More robust finding of root:
-    # If current dir ends with 'js', parent is root.
+    # Robust logic for running in 'js' or root
     if os.path.basename(current_dir) == 'js':
         base_dir = os.path.dirname(current_dir)
     else:
-        # Fallback hardcoded if running from root
+        # Fallback hardcoded if running from root or other
+        # Assuming script is in 'workspace/web_bullcon/js' when writing to file?
+        # Step 555 wrote to 'js/minify_safe.py'.
         base_dir = r"c:\Users\taku-\workspace\web_bullcon"
 
     js_src = os.path.join(base_dir, "js")
