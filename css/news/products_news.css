@@ -5,15 +5,13 @@
     background-color: var(--color-background);
     max-width: 1000px;
     margin: 0 auto;
-    padding-left: 20px;
-    padding-right: 20px;
     box-sizing: border-box;
     position: relative;
 }
 
 .archive_link {
     text-align: right;
-    font-size: clamp(0.7rem, 1vw, 1rem);
+    font-size: var(--font-size-caption);
 }
 
 /* 検索コンテナの基本デザイン */
@@ -35,8 +33,7 @@
     padding: 12px 18px;
     border: 1px solid #c0c0c0;
     border-radius: 8px;
-    /* 💡 clamp()によるフォントサイズのレスポンシブ対応 */
-    font-size: clamp(1rem, 2vw, 1.1rem);
+    font-size: var(--font-size-body-text);
     color: var(--color-body-text);
     outline: none;
     transition: border-color 0.3s ease, box-shadow 0.3s ease;
@@ -60,7 +57,7 @@
     border: none;
     border-radius: 8px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
     text-transform: uppercase;
@@ -86,8 +83,7 @@
 /* 各タブグループの共通スタイル */
 .tabs-group {
     display: flex;
-    justify-content: center;
-    gap: 15px;
+    justify-content: space-evenly;
     padding-top: 10px;
     background-color: var(--color-background);
     position: relative;
@@ -115,7 +111,6 @@
 .news-type-group .tab-item {
     flex-grow: 1;
     min-width: unset;
-    max-width: 200px;
 }
 
 /* 2段目のタブ（Brand）専用スタイル */
@@ -130,7 +125,14 @@
 }
 
 .brand-group::before {
-    width: 120%;
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 113%;
+    height: 2px;
+    background-color: var(--color-background-border);
+    z-index: 0;
 }
 
 .brand-group .tab-item {
@@ -141,7 +143,7 @@
 /* 各タブアイテムのスタイル */
 .tab-item {
     padding: 8px 10px;
-    font-size: clamp(0.95rem, 2vw, 1.1rem);
+    font-size: var(--font-size-body-text);
     cursor: pointer;
     background-color: transparent;
     color: var(--color-body-text);
@@ -186,10 +188,10 @@
 
 /* リスト全体のスタイル */
 #products-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
 }
 
 /* 各製品情報アイテムのスタイル */
@@ -197,14 +199,12 @@
     background-color: var(--color-background);
     border: 1px solid var(--color-background-border);
     border-radius: 8px;
-    margin-bottom: 20px;
-    padding: 20px;
+    padding: 15px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     transition: transform 0.2s ease-in-out;
     position: relative;
     display: flex;
     flex-direction: column;
-    gap: 10px;
 }
 
 /* ヘッダー: 日付とタイトル、ニュースタイプをまとめるコンテナ */
@@ -223,7 +223,7 @@
     align-items: center;
     flex-wrap: wrap;
     gap: 10px;
-    font-size: clamp(0.6rem, 2vw, 1.1rem);
+    font-size: var(--font-size-body-text);
 }
 .product-names {
     list-style: none;
@@ -232,7 +232,7 @@
     flex-grow: 1;
     color: var(--color-body-text);
     font-weight: bold;
-    font-size: clamp(0.6rem, 2vw, 1.1rem);
+    font-size: var(--font-size-body-text);
 }
 .product-names li {
     margin-bottom: 0;
@@ -242,22 +242,38 @@
 /* NewバッジとNewsTypeをまとめるコンテナ */
 .type-and-badge-container {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    gap: 3px;
+    gap: 10px;
     flex-shrink: 0;
     margin-left: auto;
 }
 
 /* 日付のスタイル */
 .product-date {
-    font-size: 0.8rem;
+    font-size: var(--font-size-caption);
     color: var(--color-body-text-2);
     background-color: var(--color-white-emphasis);
     padding: 4px 8px;
     border-radius: 4px;
     white-space: nowrap;
     flex-shrink: 0;
+}
+
+
+.product-info-body {
+    display: flex; 
+    border-top: 1px dotted var(--color-background-border);
+    flex-direction: column;
+}
+
+.context-group {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap; 
+}
+
+.car-model-info-group {
+    align-items: flex-start;
 }
 
 /* 個々のラベルの共通スタイル */
@@ -270,19 +286,19 @@
     border: 2px solid;
     color: var(--color-body-text);
     white-space: nowrap;
-    font-size: clamp(0.7rem, 2vw, 0.95rem);
+    font-size: var(--font-size-caption);
     flex-shrink: 0;
     width: fit-content;
 }
 
 /* Brandラベルグループ */
 .brand-labels-group {
+    margin-top: 5px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     gap: 8px;
     padding-top: 8px;
-    border-top: 1px dotted var(--color-background-border);
 }
 
 /* 対象車種のラベルのスタイル */
@@ -291,27 +307,35 @@
     flex-wrap: wrap;
     gap: 5px;
     margin-top: 5px;
-    align-items: center; 
+    align-self: flex-start;
+    flex-direction: column;
 }
 .car-model-label {
-    font-size: 0.95rem;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     color: var(--color-accent-2);
     flex-shrink: 0;
-    vertical-align: middle;
 }
-.car-models {
-    font-size: clamp(0.7rem, 1vw, 1rem);
+.car-model {
+    display: flex;
+    flex-direction: column;
+}
+.plane-text,
+.model-name {
+    font-size: var(--font-size-body-text);
     color: var(--color-body-text);
-    line-height: 1.2;
+    line-height: 1.1;
     flex-grow: 1;
-    vertical-align: middle;
-    font-size: clamp(0.6rem, 2vw, 1.1rem);
+}
+.specification {
+    margin-left: 20px;
+    font-size: var(--font-size-caption);
+    color: var(--color-accent-2);
 }
 
 /* Newバッジのスタイル */
 .new-badge {
-    font-size: clamp(0.7rem, 1vw, 0.8rem);
+    font-size: var(--font-size-caption);
     background-color: #e74c3c;
     color: white;
     padding: 2px 8px;
@@ -323,12 +347,13 @@
 
 /* 本文のスタイル */
 .product-fulltext-body {
-    font-size: clamp(0.6rem, 1.5vw, 1rem);
+    font-size: var(--font-size-body-text);
     color: var(--color-body-text);
     line-height: 1.4;
+    flex-grow: 1; 
     padding: 10px 0 0 0;
-    border-top: 1px dashed var(--color-background-border);
     margin-top: 10px;
+    align-self: flex-end;
 }
 .product-fulltext-body div,
 .product-fulltext-body ul {
@@ -343,8 +368,16 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: wrap;
     margin-top: 30px;
     gap: 5px;
+}
+.page-info {
+    display: block; 
+    width: 100%; 
+    text-align: center;   
+    margin-top: 10px; 
+    font-size: var(--font-size-caption);
 }
 .pagination-button {
     background-color: var(--color-white-emphasis);
@@ -353,7 +386,7 @@
     padding: 8px 12px;
     border-radius: 5px;
     cursor: pointer;
-    font-size: 1rem;
+    font-size: var(--font-size-caption);
     transition: background-color 0.2s ease, color 0.2s ease;
     min-width: 40px;
     text-align: center;
@@ -378,21 +411,12 @@
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .products-news-section {
-        padding-left: 10px;
-        padding-right: 10px;
         padding-bottom: 40px;
     }
     .products-news-section h2.section-title {
-        font-size: 1.8rem;
         margin-bottom: 25px;
-    }
-    .products-news-section h2.section-title .section-title-en {
-        font-size: 0.7em;
-    }
-    .products-news-section h2.section-title .section-title-jp {
-        font-size: 0.9em;
     }
     
     /* 検索コンテナのレイアウトを縦並びに変更 */
@@ -443,7 +467,6 @@
         min-width: 70px;
     }
     .tab-item {
-        font-size: 0.95rem;
         padding: 6px 8px;
     }
     .tab-item.active::after {
@@ -471,15 +494,20 @@
         order: 3;
         margin: 0;
     }
+    .product-info-body {
+        flex-direction: column;
+    }
+    .context-group {
+        display: flex;
+        flex-direction: column;
+    }
     .type-and-badge-container {
-        width: 100%;
-        order: 2;
-        position: absolute;
+        display: flex;
         align-items: flex-end;
+        width: auto;
+        order: 2;
         top: 0;
         right: 0;
-        margin-top: 10px;
-        margin-right: 10px;
     }
     
     .product-fulltext-body {
@@ -489,6 +517,11 @@
     .product-fulltext-body ul {
         padding-left: 15px;
     }
+    .product-fulltext-body img {
+        height: auto;
+        width: 100%;
+        object-fit:contain;
+    }
     
     /* ページネーションの調整 */
     .pagination-container {
@@ -497,7 +530,6 @@
     }
     .pagination-button {
         padding: 6px 8px;
-        font-size: 0.9rem;
         min-width: 30px;
     }
 }

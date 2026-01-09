@@ -1,13 +1,17 @@
 document.addEventListener('DOMContentLoaded', () => {
     const announcementsList = document.getElementById('announcements-list');
-    
+
     // DOM要素の存在チェック
     if (!announcementsList) {
         console.error("必要なDOM要素が見つかりません。announcements-list が存在するか確認してください。");
         return;
     }
 
-    fetch('./api/get_announcements_title.php?limit=5')
+    fetch('./api/web_page/get_announcements_title.php?limit=5', {
+        headers: {
+            'X-Requested-With': 'XMLHttpRequest'
+        }
+    })
         .then(response => {
             if (!response.ok) {
                 throw new Error('Network response was not ok');
@@ -29,7 +33,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             data.forEach(item => {
                 const li = document.createElement('li');
-                
+
                 // 日付を正規表現を使って正しく解析
                 const date_match = item.date.match(/(\d{4})年(\d{1,2})月(\d{1,2})日/);
                 let formattedDate = '日付不明';
@@ -44,7 +48,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 const link = document.createElement('a');
                 link.href = item.url;
-                
+
                 const dateSpan = document.createElement('span');
                 dateSpan.classList.add('announcement-date');
                 dateSpan.textContent = formattedDate;
@@ -71,7 +75,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         link.appendChild(newBadge);
                     }
                 }
-                
+
                 li.appendChild(link);
                 announcementsList.appendChild(li);
             });

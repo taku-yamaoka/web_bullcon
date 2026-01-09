@@ -1,19 +1,62 @@
 [
   {
+    "date": "2025年12月8日",
+    "type": "適合情報",
+    "product": ["フリーアイドリングストップ"], 
+    "car_models":[{"model_name":"ルークス　R7/11～　（BB#A）"}],
+    "brand": ["ニッサン"],
+    "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FIS-100M』</a></span></b></p>", "align": "right"}]
+  },
+  {
+    "date": "2025年12月8日",
+    "type": "適合情報",
+    "product": ["フリーアイドリングストップ"], 
+    "car_models":[{"model_name":"ekスペース　R7/11～　（BA#A）"},
+    {"model_name":"デリカミニ　R7/11～　（BA#A）"}],
+    "brand": ["ミツビシ"],
+    "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FIS-100M』</a></span></b></p>", "align": "right"}]
+  },
+   {
+    "date": "2025年10月7日",
+    "type": "適合情報",
+    "product": ["車速ドアロックシステム"], "car_models": [{"model_name":"アクア　R7/9～ 　(MXPK11.16）"}],
+    "brand": ["トヨタ"],
+    "body": [{ "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『 SDL-CT08 』</a></span></b></p>", "align": "right"}
+      ]
+  },
+  {
+    "date": "2025年10月7日",
+    "type": "適合情報",
+    "product": ["オプションコネクターハーネス"], "car_models": [{"model_name":"アクア　R7/9～ 　(MXPK11.16）"}],
+    "brand": ["トヨタ"],
+    "body": [{ "type":"html", "content": "<p><b>オプションコネクターハーネス<span style=\"color: blue;\"><a href=\"/html/products/POWER/op_cn/op_cn.htm\" target=\"_blank\">『FC-T06（13ピン）』</a></span></b></p>", "align": "right"}
+      ]
+  },
+  {
     "date": "2025年9月3日",
     "type": "適合情報",
-    "title_data": {"product": ["車速ドアロックシステム『 SDL-CT08 』"], "car_model": ["カローラクロスハイブリッド（ZVG13.16 MXGH15）　R7/9～"]},
+    "product": ["車速ドアロックシステム"], "car_models": [{"model_name":"カローラクロスハイブリッド　R7/9～　（ZVG13.16.MXGH15）"}],
     "brand": ["トヨタ"],
     "body": [{ "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『 SDL-CT08 』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2025年8月28日",
     "type": "適合情報",
-    "title_data": {"product": ["車速ドアロックシステム『 SDL-CT08 』", "オプションコネクターハーネス『FC-T04（13ピン）』", "オプションコネクターハーネス『FC-T07（10ピン）』"], "car_model":["シエンタ　（MXPC10G）　R7/8～（一部改良）", "シエンタハイブリッド　（MXPL10G.15G)　R7/8～（一部改良）"]},
+    "product": ["車速ドアロックシステム"], "car_models":[{"model_name":"シエンタ　R7/8～　＜一部改良後＞　（MXPC10G）"},
+     {"model_name":"シエンタハイブリッド　R7/8～　＜一部改良後＞　（MXPL10G.15G）"}],
     "brand": ["トヨタ"],
     "body": [
-      { "type": "html", "content": "10.5インチディスプレイオーディオPlus装着車<br>8インチディスプレイオーディオ装着車"},
-      { "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『 SDL-CT08 』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『 SDL-CT08 』</a></span></b></p>", "align": "right"}
+    ]
+    },
+
+{
+    "date": "2025年8月28日",
+    "type": "適合情報",
+    "product": ["オプションコネクターハーネス"], "car_models":[{"model_name":"シエンタ　R7/8～　＜一部改良後＞　（MXPC10G）"}, 
+    {"model_name":"シエンタハイブリッド　R7/8～　＜一部改良後＞　（MXPL10G.15G）"}],
+    "brand": ["トヨタ"],
+    "body": [
       { "type":"html", "content": "<p><b>オプションコネクターハーネス<span style=\"color: blue;\"><a href=\"/html/products/POWER/op_cn/op_cn.htm\" target=\"_blank\">『FC-T04（13ピン）』</a></span></b></p>", "align": "right"},
       { "type":"html", "content": "<p><b>オプションコネクターハーネス<span style=\"color: blue;\"><a href=\"/html/products/POWER/op_cn/op_cn.htm\" target=\"_blank\">『FC-T07（10ピン）』</a></span></b></p>", "align": "right"}
     ]
@@ -21,14 +64,14 @@
   {
     "date": "2025年7月24日",
     "type": "適合情報",
-    "title_data": {"product": ["フリーアイドリングストップ『FC-T07（10ピン）』"], "car_model": ["ムーヴ　（LA850S.LA860S）　R7/6～"]},
+    "product": ["フリーアイドリングストップ"], "car_models": [{"model_name":"ムーヴ　R7/6～　（LA850S.LA860S）"}],
     "brand": ["ダイハツ"],
     "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FC-T07（10ピン）』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2025年4月1日",
     "type": "新製品情報",
-    "title_data": {"product": ["スマートフォンホルダー"]},
+    "product": ["スマートフォンホルダー"],
     "brand": "",
     "body": [
       { "type": "paragraph", "content": "12タイプから、好みや用途に合わせて選べるスマートフォンホルダー"},
@@ -53,100 +96,106 @@
   {
     "date": "2025年3月10日",
     "type": "新製品情報",
-    "title_data": {"product": ["オプションコネクターハーネス『FC-T06（13ピン）』"], "car_model": ["ランドクルーザー250　（GDJ250W.TRJ250W）　Ｒ6/5～"]},
+    "product": ["オプションコネクターハーネス"], "car_models": [{"model_name":"ランドクルーザー250　R6/5～　（GDJ250W.TRJ250W）"}],
     "brand": ["トヨタ"],
     "body": [{ "type":"html", "content": "<p><b>オプションコネクターハーネス<span style=\"color: blue;\"><a href=\"/html/products/POWER/op_cn/op_cn.htm\" target=\"_blank\">『FC-T06（13ピン）』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2025年3月10日",
     "type": "新製品情報",
-    "title_data": {"product": ["オプションコネクターハーネス『FC-T07（10ピン）』"], "car_model": ["メーカー標準装備/メーカーオプション：ETC2.0ユニット付車"]},
+    "product": ["オプションコネクターハーネス"], "car_models": [{"model_name":"メーカー標準装備/メーカーオプション：ETC2.0ユニット付車"}],
     "brand": ["トヨタ", "レクサス"],
     "body": [
-      { "type":"html", "content": "<p><b><span style=\"color: blue;\"><a href=\"/pdf/products/POWER/op_cn_toyota.pdf\" target=\"_blank\"><< トヨタ適合表 >></a><a href=\"/pdf/products/POWER/op_cn_lexus.pdf\" target=\"_blank\">　　　　<< レクサス適合表 >></a></span></b></p>", "align": "center"},
       { "type": "paragraph", "content": "【 適合車種は必ず適合表でご確認ください。 】", "align": "center"},
+      { "type":"html", "content": "<p><b><span style=\"color: blue;\"><a href=\"/pdf/products/POWER/op_cn_toyota.pdf\" target=\"_blank\"><< トヨタ適合表 >></a><a href=\"/pdf/products/POWER/op_cn_lexus.pdf\" target=\"_blank\">　　　　<< レクサス適合表 >></a></span></b></p>", "align": "center"},
       { "type":"html", "content": "<p><b>オプションコネクターハーネス<span style=\"color: blue;\"><a href=\"/html/products/POWER/op_cn/op_cn.htm\" target=\"_blank\">『FC-T07（10ピン）』</a></span></b></p>", "align": "right"}
     ]
   },
   {
     "date": "2024年11月6日",
     "type": "適合情報",
-    "title_data": {"product": ["オートドアミラーコントローラー『ADL-11』", "オートドアミラーコントローラー『ADL-11・ADK-98』"]},
+    "product": ["オートドアミラーコントローラー"],
     "brand": ["スズキ"],
     "body": [{ "type":"html", "content": "<p><b>オートドアミラーコントローラー<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/door_mirror/door_mirror.htm\" target=\"_blank\">『ADL-11・ADK-98』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2024年10月9日",
     "type": "新製品情報",
-    "title_data": {"product": ["オプションコネクターハーネス『FC-H02（6ピン）』"], "car_model":["ステップワゴン/ステップワゴンスパーダ　（RP6.7.8）　Ｒ4/6～", "ZR-V　（RZ3.4.5.6）　R5/4～"]},
+    "product": ["オプションコネクターハーネス"], "car_models":[{"model_name":"ステップワゴン/ステップワゴンスパーダ　R4/6～　（RP6.7.8）"}, 
+    {"model_name":"ZR-V　R5/4～　（RZ3.4.5.6）"}],
     "brand": ["ホンダ"],
     "body": [{ "type":"html", "content": "<p><b>オプションコネクターハーネス<span style=\"color: blue;\"><a href=\"/html/products/POWER/op_cn/op_cn.htm\" target=\"_blank\">『FC-H02（6ピン）』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2024年10月9日",
     "type": "新製品情報",
-    "title_data": {"product": ["オプションコネクターハーネス『FC-H03（6ピン）』"], "car_model":["WR-V　（DG5）　Ｒ6/3～"]},
+    "product": ["オプションコネクターハーネス"], "car_models":[{"model_name":"WR-V　R6/3～　（DG5）"}],
     "brand": ["ホンダ"],
     "body": [{ "type":"html", "content": "<p><b>オプションコネクターハーネス<span style=\"color: blue;\"><a href=\"/html/products/POWER/op_cn/op_cn.htm\" target=\"_blank\">『FC-H03（6ピン）』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2024年6月17日",
     "type": "新製品情報",
-    "title_data": {"product": ["スーパー LED ルームランプⅡ"]},
+    "product": ["スーパー LED ルームランプⅡ"],
     "brand": ["トヨタ", "スバル", "ニッサン", "ミツビシ", "ダイハツ"],
     "body": [
       { "type":"html", "content": "<p><b><span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm\" target=\"_blank\">スーパーLEDルームランプⅡ</a></span></b></p>"},
-      { "type": "html", "content": "トヨタ　GR86　（ZN8）　R3/11～<br>スバル　BRZ　（ZD8）　R3/8～"},
+      { "type": "html", "content": "トヨタ　GR86　R3/11～　（ZN8）<br>スバル　BRZ　R3/8～　（ZD8）"},
       { "type":"html", "content": "<p><b>スーパーLEDルームランプⅡ<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm\" target=\"_blank\">『SLL-1035』</a></span></b></p>", "align": "right"},
-      { "type": "html", "content": "日産　デイズ　（B4#W）　H31/4～<br>日産　サクラ　（B6AW)　　R4/6～<br>日産　ルークス　（B4#A）　R2/4～<br>三菱　ekワゴン / ekクロス　（B3#W）　H31/4～<br>三菱　ekスペース / ekクロススペース　（B3#A）　R2/4～<br>三菱　デリカミニ　（B3#A）　R5/5～"},
+      { "type": "html", "content": "日産　デイズ　H31/4～　（B4#W）<br>日産　サクラ　R4/6～　（B6AW)<br>日産　ルークス　R2/4～　（B4#A）<br>三菱　ekワゴン / ekクロス　H31/4～　（B3#W）<br>三菱　ekスペース / ekクロススペース　R2/4～　（B3#A）<br>三菱　デリカミニ　R5/5～　（B3#A）"},
       { "type":"html", "content": "<p><b>スーパーLEDルームランプⅡ<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm\" target=\"_blank\">『SLL-2008』</a></span></b></p>", "align": "right"},
-      { "type": "html", "content": "日産　ノート　（E13/SNE13）　R2/12～<br>日産　ノートオーラ　（FE13/FSNE13）　R3/9～"},
+      { "type": "html", "content": "日産　ノート　R2/12～　（E13/SNE13）<br>日産　ノートオーラ　R3/9～　（FE13/FSNE13）"},
       { "type":"html", "content": "<p><b>スーパーLEDルームランプⅡ<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm\" target=\"_blank\">『SLL-2009』</a></span></b></p>", "align": "right"},
-      { "type": "html", "content": "ダイハツ ハイゼットトラック ジャンボ【ｽﾏｰﾄｲﾝﾅｰﾐﾗｰ無車】（S500P/S510P）　R4/1～"},
+      { "type": "html", "content": "ダイハツ ハイゼットトラック ジャンボ【ｽﾏｰﾄｲﾝﾅｰﾐﾗｰ無車】　R4/1～　（S500P/S510P）"},
       { "type":"html", "content": "<p><b>スーパーLEDルームランプⅡ<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm\" target=\"_blank\">『SLL-4006』</a></span></b></p>", "align": "right"},
-      { "type": "html", "content": "ダイハツ ハイゼットトラック ジャンボ【ｽﾏｰﾄｲﾝﾅｰﾐﾗｰ付車】（S500P/S510P）　R4/1～"},
+      { "type": "html", "content": "ダイハツ ハイゼットトラック ジャンボ【ｽﾏｰﾄｲﾝﾅｰﾐﾗｰ付車】　R4/1～　（S500P/S510P）"},
       { "type":"html", "content": "<p><b>スーパーLEDルームランプⅡ<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm\" target=\"_blank\">『SLL-4007』</a></span></b></p>", "align": "right"}
     ]
   },
   {
     "date": "2024年6月10日",
     "type": "新製品情報",
-    "title_data": {"product": ["車速ドアロックシステム『 SDL-CH01 』"], "car_model": ["N-BOX　（JF5.6）　R5/10～"]},
+    "product": ["車速ドアロックシステム"], "car_models": [{"model_name":"N-BOX　R5/10～　（JF5.6）"}],
     "brand": ["ホンダ"],
     "body": [{ "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『SLD-CH01』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2024年5月31日",
     "type": "新製品情報",
-    "title_data": {"product": ["オプションコネクターハーネス『FC-H01（6ピン）』"], "car_model": ["N-BOX　（JF5.6）　R5/10～"]},
+    "product": ["オプションコネクターハーネス"], "car_models": [{"model_name":"N-BOX　R5/10～　（JF5.6）"}],
     "brand": ["ホンダ"],
     "body": [{ "type":"html", "content": "<p><b>オプションコネクターハーネス<span style=\"color: blue;\"><a href=\"/html/products/POWER/op_cn/op_cn.htm\" target=\"_blank\">『FC-H01（6ピン）』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2024年2月28日",
     "type": "適合情報",
-    "title_data": {"product": ["車速ドアロックシステム『 SDL-CT08 』"], "car_model": ["ヤリス　（MXPA10.15　KSP210）　R6/2～", "ヤリスハイブリッド　（MXPH14.17）　R6/2～", "ヤリスクロス　（MXPB10.15）　R6/2～", "ヤリスクロスハイブリッド　（MXPJ10.15）　R6/2～"]},
+    "product": ["車速ドアロックシステム"], "car_models": [
+      {"model_name":"ヤリス　R6/2～　（MXPA10.15.KSP210）"},
+      {"model_name":"ヤリスハイブリッド　R6/2～　（MXPH14.17）"},
+      {"model_name":"ヤリスクロス　R6/2～　（MXPB10.15）"},
+      {"model_name":"ヤリスクロスハイブリッド　R6/2～　（MXPJ10.15）"}],
     "brand": ["トヨタ"],
     "body": [{ "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『SDL-CT08』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2024年1月15日",
     "type": "適合情報",
-    "title_data": {"product": ["フリーアイドリングストップ『FIS-T08』"], "car_model": ["ヴェルファイア　（TAHA40W 45W）　R5/7～"]},
+    "product": ["フリーアイドリングストップ"], "car_models": [{"model_name":"ヴェルファイア　R5/7～　（TAHA40W.45W）"}],
     "brand": ["トヨタ"],
     "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FIS-T08』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2023年12月5日",
     "type": "新製品情報",
-    "title_data": {"product": ["車速ドアロックシステム『SDL-CT08』"], "car_model": ["カローラクロス　（MXGA10）　R5/11～", "カローラクロスハイブリッド　（ZVG13.16）　R5/11～"]},
+    "product": ["車速ドアロックシステム"], "car_models": [{"model_name":"カローラクロス　R5/11～　（MXGA10）"},
+     {"model_name":"カローラクロスハイブリッド　R5/11～　（ZVG13.16）"}],
     "brand": ["トヨタ"],
     "body": [{ "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『SDL-CT08』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2023年10月10日",
     "type": "新製品情報",
-    "title_data": {"product": ["USB電源コンバーター"]},
+    "product": ["USB電源コンバーター"],
     "brand": [],
     "body": [
       { "type": "paragraph", "content": "車内でスマートフォンやタブレットの充電ができるＵＳＢ電源増設ユニット"},
@@ -156,53 +205,78 @@
   {
     "date": "2023年9月4日",
     "type": "適合情報",
-    "title_data": {"product": ["ヘッドライトコントローラー『HLC-103』", "ヘッドライトコントローラー『HLC-103C』"], "car_model": ["アルファード（AGH40W.45W）　Ｒ5/7～", "アルファードハイブリッド（AAHH40W.45W）　Ｒ5/7～", "ヴェルファイア（TAHA40W.45W）　Ｒ5/7～", "ヴェルファイアハイブリッド（AAHH40W.45W）　Ｒ5/7～"]},
+    "product": ["ヘッドライトコントローラー"], "car_models": [
+      {"model_name":"アルファード　R5/7～　（AGH40W.45W）"},
+      {"model_name":"アルファードハイブリッド　R5/7～　（AAHH40W.45W）"},
+      {"model_name":"ヴェルファイア　R5/7～　（TAHA40W.45W）"},
+      {"model_name":"ヴェルファイアハイブリッド　R5/7～（AAHH40W.45W）"}],
     "brand": ["トヨタ"],
     "body": [{ "type":"html", "content": "<p><b>ヘッドライトコントローラー<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/hlc/hlc.htm\" target=\"_blank\">『HLC-103』『HLC-103C』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2023年8月25日",
     "type": "適合情報",
-    "title_data": {"product": ["オプションコネクターハーネス『FC-T04（13ピン）』"], "car_model": ["アルファード（AGH40W.45W）　Ｒ5/7～", "アルファードハイブリッド（AAHH40W.45W）　Ｒ5/7～", "ヴェルファイア（TAHA40W.45W）　Ｒ5/7～", "ヴェルファイアハイブリッド（AAHH40W.45W）　Ｒ5/7～"]},
+    "product": ["オプションコネクターハーネス"], "car_models": [
+      {"model_name":"アルファード　R5/7～　（AGH40W.45W）"},
+      {"model_name":"アルファードハイブリッド　R5/7～　（AAHH40W.45W）"},
+      {"model_name":"ヴェルファイア　R5/7～　（TAHA40W.45W）"},
+      {"model_name":"ヴェルファイアハイブリッド　R5/7～　（AAHH40W.45W）"}],
     "brand": ["トヨタ"],
     "body": [{ "type":"html", "content": "<p><b>オプションコネクターハーネス<span style=\"color: blue;\"><a href=\"/html/products/POWER/op_cn/op_cn.htm\" target=\"_blank\">『FC-T04（13ピン）』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2023年6月19日",
     "type": "適合情報",
-    "title_data": {"product": ["車速ドアロックシステム『 SDL-CT08 』", "ヘッドライトコントローラー『HLC-103』", "ヘッドライトコントローラー『HLC-103C』", "オプションコネクターハーネス『FC-T04（13ピン）』"], "car_model": ["プリウス PHEV　ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ装着車　（MXWH61）　R5/3～"]},
+    "product": ["車速ドアロックシステム"], "car_models": [{"model_name":"プリウス PHEV　R5/3～　（MXWH61）", "specification":"【ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ装着車】"}],
     "brand": ["トヨタ"],
     "body": [
-      { "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『SDL-CD08』</a></span></b></p>", "align": "right"},
-      { "type":"html", "content": "<p><b>ヘッドライトコントローラー<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/hlc/hlc.htm\" target=\"_blank\">『HLC-103』『HLC-103C』</a></span></b></p>", "align": "right"},
+      { "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『SDL-CD08』</a></span></b></p>", "align": "right"}
+    ]
+  },
+  {
+    "date": "2023年6月19日",
+    "type": "適合情報",
+    "product": ["ヘッドライトコントローラー"], "car_models": [{"model_name":"プリウス PHEV　R5/3～　（MXWH61）", "specification":"【ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ装着車】"}],
+    "brand": ["トヨタ"],
+    "body": [
+      { "type":"html", "content": "<p><b>ヘッドライトコントローラー<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/hlc/hlc.htm\" target=\"_blank\">『HLC-103』『HLC-103C』</a></span></b></p>", "align": "right"}
+    ]
+  },
+ {
+    "date": "2023年6月19日",
+    "type": "適合情報",
+    "product": ["オプションコネクターハーネス"], "car_models": [{"model_name":"プリウス PHEV　R5/3～　（MXWH61）", "specification":"【ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ装着車】"}],
+    "brand": ["トヨタ"],
+    "body": [
       { "type":"html", "content": "<p><b>オプションコネクターハーネス<span style=\"color: blue;\"><a href=\"/html/products/POWER/op_cn/op_cn.htmm\" target=\"_blank\">『FC-T04（13ピン）』</a></span></b></p>", "align": "right"}
     ]
   },
   {
     "date": "2023年4月14日",
     "type": "新製品情報",
-    "title_data": {"product": ["スーパーLEDルームランプⅡ『 SLL-9012 』"], "car_model": ["スペーシア/スペーシアカスタム　（MK53S）　H29/12～", "スペーシアギア　（MK53S）　H30/12～"]},
+    "product": ["スーパーLEDルームランプⅡ"], "car_models": [{"model_name":"スペーシア/スペーシアカスタム　H29/12～　（MK53S）"},
+     {"model_name":"スペーシアギア　H30/12～　（MK53S）"}],
     "brand": ["スズキ"],
     "body": [{ "type":"html", "content": "<p><b>スーパーLEDルームランプⅡ<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm\" target=\"_blank\">『 SLL-9012 』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2023年3月3日",
     "type": "適合情報",
-    "title_data": {"product": ["ヘッドライトコントローラー『HLC-103』", "ヘッドライトコントローラー『HLC-103C』"], "car_model": ["プリウス（MXWH60.65　ZVW60.65）　Ｒ5/1～"]},
+    "product": ["ヘッドライトコントローラー"], "car_models": [{"model_name":"プリウス　R5/1～　（MXWH60.65.ZVW60.65）"}],
     "brand": ["トヨタ"],
     "body": [{ "type":"html", "content": "<p><b>ヘッドライトコントローラー<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/hlc/hlc.htm\" target=\"_blank\">『HLC-103』『HLC-103C』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2023年3月3日",
     "type": "適合情報",
-    "title_data": {"product": ["車速ドアロックシステム『 SDL-CT08 』"], "car_model":["プリウス　ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ装着車　（MXWH60.65　ZVW60.65）　R5/1～"]},
+    "product": ["車速ドアロックシステム"], "car_models":[{"model_name":"プリウス　R5/1～　（MXWH60.65.ZVW60.65）", "specification":"【ﾃﾞｨｽﾌﾟﾚｲｵｰﾃﾞｨｵ装着車】"}],
     "brand": ["トヨタ"],
     "body": [{ "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『 SDL-CT08  』</a></span></b></p>", "align": "right"}]
   },
   {
     "date": "2023年2月13日",
     "type": "新製品情報",
-    "title_data": {"product": ["スーパー LED ルームランプⅡ"]},
+    "product": ["スーパー LED ルームランプⅡ"],
     "brand": [],
     "body": [
       { "type":"html", "content": "<p><b><span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/super_led_roomlamp2/super_led_roomlamp2.htm\" target=\"_blank\">スーパーLEDルームランプⅡ</a></span></b></p>"},
@@ -213,7 +287,7 @@
   {
     "date": "2023年2月10日",
     "type": "新製品情報",
-    "title_data": {"product": ["LED HEAD LAMP GLORIOUS 【H4】【H11】", "LED HEAD LAMP GLORIOUS 【D2S/D2R】【D4S/D4R】"]},
+    "product": ["LED HEAD LAMP GLORIOUS 【H4】【H11】【D2S/D2R】【D4S/D4R】"],
     "brand": [],
     "body": [
       { "type":"html", "content": "<p><b>驚異の明るさと長寿命！（ハロゲン交換タイプ）<br><span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/glh-h/glh-h.htm\" target=\"_blank\">LED HEAD LAMP GLORIOUS 【H4】【H11】</a></span></b></p></b></p>"},
@@ -223,8 +297,88 @@
   {
     "date": "2023年1月24日",
     "type": "適合情報",
-    "title_data": {"product": ["ヘッドライトコントローラー『 HLC-103 』", "ヘッドライトコントローラー『 HLC-103C 』"], "car_model":["クラウンクロスオーバー（TZSH35 　AZSH35）　Ｒ4/8～", "レクサス　NX（AAZA20.25　AAZH20.25.26）　R3/8～"]},
+    "product": ["ヘッドライトコントローラー"], "car_models":[{"model_name":"クラウンクロスオーバー　R4/8～　（TZSH35.AZSH35）"}, 
+    {"model_name":"レクサス　NX　R3/8～　（AAZA20.25 AAZH20.25.26）"}],
     "brand": ["トヨタ", "レクサス"],
     "body": [{ "type":"html", "content": "<p><b>ヘッドライトコントローラー<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/hlc/hlc.htm\" target=\"_blank\">『 HLC-103 』『 HLC-103C 』</a></span></b></p>", "align": "right"}]
+  },
+  {
+    "date": "2022年12月20日",
+    "type": "適合情報",
+    "product": ["フリーアイドリングストップ"], "car_models":[{"model_name":"ムーヴキャンバス　R4/7～　（LA850S.LA860S）"}],
+    "brand": ["ダイハツ"],
+    "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FIS-D01』</a></span></b></p>", "align": "right"}]
+  },
+ {
+    "date": "2022年10月20日",
+    "type": "適合情報",
+    "product": ["車速ドアロックシステム"], "car_models":[{"model_name":"シエンタ/シエンタハイブリッド　R4/9～　（MXPC10G.MXPL1#G）","specification":"【ディスプレイオーディオ装着車】"}],
+    "brand": ["トヨタ"],
+    "body": [{ "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『 SDL-CT08 』</a></span></b></p>", "align": "right"}]
+  },
+ {
+    "date": "2022年10月3日",
+    "type": "新製品情報",
+    "product": ["ヘッドライトコントローラー"],
+    "brand": ["トヨタ"],
+    "body" : [
+     { "type": "paragraph", "content": "薄暮時や夜間の駐停車、信号待ちにヘッドライトを自動で消灯！サービスホールスイッチ付属でスマートな取り付けが可能。"},
+     { "type":"html", "content": "<p><b>ヘッドライトコントローラー<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/hlc/hlc.htm\" target=\"_blank\">『HLC-102』『HLC-102C』</a></span></b></p>", "align": "right"},
+     { "type":"html", "content": "<p><b>ヘッドライトコントローラー<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/hlc/hlc.htm\" target=\"_blank\">『HLC-103』『HLC-103C』</a></span></b></p>", "align": "right"},
+     { "type":"html", "content": "<p><b>ヘッドライトコントローラー<span style=\"color: blue;\"><a href=\"/html/products/LED_BULB/hlc/hlc.htm\" target=\"_blank\">『HLC-104』『HLC-104C』</a></span></b></p>", "align": "right"}
+    ]
+  },
+ {
+    "date": "2022年10月3日",
+    "type": "新製品情報",
+    "product": ["車速ドアロックシステム"], "car_models":[{"model_name":"ヴォクシー/ヴォクシーハイブリッド　R4/1～　（MZRA90W.95W.ZWR90W.95W）"},
+    {"model_name":"ノア/ノアハイブリッド　R4/1～　（MZRA90W.95W.ZWR90W.95W）"}],
+    "brand": ["トヨタ"],
+    "body": [{ "type":"html", "content": "<p><b>車速ドアロックシステム<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/sdlct/sdlct.htm\" target=\"_blank\">『 SDL-CT07 』</a></span></b></p>", "align": "right"}]
+  },
+ {
+    "date": "2022年9月26日",
+    "type": "新製品情報",
+    "product": ["USB/HDMI延長ケーブル"],
+    "brand": ["トヨタ"],
+    "body": [{ "type":"html", "content": "<p><b>USB/HDMI延長ケーブル<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/eopspt/eopspt.htm\" target=\"_blank\">『 EOP-SP01TU 』</a></span></b></p>", "align": "right"}]
+  },
+   {
+    "date": "2022年7月25日",
+    "type": "適合情報",
+    "product": ["フリーアイドリングストップ"], "car_models":[{"model_name":"ラパン　R4/7～　（HE33S）"}],
+    "brand": ["スズキ"],
+    "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FIS-100M』</a></span></b></p>", "align": "right"}]
+  },
+ {
+    "date": "2022年7月8日",
+    "type": "適合情報",
+    "product": ["フリーアイドリングストップ"], "car_models":[{"model_name":"N BOX　R4/1～　（JF3.4）","specification":"【電子制御パーキングブレーキ装着車】"},
+    {"model_name":"スズキ　ハスラー　R2/2～　（MR52S MR92S）"}],
+    "brand": ["ホンダ"],
+    "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FIS-100P』</a></span></b></p>", "align": "right"}]
+  },
+ {
+    "date": "2022年6月13日",
+    "type": "新商品情報",
+    "product": ["フリーアイドリングストップ"], 
+    "car_models":[
+      {"model_name":"アトレー　H29/11～R3/12　（S321G.331G）"},
+      {"model_name":"ウェイク　H28/6～H29/12　（LA700S.710S)"},
+      {"model_name":"キャスト　H27/9～H29/10　（LA250A.260A）"},
+      {"model_name":"ハイゼットカーゴ　H29/11～R3/12　（S321V.331V）"},
+      {"model_name":"ハイゼットキャディ　H28/6～H29/12　（LA700V.710V）"}],
+    "brand": ["ダイハツ"],
+    "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FIS-100P』</a></span></b></p>", "align": "right"}]
+  },
+ {
+    "date": "2022年6月13日",
+    "type": "新商品情報",
+    "product": ["フリーアイドリングストップ"], 
+    "car_models":[{"model_name":"アルト　R4/1～　（HA37S）"},
+    {"model_name":"ソリオ　R2/12～　（MA27S）"},
+    {"model_name":"ワゴンRスマイル　R3/9～　（MX81S）"}],
+    "brand": ["スズキ"],
+    "body": [{ "type":"html", "content": "<p><b>フリーアイドリングストップ<span style=\"color: blue;\"><a href=\"/html/products/CAR_ACCESSORY/fis/fis.htm\" target=\"_blank\">『FIS-100M』</a></span></b></p>", "align": "right"}]
   }
 ]

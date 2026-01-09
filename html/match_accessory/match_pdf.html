@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>製品適合表</title>
+    <meta name="description" content="Bullcon製品の車種別適合表（PDF）を製品ごとにご確認いただけます。ご購入・取り付け前に必ず現車で適合をご確認ください。">
+    <title>製品適合表 | Bullcon - フジ電機工業株式会社</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/match_accessory/match_pdf.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<!-- Google Analyticse計測用タグです。全てのページに埋め込んでください。 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0R1H3RK4W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X0R1H3RK4W');
+</script>
 <body>
     <div id="header-placeholder"></div>
     <main>
@@ -24,30 +35,8 @@
                     <p>製品の取り付けやご購入の際は、必ず現車にて適合をご確認いただくか、お近くの販売店またはディーラー様にご相談ください。</p>
                     <p>本適合表の内容は、あくまで参考情報としてご利用ください。ご不明な点がございましたら、お気軽にお問い合わせください。</p>
                 </div>
-                <div id="top-scroller">
-                    <div></div>
-                </div>
-                <div class="table-wrapper">
-                    <table>
-                        <thead>
-                            <tr>
-                                <th>製品名</th>
-                                <th>区分</th>
-                                <th>補足</th>
-                                <th>トヨタ</th>
-                                <th>レクサス</th>
-                                <th>ニッサン</th>
-                                <th>ホンダ</th>
-                                <th>ミツビシ</th>
-                                <th>スバル</th>
-                                <th>スズキ</th>
-                                <th>ダイハツ</th>
-                                <th>マツダ</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            </tbody>
-                    </table>
+                <div id="pdf-list-container">
+                    <p id="loading-message">適合データを読み込み中です...</p>
                 </div>
             </div>
         </div>

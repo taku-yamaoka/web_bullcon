@@ -7,7 +7,7 @@
 
 .recruit-message {
     text-align: center;
-    font-size: 18px;
+    font-size: var(--font-size-h3);
     font-weight: bold;
     color: var(--color-body-text);
     padding: 100px 0;
@@ -19,7 +19,7 @@
 }
 
 .privacy-link {
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
     color: var(--color-link-text);
     text-decoration: underline;
 }
@@ -30,7 +30,7 @@
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .footer-nav {
         flex-direction: column;
     }

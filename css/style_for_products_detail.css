@@ -2,10 +2,13 @@
   グローバルスタイル
 ==================================*/
 :root {
+    font-size: 100%;
+
     --color-background: #fff;
     --color-background-border: #e0e0e0;
     --color-accent: #333;
     --color-accent-2: #666;
+    --color-accent-3: #00479d;
     --color-overray: rgba(0, 0, 0, 0.5);
     --color-header-text: #000;
     --color-body-text: #333;
@@ -15,8 +18,15 @@
     --color-link-text-hovar: #002d6b;
     --color-submit-button: #00479d;
     --color-submit-button-hovar: #002d6b;
-    --color-disabled-button: #cccccc;
+    --color-disabled-button: #ccc;
     --color-white-emphasis: #f0f0f0;
+
+    --font-size-h2: clamp(1.25rem, 1.0vw + 1rem, 2rem);
+    --font-size-h3: clamp(1.1rem, 0.8vw + 1rem, 1.5rem);
+    --font-size-h4: clamp(1.0rem, 0.4vw + 1rem, 1.2rem);
+    --font-size-h5: clamp(0.9rem, 0.2vw + 1rem, 1.1rem);
+    --font-size-body-text: clamp(0.875rem, 0.1vw + 0.8rem, 1rem);
+    --font-size-caption: clamp(0.8rem, 0.1vw + 0.7rem, 0.9rem);
 }
 
 html, body {
@@ -39,6 +49,7 @@ body {
     font-family: 'Noto Sans JP', sans-serif;
     line-height: 1.8;
     color: var(--color-body-text);
+    padding-top: 100px; /* ヘッダー分下げる */
     background-color: var(--color-background);
     margin: 0;
 }
@@ -77,143 +88,4 @@ a:hover {
     color: var(--color-header-text); /* テキストを黒に */
     transform: translateY(-5px); /* ホバーで少し大きく浮かせる */
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); /* ホバー時に影を追加 */
-}
-
-/*** PC表示用の製品一覧サイドバー ***/
-.product-sidebar-container {
-    display: none;
-    position: absolute;
-    top: 150px;
-    left: 20px;
-    width: 15vw;
-    background-color: var(--color-background);
-    border: 1px solid var(--color-background);
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    z-index: 999;
-    overflow-y: auto;
-    max-height: calc(100vh - 150px);
-}
-
-.product-sidebar-container h3 {
-    font-size: 1.2em;
-    font-weight: bold;
-    color: var(--color-body-text);
-    border-bottom: 2px solid #ccc;
-    padding-bottom: 5px;
-    margin-bottom: 15px;
-}
-
-.product-sidebar-container ul {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    color: var(--color-body-text-2);
-}
-
-.product-sidebar-container li {
-    margin-bottom: 8px;
-}
-
-/* カテゴリと製品のヘッダー共通スタイル */
-.category-header,
-.product-item-header {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 4px 10px;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.2s;
-}
-
-.category-header:hover,
-.product-item-header:hover {
-    background-color: var(--color-white-emphasis);
-}
-
-/* カテゴリ名のスタイル */
-.category-header strong {
-    font-size: 1em;
-    font-weight: bold;
-    color: var(--color-body-text);
-    flex-grow: 1;
-}
-
-/* 製品名のスタイル */
-.products-sublist .product-item-header {
-    font-size: 0.9em;
-    color: var(--color-body-text);
-    
-    padding-left: 20px; 
-}
-
-.products-sublist .product-item-header a {
-    color: var(--color-body-text);
-}
-
-
-/* サブページリストのスタイル */
-.sub-pages-list {
-    list-style: none;
-    margin-top: 5px;
-}
-
-/* サブページのリンクスタイル */
-.sub-pages-list a {
-    font-size: 0.8em;
-    font-weight: normal;
-    color: var(--color-body-text-2);
-    padding: 4px 10px 4px 30px;
-    display: block;
-}
-
-/* 選択中の要素のスタイル */
-/* 製品ヘッダーコンテナ（.product-item-header）が選択された場合のスタイル */
-.product-item-header.current-product {
-    background-color: var(--color-link-text);
-    color: var(--color-body-text-dark);
-    font-weight: bold;
-}
-
-/* 選択中の製品ヘッダー内のリンク（<a>タグ）のスタイル */
-.product-item-header.current-product a {
-    color: var(--color-body-text-dark);
-    font-weight: bold;
-}
-
-/* 選択中のサブページリンクのスタイル */
-.sub-pages-list a.current-product {
-    background-color: var(--color-link-text);
-    color: var(--color-body-text-dark);
-    font-weight: bold;
-}
-
-/* トグルボタンのスタイル */
-.toggle-btn {
-    height: 10px;
-    width: 9px;
-    transition: transform 0.3s ease;
-    flex-shrink: 0;
-    margin-left: 5px;
-}
-
-/* ページコンテンツの調整 */
-@media (min-width: 1500px) {
-    .product-sidebar-container {
-        display: block;
-    }
-}
-
-
-/*==================================
-  モバイル対応
-==================================*/
-@media (max-width: 768px) {
-    .container {
-        padding-left: 15px;
-        padding-right: 15px;
-        box-sizing: border-box;
-    }
 }

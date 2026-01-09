@@ -1,18 +1,18 @@
-<header class="header">
+<header id="header" class="header">
     <div class="header-inner">
-        <h1 class="header-logo">
+        <div class="header-logo">
             <a href="/">
                 <img src="/images/header/logo.png" alt="Bullcon | フジ電機工業株式会社" width="150">
             </a>
-        </h1>
+        </div>
         
         <nav class="header-nav">
             <ul class="nav-list">
                 <li class="nav-item has-dropdown" data-dropdown-target="product-dropdown">
-                    <a href="/html/products/products.html">
+                    <span class="dropdown-toggle">
                         製品情報
                         <img src="/images/common/bottom_arrow_icon.png" class="bottom_arrow_icon">
-                    </a>
+                    </span>
                 </li>
                 <li class="nav-item has-dropdown" data-dropdown-target="news-dropdown">
                     <span class="dropdown-toggle">
@@ -52,29 +52,25 @@
             <ul class="dropdown-list"></ul>
         </div>
         
-        <div class="sub-dropdown-list-container dropdown-border">
-            </div>
-        
-        <div class="dropdown-image-container">
-            <img class="dropdown-image" src="" alt="製品画像">
-            <p class="dropdown-description"></p>
-        </div>
+        <div class="sub-dropdown-list-container"></div>
     </div>
     
     <div id="news-dropdown" class="dropdown-menu">
+        <div class="dropdown-title"><img src="/images/header/icon_announcements.png">新製品・適合車種の更新情報をご確認ください。</div>
         <div class="dropdown-list-container">
             <ul class="dropdown-list">
-                <li><a href="/html/news/announcements.html">お知らせ</a></li>
-                <li><a href="/html/news/products_news.html">製品新着情報</a></li>
+                <li><a href="/html/news/announcements.html">弊社からのお知らせ</a></li>
+                <li><a href="/html/news/products_news.html">新製品・適合車種更新情報</a></li>
             </ul>
         </div>
     </div>
 
     <div id="match-dropdown" class="dropdown-menu">
+        <div class="dropdown-title"><img src="/images/header/icon_gear.png"> お乗りの車に弊社製品が取り付け可能か、すぐにご確認いただけます。</div>
         <div class="dropdown-list-container">
             <ul class="dropdown-list">
-                <li><a href="/html/match_accessory/match.html">適合検索</a></li>
-                <li><a href="/html/match_accessory/match_pdf.html">適合表 (PDF)</a></li>
+                <li><a href="/html/match_accessory/match.html">車種別 適合検索</a></li>
+                <li><a href="/html/match_accessory/match_pdf.html">適合表一覧 (PDF)</a></li>
             </ul>
         </div>
     </div>

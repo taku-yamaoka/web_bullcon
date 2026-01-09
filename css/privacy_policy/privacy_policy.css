@@ -8,7 +8,7 @@
 
 .privacy-header {
     text-align: right;
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
     margin-bottom: 40px;
 }
 
@@ -21,17 +21,17 @@
 }
 
 .policy-subtitle {
-    font-size: 18px;
+    font-size: var(--font-size-h5);
     font-weight: bold;
-    color: var(--color-link-text);
+    color: var(--color-accent-3);
     margin-top: 30px;
     margin-bottom: 15px;
-    border-left: 5px solid var(--color-link-text);
+    border-left: 5px solid var(--color-accent-3);
     padding-left: 10px;
 }
 
 .policy-text {
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
     line-height: 1.8;
     color: var(--color-body-text);
     margin-bottom: 15px;
@@ -40,7 +40,7 @@
 .purpose-list {
     list-style-type: none;
     padding-left: 20px;
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
     line-height: 1.8;
     color: var(--color-body-text);
 }
@@ -54,21 +54,22 @@
     content: "●";
     position: absolute;
     left: -20px;
-    color: #00479d;
 }
 
 .contact-info {
     text-align: left;
-    margin-top: 80px;
-    font-size: 14px;
+    margin-top: 25px;
+    padding-top: 25px;
+    font-size: var(--font-size-body-text);
     line-height: 1.8;
+    border-top: 1px solid var(--color-background-border);
 }
 
 /* 連絡先詳細部分のスタイル */
 .contact-detail {
-    margin-top: 50px;
-    font-size: 16px; /* 文字サイズを少し大きく */
-    line-height: 1.5; /* 行間を広げて見やすく */
+    padding-top: 10px;
+    font-size: var(--font-size-body-text);
+    line-height: 1.5; 
 }
 
 .contact-detail .company-name {
@@ -78,9 +79,5 @@
 .contact-detail .tel-info,
 .contact-detail .fax-info {
     color: var(--color-body-text-2);
-}
-
-.cybertrust-seal {
-    text-align: center;
-    margin-top: 50px;
+    padding-left: 20px;
 }

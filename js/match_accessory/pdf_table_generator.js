@@ -1,6 +1,7 @@
 // メーカー名をキーとしてリスト化
-const manufacturerKeys = ["toyota", "lexus", "nissan", "honda", "mitsubishi", "subaru", "suzuki", "daihatsu", "mazda"];
-const tbody = document.querySelector('table tbody');
+const manufacturerKeys = ["toyota", "lexus", "nissan", "honda", "mitsubishi", "subaru", "suzuki", "daihatsu", "mazda", "isuzu"];
+const pdfListContainer = document.getElementById('pdf-list-container');
+const loadingMessage = document.getElementById('loading-message');
 
 /**
  * PDFファイルの最終更新日を取得する非同期関数
@@ -30,40 +31,132 @@ async function getPdfLastModified(url) {
 }
 
 /**
- * データを元にテーブルの<tbody>を構築する
+ * データをカテゴリごとにグループ化する
+ * @param {Array<Object>} data - 製品データの配列
+ * @returns {Map<string, Array<Object>>} - カテゴリ名をキーとするマップ
+ */
+function groupDataByCategory(data) {
+    const groupedData = new Map();
+    let currentCategory = null;
+
+    for (const item of data) {
+        if (item.type === "category") {
+            currentCategory = item.categoryName;
+            if (!groupedData.has(currentCategory)) {
+                groupedData.set(currentCategory, []);
+            }
+        } else if (currentCategory) {
+            groupedData.get(currentCategory).push(item);
+        }
+    }
+    return groupedData;
+}
+
+/**
+ * データを元にカテゴリごとのテーブルを構築し、DOMに出力する
  * @param {Array<Object>} data - 製品データの配列
  */
-async function createTable(data) {
-    if (!tbody) return;
+async function renderCategoryTables(data) {
+    if (!pdfListContainer) return;
 
-    tbody.innerHTML = ''; // テーブルの中身をクリア
+    // 最初にローディングメッセージを非表示にする
+    if (loadingMessage) {
+        loadingMessage.remove();
+    }
+    
+    // カテゴリごとのデータにグループ化
+    const groupedData = groupDataByCategory(data);
+    
+    // 既に存在する内容をクリア
+    pdfListContainer.innerHTML = ''; 
 
-    for (const product of data) {
-        // 新しいカテゴリ行の処理
-        if (product.type === "category") {
-            const tr = document.createElement('tr');
-            const tdCategory = document.createElement('td');
-            // colspanはHTMLヘッダーの列数に合わせて12に設定
-            tdCategory.setAttribute('colspan', 12); 
-            tdCategory.classList.add('category-row');
-            tdCategory.textContent = product.categoryName;
-            tr.appendChild(tdCategory);
-            tbody.appendChild(tr);
-        } else {
-            // 既存の製品行の処理
-            for (const [rowIndex, rowData] of product.rows.entries()) {
+    // 各カテゴリのテーブルを生成
+    for (const [categoryName, products] of groupedData.entries()) {
+        if (products.length === 0) continue;
+
+        // 1. <details> 要素の作成
+        const details = document.createElement('details');
+        details.classList.add('category-details');
+
+        // 2. <summary> 要素の作成 (カテゴリ名)
+        const summary = document.createElement('summary');
+        summary.classList.add('category-summary');
+        summary.innerHTML = categoryName; 
+        details.appendChild(summary);
+
+        // 3. テーブルラッパーの作成 (横スクロール対応)
+        const tableWrapper = document.createElement('div');
+        tableWrapper.classList.add('table-wrapper'); 
+
+        // 4. テーブルヘッダー (top-scroller) の作成
+        const topScroller = document.createElement('div');
+        topScroller.id = `top-scroller-${categoryName.replace(/[^a-zA-Z0-9]/g, '')}`;
+        topScroller.classList.add('top-scroller');
+        topScroller.innerHTML = '<div></div>'; // スクロール幅設定用のインナー
+        
+        // detailsが開かれたときにスクロール同期を設定する
+        details.addEventListener('toggle', () => {
+            if (details.open) {
+                // 内部テーブルが描画されてから幅同期とスクロール同期を設定
+                setTimeout(() => {
+                    syncTableWidths(details);
+                    setupScrollSynchronization(details);
+                }, 0); 
+            }
+        });
+        
+        details.appendChild(topScroller);
+
+
+        // 5. <table> 要素の作成
+        const table = document.createElement('table');
+
+        // 6. <thead> の作成
+        const thead = document.createElement('thead');
+        thead.innerHTML = `
+            <tr>
+                <th>製品名</th>
+                <th>区分</th>
+                <th>補足</th>
+                <th>トヨタ</th>
+                <th>レクサス</th>
+                <th>ニッサン</th>
+                <th>ホンダ</th>
+                <th>ミツビシ</th>
+                <th>スバル</th>
+                <th>スズキ</th>
+                <th>ダイハツ</th>
+                <th>マツダ</th>
+                <th>イスズ</th>
+            </tr>
+        `;
+        table.appendChild(thead);
+
+        // 7. <tbody> の作成とデータ行の追加
+        const tbody = document.createElement('tbody');
+        for (const product of products) {
+            // product.rowsをループする際にインデックス(rowIndex)を使用
+            product.rows.forEach((rowData, rowIndex) => { 
                 const tr = document.createElement('tr');
                 
-                // rowspanが必要な製品名セル
+                // 製品名セルの生成ロジックを変更
+                const tdProduct = document.createElement('td');
+                tdProduct.classList.add('first-column'); // スタイル調整用のクラス
+
                 if (rowIndex === 0) {
-                    const tdProduct = document.createElement('td');
-                    tdProduct.setAttribute('rowspan', product.rows.length);
+                    // 最初の行: リンク付きの製品名を表示
                     const a = document.createElement('a');
                     a.href = product.productLink;
                     a.textContent = product.productName;
                     tdProduct.appendChild(a);
-                    tr.appendChild(tdProduct);
+                    tdProduct.classList.add('product-name-cell');
+                } else {
+                    // 2行目以降: 「同上」を表示 (リンクなし)
+                    tdProduct.textContent = '同上';
+                    tdProduct.classList.add('ditto-cell');
                 }
+
+                tr.appendChild(tdProduct);
 
                 // 区分セル
                 const tdCategory = document.createElement('td');
@@ -78,7 +171,7 @@ async function createTable(data) {
                 // 適合情報セル
                 if (rowData.links.note) {
                     const tdNote = document.createElement('td');
-                    tdNote.setAttribute('colspan', 9); // メーカー9列分を結合
+                    tdNote.setAttribute('colspan', 10); // メーカー9列分を結合
                     tdNote.classList.add('bg-yellow');
                     const a = document.createElement('a');
                     a.href = rowData.links.link;
@@ -106,7 +199,11 @@ async function createTable(data) {
 
                             const dateElement = document.createElement('div');
                             dateElement.textContent = '日付取得中...'; // ローディングテキスト
-                            dateElement.style.fontSize = "0.7em";
+                            if (window.innerWidth < 600) {
+                              dateElement.style.fontSize = "0.65em";
+                            } else {
+                              dateElement.style.fontSize = "0.85em";
+                            }
                             dateElement.style.marginTop = "5px";
                             dateElement.classList.add('date-text');
                             tdLink.appendChild(a);
@@ -123,32 +220,41 @@ async function createTable(data) {
                     }
                 }
                 tbody.appendChild(tr);
-            }
+            });
         }
+        table.appendChild(tbody);
+        
+        // テーブルをラッパーに追加
+        tableWrapper.appendChild(table);
+        // ラッパーをdetailsに追加
+        details.appendChild(tableWrapper);
+        
+        // detailsをメインコンテナに追加
+        pdfListContainer.appendChild(details);
     }
-    // テーブル生成後、幅同期とスクロール同期設定を行う
-    setupScrollSynchronization(); 
-    syncTableWidths();
 }
 
 /**
  * ヘッダーの列幅をボディの列幅に合わせて調整する & 上部スクロールバーの幅をテーブルに合わせる
+ * @param {HTMLElement} detailsElement - 現在の <details> 要素
  */
-function syncTableWidths() {
-    const table = document.querySelector('table');
+function syncTableWidths(detailsElement) {
+    const tableWrapper = detailsElement.querySelector('.table-wrapper');
+    const table = detailsElement.querySelector('table');
     const headerCells = table ? table.querySelectorAll('thead th') : [];
     const bodyRows = table ? table.querySelectorAll('tbody tr') : [];
-    const topScrollerInner = document.querySelector('#top-scroller > div');
+    const topScrollerInner = detailsElement.querySelector('.top-scroller > div');
 
     if (!table || bodyRows.length === 0 || !topScrollerInner) {
         return;
     }
 
-    // colspanのない最初のデータ行を見つける (カテゴリ行はスキップ)
+    // colspanのない最初のデータ行を見つける (注釈行はスキップ)
     let firstDataRowCells = null;
     for (const row of bodyRows) {
         const cells = row.querySelectorAll('td');
-        if (cells.length === headerCells.length) {
+        // ヘッダーセル数と同じ数（12列）のセルを持つ行を探す (製品名1 + 区分1 + 補足1 + メーカー9 = 12)
+        if (cells.length === headerCells.length) { 
             firstDataRowCells = cells;
             break;
         }
@@ -158,7 +264,12 @@ function syncTableWidths() {
         // 1. ヘッダーの列幅をボディに合わせる
         headerCells.forEach((headerCell, index) => {
             if (firstDataRowCells[index]) {
-                headerCell.style.width = `${firstDataRowCells[index].offsetWidth}px`;
+                // tbodyのセルの計算済み幅を取得
+                const cellWidth = firstDataRowCells[index].offsetWidth;
+                headerCell.style.width = `${cellWidth}px`;
+                headerCell.style.minWidth = `${cellWidth}px`;
+                // ヘッダーセルの幅を固定
+                headerCell.style.boxSizing = 'border-box';
             }
         });
     }
@@ -171,10 +282,11 @@ function syncTableWidths() {
 
 /**
  * 上部ダミーバーとメインテーブルラッパーのスクロールを同期させる
+ * @param {HTMLElement} detailsElement - 現在の <details> 要素
  */
-function setupScrollSynchronization() {
-    const topScroller = document.getElementById('top-scroller');
-    const tableWrapper = document.querySelector('.table-wrapper');
+function setupScrollSynchronization(detailsElement) {
+    const topScroller = detailsElement.querySelector('.top-scroller');
+    const tableWrapper = detailsElement.querySelector('.table-wrapper');
     
     if (!topScroller || !tableWrapper) return;
     
@@ -188,7 +300,7 @@ function setupScrollSynchronization() {
             // 次のイベントループでフラグをリセットすることで、無限ループを防ぐ
             setTimeout(() => { isSyncing = false; }, 0); 
         }
-    });
+    }, { passive: true }); // パフォーマンス向上のため passive を追加
 
     // テーブルラッパーを動かしたとき、上部スクロールバーを同期
     tableWrapper.addEventListener('scroll', () => {
@@ -198,36 +310,15 @@ function setupScrollSynchronization() {
             // 次のイベントループでフラグをリセットすることで、無限ループを防ぐ
             setTimeout(() => { isSyncing = false; }, 0);
         }
-    });
+    }, { passive: true });
 }
 
 
 // データのロードとテーブル生成の開始
 document.addEventListener('DOMContentLoaded', () => {
-    const tableWrapper = document.querySelector('.table-wrapper');
-    const targetTbody = document.querySelector('tbody');
     
-    // 必要なDOM要素が存在しない場合は終了
-    if (!tableWrapper || !targetTbody) {
-        console.error("Required DOM elements (.table-wrapper or tbody) not found.");
-        return;
-    }
-
-    // MutationObserverを使って<tbody>の中身が変更されたことを検知
-    // これにより、動的にテーブルが生成された後の幅調整を確実に行う
-    const observer = new MutationObserver((mutationsList, observer) => {
-        // tbodyの内容が確定した後、幅の同期とスクロール同期設定を呼び出す
-        syncTableWidths();
-        setupScrollSynchronization();
-        observer.disconnect(); // 一度だけ実行
-    });
-
-    // childList: 子ノードの追加・削除を監視
-    observer.observe(targetTbody, { childList: true });
-
-
     // JSONデータを読み込む
-    fetch('match_pdf.json')
+    fetch('./match_pdf.json')
         .then(response => {
             if (!response.ok) {
                 // ファイルが見つからない、またはネットワークエラー
@@ -236,19 +327,20 @@ document.addEventListener('DOMContentLoaded', () => {
             return response.json();
         })
         .then(data => {
-            createTable(data); // テーブル生成開始
+            renderCategoryTables(data); // カテゴリ別テーブル生成開始
         })
         .catch(error => {
             console.error('There was a problem with the fetch operation:', error);
             // エラー表示処理
-            if (tbody) {
-                tbody.innerHTML = '<tr><td colspan="12" style="color: red; text-align: left;">適合データの読み込みに失敗しました。ファイルパスまたはJSON形式を確認してください。</td></tr>';
+            if (pdfListContainer) {
+                pdfListContainer.innerHTML = '<p style="color: red; text-align: left;">適合データの読み込みに失敗しました。ファイルパスまたはJSON形式を確認してください。</p>';
             }
         });
-});
-
-// ウィンドウのリサイズ時にも幅を再同期
-window.addEventListener('resize', () => {
-     // リサイズ処理が重くなるのを避けるため、setTimeoutでディレイをかけるとより良いですが、ここではシンプルに
-     syncTableWidths();
+        
+    // ウィンドウのリサイズ時にも幅を再同期 (全ての開いているテーブルに対して実行)
+    window.addEventListener('resize', () => {
+        document.querySelectorAll('.category-details[open]').forEach(details => {
+            syncTableWidths(details);
+        });
+    });
 });

@@ -15,7 +15,11 @@ export async function getCompatibilityData(apiUrl, params) {
     }
 
     try {
-        const response = await fetch(query);
+        const response = await fetch(query, {
+            headers: {
+                'X-Requested-With': 'XMLHttpRequest'
+            }
+        });
         if (!response.ok) {
             throw new Error(`検索に失敗しました。ステータス: ${response.status}`);
         }

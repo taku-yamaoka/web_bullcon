@@ -18,7 +18,7 @@
 .info-item {
     display: flex;
     margin-bottom: 15px;
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
 }
 
 .info-item .info-label {
@@ -52,15 +52,15 @@
 }
 
 .info-data-list h4 {
-    font-size: 16px;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
-    color: var(--color-link-text);
+    color: var(--color-accent-3);
     margin-top: 20px;
     margin-bottom: 10px;
 }
 
 .info-data-list strong {
-    color: var(--color-link-text);
+    color: var(--color-accent-3);
 }
 
 .refund-list {

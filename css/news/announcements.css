@@ -8,7 +8,7 @@
 
 .announcements-title {
     color: var(--color-header-text);
-    font-size: 1.8em;
+    font-size: var(--font-size-h5);
     margin-bottom: 25px;
     padding-bottom: 10px;
     border-bottom: 2px solid #eee;
@@ -33,8 +33,7 @@
     align-items: center;
     color: var(--color-body-text);
     text-decoration: none;
-    /* 文字を大きく */
-    font-size: 1.1em;
+    font-size: var(--font-size-body-text);
     transition: color 0.3s ease;
 }
 
@@ -46,17 +45,20 @@
 /* JavaScriptで新しく追加された<span>要素にスタイルを適用 */
 .announcements-list .announcement-date {
     display: inline-block;
-    min-width: 110px; /* 日付の表示幅を確保 */
-    margin-right: 30px; /* 空白を広げる */
+    min-width: 110px;
+    /* 日付の表示幅を確保 */
+    margin-right: 30px;
+    /* 空白を広げる */
     color: var(--color-body-text-2);
-    font-size: 0.9em;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
-    flex-shrink: 0; /* タイトルが長くなっても幅を保持 */
+    flex-shrink: 0;
+    /* タイトルが長くなっても幅を保持 */
 }
 
 /* Newバッジのスタイル */
 .new-badge {
-    font-size: 0.8em;
+    font-size: var(--font-size-caption);
     background-color: #e74c3c;
     color: white;
     padding: 2px 8px;
@@ -68,14 +70,11 @@
 }
 
 /* --- レスポンシブ対応の追加 --- */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
+
     /* お知らせセクションの左右パディングを調整 */
     .announcements-section {
         padding: 0 15px;
-    }
-
-    .announcements-title {
-        font-size: 1em;
     }
 
     /* お知らせリストのパディングを調整 */
@@ -94,18 +93,71 @@
     /* 日付のスタイルを調整 */
     .announcements-list .announcement-date {
         min-width: auto;
-        font-size: 0.8em; /* 文字の大きさを調整 */
-        order: 1;
+    }
+}
+
+/* --- ページネーションのスタイル --- */
+.pagination-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 5px;
+}
+
+.page-info {
+    display: block;
+    width: 100%;
+    text-align: center;
+    margin-top: 10px;
+    font-size: var(--font-size-caption);
+}
+
+.pagination-button {
+    background-color: var(--color-white-emphasis);
+    border: 1px solid var(--color-background-border);
+    color: var(--color-body-text);
+    padding: 8px 12px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: var(--font-size-caption);
+    transition: background-color 0.2s ease, color 0.2s ease;
+    min-width: 40px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.pagination-button:hover:not(.active):not(.disabled) {
+    background-color: #e0e0e0;
+    color: #007bff;
+}
+
+.pagination-button.active {
+    background-color: #3498db;
+    color: var(--color-body-text-dark);
+    border-color: #3498db;
+    font-weight: bold;
+    cursor: default;
+}
+
+.pagination-button.disabled {
+    background-color: #f8f8f8;
+    color: #aaa;
+    cursor: not-allowed;
+    border-color: #eee;
+}
+
+/* レスポンシブ対応 - ページネーション */
+@media (max-width: 600px) {
+    .pagination-container {
+        gap: 3px;
+        margin-top: 20px;
     }
 
-    .announcements-list .announcement-title-text {
-        font-size: 0.9em;
-        order: 3;
-    }
-
-    .announcements-list .new-badge {
-        font-size: 0.7em;
-        order: 2;
+    .pagination-button {
+        padding: 6px 8px;
+        min-width: 30px;
     }
 }
 
@@ -114,9 +166,11 @@
     0% {
         box-shadow: 0 0 5px rgba(231, 76, 60, 0.4), 0 0 10px rgba(231, 76, 60, 0.2);
     }
+
     50% {
         box-shadow: 0 0 15px rgba(231, 76, 60, 0.8), 0 0 25px rgba(231, 76, 60, 0.5);
     }
+
     100% {
         box-shadow: 0 0 5px rgba(231, 76, 60, 0.4), 0 0 10px rgba(231, 76, 60, 0.2);
     }

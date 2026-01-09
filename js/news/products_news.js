@@ -76,8 +76,8 @@ document.addEventListener('DOMContentLoaded', () => {
      */
     function fetchProductsData() {
         const jsonFiles = [
-            './products_news/car_accessory_news_data.json',
-            './products_news/av_accessory_news_data.json'
+            './products_news/av_accessory_news_data.json',
+            './products_news/car_accessory_news_data.json'
         ];
 
         Promise.all(jsonFiles.map(file =>
@@ -109,13 +109,11 @@ document.addEventListener('DOMContentLoaded', () => {
         processedProductsData = allProductsData.map(item => {
             const newsType = DYNAMIC_NEWS_TYPES.includes(item.type) && item.type !== 'その他' ? item.type : '新製品情報';
             const brands = Array.isArray(item.brand) ? item.brand : (item.brand ? [item.brand] : []);
-            const titleData = item.title_data || {};
             
             return {
                 ...item,
                 newsType: newsType,
                 brands: brands,
-                title_data: titleData
             };
         }).sort((a, b) => {
             const dateA = new Date(a.date.replace(/(\d{4})年(\d{1,2})月(\d{1,2})日/, '$1-$2-$3'));
@@ -143,8 +141,10 @@ document.addEventListener('DOMContentLoaded', () => {
         
         if (searchTerm) {
             tempFilteredData = tempFilteredData.filter(item => {
-                const productMatch = item.title_data.product && item.title_data.product.some(p => p.toLowerCase().includes(searchTerm));
-                const carModelMatch = item.title_data.car_model && item.title_data.car_model.some(c => c.toLowerCase().includes(searchTerm));
+                const dateMatch = item.date && item.date.toLowerCase().includes(searchTerm);
+                const productMatch = item.product && item.product.some(p => p.toLowerCase().includes(searchTerm));
+                const carModelMatch = item.car_models && item.car_models.some(car => car.model_name && car.model_name.toLowerCase().includes(searchTerm));
+                const specificationMatch = item.car_models && item.car_models.some(car => car.specification && car.specification.toLowerCase().includes(searchTerm));
                 const newsTypeMatch = item.newsType.toLowerCase().includes(searchTerm);
                 const brandMatch = item.brands.some(b => b.toLowerCase().includes(searchTerm));
                 
@@ -159,7 +159,7 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     return false;
                 });
-                return productMatch || carModelMatch || newsTypeMatch || brandMatch || bodyMatch;
+                return dateMatch || productMatch || carModelMatch || specificationMatch || newsTypeMatch || brandMatch || bodyMatch;
             });
         }
         
@@ -171,7 +171,6 @@ document.addEventListener('DOMContentLoaded', () => {
         // ページネーションボタン押下後にページの先頭に戻る
         window.scrollTo({
             top: 0,
-            behavior: 'smooth'
         });
     }
 
@@ -198,7 +197,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const li = document.createElement('li');
             li.classList.add('product-item');
 
-            // ★★★ 1. ヘッダー: 日付とタイトル、ニュースタイプとバッジをまとめるコンテナ ★★★
+            // ヘッダー: 日付とタイトル、ニュースタイプとバッジをまとめるコンテナ 
             const headerContainer = document.createElement('div');
             headerContainer.classList.add('product-info-header');
             
@@ -212,10 +211,10 @@ document.addEventListener('DOMContentLoaded', () => {
             titleContainer.classList.add('product-title');
             
             // 製品名のリスト
-            if (item.title_data && item.title_data.product && item.title_data.product.length > 0) {
+            if (item.product && item.product.length > 0) {
                 const productNamesList = document.createElement('ul');
                 productNamesList.classList.add('product-names');
-                item.title_data.product.forEach(prodName => {
+                item.product.forEach(prodName => {
                     const productLi = document.createElement('li');
                     productLi.textContent = prodName;
                     productNamesList.appendChild(productLi);
@@ -257,8 +256,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
             li.appendChild(headerContainer);
 
-            // ★★★ 2. Brandラベル ★★★
-            // brandsが空でない場合にのみ、brandLabelsGroupを生成
+            /* product-info-body */
+            const productInfoBody = document.createElement('div');
+            productInfoBody.classList.add('product-info-body');
+
+            /* car model info group */
+            const carModelInfoGroup = document.createElement('div');
+            carModelInfoGroup.classList.add('car-model-info-group');
             if (item.brands.length > 0 && !item.brands.includes('ALL')) {
                 const brandLabelsGroup = document.createElement('div');
                 brandLabelsGroup.classList.add('brand-labels-group');
@@ -276,19 +280,35 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                     brandLabelsGroup.appendChild(brandLabel);
                 });
-                li.appendChild(brandLabelsGroup);
+                productInfoBody.appendChild(brandLabelsGroup);
             }
 
-            // ★★★ 3. 対象車種 ★★★
+            const contextGroup = document.createElement('div');
+            contextGroup.classList.add('context-group');
+            // 対象車種
             // car_modelが存在し、かつ1つ以上の要素が含まれている場合にのみ表示
-            if (item.title_data && item.title_data.car_model && item.title_data.car_model.length > 0) {
+            if (item.car_models && item.car_models.length > 0) {
                 const carModelInfoDiv = document.createElement('div');
                 carModelInfoDiv.classList.add('car-model-info');
-                carModelInfoDiv.innerHTML = `<span class="car-model-label">対象車種：</span><span class="car-models">${item.title_data.car_model.join('<br>')}</span>`;
-                li.appendChild(carModelInfoDiv);
+                let carModelText = '<span class="car-model-label">対象車種：</span>';
+                item.car_models.forEach(carModel => {
+                    if (carModel.plane_text) {
+                        carModelText += `<span class="car-model"><span class="plane-text">${carModel.plane_text}</span></span>`;
+                    } else {
+                        let carSpecification = '';
+                        if (carModel.specification) {
+                            carSpecification =  `<span class="specification">${carModel.specification}</span>`;
+                        }
+                    
+                        carModelText += `<span class="car-model"><span class="model-name">・${carModel.model_name}</span>${carSpecification}</span>`;
+                    }
+                });
+                carModelInfoDiv.innerHTML = carModelText;
+                carModelInfoGroup.appendChild(carModelInfoDiv);
             }
+            contextGroup.appendChild(carModelInfoGroup);
 
-            // ★★★ 4. 本文 ★★★
+            /* fulltext body */
             const bodyDiv = document.createElement('div');
             bodyDiv.classList.add('product-fulltext-body');
             if (item.body) {
@@ -335,7 +355,9 @@ document.addEventListener('DOMContentLoaded', () => {
                     }
                 });
             }
-            li.appendChild(bodyDiv);
+            contextGroup.appendChild(bodyDiv);
+            productInfoBody.appendChild(contextGroup);
+            li.appendChild(productInfoBody);
             productsList.appendChild(li);
         });
     }

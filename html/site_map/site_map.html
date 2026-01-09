@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>サイトマップ | フジ電機工業株式会社</title>
-    <link rel="stylesheet" href="/css/style.css">
-    <link rel="stylesheet" href="/css/header.css">
-    <link rel="stylesheet" href="/css/footer.css">
-    <link rel="stylesheet" href="/css/site_map/site_map.css">
+    <meta name="description" content="Bullcon (フジ電機工業株式会社) ウェブサイトの全体構造を示すサイトマップです。製品情報、適合情報、会社概要、お問い合わせなど、すべてのページに迷わずアクセスできます。">
+    <title>サイトマップ | Bullcon - フジ電機工業株式会社</title>
+    <link rel="stylesheet" href="../../css/style.css">
+    <link rel="stylesheet" href="../../css/header.css">
+    <link rel="stylesheet" href="../../css/footer.css">
+    <link rel="stylesheet" href="../../css/site_map/site_map.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<!-- Google Analyticse計測用タグです。全てのページに埋め込んでください。 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0R1H3RK4W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X0R1H3RK4W');
+</script>
 <body>
 
     <div id="header-placeholder"></div>
@@ -20,49 +31,72 @@
                     <span class="section-title-en">SITE MAP</span>
                     <span class="section-title-jp">サイトマップ</span>
                 </h2>
-                <ul class="sitemap-tree">
-                    <li>
-                        <a href="/">トップページ</a>
-                        <ul>
-                            <li><a href="/html/products/products.html">製品情報</a></li>
-                            <li><a href="/html/news/products_news.html">お知らせ</a></li>
-                            <li><a href="/html/news/announcements.html">製品新着情報</a></li>
-                            
-                            <li><a href="/html/match_accessory/match.html">適合情報</a></li>
-                            <li><a href="/html/match_accessory/match_pdf.html">適合表（PDF）</a></li>
-                            <li><a href="/html/search/search.html?tab=manual-search">取扱説明書</a></li>
+                <h2 class="auxiliary-section">製品情報</h2>
+                <div class="product-grid" id="product-sitemap">
+                </div>
 
-                            <li><a href="/html/company/about.html">会社概要</a></li>
-                            <li><a href="/html/contact/contact.html">お問い合わせ</a></li>
-                            <li><a href="/html/recruit/recruit.html">採用情報</a></li>
-                            <li><a href="/html/distributors/distributors.html">販売店/代理店(法人)様 専用入口</a></li>
-                            <li><a href="/wp_shop/">WebShop</a></li>
-                            <li><a href="/html/search/search.html">サイト内検索</a></li>
-                        </ul>
-                    </li>
-                    <!--<li>
-                        <a href="/html/distributors/distributors.html">販売店/代理店(法人)様 専用入口</a>
+                <div class="auxiliary-menu">
+                    <div class="auxiliary-menu-block">
+                        <h3>適合情報</h3>
                         <ul>
-                            <li><a href="/html/distributors/only_distributors.htm">配線図情報（ID登録者のみ閲覧可能）</a></li>
-                            <li><a href="/html/distributors/regist_form.html">閲覧ID登録申請</a></li>
+                            <li><a href="../../html/news/products_news.html">製品新着情報</a></li>
+                            <li><a href="../../html/match_accessory/match.html">適合検索</a></li>
+                            <li><a href="../../html/match_accessory/match_pdf.html">適合表一覧（PDF）</a></li>
                         </ul>
-                    </li>-->
-                    <li>
-                        <a href="#">その他</a>
-                        <ul>
-                            <li><a href="/html/site_map/site_map.html">サイトマップ</a></li>
-                            <li><a href="/html/privacy_policy/privacy_policy.html">プライバシーポリシー</a></li>
-                            <li><a href="/html/tsuhan/tsuhan_legal.html">特定商取引法に基づく表記</a></li>
-                        </ul>
-                    </li>
-                </ul>
+                    </div>
+                </div>
+
+                <h2 class="auxiliary-section">企業・サポート情報</h2>
+                    <div class="auxiliary-menu">
+                        <div class="auxiliary-menu-block">
+                            <h3>会社・法令情報</h3>
+                            <ul>
+                                <li><a href="../../html/company/about.html">会社概要</a></li>
+                                <li><a href="../../html/recruit/recruit.html">採用情報</a></li>
+                                <li><a href="../../html/privacy_policy/privacy_policy.html">プライバシーポリシー</a></li>
+                                <li><a href="../../html/tsuhan/tsuhan_legal.html">特定商取引法に基づく表記</a></li>
+                            </ul>
+                        </div>
+                    
+                        <div class="auxiliary-menu-block">
+                            <h3>サポート・窓口</h3>
+                            <ul>
+                                <li><a href="../../html/news/announcements.html">お知らせ</a></li>
+                                <li><a href="../../html/contact/contact.html">お問い合わせ</a></li>
+                                <li><a href="../../html/search/search.html">サイト内検索</a></li>
+                                <li><a href="../../html/search/search.html?tab=manual-search">取扱説明書検索</a></li>
+                                <li><a href="../../html/products/old_manual/old_manual.htm">販売終了製品取扱説明書</a></li>
+                            </ul>
+                        </div>
+                    
+                    </div>
+
+                    <h2 class="auxiliary-section">ユーザー向けサービス</h2>
+                    <div class="auxiliary-menu">
+                        <div class="auxiliary-menu-block">
+                            <h3>会員様専用</h3>
+                            <ul>
+                                <li><a href="../../html/distributors/regist_form.html">閲覧ID登録申請</a></li>
+                                <li><a href="../../html/distributors/distributors.html">販売店/代理店(法人)様 専用入口</a></li>
+                                <li><a href="../../html/distributors/only_distributors/only_distributors.htm">配線図情報（ID登録者のみ閲覧可能）</a></li>
+                            </ul>
+                        </div>
+
+                        <div class="auxiliary-menu-block">
+                            <h3>製品購入</h3>
+                            <ul>
+                                <li><a href="/wp_shop/">Web Shop</a></li>
+                            </ul>
+                        </div>
+                    </div>
             </div>
         </div>
     </main>
 
     <div id="footer-placeholder"></div>
 
-    <script src="/js/header.js"></script>
-    <script src="/js/footer.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/footer.js"></script>
+    <script src="../../js/site_map/site_map.js"></script>
 </body>
 </html>

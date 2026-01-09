@@ -1,0 +1,5 @@
+import { setupSearch } from './common_search.js'; document.addEventListener('DOMContentLoaded', () => { setupSearch({ tabId: 'site-search', dataPath: './search_data.json', filterLogic: (query, searchData) => { const lowerCaseQuery = query.toLowerCase(); const filtered = searchData.filter(item => { return (
+(item.title && item.title.toLowerCase().includes(lowerCaseQuery)) ||
+(item.keywords && item.keywords.toLowerCase().includes(lowerCaseQuery)) ||
+(item.description && item.description.toLowerCase().includes(lowerCaseQuery))
+); }); return filtered.sort((a, b) => { const aTitleMatch = a.title && a.title.toLowerCase().includes(lowerCaseQuery); const bTitleMatch = b.title && b.title.toLowerCase().includes(lowerCaseQuery); return (aTitleMatch && !bTitleMatch) ? -1 : (!aTitleMatch && bTitleMatch) ? 1 : 0; }); }, onDataLoaded: () => { } }); });

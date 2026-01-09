@@ -3,12 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>車種適合検索</title>
+    <meta name="description" content="Bullcon製品の車種別適合をメーカー・車名から瞬時に検索できます。ご購入・取り付け前に最新の適合情報をオンラインで確認し、現車にて最終チェックをお願いします。">
+    <title>車種適合検索 | Bullcon - フジ電機工業株式会社</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/header.css">
     <link rel="stylesheet" href="../../css/footer.css">
     <link rel="stylesheet" href="../../css/match_accessory/match.css">
 </head>
+<!-- Google tag (gtag.js) -->
+<!-- Google Analyticse計測用タグです。全てのページに埋め込んでください。 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0R1H3RK4W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-X0R1H3RK4W');
+</script>
 <body>
     <div id="header-placeholder"></div>
     <main>
@@ -26,7 +37,19 @@
                 </div>
                 <div class="content-wrapper">
                     <div class="form-area" id="form-container"></div>
-                    <button id="exportPdfButton" style="display: none;" disabled>検索結果をPDFで出力</button>
+                    <button id="export-pdf-button" style="display: none;" disabled>検索結果をPDFで出力</button>
+                    
+                    <button id="show-saved-items-button">保存した適合情報を表示</button>
+                    <dialog id="saved-items-dialog">
+                        <div class="dialog-header" style="display: flex; justify-content: space-between; align-items: center;">
+                            <h3>保存済み適合情報</h3>
+                            <button id="close-saved-items-button" aria-label="閉じる">×</button>
+                        </div>
+                        <hr>
+                        <div id="saved-items-list">
+                            </div>
+                    </dialog>
+                    
                     <div id="result" class="result-area">
                         <p id="message-container">検索結果がここに表示されます。</p>
                         <div id="results-table-container" style="display: none;">
@@ -49,5 +72,6 @@
     <script src="https://html2canvas.hertzen.com/dist/html2canvas.min.js"></script>
     <script type="module" src="../../js/match_accessory/match.js"></script>
     <script type="module" src="../../js/match_accessory/form_ui.js"></script>
+    <script type="module" src="../../js/match_accessory/saved_items_dialog.js"></script>
 </body>
 </html>

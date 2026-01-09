@@ -16,14 +16,14 @@
 
 /* 公開日のスタイル */
 .announcement-date {
-    font-size: 0.9em;
+    font-size: var(--font-size-body-text);
     color: var(--color-accent-2);
     margin: 0;
 }
 
 /* タイトルのスタイル */
 .announcement-title {
-    font-size: 1.5em;
+    font-size: var(--font-size-h3);
     color: var(--color-header-text);
     margin: 10px 0 0;
     line-height: 1.3;
@@ -31,7 +31,7 @@
 
 /* お知らせ本文のスタイル */
 .announcement-body {
-    font-size: 1em;
+    font-size: var(--font-size-body-text);
     line-height: 1.6;
     color: var(--color-body-text);
 }
@@ -46,22 +46,15 @@
     margin: 20px 0; /* 上下の余白を指定 */
 }
 
+.attached-img img{
+    width: 100%;
+    height: auto;
+}
+
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .announcement-article {
         margin: 20px 15px;
         padding: 20px;
-    }
-
-    .announcement-date {
-        font-size: 0.8em;
-    }
-
-    .announcement-title {
-        font-size: 1.2em;
-    }
-
-    .announcement-body {
-        font-size: 0.8em;
     }
 }

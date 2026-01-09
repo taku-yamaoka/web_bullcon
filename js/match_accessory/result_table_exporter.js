@@ -5,7 +5,7 @@ const jsPDF = window.jspdf ? window.jspdf.jsPDF : null;
 // キャプチャの高さが確定するのを待つための遅延時間 (ミリ秒)
 const CAPTURE_DELAY_MS = 100; 
 
-// 【修正】PDF出力用の圧縮スタイルを緩和し、視認性を重視
+// PDF出力用の圧縮スタイルを緩和し、視認性を重視
 const PDF_COMPRESSION_STYLE = `
     /* 【新規追加】ラッパー全体にパディングを適用し、PDF端からの余白を確保 */
     #pdf-capture-wrapper {
@@ -34,13 +34,7 @@ const PDF_COMPRESSION_STYLE = `
 `;
 
 /**
- * 適合結果テーブルと注意事項を統合して画像としてキャプチャし、PDFに出力します。
- * * 根本修正: 最も安定していた<table>要素のキャプチャロジックをベースとし、
- * * notes要素を結合した一時ラッパーを作成し、その高さを確実に取得してからキャプチャする方式に変更。
- * * 【再修正】真っ白になる問題を解消するため、不可視化(opacity:0)を廃止し、画面外配置(left:-9999px)に切り替える。
- * * 【最終修正】キャプチャ幅を「コンテンツの最小幅」に戻し、過剰な幅拡大によるPDFはみ出しを防ぐ。
- * * 【再調整】圧縮スタイルを緩和し、無理に1ページに収めず、必要に応じてページ分割を行う。
- * * 【マージン追加】PDFの端からコンテンツを離すため、キャプチャラッパーにパディングを追加。
+ * 適合結果テーブルと注意事項を統合して画像としてキャプチャし、PDFに出力
  * * @param {string} tableContainerId - テーブルコンテナのID ('results-table-container')
  */
 export async function exportTableToPdf(tableContainerId) {
@@ -69,7 +63,7 @@ export async function exportTableToPdf(tableContainerId) {
     }
 
     const tableHeader = tableElement.querySelector('thead');
-    const exportButton = document.getElementById('exportPdfButton');
+    const exportButton = document.getElementById('export-pdf-button');
     
     let originalTableContainerStyles = null;
     let originalHeaderPosition = 'static';
@@ -112,7 +106,7 @@ export async function exportTableToPdf(tableContainerId) {
         tempWrapper = document.createElement('div');
         tempWrapper.id = 'pdf-capture-wrapper';
         
-        // 【適用】圧縮用のスタイルを一時ラッパーに追加
+        // 圧縮用のスタイルを一時ラッパーに追加
         const styleElement = document.createElement('style');
         styleElement.textContent = PDF_COMPRESSION_STYLE;
         tempWrapper.appendChild(styleElement);

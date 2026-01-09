@@ -73,6 +73,35 @@ def get_page_title(soup):
         return title_tag.text.strip()
     return ""
 
+def extract_product_numbers(text):
+    """
+    テキストから品番（型番）を抽出する関数
+    品番のパターン例: AV-C60, SLL-2002, TP-230Vb, BLH-60HB, FFT-152, MS-225
+    """
+    if not text:
+        return []
+    
+    # 品番のパターン: 
+    # - 英字2~4文字 + ハイフン + 英数字の組み合わせ
+    # - 例: AV-C60, SLL-2002, TP-230Vb, BLH-60HB, FFT-152, MS-225, CTN-101
+    pattern = r'\b[A-Z]{2,4}-[A-Z0-9]{1,10}[A-Z]?\b'
+    
+    matches = re.findall(pattern, text)
+    # 重複を除去してリストで返す
+    return list(set(matches))
+
+def get_meta_description(soup):
+    """
+    HTMLからメタディスクリプションを取得し、品番を抽出する関数
+    """
+    meta_tag = soup.find('meta', attrs={'name': 'description'})
+    if meta_tag and 'content' in meta_tag.attrs:
+        description = meta_tag['content']
+        # ディスクリプションから品番を抽出
+        product_numbers = extract_product_numbers(description)
+        return description, product_numbers
+    return "", []
+
 def main():
     """
     ディレクトリ内のHTMLファイルを処理してJSONを生成するメイン関数
@@ -117,19 +146,41 @@ def main():
             products_data = json.load(f)
             for category in products_data['products_data']['categories']:
                 for product in category['products']:
-                    # サブページのnameをリストとして取得
+                    # すべてのサブページのnameをリストとして取得（URLの有無に関わらず）
                     sub_page_names = [sub_page['name'] for sub_page in product['sub_pages']]
                     
                     # JSONのURLから '/html/' を取り除き、スラッシュを整形
                     main_url = product['main_page']['url'].replace('/html/', '').replace('\\', '/')
                     
-                    # 親ページには、自身の名前とサブページの名前をすべてキーワードとしてマップに登録
-                    product_keywords_map[main_url] = [product['name']] + sub_page_names
+                    # クエリパラメータを除いたベースURLも登録
+                    main_url_base = main_url.split('?')[0]
+                    
+                    # キーワードをマップに追加するヘルパー関数
+                    def add_to_map(url, keywords):
+                        if url in product_keywords_map:
+                            product_keywords_map[url].extend(keywords)
+                        else:
+                            product_keywords_map[url] = list(keywords)
+
+                    # 親ページには、自身の名前と全てのサブページの名前をマップに登録
+                    add_to_map(main_url, [product['name']] + sub_page_names)
+                    
+                    # クエリパラメータなしのURLでもマッチするように登録
+                    if main_url != main_url_base:
+                        add_to_map(main_url_base, [product['name']] + sub_page_names)
 
                     # サブページには、自身の名前をキーワードとしてマップに登録
                     for sub_page in product['sub_pages']:
-                        sub_url = sub_page['url'].replace('/html/', '').replace('\\', '/')
-                        product_keywords_map[sub_url] = [sub_page['name']]
+                        # URLが空でない場合のみ登録
+                        if sub_page['url']:
+                            sub_url = sub_page['url'].replace('/html/', '').replace('\\', '/')
+                            sub_url_base = sub_url.split('?')[0]
+                            
+                            add_to_map(sub_url, [sub_page['name']])
+                            
+                            # クエリパラメータなしのURLでもマッチするように登録
+                            if sub_url != sub_url_base:
+                                add_to_map(sub_url_base, [sub_page['name']])
     except FileNotFoundError:
         print("製品データJSONファイル 'products/products_data.json' が見つかりませんでした。")
     except Exception as e:
@@ -157,23 +208,31 @@ def main():
                     title = get_page_title(soup)
                     keywords = get_meta_keywords(soup)
                     
+                    # メタディスクリプションから品番を抽出
+                    description, product_numbers_from_desc = get_meta_description(soup)
+                    
                     # HTMLファイルのURLをJSONデータと一致させるために整形
                     url_relative_to_root = os.path.relpath(file_path, start=target_directory)
                     url_relative_to_root = url_relative_to_root.replace(os.sep, '/')
+                    
+                    # キーワードリストを初期化
+                    keywords_list = []
+                    if keywords:
+                        keywords_list = [kw.strip() for kw in keywords.split(',')]
+                    
+                    # メタディスクリプションから抽出した品番を追加
+                    if product_numbers_from_desc:
+                        keywords_list.extend(product_numbers_from_desc)
                     
                     # URLから製品名をキーワードに追加
                     # URLにクエリストリングが含まれている場合、それも考慮する
                     base_url = url_relative_to_root.split('?')[0]
                     if base_url in product_keywords_map:
                         product_names = product_keywords_map[base_url]
-                        
-                        # 既存のキーワードがあれば結合、なければ新しいキーワードとして設定
-                        if keywords:
-                            keywords_list = [kw.strip() for kw in keywords.split(',')]
-                            keywords_list.extend(product_names)
-                            keywords = ', '.join(keywords_list)
-                        else:
-                            keywords = ', '.join(product_names)
+                        keywords_list.extend(product_names)
+                    
+                    # キーワードリストを文字列に変換（重複を除去）
+                    keywords = ', '.join(list(dict.fromkeys(keywords_list)))
                     
                     if title and keywords:
                         page_data = {

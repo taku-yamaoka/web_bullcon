@@ -1,8 +1,10 @@
 <!DOCTYPE html>
 <html lang="ja">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Bullcon (フジ電機工業株式会社) からの最新情報、製品に関する重要なお知らせ、休業日などの情報を掲載しています。">
     <title>お知らせ | Bullcon - フジ電機工業株式会社</title>
     <link rel="stylesheet" href="../../css/style.css">
     <link rel="stylesheet" href="../../css/header.css">
@@ -12,26 +14,39 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap" rel="stylesheet">
 </head>
+<!-- Google tag (gtag.js) -->
+<!-- Google Analyticse計測用タグです。全てのページに埋め込んでください。 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0R1H3RK4W"></script>
+<script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag() { dataLayer.push(arguments); }
+    gtag('js', new Date());
+
+    gtag('config', 'G-X0R1H3RK4W');
+</script>
+
 <body>
 
-<div id="header-placeholder"></div>
+    <div id="header-placeholder"></div>
 
-<main>
-    <div class="container">
-        <section class="announcements-section">
-            <h2 class="section-title">
-                <span class="section-title-en">ANNOUNCEMENTS</span>
-                <span class="section-title-jp">お知らせ</span>
-            </h2>
-            <ul id="announcements-list" class="announcements-list"></ul>
-        </section>
-    </div>
-</main>
+    <main>
+        <div class="container">
+            <section class="announcements-section">
+                <h2 class="section-title">
+                    <span class="section-title-en">ANNOUNCEMENTS</span>
+                    <span class="section-title-jp">お知らせ</span>
+                </h2>
+                <ul id="announcements-list" class="announcements-list"></ul>
+                <div id="pagination-container" class="pagination-container"></div>
+            </section>
+        </div>
+    </main>
 
-<div id="footer-placeholder"></div>
+    <div id="footer-placeholder"></div>
 
-<script src="../../js/header.js"></script>
-<script src="../../js/footer.js"></script>
-<script src="../../js/news/announcements.js"></script>
+    <script src="../../js/header.js"></script>
+    <script src="../../js/footer.js"></script>
+    <script src="../../js/news/announcements.js"></script>
 </body>
+
 </html>

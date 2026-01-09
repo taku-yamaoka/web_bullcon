@@ -1,110 +1,144 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
-<!-- saved from url=(0014)about:internet -->
-<html>
+<!DOCTYPE html>
+<html lang="ja">
 <head>
-<title>製品新着情報　Bullcon / フジ電機工業株式会社</title>
-<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-<link rel="stylesheet" href="../../../../../css/style.css">
-<link rel="stylesheet" href="../../../../../css/header.css">
-<link rel="stylesheet" href="../../../../../css/footer.css">
-<style type="text/css">
-td img {display: block;}body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-}
-</style>
-<!--Fireworks CS6 Dreamweaver CS6 target.  Created Mon Jul 12 15:18:31 GMT+0900 2021-->
-<script language="javascript1.2" type="text/javascript">
-<!--
-function MM_findObj(n, d) { //v4.01
-  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
-    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
-  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
-  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
-  if(!x && d.getElementById) x=d.getElementById(n); return x;
-}
-function MM_swapImage() { //v3.0
-  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
-   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
-}
-function MM_swapImgRestore() { //v3.0
-  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>製品新着情報-アーカイブ | Bullcon - フジ電機工業株式会社</title>
+  <link rel="stylesheet" href="../../../../../css/style.css">
+  <link rel="stylesheet" href="../../../../../css/header.css">
+  <link rel="stylesheet" href="../../../../../css/footer.css">
+  <style>
+
+.news-container {
+    width: 1000px;
+    max-width: 100%;
+    margin: 0 auto;
 }
 
-function MM_preloadImages() { //v3.0
-  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
-    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
-    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+/* 上下セパレータ画像の代替 */
+.separator-top {
+    height: 28px;
+    width: 100%;
+}
+.separator-bottom {
+    height: 6px;
+    width: 100%;
 }
 
-//-->
-</script>
-    <script src="../../../../../js/header.js"></script>
-    <script src="../../../../../js/footer.js"></script>
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-213571806-1"></script>
-        <script>
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
+/* メインの二段組みレイアウト */
+.news-content-layout {
+    display: flex;
+    gap: 8px;
+}
 
-        gtag('config', 'UA-213571806-1');
-        </script>
+.column-title-car,
+.column-title-av {
+  text-align: center;
+  font-weight: bold;
+  font-size: var(--font-size-h4);
+}
+
+.column-title-car {
+  background-color: rgb(197, 252, 252);
+}
+
+.column-title-av {
+  background-color: rgb(250, 214, 244);
+}
+
+/* 左右のカラム */
+.news-column {
+    width: 496px; /* 490px (iframe) + 4px (端の画像) + 2px(パディングなど) で近似 */
+    flex-shrink: 0;
+}
+.left-column {
+    padding-left: 4px; /* topics_r14_c1.gif の幅 4px */
+}
+.right-column {
+    padding-right: 4px; /* topics_r14_c14.gif の幅 4px */
+}
+
+/* iframeのスタイル */
+.news-iframe {
+    width: 490px; /* 元の幅を維持 */
+    height: 1650px; /* 元の高さを維持 */
+    display: block;
+}
+
+/* レスポンシブ対応 (例: 画面幅が1000px以下になったら縦に積む) */
+@media (max-width: 1000px) {
+    .news-container {
+        width: 100%; /* 幅を画面いっぱいに広げる */
+        padding: 0 10px; /* 左右に少し余白を設ける */
+    }
+    .news-content-layout {
+        flex-direction: column; /* 縦に積む */
+        gap: 20px;
+    }
+    .news-column {
+        width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+    .news-iframe {
+        width: 100%; /* iframeも幅いっぱいに広げる */
+        height: 1000px; /* モバイルで見やすいよう高さを調整（適宜変更） */
+    }
+}
+  </style>
 </head>
-<body bgcolor="#ffffff" onLoad="MM_preloadImages('images/topics_r2_c7_s2.gif','images/topics_r2_c9_s2.gif','images/topics_r2_c11_s2.gif','images/topics_r2_c12_s2.gif','images/topics_r5_c1_s2.gif','images/topics_r5_c5_s2.gif','images/topics_r5_c7_s2.gif','images/topics_r5_c9_s2.gif','images/topics_r5_c11_s2.gif','images/topics_r5_c12_s2.gif','images/topics_r8_c3_s2.gif','images/topics_r8_c4_s2.gif');">
-  <div id="header-placeholder"></div>
+<!-- Google tag (gtag.js) -->
+<!-- Google Analyticse計測用タグです。全てのページに埋め込んでください。 -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-X0R1H3RK4W"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
 
-  <h2 class="section-title">
-                <span class="section-title-en">PRODUCT NEWS-ARCHIVE</span>
-                <span class="section-title-jp">製品新着情報-アーカイブ</span>
-            </h2>
-  <table border="0" cellpadding="0" cellspacing="0" width="1000" align="center">
-<!-- fwtable fwsrc="topics.png" fwpage="ページ 1" fwbase="topics.gif" fwstyle="Dreamweaver" fwdocid = "162877623" fwnested="0" -->
-  <tr>
-   <td><img src="images/spacer.gif" width="4" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="16" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="95" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="51" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="99" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="68" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="163" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="4" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="4" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="163" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="167" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="6" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="156" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="4" height="1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="1" alt=""></td>
-  </tr>
-  <tr>
-  <tr>
-   <td colspan="14"><img name="topics_r13_c1" src="images/topics_r13_c1.gif" width="1000" height="28" id="topics_r13_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="28" alt=""></td>
-  </tr>
-  <tr>
-   <td><img name="topics_r14_c1" src="images/topics_r14_c1.gif" width="4" height="250" id="topics_r14_c1" alt=""></td>
-   <td colspan="6"><iframe src="./what'snew_sa/index_sa.html" name="fuji_denki" width="490" height="1650" id="fuji_denki" scrolling="Yes" frameborder="0"
-   align="top">
-   <p>このページはインラインフレーム対応のブラウザでご覧下さい。</p>
-   </iframe></td>
-   <td colspan="2"><img name="topics_r14_c8" src="images/topics_r14_c8.gif" width="8" height="250" id="topics_r14_c8" alt=""></td>
-   <td colspan="4"><iframe src="./what'snew_tv/index_tv.html" name="fuji_denki" width="490" height="1650" id="fuji_denki" scrolling="Yes" frameborder="0"
-   align="top">
-   <p>このページはインラインフレーム対応のブラウザでご覧下さい。</p>
-   </iframe></td>
-   <td><img name="topics_r14_c14" src="images/topics_r14_c14.gif" width="4" height="250" id="topics_r14_c14" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="250" alt=""></td>
-  </tr>
-  <tr>
-   <td colspan="14"><img name="topics_r15_c1" src="images/topics_r15_c1.gif" width="1000" height="6" id="topics_r15_c1" alt=""></td>
-   <td><img src="images/spacer.gif" width="1" height="6" alt=""></td>
-  </tr>
-  
-  <td><img src="images/spacer.gif" width="1" height="50" alt=""></td>
-</table>
+  gtag('config', 'G-X0R1H3RK4W');
+</script>
+<body>
+    <div id="header-placeholder"></div>
 
-<div id="footer-placeholder"></div>
+    <div class="container">
+      <main class="page-content">
+          <h2 class="section-title">
+              <span class="section-title-en">PRODUCT NEWS-ARCHIVE</span>
+              <span class="section-title-jp">製品新着情報-アーカイブ</span>
+          </h2>
+
+          <div class="news-container">
+
+              <div class="separator-top"></div>
+
+              <div class="news-content-layout">
+
+                  <div class="news-column left-column">
+                      <div class="column-title-car">カーアクセサリー</div>
+                      <iframe src="./what'snew_sa/index_sa.html" name="fuji_denki_sa" 
+                              scrolling="yes" frameborder="0" class="news-iframe">
+                          <p>このページはインラインフレーム対応のブラウザでご覧下さい。</p>
+                      </iframe>
+                  </div>
+
+                  <div class="news-column right-column">
+                    <div class="column-title-av">AVアクセサリー</div>
+                      <iframe src="./what'snew_tv/index_tv.html" name="fuji_denki_tv" 
+                              scrolling="yes" frameborder="0" class="news-iframe">
+                          <p>このページはインラインフレーム対応のブラウザでご覧下さい。</p>
+                      </iframe>
+                  </div>
+
+              </div>
+
+              <div class="separator-bottom"></div>
+
+          </div>
+      </main>
+    </div>
+
+    <div id="footer-placeholder"></div>
 </body>
+<script src="../../../../../js/header.js"></script>
+<script src="../../../../../js/footer.js"></script>
 </html>

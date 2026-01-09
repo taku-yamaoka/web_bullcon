@@ -30,7 +30,7 @@
 }
 
 .footer-section-title {
-    font-size: 1.1rem;
+    font-size: var(--font-size-h5);
     font-weight: bold;
     color: var(--color-body-text-dark);
     margin-bottom: 15px;
@@ -53,7 +53,7 @@
     color: var(--color-body-text-dark);
     text-decoration: none;
     transition: color 0.3s ease;
-    font-size: 0.95rem;
+    font-size: var(--font-size-body-text);
 }
 
 .footer-links a:hover {
@@ -72,7 +72,7 @@
 }
 
 .footer-copyright {
-    font-size: 0.85rem;
+    font-size: var(--font-size-caption);
     color: var(--color-body-text-dark);
     margin: 0;
 }
@@ -80,10 +80,15 @@
 /* SNSアイコンのスタイル */
 .footer-sns a {
     background-color: var(--color-background);
-    padding: 18px 2px 0 3px;
+    padding: 15px 2px 0 3px;
     margin-left: 15px;
     border-radius: 10%;
     transition: color 0.3s ease;
+}
+
+.footer-sns img {
+    height: 25px;
+    width: auto;
 }
 
 /*==================================
@@ -100,7 +105,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 24px;
+    font-size: var(--font-size-h4);
     text-decoration: none;
     transition: background-color 0.3s ease, transform 0.3s ease, opacity 0.5s ease, visibility 0.5s ease;
     z-index: 999;
@@ -116,7 +121,7 @@
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .footer-sections {
         flex-direction: column;
         gap: 20px;
@@ -139,13 +144,12 @@
     .back-to-top {
         width: 40px;
         height: 40px;
-        font-size: 20px;
         right: 15px;
     }
     /* SNSアイコンのスタイル */
     .footer-sns a {
         background-color: var(--color-background);
-        padding: 10px 3px 0 3px;
+        padding: 15px 3px 0 3px;
         margin-left: 15px;
         border-radius: 10%;
         transition: color 0.3s ease;

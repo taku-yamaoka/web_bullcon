@@ -5,65 +5,117 @@
     max-width: 800px;
 }
 
-.page-title {
-    font-size: 30px;
-    font-weight: 700;
-    color: var(--color-header-text);
-    text-align: center;
-    margin-bottom: 30px;
-}
-
 .section-lead {
-    font-size: 16px;
-    line-height: 1.8;
-    text-align: center;
+    font-size: var(--font-size-body-text);
+    line-height: 1.5;
+    
     margin-bottom: 30px;
 }
 
-.notes-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    font-size: 15px;
-    line-height: 1.6;
+/* --- 利用規約スクロールエリアのスタイル --- */
+#terms-scroll-area {
+    max-height: 500px; 
+    height: 500px;
+    overflow-y: scroll; 
+    border: 1px solid #ccc; 
+    padding: 15px;
+    background-color: #f9f9f9;
+    margin-bottom: 20px;
+    /* スクロールエリア内のテキストスタイルを設定 */
+    font-size: var(--font-size-caption);
+    line-height: 1.5;
     color: var(--color-body-text-2);
 }
 
-.notes-list li {
+/* === 利用規約整形用の追加スタイル === */
+
+/* 利用規約タイトル */
+#terms-scroll-area .terms-title {
+    font-size: var(--font-size-h5);
+    font-weight: 700;
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 5px;
     margin-bottom: 15px;
-    position: relative;
-    padding-left: 1.5em;
+    color: var(--color-header-text); /* ページタイトルと同じ色 */
 }
 
-.notes-list li::before {
-    content: "・";
-    position: absolute;
-    left: 0;
-}
-
-.important-note {
-    font-size: 16px;
+/* 各条文の見出し */
+#terms-scroll-area h4.term-heading {
+    font-size: var(--font-size-body-text);
     font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 5px;
     color: var(--color-body-text);
 }
+
+/* 条文の段落 */
+#terms-scroll-area p {
+    margin: 10px 0;
+    padding: 0;
+}
+
+/* 警告文の強調スタイル (例: 個人ユーザーに関する警告) */
+#terms-scroll-area p.warning-text {
+    background-color: #ffeaea;
+    border-left: 5px solid #cc0000;
+    padding: 10px;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.7;
+}
+
+/* 第4条などのリスト（禁止事項など）の調整 */
+#terms-scroll-area ul {
+    list-style-type: disc; /* デフォルトの黒丸に戻す */
+    margin: 10px 0 10px 20px;
+    padding-left: 0;
+}
+#terms-scroll-area ul li {
+    margin-bottom: 5px;
+    /* 不要になったリスト記号のカスタムスタイルを削除 */
+    list-style: disc;
+    padding-left: 0; 
+    position: static;
+}
+/* 以前の .notes-list li::before に代わるスタイルを削除 */
+
 
 .red-text {
     color: red;
 }
 
-.login-info {
+/* --- 同意とボタンエリア --- */
+.terms-acceptance {
+    margin-bottom: 20px;
+    padding: 20px 0;
     text-align: center;
+    background-color: #ffeac9;
+    color: var(--color-disabled-button);
+}
+
+/* チェックボックスが有効化された際の視覚的強調 */
+.terms-acceptance #agree-checkbox:not(:disabled) + label {
+    color: var(--color-body-text);
+    text-shadow: 0 0 1px #81c784;
+}
+
+.terms-acceptance input[type="checkbox"] {
+    transition: all 0.3s ease-in-out;
+}
+
+.login-info {
+    text-align: left;
     margin-top: 40px;
 }
 
 .login-info p {
-    font-size: 16px;
+    font-size: var(--font-size-body-text);
     line-height: 1.6;
     margin: 0;
 }
 
 .log-note {
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
     color: var(--color-body-text-2);
     margin-top: 10px;
 }
@@ -73,57 +125,70 @@
     margin-top: 40px;
 }
 
-.button {
+#register-button,
+.button-login {
     display: inline-block;
-    padding: 15px 30px;
+    padding: 10px 30px;
     margin: 0 10px;
-    font-size: 18px;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     color: #fff;
     text-decoration: none;
     border-radius: 8px;
-    transition: background-color 0.3s ease;
+    transition: background-color 0.3s ease, opacity 0.3s ease, transform 0.2s; 
+}
+
+.disabled-button {
+    pointer-events: none; /* クリックイベントを無効化 */
+    opacity: 0.5;         /* 透明度を下げて無効であることを視覚的に示す */
+    cursor: default;      /* カーソルをデフォルトにする */
 }
 
 .button-login {
     background-color: var(--color-link-text);
 }
 
-.button-login:hover {
-    background-color: var(--color-link-text-hovar);
+/* ログインボタンが有効化された際の強調アニメーションのトリガー */
+.button-area #login-button:not(.disabled-button) {
+    transform: scale(1.05); /* 初期化のため少しスケールアップ */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    animation: pulse 0.8s ease-out 1; /* 1回点滅させるアニメーション */
 }
 
-.button-register {
+.button-login:hover {
+    background-color: var(--color-link-text-hovar); 
+    /* 有効化後のホバー時はアニメーションをリセット */
+    transform: scale(1.0);
+    box-shadow: 0 0 0 rgba(0, 0, 0, 0);
+    animation: none;
+}
+
+#register-button {
     background-color: #5cb85c;
 }
 
-.button-register:hover {
+#register-button:hover {
     background-color: #449d44;
 }
 
-.footer-menu {
-    margin-top: 20px;
-    border-top: 1px solid #ddd;
-    padding: 20px 0;
-}
-
-.footer-nav {
-    list-style: none;
-    display: flex;
-    justify-content: center;
-    padding: 0;
-    margin: 0;
-    gap: 20px;
-}
-
-.footer-nav a {
-    text-decoration: none;
-    color: var(--color-link-text);
-    font-size: 15px;
+/* 💡 追加: ボタン有効化時のアニメーション定義 */
+@keyframes pulse {
+    0% {
+        transform: scale(1.0);
+        box-shadow: 0 0 0 0 rgba(100, 190, 255, 0.4);
+    }
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(100, 190, 255, 0);
+    }
+    100% {
+        transform: scale(1.0);
+        box-shadow: none;
+    }
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .footer-nav {
         flex-direction: column;
     }

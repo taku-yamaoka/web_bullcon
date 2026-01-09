@@ -8,7 +8,7 @@
 
 .privacy-note {
     text-align: right;
-    font-size: 14px;
+    font-size: var(--font-size-caption);
     margin-bottom: 20px;
 }
 
@@ -47,24 +47,24 @@
 
 .required-text {
     color: red;
-    font-size: 12px;
+    font-size: var(--font-size-caption);
 }
 
 .optional-text {
     color: #1200FF;
-    font-size: 12px;
+    font-size: var(--font-size-caption);
 }
 
 .sub-text, .sub-text-kana {
     font-weight: normal;
-    font-size: 12px;
+    font-size: var(--font-size-caption);
     color: var(--color-body-text-2);
     margin: 5px 0 0;
 }
 
 .sub-text-long {
     font-weight: normal;
-    font-size: 12px;
+    font-size: var(--font-size-caption);
     color: var(--color-body-text-2);
     margin: 5px 0 0;
     line-height: 1.5;
@@ -77,7 +77,7 @@
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
 }
 
 .input-area input[type="checkbox"] {
@@ -89,7 +89,7 @@
 }
 
 .required-confirm-text {
-    font-size: 12px;
+    font-size: var(--font-size-caption);
     color: red;
     margin: 5px 0;
 }
@@ -105,7 +105,7 @@
 
 .submit-button, .reset-button {
     padding: 10px 30px;
-    font-size: 16px;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     border: none;
     border-radius: 5px;
@@ -125,7 +125,7 @@
 .important-notes {
     margin-top: 30px;
     line-height: 1.6;
-    font-size: 13px;
+    font-size: var(--font-size-caption);
     color: var(--color-body-text-2);
     background-color: var(--color-body-text-dark);
     padding: 20px;
@@ -134,7 +134,7 @@
 
 .important-notes .note-title {
     font-weight: bold;
-    font-size: 14px;
+    font-size: var(--font-size-body-text);
     color: var(--color-body-text);
     margin: 20px 0 10px;
 }
@@ -150,7 +150,7 @@
 
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .form-item {
         flex-direction: column;
         align-items: flex-start;

@@ -8,12 +8,20 @@ import { initializeAndGetMonitorNumber } from './match.js';
 let formState = {
     selectedProduct: null,
     selectedOptionType: null,
+    selectedInputType: null,        // 入力タイプ (select or text)
+    selectedDirectInputText: null,  // 直接入力されたテキスト
     selectedMaker: null,
     selectedModel: null,
     selectedYear: null,
     selectedMonth: null,
     selectedProductCode: null
 };
+
+// --- 適合情報関連の項目をリセットするためのヘルパー関数 (今回は未使用だが定義は残す) ---
+function resetModelOnward(state) {
+    state.selectedModel = null;
+}
+// --------------------------------------------------------
 
 /**
  * フォームの変更を処理し、UIの状態を更新する
@@ -23,47 +31,58 @@ function handleFormChange(event) {
     const target = event.target;
     resetResultArea();
 
-    if (target.id === 'product-code-input') {
+    // テキスト入力フィールド (inputイベントで個別に処理するため、changeでは無視)
+    if (target.id === 'product-code-input' || target.id === 'direct-input-text') {
         return;
     }
 
+    // OptionTypeの処理
     if (target.name === 'option-type') {
         formState.selectedOptionType = target.value;
-        formState.selectedMaker = null;
-        formState.selectedModel = null;
-        formState.selectedYear = null;
-        formState.selectedMonth = null;
-        formState.selectedProductCode = null;
-    } else {
+        formState.selectedDirectInputText = null;
+    } 
+    // InputTypeの処理
+    else if (target.name === 'input-type') {
+        formState.selectedInputType = target.value;
+    }
+    // ドロップダウンの変更処理
+    else {
         switch (target.id) {
             case 'product-select':
                 formState.selectedProduct = target.value || null;
-                formState.selectedOptionType = 'maker';
-                formState.selectedMaker = null;
-                formState.selectedModel = null;
-                formState.selectedYear = null;
-                formState.selectedMonth = null;
-                formState.selectedProductCode = null;
+                
+                // 1. Option Type と Input Type の状態維持
+                const productInfo = Object.values(PRODUCTS_DATA).find(p => p.name === formState.selectedProduct);
+                
+                // 特定製品のOptionType固定処理
+                const isFixedOptionTypeProduct = productInfo && (
+                    productInfo.name === 'リアモニター出力ユニット' ||
+                    productInfo.name === 'カメラセレクター' ||
+                    productInfo.name === 'ステアリングスイッチコントローラー' ||
+                    productInfo.name === 'DVD/CDプレイヤー');
+                
+                if (isFixedOptionTypeProduct) {
+                    // 固定オプションの製品は強制上書き
+                    formState.selectedOptionType = 'maker';
+                    formState.selectedInputType = 'select';
+                }
+                
+                // 2. 適合情報（メーカー以下の項目）の選択状態を完全に維持します。
+                // すべてのリストが共通であるため、リセット処理は行いません。
+                // 以前のリセット処理: resetModelOnward(formState); は削除されました。
+                
                 break;
             case 'maker-select':
                 formState.selectedMaker = target.value || null;
-                formState.selectedModel = null;
-                formState.selectedYear = null;
-                formState.selectedMonth = null;
-                formState.selectedProductCode = null;
+                resetModelOnward(formState); 
                 break;
             case 'model-select':
                 formState.selectedModel = target.value || null;
-                formState.selectedYear = null;
-                formState.selectedMonth = null;
-                formState.selectedProductCode = null;
                 break;
             case 'year-select':
                 formState.selectedYear = target.value || null;
-                formState.selectedMonth = null;
-                formState.selectedProductCode = null;
                 if (formState.selectedYear === 'unknown') {
-                    formState.selectedProductCode = '';
+                    formState.selectedProductCode = ''; // 年式不明の場合はテキスト入力のため空文字列で初期化
                 }
                 break;
             case 'month-select':
@@ -77,6 +96,7 @@ function handleFormChange(event) {
 
     renderForm('form-container', formState);
 
+    // 検索ボタンの状態更新は、renderForm内またはinput/changeイベントの最後にcheckFieldsFilledを使って行うのが確実
     const searchButton = document.getElementById('search-button');
     const productInfo = Object.values(PRODUCTS_DATA).find(p => p.name === formState.selectedProduct);
     if (searchButton && checkFieldsFilled(formState, productInfo)) {
@@ -84,6 +104,75 @@ function handleFormChange(event) {
     } else if (searchButton) {
         searchButton.setAttribute('disabled', 'true');
     }
+}
+
+/**
+ * 適合品番検索処理を実行する
+ * @param {object} formState - 現在のフォームの状態
+ * @param {object} productInfo - 選択された製品の情報
+ */
+async function handleSearch(formState, productInfo) {
+    const currentInputType = formState.selectedInputType || 'select';
+    const productKey = productInfo.productKey;
+    const optionFlow = productInfo.optionFlows[formState.selectedOptionType];
+
+    let params = {};
+    let headerData = optionFlow.header;
+    let pdfPath = null;
+    
+    if (currentInputType === 'text') {
+        // InputTypeが直接入力の場合
+        if (!formState.selectedDirectInputText) return; 
+
+        params = {
+            product: productKey,
+            option: formState.selectedOptionType,
+            directInput: formState.selectedDirectInputText.trim() // 直接入力されたテキストを使用
+        };
+        pdfPath = null; 
+
+    } else {
+        // InputTypeがドロップダウン選択 ('select') の場合 (従来のロジック)
+        const { selectedMaker, selectedModel, selectedYear, selectedMonth, selectedProductCode } = formState;
+
+        let queryModel = selectedModel;
+        let queryYear = selectedYear;
+        let queryMonth = selectedMonth;
+        let queryProductCode = selectedProductCode;
+        
+        if (optionFlow.processType === 'dealer_process') {
+            queryModel = '';
+            if (selectedYear !== 'unknown') {
+                queryMonth = '1';
+            } else {
+                queryMonth = '';
+                queryProductCode = selectedProductCode;
+            }
+        } else {
+            // maker_process: 未選択は null または空文字列としてAPIに渡す
+            queryModel = selectedModel === '' ? null : selectedModel;
+            queryYear = selectedYear === '' ? null : selectedYear;
+            queryMonth = selectedMonth === '' ? null : selectedMonth;
+            queryProductCode = selectedProductCode === '' ? null : selectedProductCode;
+        }
+
+        const yearMatch = queryYear ? queryYear.match(/\d{4}/) : null;
+        const yearForQuery = yearMatch ? yearMatch[0] : null;
+        
+        params = {
+            product: productKey,
+            option: formState.selectedOptionType,
+            maker: selectedMaker,
+            model: queryModel,
+            year: yearForQuery,
+            month: queryMonth,
+            productCode: queryProductCode
+        };
+
+        pdfPath = optionFlow?.pdf_paths?.[selectedMaker];
+    }
+    
+    await handleSearchResults(params, headerData, pdfPath);
 }
 
 /**
@@ -95,40 +184,46 @@ export function setupEventListeners() {
         return;
     }
 
+    // changeイベントでフォームの構造とドロップダウンの状態を更新
     formContainer.addEventListener('change', handleFormChange);
 
+    // inputイベントでテキストフィールドの状態を更新し、検索ボタンの活性化をチェック
     formContainer.addEventListener('input', async(event) => {
         const target = event.target;
-        if (target.id === 'product-code-input') {
+        const suggestionsList = document.getElementById('product-code-suggestions');
+        
+        // 1. NEW: 直接入力モードのテキストフィールド
+        if (target.id === 'direct-input-text') {
+            formState.selectedDirectInputText = target.value.trim();
+        } 
+        // 2. dealer_processの年式不明時のテキストフィールド
+        else if (target.id === 'product-code-input') {
             const inputValue = target.value;
-            const suggestionsList = document.getElementById('product-code-suggestions');
-            
-            // inputイベントでformStateを更新
             formState.selectedProductCode = inputValue;
 
             if (inputValue.length === 0) {
                 suggestionsList.style.display = 'none';
-                return;
-            }
-
-            suggestionsList.innerHTML = '';
-            
-            const monitorList = await initializeAndGetMonitorNumber();
-            const allCodes = monitorList[formState.selectedMaker] || [];
-            const matchedCodes = allCodes
-                .filter(item => item.product_code.toLowerCase().includes(inputValue.toLowerCase()))
-                .map(item => item.product_code);
-
-            if (matchedCodes.length > 0) {
-                suggestionsList.style.display = 'block';
-                matchedCodes.forEach(code => {
-                    const li = document.createElement('li');
-                    li.textContent = code;
-                    li.dataset.code = code;
-                    suggestionsList.appendChild(li);
-                });
+                // 検索ボタンの活性化チェックは後続で行う
             } else {
-                suggestionsList.style.display = 'none';
+                // オートコンプリートのロジック (変更なし)
+                suggestionsList.innerHTML = '';
+                const monitorList = await initializeAndGetMonitorNumber();
+                const allCodes = monitorList[formState.selectedMaker] || [];
+                const matchedCodes = allCodes
+                    .filter(item => item.product_code.toLowerCase().includes(inputValue.toLowerCase()))
+                    .map(item => item.product_code);
+
+                if (matchedCodes.length > 0) {
+                    suggestionsList.style.display = 'block';
+                    matchedCodes.forEach(code => {
+                        const li = document.createElement('li');
+                        li.textContent = code;
+                        li.dataset.code = code;
+                        suggestionsList.appendChild(li);
+                    });
+                } else {
+                    suggestionsList.style.display = 'none';
+                }
             }
         }
         
@@ -153,6 +248,7 @@ export function setupEventListeners() {
             if (selectedCode) {
                 formState.selectedProductCode = selectedCode;
                 suggestionsList.style.display = 'none';
+                // 選択された値を反映するため再レンダリング
                 renderForm('form-container', formState);
             }
             return;
@@ -160,63 +256,17 @@ export function setupEventListeners() {
 
         // 検索ボタンのクリックを処理
         if (target && target.id === 'search-button' && !target.hasAttribute('disabled')) {
-            const { selectedProduct, selectedOptionType } = formState;
+            const productInfo = Object.values(PRODUCTS_DATA).find(p => p.name === formState.selectedProduct);
 
-            const productInfo = Object.values(PRODUCTS_DATA).find(p => p.name === selectedProduct);
-            const optionFlow = productInfo?.optionFlows[selectedOptionType];
-
-            if (!productInfo || !optionFlow || !checkFieldsFilled(formState, productInfo)) {
-                alert('すべての必須項目を入力してください。');
+            if (!productInfo || !checkFieldsFilled(formState, productInfo)) {
+                // ここはcheckFieldsFilledでチェックされているはずだが、念のため
+                console.error('すべての必須項目を入力してください。');
                 return;
             }
 
-            await handleSearch(formState, productInfo, optionFlow);
+            await handleSearch(formState, productInfo);
         }
     });
-}
-
-/**
- * 適合品番検索処理を実行する
- * @param {object} formState - 現在のフォームの状態
- * @param {object} productInfo - 選択された製品の情報
- * @param {object} optionFlow - 選択されたオプションフローの情報
- */
-async function handleSearch(formState, productInfo, optionFlow) {
-    const { selectedMaker, selectedModel, selectedYear, selectedMonth, selectedProductCode } = formState;
-
-    const productKey = productInfo.productKey;
-    const headerData = optionFlow.header;
-
-    let queryModel = selectedModel;
-    let queryMonth = selectedMonth;
-    let queryProductCode = selectedProductCode;
-
-    if (optionFlow.processType === 'dealerYears') {
-        queryModel = '';
-        if (selectedYear !== 'unknown') {
-            queryMonth = '1';
-        } else {
-            queryMonth = '';
-            queryProductCode = selectedProductCode;
-        }
-    }
-
-    const yearMatch = selectedYear ? selectedYear.match(/\d{4}/) : null;
-    const yearForQuery = yearMatch ? yearMatch[0] : '';
-    
-    const params = {
-        product: productKey,
-        option: formState.selectedOptionType,
-        maker: selectedMaker,
-        model: queryModel,
-        year: yearForQuery,
-        month: queryMonth,
-        productCode: queryProductCode
-    };
-
-    const pdfPath = productInfo.optionFlows[formState.selectedOptionType]?.pdf_paths?.[selectedMaker];
-
-    await handleSearchResults(params, headerData, pdfPath);
 }
 
 /**
@@ -225,7 +275,7 @@ async function handleSearch(formState, productInfo, optionFlow) {
 function resetResultArea() {
     const messageContainer = document.getElementById('message-container');
     const tableContainer = document.getElementById('results-table-container');
-    const exportPdfButton = document.getElementById('exportPdfButton');
+    const exportPdfButton = document.getElementById('export-pdf-button');
     const notesContainer = document.getElementById('notes-list-container');
     const pdfLinkContainer = document.getElementById('pdf-link-container');
 

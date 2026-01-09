@@ -1,23 +1,18 @@
-/* ヘッダーのスタイル */
-.site-header iframe {
-    display: block;
-}
+/*==================================
+  モバイル対応とclamp()適用
+==================================*/
 
 /* メインコンテンツのスタイル */
 .main-content {
-    border-radius: 12px;
+    border-radius: 14px;
     margin: 0px auto;
     max-width: 800px;
-}
-
-.page-title {
-    text-align: center;
-    color: var(--color-header-text);
-    font-size: 2.5em;
-    margin-bottom: 10px;
+    /* モバイルでの両端の余白を確保 */
+    padding: 0 15px; 
 }
 
 .section-description {
+    font-size: var(--font-size-body-text);
     text-align: center;
     color: var(--color-body-text-2);
     margin-bottom: 30px;
@@ -27,51 +22,65 @@
 .guidelines {
     margin-bottom: 40px;
     border-top: 2px solid #eee;
-    padding-top: 20px;
+    border-left: 5px solid #cc0000;
+    background-color: #ffeaea;
+    /* モバイル用にpaddingを統一 */
+    padding: 10px; 
+    font-size: var(--font-size-caption);;
 }
 
 .guideline-item {
     display: flex;
     align-items: flex-start;
     margin-bottom: 20px;
-}
-
-.guideline-item .icon {
-    color: #d9534f;
-    font-size: 1.5em;
-    margin-right: 15px;
-    flex-shrink: 0;
+    font-size: var(--font-size-body-text);
 }
 
 .anotation-info {
-    text-align: center;
-    font-size: 16px;
+    font-size: var(--font-size-body-text);
     line-height: 1.6;
     font-weight: bold;
-}
-
-/* メーカーボタンのスタイル */
-.button-group {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 15px;
-    margin-bottom: 40px;
-}
-
-.maker-button {
-    display: block;
-    padding: 12px 20px;
-    background-color: var(--color-submit-button);
-    color: var(--color-body-text-dark);
-    text-decoration: none;
-    border-radius: 8px;
-    font-weight: bold;
     text-align: center;
-    transition: background-color 0.3s ease;
-    min-width: 120px;
 }
 
-.maker-button:hover {
-    background-color: var(--color-submit-button-hovar);
+.emphasis-bar p {
+    width: 100%;
+    text-align: center;
+    background-color: rgb(206, 233, 252);
+    font-weight: bold;
+    font-size: var(--font-size-body-text);
+    padding: 8px 0; /* バーとして機能させるためのpadding */
+}
+
+.group1 {
+    /* 最小200px、ビューポート幅の25%を基準に、最大250px */
+    width: clamp(200px, 25vw, 250px);
+}
+
+.group2 {
+    /* 最小100px、ビューポート幅の20%を基準に、最大150px */
+    width: clamp(100px, 20vw, 150px);
+}
+
+.group3 {
+    /* 最小300px、ビューポート幅の60%を基準に、最大600px */
+    width: clamp(300px, 60vw, 600px);
+}
+
+.execute-button {
+    padding-top: 20px;
+    text-align: center;
+}
+
+/* レスポンシブ対応（最小調整） */
+@media (max-width: 600px) {
+    .main-content {
+        padding: 0 10px;
+    }
+
+    .execute-button {
+        padding-top: 20px;
+        flex-direction: column;
+        text-align: left;
+    }
 }

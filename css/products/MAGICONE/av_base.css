@@ -40,7 +40,7 @@
 }
 
 .product-info-title {
-    font-size: 2.2em; /* 適切なサイズに調整 */
+    font-size: var(--font-size-h2);
     font-weight: bold;
     margin: 0;
     flex-shrink: 0; /* タイトルが縮まないように */
@@ -57,15 +57,15 @@
 }
 
 .product-info-price-text {
-    font-size: 1em;
+    font-size: var(--font-size-body-text);
 }
 .product-info-price-value {
-    font-size: 1.4em; /* 適切なサイズに調整 */
+    font-size: var(--font-size-h3);
     font-weight: bold;
 }
 .product-info-price-tax,
 .product-info-price-untaxed {
-    font-size: 0.9em;
+    font-size: var(--font-size-body-text);
     color: var(--color-body-text-2);
 }
 .product-info-price-untaxed {
@@ -75,7 +75,7 @@
 
 
 .product-info-jan-code {
-    font-size: 0.9em;
+    font-size: var(--font-size-body-text);
     margin: 0;
     color: var(--color-body-text-2);
 }
@@ -89,7 +89,7 @@
 }
 
 .product-info-compat-red-text {
-    font-size: 0.9em;
+    font-size: var(--font-size-body-text);;
     color: #ff0308;
     margin: 0;
 }
@@ -136,7 +136,7 @@
 
 /* テキスト部分 */
 .button-text {
-    font-size: 16px;
+    font-size: var(--font-size-body-text);
     color: var(--color-body-text); /* テキストの色 */
     font-weight: bold; /* フォントの太さ */
 }
@@ -155,13 +155,13 @@
 }
 
 .connection-guid-txt .txt-1 {
-    font-size: 1.0em;
+    font-size: var(--font-size-body-text);
     font-weight: bold;
     padding-left: 10px;
 }
 
 .connection-guid-txt .txt-2 {
-    font-size: 0.9em;
+    font-size: var(--font-size-body-text);
     padding-left: 10px;
 }
 
@@ -194,12 +194,12 @@
 
 /* テキストのスタイル */
 .anotate-txt {
-    font-size: 0.9em;
+    font-size: var(--font-size-caption);
     margin-top: 5px; 
 }
 
 /* レスポンシブ対応 */
-@media (max-width: 768px) {
+@media (max-width: 600px) {
     .container {
         padding: 0 10px;
     }
@@ -221,32 +221,6 @@
         flex-direction: column; /* タイトルと詳細を縦並び */
         align-items: flex-start;
         gap: 10px;
-    }
-    .product-info-title {
-        font-size: 1.8em;
-    }
-    .product-info-price-value {
-        font-size: 1.2em;
-    }
-    .product-info-price-tax,
-    .product-info-price-untaxed,
-    .product-info-jan-code {
-        font-size: 0.85em;
-    }
-
-    .product-info-compat-car,
-    .product-info-compat-unit {
-        font-size: 1em;
-    }
-    .product-info-compat-warning {
-        font-size: 0.8em;
-    }
-
-    .connection-guid-txt .txt-1 {
-        font-size: 1.2em;
-    }
-    .connection-guid-txt .txt-2 {
-        font-size: 0.8em;
     }
     .guid-images img {
         flex-wrap: wrap;

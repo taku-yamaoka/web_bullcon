@@ -10,11 +10,11 @@
 
 .annotation {
     padding: 20px;
-    margin: 20px 0;
+    margin: 20px 0 40px 0;
     background-color: #f7f7f7;
     border: 1px solid #ddd;
     border-left: 5px solid #0056b3;
-    font-size: 14px;
+    font-size: var(--font-size-caption);
     line-height: 1.6;
 }
 
@@ -26,42 +26,87 @@
     margin-bottom: 0;
 }
 
-/* #top-scroller: 上部に表示するダミーのスクロールバー領域 */
-#top-scroller {
+/* ============================
+    カテゴリ別 <details> スタイル
+============================ */
+.category-details {
+    margin-bottom: 25px;
+    border-radius: 6px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+    border-left: 5px solid var(--color-accent-3);
+}
+
+.category-summary {
+    display: block;
+    cursor: pointer;
+    padding: 18px 25px;
+    font-size: var(--font-size-body-text);
+    font-weight: bold;
+    color: #333;
+    border-radius: 5px 5px 0 0;
+    user-select: none;
+    transition: background-color 0.2s;
+    position: relative;
+    list-style: none;
+}
+
+.category-summary::before {
+    content: '▶';
+    position: absolute;
+    right: 25px; 
+    font-size: var(--font-size-caption);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: transform 0.2s ease;
+}
+
+.category-details[open] .category-summary::before {
+    content: '▼';
+    transform: translateY(-50%) rotate(0deg); 
+}
+
+.category-details[open] .category-summary {
+    border-bottom: 1px solid #d0d0d0;
+}
+
+/* ============================
+    テーブル共通設定
+============================ */
+
+.top-scroller {
     overflow-x: scroll;
-    overflow-y: hidden; /* 縦スクロールバーは不要 */
-    height: 15px; /* スクロールバーの標準的な高さに合わせる */
-    margin-bottom: -1px; /* テーブルとの境界線を埋めるために微調整 */
-    /* 背景を白にして、下のテーブルとの間に隙間が見えないようにする */
+    overflow-y: hidden; 
+    height: 15px; 
+    margin: 0 0 -1px 0; 
     background-color: #f7f7f7; 
 }
 
-/* #top-scrollerの内部: スクロール可能な幅を定義する */
-#top-scroller > div {
-    /* スクロールバーが効くように、1pxの高さを持たせる */
+.top-scroller > div {
     height: 1px; 
     min-width: 1px; 
 }
 
-/* 縦スクロールを制御するためのラッパー */
 .table-wrapper {
-    max-height: 800px; /* テーブルボディの最大高さを設定 */
+    max-height: 600px; 
     overflow-y: auto;
     overflow-x: auto;
+    padding-bottom: 5px; 
 }
 
 table {
     width: 100%;
     border-collapse: collapse;
-    font-size: 14px;
-    min-width: 1000px;
-    border: 1px solid #ccc;
+    font-size: var(--font-size-caption);
+    min-width: 1000px; 
+    table-layout: fixed; 
+    
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc; 
 }
 
 thead {
-    position: sticky; /* ヘッダーを画面上部に固定 */
-    top: 0;
-    z-index: 10;
     background-color: #f2f2f2;
 }
 
@@ -69,39 +114,100 @@ th, td {
     padding: 10px;
     text-align: center;
     vertical-align: middle;
-    white-space: nowrap;
-    width: calc(100% / 12); /* すべての列の幅を均等にする */
+    white-space: wrap;
+    overflow: hidden; 
+    text-overflow: ellipsis; 
 }
 
 th {
     font-weight: bold;
-    border-left: 1px solid #ccc;
-    border-right: 1px solid #ccc;
+    border: 1px solid #ccc;
+    border-left: none; 
+    border-right: none;
     border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
 }
 
+/* 全てのデータセルにデフォルトの背景色を設定し、透過を防ぐ */
 td {
     border: 1px dashed #ccc;
+    border-top: none;
+    border-bottom: 1px dashed #ccc;
+    background-color: #ffffff; 
 }
 
-/* 製品名セル（rowspanを持つセル）の上下と左の罫線を実線にする */
-td[rowspan] {
+
+/* ============================
+    Y軸 固定カラムのスタイル (1列目: 製品名)
+============================ */
+th:first-child {
+    position: sticky;
+    left: 0;
+    z-index: 5; 
+    background-color: #f2f2f2; 
+    /*width: clamp(60px, 8vw, 150px); ヘッダー幅はjsでbodyに合わせている*/
+    box-sizing: border-box;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc; 
+}
+
+/* rowspanを削除し、すべての製品名セルに統一した固定スタイルを適用 */
+tr > td:first-child { 
+    position: sticky;
+    left: 0;
+    z-index: 5; 
+    /* 薄い灰色で固定し、隣接する区分セル（白）との視覚的な分離を維持 */
+    background-color: #f8f8f8; 
+    width: clamp(40px, 8vw, 150px);
+    box-sizing: border-box;
+    
+    /* 固定セルのボーダーは実線に設定 */
     border-top: 1px solid #ccc;
     border-bottom: 1px solid #ccc;
     border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    
     font-weight: bold;
-    background-color: #eaf6ff;
     text-align: left;
 }
 
-/* 区分セル以降のすべてのセルの左側の罫線を実線にする */
-td:nth-of-type(n+2) {
-    border-left: 1px solid #ccc;
+
+/* ============================
+    Y軸 固定カラムのスタイル (2列目: 区分)
+============================ */
+th:nth-child(2) {
+    
+    left: 150px; 
+    z-index: 4; 
+    background-color: #f2f2f2; 
+    width: 80px; 
+    box-sizing: border-box;
+    border-right: 1px solid #ccc;
 }
 
-/* 最後の列の右側を実線にする */
-td:last-child {
+tr > td:nth-child(2) { 
+    
+    left: 150px; 
+    z-index: 4; 
+    /* 白を維持し、製品名セルとの視覚的な分離を確保 */
+    background-color: #fff; 
+    width: 80px; 
+    box-sizing: border-box;
+    
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     border-right: 1px solid #ccc;
+}
+
+/* カテゴリ行のスタイル（結合セル） */
+.category-row {
+    background-color: #e7ecfa;
+    font-weight: bold;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    z-index: 1; 
+    position: relative;
 }
 
 /* PDFアイコンのスタイル */
@@ -115,26 +221,22 @@ td.bg-yellow {
     background-color: #fffacd;
 }
 
-.category-row {
-    background-color: #e7ecfa;
-    font-weight: bold;
-    border-top: 1px solid #ccc;
-    border-bottom: 1px solid #ccc;
-}
 
 /* レスポンシブ対応 */
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 600px) {
     table {
-        font-size: 12px;
-        min-width: unset;
+        min-width: 700px; 
+    }
+    tr > td:first-child {     
+        width: clamp(25px, 3vw, 80px);
     }
     th, td {
         padding: 8px;
     }
-    .annotation p{
-        font-size: 0.9em;
-    }
     .pdf-icon {
         width: 20px;
+    }
+    .category-summary {
+        padding: 15px 15px;
     }
 }

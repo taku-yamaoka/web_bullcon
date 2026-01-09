@@ -71,7 +71,7 @@ document.addEventListener('DOMContentLoaded', function() {
         if (!paginationContainer) {
             return;
         }
-        const isMobile = window.innerWidth < 768;
+        const isMobile = window.innerWidth < 600;
         // PCまたはモバイルのスライド要素を取得し、グローバル変数に格納
         slides = document.querySelectorAll(isMobile ? '.slider-item-mobile' : '.slider-item');
 
